@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proton-parser"
+version = "0.1.0"
+description = "A tool for collecting and parsing issue data from the ValveSoftware/proton GitHub repository"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Proton Parser Team"}
+]
+dependencies = [
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "scikit-learn>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+]
+
+[tool.setuptools]
+packages = ["utls"]
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.md", "*.txt"]

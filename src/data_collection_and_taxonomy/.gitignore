@@ -1,0 +1,28 @@
+# Environment variables
+.env
+
+# Progress files
+.progress.json
+data/issue_origin/.progress.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
