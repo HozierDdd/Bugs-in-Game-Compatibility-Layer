@@ -1,0 +1,133 @@
+{
+  "exported_at": "2026-03-10T22:10:09.788Z",
+  "total_items": 330,
+  "annotated_items": 330,
+  "annotated_percentage": 100,
+  "tags": [
+    {
+      "tag": "Launch Failure",
+      "count": 115,
+      "percentage": 34.85
+    },
+    {
+      "tag": "Freeze",
+      "count": 45,
+      "percentage": 13.64
+    },
+    {
+      "tag": "Graphic/Rendering Issue",
+      "count": 43,
+      "percentage": 13.03
+    },
+    {
+      "tag": "Black Screen",
+      "count": 40,
+      "percentage": 12.12
+    },
+    {
+      "tag": "In-game Crash",
+      "count": 36,
+      "percentage": 10.91
+    },
+    {
+      "tag": "Cutscene Issue",
+      "count": 31,
+      "percentage": 9.39
+    },
+    {
+      "tag": "Network/Sync Issue",
+      "count": 14,
+      "percentage": 4.24
+    },
+    {
+      "tag": "Audio Issue",
+      "count": 12,
+      "percentage": 3.64
+    },
+    {
+      "tag": "Launcher/Verification Issue",
+      "count": 11,
+      "percentage": 3.33
+    },
+    {
+      "tag": "Startup Crash",
+      "count": 11,
+      "percentage": 3.33
+    },
+    {
+      "tag": "Controller Issue",
+      "count": 10,
+      "percentage": 3.03
+    },
+    {
+      "tag": "Loading/Saving Crash",
+      "count": 10,
+      "percentage": 3.03
+    },
+    {
+      "tag": "Low FPS",
+      "count": 10,
+      "percentage": 3.03
+    },
+    {
+      "tag": "Anti-cheat Issue",
+      "count": 9,
+      "percentage": 2.73
+    },
+    {
+      "tag": "Stutter",
+      "count": 8,
+      "percentage": 2.42
+    },
+    {
+      "tag": "Input Configuration Issue",
+      "count": 7,
+      "percentage": 2.12
+    },
+    {
+      "tag": "Installation Failure",
+      "count": 6,
+      "percentage": 1.82
+    },
+    {
+      "tag": "Shader Compilation Issue",
+      "count": 6,
+      "percentage": 1.82
+    },
+    {
+      "tag": "UI Issues",
+      "count": 6,
+      "percentage": 1.82
+    },
+    {
+      "tag": "Game Feature Missing",
+      "count": 4,
+      "percentage": 1.21
+    },
+    {
+      "tag": "Memory Leak",
+      "count": 3,
+      "percentage": 0.91
+    },
+    {
+      "tag": "Exit Crash",
+      "count": 2,
+      "percentage": 0.61
+    },
+    {
+      "tag": "Input Lag",
+      "count": 2,
+      "percentage": 0.61
+    },
+    {
+      "tag": "Others",
+      "count": 2,
+      "percentage": 0.61
+    },
+    {
+      "tag": "Voice Communication Issue",
+      "count": 1,
+      "percentage": 0.3
+    }
+  ]
+}

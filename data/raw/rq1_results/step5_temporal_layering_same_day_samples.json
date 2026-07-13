@@ -1,0 +1,191 @@
+{
+  "generated_at": "2026-04-19T02:01:57Z",
+  "time_window": {
+    "start": "2021-01-01T00:00:00+00:00",
+    "end": "2025-12-31T23:59:59+00:00"
+  },
+  "description": "lead_time_sign='same_day' 的游戏（最多 20 条，按 appid 排序）",
+  "n": 20,
+  "games": [
+    {
+      "game_appid": "1003590",
+      "game_title_protondb": "Tetris Effect: Connected",
+      "lead_time_days": 0.5502199074074074,
+      "first_report_time_protondb": "2021-08-18T07:18:54Z",
+      "first_issue_time_github": "2021-08-18T20:31:13Z",
+      "first_issue_number": 5084,
+      "first_issue_title": "Tetris Effect: Connected (1003590)"
+    },
+    {
+      "game_appid": "1008950",
+      "game_title_protondb": "Armored Front: Tiger Command",
+      "lead_time_days": -0.005601851851851852,
+      "first_report_time_protondb": "2021-11-22T02:29:05Z",
+      "first_issue_time_github": "2021-11-22T02:21:01Z",
+      "first_issue_number": 5336,
+      "first_issue_title": "Armored Front (appid 1008950)"
+    },
+    {
+      "game_appid": "1029210",
+      "game_title_protondb": "30XX",
+      "lead_time_days": 0.07798611111111112,
+      "first_report_time_protondb": "2021-02-17T15:56:12Z",
+      "first_issue_time_github": "2021-02-17T17:48:30Z",
+      "first_issue_number": 4632,
+      "first_issue_title": "30XX (1029210)"
+    },
+    {
+      "game_appid": "1031500",
+      "game_title_protondb": "超級機器人大戰V",
+      "lead_time_days": 0.4704976851851852,
+      "first_report_time_protondb": "2022-11-12T08:49:31Z",
+      "first_issue_time_github": "2022-11-12T20:07:02Z",
+      "first_issue_number": 6314,
+      "first_issue_title": "Super Robot Wars V (1031500)"
+    },
+    {
+      "game_appid": "1057090",
+      "game_title_protondb": "Ori and the Will of the Wisps",
+      "lead_time_days": 0.6931018518518518,
+      "first_report_time_protondb": "2021-01-03T03:30:40Z",
+      "first_issue_time_github": "2021-01-03T20:08:44Z",
+      "first_issue_number": 4528,
+      "first_issue_title": "Ori and the Will of the Wisps (1057090)"
+    },
+    {
+      "game_appid": "1075200",
+      "game_title_protondb": "TOHU",
+      "lead_time_days": -0.024618055555555556,
+      "first_report_time_protondb": "2021-01-30T12:31:35Z",
+      "first_issue_time_github": "2021-01-30T11:56:08Z",
+      "first_issue_number": 4580,
+      "first_issue_title": "TOHU (1075200)"
+    },
+    {
+      "game_appid": "1088850",
+      "game_title_protondb": "Marvel's Guardians of the Galaxy",
+      "lead_time_days": 0.06826388888888889,
+      "first_report_time_protondb": "2021-10-26T16:26:17Z",
+      "first_issue_time_github": "2021-10-26T18:04:35Z",
+      "first_issue_number": 5250,
+      "first_issue_title": "Marvel's Guardians of the Galaxy (1088850)"
+    },
+    {
+      "game_appid": "1097200",
+      "game_title_protondb": "Twelve Minutes",
+      "lead_time_days": 0.22695601851851852,
+      "first_report_time_protondb": "2021-08-19T16:52:46Z",
+      "first_issue_time_github": "2021-08-19T22:19:35Z",
+      "first_issue_number": 5093,
+      "first_issue_title": "Twelve Minutes (1097200)"
+    },
+    {
+      "game_appid": "1105500",
+      "game_title_protondb": "Yakuza 4 Remastered",
+      "lead_time_days": 0.2927314814814815,
+      "first_report_time_protondb": "2021-01-29T03:57:53Z",
+      "first_issue_time_github": "2021-01-29T10:59:25Z",
+      "first_issue_number": 4575,
+      "first_issue_title": "Yakuza 4 Remastered (1105500)"
+    },
+    {
+      "game_appid": "1110910",
+      "game_title_protondb": "Mortal Shell",
+      "lead_time_days": 0.026851851851851852,
+      "first_report_time_protondb": "2021-08-18T20:40:40Z",
+      "first_issue_time_github": "2021-08-18T21:19:20Z",
+      "first_issue_number": 5085,
+      "first_issue_title": "Mortal Shell (1110910)"
+    },
+    {
+      "game_appid": "1113560",
+      "game_title_protondb": "NieR Replicant ver.1.22474487139...",
+      "lead_time_days": 0.2599537037037037,
+      "first_report_time_protondb": "2021-04-23T16:30:51Z",
+      "first_issue_time_github": "2021-04-23T22:45:11Z",
+      "first_issue_number": 4777,
+      "first_issue_title": "NieR Replicant ver.1.22474487139... (1113560)"
+    },
+    {
+      "game_appid": "1114420",
+      "game_title_protondb": "PLAY'A VR  Video Player",
+      "lead_time_days": 0.008576388888888889,
+      "first_report_time_protondb": "2024-08-01T01:40:11Z",
+      "first_issue_time_github": "2024-08-01T01:52:32Z",
+      "first_issue_number": 7953,
+      "first_issue_title": "PLAY'A VR Video Player (1114420)"
+    },
+    {
+      "game_appid": "1120480",
+      "game_title_protondb": "The Anacrusis",
+      "lead_time_days": 0.03315972222222222,
+      "first_report_time_protondb": "2022-01-13T18:30:55Z",
+      "first_issue_time_github": "2022-01-13T19:18:40Z",
+      "first_issue_number": 5493,
+      "first_issue_title": "The Anacrusis (1120480)"
+    },
+    {
+      "game_appid": "1133760",
+      "game_title_protondb": "CHRONO CROSS: THE RADICAL DREAMERS EDITION",
+      "lead_time_days": 0.09929398148148148,
+      "first_report_time_protondb": "2022-04-07T16:35:01Z",
+      "first_issue_time_github": "2022-04-07T18:58:00Z",
+      "first_issue_number": 5751,
+      "first_issue_title": "Chrono Cross: The Radical Dreamers Edition (1133760)"
+    },
+    {
+      "game_appid": "1134570",
+      "game_title_protondb": "F1 2021",
+      "lead_time_days": -0.11362268518518519,
+      "first_report_time_protondb": "2021-07-13T12:47:25Z",
+      "first_issue_time_github": "2021-07-13T10:03:48Z",
+      "first_issue_number": 4966,
+      "first_issue_title": "F1 2021 (1134570)"
+    },
+    {
+      "game_appid": "1140100",
+      "game_title_protondb": "The Persistence",
+      "lead_time_days": -0.014097222222222223,
+      "first_report_time_protondb": "2021-08-25T09:52:58Z",
+      "first_issue_time_github": "2021-08-25T09:32:40Z",
+      "first_issue_number": 5115,
+      "first_issue_title": "The Persistence Enhanced (appid 1140100)"
+    },
+    {
+      "game_appid": "1147330",
+      "game_title_protondb": "Lifeless Moon",
+      "lead_time_days": 0.44859953703703703,
+      "first_report_time_protondb": "2023-08-11T10:51:23Z",
+      "first_issue_time_github": "2023-08-11T21:37:22Z",
+      "first_issue_number": 7007,
+      "first_issue_title": "Lifeless Moon (1147330)"
+    },
+    {
+      "game_appid": "1158850",
+      "game_title_protondb": "The Great Ace Attorney Chronicles",
+      "lead_time_days": 0.2701851851851852,
+      "first_report_time_protondb": "2021-07-27T05:01:54Z",
+      "first_issue_time_github": "2021-07-27T11:30:58Z",
+      "first_issue_number": 5016,
+      "first_issue_title": "The Great Ace Attorney Chronicles (1158850)"
+    },
+    {
+      "game_appid": "1175190",
+      "game_title_protondb": "Natsuki Chronicles",
+      "lead_time_days": 0.017175925925925924,
+      "first_report_time_protondb": "2021-02-20T10:29:53Z",
+      "first_issue_time_github": "2021-02-20T10:54:37Z",
+      "first_issue_number": 4641,
+      "first_issue_title": "Natsuki Chronicles (1175190)"
+    },
+    {
+      "game_appid": "1178830",
+      "game_title_protondb": "Bright Memory: Infinite",
+      "lead_time_days": 0.9567939814814815,
+      "first_report_time_protondb": "2021-11-12T00:56:40Z",
+      "first_issue_time_github": "2021-11-12T23:54:27Z",
+      "first_issue_number": 5310,
+      "first_issue_title": "Bright Memory: Infinite (1178830)"
+    }
+  ]
+}

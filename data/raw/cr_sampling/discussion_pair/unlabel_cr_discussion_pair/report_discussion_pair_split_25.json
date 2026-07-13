@@ -1,0 +1,436 @@
+[
+  {
+    "issue_report_title": "SONIC X SHADOW GENERATIONS (2513280)",
+    "issue_number": 8185,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8185#issuecomment-3201729811",
+    "compatibility_report_id": 3201729811,
+    "issue_state": "open",
+    "compatibility_report": "SONIC X SHADOW GENERATIONS (2513280)\n\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/8984.\n@gbendou posted on 2025-08-19T18:13:15:\n\n# Compatibility Report\n- Name of the game with compatibility issues: SONIC X SHADOW GENERATIONS\n- Steam AppID of the game: 2513280\n\n## System Information\n- GPU: GTX 980 Ti\n- Video driver version: nvidia 570.169\n- Kernel version: 6.8.0-78-generic\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/gbendou/c40a0a6ba29824c196eca0ff84778824\n- Proton version: 10.0-2\n\n## I confirm:\n- [x] that I haven't found an existing compatibility report for this game.\n- [x] that I have checked whether there are updates for my system available.\n\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\n(Proton logs compress well if needed.)-->\n\n## Symptoms <!-- What's the problem? --> \nGame worked perfectly on Proton 10.0-1. Once updated to 10.0-2, I began to experience incessant and significant slowdowns and jittering. Hotfix was marginally better, Experimental was about the same. I tried 9.0-4 and the game won’t launch no matter what version I use ever since. Rebooting my computer, verifying the files, deleting the prefix folder and reinstalling the game didn’t help.\n\n\n## Reproduction\nTry switching Proton versions, I guess.\n\n[steam-2513280.log](https://github.com/user-attachments/files/21862117/steam-2513280.log)",
+    "created_at": "2025-08-19T18:16:09Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8185#issuecomment-3215494220",
+        "discussion_body": "@gbendou couldn't get the game to break on my end, but something that caught my attention in your log is the mention of d3d11.dll and d3d11.dll.config in the game's installation folder when these aren't part of the game. If you remove them, does the game work again?",
+        "created_at": "2025-08-22T20:10:02Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8185#issuecomment-3221132444",
+        "discussion_body": "@simifor Aw, man, that's exactly what it was. You're the best, thank you so much! \n\nSorry for the wrongful report, that was careless of me.",
+        "created_at": "2025-08-25T17:30:58Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Ara: History Untold (2021880)",
+    "issue_number": 8118,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8118",
+    "compatibility_report_id": 2546362564,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: ARA: History Untold\r\n- Steam AppID of the game: 2021880\r\n\r\n## System Information\r\n- GPU:  RTX 4090\r\n- Video driver version:  nvidia 560.35.03\r\n- Kernel version: 6.8.0-45-generic\r\n- Link to full system information report as [Gist](https://gist.github.com/TensorTemplar/b625fedce23b8a216dfe37b09b2942a1)\r\n- Proton version: 1727105898 experimental-9.0-20240918b (tested 8, 9 - same issue) \r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n\r\n## Symptoms \r\nWhen launching the game it crashes shortly after the launcher loads with a winevulkan assertion failing (see below)\r\n![steam-game-crash](https://github.com/user-attachments/assets/5a3b2145-eb4a-4c71-b9a4-7252d7dd94d6)\r\n\r\nEdit: There are now reports on the Ara discord that AMD GPUs seem to work\r\n\r\n## Reproduction\r\n1. Buy expensive game claiming steamdeck support\r\n2. Launch on PC\r\n3. Observe crash shortly after launcher loads\r\n\r\nNote: This does not reproduce when PROTON_LOG=1, the game just generates gigabytes of log within seconds and never gets to the banner crash, but let me know how many lines you want me to attach, if this is useful at all. \r\n[steam-2021880-short.log](https://github.com/user-attachments/files/17125111/steam-2021880-short.log)\r\n",
+    "created_at": "2024-09-24T20:43:35Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8118#issuecomment-2379661393",
+        "discussion_body": "I get the same error with 4090.",
+        "created_at": "2024-09-27T16:32:22Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8118#issuecomment-2381622198",
+        "discussion_body": "same happens on RTX 2070 Super.\r\n\r\nIt SEEMS to be happening on all Nvidia GPUs",
+        "created_at": "2024-09-29T21:47:36Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8118#issuecomment-2381634267",
+        "discussion_body": "Yes, should we open an issue on the Nvidia bug tracker then?",
+        "created_at": "2024-09-29T22:28:41Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8118#issuecomment-2386233071",
+        "discussion_body": "Thank you for the reports.\r\nA fix for this have arrived on the Proton Experimental Bleeding Edge beta branch",
+        "created_at": "2024-10-01T14:55:30Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8118#issuecomment-2386517253",
+        "discussion_body": "> Thank you for the reports. A fix for this have arrived on the Proton Experimental Bleeding Edge beta branch\r\n\r\nYes, it's working now, thank you!",
+        "created_at": "2024-10-01T16:56:26Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Monark (1539620)",
+    "issue_number": 8980,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8980",
+    "compatibility_report_id": 3328211484,
+    "issue_state": "open",
+    "compatibility_report": "[steam-1539620.log](https://github.com/user-attachments/files/21821738/steam-1539620.log)\n\n# Compatibility Report\n- Name of the game with compatibility issues: Monark\n- Steam AppID of the game: 1539620\n\n## System Information\n- GPU: Radeon 780M\n- Video driver version: Mesa 25.2\n- Kernel version: <!-- e.g. 4.17 --> 6.15.9-106.bazzite.fc42.x86_64\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/RoundedMecha/d6bb20807f5a5abd059a45b77bad25c4\n- Proton version: Experimental\n\n## I confirm:\n- [ Y] that I haven't found an existing compatibility report for this game.\n- [ Y] that I have checked whether there are updates for my system available.\n\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\n(Proton logs compress well if needed.)-->\n\n## Symptoms <!-- What's the problem? -->\n\nWhenever the game requires any text to be input the game freezes and exits. For example at the start of the game you are asked your name it will show the box to add the name but as soon as you type anything it exits.\n\n\n## Reproduction\nStart new game progress to when it asks for your name, type anything.\n\n## Note\nEven when running this on windows the game behaves oddly it will have the screen go black for moment before you begin typing its almost like the game is changing displaymode e.g Fullscreen to Boarderless but I cant confirm this\n\n<!--\n1. You can find the Steam AppID in the URL of the shop page of the game.\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\n2. You can find your driver and Linux version, as well as your graphics\n   processor's name in the system information report of Steam.\n3. You can retrieve a full system information report by clicking\n   `Help` > `System Information` in the Steam client on your machine.\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\n   this issue.\n5. Also, please copy the contents of `Help` > `Steam Runtime Diagnostics` to\n   the gist.\n6. Please search for open issues and pull requests by the name of the game and\n   find out whether they are relevant and should be referenced above.\n-->\n",
+    "created_at": "2025-08-17T10:37:33Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8980#issuecomment-3194370591",
+        "discussion_body": "Hello @RoundedMecha, `fixme:msctf:KeystrokeMgr_TestKeyDown STUB:(0000000040324FB0)` followed by an access violation (c0000005) in your Proton log looks like a hint for a Proton dev to ponder.",
+        "created_at": "2025-08-17T12:57:06Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "PLAY'A VR Video Player (1114420)",
+    "issue_number": 7953,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/7953",
+    "compatibility_report_id": 2441259642,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: PLAY'A VR Video Player\r\n- Steam AppID of the game: 1114420\r\n\r\n## System Information\r\n- GPU: AMD Radeon RX 6700 XT\r\n- Video driver version: Mesa 24.1.4-arch1.2\r\n- Kernel version: 6.10.2-arch1-1\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/KibaGasteiz/f90ab0f1bd5509e4139fa99b79c1c067\r\n- Proton version: Experimental (1/08/2924)\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n[steam-1114420.log](https://github.com/user-attachments/files/16448800/steam-1114420.log)\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nThe app works almost perfectly, but when you select a concrete minute or want to jump forward or backwards the app says \"buffering...\" and then nothing happens.\r\n\r\n## Reproduction\r\n\r\n\r\nhttps://github.com/user-attachments/assets/78c5a2d7-3e87-4bd9-8a2c-591ac9c81594\r\n\r\n\r\n",
+    "created_at": "2024-08-01T01:52:32Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7953#issuecomment-2262993003",
+        "discussion_body": "Hello @KibaGasteiz, these look like some lines of interest from your Proton log:\r\n```\r\nfixme:mfplat:media_engine_SetCurrentTimeEx 0000000000A3BB50, 10.148000, 0 stub.\r\n[...]\r\nfixme:quartz:MediaSeeking_SetRate (0000000000A1DDE0/0000000000A1DDF8)->(1.000000): stub !!!\r\n[...]\r\nfixme:mfplat:media_engine_IsSeeking (0000000000A1DDE0): stub.\r\n```",
+        "created_at": "2024-08-01T13:05:56Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7953#issuecomment-2264138347",
+        "discussion_body": "I've tried proton-ge but it gives me the same issue.",
+        "created_at": "2024-08-01T22:39:52Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Giggleland: Terry’s Vegetable Patch Demo (3659070)",
+    "issue_number": 8836,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8836",
+    "compatibility_report_id": 3164813398,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\n- Name of the game with compatibility issues: Giggleland: Terry's Vegetable Patch (3659070)\n- Steam AppID of the game:3659070\n\n## System Information\n- GPU: NVIDIA RTX 3060\n- Video driver version:  4.6.0 NVIDIA 575.64\n- Kernel version: 6.15.3-2-cachyos\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/Dal1ster/8b6db57a8f8085cffa5e68863be0f01c\n- Proton version:10.0-1\n\nFull Sys Info as Gist: https://gist.github.com/Dal1ster/8b6db57a8f8085cffa5e68863be0f01c\n## I confirm:\n- [ x] that I haven't found an existing compatibility report for this game.\n- [x ] that I have checked whether there are updates for my system available.\n\n\n\n## Symptoms\nThroughout the game, it tries to mess with the player by taking non steam screenshots and saving them in what would be the document folder. Under proton however, it fails to save anything in the games compatdata folder. The game also suffers from stutters and freezes, which can last from a few seconds to the point where you have to restart the game itself.\n\n## Reproduction\nSet proton version, play through the game until you see what looks to be a filepath in the top left of the screen and the steam screenshot sound to play. then check the compatdata folder for that filepath at /home/LINUXUSER/.steam/steam/steamapps/compatdata/3658110/pfx/drive_c/users/steamuser/Documents/ and notice there is no screenshots or anything of the sort.\n\n",
+    "created_at": "2025-06-21T06:21:51Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8836#issuecomment-2993570523",
+        "discussion_body": "Hello @Dal1ster, `[...]/steamapps/compatdata/3658110` isn't a sane appid in this context. That should be the appid of Proton itself and not the game's wineprefix. Also, 3659070 is the game's demo, which is fine by itself, but note that you've made it ambiguous if you tested the full game or the demo. I'm forced to assume it's the latter.\n\nPlease add [`PROTON_LOG=1 %command%`](https://github.com/ValveSoftware/Proton#runtime-config-options) to the game's launch options and attach the generated $HOME/steam-$APPID.log to this issue report as a file. (Proton logs compress well if needed.)",
+        "created_at": "2025-06-21T13:04:20Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8836#issuecomment-2993654004",
+        "discussion_body": "Apologies about the ambiguity, i just tried to follow what the guide suggested, and fill in the title and such with what the template recommends (since the games demo is the Vegetable patch, the main game is just giggleland full stop, but calling it the demo would cause confusion). Also odd that i didnt upload the proton log....  Heres the log then. Also i was just trying to follow my hunch of it saving its own screenshots in the compatdata folder for itself since thats what happens with most proton games I've tested.\n\n[steam-3659070.tar.gz](https://github.com/user-attachments/files/20847411/steam-3659070.tar.gz)",
+        "created_at": "2025-06-21T16:11:15Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Microsoft Flight Simulator (1250410) [A32NX extension]",
+    "issue_number": 5397,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5397",
+    "compatibility_report_id": 1076448579,
+    "issue_state": "closed",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Microsoft Flight Simulator (A32NX extension). This is a **very popular** extension for MSFS. See https://flybywiresim.com/. I create a new compatibility report because it's unrelated to the main game which runs fine.\r\n- Steam AppID of the game: 1250410\r\n\r\n## System Information\r\n- GPU: AMD ATI Radeon 5700 XT\r\n- Driver/LLVM version: NAVI10, DRM 3.42.0, 5.15.6-gentoo, LLVM 13.0.0, 4.6 (Compatibility Profile) Mesa 21.3.1\r\n- Kernel version: 5.15.6-gentoo\r\n- Link to full system information report as [Gist](https://gist.github.com/freijon/4191b914c6707d66141224d2226b943e):\r\n- Proton version: experimental-6.3-20211209\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nWhen starting a flight (press the \"Fly\" button) the loading process starts and runs for a while. Suddenly the game crashes to Desktop. In the console I can see the following error:\r\n`Unhandled exception: unimplemented function api-ms-win-crt-runtime-l1-1-0.dll.feclearexcept called in 64-bit code (0x000000007b0123be).`\r\n\r\n[steam-1250410.log.tar.gz](https://github.com/ValveSoftware/Proton/files/7690312/steam-1250410.log.tar.gz)\r\n\r\n## Reproduction\r\n1. Install the A32NX extension for MSFS\r\n2. Select the new Aircraft\r\n3. Start the flight by clicking on the \"Fly\" button.\r\n\r\n\r\n",
+    "created_at": "2021-12-10T05:37:14Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5397#issuecomment-990929710",
+        "discussion_body": "Hello @freijon, we're using one issue report per unofficially supported game title including game mods, so I've gone ahead and transferred this issue report to https://github.com/ValveSoftware/Proton/issues/4134#issuecomment-990929312.",
+        "created_at": "2021-12-10T12:24:00Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Sea of Thieves won't allow me to join an Open Crew",
+    "issue_number": 5761,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5761",
+    "compatibility_report_id": 1198748395,
+    "issue_state": "closed",
+    "compatibility_report": "# Compatibility Report\r\nName of the game with compatibility issues: Sea Of Thieves\r\nSteam AppID of the game: 1172620\r\n\r\n## System Information\r\n- GPU: i9-12900\r\n- Driver/LLVM version: Nvidia 510.60.02\r\n- Kernel version: 5.15.26-gentoo-x86_64\r\n- Link to full system information report as [Gist](https://gist.github.com/joe1inux/0ff904dbcbe4461f5f4c4b04cdbd9bcb):\r\n- Proton version: Proton Experimental\r\n\r\n## I confirm:\r\n- [X ] that I haven't found an existing compatibility report for this game.\r\n- [ X] that I have checked whether there are updates for my system available.\r\n\r\nProton Log:\r\n[steam-1172620.log](https://github.com/ValveSoftware/Proton/files/8457603/steam-1172620.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nI can no longer join open crews.  I suspect there is something interfering with my ability to communicate with Microsoft/Xbox Social gaming servers.\r\n\r\n## Reproduction\r\n\r\n\r\n",
+    "created_at": "2022-04-09T19:21:13Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5761#issuecomment-1094112014",
+        "discussion_body": "Hello @joe1inux, we're using one issue report per unofficially supported game title, so I've gone ahead and transferred this issue report to https://github.com/ValveSoftware/Proton/issues/3931#issuecomment-1094111945.",
+        "created_at": "2022-04-09T19:30:50Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5761#issuecomment-1094112534",
+        "discussion_body": "Sorry...first time using github...does this mean that all the issues\nsurrounding Sea of Thieves are on this one page?\n\nOr that my issues is somehow linked to the issue at the top of the page?\n\nOn Sat, Apr 9, 2022 at 2:31 PM kisak-valve ***@***.***> wrote:\n\n> Hello @joe1inux <https://github.com/joe1inux>, we're using one issue\n> report per unofficially supported game title, so I've gone ahead and\n> transferred this issue report to #3931 (comment)\n> <https://github.com/ValveSoftware/Proton/issues/3931#issuecomment-1094111945>\n> .\n>\n> —\n> Reply to this email directly, view it on GitHub\n> <https://github.com/ValveSoftware/Proton/issues/5761#issuecomment-1094112014>,\n> or unsubscribe\n> <https://github.com/notifications/unsubscribe-auth/AYUL4NWABKBI3XZLVVI2SD3VEHLHNANCNFSM5S7WHPAA>\n> .\n> You are receiving this because you were mentioned.Message ID:\n> ***@***.***>\n>\n",
+        "created_at": "2022-04-09T19:34:25Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5761#issuecomment-1094114034",
+        "discussion_body": "Using one issue report per game title on the Proton Issue tracker is an exception, rather than a general rule due to the large number of games the Proton devs get feedback on, and there are several bug trackers that the developers need to use on a regular basis. The first half of your question is correct for this issue tracker, #3931 is the right place for all feedback related to running Sea of Thieves with Proton, combined.",
+        "created_at": "2022-04-09T19:45:07Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Creatures Docking Station (1659050)",
+    "issue_number": 5427,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5427",
+    "compatibility_report_id": 1084881616,
+    "issue_state": "closed",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Creatures Docking Station\r\n- Steam AppID of the game: 1659050\r\n\r\n## System Information\r\n- GPU: Intel HD Graphics 4000 (IVB GT2)\r\n- Driver/LLVM version: Mesa 21.2.2\r\n- Kernel version: 5.15.5-76051505-generic\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/truboxl/d89d8496d53cea55cb358acaa5c00ac2\r\n- Proton version: Proton Experimental\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nUnable to launch the game. Getting the error:\r\n\r\n\"The game can not continue: Please change your display settings to be 'High Color (16 bit)'\"\r\n\r\n![Screenshot from 2021-12-20 22-23-09](https://user-images.githubusercontent.com/12658589/146782160-a72cc44c-b8d9-4c68-9868-d935b429062f.png)\r\n\r\n## Reproduction\r\nSimply launch the game and choose \"Play Creatures Docking Station\"\r\n\r\n## Notes\r\nThere simply no easy way to set 16bit color depth in Linux.\r\n\r\nWine suggest we have to fiddle with `/etc/X11/xorg.conf.d/` or `/etc/X11/xorg.conf` and set something along the lines of `DefaultDepth    16`. But that will cause Steam not to start. See https://wiki.winehq.org/FAQ\r\n\r\n```\r\n10.4 Graphics\r\n10.4.1 My application complains about being unable to change the resolution or color depth\r\nYou generally need to edit the Screen section of your /etc/X11/xorg.conf to support additional color depths and resolutions. There may also be a problem with Xrandr.\r\n```\r\n\r\nAnother method is to use Xephyr. See https://wiki.winehq.org/256_Color_Mode\r\nSo far adding this line to Launch Options works for me:\r\n\r\n```\r\nXephyr :2 -ac -resizeable -screen 1280x720x16 & env DISPLAY=:2 %command%\r\n```\r\nAdditionally need to add these registries to `steamapps/compatdata/1659050/pfx/user.reg` or use `protontricks`\r\nto disable window decoration and window manager control\r\nsince there is no window manager running in Xephyr.\r\nRunning `mutter` or another WM in Xephyr seems to mess things up for me.\r\n```\r\n[Software\\\\Wine\\\\X11 Driver] 1639931810\r\n#time=1d7f4f69fbce18e\r\n\"Decorated\"=\"N\"\r\n\"Managed\"=\"N\"\r\n```\r\nGoing full screen and then back to windowed screen seems to break the game however. Audio still running though. `Alt+Enter` sometimes fixes the problem.",
+    "created_at": "2021-12-20T14:54:09Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5427#issuecomment-997998274",
+        "discussion_body": "Oops duplicate. Closing.",
+        "created_at": "2021-12-20T14:58:33Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Shatterline (2087030)",
+    "issue_number": 6165,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1255904689",
+    "compatibility_report_id": 1255904689,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Shatterline\r\n- Steam AppID of the game: 2087030\r\n\r\n## System Information\r\n- OS: GNU Guix GNU/Linux\r\n```console\r\n$ guix describe\r\nGeneration 4\tSep 22 2022 07:58:11\t(current)\r\n  nonguix 415aeda\r\n    repository URL: https://gitlab.com/nonguix/nonguix\r\n    branch: master\r\n    commit: 415aeda016ca174764a700d8493cc93285ebe3dd\r\n  guix 04cad8e\r\n    repository URL: https://git.savannah.gnu.org/git/guix.git\r\n    branch: master\r\n    commit: 04cad8e29ed85be838921c7fa05f7c5bce94b6d1\r\n```\r\n- Arch: x86_64\r\n- Model: Z68A-D3-B3\r\n- CPU: i7-2680K\r\n- GPU: AMD RX 570\r\n- Driver/LLVM version: AMDGPU (Linux 5.19.8)\r\n\t- LLVM: 11.0.0\r\n\t- DRM: 3.47.0\r\n\t- VBIOS version 113V34122-F3\r\n\t- Arch: POLARIS10\r\n\t- Mesa: 21.3.8\r\n-  Drivers in flatpak: Driver Version:  4.6 (Compatibility Profile) Mesa 22.1.7 (git-7a3414c4bd)\r\n- Kernel version: GNU/Linux 5.19.8\r\n- Window Manager: GNOME Shell\r\n- X Server Release: 12101004\r\n- \r\n- Link to full system information report as [Gist](https://gist.github.com/): No\r\n- Proton version: Experimental and 7.0-4 tried\r\n\r\n## I confirm:\r\n- [NO] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\nAfter verifying game files this is all it gives me:\r\n\r\n```console\r\n$ cat ~/.var/app/com.valvesoftware.Steam/steam-2087030.log \r\n======================\r\nProton: 1660576899 proton-7.0-4\r\nSteamGameId: 2087030\r\nCommand: ['/home/kreyren/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/Shatterline/Launch_Game.exe', '-platform_type', 'Steam', '-bugsplat_enabled']\r\nOptions: {'forcelgadd'}\r\ndepot: 0.20220919.70\r\npressure-vessel: 0.20220919.0\r\nscripts: v0.20220823.0-0-gcc4e44f\r\nsoldier: 0.20220919.0 soldier 0.20220919.0\r\nKernel: Linux 5.19.8 #1 SMP PREEMPT_DYNAMIC 1 x86_64\r\n======================\r\n```\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nThe game install**ed** fine and ran great (platinum) with d3dcompiler_47 and win7 until 22.09.22 when it got updated and now i can't launch it after checking file integrity and before i couldn't join any match (likely anti-cheat)\r\n\r\n1. Failure to load textures resulting in texture-less environment:\r\n\r\nFixed by adding `d3dcompiler_47` though winetricks\r\n\r\n2. Unable to join any game:\r\n\r\nOriginally fixed by setting the protonprefix on Windows 7 until 22.09.22 where game got updated **and it's broken again**\r\n\r\n3. On bordless fullscreen window sometimes after the game loads into the match it causes me to be unable to move excluding looking around with mouse (unable to shoot) and unable to change window so i have to always change in TTY and kill it in `htop`, hotfix to this was to play the game in windowed.\r\n\r\n## Reproduction\r\n\r\n1. Get Steam from Flatpak on any GNU distro with Linux kernel\r\n2. Install Shatterline on steam\r\n3. Try to play the game\r\n\r\n## Additional notes\r\n* Some people on protondb are complaining about shutter during gameplay which is not present on my setup",
+    "created_at": "2022-09-23T07:57:59Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1257001541",
+        "discussion_body": "> The game installed fine and ran great (platinum) with d3dcompiler_47 and win7 until 22.09.22 where i can no longer join any public match\r\n\r\nthis is the update that broke it: https://store.steampowered.com/news/app/2087030/view/3395173894699741120\r\nafter that a friend and I could no longer join matches.",
+        "created_at": "2022-09-24T16:04:41Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1257012244",
+        "discussion_body": "@kisak-valve I talked with the developer and they seems to be willing to enable linux support, but don't understand what proton is, how it works and how it would affect the development (they are startup-ish so their development resources are limited etc..) and how it would make the game cheatable bcs they currently have issues with cheating in the game.\r\n\r\nCould you get someone from valve to e.g. write some short and sensible thing here and how to configure EAC so that the game works again?\r\n\r\nEDIT: Was given https://partner.steamgames.com/doc/steamdeck/proton#1 which was relayed to the developer",
+        "created_at": "2022-09-24T16:49:57Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1258731897",
+        "discussion_body": "I helped the developer to fix the game and new update is scheduled to land within 24h hours to make the game work for all linux users. ^-^\r\n\r\nThe linux module for EOS is enabled since 23rd Aug 2022:\r\n![shatterline-linux-eac-module](https://user-images.githubusercontent.com/11302521/192392346-6110b702-3272-40b7-a768-5bee3e0c1943.png)\r\n\r\nThe developer did setup according to the provided documentation in https://partner.steamgames.com/doc/steamdeck/proton#1 and noted the requirement to update the linux module.\r\n\r\nThere was a bug in the pipeline which caused the public release of the game to miss `Bin/CrashRpt1403.dll` which was triggering the EOS resulting in linux players being unable to join any public game lobby the solution is to provide the file. Discovered through searching in `Steam/steamapps/compatdata/2087030/pfx/drive_c/users/steamuser/Saved Games/Shatterline/somerandomchars/user/log/Game.log` which included:\r\n\r\n> <2022-09-26T22:09:54:789+02> [Warning] (Game) - [EOSCore_Windows::EOSSDKLoggingCallback] LogEOSAntiCheat: [AntiCheatClient] [PollStatusInternal] Client Violation with Type: 5 Message: Unknown file version (Bin/CrashRpt1403.dll), len: 44\r\n\r\nThe `d3dcompiler_47.dll` **was required** as they broke shaders for proton which will be fixed after the game realease and that currently results in a black textures when you try to join the game, with new update that dependency is provided by upstream so **it's no longer required to workaround it** and workarounds will trigger EOS.\r\n\r\nThe `win7` workaround is still needed as the game is using **Winsock Registered Input/Output (RIO) API** that is not implemented in wine/proton if the windows release is set on 8 and higher, developer plans to address it before the game gets released or shortly after by replacing it with proton-friendly alternative.\r\n\r\nThe game is made by former crytek developers who worked on the cryengine so for the game they are using lumberyard fork which currently doesn't support linux exports. The developer is working on porting the renderer and libraries to get steam deck certified and native linux version with it after the game's release.\r\n\r\nRelevant discussion on:\r\n* shatterline discord with the devs https://discord.com/channels/750704373113552976/1022511212661067857 \r\n* with frogs https://discord.com/channels/853130811581530142/855613414584221706/1024017540789305414\r\n\r\nProposed long term solution for issues alike is to fix vkd3d-shader used in the d3dcompiler in wine to compile HLSL shaders without the need to use 3rd party d3dcompiler_47 and mentioned RIO API.\r\n\r\n---\r\n\r\nIf you like the game then consider buying the 5 USD/EUR trinket in the game to support the development and work on linux port and proton compatibility",
+        "created_at": "2022-09-26T22:42:23Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1259919288",
+        "discussion_body": "> If you like the game then consider buying the 5 USD/EUR trinket in the game to support the development and work on linux port and proton compatibility\r\n\r\nI would but no in-game purchases because the Steam overlay only appears on the EAC launcher window and is not present ingame. Same bug as in Elden Ring.\r\n\r\n(Game is indeed working fine though after switching the prefix to win7)",
+        "created_at": "2022-09-27T18:52:43Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1259964848",
+        "discussion_body": "reportedly the solution is to use `gamescope` or worst case scenario use GeForceNOW to buy things in the game\r\n\r\nIf anyone has any relevant info then let me know",
+        "created_at": "2022-09-27T19:38:30Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1260826642",
+        "discussion_body": "Hello. The game works fine, but I can't join any online games. Somebody knows how to fix that issue? \r\nHere is what I get when I try to join:\r\n![image](https://user-images.githubusercontent.com/33228017/192777763-69126d49-1f6f-415e-b5a3-3af3d153dfe1.png)\r\nSession-09-25",
+        "created_at": "2022-09-28T12:24:36Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1261211416",
+        "discussion_body": "@gravit22 make sure to set wine to Windows 7.",
+        "created_at": "2022-09-28T17:09:50Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1261361626",
+        "discussion_body": "> @gravit22 make sure to set wine to Windows 7.\r\n\r\n@italoghost yeah, that worked. Thank you.",
+        "created_at": "2022-09-28T19:18:05Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1267462677",
+        "discussion_body": "The Devs have updated the game. It now works out of box with no protontricks required.\r\nThe only issue remaining is the ingame purchases not working due to Steam Overlay not working in game.",
+        "created_at": "2022-10-04T19:08:32Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1273749301",
+        "discussion_body": "Steam overlay is the only issue left at the time of writing this, any normal workaround?\r\n\r\nThank you all who made this possible - i get better results in pop / fedora than in w10 :)\r\n\r\nEDIT: Gamescope crashes with Nvidia so there is no workaround for me atm, if anyone got more tips, let me know.",
+        "created_at": "2022-10-10T19:57:08Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1273950806",
+        "discussion_body": "The devs updated the game to give us more usable error messages to reduce some guess work if you get `kicked by anti-cheat` then try to verify game files in steam as that seems to be a common issue after an update.\r\n\r\nhttps://help.steampowered.com/en/faqs/view/0C48-FCBD-DA71-93EB",
+        "created_at": "2022-10-11T00:48:14Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1367912259",
+        "discussion_body": "Game works fine also with mutliplayer but it utilizes my GPU in multyplayer matches sometimes not enough. GPU usage goes from 90-100% (stable fps) to 10-20% (Unplayable FPS) and then immediately back up to 90-100%. Tried with Proton Stable, Proton Experimental, Proton-GE7-18, Proton-GE7-43. Same problem everywhere.",
+        "created_at": "2022-12-30T13:11:17Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1407477816",
+        "discussion_body": "@FirephoenixX02 I noticed that too, from looking at it seems to be caused by game compiling shaders so the issue should fix itself the more you play?",
+        "created_at": "2023-01-28T20:17:44Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1455116333",
+        "discussion_body": "On my Arch Linux system, starting the game gives the Shatterline splash screen, and after a while a warning message pops up:\r\n\r\n![Shatterline-Screenshot_2023-03-05_15-40-38](https://user-images.githubusercontent.com/929763/222967894-192b86b4-2bc4-448b-a3df-a7556dac664e.png)\r\n\r\nPressing OK closes the window, and while I see the game process is still running, the game never actually starts. Video card is a Radeon RX 6700 XT.\r\n\r\n**Steam System Information**: https://gist.github.com/chtaube/db16ccae1068e42d869e5949c930c862\r\n\r\nProton LOG files:\r\n- with Proton experimental: https://gist.github.com/chtaube/9eceee0b4f441c57e8e95243babf3319\r\n- with GE-Proton 7.49: https://gist.github.com/chtaube/416db6cccf11cc38793abd0a787ed4b3\r\n",
+        "created_at": "2023-03-05T15:02:37Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1455122422",
+        "discussion_body": "@chtaube the same problem seems to exist with some windows users aswell, so it's likely not related to proton. However I did a forum post where they fixed it by setting compatibility to Windows 8 (https://forums.newworld.com/t/unsupported-video-card-detected/261298/3 New World also uses the Lumberyard engine so results should be the same)\r\n\r\nTry using Protontricks to set the windows version to 8 or higher and see if that works. ",
+        "created_at": "2023-03-05T15:26:37Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1455135915",
+        "discussion_body": "Hello @chtaube, `info:    Device name:     : Null hardware (RADV NAVI10)` in your Proton log might be related to the all zero vendor / device id in the error message.\r\n\r\nIgnoring that, https://gist.github.com/chtaube/db16ccae1068e42d869e5949c930c862#file-gistfile1-txt-L299 / https://gist.github.com/chtaube/db16ccae1068e42d869e5949c930c862#file-gistfile1-txt-L748-L754 and `info:    Driver: 2.0.249` (https://gist.github.com/chtaube/9eceee0b4f441c57e8e95243babf3319#file-steam-2087030-experimental-log-L1010) tells us that the game is using 32 bit AMDVLK. Can you check how the game behaves with your system configured to use 32 bit mesa/RADV?",
+        "created_at": "2023-03-05T16:17:48Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1455180197",
+        "discussion_body": "@kisak-valve Ok, I found the culprit: _amdvlk_ was not installed (anymore?) on my system. Installed the package and restarted Steam and now Shatterline is running. Did a quick check and multiplayer seems to be working, too.\r\n\r\nThanks for pointing me into the right direction. ",
+        "created_at": "2023-03-05T19:23:45Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1536656289",
+        "discussion_body": "@ZaxLofful This regression is fixed with experimental-8.0-20230505 :) ",
+        "created_at": "2023-05-05T19:02:41Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1538930320",
+        "discussion_body": "@alasky17 : Is there a link to the PR that fixed it and what the problem was?",
+        "created_at": "2023-05-08T19:31:52Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1542319934",
+        "discussion_body": "@ZaxLofful Commit that fixed the problem was https://github.com/ValveSoftware/wine/commit/7035bf12c55228dd57a3787132f3c34654128871",
+        "created_at": "2023-05-10T14:36:35Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1548977811",
+        "discussion_body": "Since some recent updates, the game got broken and the Shatterline.exe binary couldn't found by the anticheat. Finally there's a workaround: install it in the same partition as the Steam files (and the EAC Runtime). Got it working with Proton Experimental (bleeding edge).",
+        "created_at": "2023-05-16T04:35:58Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1586214868",
+        "discussion_body": "I'm experiencing issues when i switched to Proton Experimental: i cannot play the Expedition game mode: the loading screen shows twice, then i transferred back to the main menu.The other game mdoes are working as expected.\r\nWith Proton 7.0.2 everything is fine.",
+        "created_at": "2023-06-11T15:27:42Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1586216566",
+        "discussion_body": "Hello @kivimango, please add [`PROTON_LOG=1 %command%`](https://github.com/ValveSoftware/Proton#runtime-config-options) to the game's launch options and attach the generated $HOME/steam-$APPID.log to this issue report as a file. (Proton logs compress well if needed.) Also, please copy your system information from Steam (`Steam` -> `Help` -> `System Information`) and put it in a [gist](https://gist.github.com/), then include a link to the gist in this issue report.\r\n\r\nA Proton dev might also be interested in how the game behaves with Proton 8.0.",
+        "created_at": "2023-06-11T15:35:09Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1866654658",
+        "discussion_body": "Not sure if others have similar issue, but my game always crashes 2nd loading of map - pve/pvp. Run a game, works without issue, end the run and re-queue and always crashes while loading the next map.\r\n\r\nSame with GE, 8.0.4 and experimental (bleeding-edge).\r\n\r\n[steam-2087030.log](https://github.com/ValveSoftware/Proton/files/13744417/steam-2087030.log)\r\n\r\n[steam-2087030_exp.log](https://github.com/ValveSoftware/Proton/files/13744628/steam-2087030_exp.log)\r\n",
+        "created_at": "2023-12-21T17:04:32Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1879876361",
+        "discussion_body": "> Not sure if others have similar issue, but my game always crashes 2nd loading of map - pve/pvp. Run a game, works without issue, end the run and re-queue and always crashes while loading the next map.\r\n> \r\n> Same with GE, 8.0.4 and experimental (bleeding-edge).\r\n> \r\n> [steam-2087030.log](https://github.com/ValveSoftware/Proton/files/13744417/steam-2087030.log)\r\n> \r\n> [steam-2087030_exp.log](https://github.com/ValveSoftware/Proton/files/13744628/steam-2087030_exp.log)\r\n\r\nYes, this is happening to me as well.  It has been happening for several months now",
+        "created_at": "2024-01-06T23:34:04Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2052043855",
+        "discussion_body": "@spaghetticodez This should now be fixed in the latest Proton Experimental release.",
+        "created_at": "2024-04-12T16:03:14Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2185315719",
+        "discussion_body": "Trying to join a match results in \"kicked by anticheat\".",
+        "created_at": "2024-06-23T20:31:24Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2186014531",
+        "discussion_body": "> Trying to join a match results in \"kicked by anticheat\". -- @lordcirth (https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2185315719)\r\n\r\nTry to verify the game's integrity in steam and if it doesn't work then review https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-1258731897 and give us compatibility report with the log from EOS, it should look like this when there is an inconsistency with the game directory:\r\n\r\n> <2022-09-26T22:09:54:789+02> [Warning] (Game) - [EOSCore_Windows::EOSSDKLoggingCallback] LogEOSAntiCheat: [AntiCheatClient] [PollStatusInternal] Client Violation with Type: 5 Message: Unknown file version (Bin/CrashRpt1403.dll), len: 44",
+        "created_at": "2024-06-24T09:18:04Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2234213686",
+        "discussion_body": "@lordcirth Joining matches is now working for me.  Could you please retest and see if you still get a message about anti-cheat?",
+        "created_at": "2024-07-17T20:23:11Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2467191642",
+        "discussion_body": "> @lordcirth Joining matches is now working for me. Could you please retest and see if you still get a message about anti-cheat?\r\n\r\nSorry, didn't see this until now (way too many notifications) and the game is dead now. Thanks.",
+        "created_at": "2024-11-11T04:08:16Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2507253763",
+        "discussion_body": ">[...] and the game is dead now. Thanks. -- @lordcirth (https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2467191642)\r\n\r\nIt's not dead, they are moving from Early Access/Beta Phase to Full Release as they finally decided on which publisher and monetization model to use.\r\n\r\n![image](https://github.com/user-attachments/assets/e101fd76-cc28-4b5a-9769-55e88871e677)\r\n\r\nThe game won't let you into an online match unless it's able to verify the signatures of **ALL** game files which is likely your case (thus the suggestion in https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2186014531) as either you or your system must have changed something for the anti-cheat to fail it's checks -> Verify the game integrity and it should work again.\r\n\r\nNote that on Linux under proton the game has much stricter anti-cheat than on Windows as the Linux's design enables for a deeper integration with the OS and the kernel. On Windows it doesn't seem to care as much about file integrity and if you prefer to play via Epic Games Store then there is an option of https://heroicgameslauncher.com which is an open-source launcher made by the community which should handle these things for you as well as Steam.\r\n\r\nRelevant to the issue: To show that the game is not dead with ongoing development to support Linux.",
+        "created_at": "2024-11-29T07:46:04Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2529644121",
+        "discussion_body": "@Kreyren It is dead on Linux. They moved to egs and does not support anti-cheat on Linux anymore. There is no single clue they are gonna support Linux.",
+        "created_at": "2024-12-09T22:15:09Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2530988713",
+        "discussion_body": "Yeah I've tried to get it to work, it runs very well with heroic launcher (much better than on Windows actually), even epic online services work, but joining an online match gets me kicked by anticheat in seconds...\r\nIf anyone has a working setup, please let me know.",
+        "created_at": "2024-12-10T09:29:59Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2558416903",
+        "discussion_body": "I talked with the developer and they told me the following:\r\n\r\n![image](https://github.com/user-attachments/assets/13e2c013-4e88-4769-934c-db7a777b6724)\r\n\r\nThe Linux Anti-Cheat Module is active and was never disabled. The EAC Driver initialization returns fail when running under Heroic as it is not responding on the client side for server EAC request which leads to the kick for them to conclude that this is not an error on their side as they used the same code before and on Steam deck. It seems that using EGS as user base platform blocks it from using EAC.\r\n\r\nCC @kisak-valve Could you look into this?",
+        "created_at": "2024-12-22T11:04:31Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2558451303",
+        "discussion_body": "@Kreyren Honestly I do not think Valve would be interested in spending time on this issue. The game is not on Steam anymore. Proton is a fork of wine designed to work specifically with the Steam. Therefore this issue is out of scope for Proton and Valve devs. Why would they care whether EGS exclusive is working on Linux or not?",
+        "created_at": "2024-12-22T13:08:32Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6165#issuecomment-2558570899",
+        "discussion_body": "From what i understood for Valve it's important that games and everything works in general on Linux due to the existential threat of Xbox/Microsoft Store for this to be in the scope while the devs still have steam developer account and i assume will most likely release the game on steam later assuming the trend with other EGS exclusives e.g. Fall Guys due to the publisher's contract to finance the game's development and marketing.\r\n\r\nPlus afaik from the developer's side this is pre-defined way in lumberyard to enable anti-cheat so addressing this will likely be beneficial for other lumberyard games and their linux support.\r\n\r\nNoting that the problem here appears to be in the anti-cheat itself that the community doesn't have access in comparison to valve who previously fixed very similar issue.",
+        "created_at": "2024-12-22T19:34:44Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Devil May Cry 5 ",
+    "issue_number": 4938,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/4938",
+    "compatibility_report_id": 936194337,
+    "issue_state": "closed",
+    "compatibility_report": "\r\n[system.txt](https://github.com/ValveSoftware/Proton/files/6758008/system.txt)\r\n[steam-601150.log](https://github.com/ValveSoftware/Proton/files/6757993/steam-601150.log)\r\n# Compatibility Report\r\n- Name of the game with compatibility issues: Devil May Cry 5 \r\n- Steam AppID of the game: 601150/\r\n\r\n## System Information\r\n- GPU: AMD Vega56\r\n- Driver/LLVM version:  Mesa 21\r\n- Kernel version: 5.12\r\n- Link to full system information report as [Gist](https://gist.github.com/):\r\n- Proton version: 6.3-5\r\n\r\n## I confirm:\r\n- [ x] that I haven't found an existing compatibility report for this game.\r\n- [ x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nThe game is totally borked - not starting up - with current Proton. \r\nOnly older 5.10 Proton version works.\r\n\r\n## Reproduction\r\n\r\nJust start up the game with Proton 6.x\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2021-07-03T07:20:17Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/4938#issuecomment-873402048",
+        "discussion_body": "Hello @xcom169, we're using one issue report per unofficially supported game title, so I've gone ahead and transferred this issue report to https://github.com/ValveSoftware/Proton/issues/2386#issuecomment-873401999.",
+        "created_at": "2021-07-03T12:44:10Z",
+        "is_for_the_report": null
+      }
+    ]
+  }
+]

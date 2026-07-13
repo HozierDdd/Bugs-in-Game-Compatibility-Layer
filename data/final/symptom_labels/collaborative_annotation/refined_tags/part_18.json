@@ -1,0 +1,109 @@
+[
+  {
+    "issue_number": 4905,
+    "issue_title": "SteamVR not working on Fedora 34",
+    "id": 924962495,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: SteamVR\r\n- Steam AppID of the game: 250820\r\n\r\n## System Information\r\n- GPU: AMD RX 5700 XT\r\n- Driver/LLVM version: Mesa 21.1.2\r\n- Kernel version: 5.12.10-300.fc34.x86_64\r\n- Link to full system information report as [Gist](https://gist.github.com/):\r\n- Proton version: Experimental (Jun 19 2021)\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n[steam-250820.log](https://github.com/ValveSoftware/Proton/files/6677616/steam-250820.log)\r\nFirst few lines:\r\n```\r\nUsing breakpad crash handler\r\nSetting breakpad minidump AppID = 250820\r\nForcing breakpad minidump interfaces to load\r\nLooking up breakpad interfaces from steamclient\r\nCalling BreakpadMiniDumpSystemInit\r\n653.679:00dc:00fc:trace:seh:NtQueryInformationThread (0xfffffffffffffffe,12,0x263fe2c,4,(nil))\r\n654.682:00dc:00f4:trace:seh:NtQueryInformationThread (0xfffffffffffffffe,12,0x1a1fe2c,4,(nil))\r\n654.682:0030:00ac:trace:seh:NtQueryInformationThread (0xfffffffffffffffe,12,0x386fe2c,4,(nil))\r\n654.683:00dc:00f8:trace:seh:NtQueryInformationThread (0xfffffffffffffffe,12,0x202fe2c,4,(nil))\r\n654.683:005c:0090:trace:seh:NtQueryInformationThread (0xfffffffffffffffe,12,0x204fe2c,4,(nil))\r\n654.683:005c:0070:trace:seh:NtQueryInformationThread (0xfffffffffffffffe,12,0x1a3fe2c,4,(nil))\r\n654.684:005c:006c:trace:seh:NtQueryInformationThread (0xfffffffffffffffe,12,0x142fe2c,4,(nil))\r\n654.684:0074:00a0:trace:seh:NtQueryInformationThread (0xfffffffffffffffe,12,0x2e8fe2c,4,(nil))\r\n654.685:003c:0050:trace:seh:NtQueryInformationThread (0xfffffffffffffffe,12,0x162fe2c,4,(nil))\r\n654.685:0074:0084:trace:seh:dispatch_exception code=6ba flags=0 addr=000000007B01236E ip=000000007B01236E tid=0084\r\n654.685:0074:0084:warn:seh:dispatch_exception unknown exception (code=6ba) raised\r\n```\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nSteamVR does not launch on Fedora 34. See specs above. Competely out of the box fresh install.\r\n\r\n## Reproduction\r\n1. Install Fedora 34\r\n2. Install Steam\r\n3. Install SteamVR for Windows (Compatibility -> Force Steam Play (Proton))\r\n4. Run SteamVR\r\n\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "symptom_summary": "用户在将《帝国时代4》的语言设置为西班牙语后，游戏无法启动，出现黑屏，游戏鼠标可见，但随后关闭。 \n\nTags: Game Crash, Black Screen, Language Issue",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 5728,
+    "issue_title": "Quake Champions (611500)",
+    "id": 1182687057,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Quake Champions\r\n- Steam AppID of the game: 611500\r\n\r\n## System Information\r\n- GPU: GTX1650\r\n- Driver/LLVM version: NVIDIA 510.54\r\n- Kernel version: 5.15.0-23-generic\r\n- Link to full system information report as [[Gist](https://gist.github.com/virnik0/3a1ac67fd099fe43b28adef01c498000)]\r\n- Proton version: 6.3-8, 7.0-1, Experimental\r\n\r\n## I confirm:\r\n- [ * ] that I haven't found an existing compatibility report for this game.\r\n- [ * ] that I have checked whether there are updates for my system available.\r\n\r\nApplication log attached: [steam-611500.log.gz](https://github.com/ValveSoftware/Proton/files/8358614/steam-611500.log.gz)\r\n\r\n## Symptoms\r\n- The game doesn't start\r\n- If started with Proton 6.3-8, the game starts loading while briefly showing black screen...then returns to the desktop.\r\n- If started with Proton 7.0-1 or Experimental, the game starts to load, then shows Quake Champions logo on black background - my screen blinks, and that is it....back to desktop\r\n- Started past 2022-03-24 Quake Champions update, which introduced upgraded AntiCheat protection\r\n\r\n\r\n## Reproduction\r\nStart the game (**launch options:** `__GL_SHADER_DISK_CACHE=1 __GL_THREADED_OPTIMIZATION=1 PROTON_NO_GLSL=1 PROTON_ENABLE_NVAPI=1 VSYNC=0 PROTON_NO_ESYNC=1 WINEFSYNC=1 PROTON_NO_FSYNC=0 DXVK_ASYNC=1 ENABLE_VKBASALT=1 VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json %command%` )\r\n\r\nFYI: The same symptoms are with Quake Champions PTS.",
+    "symptom_summary": "用户报告称《Quake Champions》无法启动，尝试使用不同版本的Proton时，游戏在加载时出现黑屏或显示游戏logo后返回桌面。 \n\nTags: Game Won't Start, Black Screen, Desktop Return, Loading Issues",
+    "tags": [
+      "Launch Failure",
+      "Anti-cheat Issue",
+      "Black Screen"
+    ]
+  },
+  {
+    "issue_number": 7594,
+    "issue_title": "Plain Sight (49900)",
+    "id": 2203027238,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Plain Sight\r\n- Steam AppID of the game: 49900\r\n\r\n## System Information\r\n- GPU: intel hd 3000\r\n- Video driver version: Mesa 23.3.6-1/ LLVM 17.0.6-3\r\n- Kernel version: 6.7.9\r\n- Link to full system information report as [Gist](https://gist.github.com/): [report](https://gist.github.com/iodream/21f587c827e63400f174b3e3b084bd5a)\r\n- Proton version: 1711103557 experimental-bleeding-edge-9.0-87026-20240322-pc5407b-we37b544-d28c7c0-v21008d\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\nProton log: [steam-49900.log](https://github.com/ValveSoftware/Proton/files/14726674/steam-49900.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame hangs while loading level. Also tried Proton 9 with same results.\r\nI seem to remember the last working Proton version was Proton 5.13 but only with `protontricks xna31` applied and this no longer works(installer fails)    \r\n\r\n## Reproduction\r\n1. Start Plain sight\r\n2. Click LAN only\r\n3. Click Practice\r\n4. Select Arena \r\n5. Press start\r\n\r\nObserved result: Game freezes\r\nExpected result: game doesn't freeze",
+    "symptom_summary": "用户在加载关卡时遇到游戏卡顿的问题，游戏在尝试进入练习模式时会冻结。 \n\nTags: Game Freezes, Loading Issues, Compatibility Problems",
+    "tags": [
+      "Freeze"
+    ]
+  },
+  {
+    "issue_number": 4686,
+    "issue_title": "Rhythm Doctor (774181)",
+    "id": 837165677,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Rhythm Doctor\r\n- Steam AppID of the game: 774181\r\n\r\n## System Information\r\n- GPU: RTX 2070\r\n- Driver/LLVM version: nvidia 460.56\r\n- Kernel version: 5.11.6\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/huantianad/cababa6f9e4fa55a791b98890e037933\r\n- Proton version: 5.13-6 (also happens on experimental-5.13-20210311)\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and drag\r\nand drop the generated `$HOME/steam-$APPID.log` into this issue report -->\r\n[steam-774181.log](https://github.com/ValveSoftware/Proton/files/6178199/steam-774181.log)\r\nAlso the game log, might be helpful: [Player.log](https://github.com/ValveSoftware/Proton/files/6178200/Player.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nThe game has a mechanic where the game goes out of fullscreen and moves its own window around the desktop. This mostly works fine; however, when the game attempts to move off my monitor (to create a screen wrap type of effect), it seems to be \"blocked\" by the edge of my monitor, and isn't allowed to be partially allowed off my screen. (I'm using KDE Plasma 5.21.3)\r\n\r\n## Reproduction\r\n1. Launch the game, and either enter an official level with window dance (i.e. 2-X, 4-1N).\r\n2. Play the level, and observe the window movement when it attempts to wrap around the screen or go off the screen.\r\n(this can also be observed with custom levels with window dance, you can reproduce it with a simple \"wrap\" event)\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->",
+    "symptom_summary": "用户在游戏《Rhythm Doctor》中遇到的问题是，游戏在尝试将窗口移动到屏幕边缘以创建屏幕包裹效果时，被监视器边缘阻挡，无法部分移出屏幕。 \n\nTags: Window Movement, Screen Edge Block, Fullscreen Issues",
+    "tags": [
+      "Graphic  / Rendering Issue"
+    ]
+  },
+  {
+    "issue_number": 5613,
+    "issue_title": "Elden Ring (1245620)",
+    "id": 1369299844,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Elden Ring\r\n- Steam AppID of the game: 432247\r\n\r\n## System Information\r\n- GPU: AMD Radeon RX 6700 XT\r\n- Driver/LLVM version: AMD AMD Radeon RX 6700 XT (navi22, LLVM 14.0.6, DRM 3.49, 6.1.1-arch1-1)\r\n- 4.6 (Compatibility Profile) Mesa 22.3.1\r\n- Kernel version:  6.1.1-arch1-1\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/Nicknakin/a3688355a4662b4bb93c09767d23527c\r\n- Proton version: Proton Experimental (2023/1/2)\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nGame crashes after loading window pops up\r\n\r\n## Reproduction\r\n\r\nJust clicking the play button\r\n\r\n\r\n[steam-1245620.log](https://github.com/ValveSoftware/Proton/files/10333897/steam-1245620.log)\r\n",
+    "symptom_summary": "用户在启动《Elden Ring》时，加载窗口弹出后游戏崩溃。 \n\nTags: Crash, Loading Issues, Game Launch Failure",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 7163,
+    "issue_title": "Demonicon (appid 215630)",
+    "id": 1938325968,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Demonicon\r\n- Steam AppID of the game: 215630\r\n\r\n## System Information\r\n- GPU: <!-- e.g. RX 580 or GTX 970 --> Radeon RX 7900 XTX\r\n- Video driver version: <!-- e.g. Mesa 18.2 or nvidia 396.54 --> Mesa 23.2.1\r\n- Kernel version: <!-- e.g. 4.17 --> 6.6.0-rc5-273-tkg-eevdf\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/Patola/5b0f3d30bfdbf276b183d32f997c8500\r\n- Proton version: 8.0-4\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nGame doesn't start\r\n\r\n## Reproduction\r\n\r\nPress PLAY.\r\n\r\n[steam-215630.log](https://github.com/ValveSoftware/Proton/files/12872896/steam-215630.log)\r\n\r\nNote: previously I had a problem with various games where I couldn't start games because of amdgpu-pro and amdgpu installed at the same time, which I resolved by settings the VK_ICD_FILENAMES variable to point only to amdgpu. I find it odd that proton.log has these lines:\r\n```\r\ninfo:  Required Vulkan extension VK_KHR_surface not supported\r\n147363.841:0124:0128:trace:seh:raise (22)\r\nterminate called after throwing an instance of 'dxvk::DxvkError'\r\n```\r\neven though `vulkaninfo` tells me that my GPU supports this vulkan extension.",
+    "symptom_summary": "用户遇到的问题是游戏无法启动。  \n\nTags: Game Crash, Launch Issue, Vulkan Error",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 8487,
+    "issue_title": "Stars Reach Playtest (3361750)",
+    "id": 2887949589,
+    "compatibility_report": "# Compatibility Report\n- Name of the game with compatibility issues: Stars Reach Playtest\n- Steam AppID of the game: 3361750\n\n## System Information\n- GPU: GTX 1060 6G\n- Video driver version: 550.144.03\n- Kernel version: 6.13.1-2-MANJARO\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/ChrisClems/d8a052597718ed43a389b36d79c8fdb0\n- Proton version: 9.0-4\n\n## I confirm:\n- [ X ] that I haven't found an existing compatibility report for this game.\n- [ X ] that I have checked whether there are updates for my system available.\n\n[steam-3361750.log](https://github.com/user-attachments/files/19032485/steam-3361750.log)\n\n## Symptoms\n\nOn Proton 9, game crashes to desktop as soon as the game world loads. There is what appears to be a Unity crash report dialog that pops up momentarily until the game closes. Proton <9 hangs at \"Logging in...\" and never loads the character select menu.\n\n## Reproduction\n\nHappens predictably on Proton 9, Proton GE 9, and Proton Experimental. Happens on both the Dx and Vulcan renderers.\n\nIn the game Discord I managed to find a report from someone who is running it with no issues. They claim to have not forced any specific Proton version. They were running CachyOS with the current kernel. Open source AMD drivers.  Running under Wayland and KDE Plasma.\n",
+    "symptom_summary": "用户在使用Proton 9时，游戏在加载游戏世界后崩溃到桌面，并出现Unity崩溃报告对话框。使用Proton 9以下版本时，游戏在“登录中...”停滞不前，无法加载角色选择菜单。\n\nTag suggestions: Crash, Desktop Exit, Hang, Loading Issue",
+    "tags": [
+      "Loading/Saving Crash",
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 6394,
+    "issue_title": "Marvel's Midnight Suns (368260)",
+    "id": 1501265496,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Marvel's Midnight Suns\r\n- Steam AppID of the game: 368260\r\n\r\n## System Information\r\n- Steam Deck \r\n- Steam OS Stable, Latest Version\r\n- Proton version: 7.0.5, Experimental\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n\r\n## Symptoms \r\n> **Crashes on end of day**.\r\nThe game runs on a day by day cycle where after every mission you go to bed and change days. Whenever you try to go to sleep, it hard crashes freezing the deck and requiring power cycling.\r\n\r\n> **Crashes on loading saves**\r\n\r\n> **Crashes on manually saving**\r\n\r\n>**Save file paths move around preventing syncing**\r\nGame moves save file paths move around constantly for seemingly no reason when tweaks are made.\r\nHOWEVER I BELIEVE THIS IS A DEV PROBLEM. I just mention it to be thorough.\r\n\r\n\r\n--\r\nPeople are reporting contradictory fixes which seem to work for some including forcing dx11 or pining the clocks at 1400mhz, but in general, for most, the game is too unstable to be playable. It's a shame since it works fine in between crashes. It's a stability problem, not so much a performance one, though its not great either.\r\n\r\n\r\n\r\n## Reproduction\r\nEnd of day crash: Finish a mission and send the player character to sleep\r\nCrash on loading/saving: Can happen when doing either. Inconsistent\r\n\r\n-->\r\n",
+    "symptom_summary": "用户在玩《Marvel's Midnight Suns》时遇到以下问题：游戏在结束一天时崩溃，导致设备冻结并需要强制重启；加载保存文件和手动保存时也会崩溃；保存文件路径不稳定，影响同步。 \n\nTag suggestions: \n- Crashes\n- Freezes\n- Save Issues\n- Stability Problems",
+    "tags": [
+      "In-game Crash",
+      "Loading/Saving Crash",
+      "Network / Sync Issue"
+    ]
+  },
+  {
+    "issue_number": 5472,
+    "issue_title": "DarkStar One (12330)",
+    "id": 1092035790,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Darkstar One\r\n- Steam AppID of the game: 12330\r\n\r\n## System Information\r\n- GPU: Gigabyte GeForce GTX 1070 Ti\r\n- Driver/LLVM version: nvidia v: 495.46\r\n- Kernel version: 5.15.11-230-tkg-pds\r\n- Link to full system information report as [Gist](https://gist.github.com/kekonn/827fa8a2b85f483b5c47c1e6a729440b)\r\n- Proton version: 1640116296 experimental-6.3-20211221\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n[steam-12330.log](https://github.com/ValveSoftware/Proton/files/7799231/steam-12330.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\n* During installation the DirectX installer crashes\r\n* During startup, a quick flash to a black screen, after which the game's error reporting dialog appears.\r\n\r\n## Reproduction\r\n\r\n1. Install the game\r\n2. Try to run it\r\n",
+    "symptom_summary": "用户在玩《太空工程师》时，游戏会随机崩溃，崩溃时间不定，可能在5分钟或5小时后发生。每次崩溃后，Proton会在/tmp/proton_crashreports/中留下崩溃报告，报告显示可能与faudio和/或SDL2有关。\n\n**Tags:** Crashes, Random crashes, Faudio issues, SDL2 issues",
+    "tags": [
+      "Installation Failure",
+      "Black Screen",
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 5950,
+    "issue_title": "Weed Shop 3 (1182110)",
+    "id": 1290813168,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Weed Shop 3\r\n- Steam AppID of the game: 1182110\r\n\r\n## System Information\r\n- GPU: RTX 3070 TI\r\n- Driver/LLVM version: 4.6.0 NVIDIA 510.68.02\r\n- Kernel version: 5.18.8-200.fc36.x86_64\r\n- Link to full system information report as [Gist](https://gist.github.com/Element21/a679c0cb7b10c90ba42c5b8087a62184):\r\n- Proton version: Experimental\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this ga\r\n[steam-1182110.log](https://github.com/ValveSoftware/Proton/files/9024526/steam-1182110.log)\r\nme.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms\r\nGame crashes when opening the \"pause\" menu or interact with the in-game computer after seemingly random actions\r\n\r\n## Reproduction\r\nThis seems to happen randomly, but has something to do with opening the \"pause\" menu by pressing escape, or by exiting the in-game computer by pressing escape",
+    "symptom_summary": "用户在打开“暂停”菜单或与游戏内计算机互动时，游戏会崩溃，崩溃似乎与随机操作有关。 \n\nTags: Crash, Menu Issues, Interaction Problems",
+    "tags": [
+      "In-game Crash"
+    ]
+  }
+]

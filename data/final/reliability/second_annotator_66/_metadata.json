@@ -1,0 +1,50 @@
+{
+  "total_items": 66,
+  "total_annotated": 66,
+  "chunk_size": 10,
+  "num_chunks": 7,
+  "exported_at": "2026-06-21T04:41:18.122Z",
+  "resolution_counts": {
+    "with_observed_fix": 27,
+    "no_observed_fix": 39
+  },
+  "fix_pattern_tags": [
+    "(system side) supply missing capability",
+    "(proton side) fix internal defect",
+    "(system side) fix internal defect",
+    "(system side) disable / skip component",
+    "(game side) fix internal defect",
+    "(proton side) spoof identity",
+    "(proton side) substitute component",
+    "(proton side) override / force parameter",
+    "(proton side) supply missing capability",
+    "(system side) change component version",
+    "(system side) unknown",
+    "(proton side) disable / skip component",
+    "(system side) override / force parameter"
+  ],
+  "fix_management_tags": [
+    "server-side asset/config",
+    "unknown",
+    "discussion-only",
+    "inline per-game hardcode",
+    "Community toolkit pre-game fix",
+    "generic upstream code change",
+    "centralized per-game profile"
+  ],
+  "fix_submodule_tags": [
+    "steam-client",
+    "wine",
+    "(system side) Mesa driver",
+    "(system side) hardware/firmware",
+    "proton (launcher script)",
+    "gstreamer",
+    "dxvk",
+    "(game side) unknown",
+    "vkd3d",
+    "(system side) Nvidia Driver",
+    "vrclient",
+    "unknown",
+    "vkd3d-proton"
+  ]
+}

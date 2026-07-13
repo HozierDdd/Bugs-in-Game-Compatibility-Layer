@@ -1,0 +1,162 @@
+[
+  {
+    "record_id": "protondb:206535",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 158079,
+    "app_id": "601360",
+    "title": "Portal: Revolution",
+    "created_at": "2024-01-14T11:03:30Z",
+    "text": "[metadata]\napp.steam.appId: 601360\napp.title: Portal: Revolution\ntimestamp: 1705230210\n\n[systemInfo]\ncpu: 12th Gen Intel Core i5-12600K\ngpu: AMD Radeon RX 7900 XT (radeonsi, navi31, LLVM 16.0.6, DRM 3.54, 6.6.10-zen1-1-zen)\ngpuDriver: 4.6 Mesa 23.3.3-arch1.1\nkernel: 6.6.10-zen1-1-zen\nos: EndeavourOS Linux\nram: 32 GB\nsteamRuntimeVersion: steam-runtime_0.20231127.68515\nxWindowManager: wlroots wm\n\n[responses]\nanswerToWhatGame: 601360\naudioFaults: no\nconcludingNotes: Running the game through proton instead of the native version fixed the issue for me.\ncustomProtonVersion: GE-Proton8-27\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlaunchOptions: gamemoderun MANGOHUD=1 %command%\nlauncher: steam\nnotes.significantBugs: Running the native version lead to frequent crashes while handling fluids in portals\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: yes\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: ge\nverdict: yes\nverdictOob: no\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 206535,
+      "timestamp": 1705230210,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_16",
+    "calibration_group_index": 16,
+    "calibration_group_position": 1
+  },
+  {
+    "record_id": "protondb:156208",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 107752,
+    "app_id": "1138970",
+    "title": "Dandy Dungeon - Legend of Brave Yamada -",
+    "created_at": "2022-12-29T23:02:35Z",
+    "text": "[metadata]\napp.steam.appId: 1138970\napp.title: Dandy Dungeon - Legend of Brave Yamada -\ntimestamp: 1672354955\n\n[systemInfo]\ncpu: AMD Custom APU 0405\ngpu: AMD Custom GPU 0405 (vangogh, LLVM 13.0.0, DRM 3.45, 5.13.0-valve10.1-1-neptune-02144-g7fffaf925dfb)\ngpuDriver: 4.6 Mesa 22.0.0-devel (git-676ccacebc)\nkernel: 5.13.0-valve10.1-1-neptune-02144-g7fffaf925dfb\nos: SteamOS Holo\nram: 15 GB\n\n[responses]\nanswerToWhatGame: 1138970\naudioFaults: no\nbatteryPerformance: yes\ndidChangeControlLayout: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.batteryPerformance: TDP Limit (3W)\nnotes.verdict: Runs perfectly, as if it were native.\nopens: yes\nperformanceFaults: no\nreadability: no\nsaveGameFaults: no\nsecondaryLauncher: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 156208,
+      "timestamp": 1672354955,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_16",
+    "calibration_group_index": 16,
+    "calibration_group_position": 2
+  },
+  {
+    "record_id": "protondb:121670",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 73214,
+    "app_id": "3830",
+    "title": "Psychonauts",
+    "created_at": "2022-05-26T14:42:04Z",
+    "text": "[metadata]\napp.steam.appId: 3830\napp.title: Psychonauts\ntimestamp: 1653576124\n\n[systemInfo]\ncpu: 11th Gen Intel Core i7-1165G7 @ 2.80GHz\ngpu: NVIDIA GeForce MX450\ngpuDriver: NVIDIA 510.73.05\nkernel: 5.17.9-1-MANJARO\nos: Manjaro Linux\nram: 8 GB\n\n[responses]\nanswerToWhatGame: 3830\naudioFaults: no\nconcludingNotes: Don't use native. Controller support isn't the best on there. The controller only worked using ProtonGE 5.4, on higher versions, the debug message. Force Proton 5.13 or Proton GE 5.4. by GloriousEggroll. Controller works after rebinding everything after each reboot. Keep that in mind if you want to use a controller. After reconfiguring it, it works fine. A few stutters, but probably because of shaders. Got better with time but really not a lot of hick ups.\ncustomizationsUsed.configChange: True\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlaunchOptions: PROTON_USE_WINE3D=1 WINEDLLOVERRIDES=\"dinput8=n,b\" %command%\nlauncher: steam\nnotes.customizationsUsed: I added the widescreen patch from  ThirteenAG: https://github.com/ThirteenAG/WidescreenFixesPack/releases/tag/psychonauts\nThis allows widescreen without the streched hud and FMVs.\nThat is why the dll overide is necesarry. Just copy it to the root of the game, the dinput.dll and dinput.ini and it just works.\nnotes.verdict: Absolutely, fun game, works well after using proton and widescreen patch. :D\nopens: yes\nperformanceFaults: no\nprotonVersion: 5.13-3\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: older\nverdict: yes\nverdictOob: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 121670,
+      "timestamp": 1653576124,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_16",
+    "calibration_group_index": 16,
+    "calibration_group_position": 3
+  },
+  {
+    "record_id": "protondb:63706",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 15250,
+    "app_id": "42990",
+    "title": "Sword of the Stars II: Enhanced Edition",
+    "created_at": "2021-06-12T10:16:33Z",
+    "text": "[metadata]\napp.steam.appId: 42990\napp.title: Sword of the Stars II: Enhanced Edition\ntimestamp: 1623492993\n\n[systemInfo]\ncpu: Intel Core i7-6700K @ 4.00GHz\ngpu: NVIDIA NVIDIA GeForce GTX 1060 6GB\ngpuDriver: NVIDIA 465.31\nkernel: 5.12.6-200.fc33.x86_64\nos: Linux 5.x\nram: 16 GB\n\n[responses]\nanswerToWhatGame: 42990\naudioFaults: no\ncustomizationsUsed.protontricks: True\ncustomizationsUsed.winetricks: True\nduration: moreThanTenHours\nextra: yes\nfollowUp.stabilityFaults: occasionally\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nisImpactedByAntiCheat: no\nisMultiplayerImportant: no\nlaunchFlagsUsed.disableD3d10: True\nlaunchFlagsUsed.disableD3d11: True\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.customizationsUsed: Did a manual install of dx10 (june 2010 redist). Installed msxml3, msxml6, xact_x64, wininet, corefonts.\n\nI went into sots2/bin/x86/sots2.exe.config. Edited contents to desired values (all values false except windowed and windowed fullscreen. Set resolution to 1920x1080). Copied all contents after editing. PROTON_PREFIX/users/steamuser/local settings/application data/kerberos productions/sots2_exeLots of semirandom characters/user.config. Pasted contents there. Then set the user.config file to be able to be executed and all perms to readonly.\nnotes.extra: Optional: Go to winetricks, winecfg. Set all DX10 and DX11 related dll's to builtin, then native.\n\nIt took me quite some experimentation to find exactly what was causing issues, as I was getting both DX10 and xml related errors. So I took a bit of a bruteforce and whackjob approach, and started flipping values on whatever could be related.\n\nMy earlier report was on arch with vastly outdated deps and libraries. This is now on Fedora 34, so should be a bit more applicable to other people.\n\n\nOPTIONAL EXTRA DEBUGGING OF ISSUES: PROTON_PREFIX/users/steamuser/local settings/application/SOTS2/log can contain some info, but I found it to be utterly useless. Alternatively: Load the sots2.exe or mars.exe (if you edited the config accordingly) into lutris, and set it's wine prefix to the proton prefix being used for SOTS2 (steamapps/compatdata/42990/pfx). Then enable debug output on lutris. That is what partially enabled me to tackle the issues.\n\nnotes.launchFlagsUsed: This enables you to reach the main menu without it crashing on the splash screen.\nnotes.significantBugs: Game config can not be adjusted using the launcher.\nnotes.stabilityFaults: Occasional crashes during combat.\nnotes.verdict: The game runs fine, but the tinkering can be a major hurdle.\nonlineMultiplayerAttempted: no\nopens: yes\nperformanceFaults: no\nprotonVersion: 6.3-4\nsaveGameFaults: no\nsignificantBugs: yes\nstabilityFaults: yes\nstartsPlay: yes\ntype: tinker\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 63706,
+      "timestamp": 1623492993,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_16",
+    "calibration_group_index": 16,
+    "calibration_group_position": 4
+  },
+  {
+    "record_id": "protondb:186858",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 138402,
+    "app_id": "39690",
+    "title": "ArcaniA",
+    "created_at": "2023-08-21T10:23:59Z",
+    "text": "[metadata]\napp.steam.appId: 39690\napp.title: ArcaniA\ntimestamp: 1692613439\n\n[systemInfo]\ncpu: AMD Ryzen 7 1700 Eight-Core\ngpu: AMD Radeon RX 6900 XT (navi21, LLVM 15.0.7, DRM 3.49, 6.2.0-2-rt3-MANJARO)\ngpuDriver: 4.6 Mesa 23.0.4\nkernel: 6.2.0-2-rt3-MANJARO\nos: Manjaro Linux\nram: 16 GB\n\n[responses]\nanswerToWhatGame: 39690\naudioFaults: no\ncustomizationsUsed.configChange: True\nfollowUp.graphicalFaults.minorArtifacts: True\ngraphicalFaults: yes\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.customizationsUsed: Game crashes because of missing files `shine_glowing.wmv` and `shine_turning.wmv` . This two files are being used for UI modals. So to fix it:\n\n\n1. Right click \"Arcania\" and select \"Properties...\"\n2. Go to tab \"Installed Files\"\n3. Click button \"Browse...\"\n4. Go to folder \"Data/Video\"\n5. Make two copys of a small file like `B_ShadowBeast.wmv` to `B_ShadowBeast (Copy).wmv`, `B_ShadowBeast (Copy 2).wmv`\n6. Rename the `B_ShadowBeast (Copy).wmv` to `shine_glowing.wmv` and rename the second copy from `B_ShadowBeast (Copy 2).wmv` to `shine_turning.wmv` \n7. Play game\n\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: official\nverdict: yes\nverdictOob: no\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 186858,
+      "timestamp": 1692613439,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_16",
+    "calibration_group_index": 16,
+    "calibration_group_position": 5
+  }
+]

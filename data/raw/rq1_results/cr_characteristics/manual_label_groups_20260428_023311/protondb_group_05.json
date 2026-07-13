@@ -1,0 +1,162 @@
+[
+  {
+    "record_id": "protondb:59986",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 11530,
+    "app_id": "460810",
+    "title": "Vanquish",
+    "created_at": "2021-05-02T17:10:31Z",
+    "text": "[metadata]\napp.steam.appId: 460810\napp.title: Vanquish\ntimestamp: 1619975431\n\n[systemInfo]\ncpu: AMD Ryzen 5 1600 Six-Core\ngpu: AMD Radeon RX Vega (VEGA10, DRM 3.40.0, 5.11.16-arch1-1, LLVM 11.1.0)\ngpuDriver: 4.6 Mesa 21.0.3\nkernel: 5.11.16-arch1-1\nos: Arch Linux\nram: 32 GB\n\n[responses]\nanswerToWhatGame: 460810\naudioFaults: no\nduration: lessThanFifteenMinutes\nextra: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nnotes.verdict: Runs like a champ on proton experimental\nopens: yes\nperformanceFaults: no\nprotonVersion: Default\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntype: steamPlay\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 59986,
+      "timestamp": 1619975431,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_05",
+    "calibration_group_index": 5,
+    "calibration_group_position": 1
+  },
+  {
+    "record_id": "protondb:278945",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 230489,
+    "app_id": "3159330",
+    "title": "Assassin’s Creed Shadows",
+    "created_at": "2025-03-21T19:53:11Z",
+    "text": "[metadata]\napp.steam.appId: 3159330\napp.title: Assassin’s Creed Shadows\ntimestamp: 1742586791\n\n[systemInfo]\ncpu: AMD Ryzen 7 5800X 8-Core\ngpu: NVIDIA GeForce RTX 4080\ngpuDriver: NVIDIA 570.124.04\nkernel: 6.13.7-arch1-1\nos: EndeavourOS Linux\nram: 32 GB\nsteamRuntimeVersion: steam-runtime_0.20241127.109674\nxWindowManager: GNOME Shell\n\n[responses]\nanswerToWhatGame: 3159330\naudioFaults: no\nconcludingNotes: Until we get driver support for the game you have to use pyroveil to get past the main menu.\ncustomProtonVersion: GE-Proton9-26\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlaunchOptions: PYROVEIL=1 PYROVEIL_CONFIG=/home/jann/games/tools/pyroveil/hacks/ac-shadows-nvidia-570-stable/pyroveil.json gamemoderun %command%\nlauncher: steam\nnotes.verdict: Works flawless on nvidia with pyroveil fix\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: ge\nverdict: yes\nverdictOob: no\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 278945,
+      "timestamp": 1742586791,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_05",
+    "calibration_group_index": 5,
+    "calibration_group_position": 2
+  },
+  {
+    "record_id": "protondb:310266",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 261810,
+    "app_id": "3224770",
+    "title": "Umamusume: Pretty Derby",
+    "created_at": "2025-09-07T17:02:55Z",
+    "text": "[metadata]\napp.steam.appId: 3224770\napp.title: Umamusume: Pretty Derby\ntimestamp: 1757264575\n\n[systemInfo]\ncpu: Intel Core i5-6400 @ 2.70GHz\ngpu: Intel Mesa Intel HD 530 (SKL GT2)\ngpuDriver: 4.6 Mesa 25.1.7\nkernel: 6.12.11-200.fc41.x86_64\nos: Fedora Linux 42 (Adams)\nram: 8 GB\nsteamRuntimeVersion: steam-runtime_1.0.20250519.130917\nxWindowManager: bspwm\n\n[responses]\nanswerToWhatGame: 3224770\ncustomProtonVersion: GE-Proton10-15\ncustomizationsUsed.protontricks: True\ninstalls: yes\nlauncher: steam\nnotes.concludingNotes: Tried different flags and protons, it always flickers in a way that is a literal seizure hazard making it unplayable. For context, I'm using BSPWM, a tiling window manager.\nnotes.customizationsUsed: tried launching game with PROTON_USE_WINED3D flag\nnotes.verdict: Game launches, but constantly flickers regardless of settings\nopens: yes\nstartsPlay: no\nvariant: ge\nverdict: no",
+    "metadata": {
+      "raw_index": 310266,
+      "timestamp": 1757264575,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_05",
+    "calibration_group_index": 5,
+    "calibration_group_position": 3
+  },
+  {
+    "record_id": "protondb:240660",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 192204,
+    "app_id": "2332260",
+    "title": "Feed the Deep",
+    "created_at": "2024-08-19T20:37:49Z",
+    "text": "[metadata]\napp.steam.appId: 2332260\napp.title: Feed the Deep\ntimestamp: 1724099869\n\n[systemInfo]\ncpu: AMD Custom APU 0405\ngpu: AMD Custom GPU 0405 (vangogh, LLVM 14.0.6, DRM 3.45, 5.13.0-valve36-1-neptune)\ngpuDriver: 4.6 (Compatibility Profile) Mesa 22.2.0 (git-17e5312102)\nkernel: 5.13.0-valve36-1-neptune\nos: SteamOS Holo\nram: 15 GB\nsteamRuntimeVersion: steam-runtime_0.20230509.49499\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 2332260\naudioFaults: no\nbatteryPerformance: no\nconcludingNotes: Run perfectly fine on the Steam Deck. This should be a Verified title.\ndidChangeControlLayout: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.verdict: Great game. Runs at 60fps on the deck.\nopens: yes\nperformanceFaults: no\nreadability: no\nsaveGameFaults: no\nsecondaryLauncher: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 240660,
+      "timestamp": 1724099869,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_05",
+    "calibration_group_index": 5,
+    "calibration_group_position": 4
+  },
+  {
+    "record_id": "protondb:51602",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 3146,
+    "app_id": "361420",
+    "title": "ASTRONEER",
+    "created_at": "2021-01-30T03:04:27Z",
+    "text": "[metadata]\napp.steam.appId: 361420\napp.title: ASTRONEER\ntimestamp: 1611975867\n\n[systemInfo]\ncpu: Intel Core i7-7700HQ @ 2.80GHz\ngpu: NVIDIA GeForce GTX 1060\ngpuDriver: NVIDIA 455.38\nkernel: 5.8.0-7630-generic\nos: Pop!_OS 20.04 LTS\nram: 32 GB\n\n[responses]\nanswerToWhatGame: 361420\ninstalls: yes\nnotes.verdict: Doesn't run after 1.18 update.\nopens: no\nprotonVersion: Default\ntype: steamPlay\nverdict: no",
+    "metadata": {
+      "raw_index": 51602,
+      "timestamp": 1611975867,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_05",
+    "calibration_group_index": 5,
+    "calibration_group_position": 5
+  }
+]

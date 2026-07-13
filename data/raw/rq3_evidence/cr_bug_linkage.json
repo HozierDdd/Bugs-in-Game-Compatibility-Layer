@@ -1,0 +1,6493 @@
+[
+  {
+    "issue_number": 9287,
+    "appid": "2070270",
+    "title": "Cloudheim (2070270)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Startup Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5511,
+    "appid": "1593500",
+    "title": "God of War (1593500)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7955,
+    "appid": "1594320",
+    "title": "Captain of Industry (1594320)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "UI Issues"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8727,
+    "appid": "1771300",
+    "title": "Kingdom Come: Deliverance II (1771300)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Black Screen",
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6910,
+    "appid": "2108330",
+    "title": "F1 23 (2108330)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7644,
+    "appid": "1769320",
+    "title": "Athanasy (1769320)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5402,
+    "appid": "15950",
+    "title": "Reaxxion (15950)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4636,
+    "appid": "1382330",
+    "title": "Persona 5 Strikers (1382330)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "graphics",
+    "linked_commits": [
+      {
+        "repo": "doitsujin/dxvk",
+        "pr": "2516",
+        "universe": "graphics"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6577,
+    "appid": "1324130",
+    "title": "Stranded: Alien Dawn (1324130)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8770,
+    "appid": "3508140",
+    "title": "Worldwide Rush Demo (3508140)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6288,
+    "appid": "1953520",
+    "title": "WRC Generations – The FIA WRC Official Game (1953520)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "A",
+    "routing_universe": "wine",
+    "linked_commits": [
+      {
+        "repo": "ValveSoftware/wine",
+        "sha": "6de51bc22e5bd220ba79cbfae052b08abc4289d2",
+        "universe": "wine"
+      },
+      {
+        "repo": "ValveSoftware/wine",
+        "sha": "d597979ccafc1438f009cf9c403ed9b352c7f0f1",
+        "universe": "wine"
+      },
+      {
+        "repo": "HansKristian-Work/vkd3d-proton",
+        "pr": "1458",
+        "universe": "graphics"
+      },
+      {
+        "repo": "HansKristian-Work/vkd3d-proton",
+        "pr": "1484",
+        "universe": "graphics"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4608,
+    "appid": "1364390",
+    "title": "Animaze by FaceRig (1364390)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Installation Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7574,
+    "appid": "2707900",
+    "title": "NIGHT-RUNNERS™ PROLOGUE (2707900)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5378,
+    "appid": "1372280",
+    "title": "Melty Blood: Type Lumina (1372280)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "quartz",
+      "lsteamclient"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6718,
+    "appid": "268850",
+    "title": "EVGA Precision X1 (268850)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5310,
+    "appid": "1178830",
+    "title": "Bright Memory: Infinite (1178830)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue",
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6822,
+    "appid": "482400",
+    "title": "System Shock (482400)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8585,
+    "appid": "2531310",
+    "title": "The Last of Us™ Part II Remastered (2531310)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Audio Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6023,
+    "appid": "397540",
+    "title": "Borderlands 3 (397540) not launching",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure",
+      "Network / Sync Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5197,
+    "appid": "1760770",
+    "title": "Crystal Project Demo (1760770)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7026,
+    "appid": "1194810",
+    "title": "Meet Your Maker (1194810)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "DXVK",
+      "vkd3d-proton",
+      "d3d11",
+      "d3d12",
+      "shader",
+      "amd/radv"
+    ],
+    "symptom_tags": [
+      "Startup Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6595,
+    "appid": "1448440",
+    "title": "Wo Long: Fallen Dynasty (1448440)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "media foundation / wmf",
+      "video"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue",
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6585,
+    "appid": "22120",
+    "title": "Penumbra: Black Plague Gold Edition (22120)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure",
+      "Black Screen",
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7859,
+    "appid": "2556990",
+    "title": "Beyond Good & Evil - 20th Anniversary Edition (2556990)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6505,
+    "appid": "699130",
+    "title": "World War Z: Aftermath (699130)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "DXVK",
+      "vulkan"
+    ],
+    "symptom_tags": [
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5235,
+    "appid": "753640",
+    "title": "Outer Wilds (753640)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6017,
+    "appid": "1332010",
+    "title": "Stray (1332010)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5145,
+    "appid": "1124300",
+    "title": "Humankind (1124300)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "video"
+    ],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5491,
+    "appid": "225540",
+    "title": "Just Cause 3 stuttering with Proton 6.3-8",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Stutter"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6489,
+    "appid": "1336490",
+    "title": "Against the Storm (1336490)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5007,
+    "appid": "754530",
+    "title": "IL-2 Sturmovik: Cliffs of Dover Blitz Edition (754530)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6817,
+    "appid": "1364780",
+    "title": "Street Fighter 6 (1364780)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "d3d12",
+      "vulkan"
+    ],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6060,
+    "appid": "580",
+    "title": "Viva piñata",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launcher / Verification Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7590,
+    "appid": "2420110",
+    "title": "Horizon Forbidden West (2420110)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Shader Compilation Issue",
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5047,
+    "appid": "1238840",
+    "title": "Battlefield 1 (1238840)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "UI Issues"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9166,
+    "appid": "394550",
+    "title": "Gunman Clive 2 (394550)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Shader Compilation Issue",
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5806,
+    "appid": "674140",
+    "title": "Bugsnax (674140)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4792,
+    "appid": "206020",
+    "title": "Avernum 4 (206020)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "A",
+    "routing_universe": "unknown",
+    "linked_commits": [
+      {
+        "repo": "archlinux/svntogit-packages",
+        "sha": "db92b6b3fc82f9e474f5663b782a2f990bdbf1b1",
+        "universe": "unknown"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6795,
+    "appid": "2005010",
+    "title": "Warhammer 40,000: Boltgun (2005010)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "dinput/xinput",
+      "controller/input"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7394,
+    "appid": "2131640",
+    "title": "METAL GEAR SOLID 2: Sons of Liberty - Master Collection Version (2131640)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash",
+      "Memory Leak",
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6817,
+    "appid": "1364780",
+    "title": "Street Fighter 6 (1364780)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "A",
+    "routing_universe": "graphics",
+    "linked_commits": [
+      {
+        "repo": "HansKristian-Work/vkd3d-proton",
+        "pr": "1647",
+        "universe": "graphics"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "d3d12",
+      "vulkan"
+    ],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5613,
+    "appid": "1245620",
+    "title": "Elden Ring (1245620)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "anti-cheat"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8767,
+    "appid": "1608450",
+    "title": "Hellslave (1608450)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Input Lag"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8296,
+    "appid": "2694490",
+    "title": "Path of Exile 2 (2694490)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "graphics",
+    "linked_commits": [
+      {
+        "repo": "HansKristian-Work/vkd3d-proton",
+        "pr": "2262",
+        "universe": "graphics"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Others"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6723,
+    "appid": "1716120",
+    "title": "Monster Rancher 1 & 2 DX (1716120)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launcher / Verification Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9026,
+    "appid": "3919760",
+    "title": "Anno 117: Pax Romana Demo (3919760)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6736,
+    "appid": "820520",
+    "title": "Deceive Inc. (820520)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Game Feature Missing"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6738,
+    "appid": "1313140",
+    "title": "Cult of the Lamb (1313140)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5434,
+    "appid": "552990",
+    "title": "World of Warships not launching",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7453,
+    "appid": "1284190",
+    "title": "The Planet Crafter (1284190)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9246,
+    "appid": "409320",
+    "title": "Syndrome (409320)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5102,
+    "appid": "252950",
+    "title": "Errno 22 Invalid argument with vrclient.dll and proton 6.3-6 ",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9302,
+    "appid": "3470360",
+    "title": "Gunz the duel (3470360)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launcher / Verification Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8255,
+    "appid": "2537590",
+    "title": "Microsoft Flight Simulator 2024 (2537590)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "A",
+    "routing_universe": "graphics",
+    "linked_commits": [
+      {
+        "repo": "HansKristian-Work/vkd3d-proton",
+        "sha": "5675d7cd607e88f7ab33009c7f271074fbdddcfd",
+        "universe": "graphics"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "DXVK",
+      "vkd3d-proton",
+      "wine"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6241,
+    "appid": "1182900",
+    "title": "A Plague Tale: Requiem (1182900)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "d3d12",
+      "vulkan",
+      "video"
+    ],
+    "symptom_tags": [
+      "Launch Failure",
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5812,
+    "appid": "1895130",
+    "title": "Darza's Dominion (1895130)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "A",
+    "routing_universe": "proton-wrapper",
+    "linked_commits": [
+      {
+        "repo": "ValveSoftware/Proton",
+        "sha": "cf5de03a49454c04f225dbefabbedc38a9828f87",
+        "universe": "proton-wrapper"
+      },
+      {
+        "repo": "ValveSoftware/Proton",
+        "sha": "bea1fa891a3402b0a8f29e74e1077da524d7cbfe",
+        "universe": "proton-wrapper"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "audio",
+      "video"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4790,
+    "appid": "544810",
+    "title": "KARDS - The WWII Card Game (544810)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Installation Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6922,
+    "appid": "294810",
+    "title": "BlazBlue: Continuum Shift Extend (294810)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5431,
+    "appid": "20900",
+    "title": "The Witcher: Enhanced Edition wont launch",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7012,
+    "appid": "1999",
+    "title": "Supreme Snowboarding (1999)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6384,
+    "appid": "1294660",
+    "title": "Divine Knockout (DKO) (1294660)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Anti-cheat Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5196,
+    "appid": "1271700",
+    "title": "HOT WHEELS UNLEASHED™ (1271700)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7307,
+    "appid": "1963370",
+    "title": "No One Survived (1963370)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launcher / Verification Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8292,
+    "appid": "2677660",
+    "title": "Indiana Jones and the Great Circle (2677660)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "A",
+    "routing_universe": "wine",
+    "linked_commits": [
+      {
+        "repo": "ValveSoftware/wine",
+        "sha": "7ea2208c568bee2c79db3194edc272722e3efa4e",
+        "universe": "wine"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "vulkan",
+      "amd/radv"
+    ],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5412,
+    "appid": "1477590",
+    "title": "EZ2ON REBOOT : R (1477590)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue",
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7897,
+    "appid": "2717480",
+    "title": "Envelope (2717480)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Audio Issue",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6297,
+    "appid": "369530",
+    "title": "Void Destroyer 2 (369530)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "DXVK",
+      "vkd3d-proton",
+      "wine",
+      "shader"
+    ],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5242,
+    "appid": "1281590",
+    "title": "The Dark Pictures Anthology: House of Ashes (1281590)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Controller Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5082,
+    "appid": "636570",
+    "title": "Nights of Azure 2 (636570)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Loading/Saving Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5772,
+    "appid": "1063730",
+    "title": "New World: Aeternum (1063730)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Stutter",
+      "Loading/Saving Crash",
+      "Game Feature Missing"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7565,
+    "appid": "40100",
+    "title": "supreme commander 2 fails silently with proton experimental",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4570,
+    "appid": "551370",
+    "title": "Gravity Sketch",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5678,
+    "appid": "1510460",
+    "title": "Chicken Invaders Universe (1510460)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8677,
+    "appid": "3123410",
+    "title": "Atelier Yumia: The Alchemist of Memories & the Envisioned Land (3123410)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "video"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5120,
+    "appid": "436670",
+    "title": "The Legend of Heroes: Trails in the Sky the 3rd (436670)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5229,
+    "appid": "868270",
+    "title": "The Cycle: Frontier (868270)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue",
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5452,
+    "appid": "421190",
+    "title": "Larcenauts (appid 421190)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6151,
+    "appid": "1473480",
+    "title": "Alliance of Valiant Arms Global (1473480)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Low FPS",
+      "Input Lag",
+      "Input Configuration Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5814,
+    "appid": "495280",
+    "title": "Disgaea 2 PC (495280)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "vulkan"
+    ],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue",
+      "Controller Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6547,
+    "appid": "1284210",
+    "title": "Guild Wars 2 (1284210)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Startup Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8754,
+    "appid": "1266540",
+    "title": "Ships At Sea (1266540)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Audio Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5627,
+    "appid": "293760",
+    "title": "Automation - The Car Company Tycoon Game (293760)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launcher / Verification Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7693,
+    "appid": "253230",
+    "title": "[nvidia]games works well only first time and never agin until i reinstall drivers or update them (im useing hybird mode)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4674,
+    "appid": "779340",
+    "title": "Total War: THREE KINGDOMS (779340)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8727,
+    "appid": "1771300",
+    "title": "Kingdom Come: Deliverance II (1771300)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Black Screen",
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9095,
+    "appid": "2670630",
+    "title": "Supermarket Simulator (2670630)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Input Configuration Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8032,
+    "appid": "1934680",
+    "title": "Age of Mythology: Retold (1934680)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4700,
+    "appid": "1388590",
+    "title": "Yakuza 6: The Song of Life (1388590)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8109,
+    "appid": "588190",
+    "title": "Tower!3D Pro (588190)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Input Configuration Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4979,
+    "appid": "489560",
+    "title": "Astroflux (489560)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4905,
+    "appid": "250820",
+    "title": "SteamVR not working on Fedora 34",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5728,
+    "appid": "611500",
+    "title": "Quake Champions (611500)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure",
+      "Anti-cheat Issue",
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7594,
+    "appid": "49900",
+    "title": "Plain Sight (49900)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4686,
+    "appid": "774181",
+    "title": "Rhythm Doctor (774181)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5613,
+    "appid": "1245620",
+    "title": "Elden Ring (1245620)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "anti-cheat"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7163,
+    "appid": "215630",
+    "title": "Demonicon (appid 215630)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8487,
+    "appid": "3361750",
+    "title": "Stars Reach Playtest (3361750)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Loading/Saving Crash",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6394,
+    "appid": "368260",
+    "title": "Marvel's Midnight Suns (368260)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash",
+      "Loading/Saving Crash",
+      "Network / Sync Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5472,
+    "appid": "12330",
+    "title": "DarkStar One (12330)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Installation Failure",
+      "Black Screen",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5950,
+    "appid": "1182110",
+    "title": "Weed Shop 3 (1182110)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5613,
+    "appid": "1245620",
+    "title": "Elden Ring (1245620)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "anti-cheat"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6168,
+    "appid": "1110100",
+    "title": "Power Rangers: Battle for the Grid (1110100)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6826,
+    "appid": "2141910",
+    "title": "Magic: The Gathering Arena (2141910)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9054,
+    "appid": "2951630",
+    "title": "Total War: Pharoah Dynasties (2951630)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Shader Compilation Issue",
+      "Low FPS"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4969,
+    "appid": "1475200",
+    "title": "Pickup Basketball VR (appid 1475200)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7667,
+    "appid": "934700",
+    "title": "Dead Island 2 (934700)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Loading/Saving Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8542,
+    "appid": "220",
+    "title": "VRR locked at 60hz on Source 2013 games on Proton 9 and Experimental",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Low FPS"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7057,
+    "appid": "2371630",
+    "title": "Sword Art Online: Integral Factor (2371630)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7967,
+    "appid": "1316910",
+    "title": "All Games Fail to Launch Through Protons Version >7",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8147,
+    "appid": "2429640",
+    "title": "Throne and Liberty (2429640)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Controller Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8965,
+    "appid": "3081410",
+    "title": "Battlefield™ 6 Open Beta (3081410)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5874,
+    "appid": "1569550",
+    "title": "Dread X Collection: The Hunt (1569550)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "DXVK",
+      "wine",
+      "dxgi",
+      "video"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7981,
+    "appid": "1262600",
+    "title": "Need for Speed™ Rivals (1262600)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure",
+      "Input Configuration Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8727,
+    "appid": "1771300",
+    "title": "Kingdom Come: Deliverance II (1771300)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Black Screen",
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5664,
+    "appid": "1531540",
+    "title": "Distant Worlds 2 (1531540)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9340,
+    "appid": "1425000",
+    "title": "Endless Alice (1425000)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Network / Sync Issue",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6851,
+    "appid": "2379390",
+    "title": "Tom Clancy’s Rainbow Six® Extraction (2379390)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "vulkan",
+      "amd/radv"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6573,
+    "appid": "1361210",
+    "title": "Warhammer 40,000: Darktide (1361210)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5939,
+    "appid": "1094640",
+    "title": "True Love '95 (1094640)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6449,
+    "appid": "1408230",
+    "title": "Walkabout Mini Golf (1408230)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9233,
+    "appid": "3375780",
+    "title": "Trails in the Sky 1st Chapter (3375780)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Audio Issue",
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5044,
+    "appid": "1293160",
+    "title": "The Medium",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Audio Issue",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6640,
+    "appid": "218620",
+    "title": "PAYDAY 2 (218620)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "DXVK",
+      "wine"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6493,
+    "appid": "1817230",
+    "title": "Hi-Fi Rush (1817230)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Audio Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7036,
+    "appid": "2290180",
+    "title": "Riders Republic (2290180)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "DXVK",
+      "wine"
+    ],
+    "symptom_tags": [
+      "Startup Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5894,
+    "appid": "1239080",
+    "title": "Door Kickers 2 (1239080)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Memory Leak"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6852,
+    "appid": "1985810",
+    "title": "Call of Duty®: Black Ops Cold War (1985810)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "A",
+    "routing_universe": "proton-wrapper",
+    "linked_commits": [
+      {
+        "repo": "ValveSoftware/Proton",
+        "sha": "63dba5821daef24db8943188dbeafaa8fb6dadcd",
+        "universe": "proton-wrapper"
+      },
+      {
+        "repo": "ValveSoftware/Proton",
+        "pr": "9107",
+        "universe": "proton-wrapper"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8428,
+    "appid": "2651280",
+    "title": "Marvel's Spider-Man 2 (2651280)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "graphics",
+    "linked_commits": [
+      {
+        "repo": "HansKristian-Work/vkd3d-proton",
+        "pr": "2395",
+        "universe": "graphics"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8208,
+    "appid": "2016590",
+    "title": "Dark and Darker (2016590)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5597,
+    "appid": "744810",
+    "title": "Proton won't launch any games using NVIDIA 390 drivers",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8027,
+    "appid": "1900",
+    "title": "Earth 2160 (1900)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Network / Sync Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8311,
+    "appid": "2318500",
+    "title": "Exo Rally Championship Demo (2318500)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4547,
+    "appid": "16810",
+    "title": "Sid Meier's Civilization IV: Colonization (16810)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "controller/input"
+    ],
+    "symptom_tags": [
+      "Input Configuration Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7006,
+    "appid": "1922560",
+    "title": "Plants vs. Zombies Garden Warfare 2: Deluxe Edition (1922560)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Installation Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6200,
+    "appid": "1176470",
+    "title": "Terra Invicta (1176470)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Low FPS"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5105,
+    "appid": "544550",
+    "title": "Stationeers (544550)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Controller Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5613,
+    "appid": "1245620",
+    "title": "Elden Ring (1245620)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "proton-wrapper",
+    "linked_commits": [
+      {
+        "repo": "ValveSoftware/Proton",
+        "pr": "9298",
+        "universe": "proton-wrapper"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "anti-cheat"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8423,
+    "appid": "593960",
+    "title": "Lorelai (593960)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9010,
+    "appid": "2417610",
+    "title": "METAL GEAR SOLID Δ: SNAKE EATER (2417610)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "A",
+    "routing_universe": "graphics",
+    "linked_commits": [
+      {
+        "repo": "HansKristian-Work/vkd3d-proton",
+        "pr": "2598",
+        "universe": "graphics"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8191,
+    "appid": "3081830",
+    "title": "FLARE NUINUI QUEST (3081830)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5668,
+    "appid": "780310",
+    "title": "The Riftbreaker (780310)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7354,
+    "appid": "34330",
+    "title": "SHOGUN: Total War (34330) [BROKEN]",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6088,
+    "appid": "1817070",
+    "title": "Marvel’s Spider-Man Remastered (1817070)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "proton-wrapper",
+    "linked_commits": [
+      {
+        "repo": "ValveSoftware/Proton",
+        "pr": "6120",
+        "universe": "proton-wrapper"
+      },
+      {
+        "repo": "HansKristian-Work/vkd3d-proton",
+        "pr": "1254",
+        "universe": "graphics"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Startup Crash",
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4932,
+    "appid": "1449560",
+    "title": "Metro Exodus Enhanced Edition (1449560)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "Startup Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6499,
+    "appid": "1743850",
+    "title": "HYPER DEMON (1743850)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7039,
+    "appid": "1084160",
+    "title": "Jagged Alliance 3 (1084160)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure",
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7559,
+    "appid": "2741560",
+    "title": "Sim City 3000 Unlimited (2741560)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5426,
+    "appid": "1659050",
+    "title": "Creatures Docking Station (1659050)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5201,
+    "appid": "1100140",
+    "title": "Touhou Fuujinroku ~ Mountain of Faith. (1100140)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "A",
+    "routing_universe": "proton-wrapper",
+    "linked_commits": [
+      {
+        "repo": "ValveSoftware/Proton",
+        "sha": "7a46a3cf4011ae3441cddff94d08bc280825a755",
+        "universe": "proton-wrapper"
+      },
+      {
+        "repo": "ValveSoftware/Proton",
+        "sha": "5536e50175b478e8f0b1fdf77a0679ba6720aaa7",
+        "universe": "proton-wrapper"
+      },
+      {
+        "repo": "simon-i1-h/Proton",
+        "sha": "dcfa1890f0297971efb6098d35613279d5c9bcd1",
+        "universe": "unknown"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8624,
+    "appid": "6900",
+    "title": "Defiance",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "A",
+    "routing_universe": "wine",
+    "linked_commits": [
+      {
+        "repo": "wine-mirror/wine",
+        "sha": "5938ce84433ab10716f5310c7d8f3e0ffa7fc591",
+        "universe": "unknown"
+      },
+      {
+        "repo": "wine-mirror/wine",
+        "sha": "4eff187961e99fc58f0812d37bc9fac79406c330",
+        "universe": "unknown"
+      },
+      {
+        "repo": "wine-mirror/wine",
+        "sha": "1904227cc363e0fed0fc69d038a0902010f9331b",
+        "universe": "unknown"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "fsync/esync"
+    ],
+    "symptom_tags": [
+      "Network / Sync Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6559,
+    "appid": "1326470",
+    "title": "Sons Of The Forest (1326470)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7807,
+    "appid": "583090",
+    "title": "SeaBed (583090)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "A",
+    "routing_universe": "wine",
+    "linked_commits": [
+      {
+        "repo": "ValveSoftware/wine",
+        "sha": "bd8ec8f264b5403f90bca6ecb26ae3170995ccd4",
+        "universe": "wine"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5650,
+    "appid": "389170",
+    "title": "Songs for a Hero - Definitive Edition (389170)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6027,
+    "appid": "267920",
+    "title": "Gun Metal (267920)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Cutscene Issue",
+      "Audio Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6042,
+    "appid": "389730",
+    "title": "Tekken 7 (389730) freezes whenever i hit another character,Reinstall fixes it once but after that it breaks again",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5182,
+    "appid": "202480",
+    "title": "Skyrim Creation Kit (202480)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7046,
+    "appid": "742420",
+    "title": "Saints Row (742420)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Low FPS"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5295,
+    "appid": "218230",
+    "title": "Planetside 2 (218230)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5046,
+    "appid": "1218250",
+    "title": "We Went Back (1218250)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "video"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9210,
+    "appid": "2864560",
+    "title": "Rune Factory: Guardians of Azuma (2864560)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Low FPS",
+      "Memory Leak"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5156,
+    "appid": "1252330",
+    "title": "Deathloop (1252330)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [
+      "hideapu"
+    ],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Audio Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5541,
+    "appid": "910490",
+    "title": "Killsquad (910490)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5145,
+    "appid": "1124300",
+    "title": "Humankind (1124300)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "video"
+    ],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6510,
+    "appid": "990080",
+    "title": "Hogwarts Legacy (990080)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5198,
+    "appid": "1414850",
+    "title": "Nickelodeon All-Star Brawl (1414850)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "A",
+    "routing_universe": "wine",
+    "linked_commits": [
+      {
+        "repo": "ValveSoftware/wine",
+        "sha": "77fd28cba7764a2dafd1659be87aedb62437e4db",
+        "universe": "wine"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launcher / Verification Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8255,
+    "appid": "2537590",
+    "title": "Microsoft Flight Simulator 2024 (2537590)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "A",
+    "routing_universe": "graphics",
+    "linked_commits": [
+      {
+        "repo": "HansKristian-Work/vkd3d-proton",
+        "sha": "5675d7cd607e88f7ab33009c7f271074fbdddcfd",
+        "universe": "graphics"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "DXVK",
+      "vkd3d-proton",
+      "wine"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4763,
+    "appid": "907740",
+    "title": "Project Warlock Demo (907740)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9258,
+    "appid": "3164330",
+    "title": "Infinity Nikki (3164330)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Anti-cheat Issue",
+      "Launch Failure",
+      "Startup Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4653,
+    "appid": "1049590",
+    "title": "Eternal Return (1049590)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5602,
+    "appid": "445420",
+    "title": "Aselia the Eternal -The Spirit of Eternity Sword- (445420)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8760,
+    "appid": null,
+    "title": "World of Warcraft",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5613,
+    "appid": "1245620",
+    "title": "Elden Ring (1245620)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "anti-cheat"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8971,
+    "appid": "3596660",
+    "title": "ENDLESS Legend 2 Demo (AppID: 3596660)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "shader"
+    ],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8585,
+    "appid": "2531310",
+    "title": "The Last of Us™ Part II Remastered (2531310)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "graphics",
+    "linked_commits": [
+      {
+        "repo": "jp7677/dxvk-nvapi",
+        "sha": "17342694868e661589e3f10012fd56a0936bc5db",
+        "universe": "graphics"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Audio Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5258,
+    "appid": "1466860",
+    "title": "Age of Empires IV: Anniversary Edition (1466860)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [
+      "noopwr"
+    ],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5554,
+    "appid": "1591530",
+    "title": "SAMURAI WARRIORS 5 (1591530)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8190,
+    "appid": "3138390",
+    "title": "東方聖戦影 ～ Forlorn Souls of Wicked Past Demo (3138390)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Shader Compilation Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4850,
+    "appid": null,
+    "title": "Half-Life (70)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4643,
+    "appid": "265120",
+    "title": "Meridian New World (265120)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5692,
+    "appid": "965010",
+    "title": "Trinoline (965010)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Network / Sync Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8185,
+    "appid": "2513280",
+    "title": "SONIC X SHADOW GENERATIONS (2513280)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Stutter",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8118,
+    "appid": "2021880",
+    "title": "Ara: History Untold (2021880)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [
+      "hidevggpu"
+    ],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "vulkan",
+      "nvidia/nvapi"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8980,
+    "appid": "1539620",
+    "title": "Monark (1539620)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "UI Issues"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7953,
+    "appid": "1114420",
+    "title": "PLAY'A VR Video Player (1114420)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8836,
+    "appid": "3659070",
+    "title": "Giggleland: Terry’s Vegetable Patch Demo (3659070)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Stutter"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5397,
+    "appid": "1250410",
+    "title": "Microsoft Flight Simulator (1250410) [A32NX extension]",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [
+      "noopwr"
+    ],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Loading/Saving Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5761,
+    "appid": "1172620",
+    "title": "Sea of Thieves won't allow me to join an Open Crew",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [
+      "noopwr"
+    ],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Network / Sync Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5427,
+    "appid": "1659050",
+    "title": "Creatures Docking Station (1659050)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure",
+      "UI Issues"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6165,
+    "appid": "2087030",
+    "title": "Shatterline (2087030)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "A",
+    "routing_universe": "wine",
+    "linked_commits": [
+      {
+        "repo": "ValveSoftware/wine",
+        "sha": "7035bf12c55228dd57a3787132f3c34654128871",
+        "universe": "wine"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure",
+      "Network / Sync Issue",
+      "Game Feature Missing",
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4938,
+    "appid": "601150",
+    "title": "Devil May Cry 5 ",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6234,
+    "appid": "865680",
+    "title": "The Eternal Cylinder (865680)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6065,
+    "appid": "1113560",
+    "title": "Regression: NieR Replicant on Proton Experimental",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6717,
+    "appid": "1928420",
+    "title": "Farlight 84 (1928420)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5616,
+    "appid": "245730",
+    "title": "Flashback (245730)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5736,
+    "appid": "1218210",
+    "title": "Coromon (1218210)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure",
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8067,
+    "appid": "1086940",
+    "title": ".Net Launchers fail to start if global .NET is installed on linux host",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launcher / Verification Issue",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5161,
+    "appid": "977880",
+    "title": "Eastward (977880)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "shader"
+    ],
+    "symptom_tags": [
+      "Black Screen",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6066,
+    "appid": null,
+    "title": "\"No display found\" on Proton Experimental only",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4789,
+    "appid": "1091500",
+    "title": "[Regression] [Proton Experimental] Mouse cursor visible in Cyberpunk 2077",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "UI Issues",
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4843,
+    "appid": "1413480",
+    "title": "Shin Megami Tensei III Nocturne HD Remaster (1413480)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "Network / Sync Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5772,
+    "appid": "1063730",
+    "title": "New World: Aeternum (1063730)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Stutter",
+      "Loading/Saving Crash",
+      "Game Feature Missing"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4545,
+    "appid": "362890",
+    "title": "Black Mesa (362890)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7166,
+    "appid": "1114290",
+    "title": "Windjammers 2 (1114290)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "DXVK",
+      "wine",
+      "vulkan"
+    ],
+    "symptom_tags": [
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7182,
+    "appid": "2383990",
+    "title": "Ghostbusters: Spirits Unleashed Ecto Edition (2383990)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure",
+      "Launcher / Verification Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8287,
+    "appid": "108600",
+    "title": "Project Zomboid (108600) ",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Loading/Saving Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6580,
+    "appid": "1196090",
+    "title": "Scars Above (1196090)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8877,
+    "appid": "1701130",
+    "title": "GRAB (1701130)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5265,
+    "appid": "418530",
+    "title": "Spelunky 2: Renderer error creating DXGI factory (0x80004005)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7374,
+    "appid": "1351000",
+    "title": "Gangs of Sherwood (1351000)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4858,
+    "appid": "597820",
+    "title": "Biomutant (597820)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "media foundation / wmf",
+      "gstreamer",
+      "video"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue",
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6779,
+    "appid": "1478340",
+    "title": "Turbo Sliders Unlimited (1478340)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Network / Sync Issue",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7056,
+    "appid": "1031900",
+    "title": "You Can Kana (1031900)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Exit Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5313,
+    "appid": "33990",
+    "title": "Alternativa (33990)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "media foundation / wmf",
+      "video"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5454,
+    "appid": "1930",
+    "title": "Two Worlds: Epic Edition (1930)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Audio Issue",
+      "Graphic  / Rendering Issue",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5304,
+    "appid": "322170",
+    "title": "Geometry Dash (322170)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Loading/Saving Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7104,
+    "appid": "1265860",
+    "title": "NASCAR Heat 5 (1265860)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Network / Sync Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6568,
+    "appid": "1677280",
+    "title": "Company of Heroes 3 (1677280)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Network / Sync Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4745,
+    "appid": "923570",
+    "title": "Eternal Radiance (923570)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5536,
+    "appid": "1659040",
+    "title": "HITMAN World of Assassination (1659040)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "d3d12",
+      "audio"
+    ],
+    "symptom_tags": [
+      "Freeze",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5845,
+    "appid": "1604030",
+    "title": "V Rising (1604030)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue",
+      "Launch Failure",
+      "Network / Sync Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5828,
+    "appid": "1218210",
+    "title": "Coromon (1218210)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Stutter"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5366,
+    "appid": "1938090",
+    "title": "Call of Duty (1938090)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6254,
+    "appid": "333260",
+    "title": "Marvin's Mittens (333260)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6044,
+    "appid": "661130",
+    "title": "ChilloutVR (661130)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7595,
+    "appid": "2054970",
+    "title": "Dragon's Dogma 2 (2054970)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5406,
+    "appid": "1206430",
+    "title": "The Unfinished Swan (1206430)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7317,
+    "appid": "2073850",
+    "title": "THE FINALS (2073850)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [
+      "disablenvapi"
+    ],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Anti-cheat Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7099,
+    "appid": "587180",
+    "title": "Wulverblade (587180)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7721,
+    "appid": "2479810",
+    "title": "Gray Zone Warfare (2479810)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Anti-cheat Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7217,
+    "appid": "1485120",
+    "title": "BoomBox (1485120)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4777,
+    "appid": "1113560",
+    "title": "NieR Replicant ver.1.22474487139... (1113560)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "A",
+    "routing_universe": "wine",
+    "linked_commits": [
+      {
+        "repo": "wine-mirror/wine",
+        "sha": "645cf84677428fd4541387eed79ae7dbdedb5a4d",
+        "universe": "unknown"
+      },
+      {
+        "repo": "ValveSoftware/wine",
+        "sha": "1b6dbd0611bca61c388172861403adf13ac02e1d",
+        "universe": "wine"
+      },
+      {
+        "repo": "GloriousEggroll/proton-ge-custom",
+        "sha": "9683753583beb2557a890312e67d81ebcb82e83c",
+        "universe": "unknown"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Loading/Saving Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8404,
+    "appid": "2379780",
+    "title": "Balatro (2379780)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5613,
+    "appid": "1245620",
+    "title": "Elden Ring (1245620)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "anti-cheat"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5083,
+    "appid": "4580",
+    "title": "Warhammer® 40,000: Dawn of War® - Dark Crusade (4580) not running on Fedora",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9272,
+    "appid": "4192060",
+    "title": "Virtual Fighter Maneuvers Playtest (4192060)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5492,
+    "appid": "570940",
+    "title": "Dark Souls: Remastered unable to use Dualsense controller",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Controller Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5495,
+    "appid": "1446780",
+    "title": "Monster Hunter Rise (1446780)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Audio Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6602,
+    "appid": "2076040",
+    "title": "The Finals Playtest (2076040)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6747,
+    "appid": "740130",
+    "title": "Tales of Arise (740130)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Input Configuration Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7835,
+    "appid": "2524360",
+    "title": "With My Past (2524360)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Startup Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5017,
+    "appid": "346110",
+    "title": "ARK Survival Evolved",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8744,
+    "appid": "377860",
+    "title": "Mushihimesama (377860)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4691,
+    "appid": "391220",
+    "title": "Rise of the Tomb Raider (391220)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue",
+      "Stutter"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9119,
+    "appid": "2698940",
+    "title": "The Crew Motorfest (2698940)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [
+      "hidenvgpu"
+    ],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7459,
+    "appid": "489520",
+    "title": "mthreads S80 cannot use proton",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4708,
+    "appid": "700600",
+    "title": "Evil Genius 2 (700600)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5047,
+    "appid": "1238840",
+    "title": "Battlefield 1 (1238840)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "UI Issues"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6156,
+    "appid": "2058180",
+    "title": "Judgment (2058180)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5613,
+    "appid": "1245620",
+    "title": "Elden Ring (1245620)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "anti-cheat"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5100,
+    "appid": "19900",
+    "title": "Version 6.3.6 broke Far Cry 2 compatibility",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5258,
+    "appid": "1466860",
+    "title": "Age of Empires IV: Anniversary Edition (1466860)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [
+      "noopwr"
+    ],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8717,
+    "appid": "2427430",
+    "title": "S.T.A.L.K.E.R.: Call of Prypiat - Enhanced Edition (2427430)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7324,
+    "appid": "42990",
+    "title": "Sword of the Stars II: Enhanced Edition (42990)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9078,
+    "appid": "1004640",
+    "title": "Final Fantasy Tactics - The Ivalice Chronicles (1004640)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "d3d12"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4991,
+    "appid": "1345820",
+    "title": "Ragnarock (1345820)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5942,
+    "appid": "938520",
+    "title": "Twenty One (938520)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4528,
+    "appid": "1057090",
+    "title": "Ori and the Will of the Wisps (1057090)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Low FPS"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4823,
+    "appid": "1328670",
+    "title": "Mass Effect™ Legendary Edition (1328670) ",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8270,
+    "appid": "1812450",
+    "title": "Bellwright (1812450)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "DXVK",
+      "wine",
+      "steam runtime"
+    ],
+    "symptom_tags": [
+      "Others"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4676,
+    "appid": "63380",
+    "title": "Sniper ELite V2 Doesn't launcher!",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8009,
+    "appid": "1489630",
+    "title": "Carrier Command 2 (1489630)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4549,
+    "appid": "351710",
+    "title": "Hyperdimension Neptunia Re;Birth2 Sisters Generation (351710)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Low FPS",
+      "Audio Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5404,
+    "appid": "1619990",
+    "title": "SUPER PEOPLE CBT (1619990)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6291,
+    "appid": "1577250",
+    "title": "The Chant (1577250)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "video"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6679,
+    "appid": "1421390",
+    "title": "Tichu (1421390)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7147,
+    "appid": "2552960",
+    "title": "Pioneers of Pagonia Demo (2552960) ",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8914,
+    "appid": "2138720",
+    "title": "REMATCH (2138720)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7580,
+    "appid": "526870",
+    "title": "Satisfactory (526870)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "UI Issues"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5428,
+    "appid": "271590",
+    "title": "Grand Theft Auto V stopped working after the last update",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launcher / Verification Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5495,
+    "appid": "1446780",
+    "title": "Monster Hunter Rise (1446780)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Audio Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6088,
+    "appid": "1817070",
+    "title": "Marvel’s Spider-Man Remastered (1817070)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Startup Crash",
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 9257,
+    "appid": "3256600",
+    "title": "GUG Demo (3256600)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash",
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6139,
+    "appid": "1777620",
+    "title": "Soul Hackers 2 (1777620)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "shader"
+    ],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6795,
+    "appid": "2005010",
+    "title": "Warhammer 40,000: Boltgun (2005010)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "B",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "dinput/xinput",
+      "controller/input"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8783,
+    "appid": "774941",
+    "title": "Squad - Public Testing (774941)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Network / Sync Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7290,
+    "appid": "1599660",
+    "title": "Sackboy: A Big Adventure (1599660)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Controller Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5156,
+    "appid": "1252330",
+    "title": "Deathloop (1252330)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [
+      "hideapu"
+    ],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Audio Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8292,
+    "appid": "2677660",
+    "title": "Indiana Jones and the Great Circle (2677660)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "A",
+    "routing_universe": "graphics",
+    "linked_commits": [
+      {
+        "repo": "jp7677/dxvk-nvapi",
+        "sha": "c29f6f0bef8f0d6122ce9346ccc95ec2fb3da701",
+        "universe": "graphics"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "vulkan",
+      "amd/radv"
+    ],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5662,
+    "appid": "581320",
+    "title": "[581320] Insurgency: Sandstorm EAC module failure",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Anti-cheat Issue",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7288,
+    "appid": "1932680",
+    "title": "LunarLux (1932680)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Startup Crash",
+      "Input Configuration Issue",
+      "Stutter"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6241,
+    "appid": "1182900",
+    "title": "A Plague Tale: Requiem (1182900)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "d3d12",
+      "vulkan",
+      "video"
+    ],
+    "symptom_tags": [
+      "Launch Failure",
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5026,
+    "appid": "1313860",
+    "title": "Directx 12, Random Crashing, working on DX12? - EA SPORTS™ FIFA 21 (1313860)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7127,
+    "appid": "1599660",
+    "title": "Sackboy: A Big Adventure (1599660)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Controller Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5322,
+    "appid": "275850",
+    "title": "No man's sky crashes after trying to start a game",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [
+      "nohardwarescheduling"
+    ],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Loading/Saving Crash",
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6817,
+    "appid": "1364780",
+    "title": "Street Fighter 6 (1364780)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "d3d12",
+      "vulkan"
+    ],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7539,
+    "appid": "2216770",
+    "title": "JOY OF PROGRAMMING - Software Engineering Simulator (2216770)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4614,
+    "appid": "1183030",
+    "title": "Layers of Fear VR (appid 1183030)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5133,
+    "appid": "275850",
+    "title": "No Man's Sky (275850) Crashes etc. at random points",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [
+      "nohardwarescheduling"
+    ],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6349,
+    "appid": "1850510",
+    "title": "Triangle Strategy (1850510)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5670,
+    "appid": "900040",
+    "title": "ELEX II (900040)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6612,
+    "appid": "1173220",
+    "title": "Bleak Faith: Forsaken (1173220)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7988,
+    "appid": "594650",
+    "title": "Hunt: Showdown 1896 (594650)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5510,
+    "appid": "1832640",
+    "title": "Mirror 2: Project X (1832640)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launcher / Verification Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6507,
+    "appid": "2225070",
+    "title": "Trackmania (2225070)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Installation Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7248,
+    "appid": "2375550",
+    "title": "Like a Dragon Gaiden: The Man Who Erased His Name (2375550)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8543,
+    "appid": "3159330",
+    "title": "Assassin's Creed Shadows (3159330)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Startup Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5254,
+    "appid": "492230",
+    "title": "Space Hulk: Tactics (492230)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8432,
+    "appid": "3314070",
+    "title": "The Sims 2 Legacy Collection (3314070)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Game Feature Missing"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6554,
+    "appid": "668580",
+    "title": "Atomic Heart (668580)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8948,
+    "appid": "1677740",
+    "title": "Stumble Guys (1677740)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8236,
+    "appid": "2215490",
+    "title": "Project Borealis: Prologue (2215490)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "vkd3d-proton",
+      "wine",
+      "steam runtime"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5531,
+    "appid": "1403370",
+    "title": "Zenith: The Last City (1403370)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Voice Communication Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5720,
+    "appid": "1475810",
+    "title": "Ghostwire Tokyo (1475810)",
+    "resolution_status": "addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "Freeze",
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5772,
+    "appid": "1063730",
+    "title": "New World: Aeternum (1063730)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Stutter",
+      "Loading/Saving Crash",
+      "Game Feature Missing"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4682,
+    "appid": "306130",
+    "title": "Elder Scrolls Online, Zenimax Free Space Error / Directory Not Writable",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Installation Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5903,
+    "appid": "964570",
+    "title": "DCL The Game (964570)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8964,
+    "appid": "1492730",
+    "title": "DORAEMON STORY OF SEASONS: Friends of the Great Kingdom (1492730)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6756,
+    "appid": "1940340",
+    "title": "Darkest Dungeon II (1940340)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen",
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5523,
+    "appid": "244850",
+    "title": "Space Engineers (244850) crashes arbitrarily in faudio and SDL2",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8711,
+    "appid": "2525310",
+    "title": "Drop Duchy (2525310)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7116,
+    "appid": "464920",
+    "title": "Surviving Mars (464920)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5096,
+    "appid": "214950",
+    "title": "Total War: Rome 2 Crashing during play",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6248,
+    "appid": "496240",
+    "title": "Onward (496240)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze",
+      "Black Screen",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4907,
+    "appid": "1203220",
+    "title": "NARAKA: BLADEPOINT (1203220)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5779,
+    "appid": "1244460",
+    "title": "Jurassic World Evolution 2 (1244460)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5535,
+    "appid": "1343400",
+    "title": "Runescape (1343400)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine"
+    ],
+    "symptom_tags": [
+      "Startup Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4975,
+    "appid": "416380",
+    "title": "The Hurricane of the Varstray -Collateral hazard- (416380)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Black Screen"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8255,
+    "appid": "2537590",
+    "title": "Microsoft Flight Simulator 2024 (2537590)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "A",
+    "routing_universe": "wine",
+    "linked_commits": [
+      {
+        "repo": "ValveSoftware/wine",
+        "pr": "273",
+        "universe": "wine"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "DXVK",
+      "vkd3d-proton",
+      "wine"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 4527,
+    "appid": "37000",
+    "title": "The Void (37000)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "graphics",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "DXVK",
+      "wine",
+      "d3d9",
+      "shader"
+    ],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5300,
+    "appid": "271590",
+    "title": "GTA 5 will eventually crash",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "In-game Crash"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7011,
+    "appid": null,
+    "title": "Need For Speed III: Hot Pursuit (1998 not the remaster)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Graphic  / Rendering Issue",
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8680,
+    "appid": "3112260",
+    "title": "Virtua Fighter 5 R.E.V.O. (3112260)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6235,
+    "appid": "1695793",
+    "title": "Halo Reach Mod Tools - MCC (1695793)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5334,
+    "appid": "212910",
+    "title": "Call of Duty: Black Ops II - Zombies (212910)",
+    "resolution_status": "addressed",
+    "resolution_method": "upstream_downstream",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [
+      "heapdelayfree"
+    ],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Freeze"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6502,
+    "appid": "1846380",
+    "title": "Need for Speed Unbound (1846380)",
+    "resolution_status": "partially_addressed",
+    "resolution_method": "community_workaround",
+    "confidence_tier": "C",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure",
+      "Launcher / Verification Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5919,
+    "appid": "1195290",
+    "title": "Moncage (1195290)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "dxgi",
+      "video"
+    ],
+    "symptom_tags": [
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 5000,
+    "appid": "567630",
+    "title": "Blood of Steel (567630)",
+    "resolution_status": "addressed",
+    "resolution_method": "proton_update",
+    "confidence_tier": "B",
+    "routing_universe": "wine",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [
+      "wine",
+      "kernel32"
+    ],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 6618,
+    "appid": "1151740",
+    "title": "Prison Princess (1151740)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Controller Issue"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 8338,
+    "appid": "1834620",
+    "title": "The Shore VR (1834620)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "proton-wrapper",
+    "linked_commits": [
+      {
+        "repo": "ValveSoftware/Proton",
+        "sha": "8c3e86c52c2baf75e04ea5d9cdd9b1c6c83161aa",
+        "universe": "proton-wrapper"
+      }
+    ],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Launch Failure"
+    ],
+    "tag_group": null
+  },
+  {
+    "issue_number": 7276,
+    "appid": "1063590",
+    "title": "Rogue Masters (1063590)",
+    "resolution_status": "unaddressed",
+    "resolution_method": null,
+    "confidence_tier": "-",
+    "routing_universe": "unknown",
+    "linked_commits": [],
+    "cw_bug_ids": [],
+    "compat_flags": [],
+    "cw_bug_to_shas": {},
+    "components": [],
+    "symptom_tags": [
+      "Low FPS",
+      "In-game Crash",
+      "Cutscene Issue"
+    ],
+    "tag_group": null
+  }
+]

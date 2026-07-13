@@ -1,0 +1,191 @@
+{
+  "generated_at": "2026-04-19T02:01:57Z",
+  "time_window": {
+    "start": "2021-01-01T00:00:00+00:00",
+    "end": "2025-12-31T23:59:59+00:00"
+  },
+  "description": "lead_time_days 最大的前 20 个游戏（ProtonDB 领先最多）",
+  "n": 20,
+  "games": [
+    {
+      "game_appid": "47780",
+      "game_title_protondb": "Dead Space 2",
+      "lead_time_days": 1817.109872685185,
+      "first_report_time_protondb": "2021-01-04T05:00:11Z",
+      "first_issue_time_github": "2025-12-26T07:38:24Z",
+      "first_issue_number": 9336,
+      "first_issue_title": "Dead Space 2 (AppID 47780) crashes on NVIDIA + Wayland during D3D9 device creation"
+    },
+    {
+      "game_appid": "1129580",
+      "game_title_protondb": "Medieval Dynasty",
+      "lead_time_days": 1804.6769328703704,
+      "first_report_time_protondb": "2021-01-02T01:50:33Z",
+      "first_issue_time_github": "2025-12-11T18:05:20Z",
+      "first_issue_number": 9300,
+      "first_issue_title": "Medieval Dynasty (1129580)"
+    },
+    {
+      "game_appid": "444090",
+      "game_title_protondb": "Paladins",
+      "lead_time_days": 1802.3877893518518,
+      "first_report_time_protondb": "2021-01-23T11:06:57Z",
+      "first_issue_time_github": "2025-12-30T20:25:22Z",
+      "first_issue_number": 9351,
+      "first_issue_title": "Paladins (444090)"
+    },
+    {
+      "game_appid": "414700",
+      "game_title_protondb": "Outlast 2",
+      "lead_time_days": 1782.489976851852,
+      "first_report_time_protondb": "2021-01-21T13:35:21Z",
+      "first_issue_time_github": "2025-12-09T01:20:55Z",
+      "first_issue_number": 9293,
+      "first_issue_title": "Outlast 2 (414700)"
+    },
+    {
+      "game_appid": "268770",
+      "game_title_protondb": "Treasure Adventure World",
+      "lead_time_days": 1780.0793055555555,
+      "first_report_time_protondb": "2021-01-01T05:51:45Z",
+      "first_issue_time_github": "2025-11-16T07:45:57Z",
+      "first_issue_number": 9225,
+      "first_issue_title": "Treasure Adventure World (268770)"
+    },
+    {
+      "game_appid": "283370",
+      "game_title_protondb": "Marine Sharpshooter II: Jungle Warfare",
+      "lead_time_days": 1779.5081828703703,
+      "first_report_time_protondb": "2021-01-08T16:34:45Z",
+      "first_issue_time_github": "2025-11-23T04:46:32Z",
+      "first_issue_number": 9249,
+      "first_issue_title": "Marine Sharpshooter II: Jungle Warfare (283370)"
+    },
+    {
+      "game_appid": "661290",
+      "game_title_protondb": "Arizona Derby",
+      "lead_time_days": 1778.6887731481481,
+      "first_report_time_protondb": "2021-01-10T04:03:08Z",
+      "first_issue_time_github": "2025-11-23T20:34:58Z",
+      "first_issue_number": 9255,
+      "first_issue_title": "Arizona Derby (661290)"
+    },
+    {
+      "game_appid": "29720",
+      "game_title_protondb": "Guild Wars® Reforged",
+      "lead_time_days": 1774.1036342592593,
+      "first_report_time_protondb": "2021-01-17T22:58:00Z",
+      "first_issue_time_github": "2025-11-27T01:27:14Z",
+      "first_issue_number": 9262,
+      "first_issue_title": "Guild Wars (29720)"
+    },
+    {
+      "game_appid": "201810",
+      "game_title_protondb": "Wolfenstein: The New Order",
+      "lead_time_days": 1768.8684606481481,
+      "first_report_time_protondb": "2021-01-18T21:53:55Z",
+      "first_issue_time_github": "2025-11-22T18:44:30Z",
+      "first_issue_number": 9244,
+      "first_issue_title": "Wolfenstein: The New Order (201810)"
+    },
+    {
+      "game_appid": "1118200",
+      "game_title_protondb": "People Playground",
+      "lead_time_days": 1766.9866087962962,
+      "first_report_time_protondb": "2021-01-01T17:44:35Z",
+      "first_issue_time_github": "2025-11-03T17:25:18Z",
+      "first_issue_number": 9180,
+      "first_issue_title": "People Playground (1118200)"
+    },
+    {
+      "game_appid": "32410",
+      "game_title_protondb": "Lucidity™",
+      "lead_time_days": 1764.9378356481482,
+      "first_report_time_protondb": "2021-01-04T06:01:47Z",
+      "first_issue_time_github": "2025-11-04T04:32:16Z",
+      "first_issue_number": 9183,
+      "first_issue_title": "Lucidity (32410)"
+    },
+    {
+      "game_appid": "294860",
+      "game_title_protondb": "Valkyria Chronicles",
+      "lead_time_days": 1748.993125,
+      "first_report_time_protondb": "2021-01-13T06:47:51Z",
+      "first_issue_time_github": "2025-10-28T06:37:57Z",
+      "first_issue_number": 9155,
+      "first_issue_title": "Valkyria Chronicles (294860)"
+    },
+    {
+      "game_appid": "328470",
+      "game_title_protondb": "Slave Zero",
+      "lead_time_days": 1747.6726967592592,
+      "first_report_time_protondb": "2021-02-09T23:47:13Z",
+      "first_issue_time_github": "2025-11-23T15:55:54Z",
+      "first_issue_number": 9251,
+      "first_issue_title": "Slave Zero (328470)"
+    },
+    {
+      "game_appid": "24670",
+      "game_title_protondb": "Trainz Simulator 12",
+      "lead_time_days": 1727.913101851852,
+      "first_report_time_protondb": "2021-02-12T05:17:53Z",
+      "first_issue_time_github": "2025-11-06T03:12:45Z",
+      "first_issue_number": 9191,
+      "first_issue_title": "Trainz™ Simulator 12 (24670)"
+    },
+    {
+      "game_appid": "945360",
+      "game_title_protondb": "Among Us",
+      "lead_time_days": 1710.506412037037,
+      "first_report_time_protondb": "2021-01-02T00:48:53Z",
+      "first_issue_time_github": "2025-09-08T12:58:07Z",
+      "first_issue_number": 9035,
+      "first_issue_title": "Cyrillic input shows \"?\" in Among Us (945360)"
+    },
+    {
+      "game_appid": "892860",
+      "game_title_protondb": "Hot Brass",
+      "lead_time_days": 1710.4351620370371,
+      "first_report_time_protondb": "2021-02-28T06:29:06Z",
+      "first_issue_time_github": "2025-11-04T16:55:44Z",
+      "first_issue_number": 9184,
+      "first_issue_title": "Hot Brass (892860)"
+    },
+    {
+      "game_appid": "16620",
+      "game_title_protondb": "Monster Trucks Nitro",
+      "lead_time_days": 1701.4018171296295,
+      "first_report_time_protondb": "2021-03-07T10:32:54Z",
+      "first_issue_time_github": "2025-11-02T20:11:31Z",
+      "first_issue_number": 9171,
+      "first_issue_title": "Monster Trucks Nitro (16620)"
+    },
+    {
+      "game_appid": "1252600",
+      "game_title_protondb": "ANOTHER EDEN",
+      "lead_time_days": 1698.4016782407407,
+      "first_report_time_protondb": "2021-03-31T13:12:45Z",
+      "first_issue_time_github": "2025-11-23T22:51:10Z",
+      "first_issue_number": 9256,
+      "first_issue_title": "ANOTHER EDEN (1252600)"
+    },
+    {
+      "game_appid": "287700",
+      "game_title_protondb": "METAL GEAR SOLID V: THE PHANTOM PAIN",
+      "lead_time_days": 1697.984351851852,
+      "first_report_time_protondb": "2021-01-01T02:32:26Z",
+      "first_issue_time_github": "2025-08-26T02:09:54Z",
+      "first_issue_number": 9005,
+      "first_issue_title": "METAL GEAR SOLID V: THE PHANTOM PAIN (287700)  won't render"
+    },
+    {
+      "game_appid": "226580",
+      "game_title_protondb": "F1 2014",
+      "lead_time_days": 1693.252951388889,
+      "first_report_time_protondb": "2021-03-28T23:46:52Z",
+      "first_issue_time_github": "2025-11-16T05:51:07Z",
+      "first_issue_number": 9224,
+      "first_issue_title": "F1 2014 (226580)"
+    }
+  ]
+}

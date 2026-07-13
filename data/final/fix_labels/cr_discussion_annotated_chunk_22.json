@@ -1,0 +1,394 @@
+[
+  {
+    "issue_report_title": "Sons Of The Forest (1326470)",
+    "issue_number": 6559,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/6559#issuecomment-2848684542",
+    "compatibility_report_id": 2848684542,
+    "issue_state": "open",
+    "compatibility_report": "sons of the forest\n\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/8650.\n@wowfilip999 posted on 2025-05-03T15:10:11:\n\n# Compatibility Report\n- Name of the game with compatibility issues: Sons of the Forest\n- Steam AppID of the game:\n1326470\n\n## System Information\n- GPU: Quadro P3000 \n- Video driver version: 570.144\n- CUDA Version: 12.8  \n-  window system X11\n- system cachyos\n- kernel cachyos-x8664 6.12.25-1-cachyos-lts #1 SMP PREEMPT_DYNAMIC Fri, 25 Apr 2025 17:01:37 +0000 x86_64 GNU/Linux\n- Kernel version: <!-- e.g. 4.17 -->\n- Link to full system information report as [Gist] https://gist.github.com/wowfilip999/0c67fab87e3205be9703e1350e62370a\n- Proton version: Proton: 1746027208 proton-10.0-1c\n\n## I confirm:\n- [ *] that I haven't found an existing compatibility report for this game.\n- [* ] that I have checked whether there are updates for my system available.\n\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\n(Proton logs compress well if needed.)-->\nhttps://gist.github.com/wowfilip999/287b6f576b1dcf2589d0d6b69a5198f1\n\n## Symptoms <!-- What's the problem? -->\ngame freeze when join server worked before i tried to verify game integrity but problem still persists\n\n## Reproduction\n\nif more system info need write me about it",
+    "created_at": "2025-05-03T15:52:42Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6559#issuecomment-3408843633",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/6559#issuecomment-2784064725\n\nSame problem. After some playtime, opening the inventory decrease the FPS to 5~6..\n\n## System Information\nGPU: RTX 3070 (driver 580.82.09)\nOS: Manjaro Linux 25.0.10 (Kernel: 6.12.48-1-MANJARO x86_64)\nProton Version: Experimental",
+        "created_at": "2025-10-16T01:27:36Z",
+        "is_for_the_report": "false"
+      }
+    ],
+    "resolution_status": "no_observed_fix",
+    "fix_channel": [],
+    "root_cause_origin": [],
+    "fix_patterns": [],
+    "fix_management": [],
+    "fix_submodule": [],
+    "manually_checked": true
+  },
+  {
+    "issue_report_title": "SeaBed (583090)",
+    "issue_number": 7807,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/7807",
+    "compatibility_report_id": 2330011718,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Seabed\r\n- Steam AppID of the game: 583090\r\n\r\n## System Information\r\n- GPU: 7900XTX, Steam Deck OLED\r\n- Video driver version:  Mesa 24.1.0\r\n- Kernel version: Linux Zen 6.9.3, but also happens with mainline Kernel\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/sonic2kk/c82c065546cb41172a7bce1138bb6fdc\r\n- Proton version: Proton 8.0-5, Proton 9.0-1, Proton Experimental (20240522)\r\n- OS: Arch Linux with KDE Plasma Wayland 6.0.5\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[steam-583090.log](https://github.com/user-attachments/files/15527926/steam-583090.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nWhen running the game Seabed fullscreen, the window turns black on SteamOS, and contains some artifacts on the Linux Desktop. Running the game in Windowed Mode appears to work fine.\r\n\r\n## Reproduction\r\n1. Open Seabed\r\n2. If the game is not fullscreen, press Alt+Enter to make it fullscreen\r\n3. The window will not render correctly\r\n4. Press Alt+Enter to exit fullscreen\r\n5. The game window will display normally.\r\n\r\nIf the game starts fullscreen, press Alt+Enter to exit fullscreen. Re-entering fullscreen will cause the window to render incorrectly once again.\r\n\r\nWhen running in fullscreen, the Proton log appears to start spamming these two error lines repeatidly:\r\n\r\n```\r\n6841.877:0188:018c:err:x11drv:xinerama_get_fullscreen_monitors Failed to get xinerama fullscreen monitor indices.\r\n6841.877:0188:018c:err:x11drv:update_net_wm_fullscreen_monitors Failed to find xinerama monitors at (0,0)-(1920,1080)\r\n```\r\n\r\nI am not an expert so I am unsure if these are related.\r\n\r\nIf the game is not fullscreen, the game appears to run fine from a brief test.",
+    "created_at": "2024-06-03T01:59:11Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7807#issuecomment-2144166379",
+        "discussion_body": "From inspecting the blame, it seems the code logging this error, and its surrounding code, was introduced in ValveSoftware/wine@bd8ec8f264b5403f90bca6ecb26ae3170995ccd4 ([relevant log line](https://github.com/ValveSoftware/wine/commit/bd8ec8f264b5403f90bca6ecb26ae3170995ccd4#diff-88cf12a6574fc307c8c80271473cab016025709cf6cb0a3e2237070230f5bb71R182)), which introduced support for `_NET_WM_FULLSCREEN_MONITORS` hint.\r\n\r\nI wonder if this is an Environment-specific issue. I will update my OP to note that I am running KDE Plasma Wayland.",
+        "created_at": "2024-06-03T02:27:28Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7807#issuecomment-2144184131",
+        "discussion_body": "Out of interest, I spot-checked a bunch of Proton versions, clearing the prefix each time, to see how older Proton versions worked in particular to see how versions before https://github.com/ValveSoftware/wine/commit/bd8ec8f264b5403f90bca6ecb26ae3170995ccd4 behaved. None worked unfortunately, although Proton 6.3-8 and below only show a black screen on my Linux Desktop. 7.0 onwards show minor artifacting.\r\n\r\nAlso, while these versions don't work, Proton 6.3-8 and below can enter fullscreen much faster with this game. Exiting fullscreen still takes some time though.",
+        "created_at": "2024-06-03T02:52:15Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7807#issuecomment-2144203538",
+        "discussion_body": "I tried in Steam Deck Desktop Mode (the only X11 session I have access to atm), and I was able to get the game to work.\r\n\r\nIf the game opens fullscreen, or if it opens windowed and is then fullscreened, the following log lines will be in the Proton log:\r\n\r\n```\r\n2911.776:012c:0130:trace:seh:dispatch_exception  eax=887601c2 ebx=00000159 ecx=00000004 edx=00000000 esi=007bba14 edi=00000010\r\n2911.776:012c:0130:trace:seh:dispatch_exception  ebp=00b0e704 esp=00b0e698 cs=0023 ss=002b ds=002b es=002b fs=0063 gs=006b flags=00210283\r\n2911.776:012c:0130:trace:seh:call_stack_handlers calling handler at 7BEE6270 code=c0000005 flags=0\r\n2911.776:012c:0130:trace:seh:__regs_RtlUnwind code=c0000005 flags=2\r\n2911.776:012c:0130:trace:seh:__regs_RtlUnwind eax=00000000 ebx=00000000 ecx=c0000005 edx=00b0e6ac esi=00b0e1e0 edi=00b0e230\r\n2911.776:012c:0130:trace:seh:__regs_RtlUnwind ebp=00b0dfbc esp=00b0dfb4 eip=7becee52 cs=0023 ds=002b fs=0063 gs=006b flags=00200206\r\n2911.776:012c:0130:trace:seh:__regs_RtlUnwind calling handler at 7BF9DA00 code=c0000005 flags=2\r\n2911.776:012c:0130:trace:seh:__regs_RtlUnwind handler at 7BF9DA00 returned 1\r\n2911.776:012c:0130:trace:seh:IsBadReadPtr 887601C2 caused page fault during read\r\n2911.776:012c:0130:trace:seh:dispatch_exception code=c0000005 flags=0 addr=7BEDB107 ip=7bedb107\r\n2911.776:012c:0130:trace:seh:dispatch_exception  info[0]=00000000\r\n2911.776:012c:0130:trace:seh:dispatch_exception  info[1]=0000014d\r\n2911.776:012c:0130:warn:seh:dispatch_exception EXCEPTION_ACCESS_VIOLATION exception (code=c0000005) raised\r\n```\r\n\r\nThese appear repeatidly while the game is fullscreen and not working.\r\n\r\nHowever, in Desktop Mode (and presumably any at least Plasma X11 session), tabbing out and back in will get the game to work when fullscreen. After this, the above repeated log section goes away,\r\n\r\nSo perhaps the issues reported above with Xinerama and `_NET_WM_FULLSCREEN_MONITORS` is specific to XWayland (including Gamescope)?\r\n\r\nI did not test the Wine Wayland backend yet, but out of morbid curiosity, I will be testing that tomorrow (since these errors from the OP are specific to x11drv in Wine).",
+        "created_at": "2024-06-03T03:19:53Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7807#issuecomment-2146298073",
+        "discussion_body": "I tested the Wayland backend with a build of the unofficial Proton-tkg based from Wine Master (proton_tkg_9.10.r0.g12bbb07c). It indeed started with Wayland (denoted by the alterantive window decorations and incorrect fractional scaling behaviour, and other elements indicative of Wine's current very early Wayland backend) but the game only rendered a black window in windowed mode, and when trying to fullscreen, it attempted to spread across two of my four monitors and then promptly crashed.",
+        "created_at": "2024-06-03T23:33:12Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7807#issuecomment-2153460930",
+        "discussion_body": "I noticed when doing additional troubleshooting, the error block shown on Plasma X11 on SteamOS are also appearing for Plasma Wayland.\r\n\r\nI am not sure exactly then what is causing these issues, as Plasma X11 does eventually work, but Plasma Wayland does not. Unsure if Plasma X11 works because it's simply an older version on SteamOS (Plasma 5.27.10 versus Plasma 6.0.5) but still. Given that this issue also affects GameScope on SteamOS Game Mode as well as GameScope nested on my PC, I figure there is something deeper going on here.\r\n\r\n<hr>\r\n\r\nSome other log lines that may be of interest may be:\r\n- `uiautomation:msaa_provider_GetPatternProvider Unimplemented patternId 10002`\r\n- `oleacc:find_class_data unhandled window class: L\"#32769\"`\r\n- `uiautomation:base_hwnd_provider_GetPatternProvider 0000000000AD9BE0, 10002, 000000000192F8A0: stub`",
+        "created_at": "2024-06-06T21:49:04Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7807#issuecomment-2377779871",
+        "discussion_body": "As of the new engine update, SeaBed now runs properly with Wine, but the Legacy branch that uses the old engine does not to my understanding.",
+        "created_at": "2024-09-26T19:34:50Z",
+        "is_for_the_report": "true"
+      }
+    ],
+    "resolution_status": "no_observed_fix",
+    "fix_channel": [],
+    "root_cause_origin": [],
+    "fix_patterns": [],
+    "fix_management": [],
+    "fix_submodule": [],
+    "manually_checked": true
+  },
+  {
+    "issue_report_title": "Songs for a Hero - Definitive Edition (389170)",
+    "issue_number": 5650,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5650",
+    "compatibility_report_id": 1160452528,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Songs for a Hero\r\n- Steam AppID of the game: 389170\r\n\r\n## System Information\r\n- GPU: <!-- e.g. RX 580 or GTX 970 --> Intel Mesa Intel(R) UHD Graphics (CML GT2)\r\n- Driver/LLVM version: <!-- e.g. Mesa 18.2/7.0.0 or nvidia 396.54 --> Mesa 21.3.6\r\n- Kernel version: <!-- e.g. 4.17 --> 5.16.11-200.fc35.x86_64\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/thePaulRichard/36840c53b5e20020c78e40b303e65718\r\n- Proton version: Experimental 7.0-1, 5.13-6\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n [steam-389170.log](https://github.com/ValveSoftware/Proton/files/8191521/steam-389170.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame won't launch with Proton.\r\n\r\n## Reproduction\r\nUse Proton and try to launch.\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2022-03-05T21:43:38Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5650#issuecomment-1064481004",
+        "discussion_body": "The game ships a bunch of .NET Framework dll's that can't be expected to work with Wine Mono due to it being a different implementation and those dll's necessarily relying on implementation details. If I remove System*.dll from the game files, it starts up.\r\n\r\nI should be able to update Wine Mono to detect those dll's and refuse to load them so that work-around won't be needed in a later release.",
+        "created_at": "2022-03-10T20:36:56Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5650#issuecomment-1067303538",
+        "discussion_body": "Now that I'm looking at these dll's more closely, the version resource claims they are from Mono. I think the game must be shipping the dll's for use on Linux and Mac (also I am noticing for the first time there is a native version). I guess .NET Framework must ignore these based on filename.",
+        "created_at": "2022-03-14T21:17:53Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5650#issuecomment-1067333042",
+        "discussion_body": "> Now that I'm looking at these dll's more closely, the version resource claims they are from Mono. I think the game must be shipping the dll's for use on Linux and Mac (also I am noticing for the first time there is a native version). I guess .NET Framework must ignore these based on filename.\r\n\r\nHi @madewokherd!\r\nSorry that I didn't say about this game being Linux native. In Linux there are some problems like the cloud save won't work, I tried to contact the developer about this issue, but I didn't receive an answer, and using proton the game works perfectly (after I remove that DLLs)",
+        "created_at": "2022-03-14T21:50:50Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5650#issuecomment-1075628192",
+        "discussion_body": "Properly fixing this is harder than I thought as described in that issue, it may be a while.",
+        "created_at": "2022-03-22T20:54:07Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5650#issuecomment-1682596988",
+        "discussion_body": "This should work in Experimental now with the 20230817 update.",
+        "created_at": "2023-08-17T16:26:21Z",
+        "is_for_the_report": "true"
+      }
+    ],
+    "resolution_status": "with_observed_fix",
+    "fix_channel": [
+      "proton_update"
+    ],
+    "root_cause_origin": [
+      "proton_side"
+    ],
+    "fix_patterns": [
+      "(proton side) fix internal defect"
+    ],
+    "fix_management": [
+      "generic upstream code change"
+    ],
+    "fix_submodule": [
+      "wine-mono"
+    ],
+    "manually_checked": true
+  },
+  {
+    "issue_report_title": "Gun Metal (267920)",
+    "issue_number": 6027,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/6027#issuecomment-2015582054",
+    "compatibility_report_id": 2015582054,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Gun Metal\r\n- Steam AppID of the game: 267920\r\n\r\n## System Information\r\n- GPU: intel hd 3000\r\n- Video driver version: Mesa 23.3.6-1/ LLVM 17.0.6-3\r\n- Kernel version: 6.7.9\r\n- Link to full system information report as [Gist](https://gist.github.com/): [report](https://gist.github.com/iodream/21f587c827e63400f174b3e3b084bd5a)\r\n- Proton version: 1711103557 experimental-bleeding-edge-9.0-87026-20240322-pc5407b-we37b544-d28c7c0-v21008d\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\nProton log: [steam-267920.tar.gz](https://github.com/ValveSoftware/Proton/files/14726405/steam-267920.tar.gz)\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nMenu works but game hangs when loading into the actual mission/level. Also there is no menu or level music, no narrator audio in loading screens. And the intro video is replaced with the proton video testing pattern. \r\nThere is also an additional window created when video is playing, minimizing and taking focus away from actual game.     \r\n\r\nI've also tried a more stable Proton 9 and it has the same symptoms. \r\n\r\nLast working Proton version which didn't freeze the game was Proton 6. \r\n\r\n## Reproduction\r\n1. Start Gun Metal\r\n2. Click Load game\r\n3. Click Start \r\n\r\nObserved result: Game freezes\r\nExpected result: game doesn't freeze",
+    "created_at": "2024-03-22T17:37:28Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6027#issuecomment-2016275122",
+        "discussion_body": "Can also confirm the same freezing issue on my oled with Experimental proton, as well as seeing a bunch of test bars for the first intro fmvs.",
+        "created_at": "2024-03-23T01:27:24Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6027#issuecomment-3693565452",
+        "discussion_body": "## System Information\n- GPU: RX 6600\n- Video driver version: Mesa 25.0.7 / LLVM 20.1.2\n- Kernel version: 6.80-90-generic\n- Link to full system information report as [Gist](https://gist.github.com/thasreal/e8a0c5512447d53576a7ecccbe55a775)\n- Proton version: 10.0-3\n\n## I confirm:\n- [x] that I have checked whether there are updates for my system available.\n\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\n(Proton logs compress well if needed.)-->\n\n## Symptoms \nThe game launches with no unsupported graphics card error or anything of the sort, and the intro videos and menu music play just fine for me, but as with the previous person's report, the game hangs when I attempt to launch a mission.\n[steam-267920_dxvk.log](https://github.com/user-attachments/files/24351873/steam-267920_dxvk.log)\n\nLaunching the game with WineD3D produces similar results, except now the game no longer hangs and progresses into missions (albeit after several ActiveMovie Window windows pop up containing either test patterns or nothing at all). It still lacks the narrator audio mentioned in the aforementioned report, and attempting to play the game with a gamepad makes the player's mecha constantly turn towards the right. This only affects the mecha mode, strangely enough, as the jet mode's controls suffer from no such issue.\n[steam-267920_wined3d_gamepad.log.gz](https://github.com/user-attachments/files/24351935/steam-267920_wined3d_gamepad.log.gz)\n[steam-267920_wined3d_keyboard.log.gz](https://github.com/user-attachments/files/24351940/steam-267920_wined3d_keyboard.log.gz)\n\n## Reproduction\nLaunch the game and attempt to start a mission, or launch it with `PROTON_USE_WINED3D=1`  with a gamepad connected and attempt to start a mission.\n\n<!--\n1. You can find the Steam AppID in the URL of the shop page of the game.\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\n2. You can find your driver and Linux version, as well as your graphics\n   processor's name in the system information report of Steam.\n3. You can retrieve a full system information report by clicking\n   `Help` > `System Information` in the Steam client on your machine.\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\n   this issue.\n5. Also, please copy the contents of `Help` > `Steam Runtime Diagnostics` to\n   the gist.\n6. Please search for open issues and pull requests by the name of the game and\n   find out whether they are relevant and should be referenced above.\n-->\n",
+        "created_at": "2025-12-27T02:00:58Z",
+        "is_for_the_report": "true"
+      }
+    ],
+    "resolution_status": "no_observed_fix",
+    "fix_channel": [],
+    "root_cause_origin": [],
+    "fix_patterns": [],
+    "fix_management": [],
+    "fix_submodule": [],
+    "manually_checked": true
+  },
+  {
+    "issue_report_title": "Tekken 7 (389730) freezes whenever i hit another character,Reinstall fixes it once but after that it breaks again",
+    "issue_number": 6042,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/6042",
+    "compatibility_report_id": 1322470697,
+    "issue_state": "closed",
+    "compatibility_report": "Turning off Vibration in game settings seems to fix this\r\n# Compatibility Report\r\n- Name of the game with compatibility issues: Tekken 7\r\n- Steam AppID of the game: 389730\r\n\r\n## System Information\r\n- GPU: AMD Ryzen 7 5800X 8-Core Processor\r\n- Driver/LLVM version: xf86-video-amdgpu-22.0.0-3.2.x86_64\r\n- Kernel version: 5.18.11-1\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/JeroenMathon/af768570e991b069d09c9d214122985c\r\n- Proton version: 7.x, 6.x  and Expirimental show the same issues\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\nProton logs: https://gist.github.com/JeroenMathon/18e43165760ecbad5f28ac6502100a54\r\n## Symptoms <!-- What's the problem? -->\r\nWhenever i hit another character in the game or get hit, on the first hit the game freezes, the music keeps playing but the game becomes unresponsive and the video freezes.\r\n\r\nReinstalling seems to fix it for one game, if i start a new session it does the same thing\r\n\r\n## Reproduction\r\nStart the game, Open practice or online, Hit or get hit by another character, Game freezes up and becomes unresponsive.\r\nhttps://youtu.be/kky1f22mTD8 Video of the bug\r\n\r\nI have tried nearly every version of proton even custom wine binaries but nothing seems to solve this\r\n",
+    "created_at": "2022-07-29T16:41:06Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6042#issuecomment-1204404231",
+        "discussion_body": "I had the same issue when connected few other controllers to the steam deck. \r\nDisabling vibration in game menu helps. Game freezes when vibration is about to trigger.",
+        "created_at": "2022-08-03T19:48:15Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6042#issuecomment-1204865065",
+        "discussion_body": "> ed few other controllers to the steam deck.\r\n> Disabling vibration in game menu helps. Game freezes when vibration is\r\n\r\nOh my god this works, i think the reason why proton7.0-2 might work is because vibration does not work in it",
+        "created_at": "2022-08-04T07:20:17Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6042#issuecomment-1445477851",
+        "discussion_body": "This is also working for me.",
+        "created_at": "2023-02-26T21:57:29Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6042#issuecomment-1712934740",
+        "discussion_body": "Playing the first mission chapter starting with the first fight the game instantly freezes and you see a \"D-Pad press right\". Disabling vibration in Tekkens Game Settings fixes this.",
+        "created_at": "2023-09-10T20:56:19Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6042#issuecomment-1715275586",
+        "discussion_body": "Disabling Vibration fixes this issue, after almost a year im closing this issue since the description does not match the issue anymore, feel free to open a new one for a fix with vibration, im not sure if its fixed in the newer versions if proton, for now im closing this with the following workarround:\r\n\r\nTurn off Vibrations in the controller/gamepad settings to resolve the crashes",
+        "created_at": "2023-09-12T08:46:25Z",
+        "is_for_the_report": "true"
+      }
+    ],
+    "resolution_status": "with_observed_fix",
+    "fix_channel": [
+      "community_fix"
+    ],
+    "root_cause_origin": [
+      "cant_identify"
+    ],
+    "fix_patterns": [
+      "(game side) change game settings"
+    ],
+    "fix_management": [
+      "discussion-only (no systematic manage)"
+    ],
+    "fix_submodule": [
+      "(game side) unknown"
+    ],
+    "manually_checked": true
+  },
+  {
+    "issue_report_title": "Skyrim Creation Kit (202480)",
+    "issue_number": 5182,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5182",
+    "compatibility_report_id": 1007026238,
+    "issue_state": "closed",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Skyrim Creation Kit\r\n- Steam AppID of the game: 202480\r\n\r\n## System Information\r\n- GPU: AMD RX 6600 XT\r\n- Driver/LLVM version: Mesa 21.2.2/12.0.1 <!-- e.g. Mesa 18.2/7.0.0 or nvidia 396.54 -->\r\n- Kernel version: 5.14.7 <!-- e.g. 4.17 -->\r\n- [System info](https://gist.github.com/fureloka/37aa5df4bc339a8c6eaccc467d6cc5a1)\r\n- Proton version: 6.3-6c\r\n- Proton log: [steam-202480.log](https://github.com/ValveSoftware/Proton/files/7229455/steam-202480.log)\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nImmediately stops after starting, e.g nothing is shown on screen.\r\n\r\nLooking at the log, an exception is raised early on\r\n`60767.971:00cc:00d0:trace:seh:dispatch_exception code=6ba flags=0 addr=000000007B01236E ip=000000007B01236E tid=00d0\r\n60767.971:00cc:00d0:warn:seh:dispatch_exception unknown exception (code=6ba) raised`\r\n\r\nand it seems unable to find the steam_api.dll file\r\n\r\n`60768.311:010c:0110:err:module:import_dll Library steam_api.dll (which is needed by L\"Z:\\\\home\\\\fureloka\\\\.local\\\\share\\\\Steam\\\\steamapps\\\\common\\\\skyrim\\\\CreationKit.exe\") not found\r\n60768.448:010c:0110:err:module:LdrInitializeThunk Importing dlls for L\"Z:\\\\home\\\\fureloka\\\\.local\\\\share\\\\Steam\\\\steamapps\\\\common\\\\skyrim\\\\CreationKit.exe\" failed, status c0000135`\r\n\r\n## Reproduction\r\n\r\n1. Install\r\n2. Press Launch\r\n3. Twiddle fingers while it does its thing\r\n4. Observe Launch button turning green\r\n5. $$$",
+    "created_at": "2021-09-25T08:50:03Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5182#issuecomment-927215747",
+        "discussion_body": "Eh, I deserve to get bonked... I had my suspicion when it acted the same on Windows 10, then it hit me that Creation Kit is installed in the same folder as Skyrim. Lo and behold, once Skyrim was installed, it loaded without issues. Oh well, time to test the functionality.\r\n\r\nI'll close the issue for now and reopen if I find anything useful.",
+        "created_at": "2021-09-26T02:18:20Z",
+        "is_for_the_report": "true"
+      }
+    ],
+    "resolution_status": "no_observed_fix",
+    "fix_channel": [],
+    "root_cause_origin": [],
+    "fix_patterns": [],
+    "fix_management": [],
+    "fix_submodule": [],
+    "manually_checked": true
+  },
+  {
+    "issue_report_title": "Saints Row (742420)",
+    "issue_number": 7046,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/7046",
+    "compatibility_report_id": 1866019122,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Saints Row\r\n- Steam AppID of the game: 742420\r\n\r\n## System Information\r\n- GPU: AMD Radeon 7900XTX\r\n- Video driver version: [Mesa 23.3-devel](https://gitlab.freedesktop.org/mesa/mesa/-/commit/8852e9cb2ee73c12a73b31b604e81aa3816eee9a)\r\n- Kernel version: 6.5-rc7\r\n- Link to full system information report as [gist](https://gist.github.com/NTMan/33cca4906328793206218192820779ec)\r\n- Proton version: experimental-bleeding-edge-8.0-53663-20230824-pf3d1cc-w394382-d92dc61-va4bef2\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n[steam-742420-Vulkan.zip](https://github.com/ValveSoftware/Proton/files/12434064/steam-742420-Vulkan.zip)\r\n[steam-742420-DX12.zip](https://github.com/ValveSoftware/Proton/files/12434063/steam-742420-DX12.zip)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nVulkan render for unknown reasons slower than DX12 render in 10 times. It means if I have with DX12 100FPS then on same scene with Vulkan I have only 10FPS.\r\n\r\n![image](https://github.com/ValveSoftware/Proton/assets/200750/29af6422-0c0c-4b88-8437-2b596be46e31)\r\n\r\n![20230825042000_1](https://github.com/ValveSoftware/Proton/assets/200750/277e303e-b661-47df-a122-3715004b62dc)\r\n\r\n\r\n\r\n## Reproduction\r\nSelect \"Start Vulkan\" in the game launcher.\r\nAnd watch on FPS during game play.\r\n\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Also, please copy the contents of `Help` > `Steam Runtime Information` to\r\n   the gist.\r\n6. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2023-08-24T23:27:57Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7046#issuecomment-1876098446",
+        "discussion_body": "Same problem here, with EGS copy of it. Happens with both Valve's Proton builds and Wine builds like Wine GE. Vulkan renderer is very slow. Just not 10X but 3X. AMD 7900XTX+ Mesa 23.3.2\r\n\r\nI have asked around some folks too ( since EGS recently gave away that game ) and symptoms are:\r\n\r\n- Nvidia straight out crashes with Vulkan.\r\n\r\n- AMD works ( both RADV and AMDVLK ) but has that huge perf gap. On Windows both renderer options runs equally well.\r\n\r\n`WINEDEBUG=+vulkan` and `PROTON_LOG=+vulkan` outputs ( Proton one is from Steam copy from @Blisto91 whom can repro the issue with Steam copy ):\r\n\r\n- Blisto's log:\r\n\r\n[steam-742420.tar.gz](https://github.com/ValveSoftware/Proton/files/13824272/steam-742420.tar.gz)\r\n\r\n- My log:\r\n\r\n[Cormorant-lastPlay.tar.gz](https://github.com/ValveSoftware/Proton/files/13824273/Cormorant-lastPlay.tar.gz)\r\n\r\n- From Nvidia user:\r\n\r\n[From NV user with crash.tar.gz](https://github.com/ValveSoftware/Proton/files/13824275/From.NV.user.with.crash.tar.gz)\r\n\r\n\r\nScreenshots that shows Vulkan vs D3D12 perf gap:\r\n\r\n![Screenshot_20231230_222806](https://github.com/ValveSoftware/Proton/assets/24878978/8de2d523-bcde-480c-83df-390b6ae5a75e)\r\n\r\n\r\n![Screenshot_20231230_222158](https://github.com/ValveSoftware/Proton/assets/24878978/dd4c1eb4-e3c6-4113-a15d-5e1fef417462)\r\n",
+        "created_at": "2024-01-03T23:17:54Z",
+        "is_for_the_report": "true"
+      }
+    ],
+    "resolution_status": "no_observed_fix",
+    "fix_channel": [],
+    "root_cause_origin": [],
+    "fix_patterns": [],
+    "fix_management": [],
+    "fix_submodule": [],
+    "manually_checked": true
+  },
+  {
+    "issue_report_title": "Planetside 2 (218230)",
+    "issue_number": 5295,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-3008858294",
+    "compatibility_report_id": 3008858294,
+    "issue_state": "open",
+    "compatibility_report": "Planetside 2 position data desyncs in large fights\n\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/8856.\n@GleamingPulsar posted on 2025-06-26T14:55:59:\n\n# Compatibility Report\n- Name of the game with compatibility issues: Planetside 2\n- Steam AppID of the game: 218230\n\n## System Information\n- GPU: <!-- e.g. RX 580 or GTX 970 -->\n- Video driver version: <!-- e.g. Mesa 18.2 or nvidia 396.54 --> AMD Radeon RX 5700\n- Kernel version: <!-- e.g. 4.17 --> Linux 6.8.0-62-generic x86_64\n- Link to full system information report as [Gist](https://gist.github.com/):\n\n<details><summary>Click to expand</summary>\n \n```\n===== Linux Laptop Full Spec Report (Sanitized) =====\n\n--- OS and Kernel ---\nLinux Mint 22.1\n6.8.0-62-generic\n\n--- CPU Info ---\nArchitecture:             x86_64\n  CPU op-mode(s):         32-bit, 64-bit\n  Address sizes:          43 bits physical, 48 bits virtual\n  Byte Order:             Little Endian\nCPU(s):                   12\n  On-line CPU(s) list:    0-11\nVendor ID:                AuthenticAMD\n  Model name:             AMD Ryzen 5 1600 Six-Core Processor\n    CPU family:           23\n    Model:                1\n    Thread(s) per core:   2\n    Core(s) per socket:   6\n    Socket(s):            1\n    Stepping:             1\n    Frequency boost:      enabled\n    CPU(s) scaling MHz:   98%\n    CPU max MHz:          3200.0000\n    CPU min MHz:          1550.0000\n    BogoMIPS:             6399.90\n    Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr ss\n                          e sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_t\n                          sc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 mov\n                          be popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy extapic cr8_legacy abm sse4a misalig\n                          nsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mw\n                          aitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushop\n                          t sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save\n                          tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload\n                           vgif overflow_recov succor smca sev\nCaches (sum of all):\n  L1d:                    192 KiB (6 instances)\n  L1i:                    384 KiB (6 instances)\n  L2:                     3 MiB (6 instances)\n  L3:                     16 MiB (2 instances)\nNUMA:\n  NUMA node(s):           1\n  NUMA node0 CPU(s):      0-11\nVulnerabilities:\n  Gather data sampling:   Not affected\n  Itlb multihit:          Not affected\n  L1tf:                   Not affected\n  Mds:                    Not affected\n  Meltdown:               Not affected\n  Mmio stale data:        Not affected\n  Reg file data sampling: Not affected\n  Retbleed:               Mitigation; untrained return thunk; SMT vulnerable\n  Spec rstack overflow:   Mitigation; Safe RET\n  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl\n  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\n  Spectre v2:             Mitigation; Retpolines; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affe\n                          cted; BHI Not affected\n  Srbds:                  Not affected\n  Tsx async abort:        Not affected\n\n--- RAM Info ---\n               total        used        free      shared  buff/cache   available\nMem:            15Gi       7.0Gi       968Mi       371Mi       8.3Gi       8.5Gi\nSwap:            9Gi       3.5Gi       6.5Gi\n\n--- Disk Info ---\nNAME   FSTYPE   SIZE MOUNTPOINT                  MODEL\nsda           238.5G                             ADATA SU800\n├─sda1 vfat   513.1M /boot/efi\n├─sda2            1M\n└─sda3 ext4     238G /\nsdb           238.5G                             ADATA SU800\n└─sdb1 ext4   238.5G /media/pulsar/The Other One\nsdc           931.5G                             WDC WD10EZEX-00MFCA0\n├─sdc1 ext4   833.9G /media/pulsar/The Big One\n└─sdc2 ext4    97.7G /media/pulsar/Timeshift\n\n--- GPU Info ---\n2b:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Navi 10 [Radeon RX 5600 OEM/5600 XT / 5700/5700 XT] (rev c4)\nOpenGL renderer string: AMD Radeon RX 5700 (radeonsi, navi10, LLVM 19.1.1, DRM 3.57, 6.8.0-62-generic)\n\n--- USB Devices ---\nBus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 001 Device 002: ID 28bd:090d XP-Pen 15.6 inch PenDisplay\nBus 001 Device 003: ID 046d:0a7a Logitech, Inc. Logi USB Headset\nBus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\nBus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 003 Device 002: ID 045e:0752 Microsoft Corp. Wired Keyboard 400\nBus 003 Device 003: ID 30fa:1140 INSTANT USB GAMING MOUSE\nBus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub\n\n--- PCI Devices ---\n00:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Root Complex\n00:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) I/O Memory Management Unit\n00:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-1fh) PCIe Dummy Host Bridge\n00:01.3 PCI bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) PCIe GPP Bridge\n00:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-1fh) PCIe Dummy Host Bridge\n00:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-1fh) PCIe Dummy Host Bridge\n00:03.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) PCIe GPP Bridge\n00:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-1fh) PCIe Dummy Host Bridge\n00:07.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-1fh) PCIe Dummy Host Bridge\n00:07.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Internal PCIe GPP Bridge 0 to Bus B\n00:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-1fh) PCIe Dummy Host Bridge\n00:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Internal PCIe GPP Bridge 0 to Bus B\n00:14.0 SMBus: Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller (rev 59)\n00:14.3 ISA bridge: Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge (rev 51)\n00:18.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 0\n00:18.1 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 1\n00:18.2 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 2\n00:18.3 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 3\n00:18.4 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 4\n00:18.5 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 5\n00:18.6 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 6\n00:18.7 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Data Fabric: Device 18h; Function 7\n03:00.0 USB controller: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset USB 3.1 xHCI Compliant Host Controller (rev 01)\n03:00.1 SATA controller: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset SATA Controller (rev 01)\n03:00.2 PCI bridge: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Bridge (rev 01)\n20:00.0 PCI bridge: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01)\n20:01.0 PCI bridge: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01)\n20:04.0 PCI bridge: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01)\n20:05.0 PCI bridge: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01)\n20:06.0 PCI bridge: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01)\n20:07.0 PCI bridge: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01)\n22:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet Controller (rev 15)\n26:00.0 Network controller: Intel Corporation Wi-Fi 6 AX200 (rev 1a)\n29:00.0 PCI bridge: Advanced Micro Devices, Inc. [AMD/ATI] Navi 10 XL Upstream Port of PCI Express Switch (rev c4)\n2a:00.0 PCI bridge: Advanced Micro Devices, Inc. [AMD/ATI] Navi 10 XL Downstream Port of PCI Express Switch\n2b:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Navi 10 [Radeon RX 5600 OEM/5600 XT / 5700/5700 XT] (rev c4)\n2b:00.1 Audio device: Advanced Micro Devices, Inc. [AMD/ATI] Navi 10 HDMI Audio\n2c:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Zeppelin/Raven/Raven2 PCIe Dummy Function\n2c:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) Platform Security Processor (PSP) 3.0 Device\n2c:00.3 USB controller: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) USB 3.0 Host Controller\n2d:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Zeppelin/Renoir PCIe Dummy Function\n2d:00.2 SATA controller: Advanced Micro Devices, Inc. [AMD] FCH SATA Controller [AHCI mode] (rev 51)\n2d:00.3 Audio device: Advanced Micro Devices, Inc. [AMD] Family 17h (Models 00h-0fh) HD Audio Controller\n\n===== End of Sanitized Report =====\n```\n\n</details>\n\n- Proton version: 9.0-4\n\n## I confirm:\n\n[steam-218230.log](https://github.com/user-attachments/files/20928444/steam-218230.log)\n\n- [X ] that I haven't found an existing compatibility report for this game.\n- [ X] that I have checked whether there are updates for my system available.\n\n<!-- Please add `[PROTON_LOG=1 %command%]()` to the game's launch options and\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\n(Proton logs compress well if needed.)-->\n\n## Symptoms <!-- What's the problem? -->\nWhenever I join fights with ~above 30 people the game will eventually start messing up positional information on my client and models will start flying around everywhere. The desync happens faster the larger the fight is.\n\n#\n## Reproduction\nLaunch the game with this hardware/proton version, find a sufficiently large fight, and wait until models start jittering and eventually flying everywhere.",
+    "created_at": "2025-06-26T15:17:06Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-3009310920",
+        "discussion_body": "@GleamingPulsar I think maybe I didn't manage to find a big enough fight but I couldn't get the game to desync. Have you tried newer proton versions (for example 10, or experimental)? if so, do you get the issue there as well?",
+        "created_at": "2025-06-26T17:49:31Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-3012987565",
+        "discussion_body": "I have gotten this issue on an older hotfix version, but I will attempt to try again.",
+        "created_at": "2025-06-27T12:54:17Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-3014419220",
+        "discussion_body": "The issue still occurs on proton experimental with a fight of around 100 players",
+        "created_at": "2025-06-27T21:48:10Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-3067273627",
+        "discussion_body": "The hang behavior is gone with the current Planetside version and the current proton experimental.  Both the fatal hang and the non-fatal 60 second hang after doing a resolution change have stopped happening.",
+        "created_at": "2025-07-13T20:03:41Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-3067293234",
+        "discussion_body": "Also observing that the hang is gone",
+        "created_at": "2025-07-13T20:47:43Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-3067335571",
+        "discussion_body": "Has anyone else noticed positional desyncs yet in large fights? If not,\r\nwhat troubleshooting steps could I take to avoid this? I know that the game\r\nstruggles with positional data after witnessing some bugs, especially with\r\npoor internet, but this happens in *every* fight above a player threshold\r\nfor me, where every model that can move around does (so terminals don't).\r\nIs this a problem with my internet specifically?\r\n\r\nOn Sun, Jul 13, 2025 at 4:48 PM Thomas Cohn ***@***.***>\r\nwrote:\r\n\r\n> *cohnt* left a comment (ValveSoftware/Proton#5295)\r\n> <https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-3067293234>\r\n>\r\n> Also observing that the hang is gone\r\n>\r\n> —\r\n> Reply to this email directly, view it on GitHub\r\n> <https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-3067293234>,\r\n> or unsubscribe\r\n> <https://github.com/notifications/unsubscribe-auth/BFALRWTRVPM345URVGPEDXD3ILAYPAVCNFSM6AAAAABPS4Q4JCVHI2DSMVQWIX3LMV43OSLTON2WKQ3PNVWWK3TUHMZTANRXGI4TGMRTGQ>\r\n> .\r\n> You are receiving this because you were mentioned.Message ID:\r\n> ***@***.***>\r\n>\r\n",
+        "created_at": "2025-07-13T22:19:10Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-3388128885",
+        "discussion_body": "Here to add more context, assuming it's the same issue.\n\nI'm running it through steam-fhs on nixOS (I know, I know, but it shouldn't affect this, it didn't before, and doesn't with other games.  It runs steam in it's own fhs-compatible filesystem).\n\nSometime around when this sub-issue was posted, a patch came out that reduced this sort of latency... on windows machines, and seemingly made it worse for some linux clients.  Two of my guildmembers using linux seem to report that it works fine.\n\nAt least with mine, anywhere you're in a big big fight with a lot (48-96 per side) in only a few rooms, the \"server latency\" on the scoreboard ticks up slowly over time, not quite exponentially, but with growing numbers, and as long as you're in the area, the RTT will increase steadily to over 20,000ms, and if you move to another part of the map, it will then 'drain', slowly ticking down the latency meter in around 200ms incriments.\n\nThat made me explore a few things, now ruled out:\n- \"only linux... about 200ms added per tick, could it be nagle's?\" - turned on QUICKACK, didn't fix.\n  - this was a bit of a leap since the game uses UDP, but alas. \n- \"maybe it's wifi power saving\" no\n- \"maybe it's my router's flow control interfering with it\" no\n\nMy theory is something Planetside (Well, daybreak) enabled on their end is interfering somewhere in the WINE network stack, or where it meets the linux one.\n\nedit:\nproton: 9.0-4 and experimental\nOS: nixos-25.05 and -unstable, \nWIFI pcie card: GIGABYTE WiFi 6E GC-WBAX210, \nwifi controller: Intel Corporation Wi-Fi 6E(802.11ax) AX210/AX1675* 2x2 [Typhoon Peak] (rev 1a)\n",
+        "created_at": "2025-10-10T03:15:54Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-3666623102",
+        "discussion_body": "After a December 16 update to the game planetside has been frequently crashing with an EXCEPTION_ACCESS_VIOLATION.\nHere is an example steam-218230.log from a particularly quick crash.\n[gist](https://gist.github.com/stroyan/a847a0b19c6040525522d84e40abe826/raw/bc02937a4a66dbf21190d50126529b7ffdd2040f/steam-218230.log)",
+        "created_at": "2025-12-17T18:26:47Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-3672756329",
+        "discussion_body": "The recent crashes related to the December 16 game update do happen with Proton 10.0-3, but do not occur using Proton 9.0-4.",
+        "created_at": "2025-12-18T23:42:36Z",
+        "is_for_the_report": "false"
+      }
+    ],
+    "resolution_status": "no_observed_fix",
+    "fix_channel": [],
+    "root_cause_origin": [],
+    "fix_patterns": [],
+    "fix_management": [],
+    "fix_submodule": [],
+    "manually_checked": true
+  },
+  {
+    "issue_report_title": "We Went Back (1218250)",
+    "issue_number": 5046,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5046",
+    "compatibility_report_id": 961774069,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: We went back\r\n- Steam AppID of the game: 1218250\r\n\r\n## System Information\r\n- GPU: AMD Radeon RX590\r\n- Driver/LLVM version: Mesa 21.1.3\r\n- Kernel version: 5.12.15\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/414n/34891616266f2d4e4489173e8bbee632\r\n- Proton version: experimental-6.3-20210730 \r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\nProton log: [steam-1218250.log.gz](https://github.com/ValveSoftware/Proton/files/6938453/steam-1218250.log.gz)\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nThe game is playable and can be finished, however there are some surfaces that seem to use videos through `mfplat` that get swapped with the test pattern:\r\n\r\n  - the title/pause menu screen: ![we_went_back01](https://user-images.githubusercontent.com/11655692/128348334-527fa2e6-f063-4920-86e6-8c84baa48a70.jpg)\r\n  - an in-game monitor screen: \r\n![we_went_back02](https://user-images.githubusercontent.com/11655692/128348477-86eea4da-d562-4ade-ba1b-27df29138053.jpg)\r\n\r\nShould probably need an entry in #1464 related tables.\r\n\r\n## Reproduction\r\n\r\n 1. Use Steam Linux beta client\r\n 2. Install and enable \"Proton Experimental\" for use in \"We went back\"\r\n 3. Launch the game\r\n 4. The start menu will be \"normal\" for a couple of seconds, then change to the test pattern\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2021-08-05T12:28:20Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5046#issuecomment-1086932139",
+        "discussion_body": "Tried it again a couple of minutes ago with the newer `1648847710 experimental-bleeding-edge-7.0-13026-20220401-p1acdc3-wf9a1df-d95a341-v8dda6d` Proton Experimental version and videos do work now.",
+        "created_at": "2022-04-03T19:22:49Z",
+        "is_for_the_report": "true"
+      }
+    ],
+    "resolution_status": "no_observed_fix",
+    "fix_channel": [],
+    "root_cause_origin": [],
+    "fix_patterns": [],
+    "fix_management": [],
+    "fix_submodule": [],
+    "manually_checked": true
+  },
+  {
+    "issue_report_title": "Rune Factory: Guardians of Azuma (2864560)",
+    "issue_number": 9210,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/9210",
+    "compatibility_report_id": 3614100367,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\n- Name of the game with compatibility issues: Rune Factory: Guardians of Azuma\n- Steam AppID of the game: 2864560\n\n## System Information\n- GPU: RX7800XT\n- Video driver version: Mesa 25.2.6\n- Kernel version: 6.17.7\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/alastortenebris/7d15a1d402f8a55e0ca3006583002d1f\n- Proton version: hotfix-20251031\n\n## I confirm:\n- [X] that I haven't found an existing compatibility report for this game.\n- [X] that I have checked whether there are updates for my system available.\n\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\n(Proton logs compress well if needed.)-->\n\n## Symptoms <!-- What's the problem? -->\nVRAM is not freed and eventually runs out, tanking the frame rate.\n\n## Reproduction\nMove between areas enough times. The Winter Village seems to be the biggest offender.\n\n<!--\n1. You can find the Steam AppID in the URL of the shop page of the game.\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\n2. You can find your driver and Linux version, as well as your graphics\n   processor's name in the system information report of Steam.\n3. You can retrieve a full system information report by clicking\n   `Help` > `System Information` in the Steam client on your machine.\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\n   this issue.\n5. Also, please copy the contents of `Help` > `Steam Runtime Diagnostics` to\n   the gist.\n6. Please search for open issues and pull requests by the name of the game and\n   find out whether they are relevant and should be referenced above.\n-->\n[steam-2864560.log](https://github.com/user-attachments/files/23487054/steam-2864560.log)\n",
+    "created_at": "2025-11-11T22:16:31Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/9210#issuecomment-3528724522",
+        "discussion_body": "@alastortenebris this doesn't appear to be a proton issue, I get it to happen on windows as well.\nAlso, when hotfix is needed by a game it will either be set up as the default proton version of that game or be mentioned in the issue tracker, using it for games at random is not advised as it is seldom updated.",
+        "created_at": "2025-11-13T16:45:04Z",
+        "is_for_the_report": "true"
+      }
+    ],
+    "resolution_status": "no_observed_fix",
+    "fix_channel": [],
+    "root_cause_origin": [],
+    "fix_patterns": [],
+    "fix_management": [],
+    "fix_submodule": [],
+    "manually_checked": true
+  }
+]

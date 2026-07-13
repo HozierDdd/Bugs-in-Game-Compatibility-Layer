@@ -1,0 +1,162 @@
+[
+  {
+    "record_id": "protondb:211544",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 163088,
+    "app_id": "2357570",
+    "title": "Overwatch 2",
+    "created_at": "2024-02-16T21:36:40Z",
+    "text": "[metadata]\napp.steam.appId: 2357570\napp.title: Overwatch 2\ntimestamp: 1708119400\n\n[systemInfo]\ncpu: AMD Ryzen 7 1800X Eight-Core\ngpu: NVIDIA GeForce GTX 1060 6GB\ngpuDriver: NVIDIA 525.125.06\nkernel: 6.4.0-1-amd64\nos: Debian GNU/Linux trixie/sid\nram: 24 GB\nsteamRuntimeVersion: steam-runtime_0.20230606.51628\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 2357570\naudioFaults: no\nconcludingNotes: El juego no inicia? Debes instalar en una particion EXT4. Para jugar juegos desde una particion exfat se debe vincular directorios de steam con fstab \nfollowUp.performanceFaults: slightSlowdown\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.performanceFaults: Al iniciar por primera vez se debe compilar Shaders. Si se ignora la compilacion el juego ira lageado. \nnotes.verdict: Simplemente instale el juego en una particion EXT4, iniciar y esperar que compile todos los shaders y a jugar. \nopens: yes\nperformanceFaults: yes\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: experimental\nverdict: yes\nverdictOob: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 211544,
+      "timestamp": 1708119400,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_07",
+    "calibration_group_index": 7,
+    "calibration_group_position": 1
+  },
+  {
+    "record_id": "protondb:286561",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 238105,
+    "app_id": "690790",
+    "title": "DiRT Rally 2.0",
+    "created_at": "2025-05-03T15:29:34Z",
+    "text": "[metadata]\napp.steam.appId: 690790\napp.title: DiRT Rally 2.0\ntimestamp: 1746286174\n\n[systemInfo]\ncpu: Intel Core i5-6500 @ 3.20GHz\ngpu: NVIDIA GeForce GTX 1050 Ti\ngpuDriver: NVIDIA 570.133.07\nkernel: 6.14.0-15-generic\nos: Ubuntu 25.04\nram: 16 GB\nsteamRuntimeVersion: steam-runtime_1.0.20250307.120442\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 690790\naudioFaults: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.verdict: Cannot find anything wrong. Game plays like on windows.\nonlineMultiplayerAttempted: no\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 286561,
+      "timestamp": 1746286174,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_07",
+    "calibration_group_index": 7,
+    "calibration_group_position": 2
+  },
+  {
+    "record_id": "protondb:249954",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 201498,
+    "app_id": "2943650",
+    "title": "FragPunk",
+    "created_at": "2024-10-11T10:31:17Z",
+    "text": "[metadata]\napp.steam.appId: 2943650\napp.title: FragPunk\ntimestamp: 1728642677\n\n[systemInfo]\ncpu: AMD Ryzen 7 5800X3D 8-Core\ngpu: AMD Radeon RX 6800 XT (radeonsi, navi21, LLVM 18.1.8, DRM 3.59, 6.11.2-202.fsync.fc40.x86_64)\ngpuDriver: 4.6 Mesa 24.2.3\nkernel: 6.11.2-202.fsync.fc40.x86_64\nos: Nobara Linux 40 (GNOME Edition)\nram: 32 GB\nsteamRuntimeVersion: steam-runtime_0.20240806.97925\nxWindowManager: GNOME Shell\n\n[responses]\nanswerToWhatGame: 2943650\naudioFaults: no\nconcludingNotes: Awesome game and runs perfect.\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlaunchOptions: gamemoderun mangohud ENABLE_VKBASALT=1 %command%\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.onlineMultiplayerAppraisal: Runs perfect\nnotes.variant: GE-Proton9-15\nnotes.verdict: Game runs very good, even better than on Windows 11 24H2.\nonlineMultiplayerAppraisal: excellent\nonlineMultiplayerAttempted: yes\nonlineMultiplayerPlayed: yes\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: no\nvariant: notListed\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 249954,
+      "timestamp": 1728642677,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_07",
+    "calibration_group_index": 7,
+    "calibration_group_position": 3
+  },
+  {
+    "record_id": "protondb:199233",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 150777,
+    "app_id": "1708010",
+    "title": "The Expanse: A Telltale Series",
+    "created_at": "2023-11-23T00:45:23Z",
+    "text": "[metadata]\napp.steam.appId: 1708010\napp.title: The Expanse: A Telltale Series\ntimestamp: 1700700323\n\n[systemInfo]\ncpu: AMD Custom APU 0405\ngpu: AMD Custom GPU 0405 (vangogh, LLVM 14.0.6, DRM 3.45, 5.13.0-valve36-1-neptune)\ngpuDriver: 4.6 (Compatibility Profile) Mesa 22.2.0 (git-17e5312102)\nkernel: 5.13.0-valve36-1-neptune\nos: SteamOS Holo\nram: 15 GB\nsteamRuntimeVersion: steam-runtime_0.20230509.49499\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 1708010\naudioFaults: no\nbatteryPerformance: yes\ndidChangeControlLayout: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.batteryPerformance: Set fps limit - 30 fps is fine for this type of game, keeps the fan quiet and doubles the battery life\nnotes.verdict: Native Steam Input support & Steam Deck profile!\nopens: yes\nperformanceFaults: no\nreadability: no\nsaveGameFaults: no\nsecondaryLauncher: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 199233,
+      "timestamp": 1700700323,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_07",
+    "calibration_group_index": 7,
+    "calibration_group_position": 4
+  },
+  {
+    "record_id": "protondb:169445",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 120989,
+    "app_id": "1147690",
+    "title": "NGU IDLE",
+    "created_at": "2023-03-31T20:36:58Z",
+    "text": "[metadata]\napp.steam.appId: 1147690\napp.title: NGU IDLE\ntimestamp: 1680295018\n\n[systemInfo]\ncpu: Intel Core i7-4790K @ 4.00GHz\ngpu: NVIDIA GeForce GTX 970\ngpuDriver: NVIDIA 530.41.03\nkernel: 6.2.8-arch1-1\nos: Arch Linux\nram: 16 GB\n\n[responses]\nanswerToWhatGame: 1147690\naudioFaults: no\nfollowUp.performanceFaults: significantSlowdown\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlaunchFlagsUsed.useWineD3d11: True\nlaunchOptions: PROTON_USE_WINED3D=1 %command%\nlauncher: steam\nnotes.performanceFaults: My system would become really slow with the game and TWO firefox windows open. \nAdding \"PROTON_USE_WINED3D=1 %command%\" to the launch options fixed this.\nopens: yes\nperformanceFaults: yes\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: official\nverdict: yes\nverdictOob: no\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 169445,
+      "timestamp": 1680295018,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_07",
+    "calibration_group_index": 7,
+    "calibration_group_position": 5
+  }
+]

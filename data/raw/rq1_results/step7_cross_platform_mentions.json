@@ -1,0 +1,60 @@
+{
+  "step": "step7_cross_platform_mentions",
+  "generated_at": "2026-04-19T02:11:40Z",
+  "n_matched_games": 2328,
+  "part_a_protondb_mentions_github": {
+    "total_cr": 149375,
+    "mention_proton_issue_url": {
+      "count": 135,
+      "pct": 0.09,
+      "pattern": "github.com/ValveSoftware/Proton/issues/<number>（大小写不敏感）"
+    },
+    "mention_any_github": {
+      "count": 455,
+      "pct": 0.3,
+      "pattern": "github.com（大小写不敏感，任意链接）"
+    }
+  },
+  "part_b_github_cr_mentions_protondb": {
+    "scope_note": "all_issues_in_window 含 unresolved appid 的 issue CR（与 step3 全量对齐）；resolved_appid_games 和 matched_games_only 为其子集。",
+    "all_issues_in_window": {
+      "total_cr": 4466,
+      "mention_protondb_url": {
+        "count": 107,
+        "pct": 2.4,
+        "pattern": "protondb.com（大小写不敏感）"
+      },
+      "mention_protondb_any": {
+        "count": 217,
+        "pct": 4.86,
+        "pattern": "protondb（大小写不敏感，含名称和 URL）"
+      }
+    },
+    "resolved_appid_games": {
+      "total_cr": 3568,
+      "mention_protondb_url": {
+        "count": 91,
+        "pct": 2.55,
+        "pattern": "protondb.com（大小写不敏感）"
+      },
+      "mention_protondb_any": {
+        "count": 187,
+        "pct": 5.24,
+        "pattern": "protondb（大小写不敏感，含名称和 URL）"
+      }
+    },
+    "matched_games_only": {
+      "total_cr": 3316,
+      "mention_protondb_url": {
+        "count": 87,
+        "pct": 2.62,
+        "pattern": "protondb.com（大小写不敏感）"
+      },
+      "mention_protondb_any": {
+        "count": 181,
+        "pct": 5.46,
+        "pattern": "protondb（大小写不敏感，含名称和 URL）"
+      }
+    }
+  }
+}

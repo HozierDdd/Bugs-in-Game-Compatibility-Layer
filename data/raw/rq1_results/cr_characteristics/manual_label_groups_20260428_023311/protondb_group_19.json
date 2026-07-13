@@ -1,0 +1,162 @@
+[
+  {
+    "record_id": "protondb:257890",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 209434,
+    "app_id": "1262600",
+    "title": "Need for Speed Rivals",
+    "created_at": "2024-11-28T22:44:32Z",
+    "text": "[metadata]\napp.steam.appId: 1262600\napp.title: Need for Speed Rivals\ntimestamp: 1732833872\n\n[systemInfo]\ncpu: AMD Ryzen 5 7600X 6-Core\ngpu: NVIDIA GeForce GTX 1060 6GB\ngpuDriver: NVIDIA 565.57.01\nkernel: 6.12.1-arch1-1\nos: Arch Linux\nram: 31 GB\nsteamRuntimeVersion: steam-runtime_0.20241024.105847\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 1262600\naudioFaults: yes\nconcludingNotes: Tried using FMM, but got stuck on the symlink issue. Then tried the launch options from the patch (brawltendo) alone, which made the game run smooth, but the camera was spazzing out and some weird things were happening.\nApparently there are ways of fixing that, but I don't want to spend more time figuring out, how to get the game running smoothly. Maybe I'll get back at a later point and give an update if I try the patch.\ncustomizationsUsed.configChange: False\nfollowUp.audioFaults.lowQuality: False\nfollowUp.audioFaults.other: True\nfollowUp.audioFaults.outOfSync: False\nfollowUp.performanceFaults: significantSlowdown\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlaunchOptions: -disable-client-correction false -Client.VisualFrameInterpolation true -GameTime.MaxVariableFps 200 -RenderDevice.VsyncEnable 0 -Ant.InterpolatePoses false\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.audioFaults: Weird audio artifacts with the launch options I used\nnotes.performanceFaults: Game Locked and horrible performance issues without launch options.\nWith the launch options, game was running smooth, but camera was so buggy that it was unplayable.\nnotes.verdict: The game is great and all, but playing it on linux without intensive patching and whatever is not possible.\nonlineMultiplayerAttempted: no\nopens: yes\nperformanceFaults: yes\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\nvariant: official\nverdict: no\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 257890,
+      "timestamp": 1732833872,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_19",
+    "calibration_group_index": 19,
+    "calibration_group_position": 1
+  },
+  {
+    "record_id": "protondb:220807",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 172351,
+    "app_id": "288470",
+    "title": "Fable Anniversary",
+    "created_at": "2024-04-21T15:15:34Z",
+    "text": "[metadata]\napp.steam.appId: 288470\napp.title: Fable Anniversary\ntimestamp: 1713712534\n\n[systemInfo]\ncpu: Intel Core i7-8550U @ 1.80GHz\ngpu: NVIDIA GeForce MX130\ngpuDriver: Nvidia 550.76\nkernel: 6.8.7-arch1-1\nos: Arch Linux\nram: 8 GB\nsteamRuntimeVersion: steam-runtime_0.20240304.79797\nxWindowManager: i3\n\n[responses]\nanswerToWhatGame: 288470\naudioFaults: no\nconcludingNotes: Using Primusrun as im on a multiGPU laptop and am required to do that to enable the destrete GPU, users without this don't need that option\ncustomProtonVersion: GE-Proton9-4\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlaunchOptions: primusrun %command%\nlauncher: steam\nnotes.verdict: Works Perfectly With ProtonGE\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: ge\nverdict: yes\nverdictOob: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 220807,
+      "timestamp": 1713712534,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_19",
+    "calibration_group_index": 19,
+    "calibration_group_position": 2
+  },
+  {
+    "record_id": "protondb:64245",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 15789,
+    "app_id": "1250410",
+    "title": "Microsoft Flight Simulator",
+    "created_at": "2021-06-18T18:04:12Z",
+    "text": "[metadata]\napp.steam.appId: 1250410\napp.title: Microsoft Flight Simulator\ntimestamp: 1624039452\n\n[systemInfo]\ncpu: Intel Core i7-4770 @ 3.40GHz\ngpu: NVIDIA GeForce GTX 1060 3GB\ngpuDriver: NVIDIA 460.80\nkernel: 5.8.0-55-generic\nos: Ubuntu 20.04.2 LTS\nram: 32 GB\n\n[responses]\nanswerToWhatGame: 1250410\naudioFaults: no\nduration: lessThanFifteenMinutes\nextra: no\nfollowUp.performanceFaults: significantSlowdown\nfollowUp.stabilityFaults: occasionally\nfollowUp.windowingFaults.other: True\nfollowUp.windowingFaults.switching: False\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nisImpactedByAntiCheat: no\nisMultiplayerImportant: yes\nlocalMultiplayerAttempted: no\nnotes.performanceFaults: 20fps on minimal graphics\nnotes.stabilityFaults: The game repeatedly froze after install. Rebooting my machine solved this.\nnotes.verdict: Should be able to start the game pretty easily, at most needing to add `-FastLaunch` and/or reboot machine.\nnotes.windowingFaults: There is a game setting to change from Windowed to Full Screen. Proton handles this appropriately, this is more of a game mechanic worth noting, since you start in windowed mode by default.\nonlineMultiplayerAttempted: no\nopens: yes\nperformanceFaults: yes\nprotonVersion: Default\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: yes\nstartsPlay: yes\ntype: steamPlay\nverdict: yes\nwindowingFaults: yes",
+    "metadata": {
+      "raw_index": 64245,
+      "timestamp": 1624039452,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_19",
+    "calibration_group_index": 19,
+    "calibration_group_position": 3
+  },
+  {
+    "record_id": "protondb:170035",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 121579,
+    "app_id": "692890",
+    "title": "Roboquest",
+    "created_at": "2023-04-04T20:21:50Z",
+    "text": "[metadata]\napp.steam.appId: 692890\napp.title: Roboquest\ntimestamp: 1680639710\n\n[systemInfo]\ncpu: AMD Custom APU 0405\ngpu: AMD Custom GPU 0405 (vangogh, LLVM 13.0.0, DRM 3.45, 5.13.0-valve10.1-1-neptune-02144-g7fffaf925dfb)\ngpuDriver: 4.6 Mesa 22.0.0-devel (git-676ccacebc)\nkernel: 5.13.0-valve10.1-1-neptune-02144-g7fffaf925dfb\nos: SteamOS Holo\nram: 15 GB\n\n[responses]\nanswerToWhatGame: 692890\naudioFaults: no\nbatteryPerformance: no\ndidChangeControlLayout: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.verdict: With an older version of proton it works perfectly. Do not remove cinematics.\nonlineMultiplayerAttempted: no\nopens: yes\nperformanceFaults: no\nprotonVersion: 6.3-8\nreadability: no\nsaveGameFaults: no\nsecondaryLauncher: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: older\nverdict: yes\nverdictOob: no\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 170035,
+      "timestamp": 1680639710,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_19",
+    "calibration_group_index": 19,
+    "calibration_group_position": 4
+  },
+  {
+    "record_id": "protondb:291117",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 242661,
+    "app_id": "1687950",
+    "title": "Persona 5 Royal",
+    "created_at": "2025-05-27T14:55:32Z",
+    "text": "[metadata]\napp.steam.appId: 1687950\napp.title: Persona 5 Royal\ntimestamp: 1748357732\n\n[systemInfo]\ncpu: AMD Ryzen 5 3600 6-Core\ngpu: AMD Radeon RX 6600 (radeonsi, navi23, LLVM 18.1.8, DRM 3.59, 6.12.7-arch1-1)\ngpuDriver: 4.6 Mesa 24.3.2-arch1.1\nkernel: 6.12.7-arch1-1\nos: Arch Linux\nram: 32 GB\nsteamRuntimeVersion: steam-runtime_0.20241024.105847\nxWindowManager: D\n\n[responses]\nanswerToWhatGame: 1687950\naudioFaults: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.verdict: Works out of the box with whichever version of proton have fun its a nice game\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 291117,
+      "timestamp": 1748357732,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_19",
+    "calibration_group_index": 19,
+    "calibration_group_position": 5
+  }
+]

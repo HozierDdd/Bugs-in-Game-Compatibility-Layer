@@ -1,0 +1,39 @@
+{
+  "step": "step0_config",
+  "generated_at": "2026-04-19T02:01:37Z",
+  "description": "分析运行的完整配置快照，用于复现",
+  "time_window": {
+    "start": "2021-01-01T00:00:00+00:00",
+    "end": "2025-12-31T23:59:59+00:00"
+  },
+  "analysis_unit": "game_appid",
+  "github_inclusion_criteria": {
+    "description": "满足以下任一条件的 issue 均被纳入研究窗口（两条件取并集）",
+    "criterion_1_created_at": "issue.created_at 落在 [start, end] 内",
+    "criterion_2_thread_median": "issue thread 全部帖子（正文 + 所有评论）的 created_at 时间戳中位数落在 [start, end] 内",
+    "inclusion_method_field": "归一化记录中的 inclusion_method 字段记录实际命中的标准：\"created_at\" 或 \"thread_median\""
+  },
+  "input_paths": {
+    "protondb_reports": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json",
+    "github_chunks_dir": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/issue_tracker/issue_origin/chunks",
+    "github_chunk_glob": "proton_issues_*_part*.json"
+  },
+  "appid_extraction_rules": {
+    "priority_1_parentheses": "\\((\\d{3,7})\\)\\s*$",
+    "priority_2_steam_url": "store\\.steampowered\\.com/app/(\\d{3,7})",
+    "priority_3_standalone": "(?<!#)(?<![.\\-])\\b(\\d{4,7})\\b(?![.\\-])",
+    "note_digit_range": "rules 1 and 2 accept 3-7 digits to cover early Steam appids; rule 3 requires 4-7 to reduce false positives",
+    "unresolved_placeholder": "unresolved_appid"
+  },
+  "classifier_config": {
+    "rule": "deterministic_heading_match",
+    "required_heading": "# Compatibility Report",
+    "design_principle": "exact-match-only; no scoring, no heuristics",
+    "classification_unit": "post-level (issue body or single comment body)"
+  },
+  "output_settings": {
+    "stats_round_digits": 1,
+    "json_indent": 2,
+    "encoding": "utf-8"
+  }
+}

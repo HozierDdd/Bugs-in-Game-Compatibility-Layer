@@ -1,0 +1,105 @@
+[
+  {
+    "issue_number": 6612,
+    "issue_title": "Bleak Faith: Forsaken (1173220)",
+    "id": 1620683835,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Bleak Faith: Forsaken\r\n- Steam AppID of the game: 1173220\r\n\r\n## System Information\r\n- GPU: NVIDIA GeForce RTX 2070 SUPER\r\n- Driver/LLVM version: NVIDIA 525.60.11\r\n- Kernel version: 6.2.5-arch1-1\r\n- Link to full system information report as [Gist](https://gist.github.com/lilly-lizard/066bba73f867fa64501bf09b8f1daf3e):\r\n- Proton version: 1677511134 experimental-7.0-20230227\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[steam-1173220.log](https://github.com/ValveSoftware/Proton/files/10953141/steam-1173220.log)\r\n\r\n## Symptoms\r\n\r\nGame runs great in-game but will freeze when opening an in-game menu, e.g. pause menu.\r\n\r\n## Reproduction\r\n\r\nStart the game through steam. Once in-game, press escape to open the pause menu, game freezes.\r\n\r\n## Fix\r\n\r\nAs seen in the log file, there was just a missing av decoding g-streamer plugin:\r\n\r\n```\r\nwinegstreamer error: decodebin0: Your GStreamer installation is missing a plug-in.\r\nwinegstreamer error: decodebin0: ../src-gst_base/gst/playback/gstdecodebin2.c(4719): gst_decode_bin_expose ()     : /GstBin:bin0/GstDecodeBin:decodebin0:\r\nno suitable plugins found:\r\nCouldn't set avdec_h264-0 to PAUSEDCouldn't set avdec_valve_h264-0 to PAUSED\r\n```\r\n\r\nOn arch linux I fixed this by installing gst-libav, but ideally an end-user shouldn't have to figure this out and the gst av libs should be a dependency of proton or something.",
+    "symptom_summary": "用户在将《帝国时代4》的语言设置为西班牙语后，游戏无法启动，出现黑屏，游戏鼠标可见，但随后关闭。 \n\nTags: Game Crash, Black Screen, Language Issue",
+    "tags": [
+      "Freeze",
+      "Missing Features"
+    ]
+  },
+  {
+    "issue_number": 7988,
+    "issue_title": "Hunt: Showdown 1896 (594650)",
+    "id": 2468094236,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Hunt: Showdown 1896\r\n- Steam AppID of the game: 594650\r\n\r\n## System Information\r\n- GPU: RTX 3080Ti\r\n- Video driver version: nvidia-open-dkms 555.58.02-15\r\n- Kernel version: 6.10.4-273-tkg-bore\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/domainzero/afa36a2a105f267631a4664122ec0a29\r\n- Proton version: Proton Experimental\r\n- Proton log: https://gist.github.com/domainzero/d76938065bfcf9f50db2349f456ee850\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame starts to a black screen and eventually closes as of latest Hunt: Showdown update. The developers did upgrade the game to a new engine version (Cryengine 5.13) which may be the root cause of this.\r\n\r\n## Reproduction\r\n\r\n1. Start the game.\r\n2. Wait while the game sits at a black screen.\r\n3. The game closes.\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n4. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n5. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n6. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n7. Also, please copy the contents of `Help` > `Steam Runtime Diagnostics` to\r\n   the gist.\r\n8. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "symptom_summary": "用户在启动《Hunt: Showdown 1896》时遇到黑屏，并最终导致游戏关闭。此问题可能与游戏更新至新引擎版本（Cryengine 5.13）有关。\n\n**Tag Suggestions:** Black Screen, Game Crash, Engine Update Issue",
+    "tags": [
+      "Black Screen",
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 5510,
+    "issue_title": "Mirror 2: Project X (1832640)",
+    "id": 1110467476,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Mirror 2: Project X \r\n- Steam AppID of the game: 1832640\r\n\r\n## System Information\r\n- GPU: GTX 1060 6GB\r\n- Driver/LLVM version: 495.46 proprietary \r\n- Kernel version: 5.13\r\n- Link to full system information report as [Gist](https://gist.github.com/jolty1/caaf96b24d0e1e6cff4fb8014a2d3c59/):\r\n- Proton version: Experimental\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nThe games launcher shows a blank window, You must bypass the launcher.\r\n\r\nRun exe in \"steamapps/common/Mirror 2 Project X/ProjectX/Mirror2/Binaries/Win64/Mirror2_X-Win64-Shipping.exe\"\r\n\r\n## Reproduction\r\n\r\nTry to launch the game\r\n\r\n## Fix\r\n\r\nAdvice from [Steam Discussion](https://steamcommunity.com/app/1832640/discussions/0/3185734950683022943/#c3185734950685067143)\r\n\r\nSet the launch option: \r\n\r\n`eval $( echo \"%command%\" | sed \"s/Launcher\\/Mirror2.ProjectX.Launcher.exe'.*/ProjectX\\/Mirror2\\/Binaries\\/Win64\\/Mirror2_X-Win64-Shipping.exe'/\" )\r\n`\r\n\r\nUpdated: Home DLC\r\n\r\n`eval $( echo \"%command%\" | sed \"s/Launcher\\/Mirror2.ProjectX.Launcher.exe'.*/HomeX\\/Mirror2_HomeX\\/Binaries\\/Win64\\/Mirror2_HomeX-Win64-Shipping.exe'/\" )\r\n`\r\n\r\nTo change the games language to English click the globe in the top right, and its the last option.\r\n\r\n![Screenshot_20220121_132736](https://user-images.githubusercontent.com/42779428/150535030-bb19eebf-dca2-4fed-aa61-0399c3f293d6.png)\r\n![Screenshot_20220121_133309](https://user-images.githubusercontent.com/42779428/150535757-a0613ab4-f74f-4bdb-9f53-1d053c7664e7.png)\r\n\r\n[steam-1832640.log](https://github.com/ValveSoftware/Proton/files/7913819/steam-1832640.log)\r\n\r\nLog is before fix. Running broken launcher.\r\n",
+    "symptom_summary": "用户在启动《Mirror 2: Project X》时遇到的问题是游戏启动器显示空白窗口，需要绕过启动器才能运行游戏。 \n\nTags: Blank Window, Launcher Issue, Bypass Required",
+    "tags": [
+      "Game Launcher Issue"
+    ]
+  },
+  {
+    "issue_number": 6507,
+    "issue_title": "Trackmania (2225070)",
+    "id": 1574930869,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Trackmania\r\n- Steam AppID of the game: 2225070\r\n\r\n## System Information\r\n- GPU: RTX 2060 Super\r\n- Driver/LLVM version: Nvidia 525.78\r\n- Kernel version: 6.0.12\r\n- Link to full system information report as [Gist](https://gist.github.com/JobeSound/e3a02d39c9bb6ef6cf474589bc71d78c):\r\n- Proton version: 7.0-6, Experimental\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nAfter logging into Ubisoft, the game opens a small black window and immediatley shows an error message saying:\r\n\"Corrupted Installation.\r\nPlease verify files integrity or reinstall the game.\"\r\n\r\nI have done both several times with several Proton and Proton-GE versions, without change.\r\n\r\n## Reproduction\r\nLaunch fresh install of the game on same or comparable system.\r\n\r\nLog:\r\n[steam-2225070.log](https://github.com/ValveSoftware/Proton/files/10678827/steam-2225070.log)\r\n",
+    "symptom_summary": "用户在启动《Trackmania》时遇到问题，游戏在登录Ubisoft后打开一个小黑窗口，并立即显示错误信息：“安装损坏。请验证文件完整性或重新安装游戏。”用户尝试了多次验证和重新安装，但问题依然存在。\n\n**Tag Suggestions:** Installation Error, Black Screen, Game Launch Failure",
+    "tags": [
+      "Installation Failure"
+    ]
+  },
+  {
+    "issue_number": 7248,
+    "issue_title": "Like a Dragon Gaiden: The Man Who Erased His Name (2375550)",
+    "id": 1985050030,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Like a Dragon Gaiden: The Man Who Erased His Name\r\n- Steam AppID of the game: 2375550\r\n\r\n## System Information\r\n- GPU: Nvidia RTX 2070\r\n- Video driver version: NVIDIA 525.125.06\r\n- Kernel version: 6.1.0-13-amd64 Debian\r\n- Link to full system information report as [Gist](https://gist.github.com/ikaikahub/bc8651b894badddfb964d2c05d4ebdc6):\r\n- Proton version: proton-8.0-4c\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[steam-2375550.log](https://github.com/ValveSoftware/Proton/files/13305364/steam-2375550.log)\r\n\r\n## Symptoms \r\nThe game does not launch. It shows as running within steam for about 30 seconds. The startup.exe process exits after about 10 seconds. No windows appear\r\n\r\n## Reproduction\r\nJust clicking play\r\n",
+    "symptom_summary": "用户遇到的问题是游戏无法启动，Steam显示游戏正在运行约30秒后，启动进程在约10秒后退出，且没有任何窗口出现。\n\n**Tag Suggestions:**\n- Game Not Launching\n- Process Exits\n- No Visual Output",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 8543,
+    "issue_title": "Assassin's Creed Shadows (3159330)",
+    "id": 3300442211,
+    "compatibility_report": "Assassin's Creed Shadows (3159330) crashes before main menu on Fedora 42 with AMD GPU\n\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/9049.\n@TheVodouch posted on 2025-09-16T21:39:00:\n\n# Compatibility Report\n- Name of the game with compatibility issues: Assassin's Creed Shadows\n- Steam AppID of the game: 3159330\n\n## System Information\n- GPU: AMD RX 9070 XT\n- Video driver version: Mesa 25.1.7\n- Kernel version: Linux 6.16.7-200.fc42.x86_64\n- Link to full system information report as [Gist](https://gist.github.com/): [Gist](https://gist.github.com/TheVodouch/c2604a54af33a1cc1d2b8bb15d2b31bd)\n- Proton version: Experimental/9.0-4/10.0-2/GE-Proton10-15\n\n## I confirm:\n- [ x] that I haven't found an existing compatibility report for this game.\n- [ x] that I have checked whether there are updates for my system available.\n\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\n(Proton logs compress well if needed.)-->\n\n[steam-3159330.log](https://github.com/user-attachments/files/22371980/steam-3159330.log)\n\n## Symptoms <!-- What's the problem? -->\n\nGame launches, before accessing the main menu the game warns me about having the game installed on a HDD (I do not it's on a samsung NVMe SSD.) After clicking OK the game crashes. You can also see the main menu just for a split second before the crash.\n\n## Reproduction\nStart game\nWait for intro to finish\nCRASH",
+    "symptom_summary": "用户在启动《刺客信条：阴影》时，游戏在主菜单之前崩溃，并显示关于游戏安装在HDD上的警告，尽管实际上游戏安装在NVMe SSD上。用户仅能看到主菜单的一瞬间。\n\nTags: Crash, Menu Issue, Warning Message",
+    "tags": [
+      "Startup Crash"
+    ]
+  },
+  {
+    "issue_number": 5254,
+    "issue_title": "Space Hulk: Tactics (492230)",
+    "id": 1037654784,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues:Space Hulk: Tactics\r\n- Steam AppID of the game:492230\r\n\r\n## System Information\r\n- GPU: AMD Vega 10 XL/XT [Radeon RX Vega 56/64]\r\n- Driver/LLVM version: Mesa 21.2.4\r\n- Kernel version: 5.14.15\r\n- Proton version: experimental-6.3-20211020\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nBlack screen when starting. Does not progress loading. CPU-load is low.\r\n\r\n\r\n## Reproduction\r\n1. press start\r\n2. observe black screen\r\n\r\n[steam-492230.log](https://github.com/ValveSoftware/Proton/files/7428028/steam-492230.log)\r\n",
+    "symptom_summary": "用户在启动《Space Hulk: Tactics》时遇到黑屏，加载进程没有任何进展，CPU负载也很低。\n\n**Tag Suggestions:** Black Screen, Loading Issue, Low CPU Load",
+    "tags": [
+      "Black Screen",
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 8432,
+    "issue_title": "The Sims 2 Legacy Collection (3314070)",
+    "id": 2824434919,
+    "compatibility_report": "# Compatibility Report\n- Steam AppID of the game: 3314070\n\n## System Information\n- Proton version: 9.0.4\n- Device: Steam Deck 256GB LED\n\n## I confirm:\n- [X] that I haven't found an existing compatibility report for this game.\n- [X] that I have checked whether there are updates for my system available.\n\nThe game appears to work fine on Steam Deck, but there is an issue regarding in-game video captures, and I haven’t found any issues from anyone else with this. Simply press V or select the cam recorder icon on the GUI and you should get an “unspecified error” popup. Sometimes you may get an error with Smooth Edges, but changing this value doesn’t seem to fix the issue.\n\n[steam-3314070.log](https://github.com/user-attachments/files/18624592/steam-3314070.log)\n\n![Image](https://github.com/user-attachments/assets/1e54ccd0-e111-4e7c-93c2-e2870b69bd98)",
+    "symptom_summary": "用户在Steam Deck上玩游戏时，遇到了游戏内视频捕捉的问题，尝试录制时会弹出“未指定错误”的提示，且调整Smooth Edges设置也无法解决此问题。\n\nTags: Video Capture Error, Unspecified Error, Settings Issue",
+    "tags": [
+      "Video Capture Issue"
+    ]
+  },
+  {
+    "issue_number": 6554,
+    "issue_title": "Atomic Heart (668580)",
+    "id": 1593746043,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: [Atomic Heart](https://store.steampowered.com/app/668580/Atomic_Heart/?snr=1_4_4__118)\r\n- Steam AppID of the game: 668580\r\n\r\n## System Information\r\n- GPU: Steam Deck\r\n- Driver/LLVM version: Steam Deck\r\n- Kernel version: Steam Deck\r\n- Proton version: Proton 7.0-6\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\nLog file: [steam-668580.log](https://github.com/ValveSoftware/Proton/files/10795381/steam-668580.log) that goes up to the difficulty selection where the first missing videos are.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nNone of the in-game videos work. There should be some on difficulty selection but they're blank.\r\n\r\nThere should also be videos on various screens on the game, they also don't play but you do hear the audio.\r\n\r\n## Reproduction\r\n\r\nJust try it with Proton, get to the difficulty screen when starting a new game, and notice the black boxes above the options.\r\n\r\nIt has also now been given a \"Steam Deck Playable\" rating, but since videos in-game are broken, it shouldn't even be set as Playable should it?",
+    "symptom_summary": "用户在游戏《Atomic Heart》中遇到的问题是游戏内的视频无法播放，尽管音频正常，但视频画面显示为空白。用户在选择难度时注意到黑色框框，表示视频缺失。\n\nTag suggestions: Missing Videos, Audio Issues, Visual Glitches",
+    "tags": [
+      "Cutscene Issue"
+    ]
+  },
+  {
+    "issue_number": 8948,
+    "issue_title": "Stumble Guys (1677740)",
+    "id": 3287383660,
+    "compatibility_report": "# Compatibility Report\n- Name of the game with compatibility issues:  Stumble Guys\n- Steam AppID of the game: 1677740\n\n## System Information\n- GPU: Intel HD Graphics 5500\n- Video driver version: Mesa 25.1.4\n- Kernel version: 6.15.8-200.fc42.x86_64\n- Link to full system information report: https://gist.github.com/nguyendoan15082006/174f6dd38115790f63f569f95bca017a\n- Proton version:\nTried 9.0-4 and 10.0-2 beta. Both of them encoutered this issue.\n## I confirm:\n- [x] that I haven't found an existing compatibility report for this game.\n- [x] that I have checked whether there are updates for my system available.\n\n## Symptoms <!-- What's the problem? -->\nThe game freezes unexpectedly at Round 1,2 and 3.\nHere is the video:\nhttps://www.youtube.com/watch?v=IBoF7uQZVY0\n\n[steam-1677740.log](https://github.com/user-attachments/files/21567095/steam-1677740.log)",
+    "symptom_summary": "用户在游戏《Stumble Guys》中遇到意外冻结的问题，具体发生在第一、第二和第三轮。  \n\nTags: Freezes, Game Crashes, Performance Issues",
+    "tags": [
+      "Freeze"
+    ]
+  }
+]

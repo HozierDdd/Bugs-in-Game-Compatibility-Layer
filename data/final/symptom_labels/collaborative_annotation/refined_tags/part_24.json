@@ -1,0 +1,105 @@
+[
+  {
+    "issue_number": 5156,
+    "issue_title": "Deathloop (1252330)",
+    "id": 1825102341,
+    "compatibility_report": "# Compatibility Report\r\n\r\n## System Information\r\n- GPU: RX 6700-XT\r\n- Video driver version: Mesa 23.2.1, -TkG 24.0.0_devel.181120.b5bcb658b4d (tested both)\r\n- Kernel version: 6.6.2-273-tkg-eevdf\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/kode54/d8d7bd021d6904ae23aa3788a07dfc24\r\n- Proton version: GE-Proton8-24, also tried Proton 7.0-6\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nSame alt+tab issue as everyone else, but I didn't come to report that. Primary issue is that when I'm running the game at \"Fullscreen\" 1920x1080 on my 3840x2160 monitor, the upscaled surface has tiling glitches. Running the game unscaled via Borderless Fullscreen (only fills top left quarter of desktop) or Windowed, there are no glitches.\r\n\r\nAdding a video captured from the monitor. The glitch does not show up on unscaled mirrored outputs, as I was unable to capture it from a 1080p output with an HDMI capture device, and it did not appear in OBS screen capture.\r\n\r\nhttps://f.losno.co/v/IMG_0492.mp4 (1080p60, AV1, 59MB)",
+    "symptom_summary": "用户在将《帝国时代4》的语言设置为西班牙语后，游戏无法启动，出现黑屏，游戏鼠标可见，但随后关闭。 \n\nTags: Game Crash, Black Screen, Language Issue",
+    "tags": [
+      "Graphic  / Rendering Issue"
+    ]
+  },
+  {
+    "issue_number": 5541,
+    "issue_title": "Killsquad (910490)",
+    "id": 1123388163,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Killsquad\r\n- Steam AppID of the game: 910490\r\n\r\n## System Information\r\n- GPU: GTX 970\r\n- Driver/LLVM version: nvidia 510.39\r\n- Kernel version: 5.16\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/rsw0x/a903f0df8bf490eb88dd128c4a234f8e\r\n- Proton version: 6.3-8\r\n\r\n## I confirm:\r\n- [x ] that I haven't found an existing compatibility report for this game.\r\n- [x ] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n[steam-910490.log](https://github.com/ValveSoftware/Proton/files/7997003/steam-910490.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame freezes upon reaching main menu and interacting with the UI\r\n\r\n## Reproduction\r\nLaunch game and attempt to interact with the UI\r\n\r\n\r\n",
+    "symptom_summary": "用户在游戏《Zenith: The Last City》中遇到语音通信无法正常工作的情况，无法听到其他玩家的声音，也不确定自己是否被听到。设置中显示“Vivox已禁用”，尽管可以选择pulseaudio作为输入和输出，但语音功能仍然无法使用。\n\nTags: Voice Communication, Audio Issues, Missing Features",
+    "tags": [
+      "Freeze"
+    ]
+  },
+  {
+    "issue_number": 5145,
+    "issue_title": "Humankind (1124300)",
+    "id": 3352487901,
+    "compatibility_report": "# Compatibility Report\n- Name of the game with compatibility issues: Humankind\n- Steam AppID of the game: 1124300\n\n## System Information\n- GPU: RTX 2070\n- Video driver version: nvidia 580.82.09\n- Kernel version: Linux 6.16.8-arch3-1\n- Link to full system information report as [Gist](https://gist.github.com/): [Gist](https://gist.github.com/skulwicki/24aabc5722058a952779cab1e53f9d6d)\n- Proton version: Experimental\n\n## I confirm:\n- [x] that I haven't found an existing compatibility report for this game.\n- [x] that I have checked whether there are updates for my system available.\n\n[steam-1124300.log](https://github.com/user-attachments/files/22621042/steam-1124300.log)\n\n## Symptoms\nCurrent Proton Experimental appears to have a regression with Humankind. Launching the game plays an opening pre-rendered video. Letting the video run to completion or clicking to skip past the video see the game crash and unable to reach the main menu. The game had been running perfectly fine prior to the latest Experimental update from 9/19/25. Previous Proton versions 10.0-2(beta) and 9.0-4 are still working for me as of today.\n\n\n## Reproduction\n1. Launch Humankind\n2. Either wait for the opening video to finish or click to skip past video\n3. Game crashes before reaching main menu\n",
+    "symptom_summary": "用户在启动游戏《Alternativa》时遇到问题，游戏提示缺少Windows媒体基础组件，然后退出。 \n\nTag suggestions: Missing Features, Game Crash, Exit Error",
+    "tags": [
+      "In-game Crash"
+    ]
+  },
+  {
+    "issue_number": 6510,
+    "issue_title": "Hogwarts Legacy (990080)",
+    "id": 2157674841,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Hogwarts Legacy\r\n- Steam AppID of the game: 990080\r\n\r\n## System Information\r\n- GPU: NVIDIA Corporation GA106 [Geforce RTX 3050]\r\n- Video driver version: nvidia 550.78.0.0\r\n- Kernel version: 6.6.32\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/phodina/0ba43f42caa43147ab92879e72f89bcf\r\n- Proton version: Experimental\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[steam-990080.log](https://github.com/user-attachments/files/15758839/steam-990080.log)\r\n\r\nhttps://github.com/ValveSoftware/Proton/assets/2997905/3bbf736c-a1cd-40d4-b397-2ba862b6ebb4\r\n\r\n\r\n\r\n## Symptoms \r\nThe game starts but the window does not display any graphical output. Sound can be heard.\r\n\r\n## Reproduction\r\nLaunch the game",
+    "symptom_summary": "用户报告游戏《霍格沃茨遗产》启动后窗口没有任何图形输出，虽然可以听到声音。  \n\n**Tags:** No Graphics, Sound Works, Launch Issue",
+    "tags": [
+      "Graphic  / Rendering Issue"
+    ]
+  },
+  {
+    "issue_number": 5198,
+    "issue_title": "Nickelodeon All-Star Brawl (1414850)",
+    "id": 1015874927,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Nickelodeon All-Star Brawl\r\n- Steam AppID of the game: 1414850\r\n\r\n## System Information\r\n- GPU: AMD Radeon RX 570 Series\r\n- Driver/LLVM version: Mesa 21.2.1 / LLVM 12.0.1\r\n- Kernel version: 5.10.53-1-MANJARO\r\n- Link to full system information report as [Gist](https://gist.github.com): https://gist.githubusercontent.com/chaorace/058400a5ab998d536c0dfa7e4d63114e/raw/04296288698dd4a737a30994847876c2a4aaff38/gistfile1.txt\r\n- Proton version: Latest Proton Experimental (as of October 5th, 2021)\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[steam-1414850.log](https://github.com/ValveSoftware/Proton/files/7282738/steam-1414850.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame launcher window opens and crashes to desktop just as the loading bar appears to fully complete. Repeated attempts to launch the game will result in the same issue.\r\n\r\n## Reproduction\r\n1. Download a fresh install of Nickelodeon All-Star Brawl\r\n2. Install Proton Experimental, configure it as the default Compatibility Tool for the game\r\n3. Press the \"Play\" button\r\n4. Wait for crash to desktop\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "symptom_summary": "用户在启动《尼克儿童全明星大乱斗》时，游戏启动窗口打开后在加载条完全完成时崩溃并返回桌面，重复尝试启动游戏会出现相同的问题。\n\nTags: Crash, Desktop Exit, Launch Failure",
+    "tags": [
+      "Launcher / Verification Issue"
+    ]
+  },
+  {
+    "issue_number": 8255,
+    "issue_title": "Microsoft Flight Simulator 2024 (2537590)",
+    "id": 2487963056,
+    "compatibility_report": "Hi, I have a completely different issue as @matte-schwartz, using the same form to provide feedback too! \r\n\r\n# Compatibility Report\r\n- Name of the game with compatibility issues: Microsoft Flight Simulator 2024\r\n- Steam AppID of the game: 2537590\r\n\r\n## System Information\r\n- GPU: RTX 3090\r\n- Video driver version: nvidia 565.57.01\r\n- Kernel version: 6.12.0\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/trivarialthea/bfd3b9c03551cd8da7f1ac77e967515c\r\n- Proton version: 1731365841 experimental-9.0-20241111\r\n\r\n## I confirm:\r\n- [ ] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\nhttps://github.com/trivarialthea/syrup-verdict-operator-morphine-zoology/blob/main/steam-2537590.tar.lzma (file is too big in .gz export, so uploaded it to a repo I created as a .lzma export, to extract use `tar --lzma -xvf`)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame ~~crashes~~ freezes after reaching the last simobject, otherwise works normally to that point. (Except for cursor issues, but those are also present on windows)\r\n![Screenshot_20241120_094125](https://github.com/user-attachments/assets/084dc1f8-6da4-4061-8a0c-3c1b43cb2a34)\r\n\r\n\r\n## Reproduction\r\n1. Login to Xbox\r\n2. Wait for the game to load to that point (around 49%)\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Also, please copy the contents of `Help` > `Steam Runtime Diagnostics` to\r\n   the gist.\r\n6. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "symptom_summary": "用户在运行《微软飞行模拟器2024》时，游戏在加载到最后一个模拟对象后会冻结，之前的部分正常运行。此外，用户提到光标存在问题，但在Windows上也有类似情况。\n\n**Tag Suggestions:** Freezing, Cursor Issues, Loading Problems",
+    "tags": [
+      "Freeze"
+    ]
+  },
+  {
+    "issue_number": 4763,
+    "issue_title": "Project Warlock Demo (907740)",
+    "id": 860720204,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Project Warlock (Demo)\r\n- Steam AppID of the game: 893680 (Demo: 907740)\r\n\r\n## System Information\r\n- GPU: Nvidia 970 GTX\r\n- Driver/LLVM version:  version 460.67\r\n- Kernel version: 5.11.14-200.fc33.x86_64\r\n- Link to full system information report as Gist: [GIST](https://gist.github.com/Eonfge/b11efc3f62d80b8a11b50deb07d8b9c3)\r\n- Proton version: 6.3-2\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Log\r\n[steam-907740.log](https://github.com/ValveSoftware/Proton/files/6331836/steam-907740.log)\r\n\r\n## Symptoms\r\nFull system crash. The screen literally goes black and the machine power cycles.\r\n\r\n## Reproduction\r\n1. Start the Project Warlock Demo (907740) using Protn 6.3-2\r\n1b. Make sure that the system is heavily taxed: The crash occurs when I run the game at 'high quality' 1440p uncapped, but when I go down to 1080p capped, the game remains stable for the duration of the Demo.\r\n2. Enter the first combat arena and shoot some enemies\r\n3. The crash occurs within 5 minutes\r\n",
+    "symptom_summary": "用户在尝试启动游戏《KARDS》时，遇到UE4前提条件安装失败，显示“ACL错误”，随后游戏退出。如果拒绝安装前提条件，游戏也会退出。\n\n**Tag Suggestions:** Installation Failure, Game Crash, UE4 Prerequisites",
+    "tags": [
+      "Black Screen",
+      "In-game Crash"
+    ]
+  },
+  {
+    "issue_number": 9258,
+    "issue_title": "Infinity Nikki (3164330)",
+    "id": 3656619468,
+    "compatibility_report": "# Compatibility Report\n- Name of the game with compatibility issues: Infinity Nikki\n- Steam AppID of the game: 3164330\n\n## System Information\n- GPU: <!-- e.g. RX 580 or GTX 970 --> AMD Radeon™ RX 6600\n- Video driver version: <!-- e.g. Mesa 18.2 or nvidia 396.54 --> Mesa 25.2.6\n- Kernel version: <!-- e.g. 4.17 --> `6.17.8-300.fc43.x86_64`\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/faelau/5bb4f5e6262c45171772948183bd8677\n- Proton version: Proton Experimental\n\n## I confirm:\n- [x] that I haven't found an existing compatibility report for this game.\n- [x] that I have checked whether there are updates for my system available.\n\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\n(Proton logs compress well if needed.)-->\n\n## Symptoms <!-- What's the problem? -->\n\nThe game launcher starts. If you click on play, the game instantly exits. With Proton GE the game starts, but crashes after less than one minute. Sporadically an EAC warning appears, but only with GE (the logs for GE are 30MB big, therefore I didn't upload them for now).\n\nThe game worked a few months before, but only with GE. It never worked with Proton Experimental. I tried several fixes mentioned on [ProtonDB](https://www.protondb.com/app/3164330/) to, but without success.\n\n## Reproduction\n\nDownload and start the game without tinkering. The game launcher appears, then click on \"Play\". The game instantly exits.\n\nThe game launcher starts successful:\n\n<img width=\"1027\" height=\"568\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/596eeb5d-da88-4036-b0c6-48ed62057b3c\" />\n\nI tried with both GNOME 49 on Fedora Linux 43.20251122.0 (Silverblue) as well as KDE Plasma 6.4.5.\n\n<!--\n1. You can find the Steam AppID in the URL of the shop page of the game.\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\n2. You can find your driver and Linux version, as well as your graphics\n   processor's name in the system information report of Steam.\n3. You can retrieve a full system information report by clicking\n   `Help` > `System Information` in the Steam client on your machine.\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\n   this issue.\n5. Also, please copy the contents of `Help` > `Steam Runtime Diagnostics` to\n   the gist.\n6. Please search for open issues and pull requests by the name of the game and\n   find out whether they are relevant and should be referenced above.\n-->\n",
+    "symptom_summary": "用户在启动《Infinity Nikki》时，游戏启动器正常显示，但点击“播放”后游戏立即退出。使用Proton GE时，游戏可以启动，但在不到一分钟内崩溃，并且偶尔会出现EAC警告。\n\n**Tag Suggestions:** Crash, Instant Exit, EAC Warning, Game Launcher Issues",
+    "tags": [
+      "Anti-cheat Issue",
+      "Launch Failure",
+      "Startup Crash"
+    ]
+  },
+  {
+    "issue_number": 4653,
+    "issue_title": "Eternal Return (1049590)",
+    "id": 828871218,
+    "compatibility_report": "Eternal Return: Black Survival (#1049590): After 0.31.0/0.31/0a patch, game crashes with Fatal error: \"Failed to load il2cpp\"\r\n\r\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/4783.\r\n@tacklebox8 posted on 2021-04-28T23:48:26:\r\n\r\n# Compatibility Report\r\n- Name of the game with compatibility issues: Eternal Return: Black Survival (build 0.31.0a)\r\n- Steam AppID of the game: 1049590\r\n\r\n## System Information\r\n- GPU: nvidia Quadro K3000M\r\n- Driver/LLVM version: 418.181.07\r\n- Kernel version: 4.19\r\n- Link to full system information report as [Gist]: https://gist.github.com/tacklebox8/0fbab36520a1fd2413f8dafa654046c3\r\n- Proton version: 6.3-2 (also happens using experimental)\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n[steam-1049590.log](https://github.com/ValveSoftware/Proton/files/6395503/steam-1049590.log)\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame crashes on load with Windows Fatal error message \"Failed to load il2cpp\".  Problem did not occur with build 0.30.x.  Another linux user on the ERBS discord reported the same issue.\r\n\r\n## Reproduction\r\nLaunch the game.\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n***\r\n@sjTaylor commented on 2021-04-28T23:57:30:\r\n\r\nI am the other Linux user mentioned in the discord.\r\nAdditionally, someone else DM'd me so there's at least 3 of us.\r\n\r\n## System Information\r\n* GPU: nvidia GTX 1070\r\n* Driver Version: Driver Version: 460.67\r\n* OS: Pop!_OS 20.04\r\n* Proton version: 6.3-2 (Proton Experimental and 6.5-GE-2 too)\r\n* Kernel version: 5.11.0-7612-generic (from `uname -a`)\r\n\r\n***\r\n@jeffrey-xiao commented on 2021-04-29T00:35:29:\r\n\r\nI also have the same issue and added a comment to #4653.",
+    "symptom_summary": "用户在加载《Eternal Return: Black Survival》时遇到崩溃，显示“无法加载 il2cpp”的致命错误信息。此问题在0.31.0a版本中出现，而在0.30.x版本中没有发生。\n\nTag suggestions: Crash, Fatal Error, Loading Issue",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 5602,
+    "issue_title": "Aselia the Eternal -The Spirit of Eternity Sword- (445420)",
+    "id": 1146958451,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues:Aselia the Eternal -The Spirit of Eternity Sword-\r\n- Steam AppID of the game:445420\r\n\r\n## System Information\r\n- GPU: AMD Vega 56/64\r\n- Driver/LLVM version: Mesa 21.3.5\r\n- Kernel version: 5.16.10\r\n- Proton version:7.0 and before\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame does not start. When pressing play it exits practically immediately.\r\nProton log shows game is trying to load MFC42.DLL, which it can't find. The MFC-DLL does not exist under the prefix in the expected location (system32). \r\n\r\nWine does not have built-in MFC implementation according to FAQ.\r\n\r\n## Reproduction\r\n1. press play\r\n2. observe exit\r\n\r\n[steam-445420.log](https://github.com/ValveSoftware/Proton/files/8117231/steam-445420.log)\r\n",
+    "symptom_summary": "游戏无法启动，点击播放后几乎立即退出。Proton日志显示游戏尝试加载MFC42.DLL，但无法找到该文件。\n\nTags: Game Crash, Missing DLL, Launch Issue",
+    "tags": [
+      "Launch Failure"
+    ]
+  }
+]

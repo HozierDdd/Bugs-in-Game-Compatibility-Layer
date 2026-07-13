@@ -1,0 +1,418 @@
+[
+  {
+    "issue_report_title": "Earth 2160 (1900)",
+    "issue_number": 8027,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8027",
+    "compatibility_report_id": 2487924283,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Earth2160\r\n- Steam AppID: 1900\r\n\r\n## System Information\r\n- GPU: AMD Radeon RX 7800 XT \r\n- Video driver version: mesa 24.1.6-1\r\n- Kernel version: 6.10.6-arch1-1\r\n- Link to full system information report as [Gist](https://gist.github.com/KuczaRacza/90c8fd992be069f5742533fd33973a87):\r\n- Proton version: Proton experimental BuildID 15306265\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nApp can't connect to internet. It prevents from restringing product blocking gameplay. No crash or  freeze.\r\n[steam-1900.log](https://github.com/user-attachments/files/16754499/steam-1900.log)\r\n\r\n\r\n\r\n## Reproduction\r\n- Launch game\r\n- Try to register after providing cd keys\r\n- Click activate via internet\r\n- Fill form with any data\r\n- Connection failed (issue)\r\n",
+    "created_at": "2024-08-26T22:51:19Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8027#issuecomment-2311254678",
+        "discussion_body": "Hello @KuczaRacza, `fixme:wininet:InternetAttemptConnect Stub` looks like a possible line of interest in your log.",
+        "created_at": "2024-08-26T23:01:25Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8027#issuecomment-2311262329",
+        "discussion_body": "Yes, it logs exactly as i click activate unfortunately i cant find any information about this log",
+        "created_at": "2024-08-26T23:08:02Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Exo Rally Championship Demo (2318500)",
+    "issue_number": 8311,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8311",
+    "compatibility_report_id": 2736655254,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Exo Rally Championship\r\n- Steam AppID of the game: demo: 2318500 game: 2262020\r\n\r\n## System Information\r\n- GPU: Rx6600\r\n- Video driver version: 24.3.1\r\n- Kernel version: 6.8\r\n- Link to full system information report as : https://gist.github.com/BipB0p/1b9e4a8e0497b7a241c9ef9e418fd5ab\r\n- Proton version: Proton experimental & proton hotifx (\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nVideo playback error\r\n\r\n## Reproduction\r\n\r\n**_At the launch of the game_**\r\n![Capture d’écran du 2024-12-12 18-50-42](https://github.com/user-attachments/assets/e5d03747-4cc8-4824-94a8-5b7598ffe3c1)\r\n**_Race preparation :_**\r\n![Capture d’écran du 2024-12-12 19-32-00](https://github.com/user-attachments/assets/78d2d730-f050-429f-b7df-c7507c816871)\r\n_**in game**_\r\n![Capture d’écran du 2024-12-12 19-35-00](https://github.com/user-attachments/assets/cbe9b2d7-03e0-442c-8d69-4938dbc1c5dd)\r\n\r\nI don't know if it's relevant to report video problems on demos, if not sorry\r\n\r\n",
+    "created_at": "2024-12-12T18:53:38Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8311#issuecomment-2539954943",
+        "discussion_body": "The color pattern indicates that the video needs to be re-encoded to play on proton, in order to get them you need to have shader pre-caching enabled on steam (settings > downloads) AND the game has to have been played by enough people for the shaders to be validated server side and then re-encoded, after which it will be autodownloaded for people who have the game installed.",
+        "created_at": "2024-12-12T20:28:43Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8311#issuecomment-2540152866",
+        "discussion_body": "in that case, I'll have to wait for more people to play it, as I've already got both shader options ticked. ",
+        "created_at": "2024-12-12T22:39:03Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Sid Meier's Civilization IV: Colonization (16810)",
+    "issue_number": 4547,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/4547#issuecomment-1698290472",
+    "compatibility_report_id": 1698290472,
+    "issue_state": "open",
+    "compatibility_report": "Civilization 4\r\n\r\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/7058.\r\n@williamodavis posted on 2023-08-29T23:18:08:\r\n\r\n# Compatibility Report\r\n- Name of the game with compatibility issues: Sid Meiers Civilization 4 and all DLCs\r\n- Steam AppID of the game: ?\r\n\r\n## System Information\r\n- GPU: <!-- e.g. RX 580 or GTX 970 --> Integrated Intel UHD Graphics\r\n- Video driver version: <!-- e.g. Mesa 18.2 or nvidia 396.54 --> No clue\r\n- Kernel version: <!-- e.g. 4.17 --> no clue\r\n- Link to full system information report as [Gist](https://gist.github.com/):\r\n- Proton version: Proton Experimental\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame launches fine, but no mouse clicks are detected. Keyboard and mouse movement input works fine, though.\r\n\r\n## Reproduction\r\nJust launch the game",
+    "created_at": "2023-08-29T23:48:46Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/4547#issuecomment-1710879196",
+        "discussion_body": "Just checked in on the mouse input in Civilization 4 and all the DLCs again, and it all works again. I dont know if it was something you did or if it just happened accidentally, but this issue has been resolved. Just letting you know.",
+        "created_at": "2023-09-07T23:20:27Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/4547#issuecomment-2181350603",
+        "discussion_body": "Revisiting this thread, this time it's random crashes happening every so often with Proton 9 on NVIDIA.\r\n\r\n## System Information\r\n- GPU: RTX A2000 (same chip as RTX 3050/3060)\r\n- Video driver version: NVIDIA 550.67\r\n- Kernel version: 6.8.0-35\r\n- Link to full system information report as Gist: [link][sys]\r\n- Proton version: 9.0-2\r\n\r\n## Symptoms\r\nThis looks like a crash in the NVIDIA driver followed by an assert failure in `winevulkan`.\r\n```plain\r\n247081.770:0124:01c8:trace:seh:handle_syscall_fault code=c0000005 flags=0 addr=0xe2a83838 ip=e2a83838\r\n247081.770:0124:01c8:trace:seh:handle_syscall_fault  info[0]=00000001\r\n247081.770:0124:01c8:trace:seh:handle_syscall_fault  info[1]=00000028\r\n247081.770:0124:01c8:trace:seh:handle_syscall_fault  eax=00000000 ebx=00000000 ecx=0f51fb40 edx=e4450050 esi=cfefa620 edi=0f51e36c\r\n247081.770:0124:01c8:trace:seh:handle_syscall_fault  ebp=fe7ffec0 esp=0f51e2a0 cs=0023 ds=002b es=002b fs=0063 gs=006b flags=00010282\r\n247081.770:0124:01c8:warn:seh:handle_syscall_fault backtrace: --- Exception 0xc0000005 at 0xe2a83838: /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/libnvidia-glcore.so.550.67 + 0xe7d838.\r\n247081.770:0124:01c8:trace:seh:handle_syscall_fault returning to user mode ip=7967b5c5 ret=c0000005\r\n247081.770:0124:01c8:err:msvcrt:_wassert (L\"!status && \\\"vkCreateDescriptorPool\\\"\",L\"../src-wine/dlls/winevulkan/loader_thunks.c\",2841)\r\n247081.770:0124:01c8:trace:seh:raise (22)\r\n```\r\nFull Proton log: [link][log]\r\n\r\n## Reproduction\r\n1. Download the [\"We the People\"][wtp] 4.1 mod, extract to `steamapps/common/Civilization IV Colonization/Mods/We_The_People`, and copy the Intel TBB dlls to `steamapps/common/Civilization IV Colonization` as instructed in the mod's readme file\r\n2. Use Protontricks to install `msxml3`\r\n3. Not sure if it matters, but I use the following command line: `PROTON_LOG=1 WAYLAND_DISPLAY=wayland-0 DXVK_FILTER_DEVICE_NAME=\"NVIDIA\" PROTON_FORCE_LARGE_ADDRESS_AWARE=1 %command% /mod=\"/We_The_People\"`\r\n4. Start a new game on \"massive\" map setting, or alternatively load my crappy [save game][save]\r\n5. Play for several turns, eventually it would crash randomly. Most of the time it happens at the start of a turn after the autosave happens.\r\n\r\nPS: technically the base Civ 4 game and DLCs have different Steam IDs from this. The base game is 3900, Warlords DLC is 3990, and Beyond the Sword DLC is 8800. Despite the Civ 4 complete package (4323) lumping Civ 4 Col together with the other three, in reality Civ 4 Col is independent from the base game. IMO [the comment above][comment] shouldn't be moved here.\r\n\r\n[sys]: https://gist.github.com/wyphan/a85ab914fb45f93eac809ad9964f3d48\r\n[log]: https://github.com/user-attachments/files/15918977/steam-16810.zip\r\n[wtp]: https://github.com/We-the-People-civ4col-mod/Mod/releases\r\n[save]: https://github.com/user-attachments/files/15918893/Samuel.de.Champlain.AD-1605-January.zip\r\n[comment]: https://github.com/ValveSoftware/Proton/issues/4547#issuecomment-1698290472",
+        "created_at": "2024-06-20T19:05:13Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/4547#issuecomment-2289469062",
+        "discussion_body": "Looks like the random crashes in [the above comment](https://github.com/ValveSoftware/Proton/issues/4547#issuecomment-2181350603) is either somewhere in DXVK or NVIDIA's Vulkan support. It doesn't happen if I force-disable DXVK using `PROTON_USE_WINED3D=1 __GLX_VENDOR_LIBRARY_NAME=nvidia`",
+        "created_at": "2024-08-14T17:49:54Z",
+        "is_for_the_report": "false"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Plants vs. Zombies Garden Warfare 2: Deluxe Edition (1922560)",
+    "issue_number": 7006,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/7006",
+    "compatibility_report_id": 1847451924,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Plants vs Zombies Garden Warfare 2\r\n- Steam AppID of the game: 1922560\r\n\r\n## System Information\r\n- GPU: RX 6600\r\n- Video driver version: Mesa 23.1.5\r\n- Kernel version: 6.4.9-arch1-1\r\n- Proton version: GE 8-11, Experimental, & 8.0-3\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nWhen running the game, the Origin installer runs, however after which it keeps a blank floating window open without the game itself running. Following a file integrity check, or reinstall, the same process happens again, origin installer works, etc.\r\n\r\nTo mitigate this, I have tried following what was suggested in protondb (adding \"dxgi.customVendorId = 1c06\" to a file dxvk.conf).\r\n\r\nI have run proton with logs enabled and attached them here;\r\n\r\n[steam-1922560.log](https://github.com/ValveSoftware/Proton/files/12325264/steam-1922560.log)\r\n\r\n## Reproduction\r\n\r\nRun the game with any version of steam.\r\n",
+    "created_at": "2023-08-11T21:35:07Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7006#issuecomment-1946366016",
+        "discussion_body": "https://www.ea.com/games/plants-vs-zombies/plants-vs-zombies-garden-warfare-2/news/pvzgw2-anticheat-update\r\n\r\nEa is planning on breaking linux support soon.",
+        "created_at": "2024-02-15T15:45:03Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7006#issuecomment-2060100441",
+        "discussion_body": "Log of their anticheat update breaking compatibility on the Steam Deck:\r\n[steam-1922560 (GW2).log](https://github.com/ValveSoftware/Proton/files/15003920/steam-1922560.GW2.log)\r\nIt also gives a wonderful window telling us Wine isn't supported, even if you use the `HideWineExports` registry trick :upside_down_face: \r\n",
+        "created_at": "2024-04-17T00:11:51Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7006#issuecomment-2185330812",
+        "discussion_body": "> Log of their anticheat update breaking compatibility on the Steam Deck: [steam-1922560 (GW2).log](https://github.com/ValveSoftware/Proton/files/15003920/steam-1922560.GW2.log) It also gives a wonderful window telling us Wine isn't supported, even if you use the `HideWineExports` registry trick 🙃\r\n\r\nIf the game still throws that error when you hide Wine, it is almost certainly doing other tricks (such as checking for Wine specific registry keys, programs [like winecfg], or drives)\r\n\r\nQuite a lot of effort in blocking Wine that could have gone to making their anti-cheat more \"effective.\"",
+        "created_at": "2024-06-23T21:38:24Z",
+        "is_for_the_report": "false"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Terra Invicta (1176470)",
+    "issue_number": 6200,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/6200",
+    "compatibility_report_id": 1392726910,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Terra Invicta\r\n- Steam AppID of the game: 1176470\r\n\r\n## System Information\r\n- GPU: GTX 1070\r\n- Driver/LLVM version: nvidia 510.85.02\r\n- Kernel version: 5.15\r\n- Link to full system information report as [Gist](https://gist.github.com/): [info](https://gist.github.com/lupuchard/d3188925a3ee120cf896a9d747714908)\r\n- Proton version: 7.0-4\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n[steam-1176470.log.tar.gz](https://github.com/ValveSoftware/Proton/files/9686431/steam-1176470.log.tar.gz)\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nFrame rate drops to below 1 fps on the ship designer screen. Rest of the game runs fine.\r\n\r\n## Reproduction\r\n1. Start new game and progress until you have access to the ship designer (or load game with access to ship designer).\r\n2. Open ship designer.\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n3. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n4. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n5. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n6. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2022-09-30T17:11:10Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6200#issuecomment-1272318136",
+        "discussion_body": "Clarification from another person experiencing the same issue: a lot of the time the low fps issues persist even after closing the ship designer, forcing a save+reload to get rid of them.",
+        "created_at": "2022-10-08T13:20:01Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6200#issuecomment-1279176714",
+        "discussion_body": "Some more information I found: this issue seems to only happen with DXVK and nvidia GPU's. People using AMD GPU's report seeing no such issues, and in my testing, using proton-ge's PROTON_USE_WINED3D argument to avoid using dxvk makes the game significantly less laggy (but adds a lot of instability issues, so it's not a proper solution).",
+        "created_at": "2022-10-14T15:48:10Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6200#issuecomment-1279417704",
+        "discussion_body": "It seems like it might be a bug with the game itself. See more here: https://github.com/doitsujin/dxvk/issues/2990",
+        "created_at": "2022-10-14T20:14:42Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6200#issuecomment-1279789921",
+        "discussion_body": "I've been getting a freeze and then crash to desktop when looking around bodies that are not earth\r\n\r\n### System Information\r\nGPU: RX 6700XT\r\nDriver/LLVM version: kernel amdgpu module / llvm 12.0.0\r\nKernel version: 5.15.0-46-generic\r\nLink to full system information report as [Gist](https://gist.github.com/): [sysinfo](https://gist.github.com/StanberyTrask/3631b485c9f75f5000f9094897feb8c2)\r\nProton version: 7.0-4\r\n\r\n### Symptoms\r\ngame freezes with no response from keyboard or mouse clicks\r\ngame crashes to desktop after ~30 seconds\r\n\r\n### Reproduction\r\npan camera around any space body \r\nI've had this happen to me on mars, a Kuiper belt object, and an asteroid in the asteroid belt",
+        "created_at": "2022-10-15T17:36:16Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6200#issuecomment-1310976955",
+        "discussion_body": "Try reducing your texture settings. The game is known to load excessive amounts of textures, overwhelming VRAM.",
+        "created_at": "2022-11-10T22:20:06Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Stationeers (544550)",
+    "issue_number": 5105,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5105",
+    "compatibility_report_id": 976235862,
+    "issue_state": "closed",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Stationeers\r\n- Steam AppID of the game: 544550\r\n\r\n## System Information\r\n- GPU: GeForce GTX 860M\r\n- Driver/LLVM version: nvidia 460.91.03\r\n- Kernel version: 5.4.0-81-generic\r\n- Link to full system information report as Gist: [System report](https://gist.github.com/MrBigss/13722a91823d0c87228bf60c5868860e)\r\n- Proton version: 6.3-6\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n[Log from PROTON_LOG=1 steam-544550.log.zip](https://github.com/ValveSoftware/Proton/files/7026305/steam-544550.log.zip)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nIn the game, the mouse is used in two way. First, when interacting with the environment with the items, or in the menus before the game. Those are simple \"you click, it does something\".\r\nWhen in first person, in the game, you can also hold alt, and the cursor shows up. This allows opening the inventories, and manipulating things in the inventory, without using the keyboard.\r\nThe issue is that, while the mouse shows up, and the cursor shows up, now the clicks do not seem to register anymore.\r\nI can't pick up items, or even open/close the inventory menus.\r\n\r\nAlso tried with Proton experimental, same problem now. Experimental didn't use to work correctly for the game, hence why I was plagin on Proton 6.3.-5\r\nThere was no update to the game since the problem showed up.\r\nCompositing has been off for all versions.\r\n\r\n\r\n\r\n## Reproduction\r\nStart a game, get in first person mode, and then try to manipulate the UI with the mouse. Mouse shows up, \"highlighting\" shows up when hovering items, but mouse clicks do not register.\r\n\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2021-08-21T22:38:04Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5105#issuecomment-903283655",
+        "discussion_body": "Even more strange.\r\nWhen holding alt to do these actions, it's also possible to also hold shift to get information on the object instead.\r\nThat, alt+shift+left click, actually does work. O_o\r\n(There's an option for \"legacy inventory\" in the game, I made sure it is not selected, obviously.)",
+        "created_at": "2021-08-22T15:12:36Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5105#issuecomment-904838890",
+        "discussion_body": "@MrBigss Thank you for the detailed report.  I was able to reproduce the exact behavior and reported the regression. Interestingly (but not too surprisingly) it seems to only be a regression on xfce -- I also tested Gnome and KDE and neither had the alt menu problem with Stationeers.  ",
+        "created_at": "2021-08-24T17:31:39Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5105#issuecomment-904854451",
+        "discussion_body": "Found a workaround.  \nIf I disable the \"acessibility\" function where alt is used to drag windows, the behavior returns to normal.  \nIt seems like somehow alt click is intercepted by whatever as \"move window\"  \nI am on xfce, did I specify?",
+        "created_at": "2021-08-24T17:55:53Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5105#issuecomment-904856588",
+        "discussion_body": "@MrBigss It said XFWM in your system report output which is how I knew where to test :)  Is the \"accessibility function\" in XFCE settings somewhere?  \r\n\r\nIt makes sense that there is a change in behavior here by the way - there were some patches in 6.3-6 that changed focus behavior specifically with the alt key :+1: ",
+        "created_at": "2021-08-24T17:59:07Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5105#issuecomment-904861869",
+        "discussion_body": "I think it's \"window tweaks\" or something in the config panel. Sorry no acess right now.  \nIt's on by default.",
+        "created_at": "2021-08-24T18:07:09Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5105#issuecomment-905588952",
+        "discussion_body": "@MrBigss I found the difference between 6.3-5 and 6.3-6 - we changed the default for the \"Automatically capture the mouse in full-screen windows\" setting in winecfg (https://github.com/ValveSoftware/Proton/issues/53).  Since wine and xfce are both doing sane things and they just happen to interact unfortunately for this particular game on xfce, we are planning to keep the default as it is.  In addition to the other workaround you've found, you could also use protontricks or winetricks to change this setting for the game prefix, although the setting might get wiped and need to get reset on some future prefix upgrades.",
+        "created_at": "2021-08-25T15:06:20Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5105#issuecomment-905624640",
+        "discussion_body": "Does Steam support \"tricks\" \"per game\".  \nAs in, can the launch environment be different for some games throught Steam itself, so it gets propagated to amy other users?",
+        "created_at": "2021-08-25T15:39:55Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5105#issuecomment-908396627",
+        "discussion_body": "@MrBigss I don't have a good general answer to that question.  In this specific case, the change is in the prefix, which should be used by all Steam users in one environment, but it will have to be set in every environment.  Hopefully that answers at least part of your question.",
+        "created_at": "2021-08-30T14:35:48Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Elden Ring (1245620)",
+    "issue_number": 5613,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2372834307",
+    "compatibility_report_id": 2372834307,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Elden Ring\r\n- Steam AppID of the game: 1245620\r\n\r\n## System Information\r\n- GPU: nvidia 3080ti\r\n- Video driver version: 550.35.03\r\n- Kernel version: 6.10.11\r\n- Link to full system information report as [Gist](https://gist.github.com/danipoak/57ea69ddc9e059503e9f3123cc0f0be3):\r\n- Proton version: Experimental\r\n\r\n## I confirm:\r\n- [ x] that I haven't found an existing compatibility report for this game.\r\n- [ x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nElden Ring used to work without issue. Suddenly when launching the game I am met with: Launch Error: 261 and forced to exit. Proton log is attached.\r\n[steam-1245620.txt](https://github.com/user-attachments/files/17124108/steam-1245620.txt)\r\n## Reproduction\r\nLaunch Elden Ring from Steam using any version of Proton. \r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n\r\n\r\n   this issue.\r\n5. Also, please copy the contents of `Help` > `Steam Runtime Diagnostics` to\r\n   the gist.\r\n6. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2024-09-25T03:28:24Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2558420436",
+        "discussion_body": "Re: https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-1092428331 @rhoot\r\n\r\n> I've played ~40 hours in Proton Experimental with absolutely no problems, but today my FPS suddenly dropped to 20 when I tried playing. So I added `PROTON_LOG=1` to my start command and ran it for ~1 minute... and my log file is over 100 MiB.\r\n> \r\n> First I have about 35k lines of this repeated over and over:\r\n> \r\n> ```\r\n> 01bc:warn:d3d12_resource_validate_desc: Invalid alignment 4096 for buffer resource. Must be 0 or D3D12_DEFAULT_RESOURCE_PLACEMENT_ALIGNMENT.\r\n> 01bc:warn:d3d12_device_GetResourceAllocationInfo2: Invalid resource desc.\r\n> ```\r\n\r\nI get this randomly, every now and then. An easy tell that it's about to happen are oddly long loading times. And, apparently, the only sure fix is to reboot the OS. Here's a zipped log: [steam-1245620.zip](https://github.com/user-attachments/files/18221629/steam-1245620.zip)\r\n\r\nOn an unrelated note... I'm not sure what Proton 9.0-4 is doing wrong, but ever since it landed, I've been getting white-screen flashbangs whenever I exit the game (in addition to those that occur on launch). I have photophobia, and that's literally painful.",
+        "created_at": "2024-12-22T11:18:16Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2567383196",
+        "discussion_body": "last year I played game without problem, but now fps drop to 20-30 and then return to 60. Got staters when play. GPU load not over 30-40%. Don't understand what happend, trying reboot, chnage proton version and it didn't help\r\n\r\nmy system and proton_log:\r\n[steam_system.txt](https://github.com/user-attachments/files/18288675/steam_system.txt)\r\n[steam-1245620.log.zip](https://github.com/user-attachments/files/18288676/steam-1245620.log.zip)\r\n\r\n",
+        "created_at": "2025-01-02T07:43:38Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2577872946",
+        "discussion_body": "Hello @ManuelAlvarezC, the NVIDIA driver install inside of the Flatpak container environment you're using with Steam is broken and both Steam and the game are being forced to fallback to llvmpipe, mesa's faster CPU renderer, to run at all.",
+        "created_at": "2025-01-08T14:55:21Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2577977572",
+        "discussion_body": "Ok, thanks your for the guidance!",
+        "created_at": "2025-01-08T15:36:04Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2618641360",
+        "discussion_body": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2558420436\n\n> I get this randomly, every now and then. An easy tell that it's about to happen are oddly long loading times. And, apparently, the only sure fix is to reboot the OS.\n\nCuriously enough, I just managed to fix another instance of this by disabling and re-enabling Adaptive-Sync via my monitor's OSD; no reboot was needed. Seems like a bug related to VRR.",
+        "created_at": "2025-01-28T10:48:19Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2878578381",
+        "discussion_body": "HDR of Elden Ring doesn't work any more with latest gamescope, it doesn't work with native Wayland either.",
+        "created_at": "2025-05-14T03:54:44Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2886864492",
+        "discussion_body": "> HDR of Elden Ring doesn't work any more with latest gamescope, it doesn't work with native Wayland either.\n\nNever mind, it works with latest GE-PROTON.",
+        "created_at": "2025-05-16T14:21:08Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2941838086",
+        "discussion_body": "adding `PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 ` to my launch options for hdr causes the ps5 controller to be not working grrrrrr removing it and it works fine....",
+        "created_at": "2025-06-04T22:51:09Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-3417509867",
+        "discussion_body": "Hello @abc-mikey, please add [`PROTON_LOG=1 %command%`](https://github.com/ValveSoftware/Proton#runtime-config-options) to the game's launch options and attach the generated $HOME/steam-$APPID.log to this issue report as a file. (Proton logs compress well if needed.) Also, please copy the contents of Steam Runtime Diagnostics from Steam (`Steam` -> `Help` -> `Steam Runtime Diagnostics`) and put it in a [gist](https://gist.github.com/), then include a link to the gist in this issue report.",
+        "created_at": "2025-10-17T23:31:27Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-3418260575",
+        "discussion_body": "> [`PROTON_LOG=1`](https://github.com/ValveSoftware/Proton#runtime-config-options)\n\n[gist](https://gist.github.com/abc-mikey/6821a093387a4cf2cca257dca09d5276)\n\n[steam-1245620.log.tar.gz](https://github.com/user-attachments/files/22983963/steam-1245620.log.tar.gz)\n\nAlso what I ran the command with, though I have tried it with just `%COMMAND%` and get the same results:\n\n```\nPROTON_LOG=1 VKD3D_CONFIG=no_upload_hvv PULSE_LATENCY_MSEC=90 DXVK_FRAME_RATE= DXVK_ASYNC=0 DXVK_HDR=1 WINEFSYNC=0 PROTON_USE_NTSYNC=1 PROTON_NO_ESYNC=0 PROTON_NO_FSYNC=0 vblank_mode=0 MANGOHUD=1 /home/steam/bin/60hz gamemoderun gamescope -f -W 3840 -H 2160 -- %COMMAND% \n```",
+        "created_at": "2025-10-18T11:17:04Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-3481452948",
+        "discussion_body": "The game Elden Ring stopped launching:\n\n<img width=\"1902\" height=\"792\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/521e8ae3-bdee-4f5e-b61e-f54bb39879d9\" />\n\nProton log: [steam-1245620.log](https://github.com/user-attachments/files/23341604/steam-1245620.log)   \nSteam Runtime Diagnostics: https://gist.github.com/NTMan/33cca4906328793206218192820779ec/\n\nThings I’ve tried so far:\nChanging Proton versions (10.0-2 beta and 9.0-4) — didn’t help\nDeleting the Proton prefix (“bottle”) — didn’t help\nVerifying game files — didn’t help\n\nThe launcher shows: `Launch Error: Unexpected error. (#1)`",
+        "created_at": "2025-11-03T16:36:17Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-3506766325",
+        "discussion_body": "@NTMan [According to reddit](https://www.reddit.com/r/linux_gaming/comments/1axekec/comment/kvg07m0/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) this is an issue with EAC putting in place a limit on the number of logical cores to 40. I'm not sure about the explanation but the workaround does work for me. \n\n```\nWINE_CPU_TOPOLOGY=16:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 %command%\n```",
+        "created_at": "2025-11-08T18:09:04Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-3506877119",
+        "discussion_body": "> EAC putting in place a limit on the number of logical cores to 40.\n\nBut I have a Ryzen 9 7950X, which only has 32 cores.\nNever mind — it worked anyway. Thanks!\n\n[steam-1245620.zip](https://github.com/user-attachments/files/23434338/steam-1245620.zip)",
+        "created_at": "2025-11-08T20:35:20Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-3508246587",
+        "discussion_body": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2618641360\n\n> Curiously enough, I just managed to fix another instance of this by disabling and re-enabling Adaptive-Sync via my monitor's OSD; no reboot was needed. Seems like a bug related to VRR.\n\nLooks like I was wrong, and it's actually an `amdgpu` bug causing MCLK to get stuck at 96 MHz. \"Resetting\" the video output (e.g., by blanking the display, or changing the refresh-rate settings) seems to fix that for some time.",
+        "created_at": "2025-11-09T12:38:05Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-3571138675",
+        "discussion_body": "EDIT: My issue was actually a failing CPU! Noticed other oddities and finally determined it was the CPU failing. Replaced it and ran first try. I do not need any cores set either though I have 32.\n---\nNixOS unstable channel with AMD 3900x, nvidia 2080 with 6.17 nvidia 580 or 6.12 Nvidia 575 stopped working for me. \n\nI have played quite a bit under this setup a few months ago but now I just get: EasyAntiCheat, then a white screen with EldenRing's cursor, then it exits with no error in the log. \n\nI've tried almost every version of Proton, GE, all combinations of commands in this thread and others, tried flatpak, redownloaded/verified, disabled shader precache, wayland/x11, kde/gnome, etc and nothing is working. Other games modern 3d games like Hell Divers2, work fine. \n\nSteam Runtime info:\nhttps://gist.github.com/erichelgeson/2d5541eb6ec7222c1520da414500fdcf\n\n[steam-1245620.log](https://github.com/user-attachments/files/23725281/steam-1245620.log)",
+        "created_at": "2025-11-24T14:42:52Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-3644275121",
+        "discussion_body": "@abc-mikey @NTMan @kisak-valve Testing this on a 16-core 32-thread 9950X3D, it seems like the anti-cheat is okay with 27 or fewer cpus, but not 28 or more. It seems like a pretty arbitrary number so maybe there's something else going on? To provide two more data points, Elden Ring also didn't run on a 14700k without a core limit on a standard setup, but weirdly seems to work when running on the steam deck 3.9 recovery image.\n\nI prepared a patch that would set a limit to the cpus to 27 at #9298.",
+        "created_at": "2025-12-11T23:51:48Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-3649560215",
+        "discussion_body": "Have a report of an unusable online mode after upgrading to a new PC with AMD and Radeon.\n\nThe game appeared to work a year ago on a previous system with a lesser configuration of Intel and Nvidia.\n\nMy [System Runtime Diagnostics] and [steam-1245620.log](https://github.com/user-attachments/files/24142804/steam-1245620.log).\n\n[System Runtime Diagnostics]: https://gist.github.com/trihlord/fd84697b9dffe4f60992fc13a868c1d5\n\nUP: got a fresh patch ~25MB which fixed online on the first game launch after patch install. However the game went offline again while exiting to the game menu.",
+        "created_at": "2025-12-13T15:53:06Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-3704892525",
+        "discussion_body": "> [@abc-mikey](https://github.com/abc-mikey) [@NTMan](https://github.com/NTMan) [@kisak-valve](https://github.com/kisak-valve) Testing this on a 16-core 32-thread 9950X3D, it seems like the anti-cheat is okay with 27 or fewer cpus, but not 28 or more. It seems like a pretty arbitrary number so maybe there's something else going on? To provide two more data points, Elden Ring also didn't run on a 14700k without a core limit on a standard setup, but weirdly seems to work when running on the steam deck 3.9 recovery image.\n> \n> I prepared a patch that would set a limit to the cpus to 27 at [#9298](https://github.com/ValveSoftware/Proton/pull/9298).\n\ntested on 12 core 24 threads. It seems like 24 is too much in my case. 16 works `WINE_CPU_TOPOLOGY=16:0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15`",
+        "created_at": "2026-01-02T09:43:16Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-3711990939",
+        "discussion_body": "@mio-19 Very strange. Sounds like there's a more complex formula than just a hard limit on the number of cpus. Though it seems like no one's had problems with a limit 16 so I can send a patch that conservatively limits the cpus to 16.",
+        "created_at": "2026-01-05T20:32:36Z",
+        "is_for_the_report": "false"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Lorelai (593960)",
+    "issue_number": 8423,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8423",
+    "compatibility_report_id": 2812744671,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\n- Name of the game with compatibility issues: Lorelai\n- Steam AppID of the game: 593960\n\n## System Information\n- GPU: AMD Custom APU 0405\n- Video driver version: 4.6 (Compatibility Profile) Mesa 24.1.7\n- Kernel version: 6.11.0-1-default\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/bjoern-tantau/f2f53b61bf57df9e3b2c2cdd756578f3\n- Proton version: 9 and experimental\n\n## I confirm:\n- [x] that I haven't found an existing compatibility report for this game.\n- [x] that I have checked whether there are updates for my system available.\n\n## Symptoms <!-- What's the problem? -->\n\nWhen you watch TV with Al only a testimage is shown instead of the video of the TV channel. When playing with Proton GE the game hangs indefinately.\n\n## Reproduction\n\nPlay normally until you can mess with or help Al. On the third night you can sit on the couch with him to watch TV. If you choose the option to watch TV no actual video is played.",
+    "created_at": "2025-01-27T11:20:52Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8423#issuecomment-2683685956",
+        "discussion_body": "I played the game normally from start to end without hangs (with the Al's TV working). If i'm not mistaken i've played it with proton GE 18 or 20.",
+        "created_at": "2025-02-26T01:45:52Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8423#issuecomment-2685986778",
+        "discussion_body": "How far into the game do you have to watch TV?",
+        "created_at": "2025-02-26T19:22:45Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8423#issuecomment-2689552949",
+        "discussion_body": "> How far into the game do you have to watch TV?\n\nTo be honest i don't remember but its not an crucial part, since it's just a random detail (gives nothing like a story piece or a puzzle tip).",
+        "created_at": "2025-02-28T02:20:54Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "METAL GEAR SOLID Δ: SNAKE EATER (2417610)",
+    "issue_number": 9010,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/9010",
+    "compatibility_report_id": 3360949035,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\n- Name of the game with compatibility issues: Metal Gear Solid Delta: Snake Eater\n- Steam AppID of the game: 2417610\n\n## System Information\n- GPU: Sapphire Nitro+ RX 9070 XT\n- Video driver version: 25.2.1\n- Kernel version: 6.16.2\n- Link to full system information report as [Gist](https://gist.github.com/): [here](https://gist.github.com/NyaomiDEV/92a286c0f213fe684c4a2688decdb153)\n- Proton version: 9.0-4\n\n## I confirm:\n- [x] that I haven't found an existing compatibility report for this game.\n- [x] that I have checked whether there are updates for my system available.\n\n## Symptoms\n\n<details><summary>Game wouldn't start after choosing language and graphics preset. Dmesg shows amdgpu traces leading to vkd3d being the culprit. This same behaviour was already noticed on another game (Mafia The Old Country) when launching it with FSR enabled.</summary>\n\n```\n[40306.972059] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40306.972065] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40306.972068] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acc50000 from client 10\n[40306.972071] amdgpu 0000:11:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00641051\n[40306.972073] amdgpu 0000:11:00.0: amdgpu:      Faulty UTCL2 client ID: TCP (0x8)\n[40306.972075] amdgpu 0000:11:00.0: amdgpu:      MORE_FAULTS: 0x1\n[40306.972076] amdgpu 0000:11:00.0: amdgpu:      WALKER_ERROR: 0x0\n[40306.972078] amdgpu 0000:11:00.0: amdgpu:      PERMISSION_FAULTS: 0x5\n[40306.972087] amdgpu 0000:11:00.0: amdgpu:      MAPPING_ERROR: 0x0\n[40306.972089] amdgpu 0000:11:00.0: amdgpu:      RW: 0x1\n[40306.972093] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40306.972096] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40306.972098] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acc10000 from client 10\n[40306.972100] amdgpu 0000:11:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00641051\n[40306.972102] amdgpu 0000:11:00.0: amdgpu:      Faulty UTCL2 client ID: TCP (0x8)\n[40306.972110] amdgpu 0000:11:00.0: amdgpu:      MORE_FAULTS: 0x1\n[40306.972112] amdgpu 0000:11:00.0: amdgpu:      WALKER_ERROR: 0x0\n[40306.972113] amdgpu 0000:11:00.0: amdgpu:      PERMISSION_FAULTS: 0x5\n[40306.972115] amdgpu 0000:11:00.0: amdgpu:      MAPPING_ERROR: 0x0\n[40306.972117] amdgpu 0000:11:00.0: amdgpu:      RW: 0x1\n[40306.972121] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40306.972123] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40306.972132] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acc28000 from client 10\n[40306.972134] amdgpu 0000:11:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00641051\n[40306.972136] amdgpu 0000:11:00.0: amdgpu:      Faulty UTCL2 client ID: TCP (0x8)\n[40306.972146] amdgpu 0000:11:00.0: amdgpu:      MORE_FAULTS: 0x1\n[40306.972156] amdgpu 0000:11:00.0: amdgpu:      WALKER_ERROR: 0x0\n[40306.972158] amdgpu 0000:11:00.0: amdgpu:      PERMISSION_FAULTS: 0x5\n[40306.972160] amdgpu 0000:11:00.0: amdgpu:      MAPPING_ERROR: 0x0\n[40306.972162] amdgpu 0000:11:00.0: amdgpu:      RW: 0x1\n[40306.972167] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40306.972170] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40306.972177] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acc12000 from client 10\n[40306.972180] amdgpu 0000:11:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00641051\n[40306.972182] amdgpu 0000:11:00.0: amdgpu:      Faulty UTCL2 client ID: TCP (0x8)\n[40306.972184] amdgpu 0000:11:00.0: amdgpu:      MORE_FAULTS: 0x1\n[40306.972186] amdgpu 0000:11:00.0: amdgpu:      WALKER_ERROR: 0x0\n[40306.972188] amdgpu 0000:11:00.0: amdgpu:      PERMISSION_FAULTS: 0x5\n[40306.972190] amdgpu 0000:11:00.0: amdgpu:      MAPPING_ERROR: 0x0\n[40306.972193] amdgpu 0000:11:00.0: amdgpu:      RW: 0x1\n[40306.972200] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40306.972203] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40306.972206] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acc28000 from client 10\n[40306.972211] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40306.972214] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40306.972217] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acc08000 from client 10\n[40306.972223] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40306.972226] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40306.972228] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acc08000 from client 10\n[40306.972233] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40306.972235] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40306.972237] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acc20000 from client 10\n[40306.972242] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40306.972244] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40306.972246] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acc18000 from client 10\n[40306.972250] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40306.972253] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40306.972255] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acc68000 from client 10\n[40317.422099] amdgpu 0000:11:00.0: amdgpu: Dumping IP State\n[40317.423410] amdgpu 0000:11:00.0: amdgpu: Dumping IP State Completed\n[40317.423455] amdgpu 0000:11:00.0: amdgpu: [drm] AMDGPU device coredump file has been created\n[40317.423457] amdgpu 0000:11:00.0: amdgpu: [drm] Check your /sys/class/drm/card1/device/devcoredump/data\n[40317.424507] gmc_v12_0_process_interrupt: 1572 callbacks suppressed\n[40317.424664] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40317.425279] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40317.425781] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acca3000 from client 10\n[40317.425904] amdgpu 0000:11:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00641051\n[40317.426139] amdgpu 0000:11:00.0: amdgpu:      Faulty UTCL2 client ID: TCP (0x8)\n[40317.426426] amdgpu 0000:11:00.0: amdgpu:      MORE_FAULTS: 0x1\n[40317.426557] amdgpu 0000:11:00.0: amdgpu:      WALKER_ERROR: 0x0\n[40317.426617] amdgpu 0000:11:00.0: amdgpu:      PERMISSION_FAULTS: 0x5\n[40317.426690] amdgpu 0000:11:00.0: amdgpu:      MAPPING_ERROR: 0x0\n[40317.426705] amdgpu 0000:11:00.0: amdgpu:      RW: 0x1\n[40317.427991] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40317.428604] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40317.429975] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acca9000 from client 10\n[40317.431298] amdgpu 0000:11:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00641051\n[40317.431572] amdgpu 0000:11:00.0: amdgpu:      Faulty UTCL2 client ID: TCP (0x8)\n[40317.432524] amdgpu 0000:11:00.0: amdgpu:      MORE_FAULTS: 0x1\n[40317.432691] amdgpu 0000:11:00.0: amdgpu:      WALKER_ERROR: 0x0\n[40317.432848] amdgpu 0000:11:00.0: amdgpu:      PERMISSION_FAULTS: 0x5\n[40317.433464] amdgpu 0000:11:00.0: amdgpu: ring gfx_0.0.0 timeout, signaled seq=12934123, emitted seq=12934125\n[40317.433468] amdgpu 0000:11:00.0: amdgpu: Process information: process GameThread pid 16914 thread vkd3d_queue pid 17063\n[40317.433471] amdgpu 0000:11:00.0: amdgpu: Starting gfx_0.0.0 ring reset\n[40317.433798] amdgpu 0000:11:00.0: amdgpu:      MAPPING_ERROR: 0x0\n[40317.433993] amdgpu 0000:11:00.0: amdgpu:      RW: 0x1\n[40317.433998] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40317.434001] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40317.434003] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001acca9000 from client 10\n[40317.434005] amdgpu 0000:11:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00641051\n[40317.434007] amdgpu 0000:11:00.0: amdgpu:      Faulty UTCL2 client ID: TCP (0x8)\n[40317.434009] amdgpu 0000:11:00.0: amdgpu:      MORE_FAULTS: 0x1\n[40317.434010] amdgpu 0000:11:00.0: amdgpu:      WALKER_ERROR: 0x0\n[40317.434012] amdgpu 0000:11:00.0: amdgpu:      PERMISSION_FAULTS: 0x5\n[40317.434014] amdgpu 0000:11:00.0: amdgpu:      MAPPING_ERROR: 0x0\n[40317.434295] amdgpu 0000:11:00.0: amdgpu:      RW: 0x1\n[40317.434362] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40317.434365] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40317.434367] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001accbb000 from client 10\n[40317.434369] amdgpu 0000:11:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00641051\n[40317.434371] amdgpu 0000:11:00.0: amdgpu:      Faulty UTCL2 client ID: TCP (0x8)\n[40317.434374] amdgpu 0000:11:00.0: amdgpu:      MORE_FAULTS: 0x1\n[40317.434376] amdgpu 0000:11:00.0: amdgpu:      WALKER_ERROR: 0x0\n[40317.434378] amdgpu 0000:11:00.0: amdgpu:      PERMISSION_FAULTS: 0x5\n[40317.434393] amdgpu 0000:11:00.0: amdgpu:      MAPPING_ERROR: 0x0\n[40317.434395] amdgpu 0000:11:00.0: amdgpu:      RW: 0x1\n[40317.434399] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40317.434403] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40317.434406] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001accb1000 from client 10\n[40317.434408] amdgpu 0000:11:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00641051\n[40317.434409] amdgpu 0000:11:00.0: amdgpu:      Faulty UTCL2 client ID: TCP (0x8)\n[40317.434411] amdgpu 0000:11:00.0: amdgpu:      MORE_FAULTS: 0x1\n[40317.434423] amdgpu 0000:11:00.0: amdgpu:      WALKER_ERROR: 0x0\n[40317.434426] amdgpu 0000:11:00.0: amdgpu:      PERMISSION_FAULTS: 0x5\n[40317.434428] amdgpu 0000:11:00.0: amdgpu:      MAPPING_ERROR: 0x0\n[40317.434430] amdgpu 0000:11:00.0: amdgpu:      RW: 0x1\n[40317.434435] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40317.434437] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40317.434439] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001accb3000 from client 10\n[40317.434441] amdgpu 0000:11:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00641051\n[40317.434443] amdgpu 0000:11:00.0: amdgpu:      Faulty UTCL2 client ID: TCP (0x8)\n[40317.434467] amdgpu 0000:11:00.0: amdgpu:      MORE_FAULTS: 0x1\n[40317.434471] amdgpu 0000:11:00.0: amdgpu:      WALKER_ERROR: 0x0\n[40317.434473] amdgpu 0000:11:00.0: amdgpu:      PERMISSION_FAULTS: 0x5\n[40317.434474] amdgpu 0000:11:00.0: amdgpu:      MAPPING_ERROR: 0x0\n[40317.434476] amdgpu 0000:11:00.0: amdgpu:      RW: 0x1\n[40317.434484] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40317.434486] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40317.434488] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001accb9000 from client 10\n[40317.434490] amdgpu 0000:11:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00641051\n[40317.434492] amdgpu 0000:11:00.0: amdgpu:      Faulty UTCL2 client ID: TCP (0x8)\n[40317.434493] amdgpu 0000:11:00.0: amdgpu:      MORE_FAULTS: 0x1\n[40317.434495] amdgpu 0000:11:00.0: amdgpu:      WALKER_ERROR: 0x0\n[40317.434497] amdgpu 0000:11:00.0: amdgpu:      PERMISSION_FAULTS: 0x5\n[40317.434498] amdgpu 0000:11:00.0: amdgpu:      MAPPING_ERROR: 0x0\n[40317.434500] amdgpu 0000:11:00.0: amdgpu:      RW: 0x1\n[40317.434506] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40317.434508] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40317.434510] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001accc3000 from client 10\n[40317.434515] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40317.434517] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40317.434519] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001accab000 from client 10\n[40317.434523] amdgpu 0000:11:00.0: amdgpu: Ring gfx_0.0.0 reset succeeded\n[40317.434527] amdgpu 0000:11:00.0: [drm] device wedged, but recovered through reset\n[40317.434528] amdgpu 0000:11:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:40 vmid:6 pasid:32805)\n[40317.434531] amdgpu 0000:11:00.0: amdgpu:  in process GameThread pid 16914 thread vkd3d_queue pid 17063)\n[40317.434533] amdgpu 0000:11:00.0: amdgpu:   in page starting at address 0x00008001accb1000 from client 10\n[40400.876692] amdgpu 0000:11:00.0: amdgpu: Dumping IP State\n[40400.877802] amdgpu 0000:11:00.0: amdgpu: Dumping IP State Completed\n[40400.877814] amdgpu 0000:11:00.0: amdgpu: [drm] AMDGPU device coredump file has been created\n[40400.877816] amdgpu 0000:11:00.0: amdgpu: [drm] Check your /sys/class/drm/card1/device/devcoredump/data\n[40400.887821] amdgpu 0000:11:00.0: amdgpu: ring gfx_0.0.0 timeout, signaled seq=12967335, emitted seq=12967337\n[40400.887826] amdgpu 0000:11:00.0: amdgpu: Process information: process GameThread pid 17808 thread vkd3d_queue pid 17988\n[40400.887828] amdgpu 0000:11:00.0: amdgpu: Starting gfx_0.0.0 ring reset\n[40400.888572] amdgpu 0000:11:00.0: amdgpu: Ring gfx_0.0.0 reset succeeded\n[40400.888576] amdgpu 0000:11:00.0: [drm] device wedged, but recovered through reset\n```\n\n</details>\n\n[devcoredump.snake.log](https://github.com/user-attachments/files/22014253/devcoredump.snake.log)\n\n[steam-2417610.log](https://github.com/user-attachments/files/22033247/steam-2417610.log)\n\n## Reproduction\n1. Launch the game\n2. Go through graphics settings\n3. Observe crash\n",
+    "created_at": "2025-08-27T21:47:47Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/9010#issuecomment-3234876221",
+        "discussion_body": "@NyaomiDEV no issue with either game on mesa 25.2.1 with a 9060 xt regardless of FSR status, the difference is that I'm on 6.16.3. Please bring a proton log by adding this to the launch parameters `PROTON_LOG=1 VKD3D_CONFIG=breadcrumbs %command%`",
+        "created_at": "2025-08-28T20:40:28Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/9010#issuecomment-3234906364",
+        "discussion_body": "@simifor I already took those logs, it's just that I was testing multiple ways to get the game running while I made this issue ticket. I'll upload the relevant logs, as I circumvented the bug in the end (eg. start the game in a 1080p configuration)\n\nAlso it's worth noting that in my testing, this issue only happens on native 4k resolution. Anything lower won't trigger it.\n\nI edited my first post with logs I took at the time.",
+        "created_at": "2025-08-28T20:53:28Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/9010#issuecomment-3237379703",
+        "discussion_body": "It's possible https://github.com/HansKristian-Work/vkd3d-proton/pull/2598 works around it.",
+        "created_at": "2025-08-29T15:12:09Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "FLARE NUINUI QUEST (3081830)",
+    "issue_number": 8191,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8191",
+    "compatibility_report_id": 2612671399,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: FLARE NUINUI QUEST\r\n- Steam AppID of the game: 3081830\r\n\r\n## System Information\r\n- 1 TB OLED LE Steam Deck \r\n- Proton version: Experimental \r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame crashes on startup \r\n[steam-3081830.log](https://github.com/user-attachments/files/17513581/steam-3081830.log)\r\n\r\n## Reproduction\r\nStart the game.\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Also, please copy the contents of `Help` > `Steam Runtime Diagnostics` to\r\n   the gist.\r\n6. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2024-10-24T22:28:57Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8191#issuecomment-2448376929",
+        "discussion_body": "Someone on the community hub thread it has something to do with webview2 being borked.",
+        "created_at": "2024-10-30T21:03:34Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8191#issuecomment-2547242805",
+        "discussion_body": "https://gitlab.winehq.org/wine/wine/-/merge_requests/7032\r\n\r\nMaybe this might do something, I dunno",
+        "created_at": "2024-12-17T00:31:55Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8191#issuecomment-2840474569",
+        "discussion_body": "Still doesn't seem to load up with proton Experimental bleeding edge.\n\nEdit: If I run it in desktop mode, i see a window briefly appear and vanish in half a second, nothing else happens until I press stop playing.\n\n[steam-2515070.log.txt](https://github.com/user-attachments/files/19969206/steam-2515070.log.txt)",
+        "created_at": "2025-04-29T23:48:05Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  }
+]

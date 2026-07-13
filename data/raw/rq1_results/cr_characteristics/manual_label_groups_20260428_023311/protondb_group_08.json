@@ -1,0 +1,162 @@
+[
+  {
+    "record_id": "protondb:318055",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 269599,
+    "app_id": "2012840",
+    "title": "Portal with RTX",
+    "created_at": "2025-10-22T20:17:24Z",
+    "text": "[metadata]\napp.steam.appId: 2012840\napp.title: Portal with RTX\ntimestamp: 1761164244\n\n[systemInfo]\ncpu: AMD Ryzen 9 9950X3D 16-Core\ngpu: NVIDIA GeForce RTX 5090\ngpuDriver: NVIDIA 580.95.05\nkernel: 6.17.3\nos: NixOS 25.05 (Warbler)\nram: 88 GB\nsteamRuntimeVersion: steam-runtime_1.0.20250723.149234\nxWindowManager: GNOME Shell\n\n[responses]\nanswerToWhatGame: 2012840\naudioFaults: no\nfollowUp.stabilityFaults: occasionally\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: yes\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 318055,
+      "timestamp": 1761164244,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_08",
+    "calibration_group_index": 8,
+    "calibration_group_position": 1
+  },
+  {
+    "record_id": "protondb:182939",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 134483,
+    "app_id": "834530",
+    "title": "Yakuza Kiwami",
+    "created_at": "2023-07-20T08:20:06Z",
+    "text": "[metadata]\napp.steam.appId: 834530\napp.title: Yakuza Kiwami\ntimestamp: 1689841206\n\n[systemInfo]\ncpu: 12th Gen Intel Core i5-12600K\ngpu: AMD Radeon RX 6700 XT (navi22, LLVM 15.0.7, DRM 3.52, 6.3.9-1-default)\ngpuDriver: 4.6 Mesa 23.1.1 (git-fa55e3c026)\nkernel: 6.3.9-1-default\nos: OpenSuse Tumbleweed Freedesktop.org SDK 22.08 (Flatpak runtime)\nram: 32 GB\n\n[responses]\nanswerToWhatGame: 834530\naudioFaults: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: bottles\nlocalMultiplayerAttempted: no\nnotes.variant: wine-ge-proton8-10\nonlineMultiplayerAttempted: no\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: no\nvariant: notListed\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 182939,
+      "timestamp": 1689841206,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_08",
+    "calibration_group_index": 8,
+    "calibration_group_position": 2
+  },
+  {
+    "record_id": "protondb:204883",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 156427,
+    "app_id": "2508960",
+    "title": "Calculator: The Game",
+    "created_at": "2024-01-02T02:09:56Z",
+    "text": "[metadata]\napp.steam.appId: 2508960\napp.title: Calculator: The Game\ntimestamp: 1704161396\n\n[systemInfo]\ncpu: 12th Gen Intel Core i7-1280P\ngpu: Intel Mesa Intel (ADL GT2)\ngpuDriver: 4.6 Mesa 23.2.1-arch1.2\nkernel: 6.5.8-arch1-1\nos: Arch Linux\nram: 64 GB\nsteamRuntimeVersion: steam-runtime_0.20231024.64411\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 2508960\naudioFaults: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: experimental\nverdict: yes\nverdictOob: no\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 204883,
+      "timestamp": 1704161396,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_08",
+    "calibration_group_index": 8,
+    "calibration_group_position": 3
+  },
+  {
+    "record_id": "protondb:53338",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 4882,
+    "app_id": "438100",
+    "title": "VRChat",
+    "created_at": "2021-02-16T03:41:10Z",
+    "text": "[metadata]\napp.steam.appId: 438100\napp.title: VRChat\ntimestamp: 1613446870\n\n[systemInfo]\ncpu: %s1\ngpu: Red Hat virgl\ngpuDriver: 3.1 Mesa 19.2.8\nkernel: 5.4.74-10576-gb6cc41974db3\nos: Debian GNU/Linux 10 (buster)\nram: 3 GB\n\n[responses]\nanswerToWhatGame: 438100\ninstalls: yes\nnotes.extra: If someone could help I would appreciate it\nnotes.verdict: I had started up VRchat, the white loading screen with the VRchat logo appears, the loading bar only fills 14 bars, sits there then crashes.\nopens: no\nprotonVersion: Default\ntype: steamPlay\nverdict: no",
+    "metadata": {
+      "raw_index": 53338,
+      "timestamp": 1613446870,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_08",
+    "calibration_group_index": 8,
+    "calibration_group_position": 4
+  },
+  {
+    "record_id": "protondb:187021",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 138565,
+    "app_id": "2358610",
+    "title": "Abathor - Atlantis Landing",
+    "created_at": "2023-08-23T06:56:42Z",
+    "text": "[metadata]\napp.steam.appId: 2358610\napp.title: Abathor - Atlantis Landing\ntimestamp: 1692773802\n\n[systemInfo]\ncpu: AMD Ryzen 5 5600G with Radeon Graphics\ngpu: AMD Radeon RX 560 (polaris11, LLVM 15.0.7, DRM 3.52, 6.3.13_1)\ngpuDriver: 4.6 Mesa 23.1.3\nkernel: 6.3.13_1\nos: Void Linux\nram: 32 GB\nsteamRuntimeVersion: steam-runtime_0.20230606.51628\nxWindowManager: Xfwm4\n\n[responses]\nanswerToWhatGame: 2358610\naudioFaults: no\nconcludingNotes: Works well straight from install without any tweaking on PC and Deck\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: no\nvariant: experimental\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 187021,
+      "timestamp": 1692773802,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_08",
+    "calibration_group_index": 8,
+    "calibration_group_position": 5
+  }
+]

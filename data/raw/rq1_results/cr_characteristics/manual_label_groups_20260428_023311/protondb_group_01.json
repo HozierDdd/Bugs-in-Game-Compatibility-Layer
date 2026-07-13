@@ -1,0 +1,162 @@
+[
+  {
+    "record_id": "protondb:285134",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 236678,
+    "app_id": "1237970",
+    "title": "Titanfall 2",
+    "created_at": "2025-04-26T22:21:35Z",
+    "text": "[metadata]\napp.steam.appId: 1237970\napp.title: Titanfall 2\ntimestamp: 1745706095\n\n[systemInfo]\ncpu: AMD Ryzen 7 PRO 8840U w/ Radeon 780M Graphics\ngpu: AMD Radeon (radeonsi, gfx1103_r1, LLVM 19.1.6, DRM 3.60, 6.13.3-0-generic)\ngpuDriver: 4.6 Mesa 24.3.1 (git-c815d651b8)\nkernel: 6.13.3-0-generic\nos: Freedesktop SDK 24.08 (Flatpak runtime)\nram: 31 GB\nsteamRuntimeVersion: steam-runtime_0.20241127.109674\nxWindowManager: wlroots wm\n\n[responses]\nanswerToWhatGame: 1237970\naudioFaults: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nlocalMultiplayerAppraisal: excellent\nlocalMultiplayerAttempted: yes\nlocalMultiplayerPlayed: yes\nonlineMultiplayerAppraisal: excellent\nonlineMultiplayerAttempted: yes\nonlineMultiplayerPlayed: yes\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 285134,
+      "timestamp": 1745706095,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_01",
+    "calibration_group_index": 1,
+    "calibration_group_position": 1
+  },
+  {
+    "record_id": "protondb:318880",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 270424,
+    "app_id": "804010",
+    "title": "SteamWorld Quest: Hand of Gilgamech",
+    "created_at": "2025-10-26T17:01:45Z",
+    "text": "[metadata]\napp.steam.appId: 804010\napp.title: SteamWorld Quest: Hand of Gilgamech\ntimestamp: 1761498105\n\n[systemInfo]\ncpu: AMD Ryzen 7 5800X 8-Core\ngpu: AMD Radeon RX 6750 XT (radeonsi, navi22, LLVM 20.1.8, DRM 3.64, 6.16.8-arch1-1)\ngpuDriver: 4.6 Mesa 25.2.3-arch1.2\nkernel: 6.16.8-arch1-1\nos: EndeavourOS Linux\nram: %$s1 MB\nsteamRuntimeVersion: steam-runtime_1.0.20250616.139563\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 804010\naudioFaults: no\nconcludingNotes: Keyboard gameplay\ncustomProtonVersion: GE-Proton10-20\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.verdict: Works OOTB\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: no\nvariant: ge\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 318880,
+      "timestamp": 1761498105,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_01",
+    "calibration_group_index": 1,
+    "calibration_group_position": 2
+  },
+  {
+    "record_id": "protondb:254324",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 205868,
+    "app_id": "1172470",
+    "title": "Apex Legends™",
+    "created_at": "2024-11-05T13:01:45Z",
+    "text": "[metadata]\napp.steam.appId: 1172470\napp.title: Apex Legends™\ntimestamp: 1730811705\n\n[systemInfo]\ncpu: AMD Ryzen 7 5800X 8-Core\ngpu: AMD Radeon RX 6800 XT (radeonsi, navi21, LLVM 17.0.6, DRM 3.57, 6.8.0-47-generic)\ngpuDriver: 4.6 Mesa 24.1.0-devel\nkernel: 6.8.0-47-generic\nos: Linux Mint 21.3\nram: 32 GB\nsteamRuntimeVersion: steam-runtime_0.20240806.97925\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 1172470\ninstalls: yes\nlauncher: steam\nnotes.verdict: Respawn just dropped Linux support therefore this game is not playable anymore.\nopens: no\ntinkerOverride: no\nvariant: official\nverdict: no",
+    "metadata": {
+      "raw_index": 254324,
+      "timestamp": 1730811705,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_01",
+    "calibration_group_index": 1,
+    "calibration_group_position": 3
+  },
+  {
+    "record_id": "protondb:190236",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 141780,
+    "app_id": "397950",
+    "title": "Clustertruck",
+    "created_at": "2023-09-16T10:45:52Z",
+    "text": "[metadata]\napp.steam.appId: 397950\napp.title: Clustertruck\ntimestamp: 1694861152\n\n[systemInfo]\ncpu: 11th Gen Intel Core i7-11800H @ 2.30GHz\ngpu: NVIDIA GeForce RTX 3060 Laptop GPU\ngpuDriver: NVIDIA 525.125.06\nkernel: 6.2.0-32-generic\nos: Ubuntu 23.04 (64-разрядная)\nram: 16 GB\nsteamRuntimeVersion: steam-runtime_0.20230801.56012\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 397950\naudioFaults: no\ncustomizationsUsed.configChange: False\ncustomizationsUsed.winetricks: False\nfollowUp.inputFaults.controllerMapping: False\nfollowUp.inputFaults.controllerNotResponsive: False\nfollowUp.inputFaults.drifting: False\nfollowUp.inputFaults.inaccuracy: False\nfollowUp.inputFaults.other: True\nfollowUp.performanceFaults: slightSlowdown\nfollowUp.windowingFaults.switching: True\ngraphicalFaults: no\ninputFaults: yes\ninstalls: yes\nlauncher: steam\nnotes.inputFaults: Кнопка W засчитывается только когда установленная англ. раскладка, как и другие\nnotes.verdict: Хорошо работает\nopens: yes\nperformanceFaults: yes\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: yes",
+    "metadata": {
+      "raw_index": 190236,
+      "timestamp": 1694861152,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_01",
+    "calibration_group_index": 1,
+    "calibration_group_position": 4
+  },
+  {
+    "record_id": "protondb:146991",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 98535,
+    "app_id": "234140",
+    "title": "Mad Max",
+    "created_at": "2022-10-26T22:05:47Z",
+    "text": "[metadata]\napp.steam.appId: 234140\napp.title: Mad Max\ntimestamp: 1666821947\n\n[systemInfo]\ncpu: AMD Ryzen 7 3700X 8-Core\ngpu: AMD Radeon R9 390 (HAWAII, DRM 3.42.0, 5.15.28-1-MANJARO, LLVM 13.0.1)\ngpuDriver: 4.6 Mesa 21.3.7\nkernel: 5.15.28-1-MANJARO\nos: Manjaro Linux\nram: 32 GB\n\n[responses]\nanswerToWhatGame: 234140\naudioFaults: yes\nconcludingNotes: The audio went out of sync during some of the end game cutscenes. The story was unintrusive so it didn't affect enjoyment of the game.\ncustomProtonVersion: GE-Proton7-31\nfollowUp.audioFaults.outOfSync: True\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.verdict: Played great\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: no\nvariant: ge\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 146991,
+      "timestamp": 1666821947,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_01",
+    "calibration_group_index": 1,
+    "calibration_group_position": 5
+  }
+]

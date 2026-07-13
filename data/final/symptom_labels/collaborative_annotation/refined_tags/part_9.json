@@ -1,0 +1,104 @@
+[
+  {
+    "issue_number": 7116,
+    "issue_title": "Surviving Mars (464920)",
+    "id": 1907662717,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues:  surviving mars  (heroic games launcher/epic game version)\r\n- Steam AppID of the game: 464920\r\n\r\n## System Information\r\nCPU: 4x Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz\r\nMemory: 16.67 GB (used: 4.12 GB)\r\nGPUs:\r\n  GPU 0:\r\n    Name: Advanced Micro Devices, Inc. [AMD/ATI] Radeon R7 250\r\n\r\n    Driver: amdgpu\r\n  GPU 1:\r\n    Name: Intel Corporation undefined\r\n \r\n    Driver: i915\r\nOS: Freedesktop SDK 22.08 (Flatpak runtime) (linux\r\n## I confirm:\r\n-  that I haven't found an existing compatibility report for this game.\r\n\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nthe game seen to launch fine, except that the mouse doesn't show up in full screen\r\n\r\n## Reproduction\r\njust launch the game and wait for the main menu to show up.\r\n(the mouse will not show up)\r\n",
+    "symptom_summary": "用户在将《帝国时代4》的语言设置为西班牙语后，游戏无法启动，出现黑屏，游戏鼠标可见，但随后关闭。 \n\nTags: Game Crash, Black Screen, Language Issue",
+    "tags": [
+      "Graphic  / Rendering Issue"
+    ]
+  },
+  {
+    "issue_number": 5096,
+    "issue_title": "Total War: Rome 2 Crashing during play",
+    "id": 975911413,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Total War: Rome 2\r\n- Steam AppID of the game: 214950\r\n\r\n## System Information\r\n- GPU: GTX 1060\r\n- Driver/LLVM version: Nvidia 470.63.01\r\n- Kernel version: 5.10.59-1-MANJARO\r\n- Link to full system information report as [Gist](https://gist.github.com/01db891982c23cf4999a58d315150ca2)\r\n- Proton version: 6.3-5\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n[steam-214950.log](https://gist.github.com/Sackbuoy/66d9ee2821a5280079603a2deb232ed7)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame is crashing during a campaign, seemingly at random after about 10-15 minutes of play, typically when ending a turn while it is processing all of the other factions moves. It produces not output, nothing happens, the game window simply closes without warning.\r\n\r\n\r\n## Reproduction\r\nThe only way I can reproduce it is by playing the game for about 15 minutes. I cannot seem to intentionally trigger it any way, though I will keep trying and update If i find anything\r\n\r\nhttps://github.com/ValveSoftware/Proton/issues/512 is the only other issue I can find, but it appears to be a different issue that never got resolved. I am opening this one since that one seems unrelated.\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "symptom_summary": "用户在游戏《EA SPORTS™ FIFA 21》中遇到随机崩溃的问题，崩溃发生在使用DX12时的任意时刻。\n\nTag suggestions: Random Crash, DX12 Issues, Game Freezes",
+    "tags": [
+      "In-game Crash"
+    ]
+  },
+  {
+    "issue_number": 6248,
+    "issue_title": "Onward (496240)",
+    "id": 1415749432,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Onward\r\n- Steam AppID of the game: 496240\r\n\r\n## System Information\r\n- GPU: RX 6700XT\r\n- Driver/LLVM version: Mesa 22.2.1-1/14.0.6-3\r\n- Kernel version: 6.0.2-arch1-1\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/alexandraflynn0/6f38a60d2de5eeb3cc77a86b70b3e215\r\n- Proton version: 7.0-4, also tried with experimental and GE 7-35\r\n- SteamVR version: 1.24.6\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n[steam-496240.log](https://github.com/ValveSoftware/Proton/files/9825254/steam-496240.log)\r\n\r\n[SteamVR-2022-10-19-PM_07_44_35.txt](https://github.com/ValveSoftware/Proton/files/9825288/SteamVR-2022-10-19-PM_07_44_35.txt)\r\n\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame freezes on black screen while loading, after a few logos have been displayed\r\n\r\n## Reproduction\r\nOpen SteamVR\r\nOpen Onward\r\nA few logos display\r\nGame freezes on a black screen\r\n\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "symptom_summary": "用户在加载时遇到游戏冻结，显示黑屏，且在展示几个logo后无法继续。 \n\nTags: Game Freeze, Black Screen, Loading Issue",
+    "tags": [
+      "Freeze",
+      "Black Screen",
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 4907,
+    "issue_title": "NARAKA: BLADEPOINT (1203220)",
+    "id": 1642507049,
+    "compatibility_report": "Can't run `NARAKA BLADEPOINT` on openSUSE Tumbleweed\r\n\r\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/6937.\r\n@sauntor posted on 2023-07-19T17:38:16:\r\n\r\n# Compatibility Report\r\n- Name of the game with compatibility issues: 永劫无间（NARAKA BLADEPOINT）\r\n- Steam AppID of the game: 1203220\r\n\r\n## System Information\r\n- GPU: NVIDIA GeForce GTX 1050/PCIe/SSE2\r\n- Driver/LLVM version: nvidia-drivers-G06-535.54.03-10.1.x86_64\r\n- Kernel version: 6.4.3-1-default\r\n- Link to full system information report as [Gist](https://gist.github.com/): [System Information](https://github.com/ValveSoftware/Proton/files/12098506/sysinfo.log)\r\n- Proton version: 8.0-2\r\n- Dell XPS 15 / 9560\r\n\r\n## I confirm:\r\n- [ ] that I haven't found an existing compatibility report for this game.\r\n  > issue #4907 \r\n- [x ] that I have checked whether there are updates for my system available.\r\n\r\n[steam-1203220.log](https://github.com/ValveSoftware/Proton/files/12098452/steam-1203220.log)\r\n[logs from terminal](https://github.com/ValveSoftware/Proton/files/12098570/steam-in-cli.log)\r\n\r\n## Symptoms\r\nNo interface shown after click the `Play` button, and a while later, the game will exit and the `Play` button will be clickable too.\r\n\r\n\r\n## Reproduction\r\n1. Fresh installed openSUSE Tumbleweed\r\n2. Get all updates: `zypper ref && zypper inr && zypper dup`\r\n3.  Install `32bit` runtime: `zypper in -t pattern 32bit`\r\n4. Install NVIDIA G06 Driver:\r\n   ```sh\r\n   zypper ar -cefg https://download.nvidia.com/opensuse/tumbleweed/   nvidia\r\n   zypper ref && zypper in --recommends nvidia-drivers-G06\r\n   ```\r\n5.  Install steam client: `zypper in --recommends steam`\r\n6. Launch `Steam` and install `NARAKA BLADEPOINT`\r\n7. Change the `Properties` of `NARAKA BLADEPOINT`, set `Compatibility` to `Proton 8.0-2`, in `General`,  set `Launch Options` to `__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia`\r\n8. Try to launch the game",
+    "symptom_summary": "用户在尝试启动《永劫无间（NARAKA BLADEPOINT）》时，点击“播放”按钮后没有显示任何界面，随后游戏会退出，且“播放”按钮再次可点击。\n\nTags: No interface, Game exits, Launch issues",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 5779,
+    "issue_title": "Jurassic World Evolution 2 (1244460)",
+    "id": 1211641291,
+    "compatibility_report": "\r\n[steam-1244460.zip](https://github.com/ValveSoftware/Proton/files/8544221/steam-1244460.zip)\r\n# Compatibility Report\r\n- Name of the game Jurassic World Evolution:\r\n- Steam AppID of the game:  1244460\r\n\r\n## System Information\r\n- GPU: GTX1650\r\n- Driver/LLVM version: Mesa 21/ nvidia 510.47 using prime\r\n- Kernel version: 4.18\r\n- Link to full system information report as https://gist.github.com/mwprado/a60f3e5c81d811d7ed639930e44f91c7):\r\n- Proton version: all\r\n\r\n## I confirm:\r\n- [  ] that I haven't found an existing compatibility report for this game.\r\n  The game was working until last update.\r\n- [X ] that I have checked whether there are updates for my system available.\r\n\r\n[steam-1244460.zip](https://github.com/ValveSoftware/Proton/files/8544221/steam-1244460.zip)\r\n\r\n\r\n## Symptoms \r\nThe game doesn't launch.\r\n\r\n## Reproduction\r\nTry launch with all proton version\r\n",
+    "symptom_summary": "用户报告游戏《侏罗纪世界：进化》无法启动。 \n\nTags: Game Won't Launch, Launch Issues, Compatibility Problem",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 5535,
+    "issue_title": "Runescape (1343400)",
+    "id": 1121535577,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues:Runescape\r\n- Steam AppID of the game: 1343400\r\n\r\n## System Information\r\nLink to full system information report as Gist: https://gist.github.com/coreybruce/dcd2bec911594c9212d351ac2e7a3f98\r\n\r\n- Proton version: 6.3-8\r\n\r\n## I confirm:\r\n- [x ] that I haven't found an existing compatibility report for this game.\r\n- [ x] that I have checked whether there are updates for my system available.\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nGame will crash while on the loading screen befored login\r\n\r\n## Reproduction\r\nLoad up game using latest stable proton, also does it on Proton experimental\r\n\r\nLog as gist: https://gist.github.com/coreybruce/6344974a2c1860d0970def18ed0395f6",
+    "symptom_summary": "用户在加载屏幕上遇到游戏崩溃，无法登录。 \n\nTag suggestions: Crash, Loading Screen, Login Issue",
+    "tags": [
+      "Startup Crash"
+    ]
+  },
+  {
+    "issue_number": 4975,
+    "issue_title": "The Hurricane of the Varstray -Collateral hazard- (416380)",
+    "id": 946556875,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: _The Hurricane of the Varstray -Collateral hazard-_\r\n- Steam AppID of the game: 416380\r\n\r\n## System Information\r\n- GPU: RX 570\r\n- Driver/LLVM version: Mesa 21.1.4\r\n- Kernel version: 5.12.15-arch1-1\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/ryliejamesthomas/c0befc162b953a6bd888038d5a363057\r\n- Proton version: 6.3-5\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[steam-416380.log](https://github.com/ValveSoftware/Proton/files/6833035/steam-416380.log)\r\n\r\n## Symptoms\r\n\r\nGame launches, seems to work fine (get audio, keyboard input works) apart from the screen being completely black.\r\n\r\nSame issue is experienced by every Linux user I can find.",
+    "symptom_summary": "用户在运行《The Hurricane of the Varstray -Collateral hazard-》时，游戏可以正常启动并接收音频和键盘输入，但屏幕完全黑屏。所有Linux用户均遇到相同问题。\n\n**Tag Suggestions:** Black Screen, Audio Works, Input Functional, Linux Issue",
+    "tags": [
+      "Black Screen"
+    ]
+  },
+  {
+    "issue_number": 8255,
+    "issue_title": "Microsoft Flight Simulator 2024 (2537590)",
+    "id": 2499091455,
+    "compatibility_report": "MS Flightsimulator 2024 video playback issue - only color bars (codec issue?)\r\n\r\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/8267.\r\n@TechGameGeek posted on 2024-11-25T21:37:35:\r\n\r\n# Compatibility Report\r\n- Microsoft Flight Simulator 2024\r\n- Steam AppID of the game:  2537590\r\n\r\n## System Information\r\n- GPU: Radeon RX 7900 XT\r\n- Video driver version: amdgpu 23.0.0-1 (xserver-xorg-video-amdgpu)\r\n- Kernel version: 6.10.11+bpo-amd64\r\n- Link to full system information report as [Gist] https://gist.github.com/TechGameGeek/1f356ebcf0ea259eb9ca8bea1bfb4c6a\r\n- Proton version: Proton Experimental (bleeding edge - Beta)\r\n\r\n## I confirm:\r\n- [ X] that I haven't found an existing compatibility report for this game.\r\n- [X ] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nVideoplayback seems to have a codec issue, cause videos just show a placeholder (color bars)\r\nVideo plays with latest Proton-GE (9.20) but with Proton-GE 9.20 the game is not working.\r\n\r\n\r\n## Reproduction\r\nInstall MS FS 2024 -- choose Proton Experimental Beta (bleeding edge)\r\nStart MS FS 2024 with Proton Experimental  Beta (bleeding edge)\r\n\r\n\r\n[steamlog.tar.gz](https://github.com/user-attachments/files/17909135/steamlog.tar.gz)",
+    "symptom_summary": "用户在游戏《Humankind》中遇到了一系列问题，包括外交界面的头像闪烁、主界面元素的卡顿和消失重现，以及游戏在随机时刻完全崩溃，导致无法点击和操作，只能重启系统。 \n\nTags: Flickering, Crashes, UI Issues, Stuttering, Unresponsive",
+    "tags": [
+      "Cutscene Issue"
+    ]
+  },
+  {
+    "issue_number": 4527,
+    "issue_title": "The Void (37000)",
+    "id": 777642834,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: The Void\r\n- Steam AppID of the game: 37000\r\n\r\n## System Information \r\n(Note: none of this is particularly relevant to the bug, because this occurs regardless of system or Proton/WINE version)\r\n- GPU: RX 560 X\r\n- Driver/LLVM version: Mesa 20.2.6\r\n- Kernel version: 5.9\r\n- Proton version: Any\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms \r\n\r\nThe game appears to work perfectly until you get to the second sister's chamber. No matter what, upon walking through the room, the game will crash to desktop. This happens regardless of settings, regardless of hardware, regardless of Proton version, regardless of vanilla WINE version, etc. It has also been reported about at WineHQ over the years, but it seems like either nobody can figure out why this is occurring or there's no active work being done to remedy it. \r\n\r\nOn the WineHQ page, reports have listed \"Unhandled page fault on read access to 0x00000000 at address 0x1953eb7\" as the relevant error message connected to this issue.\r\n\r\n[Link to WineHQ bug report](https://bugs.winehq.org/show_bug.cgi?id=47229)\r\n\r\n\r\n## Reproduction\r\n\r\nInstall The Void, play until you reach the second sister's chambers, and walk through the room. Use any Proton or WINE version you'd like, on any hardware you have, and you'll see the same crash to desktop result.\r\n",
+    "symptom_summary": "用户在游戏《The Void》中遇到的问题是，在进入第二姐妹的房间后，游戏会崩溃并返回桌面。无论设置、硬件或Proton版本如何，崩溃现象始终存在。\n\nTag suggestions: Crash to Desktop, Unhandled Exception, Game Freezes",
+    "tags": [
+      "In-game Crash"
+    ]
+  },
+  {
+    "issue_number": 5300,
+    "issue_title": "GTA 5 will eventually crash",
+    "id": 1049422032,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: GTA IV\r\n- Steam AppID of the game: 271590\r\n\r\n## System Information\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/coreybruce/dcd2bec911594c9212d351ac2e7a3f98\r\n- Proton version: Experimental \r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\nhttps://gitlab.com/coreybruce/gta-iv-log/-/raw/main/steam-271590.log\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nI have tested it with Proton 6.x.x and Proton Experimental and after a while of game play the game will crash tho wierdly enough all tho it says it's using Proton Experimental if you force it than from one testing for a session it didn't  crash.\r\n\r\n## Reproduction\r\nRun the game using either Proton 6.x.x or Experimental as your global steam play versions and leave the game not forcing a specific version. I did also test Proton-GE 6.19-2 and had the same issue.\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "symptom_summary": "用户在使用Proton 6.x.x和Proton Experimental时，游戏《GTA IV》在游戏进行一段时间后会崩溃，但在强制使用Proton Experimental时，某次测试中未出现崩溃现象。\n\n**Tag Suggestions:** Crash, Gameplay Issues, Proton Experimental",
+    "tags": [
+      "In-game Crash"
+    ]
+  }
+]

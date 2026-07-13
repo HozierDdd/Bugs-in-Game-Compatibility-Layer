@@ -1,0 +1,1114 @@
+[
+  {
+    "issue_report_title": "Coromon (1218210)",
+    "issue_number": 5828,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5828",
+    "compatibility_report_id": 1231195209,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Coromon\r\n- Steam AppID of the game: 1218210\r\n\r\n## System Information\r\n- GPU: RX6700XT\r\n- Driver/LLVM version: Mesa 22\r\n- Kernel version: 5.17.1-3\r\n- Link to full system information report as [Gist](https://gist.github.com/screwylightbulb/9fc89868898d07751b1df7fcdc389016):\r\n- Proton version: 7.0-2\r\n\r\n## I confirm:\r\n- [*] that I haven't found an existing compatibility report for this game.\r\n- [*] that I have checked whether there are updates for my system available.\r\n\r\n## Proton log\r\n[steam-1218210.tar.gz](https://github.com/ValveSoftware/Proton/files/8662027/steam-1218210.tar.gz)\r\n\r\n## Symptoms \r\n\r\nGame starts and runs fine, but after a while starts to stutter and slow down a lot. Tried with both Proton 7.0-2 and Experimental. Have noticed other people support similar issues. \r\n\r\n## Reproduction\r\n\r\nStart game and play for a while until it starts to stutter. Time until this happens will vary from play to play.",
+    "created_at": "2022-05-10T13:46:10Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5828#issuecomment-1241039050",
+        "discussion_body": "This happen to me also on Steam Deck from Game Mode frame rate is max 53 but often less",
+        "created_at": "2022-09-08T17:47:30Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5828#issuecomment-1267271616",
+        "discussion_body": "Coromon\r\n\r\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/6214.\r\n@Fantasy1446 posted on 2022-10-04T16:26:34:\r\n\r\nLast version of Proton.\r\nOn steam deck , coromon's game afther 30 minutes of game the FPS down to 10/14 and the game Is unplayable. ",
+        "created_at": "2022-10-04T16:36:58Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5828#issuecomment-1267441784",
+        "discussion_body": "Isn't there a way to fix?",
+        "created_at": "2022-10-04T18:48:13Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5828#issuecomment-1328015908",
+        "discussion_body": "Developer of Coromon here, we've been investigating this issue for some time now and we're finally able to pinpoint where the issue is coming from. Just dropping our findings here to help someone else perhaps fix the core issue.\r\n\r\nThe FPS drop starts happening after the `BOverlayNeedsPresent()` Steam SDK API is called roughly ~130.000 times (~36.5 minutes converted to seconds * 60FPS).\r\nThe [steamworks plugin](https://github.com/coronalabs/com.coronalabs-plugin.steamworks) of our engine calls this on every frame to determine whether OpenGL should force a render to ensure the overlay is being updated. We tested decreasing the polling rate to the `BOverlayNeedsPresent()` to once every 10 frames, this delayed the FPS drop to 6 hours (360 minutes) instead of 36 minutes. This also changed the constant FPS drop into a frame spike every 10 frames, so it seems to me `BOverlayNeedsPresent()` starts to take a lot of CPU time after it is called over ~130.000 times.\r\n\r\nWe tested on every available Proton version on Steam, Proton 4.2-9 & Proton 3.16-9 do not have this glitch somehow.\r\n\r\nWe'll be releasing an update of our game soon where we decrease the polling rate even further to allow sessions of at least 18 hours without the FPS drop, but a better solution would be a fix for `BOverlayNeedsPresent()` in Proton.",
+        "created_at": "2022-11-26T09:48:26Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5828#issuecomment-2956630976",
+        "discussion_body": "On the Steam Deck, entering your name as part of the prologue is buggy. If you use the control stick and A button, the next entry overwrites the last entry, such that you can only have 1 character in your name at any given time. If you use the touch screen, things work.\n\n@pouwelsjochem I am not sure if this is your bug or Valve's bug.",
+        "created_at": "2025-06-09T18:41:45Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Call of Duty (1938090)",
+    "issue_number": 5366,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5366",
+    "compatibility_report_id": 1067452370,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Call Of Duty. Modern Warfare. WARZONE\r\n- Steam AppID of the game: Not in Valve Steam Store Archive. Used setup.exe from Official game website.\r\n\r\n## System Information\r\n- Distro: kDE-NEON\r\n- PPA: Kisak_PPA(s), Canonical-X-Staging_PPA, Canonical-Proposed_PPA, UDC_PPA, Graphics PPA \r\n- Repos: Ubuntu Proposed and Backports enabled.\r\n- Repos: kDE-NEON_User_LTS_ stable.\r\n- GPU: nVidia GTX 1050 (2G_RAM)\r\n- Driver/LLVM version: nVidia 495 from Launchpad Graphics PPA\r\n- Kernel version: 5.13.0-22 - generic w/ extra nvidia sig,object and modules packages\r\n- Link to full system information report as [Gist](https://gist.github.com/):\r\n- Proton version: Experimental -Bleeding Edge -Beta w/ Proton BattleEye installed\r\n\r\n## Gist. Sys. Report\r\nhttps://gist.github.com/username-murphy/cecc0bf365612034a71fc2ccc8aa1484\r\n\r\n## I confirm:\r\n- [ X ] that I haven't found an existing compatibility report for this game.\r\n- [ X ] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms\r\nCall of Duty Warzone doesnt work.\r\n\r\n#### Reproduction\r\nThe best result I had was using the SteamClient- Beta with Proton-Battle Eye / Proton Experimental - bleeding edge - Beta.\r\nProton-Battle eye IS needed.? I think? It appeared to be the case.\r\nI dont know why and the latest GER-Proton doesnt work at all.\r\nBattlenet installs perfectly and is 100% functional.\r\nI used Battlenet and BattleNet-Beta.\r\nThe results from both were indistinguishable.\r\nCall of Duty Warzone when launched fails.\r\nThen after a moment the option to start the game in safe mode appears.\r\nSelect either option and the game begins to launch.\r\nThe Activision launch Splash video plays.\r\nThe Steam Overlay Pop up in the bottom right hand corner appears.\r\nNext the \" Terms of Agreement\"  page is presented.\r\nHere the mouse works but I had no button functionallity to select that I agree  to the \"Terms of Agreement\"\r\nThis page freezes, crashes then returns to BattleNet.\r\nI used various combinations of Proton and Battlenet [ comand% switches ] with varying degrees of improvement.\r\nI was using a GTX1050(2G) with dx11 command switched in both Proton and BattleNet.\r\nI'll try again latter using the Dx12 capable nVidia RTX.\r\nNothing happened when Proton-BattleEye wasnt installed.\r\nI know BattleEye is not BattleNet like BattleEye is not Proton-BattleEye.\r\nI have no idea why this is the case I'm just reporting the facts so someone might have an easy win.\r\nI just did blunt force whatevers until bluntforce whatevers made an advance in the right direction.\r\n\r\nSYSTEM INFORMATION:\r\nhttps://gist.github.com/username-murphy/cecc0bf365612034a71fc2ccc8aa1484\r\n\r\n-->\r\n",
+    "created_at": "2021-11-30T16:44:52Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5366#issuecomment-983186301",
+        "discussion_body": "This will never work after the next major update that adds a kernel level anti-cheat.. this game is the only reason I dual-boot.",
+        "created_at": "2021-12-01T01:10:09Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5366#issuecomment-1826456106",
+        "discussion_body": "2023 and not work\r\n\r\nPC specs: Ryzen 5800x, 32 GB ram, rtx 3070, nvidia drivers 535.43.16 vulkan dev.\r\n\r\nProton experimental bleeding edge with debug symbols, steam beta with runtime beta.\r\n\r\nProton log:\r\n[steam-1938090.log](https://github.com/ValveSoftware/Proton/files/13465617/steam-1938090.log)\r\n\r\n\r\n\r\n",
+        "created_at": "2023-11-26T00:53:53Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5366#issuecomment-1888859180",
+        "discussion_body": "it does not work i include the above\r\ngist file is https://gist.github.com/ioannis120/bd37382685340ca3e3a41c2badb6c621\r\n[steam-1938090.log](https://github.com/ValveSoftware/Proton/files/13917994/steam-1938090.log)\r\n10/01/2024",
+        "created_at": "2024-01-12T10:44:38Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Marvin's Mittens (333260)",
+    "issue_number": 6254,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/6254",
+    "compatibility_report_id": 1416901402,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Marvin's Mittens\r\n- Steam AppID of the game: 333260\r\n\r\n## System Information\r\n- GPU: RX 6800 XT\r\n- Driver/LLVM version: mesa-git 22.3.0_devel.161414.53ab57e8882.d41d8cd98f00b204e9800998ecf8427e-1\r\n- Kernel version: 6.0.2-zen\r\n- Link to full system information report as [Gist](https://gist.github.com/wantija/346f819eb5b18014dcb6b91f638b9218):\r\n- Proton version: Experimental\r\n\r\n## I confirm:\r\n- [ x ] that I haven't found an existing compatibility report for this game.\r\n- [ x ] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n[steam-333260.log.gz](https://github.com/ValveSoftware/Proton/files/9831985/steam-333260.log.gz)\r\nLog was 30MB, easier to send compressed.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nCrashes at launch\r\n\r\n## Reproduction\r\nLaunch the game with Steam Play enabled for all other titles\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2022-10-20T16:12:27Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6254#issuecomment-1285834116",
+        "discussion_body": "Hello @wantija, these look like some lines of interest from your log:\r\n```\r\nUnhandled Exception:\r\nSystem.InvalidOperationException: Collection was modified; enumeration operation may not execute.\r\n  at System.Collections.Generic.List`1[T].ForEach (System.Action`1[T] action) [0x00046] in <e70d6e9587d64cb3abb4b3f99bbf5a0d>:0 \r\n  at Jumpman.ParticleGroupCustom.update (System.Single deltaTime, System.Collections.Generic.List`1[T] layerEntities) [0x003a5] in <ba1af77bd073493b8eb2939e5b3f288f>:0 \r\n  at Jumpman.Layer.Update (System.Single deltaTime, System.Collections.Generic.List`1[T] layerEntities) [0x00010] in <ba1af77bd073493b8eb2939e5b3f288f>:0 \r\n  at Jumpman.World.Update (System.Single deltaTime, System.Single totalTime) [0x001fd] in <ba1af77bd073493b8eb2939e5b3f288f>:0 \r\n  at Jumpman.MarvinsMittens.Update (Microsoft.Xna.Framework.GameTime gameTime) [0x003b3] in <ba1af77bd073493b8eb2939e5b3f288f>:0 \r\n  at Microsoft.Xna.Framework.Game.Tick () [0x00209] in <e4bd910e73ed465ea91e14aaab0ce109>:0 \r\n  at Microsoft.Xna.Framework.Game.HostIdle (System.Object sender, System.EventArgs e) [0x00000] in <e4bd910e73ed465ea91e14aaab0ce109>:0 \r\n  at Microsoft.Xna.Framework.GameHost.OnIdle () [0x00008] in <e4bd910e73ed465ea91e14aaab0ce109>:0 \r\n  at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle (System.Object sender, System.EventArgs e) [0x00022] in <e4bd910e73ed465ea91e14aaab0ce109>:0 \r\n  at System.Windows.Forms.Application+ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle (System.Int32 grfidlef) [0x0001a] in <73d9f63d378d41d89272ffb52da8e131>:0 \r\n  at System.Windows.Forms.Application+ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop (System.IntPtr dwComponentID, System.Int32 reason, System.Int32 pvLoopData) [0x00243] in <73d9f63d378d41d89272ffb52da8e131>:0 \r\n  at System.Windows.Forms.Application+ThreadContext.RunMessageLoopInner (System.Int32 reason, System.Windows.Forms.ApplicationContext context) [0x00282] in <73d9f63d378d41d89272ffb52da8e131>:0 \r\n  at System.Windows.Forms.Application+ThreadContext.RunMessageLoop (System.Int32 reason, System.Windows.Forms.ApplicationContext context) [0x0001a] in <73d9f63d378d41d89272ffb52da8e131>:0 \r\n  at (wrapper remoting-invoke-with-check) System.Windows.Forms.Application+ThreadContext.RunMessageLoop(int,System.Windows.Forms.ApplicationContext)\r\n  at System.Windows.Forms.Application.Run (System.Windows.Forms.Form mainForm) [0x0000d] in <73d9f63d378d41d89272ffb52da8e131>:0 \r\n  at Microsoft.Xna.Framework.WindowsGameHost.Run () [0x0002f] in <e4bd910e73ed465ea91e14aaab0ce109>:0 \r\n  at Microsoft.Xna.Framework.Game.Run () [0x000b4] in <e4bd910e73ed465ea91e14aaab0ce109>:0 \r\n  at Jumpman.Program.Main (System.String[] args) [0x0001a] in <ba1af77bd073493b8eb2939e5b3f288f>:0 \r\n[ERROR] FATAL UNHANDLED EXCEPTION: System.InvalidOperationException: Collection was modified; enumeration operation may not execute.\r\n  at System.Collections.Generic.List`1[T].ForEach (System.Action`1[T] action) [0x00046] in <e70d6e9587d64cb3abb4b3f99bbf5a0d>:0 \r\n  at Jumpman.ParticleGroupCustom.update (System.Single deltaTime, System.Collections.Generic.List`1[T] layerEntities) [0x003a5] in <ba1af77bd073493b8eb2939e5b3f288f>:0 \r\n  at Jumpman.Layer.Update (System.Single deltaTime, System.Collections.Generic.List`1[T] layerEntities) [0x00010] in <ba1af77bd073493b8eb2939e5b3f288f>:0 \r\n  at Jumpman.World.Update (System.Single deltaTime, System.Single totalTime) [0x001fd] in <ba1af77bd073493b8eb2939e5b3f288f>:0 \r\n  at Jumpman.MarvinsMittens.Update (Microsoft.Xna.Framework.GameTime gameTime) [0x003b3] in <ba1af77bd073493b8eb2939e5b3f288f>:0 \r\n  at Microsoft.Xna.Framework.Game.Tick () [0x00209] in <e4bd910e73ed465ea91e14aaab0ce109>:0 \r\n  at Microsoft.Xna.Framework.Game.HostIdle (System.Object sender, System.EventArgs e) [0x00000] in <e4bd910e73ed465ea91e14aaab0ce109>:0 \r\n  at Microsoft.Xna.Framework.GameHost.OnIdle () [0x00008] in <e4bd910e73ed465ea91e14aaab0ce109>:0 \r\n  at Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle (System.Object sender, System.EventArgs e) [0x00022] in <e4bd910e73ed465ea91e14aaab0ce109>:0 \r\n  at System.Windows.Forms.Application+ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle (System.Int32 grfidlef) [0x0001a] in <73d9f63d378d41d89272ffb52da8e131>:0 \r\n  at System.Windows.Forms.Application+ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop (System.IntPtr dwComponentID, System.Int32 reason, System.Int32 pvLoopData) [0x00243] in <73d9f63d378d41d89272ffb52da8e131>:0 \r\n  at System.Windows.Forms.Application+ThreadContext.RunMessageLoopInner (System.Int32 reason, System.Windows.Forms.ApplicationContext context) [0x00282] in <73d9f63d378d41d89272ffb52da8e131>:0 \r\n  at System.Windows.Forms.Application+ThreadContext.RunMessageLoop (System.Int32 reason, System.Windows.Forms.ApplicationContext context) [0x0001a] in <73d9f63d378d41d89272ffb52da8e131>:0 \r\n  at (wrapper remoting-invoke-with-check) System.Windows.Forms.Application+ThreadContext.RunMessageLoop(int,System.Windows.Forms.ApplicationContext)\r\n  at System.Windows.Forms.Application.Run (System.Windows.Forms.Form mainForm) [0x0000d] in <73d9f63d378d41d89272ffb52da8e131>:0 \r\n  at Microsoft.Xna.Framework.WindowsGameHost.Run () [0x0002f] in <e4bd910e73ed465ea91e14aaab0ce109>:0 \r\n  at Microsoft.Xna.Framework.Game.Run () [0x000b4] in <e4bd910e73ed465ea91e14aaab0ce109>:0 \r\n```",
+        "created_at": "2022-10-20T16:23:49Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6254#issuecomment-2598845227",
+        "discussion_body": "This is worth a retest. The bug affecting Shenzhen I/O that was fixed in https://gitlab.winehq.org/mono/wine-mono/-/releases/wine-mono-9.0.0 may be the same as what's happening here.",
+        "created_at": "2025-01-17T17:24:55Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6254#issuecomment-3059477080",
+        "discussion_body": "I'm getting the same `System.InvalidOperationException` error as of today with Proton 9.0-4 as well as with Proton 10.0-1 (beta).",
+        "created_at": "2025-07-10T23:16:51Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6254#issuecomment-3272492780",
+        "discussion_body": "Looks like this is the same as https://github.com/ValveSoftware/Proton/issues/6290#issuecomment-3256326597, should be fixed next time there's a Wine Mono release.\n\nIn current Proton, this game is also affected by https://bugs.winehq.org/show_bug.cgi?id=58577 which prevents XNA3 from installing properly.",
+        "created_at": "2025-09-09T22:36:07Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6254#issuecomment-3476995734",
+        "discussion_body": "The game works (perfectly as far as I can tell) with the current version of Proton Experimental (identified as `1761241153 experimental-10.0-20251023` by the `version` file).\n\nIt still crashes on start of gameplay with Proton 10.0-2 (beta), so switching to Experimental is required.",
+        "created_at": "2025-11-02T00:29:55Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "ChilloutVR (661130)",
+    "issue_number": 6044,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/6044",
+    "compatibility_report_id": 1322995628,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: ChilloutVR\r\n- Steam AppID of the game: 661130\r\n\r\n## System Information\r\n- GPU: AMD RX 5600 XT\r\n- Driver/LLVM version: Mesa 22.1.4\r\n- Kernel version: 5.15.55-2-lts\r\n- Link to full system information report as [Gist](https://gist.github.com/): [SystemInfo](https://gist.github.com/Sora012/946e79a2d9ef4b7ddacc3074fc6407bf)\r\n- Proton version: Proton Experimental (Bleeding Edge)\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms\r\nWhen you join any world and interact with a media player the game crashes.\r\n\r\n## Reproduction\r\nCreate a new instance world (public, friends, friends of friends etc), interact with a media player the game crashes.\r\n\r\n[steam-661130.log](https://github.com/ValveSoftware/Proton/files/9226062/steam-661130.log)\r\n[Player.log](https://github.com/ValveSoftware/Proton/files/9226093/Player.log) <- Line 2225",
+    "created_at": "2022-07-30T11:13:24Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1200296628",
+        "discussion_body": "Until this is fixed you can use `--disable-videoplayers` in the launch options",
+        "created_at": "2022-07-30T21:24:40Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1200297954",
+        "discussion_body": "I have a different issue though, the game crashes after about 2 minutes regardless of what I do. It has now crashed more than 5 times in a row and yesterday I had no issues.\r\n\r\nThis is suspiciously similar to https://github.com/ValveSoftware/Proton/issues/1199#issuecomment-1150243965 in vrchat, and I don't know of a fix.\r\n\r\nThe last message in `Player.log` is always\r\n```\r\nCrash!!!\r\nSymInit: Symbol-SearchPath: '.;Z:\\home\\crispypin\\.steam\\debian-installation\\steamapps\\common\\ChilloutVR;Z:\\home\\crispypin\\.steam\\debian-installation\\steamapps\\common\\ChilloutVR;C:\\windows;C:\\windows\\system32;SRV*C:\\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 534, UserName: 'steamuser'\r\nOS-Version: 10.0.0\r\n```\r\n\r\nEDIT: this was fixed by removing the proton prefix, no clue what caused it in the first place though.",
+        "created_at": "2022-07-30T21:35:33Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1200300229",
+        "discussion_body": "This could be the same problem VRChat fixed by updating their AVPro player.",
+        "created_at": "2022-07-30T21:53:49Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1200343746",
+        "discussion_body": "I'm getting sound underruns while using ALSA. Any way to fix that? ",
+        "created_at": "2022-07-31T04:07:43Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1202072896",
+        "discussion_body": "The Intro video plays, but appears to have issues:\r\n\r\n![Screenshot_20220801_232729](https://user-images.githubusercontent.com/13967234/182307041-1aa2c7ba-2503-4ea8-a9b7-5883f0aa071e.png)\r\n\r\nOtherwise, the game seems to work well (And it's even possible to use the Linux build of Unity to upload avatars and worlds as long as you set the build target to Windows)\r\n",
+        "created_at": "2022-08-02T06:30:25Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1202297128",
+        "discussion_body": "Probably related issue\r\nWhen I start the game, its stuck on a black screen with only mouse cursor visible\r\n\r\nTemp fix I found: if I press the spacebar during the black screen, the game runs as normal (bring me to \"successfully logged in\" screen)\r\nMaybe the intro video cannot load and spacebar is used to skip it?",
+        "created_at": "2022-08-02T10:20:00Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1202418449",
+        "discussion_body": "Hello @CarbonNotes, please add [`PROTON_LOG=1 %command%`](https://github.com/ValveSoftware/Proton#runtime-config-options) to the game's launch options and attach the generated $HOME/steam-$APPID.log to this issue report as a file. (Proton logs compress well if needed.)\r\n\r\nSeparately, can you test how the game behaves with the game's launch options set to `WINE_DO_NOT_CREATE_DXGI_DEVICE_MANAGER=1 %command%`?",
+        "created_at": "2022-08-02T12:23:55Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1203341442",
+        "discussion_body": "I launch the game in VR, it logs in and puts me in the home world, and it crashes after about two minutes regardless of what I do, even if I just AFK. The game runs fine up until the crash.\r\n\r\nThese are the launch options I used in the log but the behavior is the same when it's blank: `PROTON_LOG=1 WINE_DO_NOT_CREATE_DXGI_DEVICE_MANAGER=1 %command%  --disable-videoplayers`\r\n\r\n[steam-661130-p.zip](https://github.com/ValveSoftware/Proton/files/9246859/steam-661130-p.zip)\r\n",
+        "created_at": "2022-08-03T00:16:40Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1203515708",
+        "discussion_body": ">  Maybe the intro video cannot load and spacebar is used to skip it?\r\n\r\nThat sounds correct. I believe you don't have h264 enabled in your Steam runtime, or you are using an older version of Proton.\r\n\r\n> please add [PROTON_LOG=1 %command%](https://github.com/ValveSoftware/Proton#runtime-config-options) to the game's launch options and attach the generated $HOME/steam-$APPID.log to this issue report as a file. (Proton logs compress well if needed.)\r\n\r\n[steam-661130.log.gz](https://github.com/ValveSoftware/Proton/files/9248352/steam-661130.log.gz)\r\n\r\n> WINE_DO_NOT_CREATE_DXGI_DEVICE_MANAGER=1 %command%\r\n\r\nThat fixes the loading screen video.\r\n\r\nEDIT: Looks like switching to Experimental Bleeding Edge also fixes the video playback without DO_NOT_CREATE_DXGI_DEVICE\r\n\r\n",
+        "created_at": "2022-08-03T05:55:48Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1203686099",
+        "discussion_body": "> I launch the game in VR, it logs in and puts me in the home world, and it crashes after about two minutes regardless of what I do, even if I just AFK. The game runs fine up until the crash.\r\n\r\nI think I'm hitting this issue too... PROTON_NO_FSYNC=1 doesn't help.\r\n\r\nI intermittently had the same issue on VRChat as well, and that appeared around the time they switched to their current version of Unity. Chillout and VRChat currently use the same Unity version.\r\n\r\nOn my system, this shows up as VRAM usage consistently increasing until the game suddenly crashes. It doesn't always do it, though. For reference, I believe my system has AMD Smart Access Memory enabled.",
+        "created_at": "2022-08-03T09:07:24Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1204416172",
+        "discussion_body": "> VRAM usage consistently increasing until the game suddenly crashes\r\n\r\nI tested the game a bunch of times while keeping a close eye on VRAM usage and was unable to observe this on my machine. VRAM remains steady and normal (at say, 48%) after loading into the world and does not change. When the game crashes the VRAM simply drops to the level it was before launching the game and that's it. My system does not support AMD Smart Access Memory.",
+        "created_at": "2022-08-03T20:00:39Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1204421605",
+        "discussion_body": "> VRAM remains steady and normal\r\n\r\nWere you also watching GTT? When I use RADV_PERFTEST=nosam, instead of VRAM growing, GTT usage increases until the game crashes. I use Radeontop to monitor the usage.",
+        "created_at": "2022-08-03T20:06:37Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1204511801",
+        "discussion_body": "I checked GTT through radeontop and it is indeed slowly increasing. Of 8165M GTT, it starts at 30% when the game is loaded and steadily increases (despite not doing anything ingame) until hitting about 61% and crashing. If I launch the game in desktop mode GTT remains stable and game doesn't crash.\r\n\r\nFor testing purposes I tried reducing my GTT size to 2048M. The usage still continues to grow until it reaches 100%, at which point it drops down to about 80%, then keeps growing and the pattern repeats once or twice before staying steady at 100%. The game still crashes after about two minutes.",
+        "created_at": "2022-08-03T21:39:06Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1206652553",
+        "discussion_body": "So it appears that you are experiencing the exact same issue as I am (just manifesting slightly differently on a different system configuration; SAM vs no SAM).\r\n\r\nSeeing as I also experienced an issue with the exact same symptoms on VRChat (which uses the exact same version of Unity) I'm going to make an educated guess that this is likely a Unity-related bug, or a bug related to one of the common shared plugins/libraries that both VRChat and ChilloutVR use; and is not specific to either VRChat or Chillout.",
+        "created_at": "2022-08-05T16:48:27Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1207134322",
+        "discussion_body": "@abb128: I tried renaming (effectively removing) my Proton Prefix and re-launching the game, and on the first run in VR mode, it seems to behave itself. Do you mind trying this?\r\n\r\nIt lives at `steamapps/compatdata/661130/`, rename the 661130 folder.",
+        "created_at": "2022-08-06T03:08:20Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1207293309",
+        "discussion_body": "> @abb128: I tried renaming (effectively removing) my Proton Prefix and re-launching the game, and on the first run in VR mode, it seems to behave itself. Do you mind trying this?\r\n> \r\n> It lives at `steamapps/compatdata/661130/`, rename the 661130 folder.\r\n\r\nThis seems to work for me! I tried some more tinkering and it seems to behave if ALL the .config and .json files in `steamapps/compatdata/661130/pfx/drive_c/users/steamuser/AppData/LocalLow/Alpha Blend Interactive/ChilloutVR/` are either deleted or left blank (it needs to be COMPLETELY blank, even as much as a `{}` seems to trigger the crash anyway). It doesn't care about the VideoPlayer folder or the .log files, but deleting camera.config, game.config and moderationIndex.json seems to make it work.\r\n\r\nRather than deleting the files each time, you can create symbolic links to /dev/null and the game will work every time, although your settings will never save:\r\n```bash\r\nln -s /dev/null moderationIndex.json && ln -s /dev/null game.config && ln -s /dev/null camera.config\r\n```\r\n\r\nLog of the game as it behaves and runs normally without crashing after 2 minutes using the above solution: [steam-661130.log](https://github.com/ValveSoftware/Proton/files/9275866/steam-661130.log)\r\n",
+        "created_at": "2022-08-06T22:42:40Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1208491312",
+        "discussion_body": "Can confirm that removing those files before launch seems to make the game behave properly.\r\nWith VRChat, the issue appearing at launch seems to come and go sporadically.\r\n\r\nMakes me wonder if there's some race condition there, and the files being missing is enough to alter the timing and fix the issue?",
+        "created_at": "2022-08-08T18:57:19Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1236331555",
+        "discussion_body": "The latest update `2022r168` updated AVPro and \"addressed some Linux-related issues with the Video Player\".\r\nThis is the state of it currently, on my system, running Proton Experimental on Arch Linux.\r\n\r\nSome videos still cause crashes, I tried playing a movie in Voxie's Chill World and hard crashed.\r\n\r\nI tried youtube videos in the Rest and Sleep world.\r\nYoutube seems to not cause crashes but still has many problems:\r\n- I tried with https://youtu.be/QAhvvQQurw4 and one other, both played upside-down (flipped not rotated).\r\n- Seeking/skipping does not work at all.\r\n- Pausing only pauses the visual while the progress bar and audio keep going.\r\n- Volume can't be changed within the game, both the in-world slider and all sliders in the game settings do nothing.\r\n\r\nI tried Proton Experimental [bleeding edge]:\r\nWith bleeding edge movies work too, but have the same issues as youtube.",
+        "created_at": "2022-09-04T12:39:52Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1236437351",
+        "discussion_body": "That's an AVPro/Proton issue, as VRChat shares a lot of the same problems in the AVPro video players there.\r\n\r\nFor volume being at 100%, there should be audio playing from an additional channel in Pulse that you can adjust to reduce volume as a temporary workaround.",
+        "created_at": "2022-09-04T23:38:33Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1261259560",
+        "discussion_body": "Turns out my earlier 'underrun' problem is in fact a sample rate problem - it seems as though CVR is not only creating crackly audio, but _faster than expected_ crackly audio. Any way to change the sample rate of CVR? ",
+        "created_at": "2022-09-28T17:50:48Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1264387982",
+        "discussion_body": "For those of you who are still having the issue that the game won't stay open after 2 minutes unless you link the configs to `/dev/null`, I just made a mod that saves and loads game settings from a different file, and it seems to work well.\r\n\r\nhttps://github.com/CrispyPin/CVR-ConfigHack\r\n\r\nI have not looked into the steps for publishing in the CVR modding discord yet",
+        "created_at": "2022-10-01T14:56:27Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1297428528",
+        "discussion_body": "I'm getting a crash when trying to play in VR. I don't exactly have the most complete setup when it comes to this sort of thing - just a headset and a base station - but I don't think that should be causing what I'm seeing. It plays fine until a certain point, and then it just… crashes. More than that, it then will not start again until I restart SteamVR. \r\nOf course, it generates a 46 MB log in the process with PROTON_LOG=1:\r\n\r\n[Proton.1.log](https://github.com/ValveSoftware/Proton/files/9903430/Proton.1.log)\r\n\r\n\r\n[Proton.2.log](https://github.com/ValveSoftware/Proton/files/9903437/Proton.2.log)\r\n\r\nThe interesting thing is the final few lines of the Unity `Player.log`, which never seem to change:\r\n[Player.log](https://github.com/ValveSoftware/Proton/files/9903452/Player.log)\r\n\r\n```\r\nCrash!!!\r\nSymInit: Symbol-SearchPath: '.;Z:\\home\\(me)\\.local\\share\\Steam\\steamapps\\common\\ChilloutVR;Z:\\home\\(me)\\.local\\share\\Steam\\steamapps\\common\\ChilloutVR;C:\\windows;C:\\windows\\system32;SRV*C:\\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 534, UserName: 'steamuser'\r\nOS-Version: 10.0.0\r\n```\r\n\r\n",
+        "created_at": "2022-10-31T17:28:04Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1297466634",
+        "discussion_body": "@roryyamm This looks very much like the issue a few of us had above, try removing everything in `~/.local/share/Steam/steamapps/compatdata/661130/pfx/drive_c/users/steamuser/AppData/LocalLow/Alpha Blend Interactive/ChilloutVR/` or replacing the files with symlinks to `/dev/null`\r\n\r\nThe reason it won't start again until restarting SteamVR is [a bug in SteamVR on Linux (#479)](https://github.com/ValveSoftware/SteamVR-for-Linux/issues/479)",
+        "created_at": "2022-10-31T18:01:07Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1312785589",
+        "discussion_body": "@CrispyPin That seems to have worked, but the workaround mod doesn't seem to save or load settings - it always seems to load the defaults.",
+        "created_at": "2022-11-13T17:52:40Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1312797987",
+        "discussion_body": "@roryyamm hmm weird, are there any errors in the melonloader log? Does the `game2.config` file get created at all?\r\n\r\nIt is possible the mod broke with the latest melonloader version, I am still using v0.5.5",
+        "created_at": "2022-11-13T19:01:02Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6044#issuecomment-1312800572",
+        "discussion_body": "Melonloader itself turned out to be the issue - it just wasn't running. ",
+        "created_at": "2022-11-13T19:13:11Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Dragon's Dogma 2 (2054970)",
+    "issue_number": 7595,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/7595",
+    "compatibility_report_id": 2203273991,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Dragon's Dogma 2\r\n- Steam AppID of the game: 2054970\r\n\r\n## System Information\r\n- GPU: RTX 4070 Ti\r\n- Video driver version: Nvidia 550.67\r\n- Kernel version: 6.8.1\r\n- Link to full system information report as [Gist](https://gist.github.com/):\r\nhttps://gist.github.com/frozen-sea/3e3b1b2eab46f5ecb15ad3ce7e2f7cfa\r\nhttps://gist.github.com/frozen-sea/cc2ca58035fcac0fb06d79b391f071f6\r\n- Proton version: 9.0 (Beta), Experimental bleeding-edge\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nNot possible to enable ray tracing in the options menu. DLSS can be enabled. Tried with launch options: PROTON_LOG=1 PROTON_ENABLE_NVAPI=1 VKD3D_CONFIG=dxr %command%\r\n\r\nLog from starting to menu and quitting: \r\n[steam-2054970.log](https://github.com/ValveSoftware/Proton/files/14728174/steam-2054970.log)\r\n\r\nAlso tried on Experimental bleeding-edge, which crashes immediately at the main menu if you run without PROTON_LOG and hangs on black screen at the same point when logging is enabled. Log after killing the process:  \r\n[steam-2054970.zip](https://github.com/ValveSoftware/Proton/files/14728155/steam-2054970.zip)\r\n\r\n## Reproduction\r\nStart the game, check the graphics options",
+    "created_at": "2024-03-22T20:37:40Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2015898755",
+        "discussion_body": "For me it's crashing a lot when opening the game menu\r\n\r\nProton Experimental\r\nAMD 7800XT\r\nMesa Git",
+        "created_at": "2024-03-22T20:59:01Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2015904506",
+        "discussion_body": "For folks tinkering, please just be aware of the Denuvo anti-tamper. If you change Proton versions a few times it will lock you out of the game for 24 hours like the well-respected customer you are.",
+        "created_at": "2024-03-22T21:01:09Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2015940235",
+        "discussion_body": "I remember [re4 blocking rt if it detect it is running  on wine](https://gitlab.freedesktop.org/mesa/mesa/-/issues/9559#note_2056807), may be this is also true for dd2. and need to promote to dxr ultimate like [the reset of the re engine game](https://github.com/HansKristian-Work/vkd3d-proton/blob/21008d5c0a168be1ed98eff4390f467bc992bdf3/libs/vkd3d/device.c#L554C1-L554C41).  \r\nAlso disable sam(system access memory) for vkd3d seem to improve performance when cpu bound, at least on main menu.https://github.com/HansKristian-Work/vkd3d-proton/issues/1406#issuecomment-2014752410 ",
+        "created_at": "2024-03-22T21:16:44Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2015980739",
+        "discussion_body": "> I remember [re4 blocking rt if it detect it is running on wine](https://gitlab.freedesktop.org/mesa/mesa/-/issues/9559#note_2056807), may be this is also true for dd2. and need to promote to dxr ultimate like [the reset of the re engine game](https://github.com/HansKristian-Work/vkd3d-proton/blob/21008d5c0a168be1ed98eff4390f467bc992bdf3/libs/vkd3d/device.c#L554C1-L554C41). Also disable sam(system access memory) for vkd3d seem to improve performance when cpu bound, at least on main menu.[HansKristian-Work/vkd3d-proton#1406 (comment)](https://github.com/HansKristian-Work/vkd3d-proton/issues/1406#issuecomment-2014752410)\r\n\r\nI did `hidewineexports=enable` via Protontricks and added `VKD3D_FEATURE_LEVEL=12_2 VKD3D_SHADER_MODEL=6_7`, but still no dice. Anything I'm missing?\r\n\r\nSetting `no_upload_hvv` looks to be a good call, that takes me from being stuck at 50% GPU usage and barely hitting 60 fps to peaking at 80% sometimes!",
+        "created_at": "2024-03-22T21:45:34Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016025749",
+        "discussion_body": "> I remember [re4 blocking rt if it detect it is running on wine](https://gitlab.freedesktop.org/mesa/mesa/-/issues/9559#note_2056807), may be this is also true for dd2. and need to promote to dxr ultimate like [the reset of the re engine game](https://github.com/HansKristian-Work/vkd3d-proton/blob/21008d5c0a168be1ed98eff4390f467bc992bdf3/libs/vkd3d/device.c#L554C1-L554C41). Also disable sam(system access memory) for vkd3d seem to improve performance when cpu bound, at least on main menu.[HansKristian-Work/vkd3d-proton#1406 (comment)](https://github.com/HansKristian-Work/vkd3d-proton/issues/1406#issuecomment-2014752410)\r\n\r\nTried the no_upload_hvv, with an 7800XT, also getting better GPU utilization and performance :D",
+        "created_at": "2024-03-22T22:27:57Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016037442",
+        "discussion_body": "> For folks tinkering, please just be aware of the Denuvo anti-tamper. If you change Proton versions a few times it will lock you out of the game for 24 hours like the well-respected customer you are.\r\n\r\nIt locked me out without having to change versions much. I've only changed versions ONCE when experimental didn't work back to 8.",
+        "created_at": "2024-03-22T22:38:54Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016072761",
+        "discussion_body": "When accessing the options menu from the title screen or in-game, the cursor movement sound starts looping and it becomes impossible to exit the menu or change any options. It's not a total freeze, though, as the option categories can still be navigated. This happens on both Proton 9 and experimental.\r\n\r\nGPU: AMD Radeon RX 7900 XTX\r\nKernel version: 6.7.9\r\nLink to full system information report as [Gist](https://gist.github.com/): [System Information](https://gist.github.com/dataphract/aac2290f70423e1c84504c2ba6c8d42c), [System Runtime Diagnostics](https://gist.github.com/dataphract/935f98962b29e7624864abcf9bfec737)\r\n\r\nLog from launching the game, navigating to the options menu to trigger the bug, and closing the game using window controls: [steam-2054970.zip](https://github.com/ValveSoftware/Proton/files/14729152/steam-2054970.zip)\r\n",
+        "created_at": "2024-03-22T23:08:14Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016252055",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016072761\r\n\r\nI had the same problem fixed it by using amdvlk instead of radv.",
+        "created_at": "2024-03-23T01:08:46Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016301950",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016252055\r\n\r\nhow did you go about launching with amdvlk instead of the default? I think I'm too stupid and tired after trying to get this working for 20+ hours using 5 accounts\r\n\r\nEDIT: Figured out how to do it and yeah, this is the answer; AMDVLK get's it to work; average 60+ frames and no more crashes!\r\n\"mangohud gamemoderun vk_amdvlk %command%\"",
+        "created_at": "2024-03-23T01:53:48Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016317956",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016301950\r\n\r\nI had the same problem but the driver was the opposite of LordJakki, the default for me was `amdvlk`, using `radv` instead fixed the problem. \r\n\r\nI used the AMD Vulkan Prefixes script from the Arch wiki. https://wiki.archlinux.org/title/Vulkan#Selecting_via_AMD_Vulkan_Prefixes \r\n\r\n`AMD_VULKAN_ICD=RADV` didn't seem to work.",
+        "created_at": "2024-03-23T02:46:54Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016337239",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016301950\r\n\r\nI have amd-vulkan-prefixes package installed from AUR.\r\nhttps://aur.archlinux.org/packages/amd-vulkan-prefixes/\r\nThis allows me to easily chose if I want to use RADV or AMDVLK. I only needed to add vk_amdvlk %command% as a launch option in a steam.",
+        "created_at": "2024-03-23T04:06:01Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016356561",
+        "discussion_body": "> When accessing the options menu from the title screen or in-game, the cursor movement sound starts looping and it becomes impossible to exit the menu or change any options. It's not a total freeze, though, as the option categories can still be navigated. This happens on both Proton 9 and experimental.\r\n\r\nI ran in to the same issue on Nvidia and was able to make it go away by disconnecting my HDMI capture card before starting the game.",
+        "created_at": "2024-03-23T05:20:34Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016448983",
+        "discussion_body": "<details><summary>Not sure if this is the best place to report this, but I'm getting crashes from time to time:</summary>\r\n\r\n```log\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:24 vmid:2 pasid:32772, for process DD2.exe pid 7888 thread vkd3d_queue pid 8023)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000cc783cabc000 from client 10\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00201031\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          Faulty UTCL2 client ID: TCP (0x8)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MORE_FAULTS: 0x1\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          WALKER_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          PERMISSION_FAULTS: 0x3\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MAPPING_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          RW: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:24 vmid:2 pasid:32772, for process DD2.exe pid 7888 thread vkd3d_queue pid 8023)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000cc783cabc000 from client 10\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00201030\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          Faulty UTCL2 client ID: TCP (0x8)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MORE_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          WALKER_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          PERMISSION_FAULTS: 0x3\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MAPPING_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          RW: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:24 vmid:2 pasid:32772, for process DD2.exe pid 7888 thread vkd3d_queue pid 8023)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000cc783cabc000 from client 10\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00000000\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          Faulty UTCL2 client ID: CB/DB (0x0)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MORE_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          WALKER_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          PERMISSION_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MAPPING_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          RW: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:24 vmid:2 pasid:32772, for process DD2.exe pid 7888 thread vkd3d_queue pid 8023)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000cc783cabc000 from client 10\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00000000\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          Faulty UTCL2 client ID: CB/DB (0x0)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MORE_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          WALKER_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          PERMISSION_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MAPPING_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          RW: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:24 vmid:2 pasid:32772, for process DD2.exe pid 7888 thread vkd3d_queue pid 8023)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000cc783cabc000 from client 10\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00000000\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          Faulty UTCL2 client ID: CB/DB (0x0)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MORE_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          WALKER_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          PERMISSION_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MAPPING_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          RW: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:24 vmid:2 pasid:32772, for process DD2.exe pid 7888 thread vkd3d_queue pid 8023)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000cc783cabc000 from client 10\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00000000\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          Faulty UTCL2 client ID: CB/DB (0x0)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MORE_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          WALKER_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          PERMISSION_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MAPPING_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          RW: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:24 vmid:2 pasid:32772, for process DD2.exe pid 7888 thread vkd3d_queue pid 8023)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000cc783cabc000 from client 10\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00000000\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          Faulty UTCL2 client ID: CB/DB (0x0)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MORE_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          WALKER_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          PERMISSION_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MAPPING_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          RW: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:24 vmid:2 pasid:32772, for process DD2.exe pid 7888 thread vkd3d_queue pid 8023)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000cc783cabc000 from client 10\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00000000\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          Faulty UTCL2 client ID: CB/DB (0x0)\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MORE_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          WALKER_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          PERMISSION_FAULTS: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MAPPING_ERROR: 0x0\r\nmar 23 11:50:41 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          RW: 0x0\r\nmar 23 11:50:51 artorias kernel: [drm:amdgpu_job_timedout [amdgpu]] *ERROR* ring gfx_0.0.0 timeout, signaled seq=2962354, emitted seq=2962355\r\nmar 23 11:50:51 artorias kernel: [drm:amdgpu_job_timedout [amdgpu]] *ERROR* Process information: process DD2.exe pid 7888 thread vkd3d_queue pid 8023\r\nmar 23 11:50:51 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GPU reset begin!\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu: IP block:gfx_v11_0 is hung!\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:169 vmid:0 pasid:0, for process  pid 0 thread  pid 0)\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000000000000000 from client 10\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00040B53\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          Faulty UTCL2 client ID: CPC (0x5)\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MORE_FAULTS: 0x1\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          WALKER_ERROR: 0x1\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          PERMISSION_FAULTS: 0x5\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MAPPING_ERROR: 0x1\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          RW: 0x1\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:169 vmid:0 pasid:0, for process  pid 0 thread  pid 0)\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000000000000000 from client 10\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00000000\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          Faulty UTCL2 client ID: CB/DB (0x0)\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MORE_FAULTS: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          WALKER_ERROR: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          PERMISSION_FAULTS: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MAPPING_ERROR: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          RW: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:169 vmid:0 pasid:0, for process  pid 0 thread  pid 0)\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000000000000000 from client 10\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00000000\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          Faulty UTCL2 client ID: CB/DB (0x0)\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MORE_FAULTS: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          WALKER_ERROR: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          PERMISSION_FAULTS: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MAPPING_ERROR: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          RW: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu: [gfxhub] page fault (src_id:0 ring:169 vmid:0 pasid:0, for process  pid 0 thread  pid 0)\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000000000000000 from client 10\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GCVM_L2_PROTECTION_FAULT_STATUS:0x00000000\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          Faulty UTCL2 client ID: CB/DB (0x0)\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MORE_FAULTS: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          WALKER_ERROR: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          PERMISSION_FAULTS: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          MAPPING_ERROR: 0x0\r\nmar 23 11:50:52 artorias kernel: amdgpu 0000:03:00.0: amdgpu:          RW: 0x0\r\nmar 23 11:50:53 artorias kernel: Failed to wait all pipes clean\r\nmar 23 11:50:53 artorias kernel: amdgpu 0000:03:00.0: amdgpu: soft reset failed, will fallback to full reset!\r\nmar 23 11:50:53 artorias kernel: [drm:mes_v11_0_submit_pkt_and_poll_completion.constprop.0 [amdgpu]] *ERROR* MES failed to response msg=3\r\nmar 23 11:50:53 artorias kernel: [drm:amdgpu_mes_unmap_legacy_queue [amdgpu]] *ERROR* failed to unmap legacy queue\r\nmar 23 11:50:53 artorias kernel: [drm:mes_v11_0_submit_pkt_and_poll_completion.constprop.0 [amdgpu]] *ERROR* MES failed to response msg=3\r\nmar 23 11:50:53 artorias kernel: [drm:amdgpu_mes_unmap_legacy_queue [amdgpu]] *ERROR* failed to unmap legacy queue\r\nmar 23 11:50:53 artorias kernel: [drm:mes_v11_0_submit_pkt_and_poll_completion.constprop.0 [amdgpu]] *ERROR* MES failed to response msg=3\r\nmar 23 11:50:53 artorias kernel: [drm:amdgpu_mes_unmap_legacy_queue [amdgpu]] *ERROR* failed to unmap legacy queue\r\nmar 23 11:50:53 artorias kernel: [drm:mes_v11_0_submit_pkt_and_poll_completion.constprop.0 [amdgpu]] *ERROR* MES failed to response msg=3\r\nmar 23 11:50:53 artorias kernel: [drm:amdgpu_mes_unmap_legacy_queue [amdgpu]] *ERROR* failed to unmap legacy queue\r\nmar 23 11:50:53 artorias kernel: [drm:mes_v11_0_submit_pkt_and_poll_completion.constprop.0 [amdgpu]] *ERROR* MES failed to response msg=3\r\nmar 23 11:50:53 artorias kernel: [drm:amdgpu_mes_unmap_legacy_queue [amdgpu]] *ERROR* failed to unmap legacy queue\r\nmar 23 11:50:53 artorias kernel: [drm:mes_v11_0_submit_pkt_and_poll_completion.constprop.0 [amdgpu]] *ERROR* MES failed to response msg=3\r\nmar 23 11:50:53 artorias kernel: [drm:amdgpu_mes_unmap_legacy_queue [amdgpu]] *ERROR* failed to unmap legacy queue\r\nmar 23 11:50:54 artorias kernel: [drm:mes_v11_0_submit_pkt_and_poll_completion.constprop.0 [amdgpu]] *ERROR* MES failed to response msg=3\r\nmar 23 11:50:54 artorias kernel: [drm:amdgpu_mes_unmap_legacy_queue [amdgpu]] *ERROR* failed to unmap legacy queue\r\nmar 23 11:50:54 artorias kernel: [drm:mes_v11_0_submit_pkt_and_poll_completion.constprop.0 [amdgpu]] *ERROR* MES failed to response msg=3\r\nmar 23 11:50:54 artorias kernel: [drm:amdgpu_mes_unmap_legacy_queue [amdgpu]] *ERROR* failed to unmap legacy queue\r\nmar 23 11:50:54 artorias kernel: [drm:mes_v11_0_submit_pkt_and_poll_completion.constprop.0 [amdgpu]] *ERROR* MES failed to response msg=3\r\nmar 23 11:50:54 artorias kernel: [drm:amdgpu_mes_unmap_legacy_queue [amdgpu]] *ERROR* failed to unmap legacy queue\r\nmar 23 11:50:54 artorias kernel: [drm:gfx_v11_0_suspend [amdgpu]] *ERROR* failed to halt cp gfx\r\nmar 23 11:50:54 artorias kernel: amdgpu 0000:03:00.0: amdgpu: MODE1 reset\r\nmar 23 11:50:54 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GPU mode1 reset\r\nmar 23 11:50:54 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GPU smu mode1 reset\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GPU reset succeeded, trying to resume\r\nmar 23 11:50:55 artorias kernel: [drm] PCIE GART of 512M enabled (table at 0x0000008000F00000).\r\nmar 23 11:50:55 artorias kernel: [drm] VRAM is lost due to GPU reset!\r\nmar 23 11:50:55 artorias kernel: [drm] PSP is resuming...\r\nmar 23 11:50:55 artorias kernel: [drm] reserve 0xa700000 from 0x83e0000000 for PSP TMR\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: RAP: optional rap ta ucode is not available\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: SECUREDISPLAY: securedisplay ta ucode is not available\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: SMU is resuming...\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: smu driver if version = 0x0000003d, smu fw if version = 0x00000040, smu fw program = 0, smu fw version = 0x00504a00 (80.74.0)\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: SMU driver if version not matched\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: SMU is resumed successfully!\r\nmar 23 11:50:55 artorias kernel: [drm] DMUB hardware initialized: version=0x07002600\r\nmar 23 11:50:55 artorias kernel: [drm] kiq ring mec 3 pipe 1 q 0\r\nmar 23 11:50:55 artorias kernel: [drm] VCN decode and encode initialized successfully(under DPG Mode).\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: [drm:jpeg_v4_0_resume [amdgpu]] JPEG decode initialized successfully.\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring gfx_0.0.0 uses VM inv eng 0 on hub 0\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.0.0 uses VM inv eng 1 on hub 0\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.1.0 uses VM inv eng 4 on hub 0\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.2.0 uses VM inv eng 6 on hub 0\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.3.0 uses VM inv eng 7 on hub 0\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.0.1 uses VM inv eng 8 on hub 0\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.1.1 uses VM inv eng 9 on hub 0\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.2.1 uses VM inv eng 10 on hub 0\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.3.1 uses VM inv eng 11 on hub 0\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring sdma0 uses VM inv eng 12 on hub 0\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring sdma1 uses VM inv eng 13 on hub 0\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring vcn_unified_0 uses VM inv eng 0 on hub 8\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring vcn_unified_1 uses VM inv eng 1 on hub 8\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring jpeg_dec uses VM inv eng 4 on hub 8\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: ring mes_kiq_3.1.0 uses VM inv eng 14 on hub 0\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: recover vram bo from shadow start\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: recover vram bo from shadow done\r\nmar 23 11:50:55 artorias kernel: amdgpu 0000:03:00.0: amdgpu: GPU reset(2) succeeded!\r\n```\r\n\r\n</details>",
+        "created_at": "2024-03-23T10:54:36Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016489633",
+        "discussion_body": "So this is going to be a curveball because my report will be different from everyone else. Using an Intel Arc A770 and Proton Experimental (although I tried it with a couple of Proton versions and they all have the same issue), the shader precompilation step never completes. I will get roughly 60% of the way before crashing with this popup.\r\n![Screenshot from 2024-03-21 20-14-11](https://github.com/ValveSoftware/Proton/assets/502929/e64817cd-b52d-4528-bfff-22a5d3f80888)\r\nClicking cancel or ok makes no difference, they both close the program afterwards. It is also impossible to generate a Proton log because while it will compile the shaders as expected, it will get stuck instead of crashing generating the logs and I waited until the log bloated up to around 10GB before calling it quits because it just seemed too abnormal for a log file to grow that big if it was doing actual work. Looking at a portion of the file, the last line of useful work done was this line in precompiling a certain graphics shader pipeline before a backtrace gets generated.\r\n\r\n<details><summary>Click to expand</summary>\r\n\r\n```\r\n1454.892:0124:0224:warn:vkd3d-proton:d3d12_pipeline_library_load_pipeline: Pipeline \"TSDeferredPreTransformInstancingVfx_00000000483b7b67ba4477b11e329020\" does not exist.\r\n1454.923:0124:0238:warn:vkd3d-proton:dxgi_vk_swap_chain_wait_worker: Incrementing frame latency semaphore beyond max latency. Did application forget to acquire? (new count = 2, max latency = 1)\r\n1455.006:0124:0238:warn:vkd3d-proton:dxgi_vk_swap_chain_wait_worker: Incrementing frame latency semaphore beyond max latency. Did application forget to acquire? (new count = 2, max latency = 1)\r\n1455.022:0124:016c:trace:seh:handle_syscall_fault code=c0000005 flags=0 addr=0x7f09338d5c07 ip=7f09338d5c07 tid=016c\r\n1455.023:0124:016c:trace:seh:handle_syscall_fault  info[0]=0000000000000001\r\n1455.023:0124:016c:trace:seh:handle_syscall_fault  info[1]=0000000000000000\r\n1455.023:0124:016c:trace:seh:handle_syscall_fault  rax=0000000000000000 rbx=00007f069fc37170 rcx=000000000002fa20 rdx=000000000002fa20\r\n1455.023:0124:016c:trace:seh:handle_syscall_fault  rsi=00007f05e6eb9aa0 rdi=0000000000000000 rbp=0000000100ffa750 rsp=0000000100ffa568\r\n1455.023:0124:016c:trace:seh:handle_syscall_fault   r8=0000000000000000  r9=0000000000000000 r10=0000000000000011 r11=00000000000000c0\r\n1455.023:0124:016c:trace:seh:handle_syscall_fault  r12=0000000100ffc7d8 r13=0000555556735720 r14=000000000002fa20 r15=0000000000000018\r\n1455.023:0124:016c:warn:seh:handle_syscall_fault backtrace: --- Exception 0xc0000005 at 0x7f09338d5c07: /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/libc.so.6 + 0x15ec07.\r\n1455.023:0124:016c:trace:unwind:dwarf_virtual_unwind function 7f09338d5c07 base 0x7f09338d5900 cie 0x7f093392a478 len 14 id 0 version 1 aug 'zR' code_align 1 data_align -8 retaddr %rip\r\n1455.023:0124:016c:warn:seh:dwarf_virtual_unwind backtrace: 0x7f09338d5c07: /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/libc.so.6 + 0x15ec07.\r\n1455.023:0124:016c:trace:unwind:execute_cfa_instructions 7f09338d5900: DW_CFA_def_cfa %rsp, 8\r\n1455.023:0124:016c:trace:unwind:execute_cfa_instructions 7f09338d5900: DW_CFA_offset %rip, -8\r\n1455.023:0124:016c:trace:unwind:dwarf_virtual_unwind fde 0x7f0933936f1c len 10 personality (nil) lsda (nil) code 7f09338d5900-7f09338d5fde\r\n1455.023:0124:016c:trace:unwind:dwarf_virtual_unwind next function rip=00007f0910aeb862\r\n1455.023:0124:016c:trace:unwind:dwarf_virtual_unwind   rax=0000000000000000 rbx=00007f069fc37170 rcx=000000000002fa20 rdx=000000000002fa20\r\n1455.023:0124:016c:trace:unwind:dwarf_virtual_unwind   rsi=00007f05e6eb9aa0 rdi=0000000000000000 rbp=0000000100ffa750 rsp=0000000100ffa570\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind    r8=0000000000000000  r9=0000000000000000 r10=0000000000000011 r11=00000000000000c0\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind   r12=0000000100ffc7d8 r13=0000555556735720 r14=000000000002fa20 r15=0000000000000018\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind function 7f0910aeb862 base 0x7f0910aeb4c0 cie 0x7f091183b3d8 len 14 id 0 version 1 aug 'zR' code_align 1 data_align -8 retaddr %rip\r\n1455.024:0124:016c:warn:seh:dwarf_virtual_unwind backtrace: 0x7f0910aeb862: /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/vulkan/03/libvulkan_intel.so + 0xeb862.\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4c0: DW_CFA_def_cfa %rsp, 8\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4c0: DW_CFA_offset %rip, -8\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind fde 0x7f091184078c len 2c personality (nil) lsda (nil) code 7f0910aeb4c0-7f0910aebddc\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4c0: DW_CFA_advance_loc 1\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4c1: DW_CFA_def_cfa_offset 16\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4c1: DW_CFA_offset %rbp, -16\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4c1: DW_CFA_advance_loc 11\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4cc: DW_CFA_def_cfa_register %rbp\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4cc: DW_CFA_advance_loc 2\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4ce: DW_CFA_offset %r15, -24\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4ce: DW_CFA_advance_loc 5\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4d3: DW_CFA_offset %r14, -32\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4d3: DW_CFA_advance_loc 5\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4d8: DW_CFA_offset %r13, -40\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4d8: DW_CFA_advance_loc 20\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4ec: DW_CFA_offset %r12, -48\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4ec: DW_CFA_offset %rbx, -56\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aeb4ec: DW_CFA_advance_loc2 1936\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind next function rip=00007f0910aec28f\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind   rax=0000000000000000 rbx=0000555556545ef0 rcx=000000000002fa20 rdx=000000000002fa20\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind   rsi=00007f05e6eb9aa0 rdi=0000000000000000 rbp=0000000100ffa7b0 rsp=0000000100ffa760\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind    r8=0000000000000000  r9=0000000000000000 r10=0000000000000011 r11=00000000000000c0\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind   r12=0000000100ffc870 r13=0000000100ffc730 r14=0000000000000004 r15=00007f069d09a3f0\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind function 7f0910aec28f base 0x7f0910aec240 cie 0x7f091183b3d8 len 14 id 0 version 1 aug 'zR' code_align 1 data_align -8 retaddr %rip\r\n1455.024:0124:016c:warn:seh:dwarf_virtual_unwind backtrace: 0x7f0910aec28f: /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/vulkan/03/libvulkan_intel.so + 0xec28f.\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aec240: DW_CFA_def_cfa %rsp, 8\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aec240: DW_CFA_offset %rip, -8\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind fde 0x7f0911840818 len 24 personality (nil) lsda (nil) code 7f0910aec240-7f0910aec2c8\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aec240: DW_CFA_advance_loc 5\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aec245: DW_CFA_def_cfa_offset 16\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aec245: DW_CFA_offset %rbp, -16\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aec245: DW_CFA_advance_loc 3\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aec248: DW_CFA_def_cfa_register %rbp\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aec248: DW_CFA_advance_loc 1\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aec249: DW_CFA_offset %rbx, -24\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f0910aec249: DW_CFA_advance_loc1 90\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind next function rip=00007f0910ae5648\r\n...\r\n```\r\n\r\n</details>\r\n\r\n<details><summary>The backtrace goes on for a while then keeps emitting this following set of similar logging functions inside libc repeatedly until stopped manually.</summary>\r\n\r\n```\r\n1455.024:0124:016c:warn:seh:dwarf_virtual_unwind backtrace: 0x7f093388c80c: /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/libc.so.6 + 0x11580c.\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f093388c805: DW_CFA_def_cfa %rsp, 8\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f093388c805: DW_CFA_offset %rip, -8\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind fde 0x7f093393f8d8 len 10 personality (nil) lsda (nil) code 7f093388c805-7f093388c816\r\n1455.024:0124:016c:trace:unwind:execute_cfa_instructions 7f093388c805: DW_CFA_undefined %rip\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind next function rip=00007f093388c80c\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind   rax=0000000000000000 rbx=00007f09338055a0 rcx=000000000002fa20 rdx=000000000002fa20\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind   rsi=00007f05e6eb9aa0 rdi=0000000000000000 rbp=0000000000000000 rsp=0000000100ffeb98\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind    r8=0000000000000000  r9=0000000000000000 r10=0000000000000011 r11=00000000000000c0\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind   r12=0000000100fff6c0 r13=fffffffffffffb68 r14=000000000000003d r15=00000001000ff870\r\n1455.024:0124:016c:trace:unwind:dwarf_virtual_unwind function 7f093388c80c base 0x7f093388c805 cie 0x7f093392a478 len 14 id 0 version 1 aug 'zR' code_align 1 data_align -8 retaddr %rip\r\n```\r\n\r\n</details>\r\n\r\nIs this a Proton issue or as the crash implies, is Intel's Vulkan driver is at fault and I should file a Mesa bug report?",
+        "created_at": "2024-03-23T13:04:03Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016493535",
+        "discussion_body": "> Not sure if this is the best place to report this, but I'm getting crashes from time to time:\r\n\r\nAlso had multiple crashes with what looks like the same message, usually when opening map or menu. Started turning everything but steam off, including 2nd display, ran with gamemode and `RADV_PERFTEST=nosam VKD3D_CONFIG=no_upload_hvv` env variables, had 2 about 2 hours long crash-free sessions, so fingers crossed it's not coincidence/random stroke of luck.\r\n",
+        "created_at": "2024-03-23T13:20:03Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016496347",
+        "discussion_body": "> > Not sure if this is the best place to report this, but I'm getting crashes from time to time:\r\n> \r\n> Also had multiple crashes with what looks like the same message, usually when opening map or menu. Started turning everything but steam off, including 2nd display, ran with gamemode and `RADV_PERFTEST=nosam VKD3D_CONFIG=no_upload_hvv` env variables, had 2 about 2 hours long crash-free sessions, so fingers crossed it's not coincidence/random stroke of luck.\r\n\r\nEven with that, I get random freezes where I get kick to the GDM login screen",
+        "created_at": "2024-03-23T13:32:22Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016525453",
+        "discussion_body": "@alosarjos please add `PROTON_LOG=1 %command%` to the launch parameters and upload the resulting steam-2054970.log (it will be in your home folder) after the game crashes, if the log is too big then compress as a .zip before uploading it. It would also be helpful to say how many crashes you've had and how long they have taken to occur.",
+        "created_at": "2024-03-23T15:29:44Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016527661",
+        "discussion_body": "@simifor Hope this helps:\r\n\r\n[steam-2054970.log](https://github.com/ValveSoftware/Proton/files/14732070/steam-2054970.log)\r\n\r\nI have had lots of crashes, nothing in particular triggers them, could be 5 minutes of gameplay or 20....\r\n\r\nBut some of those times happened to be when opening the menu (But other times I opened it and worked just fine)\r\n\r\n\r\n\r\nEDIT: Another log, this ime loading the game, didn't even get into gameplay: [steam-2054970.log](https://github.com/ValveSoftware/Proton/files/14732878/steam-2054970.log)",
+        "created_at": "2024-03-23T15:39:03Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016542948",
+        "discussion_body": "> > Replying to [#7595 (comment)](https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016301950)\r\n> \r\n> I have amd-vulkan-prefixes package installed from AUR. https://aur.archlinux.org/packages/amd-vulkan-prefixes/ This allows me to easily chose if I want to use RADV or AMDVLK. I only needed to add vk_amdvlk %command% as a launch option in a steam.\r\n\r\nOkay I made few more tests and it's kinda weird.\r\nIf I don't use any launch options then options menu bugs out.\r\nIf I use vk_amdvlk or vk_radv then everything works. \r\nWhat makes no sense to me is why vk_radv is working when it is just suppose to be same as if I don't specify any driver.\r\nI have set radv as a default driver to be used if not otherwise specified with AMD_VULKAN_ICD=RADV variable.",
+        "created_at": "2024-03-23T16:40:26Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016561825",
+        "discussion_body": "So, I never really had any issues launching the game, though certain proton versions cause it to crash on start up.\r\n\r\nI can get 40-50fps in cities and 80-90fps in the countryside after starting the game, but every single time, after about 5-30 minutes the framerate will drop to 20-30fps and stay there no matter what area i'm in. \r\nRestarting the game fixes it but only for another 5-30 minutes.\r\n\r\nI'm not really sure if this is a linux configuration issue or an issue with the game itself though.",
+        "created_at": "2024-03-23T17:58:13Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016563062",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016561825\r\n\r\nI experience the same thing. I am on an RTX 3060Ti with a Ryzen 5 3600, so for me that slowdown means going from just barely playable to completely useless.",
+        "created_at": "2024-03-23T18:02:57Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016563971",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016563062\r\n\r\nI'm starting to think that there's a memory leak that's causing it. How much memory does the game use on average for you? It typically uses around 12-13gb for me.",
+        "created_at": "2024-03-23T18:05:49Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016568195",
+        "discussion_body": "I've been trying all the various launch commands suggested on my RX6950XT in this thread, but never got the fps higher than 25. Kept trying to change Proton versions without getting locked out and had nvtop on the other monitor and only got 5% gpu utilization. What I found maddening was when I open the System menu I get 60 fps and the gpu jumps up to 11%. Under all the tests the CPU has been at 20% except for when compiling shaders, then almost all are at 100.\r\n\r\nIs there any possible way to make the game use more of the GPU or is entirely on the application itself.",
+        "created_at": "2024-03-23T18:24:42Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016589984",
+        "discussion_body": "> I've been trying all the various launch commands suggested on my RX6950XT in this thread, but never got the fps higher than 25. Kept trying to change Proton versions without getting locked out and had nvtop on the other monitor and only got 5% gpu utilization. What I found maddening was when I open the System menu I get 60 fps and the gpu jumps up to 11%. Under all the tests the CPU has been at 20% except for when compiling shaders, then almost all are at 100.\r\n> \r\n> Is there any possible way to make the game use more of the GPU or is entirely on the application itself.\r\n\r\nThat's how the game works, and the complain everyone has. How much CPU bottlenecked it is",
+        "created_at": "2024-03-23T20:05:08Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016627002",
+        "discussion_body": "When people say crash are your games actually crashing or is your driver timing out?\r\nI didnt have a single crash but amdgpu kept timing out. On the 1st day i had really good performance around 50-100fps with `RADV_PERFTEST=nosam` command but then randomly it stopped doing anything and no matter what i did it never got past 20-50fps. At this point im on my 2nd 24h ban (i dont think its only the proton switching triggering it) and im refunding it and waiting for cracked version without denuvo or when they actually fix this because this is ridiculous. You literally cant troubleshoot anything because you just get banned.",
+        "created_at": "2024-03-23T23:10:50Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016637751",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016489633\r\n\r\nI have the same exact issue but I have an Nvidia 1070, which doesn't use Mesa. I think the problem is not Mesa related. I am on ArchLinux, stable kernel.",
+        "created_at": "2024-03-24T00:06:03Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016787901",
+        "discussion_body": "> On the 1st day i had really good performance around 50-100fps with `RADV_PERFTEST=nosam` command but then randomly it stopped doing anything and no matter what i did it never got past 20-50fps. At this point im on my 2nd 24h ban\r\n\r\nSame thing happened to me. I had the game running decently, changed literally nothing, and then it would never start up with good performance again. For some reason it also started resetting all options every startup and going through the initial options/EULA step every time when going to main menu, even when quitting from gameplay. I tried deleting the prefix, deleting shader cache, uninstalled and redownloaded the game, no change to either issue. Also on my 2nd ban by now.\r\n\r\n",
+        "created_at": "2024-03-24T12:07:28Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016812988",
+        "discussion_body": "Game has a weird behaviour where it seems to not utilize CPU completely. Straight from the main menu CPU usage is capped around 35%(pic 1) and doesn't change throughout gameplay. When it does launch \"properly\"(pic 2) both resource usage and performance is comparable to Windows. \r\n\r\n![Screenshot_20240322_061941](https://github.com/ValveSoftware/Proton/assets/164749398/c086d8c8-f738-407f-928a-061a528ad02f)\r\n![Screenshot_20240322_062035](https://github.com/ValveSoftware/Proton/assets/164749398/d7009b56-571b-48b9-9ac8-f413f540c656)\r\n\r\nDisabling SAM has no impact on this, and whether the game launches with a good CPU utilization is seemingly random. \r\nHere's proton logs for both launches on Proton 9 Beta. Proton 8.0-5 behaves the same, however I wasn't able to reproduce this on either Experimental or Bleeding Edge, where it seems to always get reduced CPU usage.\r\nLow cpu usage log: [steam-2054970.log](https://github.com/ValveSoftware/Proton/files/14735574/steam-2054970.log)\r\nExpected cpu usage log: [steam-2054970.log](https://github.com/ValveSoftware/Proton/files/14735575/steam-2054970.log)\r\n\r\nAnd then there's also crashes as per [comment above](https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016448983), although at least some of them are on game's side, since one of the common crashes on opening menu is widely reported on Windows as well. There's definitely some Linux crashes, but I guess that's better left for mesa folks.  \r\n\r\nEDIT: Thinking about it, not sure why I pegged it as a CPU usage issue, since it might also be the same deal but with GPU, and one just bottlenecks the other. But there's definitely something wrong in regard to resource usage. ",
+        "created_at": "2024-03-24T13:38:13Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016940237",
+        "discussion_body": "Something about the very first time you run the game after a fresh install makes it run good and this can't be replicated neither by deleting the prefix nor the save data. Here are some findings that might be useful to someone.\r\n\r\nOn the first run the game does a long shader pre-compile which creates a file called shader.cache2 in the game directory. It looks like the game doesn't load it on subsequent runs, since deleting it will make the game pretend to do the pre-compile (much faster than the real one), but it either doesn't create the file at all or it's 24 MB instead of the real 2 GB. Performance with the fake cache is the same as subsequent launches with the real one.\r\n\r\nYou can make the game always do a real pre-compile by deleting the cache file and running with VKD3D_SHADER_CACHE_PATH=0, but you still get the bad performance.\r\n\r\nSo, what else does uninstalling the game through Steam remove that I might have missed? Because looking at the timestamps of the game files, they didn't get modified when I ran it the first time.",
+        "created_at": "2024-03-24T20:55:18Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2017119513",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016940237\r\n\r\nThanks for the idea. After reading everyone's trial and error, and other things externally like docs I managed to put my game from 15-25fps to 100+ fps (still pending to reach vernworth, I reset my game for tests).\r\n\r\nThis only works for AMD GPU, I am sorry NVIDIA. But I will also thanks NVIDIA for giving the same idea, Shaders were my problem. NVIDIA solution was (in windows) to put shader cache limit to infinite.\r\n\r\nHere's what I did.\r\n\r\n1. Have RADV (MESA) installed, install AMDVLK.\r\n2. Delete vkd3d-proton.cache* (all)\r\n3. Delete shader.cache2 (games folder)\r\n4. Install  https://aur.archlinux.org/packages/amd-vulkan-prefixes/ (this is *very* important)\r\n5. I haven't tested with other protons, but I am using GE-Proton-9-2 (eggroll)\r\n6. Put as custom launcher for the game: `vk_amdvlk %command%`\r\n\r\nThe important part is deleting the old shader and using amd vulkan prefixes. I tried the default way, my default drivers are RADV and the game wouldn't stop crashing, low performance and menu looping as some people said it happened. I did the AMD_VULKAN_ICD= and AMD_VULKAN_ICD=AMDVLK and nothing changed, but after trying to manually load the AMDVLK Vulkan drivers via ICD Path it finally worked after deleting the shaders (that took a LOT of time), no crash so far and very stable and high FPS.\r\n\r\nIt seems we have a problem with RADV Shaders and loading correctly Vulkan Drivers with this game in specific. Other games behave normally without the need to use amd vulkan prefix. On them AMD_VULKAN_ICD works nicely, I know because I tested.",
+        "created_at": "2024-03-25T02:52:49Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2017125729",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2017119513\r\n\r\nI initially launched the game without any launch options (so using AMDVLK by default I assume?) and had the options menu bug described above with the looping cursor noise.\r\n\r\nBased on above suggestion I launched with `vk_amdvlk` and that fixed the options problem and let me start the game. Worth noting it didn't rebuild the shader cache. However after closing the game, it would no longer get past the splash screens and got stuck on a black screen instead of the main menu. I've attached the log file from when this happened:\r\n\r\n[steam-2054970.log](https://github.com/ValveSoftware/Proton/files/14738307/steam-2054970.log)\r\n\r\nEdit: I wonder if following your instructions and rebuilding the shader cache after setting `vk_amdvlk` would've got beyond the black screen issue.\r\n\r\nI then switched to `vk_radv`. It rebuilt the shader cache and launched fine and the options menu bug was gone. I was able to play till after the tutorial (with decent performance) but then stopped as it was crashing pretty frequently.\r\n\r\nIt seems to work with either driver (although AMDVLK not so well for me) but what seemed to matter more was whatever the `amd-vulkan-prefixes` script is doing.",
+        "created_at": "2024-03-25T03:01:28Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2017172991",
+        "discussion_body": "As far as I know it is only doing simple env setting to load vulkan drivers. Nothing more nothing less.\r\n\r\nIt makes the system to use the old method of finding drivers and set 32bits then 64bits into the env. [Vulkan Arch Wiki](https://wiki.archlinux.org/title/Vulkan)",
+        "created_at": "2024-03-25T04:07:09Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2017834890",
+        "discussion_body": "> This only works for AMD GPU, I am sorry NVIDIA. But I will also thanks NVIDIA for giving the same idea, Shaders were my problem. NVIDIA solution was (in windows) to put shader cache limit to infinite.\r\n\r\nI'm reading on the Steam forums that putting the shader cache limit to infinite has been consistently making performance better on Windows. Does anyone know how to do the same on Linux with an NVIDIA GPU? I get good results using the other launch params people are sharing, but unfortunately, I get nasty graphical glitches after playing for some time.\r\n",
+        "created_at": "2024-03-25T11:54:23Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2017985606",
+        "discussion_body": "Hello @LordJakki, @brenmous, there's not a lot of components to https://gitlab.com/AndrewShark/amd-vulkan-prefixes/-/raw/main/amd_vulkan_prefixes.sh. I'm mildly curious if one of you can reproduce the misrendering, then try running the game with `DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1=1 %command%` and see if that has any effect. I suspect it's not going to make a difference, but there's nothing else in that helper script besides forcing the game to see a single video driver vendor.\r\n",
+        "created_at": "2024-03-25T13:15:05Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2018482072",
+        "discussion_body": "> Hello @LordJakki, @brenmous, there's not a lot of components to https://gitlab.com/AndrewShark/amd-vulkan-prefixes/-/raw/main/amd_vulkan_prefixes.sh. I'm mildly curious if one of you can reproduce the misrendering, then try running the game with `DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1=1 %command%` and see if that has any effect. I suspect it's not going to make a difference, but there's nothing else in that helper script besides forcing the game to see a single video driver vendor.\r\n\r\nI removed `vk_amdvlk`, and I was able to reproduce the looping frozen options menu bug. I also get flickering black bars at the top and bottom of the screen.\r\n\r\nAdding `DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1=1` has the same result.\r\n\r\nGoing back to `vk_amdvlk` fixes the issue.\r\n\r\nRemoving `vk_amdvlk` and instead trying `AMD_VULKAN_ICD=amdvlk` results in the options menu bug and flickering bars.\r\n\r\nPretty sure my previous issue of the black screen with amdvlk was because I was trying to launch with gamescope as well, so ignore that.\r\n\r\nI can see that script is just setting variables so I understand it seems weird.",
+        "created_at": "2024-03-25T17:02:38Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2018562527",
+        "discussion_body": "> Hello @LordJakki, @brenmous, there's not a lot of components to https://gitlab.com/AndrewShark/amd-vulkan-prefixes/-/raw/main/amd_vulkan_prefixes.sh. I'm mildly curious if one of you can reproduce the misrendering, then try running the game with `DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1=1 %command%` and see if that has any effect. I suspect it's not going to make a difference, but there's nothing else in that helper script besides forcing the game to see a single video driver vendor.\n> \n\nReplacing vk_amdvlk %command% with DISABLE_LAYER_AMD_SWITCHABLE_GRAPHICS_1=1 %command% caused the options menu to bug out again and monitor to flicker between game and desktop like it was trying to render both at the same time.",
+        "created_at": "2024-03-25T17:46:37Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2020909758",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2020864264\r\n\r\nI have a RX 7900 XT and the driver crashes were also forcing me to reboot the computer. After updating to the latest Mesa main branch and disabling bar in vkd3d through `no_upload_hvv` I was able to play for a few hours without the driver crashing. I will do more tests today to see if I was just lucky.",
+        "created_at": "2024-03-26T16:27:30Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2021493098",
+        "discussion_body": "> For folks tinkering, please just be aware of the Denuvo anti-tamper. If you change Proton versions a few times it will lock you out of the game for 24 hours like the well-respected customer you are.\r\n\r\nI have suggested to Valve customer service to add a warning something similar to \"If the program you are changing versions of Proton on has anti-tamer DRM with a limited number of installs per day, changing this may count as a separate install and may lock you out of your software for a limited time\". My first result seemed to be an automated reply stating the software isn't guaranteed to work and sent me to github for \"troubleshooting\". The game runs fine...we just need warnings against this kind of stuff. I understand it's new to Valve and their support team but this is something that does need addressed. ",
+        "created_at": "2024-03-26T21:19:50Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2023329688",
+        "discussion_body": "> > Replying to [#7595 (comment)](https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2020864264)\r\n\r\nCurrently in a almost two hour session myself without crashes, using\r\n`VKD3D_CONFIG=no_upload_hvv gamemoderun gamescope -e -f -r 165 -h 2160 -H 2160 --hdr-enabled -- %command%`\r\n\r\nPlasma 6 with HDR on Arch with mesa from repositories, not mesa-git\r\n\r\nHDR actually works better than on Windows. Performance right now is also good somehow, but I've also not been in the city for a while\r\n",
+        "created_at": "2024-03-27T17:06:08Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2024339007",
+        "discussion_body": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2020864264 basically this. As much as I prefer RADV and their performance, in this game specifically I will say its impossible to play, low fps, menu looping (bug referenced earlier in comments), crashes every so often. AMDVLK is not crashing and the FPS is stable and high enough to enjoy the game so far.\r\n\r\nMy Mesa Drivers are package managed, maybe I should look into git and bite the bullet.\r\n",
+        "created_at": "2024-03-28T03:38:37Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2026295725",
+        "discussion_body": "> [#7595 (comment)](https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2020864264) basically this. As much as I prefer RADV and their performance, in this game specifically I will say its impossible to play, low fps, menu looping (bug referenced earlier in comments), crashes every so often. AMDVLK is not crashing and the FPS is stable and high enough to enjoy the game so far.\r\n> \r\n> My Mesa Drivers are package managed, maybe I should look into git and bite the bullet.\r\n\r\nI can confirm it's not crashing on my machine as well. FPS is stable, but the frametime is still all over the place making it stuttery. From what I've heard, this is an issue with the game itself.",
+        "created_at": "2024-03-28T23:10:54Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2027401874",
+        "discussion_body": "Today i installed Pop!_OS and when launching the game it gives me this error after the RE Engine logo, before the start menù.\r\nAnyone has any idea on what is it?\r\nI'm on NVIDIA GPU\r\n\r\n![Schermata del 2024-03-29 16-39-42](https://github.com/ValveSoftware/Proton/assets/145132177/4eea9c24-d04c-468c-a7d0-21a3f8436297)\r\n",
+        "created_at": "2024-03-29T15:42:35Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2027404604",
+        "discussion_body": "> Today i installed Pop!_OS and when launching the game it gives me this error after the RE Engine logo, before the start menù. Anyone has any idea on what is it? I'm on NVIDIA GPU\r\n> \r\n> ![Schermata del 2024-03-29 16-39-42](https://private-user-images.githubusercontent.com/145132177/318083500-4eea9c24-d04c-468c-a7d0-21a3f8436297.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE3MjcyNTcsIm5iZiI6MTcxMTcyNjk1NywicGF0aCI6Ii8xNDUxMzIxNzcvMzE4MDgzNTAwLTRlZWE5YzI0LWQwNGMtNDY4Yy1hN2QwLTIxYTNmODQzNjI5Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzI5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyOVQxNTQyMzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNzFmMTZhNWJiNjNlY2E3NTlkYTdiOTI1YTU1YzEyYzBkYWU0YTY3OWExZDRiNDFkZjYzMDdlMDBiYjU1ZGEzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.HWfXp7VKjbnQ9DT8IUnoBdFVXv-1kFJGczF42Y7GAzk)\r\n\r\nAdd `VKD3D_DISABLE_EXTENSIONS=VK_NV_low_latency2` to launch parameters",
+        "created_at": "2024-03-29T15:45:02Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2027413243",
+        "discussion_body": "It doesn't change anything, sadly.\r\nBTW Capcom Crash report is unable to provide a log, apparently, as it is abruptly ended. Error code 0x2000000.",
+        "created_at": "2024-03-29T15:53:11Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2027872648",
+        "discussion_body": "Something I did today and got great results with my machine. I added 2 things so I can't say which one helped or both, but I am having great results.\r\n\r\n1. Delete shader.cache2 and vkd3d-proton.cache(.write)\r\n2. `PROTON_NO_FSYNC=1` and `gamemoderun` to Steam Paramters Launch.\r\n3. And I changed from Proton-GE-9.2 to Proton Experimental. Its late and I didn't test individually and I am not in the mood to be blocked by Denuvo, I am sorry, but I want to play tomorrow and not wait 24h.\r\n\r\nSomething is telling me gamemoderun and NO_FSYNC=1 made the difference for the stability of game.",
+        "created_at": "2024-03-30T01:57:41Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2027887172",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2027872648\r\n\r\nCan you at least define \"great results\"?  How is it different than it was for you before? More FPS? More stable? What changed?",
+        "created_at": "2024-03-30T02:43:07Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2027911913",
+        "discussion_body": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2027887172 I wasn't monitoring before since it was always low FPS (below FSYNC minimum, which means 30 or less, even less in cities).\r\n\r\nThe great result for me came the stability and actually smooth fps with freesync. Still not 60 fps dream, but I take a smooth above 30 fps for this game for now. Good enough.",
+        "created_at": "2024-03-30T04:34:34Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2027995756",
+        "discussion_body": "I also tried running the game with `PROTON_NO_FSYNC=1` set and managed to play for a noticeably longer time without the game crashing. Usually the game crashes anywhere between 5 to 120 minutes from launch and completely resets the session back to login screen.\n\nI will do more testing later today to see if this indeed does effect the stability when compared to FSYNC being enabled.\n\nI observed noticeably worse performance when FSYNC is disabled which I think is to be expected. Without exact measurements, I estimate the performance hit to be around 20% less in FPS at least on my system. For me the priority would be to have the game run stable even by sacrificing some performance.\n\nI'm running the game on a rig with the following:\n- AMD R7 3700X CPU\n- AMD RX 7900XTX GPU\n- 32GB of DDR4 RAM\n- Arch Linux\n- Hyprland VM (Wayland)\n- Proton Experimental\n- Latest mesa-git drivers (chaotic AUR)\n- Performance CPU governor",
+        "created_at": "2024-03-30T09:52:21Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2028239847",
+        "discussion_body": "* UPDATE *\nGame did crash very early into the next play session. This option does not effect stability but causes a noticeable performance hit.\nRandomness of the crashing makes it very hard to test different options.",
+        "created_at": "2024-03-30T16:35:39Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2028442422",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7595#issuecomment-2016812988\r\n\r\nAfter my own testing, I'm now convinced this is definitely correct in my case. Disable SAM/BAR has no actual effect. Sometimes I get a high framerate with high GPU usage when the game starts, and sometimes I don't, regardless of whether I have any environment variables at all.\r\n\r\nUnfortunately, I've found that AMDVLK also does not actually prevent crashing. I was able to get a couple of hours of play without the system crashing, but that also seems to be random, and it happens with RADV as well. Still, sometimes, I start the game, and within a few minutes, I get a full lock up of the system and have to ALT + SysRq + REISUB to even get out of it.\r\n\r\nAMD Ryzen 7 7800x3D\r\nAMD Radeon RX 6800 XT\r\n32 GB of RAM\r\nKubuntu 23.10\r\nWayland",
+        "created_at": "2024-03-30T18:58:30Z",
+        "is_for_the_report": "false"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "The Unfinished Swan (1206430)",
+    "issue_number": 5406,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5406",
+    "compatibility_report_id": 1079067445,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: The Unfinished Swan\r\n- Steam AppID of the game: 1206430\r\n\r\n## System Information\r\n- GPU: Radeon RX 6600\r\n- Driver/LLVM version: AMD AMD DIMGREY_CAVEFISH (DRM 3.42.0, 5.15.6-2-MANJARO, LLVM 13.0.0)\r\n- Kernel version: 5.15.6-2-MANJARO\r\n- Link to full system information report as [Gist](https://gist.github.com/): [system information](https://gist.github.com/perojas3/f914194e75a37a7720937395127d1cdb)\r\n- Proton version: 6.3-8\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n[steam-1206430.log ](https://gist.github.com/perojas3/8b906b72b74131a60932b4f368e65955)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nWhen I start the game, it opens into a white screen with a swan feet as a cursor, and the closes, is not possible to start playing the game.\r\n\r\nThere is a way to get to the main menu, that is installing d3dcompiler_47 with winetricks. That allow to continue to the opening titles, and the main menu, but pressing \"play\" crashes the game. This are the logs with this method: [steam-1206430.log](https://gist.github.com/perojas3/2b5d7db9743e045f88d958e2b3e27bf7).\r\n\r\n## Reproduction\r\n\r\nJust open the game and watch it close. \r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2021-12-13T21:53:17Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5406#issuecomment-1083675771",
+        "discussion_body": "Game runs and plays just fine when installing d3dcompiler_47 with \"protontricks 1206430 d3dcompiler_47\" and using GE-Proton7-10. Trying Proton Experimental and Proton 7.0 will crash the game when pressing start in the main menu as described by OP.\r\n\r\nLog using GE-Proton7-10 (w/o installed dlls)  [GIST](https://gist.github.com/MadByteDE/6df27450f55c0b2af849a89849c3e3e2)\r\nLog using Proton Experimental (with installed dlls)  [GIST](https://gist.github.com/MadByteDE/f6678274b6a96b4476b31662fbb7d6ad)\r\n\r\nThose parts seem interesting when native dlls are not installed:\r\n> 17935.968:0130:0134:fixme:d3dcompiler:skip_dword_unknown Skipping 3 unknown DWORDs:\r\n> 17935.968:0130:0134:fixme:d3dcompiler:skip_dword_unknown \t0x00000000\r\n> 17935.968:0130:0134:fixme:d3dcompiler:skip_dword_unknown \t0x00000000\r\n> 17935.968:0130:0134:fixme:d3dcompiler:skip_dword_unknown \t0x00000000\r\n> 17935.968:0130:0134:fixme:d3dcompiler:d3dcompiler_shader_reflection_GetDesc iface 0000000012C843D0, desc 000000000011E400 partial stub!\r\n> 17935.968:0130:0134:fixme:d3dcompiler:d3dcompiler_shader_reflection_GetDesc iface 0000000012C842B0, desc 000000000011E400 partial stub!\r\n\r\n> Backtrace:\r\n> =>0 0x00000001405322cc ?NxCreateCoreSDK@@YAPEAVNvPhysicsSDK@@PEAVNxFoundationSDK@@AEBVNxPhysicsSDKDesc@@AEAW4NxSDKCreateError@@@Z+0x4fb758() in tus (0x000000000011f930)\r\n>   1 0x00000001405307a7 ?NxCreateCoreSDK@@YAPEAVNvPhysicsSDK@@PEAVNxFoundationSDK@@AEBVNxPhysicsSDKDesc@@AEAW4NxSDKCreateError@@@Z+0x4f9c33() in tus (0x0000000000000000)\r\n\r\n\r\nAnd when using Proton 7.0 or Experimental instead of GE-Proton7-10 + native d3dcompiler_47 those lines seem interesting since the game crashes right before a video sequence starts (directly after pressing \"Play\" in the main menu):\r\n\r\n> winegstreamer error: decodebin0: Your GStreamer installation is missing a plug-in.\r\n> winegstreamer error: decodebin0: ../src-gst_base/gst/playback/gstdecodebin2.c(4719): gst_decode_bin_expose (): /GstBin:bin0/GstDecodeBin:decodebin0:\r\n> no suitable plugins found:\r\n> Couldn't set avdec_h264-0 to PAUSEDCouldn't set avdec_valve_h264-0 to PAUSED\r\n> \r\n> winegstreamer error: decodebin1: Your GStreamer installation is missing a plug-in.\r\n> winegstreamer error: decodebin1: ../src-gst_base/gst/playback/gstdecodebin2.c(4719): gst_decode_bin_expose (): /GstBin:bin1/GstDecodeBin:decodebin1:\r\n> no suitable plugins found:\r\n> Couldn't set avdec_h264-1 to PAUSEDCouldn't set avdec_valve_h264-1 to PAUSED\r\n",
+        "created_at": "2022-03-30T22:04:39Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5406#issuecomment-1174466691",
+        "discussion_body": "@MadByteDE I can confirm this still works with GE-Proton7-24.\r\nI've been trying to make this game work for a while now. Thanks a lot for sharing your solution!",
+        "created_at": "2022-07-05T00:04:16Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "THE FINALS (2073850)",
+    "issue_number": 7317,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2313263649",
+    "compatibility_report_id": 2313263649,
+    "issue_state": "open",
+    "compatibility_report": "I'm using Fedora 40 with secure boot enabled, also has ```PROTON_USE_EAC_LINUX=1 %command%``` set. However when starting game, it keeps reporting need secure boot to be enabled and exits. Anyone have the same problem?\r\n\r\n---\r\n\r\nThe Finals stuck at EAC anti cheat initializing and keep asking for secure boot enabled (2073850)\r\n\r\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/8033.\r\n@Headcrabed posted on 2024-08-28T17:34:04:\r\n\r\n# Compatibility Report\r\n- Name of the game with compatibility issues: The Finals\r\n- Steam AppID of the game: 2073850\r\n\r\n## System Information\r\n- GPU: AMD Radeon RX 7800 XT\r\n- Video driver version: Mesa 24.1.6\r\n- Kernel version: 6.10.6-200.fc40.x86_64\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/Headcrabed/b0e81a6a01ff7655072d020014e3af37\r\n- Proton version: 9.0-2 (GE-Proton9-11 won't work either)\r\n- OS: Fedora 40\r\n```\r\nheadcrab@Headcrab-PC-Lnx:~$ fastfetch\r\n             .',;::::;,'.                 headcrab@Headcrab-PC-Lnx\r\n         .';:cccccccccccc:;,.             ------------------------\r\n      .;cccccccccccccccccccccc;.          OS: Fedora Linux 40 (KDE Plasma) x86_64\r\n    .:cccccccccccccccccccccccccc:.        Kernel: Linux 6.10.6-200.fc40.x86_64\r\n  .;ccccccccccccc;.:dddl:.;ccccccc;.      Uptime: 17 mins\r\n .:ccccccccccccc;OWMKOOXMWd;ccccccc:.     Packages: 2430 (rpm)\r\n.:ccccccccccccc;KMMc;cc;xMMc;ccccccc:.    Shell: bash 5.2.26\r\n,cccccccccccccc;MMM.;cc;;WW:;cccccccc,    Display (LG ULTRAGEAR): 2560x1440 @ 180 Hz in 31″ [External]\r\n:cccccccccccccc;MMM.;cccccccccccccccc:    DE: KDE Plasma 6.1.4\r\n:ccccccc;oxOOOo;MMM000k.;cccccccccccc:    WM: KWin (Wayland)\r\ncccccc;0MMKxdd:;MMMkddc.;cccccccccccc;    WM Theme: Breeze\r\nccccc;XMO';cccc;MMM.;cccccccccccccccc'    Theme: Breeze (Dark) [Qt], Breeze [GTK3]\r\nccccc;MMo;ccccc;MMW.;ccccccccccccccc;     Icons: breeze-dark [Qt], breeze-dark [GTK3/4]\r\nccccc;0MNc.ccc.xMMd;ccccccccccccccc;      Font: Noto Sans (10pt) [Qt], Noto Sans (10pt) [GTK3/4]\r\ncccccc;dNMWXXXWM0:;cccccccccccccc:,       Cursor: breeze (24px)\r\ncccccccc;.:odl:.;cccccccccccccc:,.        Terminal: konsole 24.8.0\r\nccccccccccccccccccccccccccccc:'.          CPU: AMD Ryzen 9 7950X (32) @ 5.88 GHz\r\n:ccccccccccccccccccccccc:;,..             GPU: AMD Radeon RX 7800 XT [Discrete]\r\n ':cccccccccccccccc::;,.                  Memory: 6.13 GiB / 30.97 GiB (20%)\r\n                                          Swap: 0 B / 8.00 GiB (0%)\r\n                                          Disk (/): 175.83 GiB / 1.86 TiB (9%) - btrfs\r\n                                          Local IP (enp11s0f1np1): 192.168.1.128/24\r\n                                          Locale: zh_CN.UTF-8\r\n```\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nWhen starting game, EAC anti cheat keep asking me to enable Secure Boot, However it is enabled and works with no problem in windows.  And setting ```PROTON_USE_EAC_LINUX=1``` has no effect. BIOS is also upgraded to newest version available.\r\n\r\n![屏幕截图_20240829_011440](https://github.com/user-attachments/assets/2194e04f-82bc-477b-a2bb-71a30daf87c8)\r\n```\r\nheadcrab@Headcrab-PC-Lnx:~$ mokutil --sb-state\r\nSecureBoot enabled\r\n```\r\n[steam-2073850.log](https://github.com/user-attachments/files/16786930/steam-2073850.log)\r\n[Steam Runtime Diagnostics Output](https://gist.github.com/Headcrabed/df10a66f50e0af10729892bd3c7f9eed)\r\n\r\n## Reproduction\r\nJust download and start the game under Fedora 40.\r\n",
+    "created_at": "2024-08-27T18:42:00Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2315730178",
+        "discussion_body": "> I'm using Fedora 40 with secure boot enabled, also has `PROTON_USE_EAC_LINUX=1 %command%` set. However when starting game, it keeps reporting need secure boot to be enabled and exits. Anyone have the same problem?\r\n\r\nI'm also on Fedora 40, but this doesn't happen to me, secure boot is disabled, it doesn't seem to cause any issue and I can play the game normally.\r\nI just get kicked sometimes but it also happens on Windows.\r\n\r\nI use GE-Proton9-11 if that helps and I'm on an AMD Ryzen™ 5 5600 × 12 with an AMD Radeon™ RX 7600 Graphics card.",
+        "created_at": "2024-08-28T15:54:27Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2315938136",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2315730178\r\n\r\nThanks for reply. I'll try GE-Proton.",
+        "created_at": "2024-08-28T17:49:19Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2315950977",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2315730178\r\n\r\nSadly it still won't work. ",
+        "created_at": "2024-08-28T17:56:58Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2321899420",
+        "discussion_body": "> > I'm using Fedora 40 with secure boot enabled, also has `PROTON_USE_EAC_LINUX=1 %command%` set. However when starting game, it keeps reporting need secure boot to be enabled and exits. Anyone have the same problem?\r\n> \r\n> I'm also on Fedora 40, but this doesn't happen to me, secure boot is disabled, it doesn't seem to cause any issue and I can play the game normally. I just get kicked sometimes but it also happens on Windows.\r\n> \r\n> I use GE-Proton9-11 if that helps and I'm on an AMD Ryzen™ 5 5600 × 12 with an AMD Radeon™ RX 7600 Graphics card.\r\n\r\nEven re-installing Fedora doesn't work either.",
+        "created_at": "2024-08-30T16:34:24Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2323099123",
+        "discussion_body": "I'm having these major frame stutters every 2-3 seconds, DX12 and DX11 have the same issue\r\n\r\nOS: openSUSE Tumbleweed x86_64\r\nHost: B650 AORUS ELITE AX ICE \r\nKernel: 6.10.5-1-default \r\nPackages: 3637 (rpm), 24 (flatpak) Shell: bash 5.2.32 \r\nResolution: 2560x1440 \r\nDE: Plasma 6.1.4 wayland\r\nWM: kwin \r\nTheme: Breeze-Dark [GTK2], Breeze [GTK3] \r\nIcons: breeze-dark [GTK2/3] \r\nTerminal: konsole \r\nCPU: AMD Ryzen 9 7950X3D (32) @ 5.759GHz \r\nGPU: NVIDIA GeForce RTX 4070 Ti\r\nDrivers: 560.35\r\nMemory: 12437MiB / 31536MiB\r\n![Screenshot_20240831_205450](https://github.com/user-attachments/assets/9dfb2084-d3c6-4289-a109-87a08e9df589)\r\n[steam-2073850.zip](https://github.com/user-attachments/files/16826746/steam-2073850.zip)\r\n",
+        "created_at": "2024-09-01T01:08:35Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2325288770",
+        "discussion_body": "Hello.\r\nNo change for me. Always get error TFGE0025 when a match is found in training mode, with and without `PROTON_USE_EAC_LINUX=1 %command%` on Proton Experimental.\r\nI did not try other modes or other proton version.\r\nRegards.",
+        "created_at": "2024-09-02T20:47:26Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2327058917",
+        "discussion_body": "> I bet everything that the `TFGE0027` error is related to the anticheat. The game would kick me out of any match with that exact code before connecting to them if I didn't include `PROTON_USE_EAC_LINUX=1` in my launch options.\r\n> \r\n> @bonkmaykrQ perhaps a more detailed log would prove useful in detecting the source of the issue for you. Also you _should_ indicate _which_ launch options you use, or really anything you've tried; it's pretty vague when you just say you have \"set up your runtimes and launch options correctly\".\r\n\r\nMy apologies. I am phoneposting at the moment from a dairy queen so I can't give it to you verbatim, but I have EAC enabled, NVAPI enabled, followed by gamemoderun %command%; pkill xpointerbarrier\r\n\r\nThe pkill is there because I use xinput and xpointerbarrier as a workaround to avoid input problems when in game, I use a very very old version of KDE.\r\n\r\n@DAUNTIN I will try to enable secure boot. I normally have no use for it and so I don't go through the hassle of setting it up, but I will do so tonight.\r\n\r\nI use linux-zen 6.10 on Arch if that matters.",
+        "created_at": "2024-09-03T17:24:42Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2329037657",
+        "discussion_body": "Okay so that didn't work.\r\n@DAUNTIN, the error message was 0027, NOT 0025. Are you sure you didn't get those confused?\r\n\r\nTo be clear, no other EAC game has any similar issue that I know of.",
+        "created_at": "2024-09-04T13:23:09Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2330314514",
+        "discussion_body": "yes @bonkmaykrQ the error code was 0027, not 0025\r\nWhen I didn't enable secure boot I would periodically get the error code 0027 and would have to restart my game to go away. After enabling secure boot I got it once and then it never showed up again, I've been playing like this for 3 weeks. To be more specific I never got kicked from a game. it only would show on the boot screen of the game.\r\n\r\nto make sure secure boot is enabled use `sudo mokutil --sb-state` and it should say `SecureBoot enabled`\r\n\r\nAlso if you have 2 or more Steam accounts you are playing the game with, can cause 0027 to show up.\r\n\r\nthis is my system info from my [other post](https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2323099123) to help compare my hardware to your\r\nOS: openSUSE Tumbleweed x86_64\r\nHost: B650 AORUS ELITE AX ICE\r\nKernel: 6.10.5-1-default\r\nPackages: 3637 (rpm), 24 (flatpak) Shell: bash 5.2.32\r\nResolution: 2560x1440\r\nDE: Plasma 6.1.4 wayland\r\nWM: kwin\r\nTheme: Breeze-Dark [GTK2], Breeze [GTK3]\r\nIcons: breeze-dark [GTK2/3]\r\nTerminal: konsole\r\nCPU: AMD Ryzen 9 7950X3D (32) @ 5.759GHz\r\nGPU: NVIDIA GeForce RTX 4070 Ti\r\nDrivers: 560.35\r\nMemory: 12437MiB / 31536MiB\r\n\r\nSorry I can't help you more, this has been my experience so far.",
+        "created_at": "2024-09-04T23:23:58Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2331985009",
+        "discussion_body": "@DAUNTIN \r\nSecure boot is working, I chainload EFISTUB from rEFInd and if that doesn't work I load a .nsh script from /boot/ using the EFI shell. All binaries are signed with my own signature.\r\n```\r\n[bonkyboo@bonkmaykr-endeavour ~]$ sudo mokutil --sb-state\r\nSecureBoot enabled\r\n[bonkyboo@bonkmaykr-endeavour ~]$ sudo sbctl verify | grep \"not signed\"\r\n(no output)\r\n```\r\nI noticed you're using Linux and not Linux-zen, I'll try booting the stock kernel and see if that helps.",
+        "created_at": "2024-09-05T15:15:37Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2351162743",
+        "discussion_body": "i continue to see the game leak memory on arch with a amd rx 6700 gpu\r\n\r\novertime it doesnt let go of the memory of previous matches and so it just builds up till the game crashes which takes roughly 5 hours\r\n\r\non windows it will stay at 6gb of memory and never rlly goes above, i played for 3 hours but on linux if i play for 3 hours it will reach around 11gb of memory\r\n\r\ni thought it was a mangohud issue at first but that isnt the case after testing through out the day\r\n\r\nim also running experimental, kernel 6.10.10, mesa 24.2.2\r\n\r\nEDIT: Doing more testing, after using x11 on kde plasma, gnome wayland, switching to my rtx 2060, the game is still leaking memory\r\n\r\nEDIT AGAIN: moved to fedora kinote and its not happening anymore, rlly weird on what is causing this leak with this game only on arch for me :/\r\n\r\nEDIT AGAIN AGAIN: when running flatpak steam the memory leak doesnt happen, it only happens on system steam on both fedora and arch\r\n\r\ndoes anyone else get this issue if they play the finals for longer then 3 hours?\r\n\r\n![image](https://github.com/user-attachments/assets/71fe1125-d81d-4ed3-8a1d-529a639becae)\r\n\r\n",
+        "created_at": "2024-09-14T21:30:03Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2360294023",
+        "discussion_body": "Having this game loading problem with its builtin EAC runtime, with a pop-up window `Easy Anti-Cheat Launch Error` said `Failed to load the embedded resources.`\r\n\r\nTried adding load parameter `SDL_VIDEODRIVER=windows` and/or `PROTON_USE_EAC_LINUX=1`, don't work.\r\n\r\nOS: Arch Linux x86_64\r\nHost: ASUS TUF Gaming A15 FA507RM_FA507RM (1.0)\r\nKernel: Linux 6.10.9-arch1-2\r\nDE: KDE Plasma 6.1.5\r\nWM: Kwin (wayland)\r\nCPU: AMD Ryzen 7 6800H\r\nGPU: NVIDIA GeForce RTX 3060 Mobile / Max-Q (driver: 560.35.03)\r\nMemory: 14.62GiB\r\nSwap: 10.0.GiB\r\n\r\nBelow are logs collected with ONLY one parameter `PROTON_LOG=1`.\r\n\r\n[steam-2073850 (proton 9.0-2).log](https://github.com/user-attachments/files/17055809/steam-2073850.proton.9.0-2.log)\r\n\r\n[steam-2073850 (proton experimental).log](https://github.com/user-attachments/files/17055816/steam-2073850.proton.experimental.log)\r\n\r\n[steam-2073850 (proton-experimental bleeding-edge).log](https://github.com/user-attachments/files/17055818/steam-2073850.proton-experimental.bleeding-edge.log)\r\n\r\n[steam-2073850 (proton-hotfix).log](https://github.com/user-attachments/files/17055819/steam-2073850.proton-hotfix.log)\r\n\n\nEDIT: change game language to English in Steam's per-game settings solved this, maybe this game's EAC files have some issue?",
+        "created_at": "2024-09-19T08:14:09Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2372526586",
+        "discussion_body": "Since the 3.14.0 update, starting the game with `gamemoderun PROTON_USE_EAC_LINUX=1 %command% -dx11` crashes. Without `-dx11`, it is starting, but then every map has some weird brown-ish fog on the lower sections and some broken textures (which I had before).\r\n\r\nOS: Fedora Linux 40 (Workstation Edition) x86_64\r\nKernel: Linux 6.10.10-200.fc40.x86_64\r\nDE: GNOME 46.5\r\nWM: Mutter (Wayland)\r\nCPU: Intel(R) Core(TM) i5-8600K (6) @ 4.30 GHz\r\nGPU: NVIDIA GeForce GTX 1070 [Discrete]\r\nMemory: 14.82 GiB / 31.27 GiB (47%)\r\nSwap: 2.95 GiB / 8.00 GiB (37%)\r\n\r\n![image](https://github.com/user-attachments/assets/4c3119e8-92ca-4050-88f1-e2f39339e94d)\r\n\r\nAnything I could try to get this resolved?",
+        "created_at": "2024-09-24T22:54:35Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2372542624",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2372526586\r\n\r\nBro is playing a horror version of THE FINALS 💀\r\n\r\nVkd3d might have an issue with your gpu maybe? Since a 10 series gpu doesn't support the Vulkan extensions for vkd3d but maybe it could be fixed unsure \r\n\r\nAnd with dx11/dxvk this is something that isn't rlly official by the finals so it makes sense that it's crashing, unsure if the dxvk team could fix that either but who knows, I'm not a developer so don't listen to me lol 🫠",
+        "created_at": "2024-09-24T23:06:51Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2373628753",
+        "discussion_body": "> Replying to [#7317 (comment)](https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2372542624)\r\n> And with dx11/dxvk this is something that isn't rlly official by the finals so it makes sense that it's crashing, unsure if the dxvk team could fix that either but who knows, I'm not a developer so don't listen to me lol 🫠\r\n\r\nWell `-dx11` is something I used, until they did the Engine update.\r\n\r\n",
+        "created_at": "2024-09-25T10:00:48Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2376684730",
+        "discussion_body": "Unfortunately the season update did not help with this... So I am unsure how to fix this.",
+        "created_at": "2024-09-26T11:31:36Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2380598060",
+        "discussion_body": "> Unfortunately the season update did not help with this... So I am unsure how to fix this.\r\n\r\nThere has to be a program interfering I am sure of it, sometimes I can play without any issue and other times the game won't let me connect. Not sure if there's a program on my computer being seen as \"cheat\" by AC. I am using GPU Recorder software on X11 maybe that is interfering with the anticheat I wonder.",
+        "created_at": "2024-09-28T10:38:24Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2380893682",
+        "discussion_body": "I tried x11/xorg and Wayland, they bot behave the same. The problem is, that I don't know when this issue started happening, because the dx11 crashes forced me back to the normal Vulkan. So it might be easier to tackle that issue instead of whatever Vulkan has.",
+        "created_at": "2024-09-28T21:00:53Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2387988034",
+        "discussion_body": "> Having this game loading problem with its builtin EAC runtime, with a pop-up window `Easy Anti-Cheat Launch Error` said `Failed to load the embedded resources.`\r\n> \r\n> EDIT: change game language to English in Steam's per-game settings solved this, maybe this game's EAC files have some issue?\r\n\r\nIf you **_solve this by change languages_**, then this is likety due to the game's EAC requesting fonts that not provided by wine/Proton:\r\n\r\n`<SteamLibrary-folder>/steamapps/common/The Finals/EasyAntiCheat/Localization/<locale-code>.cfg` are files for EAC localization. Some of them don't quotes for fonts because they were already embbeded into EAC executeable file; the others use \"system fonts\" (in this scenario, fonts provided by proton) in this format:\r\n\r\n```\r\nwindows_fonts:\r\n{\r\n\tlight = \"<font_light>.ttf\";\r\n\tregular = \"<font_regular>.ttf\";\r\n\tbold = \"<font_bold>.ttf\";\r\n};\r\n```\r\n\r\nIn order to make EAC correctly work, paste fonts quoted in `<locale-code>.cfg` (of course, the language you use) to: `<SteamLibrary-folder>/steamapps/compatdata/2073850/pfx/drive_c/windows/Fonts`, then you are good to go.\r\n\r\nLanguages affected are: `ar_sa` (Arabic), `ja_ja` (Japanese), `ko_kr` (Korean), `th_th` (Thai), `tr_tr` (Turkish), `zh_cn` (Simplified Chinese), `zh_tw` (Traditional Chinese)",
+        "created_at": "2024-10-02T09:08:27Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2401221572",
+        "discussion_body": "So I have this weird problem where after I complete the first round and go into the second my fps tanks to around 60 (normally 170). It stays this way until I relaunch the game and is something I only notice in ranked not even in world tour. I am using a nvidia gpu, archlinux and bleeding edge proton. Here are my logs:\r\n\r\n[steam-2073850.zip](https://github.com/user-attachments/files/17301773/steam-2073850.zip)\r\n",
+        "created_at": "2024-10-09T03:54:57Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2408900365",
+        "discussion_body": "For anyone still having the TFGE0027 issue, I've found that running the game on an NTFS drive greatly increases the chances of the problem occuring.\r\n\r\nI've also written this summary of common issues and known fixes/workarounds, I invite anyone with suggestions to add to it: https://bonkmaykr.xyz/content/discovery_lin.htm",
+        "created_at": "2024-10-13T09:24:32Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2434623867",
+        "discussion_body": "> For anyone still having the TFGE0027 issue, I've found that running the game on an NTFS drive greatly increases the chances of the problem occuring.\r\n> \r\n> I've also written this summary of common issues and known fixes/workarounds, I invite anyone with suggestions to add to it: https://bonkmaykr.xyz/content/discovery_lin.htm\r\n\r\nI have noticed that if you move your mouse when a match is loading, it shows me the error. so not moving the mouse fixes that! Once the match banner ie which map we are loading to is shown moving the mouse no longer creates a problem. ",
+        "created_at": "2024-10-24T08:27:03Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2437618411",
+        "discussion_body": "> I'm having these major frame stutters every 2-3 seconds, DX12 and DX11 have the same issue\r\n> \r\n> OS: openSUSE Tumbleweed x86_64 Host: B650 AORUS ELITE AX ICE Kernel: 6.10.5-1-default Packages: 3637 (rpm), 24 (flatpak) Shell: bash 5.2.32 Resolution: 2560x1440 DE: Plasma 6.1.4 wayland WM: kwin Theme: Breeze-Dark [GTK2], Breeze [GTK3] Icons: breeze-dark [GTK2/3] Terminal: konsole CPU: AMD Ryzen 9 7950X3D (32) @ 5.759GHz GPU: NVIDIA GeForce RTX 4070 Ti Drivers: 560.35 Memory: 12437MiB / 31536MiB ![Screenshot_20240831_205450](https://private-user-images.githubusercontent.com/160495027/363449848-9dfb2084-d3c6-4289-a109-87a08e9df589.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk4NTg0MjksIm5iZiI6MTcyOTg1ODEyOSwicGF0aCI6Ii8xNjA0OTUwMjcvMzYzNDQ5ODQ4LTlkZmIyMDg0LWQzYzYtNDI4OS1hMTA5LTg3YTA4ZTlkZjU4OS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAyNVQxMjA4NDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01ZDJjZWYzNzRkMzhmMTY5YTBjZTAyMGEzZTk1NjViZGVlYmVlZjFhNDdjNGM5YTZjNjJjZmNmOWRkN2I4OGUyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9._LqKdArcxFuaFoA82mFSZU9gJAQoCX-DolWeEKnP4N8) [steam-2073850.zip](https://github.com/user-attachments/files/16826746/steam-2073850.zip)\r\n\r\nSame here on rtx 3080...",
+        "created_at": "2024-10-25T12:10:18Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2437632271",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2437618411\r\n\r\nHey have you checked how much power it was using  when it was stuttering. The issue I had was similar, but I believe the stuttering is because of the GPU weirdly getting power limited. ",
+        "created_at": "2024-10-25T12:17:55Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2448477462",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2447397735\r\n\r\nTry this, should fix it:\r\nhttps://www.protondb.com/app/2073850#huonYJWweC",
+        "created_at": "2024-10-30T21:46:28Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2449532180",
+        "discussion_body": "> > Replying to [#7317 (comment)](https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2447397735)\r\n> \r\n> Try this, should fix it: https://www.protondb.com/app/2073850#huonYJWweC\r\n\r\nThank you for your reply but it does not work for me, the game still crash\r\n\r\n[I tried to switch the game from French to english](https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2360294023) and now it crash with a message :\r\n![image](https://github.com/user-attachments/assets/c9a9469a-f854-4143-be2e-ea261ae5a306)\r\nBut I can't do the memory dump.\r\n",
+        "created_at": "2024-10-31T10:32:30Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2513604573",
+        "discussion_body": "OS: Arch Linux x86_64\r\nHost: ASUS TUF Gaming A15 FA507RM_FA507RM (1.0)\r\nKernel: ~~Linux 6.10.9-arch1-2~~Linux 6.12.1-arch-1-1\r\nDE: KDE Plasma ~~6.1.5~~6.2.4 WM: Kwin (wayland)\r\nCPU: AMD Ryzen 7 6800H\r\nGPU: NVIDIA GeForce RTX 3060 Mobile / Max-Q (driver: ~~560.35.03~~565.57.01 nvidia-open)\r\nMemory: 14.62GiB\r\nSwap: 16GiB\r\n\r\nThe game will freeze and crash when \"RAY TRACING - NVIDIA RTX Global Illumination\" in graphic settings set to any dynamic one. Set it to static (disable rtxgi) the game running fine.\r\n\r\nIs it a game issue or vkd3d-proton or nvidia driver issue?",
+        "created_at": "2024-12-03T05:37:06Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2513975821",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2513604573\r\n\r\nAre you able to get a Proton log for when it does this?",
+        "created_at": "2024-12-03T09:24:32Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2514975230",
+        "discussion_body": "> Replying to [#7317 (comment)](https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2513975821)\r\n\r\nsorry for forget of logging. higher graphic setting and/or longer game time will more likely trigger this freeze.\r\n\r\noriginal log file is too big, compressed here:\r\n[steam-2073850.tar.gz](https://github.com/user-attachments/files/17995717/steam-2073850.tar.gz)\r\n",
+        "created_at": "2024-12-03T16:05:14Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2515909853",
+        "discussion_body": "> > Replying to [#7317 (comment)](https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2513975821)\r\n> \r\n> sorry for forget of logging. higher graphic setting and/or longer game time will more likely trigger this freeze.\r\n> \r\n> original log file is too big, compressed here: [steam-2073850.tar.gz](https://github.com/user-attachments/files/17995717/steam-2073850.tar.gz)\r\n\r\nI don't see anything really standing out in the log, can you reproduce the issue again and show the dmesg?\r\n(`journalctl -k | tail -8 > log.txt` should be enough, just need to see if your NVIDIA GPU's logging an Xid error code at all)",
+        "created_at": "2024-12-04T01:02:02Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2516245010",
+        "discussion_body": "> Replying to [#7317 (comment)](https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2515909853)\r\n\r\n`journalctl -k | tail -8 > log.txt` only show me with these:\r\n\r\n<details>\r\n\r\n<summary>log.txt</summary>\r\n\r\n```\r\nDec 04 13:31:21 LAPTOP-NPL4IC5Z kernel: umip: wine_threadpool[5069] ip:7000005e04ec sp:22e8fc40: For now, expensive software emulation returns the result.\r\nDec 04 13:31:23 LAPTOP-NPL4IC5Z kernel: umip: wine_threadpool[5062] ip:7000005e04ec sp:1dd9fc40: SMSW instruction cannot be used by applications.\r\nDec 04 13:33:19 LAPTOP-NPL4IC5Z kernel: umip_printk: 113 callbacks suppressed\r\nDec 04 13:33:19 LAPTOP-NPL4IC5Z kernel: umip: wine_threadpool[5682] ip:7000005e04ec sp:179bef950: SMSW instruction cannot be used by applications.\r\nDec 04 13:33:19 LAPTOP-NPL4IC5Z kernel: umip: wine_threadpool[5682] ip:7000005e04ec sp:179bef950: For now, expensive software emulation returns the result.\r\nDec 04 13:33:21 LAPTOP-NPL4IC5Z kernel: umip: wine_threadpool[5456] ip:7000005e04ec sp:ba15f950: SMSW instruction cannot be used by applications.\r\nDec 04 13:33:21 LAPTOP-NPL4IC5Z kernel: umip: wine_threadpool[5456] ip:7000005e04ec sp:ba15f950: For now, expensive software emulation returns the result.\r\nDec 04 13:33:23 LAPTOP-NPL4IC5Z kernel: umip: wine_threadpool[5056] ip:7000005e04ec sp:1934fc40: SMSW instruction cannot be used by applications.\r\n```\r\n\r\n</details>\r\n\r\njust in case, full dmesg is here:\r\n[dmesg_current.log](https://github.com/user-attachments/files/18003141/dmesg_current.log)\r\n\r\n\r\n",
+        "created_at": "2024-12-04T05:44:45Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2520323207",
+        "discussion_body": "## This game still leaks memory like crazy on my amd rx 6700, ryzen 7600 on arch, kde plasma wayland, takes around 5 to 6 hours to happen but it gets pretty stuttery when it happens, until it crashes, the finals takes a full 12gb of ram, doesnt go any further after being able to play the whole day without restarting which was around 10 hours\r\n\r\n![Screenshot_20241206_000450](https://github.com/user-attachments/assets/3024653a-8e51-436d-8950-f025a8d5c675)\r\n\r\n![image](https://github.com/user-attachments/assets/c6e939a8-90c8-40ee-ac91-39f5d4a6c3c4)\r\n\r\n![Screenshot_20241212_024622](https://github.com/user-attachments/assets/e71439ac-c2e8-4b96-9e4a-f699ae81d32d)\r\n\r\n\r\nI tested to see if it's a Wayland KDE plasma problem and it happens on the cinnamon desktop also under x11, started at in menu 5.78GB, first match after in menu 7.24GB, second match after in menu 8GB, and just keeps going till the game will crash, it should be clearing itself but it aint, on the otherhand windows clears it perfectly everytime so i never reach the full capacity of my ram which is 32GB, trying flatpak steam also doesnt solve the problem and its not mangohud causing the issue either\r\n\r\ni tried forcing dxvk on the game also the other day and it also has the memory leak, i also used vlk and the amdgpu-pro drivers which doesnt solve the issue either\r\n\r\nIt also happens on my rtx 2060 on the latest drivers from arch",
+        "created_at": "2024-12-05T13:25:54Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2540440927",
+        "discussion_body": "> > > Please oh please oh please fix the sensitivity being too low. This has been an issue since back 4 blood.\r\n> > \r\n> > \r\n> > Wdym? Are you running x11 or wayland?\r\n> \r\n> X11. Only proton-ge with its raw input patch will allow the sensitivity to get to a playable level. Otherwise is it too slow.\r\n\r\nI realized this is a really delayed reply, but is this still a problem for you on Proton 9.0-x? ",
+        "created_at": "2024-12-13T03:12:37Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2550469597",
+        "discussion_body": "~~steam's game recording is broken for this game even overlay works~~\n\n~~tried launch game with gamescope, it can record but cannot grab cursor, use `--force-grab-cursor` will cause screen tearing and frame drop~~\n\n~~launch steam with gamescope and big picture mode, then launch the game, the in-game view is limited due to cursor range limited to window size~~\n\n~~edit: after all these attempt, I reverted to ~~default config~~ `mangohud %command%` and now it works. I might look into logs later~~\n\n~~edit later: occured again... need some time to fetch logs~~\n\nedit after some attempts: wipe the _in-game overlay data_ in steam's per game settings let it to record again...",
+        "created_at": "2024-12-18T06:33:08Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2592059739",
+        "discussion_body": "It seems that on Intel Arc systems the crosshair is way too big and spans across the entire screen. I've seen another report of this in THE FINALS discord and they were also using an Intel Arc GPU leading me to believe that this issue could be exclusive to Intel ARC. Attempting to change video, resolution, or crosshair settings doesn't change anything.\r\n\r\nOn Windows everything works as expected.\r\n\r\nGPU: Intel Arc A770\r\nVideo driver version: Mesa 25.0.0-devel (401b400de3f2d84bfb3436b7fed0fa90cf70b8e4)\r\nKernel version: 6.12.9\r\nLink to full system information report as Gist: https://gist.github.com/yemouu/48ee0229619c4278556650bf97de388d\r\nProton version: Proton Experimental\r\n    \r\n![2025-01-15-03_20_24](https://github.com/user-attachments/assets/a24c478e-021b-4e9b-9ef3-1ae79fe7094b)\r\n",
+        "created_at": "2025-01-15T09:13:52Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2592779869",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2592059739\r\n\r\nIs it possible you could make a Mesa bug report for this? Given my computer runs THE FINALS fine and doesn't have this bug, (RTX 3060 Ti, previously an RX 5700 XT) it's highly likely a bug with ANV.",
+        "created_at": "2025-01-15T12:51:54Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2594398801",
+        "discussion_body": "I made the bug report on mesa [here](https://gitlab.freedesktop.org/mesa/mesa/-/issues/12477)",
+        "created_at": "2025-01-16T03:24:18Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2595966363",
+        "discussion_body": "Since the S5 Update the game has been crashing quite often, anybody else facing this? Some others who are using fedora 41\n\n[steam-2073850.zip](https://github.com/user-attachments/files/18441485/steam-2073850.zip)\n\nI got the log for it and i could not find something that could cause the issue, atleast not myself. \nI have tried all the known fixes from disabling RT  to increasing the max VM memory. neither of them have fixed. \nAlready gave a report to embark about this as i suspect it may be related to the general bug this game has currently with crashing. But i can be sure about that",
+        "created_at": "2025-01-16T15:03:30Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2596247622",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2592059739\n\n\nShould be fixed with https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/33070",
+        "created_at": "2025-01-16T16:59:20Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2596302082",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2596247622\n\nJust tested this and yep, it fixes the issue. Thanks!",
+        "created_at": "2025-01-16T17:25:15Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2598859337",
+        "discussion_body": "# Severe FPS Drops and Performance Degradation 😍\n\n## Symptoms\n### Initially (Stable 90 FPS):\n- **GPU Usage:** 98%  \n- **CPU Usage:** 45%  \n- **Frametime:** Steady 10ms (max 12ms)\n\n### When FPS Drops (e.g., to 35 FPS):\n- **GPU Usage:** 69%  \n- **CPU Usage:** 85%  \n- **Frametime:** Fluctuates around 15ms, causing stuttering and instability.\n\n- FPS drops occur **instantaneously** from 90 to ~30 FPS, persist for a few seconds, and then recover as if nothing happened.\n\n---\n\n## Observed On:\n- **GPUs:** Both AMD and NVIDIA.\n- **Linux Distros:** Arch, Pop!_OS, CachyOS, Fedora.\n- **Setups:** Various configurations, including AMD and Intel CPUs.\n\n---\n\n## Attempts to Fix:\n1. Deleted shader cache and disabled Steam shader pre-caching — **No improvement**.\n2. Added `gamemoderun` and forced DX12 — **Minor improvement, not resolved**.\n3. Switched Proton and Wine builds — **No significant difference**.\n4. Checked GPU power caps using `nvidia-smi` (NVIDIA) and monitoring tools for AMD.\n\n---\n\n## Steps to Reproduce:\n1. Launch **The Finals** on a Linux distro using Proton.\n2. Play the game; FPS drops occur randomly across all settings and persist for a few seconds before recovering.\n",
+        "created_at": "2025-01-17T17:33:27Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2599347508",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2598859337\n\nYes I am having an issue that sounds very similar to this since today. It is usually triggered by spawning in most of the time and seems to occur in bursts with the lag getting so bad it freezes and then returns to normal. When its not stuttering like this, the framerate is flawless for a while but then it slowly becomes a stuttery mess. While it is stuttering, I have noticed my overall CPU usage spike from 80 all the way 100% and my GPU usage significantly decreases.",
+        "created_at": "2025-01-17T23:02:18Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2599363852",
+        "discussion_body": "I also get these issues but only today. Yesterday things were working all good.\n\nIf i look at `amdgpu_top` the graphics pipe etc. drop from 60-80% suddenly to 30%. It's like some weird powersaving mode out of nowhere.\n\nEdit: The game FPS counter looks like this during the hiccup\n\n![Image](https://github.com/user-attachments/assets/9afeb037-4cb8-4b62-8a22-c762b541cf0e)\n\nCPU bottleneck? Something weird is going on.\n\nOperating System: Fedora Linux 41\nKDE Plasma Version: 6.3.80\nKDE Frameworks Version: 6.11.0\nQt Version: 6.8.1\nKernel Version: 6.12.9-200.fc41.x86_64 (64-bit)\nGraphics Platform: Wayland\nProcessors: 12 × AMD Ryzen 5 3600 6-Core Processor\nMemory: 15.5 GiB of RAM\nGraphics Processor: AMD Radeon RX 6600\ndriverInfo         = Mesa 24.3.3\n\n\nEdit2:\n\nTook a screenshot of mangohud during the game. I tested in practice range, and I have most settings on low because I want more fps.\n\n<details><summary>This is when its working fine:</summary>\n\n![Image](https://github.com/user-attachments/assets/d0fb38e6-6040-46d6-9f8a-c35416f05fe0)\n\n</details><details><summary>This is during the FPS drop:</summary>\n\n![Image](https://github.com/user-attachments/assets/ca4cec72-0c1e-4aeb-a0a6-a0de0269b920)\n\n</details>",
+        "created_at": "2025-01-17T23:21:52Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2599424188",
+        "discussion_body": "I ran steam through terminal and during the first slowdown this appeared\n\n```\nFossilize INFO: Overriding serialization path: \"/mnt/ba9ce604-52eb-4152-8b2e-0941036b2ddc/SteamLibrary/steamapps/shadercache/2073850/fozpipelinesv6/steamapprun_pipeline_cache\".\n[0118/023838.983:ERROR:dxva_video_decode_accelerator_win.cc(1447)] DXVAVDA fatal error: could not LoadLibrary: msvproc.dll: Module not found. (0x7E)\n[0118/023838.984:ERROR:gpu_init.cc(426)] Passthrough is not supported, GL is disabled\nFossilize INFO: Overriding serialization path: \"/mnt/ba9ce604-52eb-4152-8b2e-0941036b2ddc/SteamLibrary/steamapps/shadercache/2073850/fozpipelinesv6/steamapprun_pipeline_cache\".\n```\n\nOn subsequent slowdowns there was nothing",
+        "created_at": "2025-01-18T00:43:47Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2599448146",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2598859337\n\nIf I have time today, I'll test the game out here as I don't remember getting this problem on my machine.\n\nAs a side-note, if you're not using hardware acceleration in Steam, try closing the Steam Window while the game is running and see if things improve, I found my framerates occasionally got worse if I left it open.\n\n(I have hardware acceleration off due to a bug on NVIDIA that causes Steam to corrupt rendering)\n\nEDIT: Also see if the spikes happen when using Reflex on NVIDIA drivers.",
+        "created_at": "2025-01-18T01:20:26Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2599467047",
+        "discussion_body": "I can confirm this issue has popped up for me out of nowhere today as well. I'm on Arch Linux, using Proton Experimental, GPU is RX 6700XT and CPU is 3700X. Doubt this issue is NVIDIA related.\n\nUsing mesa-git btw (so mesa 25.0). \n\nDid an update push to the game today? Didn't notice.",
+        "created_at": "2025-01-18T01:57:58Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2599472885",
+        "discussion_body": "I seem to be getting the same issue. \nCPU: 5950x\nGPU: 6800xt\nArch Linux @ 6.12.8-zen1-1-zen\n```\n[  695.113054] umip_printk: 115 callbacks suppressed\n[  695.113058] umip: wine_threadpool[6918] ip:70000055e13c sp:8c081f920: SMSW instruction cannot be used by applications.\n[  695.113064] umip: wine_threadpool[6918] ip:70000055e13c sp:8c081f920: For now, expensive software emulation returns the result.\n[  697.209718] umip: wine_threadpool[3807] ip:70000055e13c sp:67adfc30: SMSW instruction cannot be used by applications.\n[  697.209725] umip: wine_threadpool[3807] ip:70000055e13c sp:67adfc30: For now, expensive software emulation returns the result.\n[  699.217415] umip: wine_threadpool[5555] ip:70000055e13c sp:50e40f920: SMSW instruction cannot be used by applications.\n```\nseems to be popping up in the kernel logs and seems to be the direct cause of the frame drops at least in my case.\n\nEDIT:\nAfter further investigation I tried adding `clearcpuid=514` to my kernel paramters inspired by #2927. Unfortunately while that did resolve the messages in the kernel log it did not fix the severe framedrops (accompanied by low GPU utilisation). It may still be software emulation as reported as before but not reporting it.\n\nEDIT2:\nNo logs seem to be generated when the spike hits (terminal output of steam). \nI do see\n```\nFossilize INFO: Overriding serialization path: \"/home/nick/.local/share/Steam/shader_cache_temp_dir_d3d11_64/fozpipelinesv6/steamapprun_pipeline_cache\".\nfsync: up and running.\nFossilize INFO: Overriding serialization path: \"/home/nick/.local/share/Steam/shader_cache_temp_dir_d3d12_64/fozpipelinesv6/steamapprun_pipeline_cache\".\n```\nWhich matches @p0ryae, but I only have gotten it on launching the application and not when any spikes hit. There is no mention of msvproc.dll or paththrough.\n\nEDIT3:\nRolling back proton to 8.0-5 does not resolve the issue, infact seems to cause a hard freeze after launch. It seems to print\n```\n[ 1252.139423] Discovery.exe[14827] vsyscall read attempt denied -- look up the vsyscall kernel parameter if you need a workaround ip:1707c3e2c cs:33 sp:b9d268 ax:b9e680 si:b9e680 di:d26e60\n[ 1252.144232] Discovery.exe[14827] vsyscall read attempt denied -- look up the vsyscall kernel parameter if you need a workaround ip:1707c3e2c cs:33 sp:b9d268 ax:b9e680 si:b9e680 di:cca456\n[ 1252.161437] Discovery.exe[14827] vsyscall read attempt denied -- look up the vsyscall kernel parameter if you need a workaround ip:1707c3e2c cs:33 sp:b9d268 ax:b9e680 si:b9e680 di:d78438\n[ 1252.166883] Discovery.exe[14827] vsyscall read attempt denied -- look up the vsyscall kernel parameter if you need a workaround ip:1707c3e2c cs:33 sp:b9d268 ax:b9e680 si:b9e680 di:d67af1\n[ 1252.173073] Discovery.exe[14827] vsyscall read attempt denied -- look up the vsyscall kernel parameter if you need a workaround ip:1707c3e2c cs:33 sp:b9d268 ax:b9e680 si:b9e680 di:d6a846\n[ 1252.181403] Discovery.exe[14827] vsyscall read attempt denied -- look up the vsyscall kernel parameter if you need a workaround ip:1707c3e2c cs:33 sp:b9d268 ax:b9e680 si:b9e680 di:d6dd0f\n[ 1252.197259] Discovery.exe[14827] vsyscall read attempt denied -- look up the vsyscall kernel parameter if you need a workaround ip:1707c3e2c cs:33 sp:b9d268 ax:b9e680 si:b9e680 di:d75625\n[ 1252.203934] Discovery.exe[14827] vsyscall read attempt denied -- look up the vsyscall kernel parameter if you need a workaround ip:1707c3e2c cs:33 sp:b9d268 ax:b9e680 si:b9e680 di:d6c7d6\n[ 1252.208555] Discovery.exe[14827] vsyscall read attempt denied -- look up the vsyscall kernel parameter if you need a workaround ip:1707c3e2c cs:33 sp:b9d268 ax:b9e680 si:b9e680 di:d6972e\n[ 1252.213484] Discovery.exe[14827] vsyscall read attempt denied -- look up the vsyscall kernel parameter if you need a workaround ip:1707c3e2c cs:33 sp:b9d268 ax:b9e680 si:b9e680 di:d69725\n```\nfollowed by the umip logs reported from before.\n\nThe latest version of proton experimental seems to also print the Discovery.exe logs before the firm umip logs but does not print it on any group umip logs after that so I am unsure if it is related.",
+        "created_at": "2025-01-18T02:12:24Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2599474793",
+        "discussion_body": "Horrible Horrible lag seemingly overnight for no apparent reason. Went from 120fps yesterday to 13 fps today.",
+        "created_at": "2025-01-18T02:17:13Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2599481391",
+        "discussion_body": "I also just suddenly started experiencing this today.\n\nEvery time it appears to happen when one would expect the game to dispose of textures. \n\nI noticed there was a shader update today, and Fedora got a mesa update yesterday.\n\nAMD 7900xtx\n\nUpdate:\n\nDowngrading to `mesa-dri-drivers-24.2.4-1.fc41.x86_64` did not resolve the issue, nor did switching to Proton-9.0 from Experimental.\n",
+        "created_at": "2025-01-18T02:34:38Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-2599482317",
+        "discussion_body": "I think it has something to do with Fossilize and `msvproc.dll`? The following log is generated constantly (usually when the spike hits):\n\n```\nFossilize INFO: Overriding serialization path: \"/home/porya/.local/share/Steam/steamapps/shadercache/2073850/fozpipelinesv6/steamapprun_pipeline_cache\".\n[0117/183510.061:ERROR:dxva_video_decode_accelerator_win.cc(1447)] DXVAVDA fatal error: could not LoadLibrary: msvproc.dll: Module not found. (0x7E)\n[0117/183510.062:ERROR:gpu_init.cc(426)] Passthrough is not supported, GL is disabled\nFossilize INFO: Overriding serialization path: \"/home/porya/.local/share/Steam/steamapps/shadercache/2073850/fozpipelinesv6/steamapprun_pipeline_cache\".\nFossilize INFO: Overriding serialization path: \"/home/porya/.local/share/Steam/steamapps/shadercache/2073850/fozpipelinesv6/steamapprun_pipeline_cache\".\n```\n\nEdit: Thanks to @nonl4331 for cross-checking. Issue might need a full proton log instead of steam logs then.",
+        "created_at": "2025-01-18T02:37:38Z",
+        "is_for_the_report": "false"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Wulverblade (587180)",
+    "issue_number": 7099,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/7099",
+    "compatibility_report_id": 1896902032,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Wulverblade\r\n- Steam AppID of the game: 587180\r\n\r\n## System Information\r\n- GPU: RX 6700 XT\r\n- Video driver version:Mesa 23.1.7\r\n- Kernel version: 6.1.52\r\n- Link to full system information report:  [system_report.tar.gz](https://github.com/ValveSoftware/Proton/files/12611102/system_report.tar.gz)\r\n\r\n- Proton version: Proton 7.0-6, 8.03, 8.0-4 (RC)\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\nProton log: [steam-587180.tar.gz](https://github.com/ValveSoftware/Proton/files/12611104/steam-587180.tar.gz)\r\n\r\n\r\n## Symptoms \r\n- Game doesn't display intro logos or cutscenes (just a black screen), but plays the audio and displays subtitles.\r\n\r\n## Reproduction\r\n- Launch the game (the initial logos won't be displayed, but audio can be heard). Start a campaign (intro cutscenes with the same issue already explained)\r\n\r\n",
+    "created_at": "2023-09-14T16:14:08Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7099#issuecomment-2145212872",
+        "discussion_body": "The same video/cutscene problems still exist on **Proton 9.0-1** and **9.0-2 (RC)**. Logs: \r\n[steam-587180.tar.gz](https://github.com/user-attachments/files/15534486/steam-587180.tar.gz)\r\n\r\nSpecs:\r\n- OS: Arch\r\n- Kernel: 6.6.32\r\n- DE: Plasma 6.0.5 (xwayland 24.1.0)\r\n- GPU: RX 6700 XT (Mesa 24.1.0)\r\n- CPU: Ryzen 7 5700G (8c/16t)\r\n",
+        "created_at": "2024-06-03T13:30:37Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7099#issuecomment-2847396417",
+        "discussion_body": "Unfortunately the problem persists on **Proton 10.0 beta-1**. \n- Logs: [steam-587180-proton10.tar.gz](https://github.com/user-attachments/files/20014438/steam-587180-proton10.tar.gz)",
+        "created_at": "2025-05-02T14:51:07Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Gray Zone Warfare (2479810)",
+    "issue_number": 7721,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3263953204",
+    "compatibility_report_id": 3263953204,
+    "issue_state": "open",
+    "compatibility_report": "Problem with EAC on protons - hotfix, experimental, in Gray Zone Warfare 2479810, 0x00020008 client failed to load the anti-cheat module at startup.\n\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/9032.\n@ApolusNlockTus posted on 2025-09-07T18:09:05:\n\n# Compatibility Report\n- Gray Zone Warfare\n- Steam AppID of the game: 2479810\n\n## System Information\n- GPU: RX 7800 XT \n- Video driver version: Mesa 25.2.2-cachyos1.2\n- Kernel version: \\tLinux 6.16.5-s\n- Link to full system information https://gist.github.com/ApolusNlockTus/4c7cac60f128454e2287bd78c79f9f1c\n- Proton version: Proton experimental, hotfix, 10.0-2\n\n# I confirm:\n- hat I haven't found an existing compatibility report for this game.\n- that I have checked whether there are updates for my system available.\n\n# Logs:  \nProton: https://paste.cachyos.org/p/e037ca0.log \n(sorry for chachyos paste, but gist crashing with this one.\nGame: https://paste.cachyos.org/p/72366a7.log \n\nProblem: I got kicked from online server every time with error 0x00020008 client failed to load the anti-cheat module at startup.\nEAC working in game version 0.3.4, problem is now with 0.3.5. 10/10 attempts",
+    "created_at": "2025-09-07T18:19:21Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3263956104",
+        "discussion_body": "@kisak-valve  My mistake, so sorry.\nThank you for the correction. ❤️ ",
+        "created_at": "2025-09-07T18:25:15Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3607350929",
+        "discussion_body": "Update, After patch 0.3.5 this issue was still active. After discussing with the devs they were willing to look into it, and the EAC issue (starting EAC on game launch) was fixed.\n\nThere are still some weird performance issues, even with vkd3d-proton 3.0 with *some* gzw fix. \nBut this needs more testing to find where is the problem.",
+        "created_at": "2025-12-03T15:15:08Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3624694181",
+        "discussion_body": "At the moment, trying to connect to servers will get you kicked via EAC, but there is a twist: something about this process also corrupts some files in the game directory, and makes it impossible to connect.\n\nOn the GZW Discord there is a Linux users channel, folks have figured out the two files:\n\nGray Zone Warfare/GZW/Content/SKALLA/PrebuildWorldData/World/cache/0xaf497c273f87b6e4_0x7a22fc105639587d.dat\nGray Zone Warfare/GZW/Content/SKALLA/PrebuildWorldData/World/cache/0xb9af63cee2e43b6c_0x3cb3b3354fb31606.dat\n\nif you:\n\n1) Verify GWZ files in Steam, and then\n2) set the above files READ ONLY (400, 444, whatever)\n\nGZW will connect to servers fine.  The next time there is a GZW update, Steam will likely set those rw again, your files will get corrupted, and you will have to repeat the process: verify files, chmod a-w those two files.\n\nSurely this info could be useful is sussing out the issue...",
+        "created_at": "2025-12-08T04:37:42Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3706245014",
+        "discussion_body": "@kisak-valve I completely missed that, thank you.",
+        "created_at": "2026-01-02T21:20:16Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3706589776",
+        "discussion_body": ">   * CPU usage spikes to **100 % across all cores**\n>   * GPU usage drops to near idle\n>   * Desktop, audio and input lag system-wide\n\nOn Fedora 43 (Intel i7-9700K, RTX2080) I see the hang at 72%.  However, I DON'T see any of the systemic instability you do.  The KDE desktop remains completely smooth and responsive, and only 2 or 3 of my cores are chugging.  Certainly, something Proton is or is not handling is causing GZW to get angry and spin its wheels... but I'm curious about the systemic degradation you experience.  I see CachyOS is involved... who knows which out-of-tree kernel patch, bleeding edge upstream package, or goofy set of compiler flags CachyOS is using might explain why your whole computer is freezing up, but it's probably one of them.  \n\nI'd also be interested to know if any others with Intel CPUs are having the same issues.\n \n> * After several time:\n>   \n>   * Either the game recovers\n>   * Or crashes\n\nThe game just hangs at 72% for me; I kill it with \"STOP\" button in Steam, re-run, as soon as Gray Zone Warfare is loaded it asks \"Join previous session?\", I click yes, and I'm in game.  So something during the initialization of the multiplayer component of the game is hoarking (I'd wager related to the same bit that's choking up EAC when those two files get corrupted.  Wild ass guess.)\n \n> ### Important observations\n> * The issue **only affects Gray Zone Warfare**\n> * Other UE5 titles run fine under Proton on the same system\n\nHighly doubt it has anything to do with UE5.  Programming is hard, and trying to predict all of the ways programmers get stuff done to make a game work is even harder (yay Proton.)  Hope this gets addressed at some point!",
+        "created_at": "2026-01-03T01:48:34Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3706856812",
+        "discussion_body": "I want to keep this focused on the technical aspects.\n\nI currently use CachyOS, but I am not tied to any specific distribution. I regularly test other distros and keep a dedicated empty 1 TB NVMe drive for that purpose. If there were a concrete technical reason to switch, I would do so. \n\nCachyOS has been stable on this system for over 7 months with daily updates and no system-level issues. At the moment, there is no evidence pointing to a distro-specific problem. I’d also like to note that distro choice alone does not explain the behavior!\n\nGray Zone Warfare is the only game showing this behavior. Other UE5 titles like STALKER 2, run without issues on the same hardware. I tested multiple Proton versions, various launch parameters, and different kernels on a Ryzen 9 7950X3D with an RTX 5070 Ti, without meaningful changes.\n\nGiven that limiting the CPU cores significantly mitigates the issue, this points toward a game-side threading or scheduling problem under Proton rather than a distribution or kernel issue.",
+        "created_at": "2026-01-03T07:22:45Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3706896584",
+        "discussion_body": "> I see CachyOS is involved... who knows which out-of-tree kernel patch, bleeding edge upstream package, or goofy set of compiler flags CachyOS is using might explain why your whole computer is freezing up, but it's probably one of them.\n\n@mercster I'm not sure why you're approaching with such hostility, the issue we're having clearly isn't a distro-specific one, as the multiple (in totality, distro-agnostic) reports above should show. @xEnSei's experience is far similar to what I've experienced on NixOS (which uses a mostly mainline kernel with a few nix-related patches, kernel config [here](https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/os-specific/linux/kernel/common-config.nix) if you _really_ want to look at it) than what you're describing. AFAIK, most of the users describing this issue above have commented on their entire system becoming laggy and their _entire_ CPU being maxed out at 100%. (see [sim590's](https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3218568023) comment). If anything, the issue _you're_ describing sounds different from the one we're dealing with.\n\n\n> So something during the initialization of the multiplayer component of the game is hoarking (I'd wager related to the same bit that's choking up EAC when those two files get corrupted.\n\nThose two files getting corrupted has been an issue since the game launched, it's unlikely this is related as this CPU usage issue appeared relatively recently.\n\n\n> Limiting the visible CPU topology significantly improves behavior:\n> \n> WINE_CPU_TOPOLOGY=12:1,2,3,4,5,6,7,8,9,10,11,12\n\nThis does help on my system, after a few minutes the FPS evens out and settle at a pre-issue level, as long as I don't move around too much (after my fps has recovered where I spawned by the pool, moving from there to the front gate of the FOB will cause it to act up again for a few minutes). By no means playable but certainly an improvement.\n\n\n> Gray Zone Warfare is the only game showing this behavior. Other UE5 titles like STALKER 2, run without issues on the same hardware. \n> ...\n> Given that limiting the CPU cores significantly mitigates the issue, this points toward a game-side threading or scheduling problem under Proton rather than a distribution or kernel issue.\n\nSTALKER 2 doesn't include EAC though, maybe an EAC update caused a regression in proton? I know a relatively recent update to W40k: Space Marine 2 started causing similar [system-wide effects](https://github.com/ValveSoftware/Proton/issues/8072#issuecomment-3591739939) (linked comment is the start of the conversation, the most recent comment describes similar issues to what we're discussing). SM2 isn't using UE5 though. As far as my personal experience, now that I'm thinking about it, the symptoms seem more and more similar. IIRC, SM2 has CPU usage spikes when loading new areas, as well as when lots of enemies spawn. It also maxes out for a moment right after game launch, which I'm not sure GZW does? There isn't really a startup video/audio that plays when GZW opens, so I'm not sure if I'd notice.\n\nFor SM2, bypassing EAC completely fixes the performance issues, I might contact the GZW devs and see if there's any way to load into the game without EAC (since the game doesn't have any sort of offline/modded mode like SM2 has).",
+        "created_at": "2026-01-03T08:37:28Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3707160774",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3706896584\n\nI've now tested SM2, and the same problem occurs there too, only slightly worse. As soon as I start a mission and join the server, it's unplayable! \n\nI just read that SM2 doesn't use UE5, so there might be something to your EAC theory.\n\nAdditional note: This just occurred to me, and a friend had the same thought. Correct me if I'm completely wrong.\n\nGame (UE5 or other, highly parallel)\n+ Proton/Wine thread mapping\n+ EAC (aggressive polling/checks)\n+ Many logical cores (32T)\n= Thread storm → Scheduler collapses → GPU starves",
+        "created_at": "2026-01-03T16:07:53Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3707436426",
+        "discussion_body": "> Additional note: This just occurred to me, and a friend had the same thought. Correct me if I'm completely wrong.\n> \n> Game (UE5 or other, highly parallel)\n> \n>     * Proton/Wine thread mapping\n> \n>     * EAC (aggressive polling/checks)\n> \n>     * Many logical cores (32T)\n>       = Thread storm → Scheduler collapses → GPU starves\n\nSounds plausible to me, although I have no idea what I'm talking about. I suppose a good test to further confirm plausibility is to test limiting WINE_CPU_TOPOLOGY on SM2 to see if it helps there too.",
+        "created_at": "2026-01-03T23:14:25Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3707451951",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3707436426\n>Sounds plausible to me, although I have no idea what I'm talking about. I suppose a good test to further confirm plausibility is to test limiting WINE_CPU_TOPOLOGY on SM2 to see if it helps there too.\n\nLimiting the number of CPU cores via WINE_CPU_TOPOLOGY did not improve the situation and revealed the same problem.",
+        "created_at": "2026-01-03T23:44:25Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3708362917",
+        "discussion_body": "Looking at my proton log, I do see the following error popup quite a few times (with different asset paths), sometimes many a second, other times seconds per one (I can't really correlate that with what was happening on screen at those times though.)\n\n```console\n7608.844:0188:0258:warn:seh:OutputDebugStringW L\"[2026.01.04-19.05.23:009][402]LogSkalla: Warning: USKALLAReferencesComponent::LoadAsset: Asset '/Game/Audio/AmbientSounds/AmbientSoundVertex_CornField' didn't load using async path. Trying sync\\r\\n\"\n7608.844:0188:0258:warn:seh:dispatch_exception L\"[2026.01.04-19.05.23:009][402]LogSkalla: Warning: USKALLAReferencesComponent::LoadAsset: Asset '/Game/Audio/AmbientSounds/AmbientSoundVertex_CornField' didn't load using async path. Trying sync\\r\\n\"\n```\n\nI'd have to switch over to windows and figure out how to capture the output for the game to see if it's a normal thing or not. I don't know that much about the specifics, but I assume things falling back to being processed synchronously wouldn't been good for performance? (although obviously something else must be going on, since I don't think it should cause 100% cpu usage on all cores.)",
+        "created_at": "2026-01-04T19:36:28Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3716611843",
+        "discussion_body": "I tried Proton Experimental via Steam today, and GZW ran well with it. I didn't pay much attention to visual errors, or at least I didn't notice any!",
+        "created_at": "2026-01-06T22:35:56Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3716694946",
+        "discussion_body": "> I tried Proton Experimental via Steam today, and GZW ran well with it. I didn't pay much attention to visual errors, or at least I didn't notice any!\n\nwas that with or without `WINE_CPU_TOPOLOGY`?",
+        "created_at": "2026-01-06T23:15:28Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3716697203",
+        "discussion_body": "> > I tried Proton Experimental via Steam today, and GZW ran well with it. I didn't pay much attention to visual errors, or at least I didn't notice any!\n> \n> was that with or without `WINE_CPU_TOPOLOGY`?\n\n I didn't need to, I didn't use any startup options.",
+        "created_at": "2026-01-06T23:16:34Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3716699584",
+        "discussion_body": "> I tried Proton Experimental via Steam today, and GZW ran well with it. I didn't pay much attention to visual errors, or at least I didn't notice any!\n\nIntel or AMD CPU?  ",
+        "created_at": "2026-01-06T23:17:44Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3716701250",
+        "discussion_body": "> > I tried Proton Experimental via Steam today, and GZW ran well with it. I didn't pay much attention to visual errors, or at least I didn't notice any!\n> \n> Intel or AMD CPU?\n\nAMD Ryzen 9 7950X3D\nNVIDIA RTX 5070 Ti 16GB",
+        "created_at": "2026-01-06T23:18:37Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3716703605",
+        "discussion_body": "Well damn, that happened out of nowhere. The game is running completely smooth for me now.\n\nRyzen 9 5900X\nRadeon RX 7800XT",
+        "created_at": "2026-01-06T23:19:53Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3717349520",
+        "discussion_body": "I have really no idea what fixed this, but it seems it is indeed fixed.",
+        "created_at": "2026-01-07T05:14:40Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3717363389",
+        "discussion_body": "The only thing I can come up with is that somehow no one here had tested proton experimental since the December 23rd update. I suppose there could have been a server side update/change for the game or EAC that somehow fixed it. Has anyone confirmed that it is specifically experimental that works correctly?",
+        "created_at": "2026-01-07T05:22:55Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3717586418",
+        "discussion_body": "> The only thing I can come up with is that somehow no one here had tested proton experimental since the December 23rd update. I suppose there could have been a server side update/change for the game or EAC that somehow fixed it. Has anyone confirmed that it is specifically experimental that works correctly?\n\nI tested this over Christmas, but I didn't notice any improvement.\n(Garuda witch cachy kernel, latest Mesa etc..)\nBut - \n\nI switched to a new distro in the new year, and only here did I notice a significant performance improvement. (PikaOS, others are the same..)\nAt that moment, I thought the improvement was the new distro and its modifications.. well..\n\nI'm in the testing phase before I come up with a fix. But suddenly now people are starting to show up who are also feeling the improvement. When I look at the dates, it seems strange. \n\nSmall info from GTW discord from one guy:\n\"So. Launch options as \n\ngamemoderun AMD_VULKAN_ICD=RADV VKD3D_CONFIG=upload_hvm %command% -malloc=system --launcher-skip --intro-skip --skipStartScreen -dx12\n\nTested on Proton 10.0- 10.3, 9.0-9.4, GE latest, experimental, \n\nAnything earlier than that seems to cause issues with loading in. Not CPU issues but getting to the main screen\"\n\nSo yes.. looks like proton in the end..",
+        "created_at": "2026-01-07T07:01:47Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3718998199",
+        "discussion_body": "My proton version did not change. It was a fixed version in the settings. It must have been something that updated behind the scenes. Some other folks here thought it was EAC related. However, my proton EAC module didn't update in 2 years according to Steam. Could it be related to a server update on the game devs' side?",
+        "created_at": "2026-01-07T13:52:50Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7721#issuecomment-3719003824",
+        "discussion_body": ">  It was a fixed version in the settings\n\nWhat?",
+        "created_at": "2026-01-07T13:54:16Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "BoomBox (1485120)",
+    "issue_number": 7217,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/7217",
+    "compatibility_report_id": 1969178242,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: BoomBox\r\n- Steam AppID of the game: 1485120\r\n\r\n## System Information\r\n- GPU: RTX 2080\r\n- Video driver version: nVidia 525.125.06\r\n- Kernel version: 5.15.0-88-generic\r\n- Link to full system information report as [Gist](https://gist.github.com/Corben78/316942a3d73a6c7a5088d9405c75f45f)\r\n- Proton version: experimental-8.0-20231019\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n[steam-1485120.log](https://github.com/ValveSoftware/Proton/files/13209635/steam-1485120.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame used to work, now it opens shortly a black window, but closes again and the game doesn't start.\r\nUsing Steam VR 2.0.8, and `\"enableLinuxVulkanAsync\" : false`\r\n\r\n## Reproduction\r\nStarting the game.\r\n\r\n## Additional Info\r\nIf SteamVR is not running, the game does boot up.\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Also, please copy the contents of `Help` > `Steam Runtime Information` to\r\n   the gist.\r\n6. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2023-10-30T20:40:52Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7217#issuecomment-1890968866",
+        "discussion_body": "## System Information\r\n- GPU: RTX 2070\r\n- Video driver version: nVidia 545.29.06\r\n- Kernel version: 5.15.0-91-generic\r\n- Link to full system information report as [Gist](https://gist.github.com/Corben78/8ca1b396d85624b609a797dce2c5f7ba)\r\n- Proton version: experimental-8.0-20240111c\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n[steam-1485120.log](https://github.com/ValveSoftware/Proton/files/13931847/steam-1485120.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nReport update.\r\nSteam VR beta 2.3.1\r\nGame doesn't start and causes Steam VR to fail with error -203\r\n\r\n## Reproduction\r\n\r\nInstall game, select Proton Experimental, start game.\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Also, please copy the contents of `Help` > `Steam Runtime Information` to\r\n   the gist.\r\n6. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+        "created_at": "2024-01-14T14:31:28Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7217#issuecomment-2102891827",
+        "discussion_body": "Works for me with experimental-9.0-20240503b (RTX 2080 mobile, nVidia 550.78)",
+        "created_at": "2024-05-09T15:30:08Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  }
+]

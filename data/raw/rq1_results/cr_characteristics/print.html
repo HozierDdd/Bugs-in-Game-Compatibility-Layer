@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analyze 2：Submission Prevalence 实验报告</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Noto Sans SC", sans-serif;
+      line-height: 1.65;
+      color: #202033;
+      margin: 0;
+      background: #ffffff;
+    }
+    .wrap {
+      max-width: 1100px;
+      margin: auto;
+      padding: 38px 34px 70px;
+    }
+    h1 {
+      font-size: 34px;
+      margin: 0 0 6px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-top: 34px;
+      border-bottom: 2px solid #e5dff0;
+      padding-bottom: 6px;
+    }
+    h3 {
+      font-size: 19px;
+      color: #3c246c;
+      margin-top: 25px;
+    }
+    .sub {
+      color: #666;
+      margin-bottom: 24px;
+    }
+    .callout {
+      background: #fbf8ff;
+      border-left: 5px solid #6b35b1;
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+    .note {
+      border-left-color: #087443;
+    }
+    .warn {
+      border-left-color: #9a5b00;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 14px;
+      margin: 14px 0 22px;
+    }
+    th, td {
+      border: 1px solid #e2deea;
+      padding: 8px 10px;
+      vertical-align: top;
+    }
+    th {
+      background: #ede7f6;
+      text-align: left;
+    }
+    pre {
+      background: #f6f6f8;
+      border: 1px solid #e4e4ea;
+      border-radius: 10px;
+      padding: 14px 16px;
+      overflow-x: auto;
+      white-space: pre;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+    }
+    .toc {
+      background: #fafafa;
+      border: 1px solid #ececf1;
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+    .small {
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+<main class="wrap">
+  <h1>Analyze 2：Submission Prevalence 实验报告</h1>
+  <div class="sub">R 语言可复现实验模板 · ProtonDB CR、Issue Tracker CR 与 comments 的月度 prevalence 分析</div>
+
+  <div class="callout">
+    <b>研究目标。</b>
+    本报告以“游戏-月份”为面板单位，分析哪些游戏特征、更新、折扣、Proton 版本发布、Steam Deck 相关因素，与每月 CRs / comments 数量相关；进一步比较 ProtonDB 与 issue tracker 两个平台上的影响是否相同，并与 Lin et al. 的 Steam review prevalence 研究第 4.2 节的建模思路进行对照。
+  </div>
+
+  <div class="toc">
+    <b>目录</b>
+    <ol>
+      <li>研究背景与参考方法</li>
+      <li>研究问题与假设</li>
+      <li>数据结构与变量定义</li>
+      <li>数据预处理</li>
+      <li>诊断与模型选择</li>
+      <li>模型构建</li>
+      <li>跨平台比较与结果汇报</li>
+      <li>效度威胁</li>
+      <li>完整 R 代码</li>
+    </ol>
+  </div>
+
+  <h2>1. 研究背景与参考方法</h2>
+  <p>
+    Lin et al. 在 Steam 游戏评论研究第 4.2 节中，将“某游戏某一天收到的评论数”作为因变量，使用 mixed-effect model 分析游戏特征与每日评论数的关系。该节的核心流程包括：数据标准化、Pearson 相关性分析、冗余分析、混合效应模型构建，并将 game id、developer、studio size 作为随机效应，将 owners、players、early access、age、last update、last discount、last discount life 等作为固定效应。
+  </p>
+  <p>
+    本实验将该思路从 daily game reviews 扩展到 monthly CR / comment submissions。由于 CR 和 comments 都是计数型因变量，本报告建议以 negative binomial mixed-effects model 为主模型；若零值过多，则使用 zero-inflated negative binomial model；线性混合模型仅作为稳健性分析。
+  </p>
+
+  <h2>2. 研究问题与假设</h2>
+  <table>
+    <tr>
+      <th>RQ</th>
+      <th>问题</th>
+      <th>可检验假设</th>
+      <th>主要模型</th>
+    </tr>
+    <tr>
+      <td>RQ1</td>
+      <td>哪些因素与 ProtonDB 和 issue tracker 的月度 CR / comment prevalence 相关？</td>
+      <td>players、owners、更新、折扣、Proton release、Proton release mention、Steam Deck 时间变量与提交数量显著相关。</td>
+      <td>平台内负二项混合模型</td>
+    </tr>
+    <tr>
+      <td>RQ2</td>
+      <td>影响 CR prevalence 的因素是否与 Lin et al. 中影响 game review prevalence 的因素相似？</td>
+      <td>players / owners / discount / update 的方向可与 Lin et al. 第 4.2 节对照；CR 可能更受 Proton release 与 Steam Deck 相关变量影响。</td>
+      <td>标准化系数方向和 IRR 比较</td>
+    </tr>
+    <tr>
+      <td>RQ3</td>
+      <td>两个平台的影响因素是否相同？</td>
+      <td>ProtonDB 更受 Proton release 与 release note mention 影响；issue tracker 可能更受游戏更新和讨论活跃度影响。</td>
+      <td>platform × factors 交互模型</td>
+    </tr>
+  </table>
+
+  <h2>3. 数据结构与变量定义</h2>
+  <p>建议最终分析数据为 <code>game_month_panel.csv</code>，每行表示一个游戏在一个月份中的观测值。</p>
+
+  <table>
+    <tr>
+      <th>字段</th>
+      <th>类型</th>
+      <th>说明</th>
+      <th>角色</th>
+    </tr>
+    <tr><td>game_id</td><td>categorical</td><td>Steam game id</td><td>随机效应</td></tr>
+    <tr><td>developer</td><td>categorical</td><td>开发者</td><td>随机效应</td></tr>
+    <tr><td>studio_size</td><td>numeric</td><td>developer 开发的游戏数量</td><td>随机或固定效应，二选一</td></tr>
+    <tr><td>platform</td><td>categorical</td><td>protondb / issue_tracker</td><td>分组或交互项</td></tr>
+    <tr><td>cr_count</td><td>integer</td><td>该游戏该月 CR 数</td><td>因变量</td></tr>
+    <tr><td>comment_count</td><td>integer</td><td>该游戏该月 comments 数</td><td>因变量</td></tr>
+    <tr><td>game_type</td><td>multi-hot</td><td>游戏类型 dummy variables</td><td>固定效应</td></tr>
+    <tr><td>players</td><td>numeric</td><td>该月平均 daily players</td><td>固定效应</td></tr>
+    <tr><td>owners</td><td>numeric</td><td>该月平均 owners</td><td>固定效应</td></tr>
+    <tr><td>age</td><td>numeric</td><td>距离初始发行的天数</td><td>固定效应</td></tr>
+    <tr><td>update_number</td><td>integer</td><td>该月更新次数</td><td>固定效应</td></tr>
+    <tr><td>avg_discount</td><td>numeric</td><td>该月平均折扣百分比</td><td>固定效应</td></tr>
+    <tr><td>discount_life</td><td>numeric</td><td>该月折扣天数</td><td>固定效应</td></tr>
+    <tr><td>last_update</td><td>numeric</td><td>距离上次游戏更新的天数</td><td>固定效应</td></tr>
+    <tr><td>last_discount</td><td>numeric</td><td>最近一次折扣百分比</td><td>固定效应</td></tr>
+    <tr><td>last_discount_life</td><td>numeric</td><td>距离最近一次折扣后的天数</td><td>固定效应</td></tr>
+    <tr><td>game_size</td><td>numeric</td><td>游戏安装体积</td><td>固定效应</td></tr>
+    <tr><td>proton_release</td><td>numeric</td><td>距离最近一次 Proton stable release 的天数</td><td>固定效应</td></tr>
+    <tr><td>proton_release_number</td><td>integer</td><td>该月 Proton stable release 次数</td><td>固定效应</td></tr>
+    <tr><td>proton_release_mention_game</td><td>binary/count</td><td>该游戏是否被 Proton release notes 提到</td><td>固定效应</td></tr>
+    <tr><td>last_mention</td><td>numeric</td><td>距离该游戏上次被 release notes 提到的天数</td><td>固定效应</td></tr>
+    <tr><td>last_deck</td><td>numeric</td><td>距离 Steam Deck 发布的天数</td><td>固定效应</td></tr>
+  </table>
+
+  <h2>4. 数据预处理</h2>
+
+  <h3>4.1 加载包与读入数据</h3>
+  <pre><code># install.packages(c(
+#   "tidyverse", "lubridate", "glmmTMB", "lme4", "lmerTest",
+#   "performance", "DHARMa", "rms", "broom.mixed", "modelsummary",
+#   "ggeffects"
+# ))
+
+library(tidyverse)
+library(lubridate)
+library(glmmTMB)
+library(lme4)
+library(lmerTest)
+library(performance)
+library(DHARMa)
+library(rms)
+library(broom.mixed)
+library(modelsummary)
+library(ggeffects)
+
+panel_raw &lt;- read_csv("data/game_month_panel.csv")
+glimpse(panel_raw)</code></pre>
+
+  <h3>4.2 生成面板变量、缺失值处理与类型转换</h3>
+  <pre><code>panel &lt;- panel_raw %&gt;%
+  mutate(
+    month = floor_date(as.Date(month), unit = "month"),
+    game_id = factor(game_id),
+    developer = factor(developer),
+    platform = factor(platform, levels = c("protondb", "issue_tracker")),
+    cr_count = replace_na(cr_count, 0L),
+    comment_count = replace_na(comment_count, 0L),
+    proton_release_mention_game = as.integer(proton_release_mention_game &gt; 0)
+  ) %&gt;%
+  filter(!is.na(game_id), !is.na(month))
+
+panel &lt;- panel %&gt;%
+  group_by(game_id, platform) %&gt;%
+  filter(n() &gt;= 3) %&gt;%
+  ungroup()</code></pre>
+
+  <h3>4.3 对右偏变量做 log transform，再标准化</h3>
+  <pre><code>right_skewed &lt;- c("players", "owners", "game_size", "studio_size")
+
+panel &lt;- panel %&gt;%
+  mutate(across(all_of(right_skewed), ~ log1p(.x), .names = "log_{.col}"))
+
+numeric_predictors &lt;- c(
+  "log_players", "log_owners", "age", "update_number", "avg_discount",
+  "discount_life", "last_update", "last_discount", "last_discount_life",
+  "log_game_size", "proton_release", "proton_release_number",
+  "last_mention", "last_deck"
+)
+
+panel &lt;- panel %&gt;%
+  mutate(across(all_of(numeric_predictors), ~ as.numeric(scale(.x)), .names = "z_{.col}"))</code></pre>
+
+  <h2>5. 诊断与模型选择</h2>
+
+  <h3>5.1 相关性分析</h3>
+  <pre><code>cor_vars &lt;- panel %&gt;%
+  select(starts_with("z_")) %&gt;%
+  select(where(~ sd(.x, na.rm = TRUE) &gt; 0))
+
+cor_mat &lt;- cor(cor_vars, use = "pairwise.complete.obs", method = "pearson")
+
+high_cor &lt;- as.data.frame(as.table(cor_mat)) %&gt;%
+  filter(Var1 != Var2, abs(Freq) &gt; 0.7) %&gt;%
+  arrange(desc(abs(Freq)))
+
+print(high_cor)</code></pre>
+
+  <div class="callout warn">
+    <b>变量保留规则。</b>
+    如果两个变量 |r| &gt; 0.7，只保留理论上更接近研究问题、缺失更少、解释更直接的变量。例如 <code>discount_life</code> 与 <code>last_discount_life</code> 高相关时，不建议无条件同时进入主模型。
+  </div>
+
+  <h3>5.2 冗余分析</h3>
+  <pre><code>fixed_formula &lt;- as.formula(paste("~", paste(names(cor_vars), collapse = " + ")))
+redun_result &lt;- redun(fixed_formula, data = panel, nk = 0, r2 = 0.90)
+print(redun_result)</code></pre>
+
+  <h3>5.3 过度离散与零膨胀检查</h3>
+  <pre><code>m_pois_cr &lt;- glmmTMB(
+  cr_count ~ z_log_players + z_log_owners + z_age + z_update_number +
+    z_avg_discount + z_discount_life + z_last_update + z_last_discount +
+    z_last_discount_life + z_log_game_size + z_proton_release +
+    z_proton_release_number + proton_release_mention_game + z_last_mention +
+    z_last_deck + (1 | game_id) + (1 | developer),
+  family = poisson(),
+  data = filter(panel, platform == "protondb")
+)
+
+check_overdispersion(m_pois_cr)
+check_zeroinflation(m_pois_cr)
+
+sim_pois &lt;- simulateResiduals(m_pois_cr)
+plot(sim_pois)
+testDispersion(sim_pois)
+testZeroInflation(sim_pois)</code></pre>
+
+  <div class="callout note">
+    <b>模型选择建议。</b>
+    如果 Poisson 过度离散，主模型使用 <code>family = nbinom2()</code>；如果零值明显多于模型预期，使用 <code>ziformula = ~ 1</code> 或 <code>ziformula = ~ platform</code> 的 zero-inflated negative binomial model。
+  </div>
+
+  <h2>6. 模型构建</h2>
+
+  <h3>6.1 平台内模型：ProtonDB CR prevalence</h3>
+  <pre><code>m_nb_protondb_cr &lt;- glmmTMB(
+  cr_count ~ z_log_players + z_log_owners + z_age + z_update_number +
+    z_avg_discount + z_discount_life + z_last_update + z_last_discount +
+    z_last_discount_life + z_log_game_size + z_proton_release +
+    z_proton_release_number + proton_release_mention_game + z_last_mention +
+    z_last_deck + (1 | game_id) + (1 | developer),
+  family = nbinom2(),
+  data = filter(panel, platform == "protondb")
+)
+
+summary(m_nb_protondb_cr)
+modelsummary(m_nb_protondb_cr, exponentiate = TRUE, stars = TRUE)</code></pre>
+
+  <p>
+    负二项模型中，<code>exponentiate = TRUE</code> 后的系数为 incidence rate ratio，即 IRR。例如 IRR = 1.20 表示自变量增加 1 个标准差时，月度 CR 期望数量增加约 20%。
+  </p>
+
+  <h3>6.2 平台内模型：Issue tracker CR 与 comments prevalence</h3>
+  <pre><code>m_nb_issue_cr &lt;- update(
+  m_nb_protondb_cr,
+  data = filter(panel, platform == "issue_tracker")
+)
+
+m_nb_issue_comment &lt;- glmmTMB(
+  comment_count ~ z_log_players + z_log_owners + z_age + z_update_number +
+    z_avg_discount + z_discount_life + z_last_update + z_last_discount +
+    z_last_discount_life + z_log_game_size + z_proton_release +
+    z_proton_release_number + proton_release_mention_game + z_last_mention +
+    z_last_deck + (1 | game_id) + (1 | developer),
+  family = nbinom2(),
+  data = filter(panel, platform == "issue_tracker")
+)
+
+modelsummary(
+  list(
+    "ProtonDB CR" = m_nb_protondb_cr,
+    "Issue CR" = m_nb_issue_cr,
+    "Issue comments" = m_nb_issue_comment
+  ),
+  exponentiate = TRUE,
+  stars = TRUE
+)</code></pre>
+
+  <h3>6.3 稳健性模型：log1p + linear mixed-effects model</h3>
+  <pre><code>m_lmm_cr &lt;- lmer(
+  log1p(cr_count) ~ z_log_players + z_log_owners + z_age + z_update_number +
+    z_avg_discount + z_discount_life + z_last_update + z_last_discount +
+    z_last_discount_life + z_log_game_size + z_proton_release +
+    z_proton_release_number + proton_release_mention_game + z_last_mention +
+    z_last_deck + (1 | game_id) + (1 | developer),
+  data = filter(panel, platform == "protondb")
+)
+
+summary(m_lmm_cr)
+performance::check_model(m_lmm_cr)</code></pre>
+
+  <h2>7. 跨平台比较与结果汇报</h2>
+
+  <h3>7.1 合并平台交互模型</h3>
+  <pre><code>m_platform_interaction &lt;- glmmTMB(
+  cr_count ~ platform * (
+    z_log_players + z_log_owners + z_age + z_update_number +
+    z_avg_discount + z_discount_life + z_last_update + z_last_discount +
+    z_last_discount_life + z_log_game_size + z_proton_release +
+    z_proton_release_number + proton_release_mention_game + z_last_mention +
+    z_last_deck
+  ) + (1 | game_id) + (1 | developer),
+  family = nbinom2(),
+  data = panel
+)
+
+summary(m_platform_interaction)
+modelsummary(m_platform_interaction, exponentiate = TRUE, stars = TRUE)</code></pre>
+
+  <h3>7.2 系数图</h3>
+  <pre><code>coef_df &lt;- bind_rows(
+  tidy(m_nb_protondb_cr, effects = "fixed", conf.int = TRUE, exponentiate = TRUE) %&gt;%
+    mutate(model = "ProtonDB CR"),
+  tidy(m_nb_issue_cr, effects = "fixed", conf.int = TRUE, exponentiate = TRUE) %&gt;%
+    mutate(model = "Issue CR"),
+  tidy(m_nb_issue_comment, effects = "fixed", conf.int = TRUE, exponentiate = TRUE) %&gt;%
+    mutate(model = "Issue comments")
+) %&gt;%
+  filter(term != "(Intercept)")
+
+ggplot(coef_df, aes(x = estimate, y = reorder(term, estimate))) +
+  geom_vline(xintercept = 1, linetype = "dashed") +
+  geom_point() +
+  geom_errorbarh(aes(xmin = conf.low, xmax = conf.high), height = 0.2) +
+  facet_wrap(~ model) +
+  scale_x_log10() +
+  labs(
+    x = "Incidence Rate Ratio (log scale)",
+    y = NULL,
+    title = "Factors associated with monthly submission prevalence"
+  ) +
+  theme_minimal()</code></pre>
+
+  <h3>7.3 与 Lin et al. 第 4.2 节的对照</h3>
+  <table>
+    <tr>
+      <th>因素</th>
+      <th>Lin et al. 第 4.2 节中对 daily review prevalence 的结论</th>
+      <th>本实验中的比较方式</th>
+    </tr>
+    <tr>
+      <td>players</td>
+      <td>active players 是最强相关因素，强于 owners。</td>
+      <td>检查 <code>z_log_players</code> 是否仍是 CR / comments 的最大 IRR。</td>
+    </tr>
+    <tr>
+      <td>owners</td>
+      <td>显著，但效应弱于 players。</td>
+      <td>判断其是否反映潜在用户基数，而非即时提交行为。</td>
+    </tr>
+    <tr>
+      <td>last discount / discount life</td>
+      <td>折扣事件比更新更能带来 review surge。</td>
+      <td>判断折扣是否也刺激 CR，还是只刺激 review。</td>
+    </tr>
+    <tr>
+      <td>last update / update_number</td>
+      <td>在 review prevalence 中影响较弱。</td>
+      <td>CR / issue comments 可能更受更新影响，因为更新会改变兼容性状态。</td>
+    </tr>
+    <tr>
+      <td>Proton release / mention</td>
+      <td>Lin et al. 未研究。</td>
+      <td>本实验核心新增变量，预期 ProtonDB 效应更强。</td>
+    </tr>
+    <tr>
+      <td>Steam Deck timing</td>
+      <td>Lin et al. 未研究。</td>
+      <td>检查 Deck 发布后 CR 与 comments 是否出现结构性变化。</td>
+    </tr>
+  </table>
+
+  <h3>7.4 推荐结果表述</h3>
+  <ul>
+    <li><b>正向效应：</b>控制 game id 与 developer 的随机差异后，<code>players</code> 与月度 CR 数量呈正相关。IRR = X，95% CI [L, U]，表示月平均玩家数增加 1 个标准差时，期望 CR 数量增加约 <code>(X - 1) × 100%</code>。</li>
+    <li><b>负向效应：</b><code>last_update</code> 的 IRR 小于 1，表示距离上次游戏更新越久，月度提交越少；换言之，更新后的近期更可能触发提交。</li>
+    <li><b>跨平台差异：</b>若 <code>platformissue_tracker:z_proton_release_number</code> 显著，说明 Proton release 次数对 issue tracker 的影响不同于 ProtonDB。</li>
+  </ul>
+
+  <h2>8. 效度威胁</h2>
+  <table>
+    <tr>
+      <th>类别</th>
+      <th>威胁</th>
+      <th>缓解方式</th>
+    </tr>
+    <tr>
+      <td>内部效度</td>
+      <td>CR 数量增长可能由未观测事件驱动，例如大型补丁、社区讨论、外部新闻。</td>
+      <td>加入月份固定效应或 year-month random intercept；进行敏感性分析。</td>
+    </tr>
+    <tr>
+      <td>构念效度</td>
+      <td>CR / comment prevalence 不等于真实兼容性问题 prevalence，只表示用户提交行为。</td>
+      <td>明确称为 submission prevalence，不解释为真实 bug 发生率。</td>
+    </tr>
+    <tr>
+      <td>统计结论效度</td>
+      <td>计数数据可能过度离散、零膨胀、同一游戏内自相关。</td>
+      <td>使用 negative binomial / zero-inflated model；做 DHARMa 残差诊断。</td>
+    </tr>
+    <tr>
+      <td>外部效度</td>
+      <td>结果可能只适用于 Steam / ProtonDB 生态。</td>
+      <td>讨论中限定研究范围；与 Lin et al. 研究只做平台内类比。</td>
+    </tr>
+  </table>
+
+  <h2>9. 完整 R 代码</h2>
+  <p>下面代码可直接复制到 R 脚本中运行。</p>
+
+  <pre><code>library(tidyverse)
+library(lubridate)
+library(glmmTMB)
+library(lme4)
+library(lmerTest)
+library(performance)
+library(DHARMa)
+library(rms)
+library(broom.mixed)
+library(modelsummary)
+library(ggeffects)
+
+panel_raw &lt;- read_csv("data/game_month_panel.csv")
+
+panel &lt;- panel_raw %&gt;%
+  mutate(
+    month = floor_date(as.Date(month), unit = "month"),
+    game_id = factor(game_id),
+    developer = factor(developer),
+    platform = factor(platform, levels = c("protondb", "issue_tracker")),
+    cr_count = replace_na(cr_count, 0L),
+    comment_count = replace_na(comment_count, 0L),
+    proton_release_mention_game = as.integer(proton_release_mention_game &gt; 0)
+  ) %&gt;%
+  filter(!is.na(game_id), !is.na(month)) %&gt;%
+  group_by(game_id, platform) %&gt;%
+  filter(n() &gt;= 3) %&gt;%
+  ungroup()
+
+right_skewed &lt;- c("players", "owners", "game_size", "studio_size")
+
+panel &lt;- panel %&gt;%
+  mutate(across(all_of(right_skewed), ~ log1p(.x), .names = "log_{.col}"))
+
+numeric_predictors &lt;- c(
+  "log_players", "log_owners", "age", "update_number",
+  "avg_discount", "discount_life", "last_update",
+  "last_discount", "last_discount_life", "log_game_size",
+  "proton_release", "proton_release_number",
+  "last_mention", "last_deck"
+)
+
+panel &lt;- panel %&gt;%
+  mutate(across(all_of(numeric_predictors), ~ as.numeric(scale(.x)), .names = "z_{.col}"))
+
+cor_vars &lt;- panel %&gt;%
+  select(starts_with("z_")) %&gt;%
+  select(where(~ sd(.x, na.rm = TRUE) &gt; 0))
+
+cor_mat &lt;- cor(cor_vars, use = "pairwise.complete.obs", method = "pearson")
+
+high_cor &lt;- as.data.frame(as.table(cor_mat)) %&gt;%
+  filter(Var1 != Var2, abs(Freq) &gt; 0.7) %&gt;%
+  arrange(desc(abs(Freq)))
+
+print(high_cor)
+
+fixed_formula &lt;- as.formula(paste("~", paste(names(cor_vars), collapse = " + ")))
+redun_result &lt;- redun(fixed_formula, data = panel, nk = 0, r2 = 0.90)
+print(redun_result)
+
+m_pois_cr &lt;- glmmTMB(
+  cr_count ~ z_log_players + z_log_owners + z_age + z_update_number +
+    z_avg_discount + z_discount_life + z_last_update + z_last_discount +
+    z_last_discount_life + z_log_game_size + z_proton_release +
+    z_proton_release_number + proton_release_mention_game + z_last_mention +
+    z_last_deck + (1 | game_id) + (1 | developer),
+  family = poisson(),
+  data = filter(panel, platform == "protondb")
+)
+
+check_overdispersion(m_pois_cr)
+check_zeroinflation(m_pois_cr)
+
+sim_pois &lt;- simulateResiduals(m_pois_cr)
+plot(sim_pois)
+testDispersion(sim_pois)
+testZeroInflation(sim_pois)
+
+m_nb_protondb_cr &lt;- glmmTMB(
+  cr_count ~ z_log_players + z_log_owners + z_age + z_update_number +
+    z_avg_discount + z_discount_life + z_last_update + z_last_discount +
+    z_last_discount_life + z_log_game_size + z_proton_release +
+    z_proton_release_number + proton_release_mention_game + z_last_mention +
+    z_last_deck + (1 | game_id) + (1 | developer),
+  family = nbinom2(),
+  data = filter(panel, platform == "protondb")
+)
+
+m_nb_issue_cr &lt;- update(
+  m_nb_protondb_cr,
+  data = filter(panel, platform == "issue_tracker")
+)
+
+m_nb_issue_comment &lt;- glmmTMB(
+  comment_count ~ z_log_players + z_log_owners + z_age + z_update_number +
+    z_avg_discount + z_discount_life + z_last_update + z_last_discount +
+    z_last_discount_life + z_log_game_size + z_proton_release +
+    z_proton_release_number + proton_release_mention_game + z_last_mention +
+    z_last_deck + (1 | game_id) + (1 | developer),
+  family = nbinom2(),
+  data = filter(panel, platform == "issue_tracker")
+)
+
+modelsummary(
+  list(
+    "ProtonDB CR" = m_nb_protondb_cr,
+    "Issue CR" = m_nb_issue_cr,
+    "Issue comments" = m_nb_issue_comment
+  ),
+  exponentiate = TRUE,
+  stars = TRUE
+)
+
+m_platform_interaction &lt;- glmmTMB(
+  cr_count ~ platform * (
+    z_log_players + z_log_owners + z_age + z_update_number +
+    z_avg_discount + z_discount_life + z_last_update + z_last_discount +
+    z_last_discount_life + z_log_game_size + z_proton_release +
+    z_proton_release_number + proton_release_mention_game + z_last_mention +
+    z_last_deck
+  ) + (1 | game_id) + (1 | developer),
+  family = nbinom2(),
+  data = panel
+)
+
+modelsummary(m_platform_interaction, exponentiate = TRUE, stars = TRUE)
+
+m_lmm_cr &lt;- lmer(
+  log1p(cr_count) ~ z_log_players + z_log_owners + z_age + z_update_number +
+    z_avg_discount + z_discount_life + z_last_update + z_last_discount +
+    z_last_discount_life + z_log_game_size + z_proton_release +
+    z_proton_release_number + proton_release_mention_game + z_last_mention +
+    z_last_deck + (1 | game_id) + (1 | developer),
+  data = filter(panel, platform == "protondb")
+)
+
+summary(m_lmm_cr)
+performance::check_model(m_lmm_cr)
+
+coef_df &lt;- bind_rows(
+  tidy(m_nb_protondb_cr, effects = "fixed", conf.int = TRUE, exponentiate = TRUE) %&gt;%
+    mutate(model = "ProtonDB CR"),
+  tidy(m_nb_issue_cr, effects = "fixed", conf.int = TRUE, exponentiate = TRUE) %&gt;%
+    mutate(model = "Issue CR"),
+  tidy(m_nb_issue_comment, effects = "fixed", conf.int = TRUE, exponentiate = TRUE) %&gt;%
+    mutate(model = "Issue comments")
+) %&gt;%
+  filter(term != "(Intercept)")
+
+ggplot(coef_df, aes(x = estimate, y = reorder(term, estimate))) +
+  geom_vline(xintercept = 1, linetype = "dashed") +
+  geom_point() +
+  geom_errorbarh(aes(xmin = conf.low, xmax = conf.high), height = 0.2) +
+  facet_wrap(~ model) +
+  scale_x_log10() +
+  labs(
+    x = "Incidence Rate Ratio (log scale)",
+    y = NULL,
+    title = "Factors associated with monthly submission prevalence"
+  ) +
+  theme_minimal()</code></pre>
+
+  <h2>参考文献</h2>
+  <p class="small">
+    Lin, D., Bezemer, C.-P., Zou, Y., &amp; Hassan, A. E. (2019).
+    <i>An Empirical Study of Game Reviews on the Steam Platform</i>.
+    本报告主要参考其第 4.2 节中的 mixed-effect modeling workflow：scale、correlation analysis、redundancy analysis、mixed-effect model，以及对 players、owners、discount、update 等变量的解释。
+  </p>
+</main>
+</body>
+</html>

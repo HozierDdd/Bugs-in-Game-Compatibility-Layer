@@ -1,0 +1,1789 @@
+## Available in Proton Experimental (as of 2026-05-07):
+
+(Steam restart after downloading the first Proton 11-based update may be necessary for everything to work properly.)
+
+- All changes from Proton 11.0-beta3.
+- Now playable: Plain Sight, **Konkan Coast Pirate Solutions.**
+- **Fixed Helldivers 2 not launching after a recent game update - previously rolled out via Proton Hotfix.**
+- **Fixed Rocket League not starting with non-English locales after a recent game update.**
+- **Fixed Rocket League incorrectly detecting re-plugged DualShock 4 and DualSense controllers as an additional device.**
+- **Fixed Proton 11 regressions:**
+  - **Crimson Desert should no longer start in the corner of the screen when using GameScope.**
+  - **BattleBit Remastered is playable again.**
+  - **Assassin's Creed Shadows is playable again.**
+  - **The King of Fighters XIII Global Match should no longer leak memory.**
+  - **Resident Evil 2 should no longer have issue with using low resolution full screen mode on high resolution screens on certain setups.**
+  - **Arma 3 workshop mods should no longer unnecessarily update on each launch.**
+  - **Terraria should no longer perform worse than on Proton 10.**
+  - They Are Billions should no longer suffer from low FPS when playing the intro cinematic.
+- Fixed Crimson Desert not being playable after a recent game update.
+- Updated Xalia to [0.4.9](https://github.com/madewokherd/xalia/releases/tag/xalia-0.4.9) to fix lockups happening when interacting with the EA App.
+- Updated vkd3d-proton, dxvk, vkd3d, dxvk-nvapi and FEX to the latest development versions.
+
+## Available in Proton 11.0
+### Changelog
+
+### Proton 11.0 Beta
+
+- Now playable (previously worked with Proton Experimental):
+  - Universe Generator: The Golden Sword
+  - DCS World Steam Edition
+  - Resident Evil (1996)
+  - Resident Evil 2 (1998)
+  - Dino Crisis
+  - Dino Crisis 2
+  - From Dust
+  - Blaite
+  - Don't Die Dateless, Dummy!
+  - METAL GEAR SURVIVE
+  - Warhammer: Vermintide 2
+  - Metal Fatigue
+  - SHOGUN: Total War.
+- Newly playable:
+  - Unknown Faces
+  - Gothic 1 Classic
+  - X-Plane 12
+  - Breath of Fire IV
+  - Deadly Premonition
+- Fixed video playback in She Sees Red.
+- Fixed rendering of certain symbols with Ukranian language option in Chambers.
+- Enabled text-to-speech accessibility feature in Pentiment and Grounded.
+- Fixed voice chat in Phasmophobia lobby for desktop players.
+- Improved rendering of Rockstar Launcher popups.
+- Fixed Sea of Solitude showing black screen on Proton.
+- Fixed many EA games being unplayable after a recent EA Desktop update.
+- Added support for SteamWorks SDK 1.64.
+- Fixed Steam Overlay not working correctly with many EA games.
+- Improved emoji support in Idle Trillionaire.
+- Fixed intro video playback in Crimson Desert.
+- Fixed Rei and the Floating City not being playable with gamescope.
+- Fixed mouse movement behavior in Call of Duty 2.
+- Fixed rendering issue in launcher of DEATH STRANDING 2: ON THE BEACH.
+- Fixed a crash in HELLDIVERS 2 happening in high enemy-count missions.
+- Fixed random hangs in Killer Inn.
+- Fixed Killer Inn not launching on Steam Decks and other machines with /tmp sizes lower than 10GB.
+- Fixed Killer Inn not being able to connect to Square Enix account.
+- Fixed graphical gliches in Duck Game that happen with newer Wine Mono versions.
+- Fixed REDLauncher (e.g. as seen with Cyberpunk 2077 and The Witcher 3) taking a long time to exit.
+- Fixed Hollow Knight Beta update wrongly registering Steam Deck's Steam button as a left trigger.
+- Fixed controller hotplug not working for 8BitDo Ultimate 2C and other controllers that expose multiple HID devices.
+- Fixed Xalia intermittently failing to start when game is launched.
+- Fixed small memory leak with The King of Fighters XIII Global Match video playback.
+- Improved timezone detection.
+- Fixed video playback in 我打不过漂亮的她们.
+- Fixed lag spikes caused by Steam overlay being opened for prolonged time.
+- Fixed VR controller tracking in Microsoft Flight Simulator.
+- Improved VR support so that No Man's Sky VR mode is playable again.
+- Fixed black blocks in dialog windows created by ARC Raiders and The Finals.
+- Fixed glitchy video playback in Satisfactory.
+- Fixed Rec Room not being playable after a recent game update.
+- Fixed The King of Fighters XIII Global Match freezing when playing videos from the gallery.
+- Fixed intro video not looping in Blazblue Centralfiction.
+- Made more games using MonoGame playable.
+- Improved support for Kodi media player.
+- Added System Voice support for multiple languages in Phasmophobia.
+- Fixed KDE window maximization support.
+- Fixed Brighter Shores window resizing support.
+- Improved Space Engineers dual monitor support
+- Fixed scaling issue with Arma: Reforger when changing window modes.
+- Fixed Dungeon Siege tools showing up at character's feet.
+- Improved focus loss behavior with RoBoRumble.
+- Fixed rendering issue in Hellsinker. launcher.
+- Fixed stutter from keyboard input in Titanfall 2.
+- Fixed audio playback when playing intro videos in BIRDCAGE.
+- Fixed hang after METAL GEAR SOLID 2: Sons of Liberty end credits.
+- Fixed Disintegration getting stuck on the first loading screen.
+- Fixed CHRONO TRIGGER flickering in windowed mode with certain resolutions when using Gamescope.
+- RAGE no longer has focus issues when Alt-Tabbing on KDE Wayland.
+- The Elder Scrolls IV: Oblivion Game of the Year Edition (2009) no longer has problems minimizing after Alt-Tabbing.
+- Resident Evil 2 should no longer have issues when changing resolutions on GNOME.
+- Call of Duty: WWII should no longer fail to render properly in fullscreen native resolution on setups with dual monitors.
+- Age of Empires II: Definitive Edition no longer has issues with keyboard registration after refocusing the game.
+- Updated Xalia to [0.4.9](https://github.com/madewokherd/xalia/releases/tag/xalia-0.4.9):
+    - Added controller support for the MC Visual C++ 2010 redistributable installer.
+    - Improved gamepad binding support for Graze Counter.
+    - Added controller support for launchers of the following games: Red Faction®: Armageddon™, Final Fantasy X/X-2 HD Remaster, Sonic the Hedgehog 4 - Episode II, Hellsinker., Disney Bolt, STAR WARS™ Starfighter™.
+    - Fixed Xalia wrongly selecting option from unfocused tabs in Rayman: Raving Rabbids.
+    - Added controller support for DirectX Runtime Components installer when launching BioShock for the first time.
+    - Added controller support for launchers of the following games: Rocket Knight, Puddle, Zero Escape: The Nonary Games, Metal Slug XX, Mortal Kombat Komplete Edition, Disney Epic Mickey 2: The Power of Two, Batman: Arkham Asylum GOTY, LocoCycle, Ys SEVEN, Resident Evil (1996), Resident Evil 2 (1998), Resident Evil 3 Nemesis (1999), Dino Crisis, Dino Crisis 2.
+- Rebased on top of [Wine 11.0](https://gitlab.winehq.org/wine/wine/-/releases/wine-11.0).
+- Added FEX-[2604](https://fex-emu.com/FEX-2604/) for ARM64EC builds.
+- Updated vkd3d to [vkd3d-1.19](https://gitlab.winehq.org/wine/vkd3d/-/releases/vkd3d-1.19)-139-g[30b93dcea8b0](https://gitlab.winehq.org/wine/vkd3d/-/commit/30b93dcea8b0).
+- Updated dxvk to v2.7.1-467-g[83e503b4ae6d](https://github.com/doitsujin/dxvk/commit/83e503b4ae6d) from [Proton 11 support branch](https://github.com/doitsujin/dxvk/tree/proton-11).
+- Updated dxvk-nvapi to [v0.9.1](https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.9.1).
+- Updated Wine Mono to [11.0.0](https://gitlab.winehq.org/mono/wine-mono/-/releases/wine-mono-11.0.0).
+- Updated vkd3d-proton to [proton-20260410](https://github.com/HansKristian-Work/vkd3d-proton/tree/proton-20260410).
+
+## Available in Proton 10.0
+### Changelog
+
+### Proton 10.0-4
+
+- Now playable (previously worked with Proton Experimental):
+  - Surgeon Simulator: Experience Reality
+  - Changeling VR
+  - Summoners War: RUSH
+  - Quantum Threshold
+  - REACH
+  - Fellowship
+  - Metal Slug: Awakening
+  - The Obsessive Shadow
+  - Drop Dead: The Cabin
+  - Zero Caliber 2 Remastered
+  - Lost Memories 3 Side Stories
+  - Death by Scrolling
+  - Stellar Reach
+  - Girls' Frontline
+  - Modules
+  - Distant Worlds 2
+  - 懒人修仙传2
+  - Ring Runner: Flight of the Sages
+  - Chronology
+- Fixed Agatha Christie: Evil Under the Sun not being playable in French.
+- Fixed Far Cry 5 showing old GPU drivers warning with AMD gpus.
+- Fixed Age of Empires IV Anniversary Edition showing GPU driver warning with Intel gpus.
+- Fixed music playback in Transcendence.
+- Fixed Mystery Manor: Hidden Objects not displaying anything on gamescope.
+- Fixed HDR in Far Cry 5 on OLED Steam Decks.
+- Fixed Crystal of Atlan crashing on desktops.
+- Fixed broken account switching in Crystal of Atlan with gamescope.
+- Fixed Adventures Of Fluzz wrongly displaying "No Device" window which made game unplayable with gamescope.
+- Fixed Marvel Rivals crashing in benchmark with AMD GPUs.
+- Fixed Assassin's Creed Shadows and Wild Assault incorrectly warning about being installed on a HDD.
+- Fixed long wait on every launch of many Xbox Game Studios games including Avowed, Grounded 2, Indiana Jones and the Great Circle, and The Outer Worlds 2. 
+- Fixed Dragon's Dogma Dark Arisen crashing on system with long Steam Library path.
+- Fixed in-game browser in Figmin XR.
+- Fixed server / lobby listing in Men of War II.
+- Fixed Ara: History Untold displaying GPU error.
+- Fixed Ultimate Marvel vs Capcom 3 crashing with monitors that support many resolutions.
+- Fixed Arc Riders stutter on systems with non-Nvidia GPUs due to the game seeing and trying to continually load nvapi.
+- Improved support for Sony controllers in Tekken 8.
+- Fixed haptics support for DualSense controllers which should now work in most games that support it.
+- Fixed audio playback in Rocket Jockey.
+- Fixed For Honor not starting on non-Steam Decks.
+- Fixed store in For Honor not working on desktops.
+- Fixed in-game screenshot feature in Mohrta.
+- Fixed Cladun X3 hanging on exit.
+- Fixed Rocket Jockey not being playable on some installations.
+- Fixed Xalia not interacting correctly with dialogs produced by ARC Raiders.
+- Fixed Atelier Resleriana [JP] not working on certain setups.
+- Added support for speech recognition in Phasmophobia.
+- Fixed video playback in Okayunyumu! and AQUARIUM.
+- Fixed Assassin's Creed Shadows not being playable after a recent game update.
+- Fixed language selection not working in Black Squad's launcher.
+- Fixed voice line playback in Rigid Force Alpha.
+- Fixed 7.1 audio channel mapping in Ghost of Tsushima DIRECTOR'S CUT, Clair Obscur: Expedition 33 and potentially many other games.
+- Fixed horizontal mouse scroll being incorrectly registered as back / forward buttons.
+- Fixed Thai font rendering in Warframe's launcher.
+- Fixed Revolver360 Re:Actor crashing on keyboard input.
+- Fixed text input in Secrets of Grindea.
+- Fixed video playback in Conquer the World.
+- Fixed a crash in Marvin's Mittens after the cutscenes.
+- Fixed Sword of the Stars: The Pit crashing when clicking an enemy.
+- Fixed Lemma randomly crashing.
+- Fixed Ukrainian and Russian font rendering in Trainatic.
+- Fixed Proton 10 regressions:
+  - Video should play correctly again in King of Bones and Indivisible.
+  - Sackboy: A Big Adventure should no longer display a series of errors on fresh prefix.
+  - GodsArena Online is now registering touch/mouse input correctly.
+  - Lost Planet: Extreme Condition is playable again.
+  - Killer Instinct should no longer crash at the end of match.
+  - Workshop integration in The Conquest of Go should work again.
+  - CHRONO TRIGGER should no longer flicker in fullscreen mode.
+  - Camera panning should work as expected in Dungeons & Dragons Online.
+  - Blood Rush should no longer crash with new proton prefixes.
+- Added support for SteamWorks SDK 1.63.
+- Updated Wine Mono to [10.4.1](https://gitlab.winehq.org/mono/wine-mono/-/releases/wine-mono-10.4.1).
+- Updated vkd3d-proton to [v3.0b](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v3.0b).
+- Updated vkd3d to [1.18](https://gitlab.winehq.org/wine/vkd3d/-/releases/vkd3d-1.18).
+
+### Proton 10.0-3
+
+- Now playable:
+  - Mary Skelter: Nightmares
+  - Fairy Fencer F Advent Dark Force
+  - Far Horizon
+  - Grim Fandango Remastered (AMD & Intel GPUs)
+  - The Crew Motorfest
+  - Viking Rise: Valhalla
+  - Starlight Re:Volver
+  - Gemstones
+  - Act of War: Direct Action (with AMD GPUs)
+  - SSR Wives: The Murder Of My Winter Crush Demo
+  - Firefly Village
+  - The Riftbreaker: Multiplayer Playtest
+  - Ninja Reflex: Steamworks Edition
+  - Arken Age
+- Mitigated OpenSSL-related issues in Agony UNRATED that happen on newer Intel CPUs.
+- Fixed The Quarry not being playable on OLED Steam Decks.
+- Fixed DayZ tools failing to pack a mod.
+- Fixed intro video in Warhammer 40,000: Dakka Squadron - Flyboyz Edition having no audio.
+- Fixed DualSense controllers registering spurious touchpad clicks over Bluetooth.
+- Improved AVPro player compatibility in VRChat: fixed distortion, seeking, improved performance - less freezes and video playback should work in more cases than before.
+- Fixed keybindings not working in Hunt: Showdown 1896 when using Programmer Dvorak layout.
+- Fixed METAL GEAR SOLID V: THE PHANTOM PAIN having crackling during cutscenes on Steam Deck.
+- Fixed Chinese font rendering in Warage.
+- Fixed screen reader not working in Diablo 4 - requires download of Proton Voice Files.
+- Fixed sending feedback not working in Cosmoteer: Starship Architect & Commander.
+- Fixed a recent update causing Epic Games Store not launching under Proton.
+- Fixed Warrior Maiden Lecia and the Lost Fortress hanging on exit.
+- Fixed long loading times in God Eater Resurrection and God Eater 2 Rage Burst.
+- Fixed Crysis 3 getting stuck on an old EA Login page.
+- Fixed The Finals kicking players after a game update.
+- Fixed dropdown menus closing immediately after opening them in Doom Eternal.
+- Improved performance in Rocket League and Unreal Tournament 3.
+- Fixed short freezes happening every 5 min in Deadlock.
+- Fixed Dune: Awakening wrongly displaying warning about hard drive below minimum requirements.
+- Fixed Dune: Awakening displaying warning about graphics drivers with AMD GPUs.
+- Fixed language selection not working in Black Squad's launcher.
+- Fixed Sony controllers not working in God of War: Ragnarok on Steam Deck in handheld mode.
+- Fixed blue tint in Resident Evil Village videos.
+- Fixed video playback in The Heart of Influencer and Superscout.
+- Fixed Disgaea PC not displaying controller icons correctly.
+- Fixed cutscene pausing / skipping in Dungeon Lords Steam Edition.
+- Fixed Spark & Kling crashing when idling on main menu.
+- Fixed Avatar: Frontiers of Pandora complaining about an HDD when installed on a SSD.
+- Fixed Tales Of Berseria crashing with certain paths used for the location of the Steam Library.
+- Fixed Sea Power not playing background music.
+- Fixed rendering issues in VR Slots 3D.
+- Fixed Teardown hanging when publishing a mod to the workshop.
+- Fixed internet radio in Motor Town: Behind The Wheel.
+- Fixed broken CD key entry field in Age of Empires III.
+- Fixed Counter-Strike rarely crashing when connecting to matches.
+- Fixed Alone in the Dark (2008), DiRT, Disney Universe, Hard Truck Apocalypse: Rise of Clans / Ex Machina: Meridian 113, Dino D-Day and Prototype 2 not running on CPU with high core count.
+- Fixed drag and drop not working correctly in new Unity version for games including Timberborn and Master of Command Demo.
+- Fixed Proton 10 regressions:
+  - Quake IV and DOOM 3 should no longer have issues with mouse input in full screen mode.
+  - Marvin's Mittens sets up correctly on first launch again.
+  - Unplugging a controller should no longer break keyboard input in INSIDE.
+  - Videos in Resident Evil 7 Biohazard should play at a normal speed again on Steam Decks.
+  - Crashlands 2 intro video is no longer distorted.
+  - METAL GEAR SOLID V: THE PHANTOM PAIN no longer crashes at the start of Chapter 1 video.
+  - Assetto Corsa EVO should no longer reset modified autocenter strength.
+  - LEGO Indiana Jones: The Original Adventures should correctly load controller mapping when using Steam Input.
+  - Malody V is playable again.
+  - Rockstar Launcher's birthday date selection dropdowns work again.
+  - Resident Evil Village no longer freezes after cutscenes.
+  - Alien: Rogue Incursion VR is playable again.
+  - Ride 2 should no longer randomly freeze.
+- Updated dxvk to [v2.6.2](https://github.com/doitsujin/dxvk/releases/tag/v2.6.2)-23-g[3cb664e12609](https://github.com/doitsujin/dxvk/commits/3cb664e12609).
+- Updated vkd3d-proton to [v2.14.1](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.14.1)-472-g[32bffb836cb0](https://github.com/HansKristian-Work/vkd3d-proton/commits/32bffb836cb0).
+- Updated dxvk-nvapi to [v0.9.0](https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.9.0)-10-g[0ea231734d60](https://github.com/jp7677/dxvk-nvapi/commits/0ea231734d60).
+- Updated vkd3d to [vkd3d-1.17](https://gitlab.winehq.org/wine/vkd3d/-/releases/vkd3d-1.17)-61-g[979d7e4b85f2](https://gitlab.winehq.org/wine/vkd3d/-/commits/979d7e4b85f2).
+
+### Proton 10.0-2
+
+- Now playable: Stardust Skate, STAR OCEAN THE DIVINE FORCE, Champions of Anteria, IL-2 Sturmovik Cliffs of Dover, Click&Fight, Tunnet, WRC Generations, Post Mortem.
+- Fixed Proton 10 regressions:
+  - Warframe launcher should no longer have issues displaying titlebar elements.
+  - Enshrouded no longer crashes when refreshing server list.
+  - VRChat video playback issue that affected some instances is fixed.
+  - The Sims 2 Legacy Collection is playable again.
+  - Atelier Yumia: The Alchemist of Memories & the Envisioned Land is playable again.
+  - Forza Horizon 4 and 5 no longer require focus change to not have black screen.
+  - Oddworld: Stranger's Wrath HD setting launcher renders correctly again.
+  - OpenVR is working with 32 bit games again.
+  - Digseum is playable again.
+  - The Eminence in Shadow: Master of Garden, VRChat, VIDEO GAME and more should behave better with regards to window focus.
+- Fixed The First Berserker: Khazan wrongly displaying a warning about the drive the game is installed on.
+- Fixed The First Berserker: Khazan showing a warning about outdated OS/GPU drivers version.
+- Fixed scaling in Imperiums: Greek Wars in fullscreen mode.
+- Fixed games not starting when upgrading from a removed Proton installation.
+- Fixed The Finals showing EOS EAC updater window twice on start.
+- Fixed boss intro videos playback in River City Girls.
+- Fixed Black Desert launcher rendering all black on Nvidia + Wayland setups.
+- Mitigated OpenSSL-related issues with many games including Claybook, Gravel, SMITE that happen on newer Intel CPUs.
+- Enabled nvapi for The Last Of Us 2.
+- Improved rendering of Alpha Protocol's launcher.
+- Improved situation with Once Human having bad stutter on certain setups.
+- Fixed Risk of Rain 2 and The Last of Us Part 2 Remastered not working on certains setups.
+- Fixed Monster Jam Showdown not being able to link Epic Games account.
+- Fixed Astroneer not being able to connect to an encrypted dedicated server.
+- Fixed transfer account option in The Eminence in Shadow: Master of Garden.
+- Fixed DLSS frame generation options being disabled in The Elder Scrolls IV: Oblivion Remastered.
+- Fixed radio not playing music in Fallout 3: GOTY.
+- Fixed game lag spikes in Mary Skelter Finale, Death end re;Quest, Death end re;Quest 2, Megadimension Neptunia VIIR and Dragon Star Varnir.
+- Fixed in-game screen capture in The Sims 2 Legacy Collection.
+- Fixed querying graphics settings in Marvel Rivals.
+- Fixed Tiny Troopers Global Ops, Zombie Derby: Pixel Survival and possibly more having focus issues when using Steam Overlay on Steam Deck.
+- Fixed The Elder Scrolls V: Skyrim Special Edition having wrong scaling with high DPI.
+- Fixed Tower Unite crashing in VR mode.
+- Fixed built-in web browser in Banter.
+- Fixed The Witcher 3: Wild Hunt having issue with Nvidia HairWorks - hair should no longer disappear.
+- Fixed Ghostbusters: The Video Game Remastered showing green line at the bottom of video in the main menu.
+- Fixed beginning of the Planet of the Apes: Last Frontier being a black screen.
+- Fixed the new Final Fantasy XIV Online launcher not working.
+- Fixed Xalia not being able to fully progress through prerequisite installation in MultiVersus using only the controller.
+- Fixed a crash late in game in Crysis 2 Remastered.
+- Fixed Defiance failing to connect to the game.
+- Fixed touch input not working correctly in menus of No Man's Sky.
+- Fixed controller support in MySims Kingdom.
+- Fixed Space Engineers not registering trigger input with controllers.
+- Fixed Grand Theft Auto V Enhanced showing driver version warning with AMD GPUs.
+- Fixed screen darkening in e-Racer.
+- Fixed some games using DirectStorage not working with Intel GPUs.
+- Improved force feedback support in Assetto Corsa EVO.
+- Fixed Dead Island 2 not detecting Epic Online Services and not allowing cross-play.
+- Fixed controller detection issues with devices that do not have axes, only buttons.
+- Fixed DOOM (2016) having issues with window decorations on certain setups.
+- Fixed VRChat not being able to Alt+F4 out of game after playing some videos using Unity Player.
+- Fixed VRChat crashing on some setups when h264 playback is attempted.
+- Fixed Dune: Awakening DLSS support.
+- Disabled interacting via Xalia with the input rebinding section in Unity3D game launchers to prevent it from wrongly recognizing controller inputs used for navigation as the desired binding.
+- Enabled [Xalia](https://github.com/madewokherd/xalia/) by default instead of only for selected titles. It should work with most launchers using builtin Win32 controls.
+- Disabled Xalia for Rockstar Launcher - aftar a recent update it got native contoller support which resulted in registering events twice.
+- Updated Wine-Mono to [10.0.0](https://gitlab.winehq.org/mono/wine-mono/-/releases/wine-mono-10.0.0).
+- Updated Xalia to [0.4.6](https://github.com/madewokherd/xalia/releases/tag/xalia-0.4.6).
+- Updated vkd3d to [vkd3d-1.16](https://gitlab.winehq.org/wine/vkd3d/-/releases/vkd3d-1.16)-194-g[7c0da1747a89](https://gitlab.winehq.org/wine/vkd3d/-/commits/7c0da1747a89)
+- Updated vkd3d-proton to [v2.14.1](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.14.1)-286-g[2b766f7639cf](https://github.com/HansKristian-Work/vkd3d-proton/commits/2b766f7639cf)
+- Updated dxvk to [v2.6.2](https://github.com/doitsujin/dxvk/releases/tag/v2.6.2)-5-[g6873b37c6f90](https://github.com/doitsujin/dxvk/commits/g6873b37c6f90)
+- Updated dxvk-nvapi to [v0.9.0](https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.9.0)-8-g[5fa4b3c7cddc](https://github.com/jp7677/dxvk-nvapi/commits/5fa4b3c7cddc)
+
+###### 10.0-1:
+
+- Now playable (previously worked with Proton Experimental):
+  - Batman: Arkham Asylum Game of the Year Edition
+  - Black Ink
+  - Factorio
+  - Ignited Entry
+  - Microsoft Flight Simulator 2024
+  - MySims Kingdom
+  - No Man's Sky in VR mode (regressed after a game update)
+  - Rising Storm 2: Vietnam
+  - Sniper Elite: Nazi Zombie Army
+  - Soul Interface
+  - THE KING OF FIGHTERS XIII GLOBAL MATCH
+  - VIDEO GAME (924310)
+  - Willful
+  - X Rebirth VR Edition
+- Fixed / improved video playback in:
+  - Agony Unrated
+  - All-Star Fruit Racing
+  - Audiosurf
+  - Bloodstained: Ritual of the Night
+  - Gal*Gun 2
+  - Greedfall
+  - Indigo Park: Chapter 1
+  - Omensight
+  - SOULCALIBUR VI
+  - TELEFORUM
+  - Tintin Reporter - Cigars of the Pharaoh
+  - Zero Escape: The Nonary Games
+- Reinstated hack from Proton 7 that helped with SpellForce: Platinum Edition, NieR: Automata, Sekiro: Shadows Die Twice and DARK SOULS III crashing with monitors exposing too many possible resolutions.
+- Improved performance in Dirt Rally 2.0.
+- Fixed Final Fantasy XVI demo displaying driver warning on launch.
+- Fixed Grand Theft Auto V Enhanced launcher hang and the game crashing on launch as well as not being possible to uninstall it via Steam.
+- Fixed XCOM 2 erroring out when trying to connect to my2K.
+- Fixed network issues in Hunt: Showdown 1896 after a game update.
+- Fixed Rivals of Aether II, Stalker 2, The Axis Unseen, Beyond Handwell, Marvel Rivals, The Finals, Creatures of Ava crashing with Intel GPUs.
+- Added support for game mods that load via custom dinput8.dll.
+- Fixed input not working with Studio System : Guardian Angel.
+- Fixed cursor not working in the menu of Amerzone: The Explorer's Legacy (1999).
+- Fixed Deviator crashing with AMD GPUs shortly after launching.
+- Fixed Warhammer: Vermintide 2 showing prerequisite installer on every launch.
+- Re-enabled nvapi for Neverwinter, Star Trek Online and Champions Online.
+- Fixed full screen mode in The Bright Star Of Seraph-Katis.
+- Improved situation with audio crackling in Assassin’s Creed Shadows on Steam Deck.
+- Improved reliability of Proton Prefix creation.
+- Fixed Supermarket Together not detecting DLC on some systems.
+- Fixed extras video playback in Shadow Warrior 2.
+- Fixed VR mode in Evochron Legacy SE.
+- Fixed non-Steam Battle.net installations.
+- Fixed Sea of Thieves Xbox login window not working.
+- Fixed graphics scaling in Master Magistrate.
+- Fixed interface elements in Disney Epic Mickey 2: The Power of Two showing as solid green color.
+- Included initial work on speech synthesis - requires manual installation of Proton Voice Files (steam://install/3086180), confirmed to work with The Thief, the Witch, the Toad, and the Mushroom.
+- Fixed video playback in Twisted Sails.
+- Improved video playback in Max: The Curse of Brotherhood.
+- Added hack to allow Steam Overlay to function with EAC EOS games.
+- Fixed CPU topology override issues on machines with more than 32 logical cores.
+- Fixed Proton sometimes creating an empty window when running via XWayland.
+- Fixed Marvel Rivals displaying OS/drivers out of date warning.
+- Fixed desync issue with 60FPS AVPro videos in VRChat.
+- Fixed intermittent freezing in Spirit Hunter: NG.
+- Fixed The Finals crashing after a recent game update.
+- Improved Ubisoft Connect behavior when switching between Proton versions.
+- Improved video playback in Locoland on NVIDIA GPUs.
+- Improved video playback in Microsoft Flight Simulator.
+- Fixed Tiny Cauldron freezing when selecting some resolutions.
+- Fixed various crashes affecting Final Fantasy XIV launcher.
+- Fixed broken account creation in Final Fantasy XIV.
+- Fixed Nioh: Complete Edition hanging on a black screen when skipping videos.
+- Fixed Killsquad freezing on character selection screen.
+- Fixed Dread X Collection 3 Bete Grise minigame.
+- Fixed video playback in ATRI - My Dear Moments-.
+- Fixed Dark and Darker not being playable after a game update.
+- Updated libvkd3d-shader to [vkd3d-1.15](https://gitlab.winehq.org/wine/vkd3d/-/releases/vkd3d-1.15)-179-g[21e08955d3c3](https://gitlab.winehq.org/wine/vkd3d/-/commits/21e08955d3c3).
+- Updated dxvk to [v2.6.1](https://github.com/doitsujin/dxvk/releases/tag/v2.6.1).
+- Updated dxvk-nvapi to [v0.9.0](https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.9.0).
+- Updated vkd3d-proton to [v2.14.1](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.14.1)-153-g[a7159b80e165](https://github.com/HansKristian-Work/vkd3d-proton/commits/a7159b80e165).
+- Updated wine-mono to [9.4.0](https://gitlab.winehq.org/mono/wine-mono/-/releases/wine-mono-9.4.0).
+- Updated Xalia to [0.4.5](https://github.com/madewokherd/xalia/releases/tag/xalia-0.4.5) and enabled it for The TakeOver, Floppy Heroes, Whiskered Away, Himno, Survirus, The Adventure of Ninomae Ina'nis.
+- Rebased Wine on top of [wine-10.0](https://gitlab.winehq.org/wine/wine/-/releases/wine-10.0).
+- Added Steamworks SDK 1.62 support.
+
+## Available in Proton 9.0
+
+###### 9.0-4:
+
+- Now playable:
+  - APB Reloaded
+  - Conqueror's Blade
+  - Cube Hero Odyssey
+  - Disgaea 4 Complete+
+  - Hard Chip Demo
+  - ScarQuest
+  - Sniper Elite: Nazi Zombie Army 2 (AMD GPUs only)
+  - Test Drive Unlimited Solar Crown
+  - Total War: SHOGUN 2
+  - Warhammer 40k: Space Marine 2 (requires disabled Steam Overlay)
+  - Welcome to Dustown
+- Fixed Hell Let Loose crashing when joining a server after a recent game update.
+- Fixed Final Fantasy XVI having low FPS due to excessive DLL lookup.
+- Fixed Final Fantasy XVI not showing displays in settings.
+- Fixed keyboard input in Rivals of Aether II.
+- Fixed Chromacell crashing on launch on AMD GPUs.
+- Added support for NVIDIA Optical Flow API and DLSS 3 Frame Generation.
+- Fixed Dragon Age: The Veilguard displaying a warning about being installed on a spinning drive.
+- Fixed Crazy Taxi randomly crashing when starting a game.
+- Added a warning in Proton logs when running on system with low [max_map_count](https://github.com/ValveSoftware/Proton/wiki/Requirements#increasing-the-maximum-number-of-memory-map-areas-a-process-may-have).
+- Fixed single player game not working in Star Wars - Jedi Knight II: Jedi Outcast.
+- Fixed Hard Reset Redux and Shadow Warrior crashing with AMD GPUs.
+- Fixed Skull and Bones not exiting cleanly on systems with Nvidia GPUs.
+- Fixed Dark and Darker not being playable after a game update.
+- Fixed EA Desktop App setup not being configurable.
+- Improved video playback in March of Empires and Devil May Cry 3 Special Edition.
+- Fixed trigger buttons not registering in I Expect You To Die.
+- Fixed Proton 9.0 regressions:
+  - Multiplayer works again in Hotshot Racing.
+  - Fablecraft is playable again.
+  - I Expect You To Die is playable again.
+  - Star Wars: Knights of the Old Republic no longer launches to a black screen when in fullscreen mode.
+  - Marlow Briggs and the Mask of Death is playable again.
+  - B-17 Flying Fortress - The Mighty 8th: Redux is playable again.
+  - Games now launch on the correct screen on setups with multiple monitors connected to multiple GPUs.
+- Fixed Yakuza 3 Remastered and Yakuza 4 Remastered not being playable on some setups.
+- Fixed Yakuza 6 crash when trying playing Puyo Puyo mini-game.
+- Fixed Knowledge, or know Lady crashing about 10 minutes after launch.
+- Fixed multiplayer in SpellForce 3: Versus Edition.
+- Fixed font rendering in SpellForce 3: Versus Edition.
+- Fixed mod support in DOOM Eternal.
+- Fixed Mary Skelter 2 stuttering on launch.
+- Fixed The Finals not starting with non-English locale.
+- Fixed Traditional Chinese font rendering in Mashiroiro Symphony HD -Sana Edition-.
+- Fixed Korean input in Diablo IV.
+- Fixed newer Unreal Engine games trying to install redistributables on each launch.
+- Fixed Astral Ascent hanging when unplugging a controller.
+- Fixed playback of videos in Max: The Curse of Brotherhood.
+- Fixed controller support in Clash for Crust.
+- Fixed FPS drops in Red Dead Redemption 2 when keys are pressed.
+- Fixed Hunt: Showdown 1896 failing to start after a recent game update.
+- Fixed full screen in Dog Brew on Steam Deck.
+- Fixed support for BattleServer in Age of Empires II: Definitive Edition.
+- Fixed voice chat in For Honor and UNO.
+- Fixed Proton not setting priorities correctly for new threads.
+- Fixed Unreal Engine Crash Report Client not launching properly.
+- Improved loading times in Pharaoh Rebirth+.
+- Fixed missing icons in Age of Mythology: Retold.
+- Fixed video playback in March of Empires.
+- Improved performance in Blood Strike.
+- Enabled Xalia for MultiVersus - prerequisite installation can now be done with a controller.
+- Updated Xalia to [0.4.4](https://github.com/madewokherd/xalia/releases/tag/xalia-0.4.4) and enabled it for Trackmania United Forever, Trackmania Nations Forever, Oddworld: Stranger's Wrath HD, Fallout: New Vegas, and WARRIORS ALL-STARS.
+- Updated Wine Mono to [9.3.1](https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-9.3.1).
+- Updated dxvk to [v2.5.1](https://github.com/doitsujin/dxvk/releases/tag/v2.5.1) + [a regression fix](https://github.com/doitsujin/dxvk/commit/d96fa54080320e9b63227e76124ffa50a927ced2).
+- Updated dxvk-nvapi to [v0.7.1](https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.7.1)-94-g[afb59a8e841b](https://github.com/jp7677/dxvk-nvapi/commits/afb59a8e841b0ad561250327eb6a370b925c5f03/).
+- Updated vkd3d-proton to [v2.13-241](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.13)-g[4fd7d3ab3d35](https://github.com/HansKristian-Work/vkd3d-proton/commits/4fd7d3ab3d35/).
+- Updated vkd3d-shader to [vkd3d-1.14](https://gitlab.winehq.org/wine/vkd3d/-/releases/vkd3d-1.14) + [a hack](https://github.com/ValveSoftware/vkd3d/commit/function-overload-hack-2024-11-21).
+
+###### 9.0-3:
+
+- Now playable:
+  - Avatar: Frontiers of Pandora (desktop only)
+  - Ball at Work: The Ultimate Speedrun Platformer!
+  - Banyu Lintar Angin
+  - Dinner with an Owl,
+  - Farlight 84
+  - Flatout 3
+  - KinitoPET
+  - Owl Observatory Demo
+  - Sleeping Dogs: Definitive Edition
+  - Super
+  - Sword of Convallaria
+  - Syberia
+  - THE KING OF FIGHTERS XIII STEAM EDITION
+  - To Pixelia Demo
+  - Unity of Command II
+  - Zaccaria Pinball
+- Fixed 9.0 regressions:
+  - Alan Wake's American Nightmare's DLC is playable again.
+  - Bionic Commando is playable again.
+  - Controllers work again in Sonic Forces.
+  - GRID Autosport and GRID 2 are playable again.
+  - Noita mods no longer fail to update.
+  - Warhammer 40,000: Darktide no longer freezes randomly when processing shaders for the cache.
+- Improved language support for Guild Wars 2.
+- Enable controller support in the launchers of Fallout 3 (standard and GOTY edition) via [Xalia](https://github.com/madewokherd/xalia/tree/main).
+- Fixed cutscene playback in Iragon games.
+- Fixed Yakuza Kiwami not working on certain setups.
+- Added support for D3D12 in OpenXR.
+- Fixed AVPro playback in VRChat.
+- Fixed video quality of live streamed episodes in Quantum Break.
+- Fixed artifacts in Yakuza 4 Remastered opening video.
+- Improved support for workshop levels in Zeepkist.
+- Improved loading time of Arcanum.
+- Fixed Aimlabs having broken News section.
+- Fixed RAID: World War II randomly hanging on start.
+- Fixed Strip Fighter ZERO not starting on some setups.
+- Fixed Undecember not being playable after a recent game update.
+- Fixed missing cursor in IL-2 Sturmovik: Cliffs of Dover Blitz Edition.
+- Fixed a crash in Starfield: Creation Kit.
+- Fixed text not being displayed during the installation of EA Desktop launcher.
+- Fixed "Customize Setup" not working during EA Launcher installation.
+- Fixed Halo Infinite rendering using a weird resolution on a Steam Deck.
+- Improved microphone support in Squad.
+- Fixed License Agreement not displaying correctly in Romance of the Three Kingdoms [JP].
+- Fixed FINAL FANTASY XII THE ZODIAC AGE displaying white screen on launch on Steam Deck OLED.
+- Fixed microphone not working with Helldivers 2 after a recent game update.
+- Fixed freezes in Dinogen Online.
+- Fixed Dinogen Online crashing randomly on start.
+- Fixed SCP Secret Laboratory crashing after a recent game update.
+- Fixed Burnout Paradise Remastered crashing when an input video device is plugged in.
+- Improved memory usage of Burnout Paradise Remastered and lowered the chances of crashing.
+- Fixed font rendering in Insanely Twisted Shadow Planet.
+- Fixed Once Human crashing when trying to join a server or opening the EULA on fresh Proton prefixes.
+- Fixed Ubisoft Connect requiring a manual log in with a new prefix with Far Cry 3 Blood Dragon (some other games may still suffer from that similarly as on Windows with a clean Ubisoft Connect install).
+- Fixed The Finals not being playable after a recent game update.
+- Fixed video playback in Spirit Hunter: NG.
+- Improved memory usage when playing videos in 32bit games.
+- Fixed font rendering in Shady Brook - A Dark Mystery Text Adventure.
+- Fixed Steam Deck users being forced to use MTL145 nickname in Project Kunai.
+- Fixed connecting with Unreal Insights to games running under Proton.
+- Added a warning that appears in Proton Log for systems that have low file descriptor limit (e.g. non-systemd distributions).
+- Fixed video playback in One Finger Death Punch.
+- Fixed Hell Yeah! Wrath of the Dead Rabbit crashing when reaching first boss.
+- Updated Wine Mono to [9.2.0](https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-9.2.0).
+- Updated vkd3d-proton to [v2.13](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.13)-64-g[47840a4bb614](https://github.com/HansKristian-Work/vkd3d-proton/commits/47840a4bb614).
+- Updated dxvk to [v2.4](https://github.com/doitsujin/dxvk/releases/tag/v2.4)-40-g[d0ea5a4a87c9](https://github.com/doitsujin/dxvk/commits/d0ea5a4a87c9).
+- Updated dxvk-nvapi to [v0.7.1](https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.7.1)-19-g[bd542144518d](https://github.com/jp7677/dxvk-nvapi/commits/bd542144518d).
+
+###### 9.0-2:
+
+- Previously playable only with Proton Experimental:
+  - Alpha League
+  - Battlezone Gold Edition in VR mode
+  - Black Desert Online
+  - FreestyleFootball R
+  - Helldivers 2
+  - Hero's Land
+  - Iragon
+  - SimCity 3000 Unlimited
+  - Warlords Battlecry III
+- Enabled controller support via [Xalia](https://github.com/madewokherd/xalia/tree/main) in the launchers of:
+   - Clustertruck
+   - Fallout 3 (standard and GOTY edition) - partial support only
+   - Fallout 4
+   - Mugsters
+   - The Elder Scrolls V: Skyrim (72850)
+   - The Elder Scrolls V: Skyrim Special Edition
+   - Tomb Raider: Anniversary
+   - Tomb Raider: Legend
+- Limited number of cores seen by the following games making them playable on a high core count CPUs:
+  - Call of Juarez: Gunslinger
+  - Command & Conquer and The Covert Operations
+- Fixed Ghost of Tsushima and Horizon Forbidden West displaying a warning about outdated drivers with Nvidia GPUs.
+- Fixed The Finals crashing on launch after a recent game update.
+- Fixed The Finals wrongly detecting button mashing.
+- Fixed The Finals not working on machines supporting AVX512 without `clearcpuid=304` in the kernel command line.
+- Fixed Apex Legends not starting after a recent game update.
+- Fixed Tekken 8 reporting wrong connection type if both WiFi and Ethernet are present.
+- Fixed Ubisoft Launcher not starting games with a fresh Proton prefix.
+- Fixed Halo Infinite crashing randomly during "initializing data".
+- Fixed Beat Saber not being playable on Nvidia GPUs without using the legacy branch.
+- Fixed Marvel vs Capcom: Infinite crashing when creating multiplayer lobby.
+- Fixed hosting multiplayer games in Foundry.
+- Fixed rendering of Japanese characters in the launcher of Granado Espada Japan.
+- Fixed Nightingale not being able to authenticate with Steam on desktop.
+- Fixed Bloons Monkey City thinking it's offline with IPv6 support disabled.
+- Fixed Ubisoft Launcher asking for serial number on the first launch of Tom Clancy's Ghost Recon: Future Soldier.
+- Fixed Descent 3 not working in GL mode.
+- Fixed Shatterline freezing on loading screen when trying to join a second online match in a session.
+- Fixed Call of Juarez: Bound in Blood failing to launch on a fresh prefix and failing on NVIDIA GPUs.
+- Fixed audio stutter in Viking: Battle for Asgard.
+- Fixed Russian language rendering in Brothers: A Tale of Two Sons launcher.
+- Fixed scaling in The Desolate Hope when playing on desktop.
+- Improved controller input support for Tower Princess.
+- Improved performance in We Love Katamari REROLL+ Royal Reverie.
+- Fixed GRIS showing error window when exiting the game.
+- Fixed issues with transparency in Akka Arrh.
+- Fixed load / save dialogs not working in Idle Spiral on Steam Deck.
+- Added raw HID support for VKB Gunfighter SCG.
+- Fixed random crashes in Cosmoteer Starship Architect & Commander.
+- Fixed font rendering in Cosmoteer Starship Architect & Commander on Steam Deck.
+- Improved Chinese font rendering in Cosmoteer Starship Architect & Commander.
+- Fixed Russian and Hebrew font rendering in Simon the Sorcerer: 25th Anniversary Edition.
+- Improved font rendering in Alien Swarm: Reactive Drop on Steam Deck.
+- Fixed Cities: Skylines not being playable on Intel GPUs.
+- Improved compatibility with OpenComposite.
+- Updated support for OpenXR to version [1.1.36](https://github.com/KhronosGroup/OpenXR-Docs/releases).
+- Updated OpenVR support to [v2.2.3](https://github.com/ValveSoftware/openvr/releases/tag/v2.2.3).
+- Updated vkd3d-proton to [v2.12](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.12)-58-[gf6d39052afb1](https://github.com/HansKristian-Work/vkd3d-proton/commit/f6d39052afb1fbc490b711769a0dd91c12340251).
+- Updated dxvk to [v2.3.1](https://github.com/doitsujin/dxvk/releases/tag/v2.3.1)-64-[g60cfafe](https://github.com/doitsujin/dxvk/commit/60cfafe).
+- Updated dxvk-nvapi to [v0.7.0](https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.7.0)-7-[gaae4902b6ff7](https://github.com/jp7677/dxvk-nvapi/commit/aae4902b6ff7038fd1bd34d33f019397018f195c).
+- Updated Wine Mono to version [9.1.0](https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-9.1.0).
+
+
+
+###### 9.0-1:
+- Previously playable only with Proton Experimental:
+  - Dinogen Online
+  - Photography Simulator Demo
+  - George McGeehan Gamer Hero
+  - The Finals
+  - True Reporter. Mystery of Mistwood
+  - Road to Vostok Demo
+  - WITCH ON THE HOLY NIGHT
+  - Lord of the Rings: Gollum
+  - Sonic Colors: Ultimate
+  - Command & Conquer: Red Alert 2 and Yuri’s Revenge
+  - Command & Conquer Tiberian Sun and Firestorm
+  - Aisling and the Tavern of Elves
+  - Snares of Ruin 2
+  - Insanity's Blade
+  - Bloody Walls
+- Limited number of cores seen by the following games making them playable on a high core count CPUs:
+  - Far Cry 2
+  - Far Cry 4
+  - The Witcher 2: Assassins of Kings Enhanced Edition
+  - Lara Croft and the Guardian of Light
+  - Warhammer 40,000: Space Marine
+  - Warhammer 40,000: Dawn of War II
+  - Warhammer 40,000: Dawn of War II - Chaos Rising
+  - Warhammer 40,000: Dawn of War II - Retribution
+  - Outcast - Second Contact
+  - Prototype
+- Enabled nvapi by default for most games.
+- Started ignoring system mouse acceleration in games using raw input API.
+- Fixed Brawhalla showing a security certificate warning.
+- Fixed audio in BOOMEROAD, DORONKO WANKO, NOTTOLOT.
+- Fixed Civilization V Touch Only option in the launcher not working.
+- Improved cutscene synchronization in Immortals Fenyx Rising.
+- Fixed TouHou Makuka Sai ~ Fantastic Danmaku Festival Part I and II crashing during boss fights.
+- Fixed crash in Disaster Report 4: Summer Memories epilogue.
+- Improved video playback in BIOMUTANT.
+- Fixed Imperiums: Greek Wars launcher.
+- Fixed memory leaks that caused Final Fantasy XIV Online launcher crash over long time.
+- Fixed crash in Microsoft Flight Simulator when live weather is enabled.
+- Improved support for input devices with 8+ axes.
+- Fixed Savant - Ascent REMIX hitching during certain animations.
+- Fixed Super Robot Wars 30 crashing with languages other than English.
+- Fixed Doom Eternal audio crackling on certain setups.
+- Fixed Lethal Company, Phasmophobia and other Unity games crashing when a controller with a hat switch is plugged in.
+- Improved video playback for the following titles: Lords of the Fallen, Harvestella, Wayfinder, Sea of Thieves, and KING OF FIGHTERS XV.
+- Fixed default scaling for The Last Game on Steam Deck.
+- Fixed audio issues when playing intro video in Airborne Kingdom.
+- Fixed Bayonetta crashing on certain systems.
+- Fixed Escape from Monkey Island getting minimized on a mouse click.
+- Fixed audio controls and spatialization in VRChat with AVPro.
+- Fixed new prefix failing to initialize on filesystem that do not support `copy_file_range` syscall.
+- Updated file distribution method to save disk space.
+- Rebased on top of upstream Wine 9.0.
+- Updated vkd3d-proton to [v2.11.1](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.11.1)-49-[g32ff676b](https://github.com/HansKristian-Work/vkd3d-proton/commit/32ff676b9994de05b973e2b12063afbbfcb6cd38).
+- Updated dxvk to [v2.3](https://github.com/doitsujin/dxvk/releases/tag/v2.3)-47-[ge2a46a34](https://github.com/doitsujin/dxvk/commit/e2a46a347d7193ee853bd8c75cbca5939f10a987).
+- Updated dxvk-nvapi to [v0.6.4](https://github.com/jp7677/dxvk-nvapi/releases/v0.6.4)-48-[g0951afb](https://github.com/jp7677/dxvk-nvapi/commit/0951afbe7e2bc72c671c1073b76abacfc3b4ae98).
+- Added support for Steamworks SDK 1.59.
+
+## Available in Proton 8.0:
+
+**Note: Proton 8.0 requires a GPU that supports Vulkan 1.3.**
+
+###### 8.0-5:
+- Now playable:
+  - Grotesque Tactics: Evil Heroes
+  - Welcome to Princeland
+  - Red Tie Runner
+  - Simon the Sorcerer: 25th Anniversary Edition
+  - Assassin's Creed Mirage
+- Made HDR options available on compatible hardware (including Steam Deck OLED) in the following games: Resident Evil 2, Resident Evil 3, Resident Evil 7 Biohazard, Resident Evil Village, Hogwarts Legacy, Mass Effect Legendary Edition, Injustice 2, Alan Wake 2, Devil May Cry 5.
+- Fixed Baldur's Gate 3 not starting after a recent game update.
+- Fixed Cyberpunk 2077 crashing with DualSense plugged in after a recent game update.
+- Fixed Forza Horizon 5 not working after a recent game update.
+- Fixed Starfield not saving photos in photo mode.
+- Fixed swapped Start / Select buttons on controllers in Starfield and other games using Windows.Gaming.Input.
+- Fixed Halo Infinite crashes on SteamOS 3.5.
+- Fixed Witcher 3 not being able to switch between windowed and fullscreen correctly on XFCE.
+- Fixed Witcher 3 and other games crashing when monitor is turned off and on again.
+- Fixed Hogwarts Legacy crashing on Intel GPUs.
+- Fixed Resident Evil 2 crashing for some users during gameplay.
+- Fixed Crysis 2 Remastered showing only black screen for some users.
+- Fixed Crysis 3 being unable to launch properly due to failed authorization.
+- Fixed Crysis 3 Administrative Approval EA App Window being corrupted on Nvidia.
+- Fixed outdated driver warning in The Last of Us Part I.
+- Fixed Steam Workshop interface randomly not working in Trivia Tricks.
+- Fixed Final Fantasy X/X-2 HD Remaster crashing during combat.
+- Fixed Final Fantasy X/X-2 HD Remaster crashing after Steam Cloud save updates sets resolution to Non-Deck-Native.
+- Improved audio in Final Fantasy VIII and Freefall 3050AD.
+- Improved load times in LIGHTNING RETURNS: FINAL FANTASY XIII and FINAL FANTASY XIII-2.
+- Fixed Remnant: From The Ashes and Deep Rock Galactic and possibly other games crashing when too many audio devices are connected.
+- Fixed periodic frame rate drops in Nickelodeon All-Star Brawl 2.
+- Fixed Mighty Switch Force! Collection crashing on some setups when no controllers are plugged in.
+- Fixed Aura: Fate of the Ages missing some audio cues.
+- Fixed games not being able to switch monitors in fullscreen mode on Cinnamon DE.
+- Fixed triple monitor handling in Project Cars 3 and Project Cars 2.
+- Fixed Elite Dangerous crashing when opening external links.
+- Fixed issues with connecting to online services in Tony Hawk's Pro Skater 1 + 2.
+- Fixed wrong scaling in MareQuest: An Interactive Tail and Naruto Shippuden Ultimate Ninja Storm 4 on Steam Deck when set to fullscreen.
+- Fixed fonts not rendering in the main menu of Aveyond 4: Shadow of the Mist.
+- Fixed Aveyond 4: Shadow of the Mist crashing when clicking on Strategy Guide button.
+- Fixed The Binding of Isaac: Rebirth crashes that mostly happened when using bombs later in a run.
+- Fixed load / save dialogs not working in Idle Spiral on Steam Deck.
+- Fixed font rendering in save / load dialog in Idle Spiral.
+- Fixed multiplayer in NASCAR Heat 5.
+- Fixed multiplayer in DiRT Rally.
+- Fixed The Binding of Isaac cursor desync and focus issues when toggling fullscreen.
+- Fixed video playback in Out of Ore.
+- Fixed multiple memory leaks when playing videos in VRchat using AVPro.
+- Improved support for VKB Gladiator NXT Evo and Virpil Constellation ALPHA-R when hidraw device is accessible.
+- Enabled nvapi for the following titles:
+   - Satisfactory
+- Updated Wine Mono to [8.1.0](https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-8.1.0).
+- Updated dxvk to [v2.3](https://github.com/doitsujin/dxvk/releases/tag/v2.3)-21-[g1b31aa5d](https://github.com/doitsujin/dxvk/commits/1b31aa5dbca0749d0737cff02043acb061332fb6).
+- Updated dxvk-nvapi to [v0.6.4](https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.6.4)-20-[g0a7c48b](https://github.com/jp7677/dxvk-nvapi/commits/0a7c48b256cafe6b3fa1db8183f089712c72e9ad).
+- Updated vkd3d-proton to [v2.11](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.11)-19-[g0e681135](https://github.com/HansKristian-Work/vkd3d-proton/commits/0e681135f8bb3e43985574bb8c40bcecb17e7f7a).
+###### 8.0-4:
+- Previously playable only with [Proton Experimental](https://github.com/ValveSoftware/Proton/wiki/Proton-Versions#proton-experimental):
+  - Arthurian Legends
+  - CHAOS CODE -NEW SIGN OF CATSTROPHE-
+  - EverQuest 2
+  - Oddworld: Stranger's Wrath HD
+  - Songs for a Hero - Definitive Edition
+  - STAR WARS Knights of the Old Republic II
+  - The Longest Journey
+- Fixed a few Proton 8.0 regressions:
+  - A race condition that caused controller hotplug to not work reliably is fixed.
+  - Have a Nice Death no longer crashes on launch.
+  - Using re4_tweaks no longer breaks mouse support in Resident Evil 4 (2005).
+  - Makai Kingdom: Reclaimed and Rebound is playable again.
+  - Echo (751320) works again on Steam Deck.
+  - Debug console in Scrap Mechanic is no longer broken.
+- Fixed Overwatch 2 stopping to register controller inputs after an online match has started.
+- Fixed Battle.net always trying to update itself.
+- Fixed EA Desktop having a blank log-in window after its recent update.
+- Fixed an issue with EA Desktop sometimes not launching after an update.
+- Fixed Baldur's Gate 3 launcher sometimes displaying dxdiag error dialog.
+- Fixed Street Fighter 6 claiming that Proton players are always connected via wired interface.
+- Fixed periodic stuttering in Street Fighter 6 when playing without internet for a longer time.
+- Fixed Garry's Mod, Dark Souls II, Aura: Fate of the Ages and Train Simulator not working on certain setups using very long library paths.
+- Fixed videos in Empyrion - Galactic Survival not working on certain setups.
+- Fixed flipped videos in Secret of Mana.
+- Fixed Aura: Fate of the Ages missing some audio cues.
+- Fixed Dwarf Fortress SDL2 beta crashing on launch.
+- Fixed some Unreal Engine 4 games (e.g. Stray, System Shock (2023), Dead By Daylight and Warhammer 40,000: Boltgun) crashing with Intel GPUs.
+- Fixed Final Fantasy XIII having broken input after main window loses focus.
+- Fixed Locoland not allowing to select resolution on Steam Deck in desktop mode.
+- Fixed Rainbow Six Extraction not working on the Steam Deck.
+- Fixed Ashes of the Singularity: Escalation DirectX 12 mode not working.
+- Fixed Age of Empires II: Definitive Edition failing to launch after a recent game update.
+- Fixed Age of Empires IV crashing when locale is set to Traditional/Simplified Chinese.
+- Fixed Age of Wonders 4's Paradox Launcher not working on Nvidia GPUs.
+- Fixed games crashing when dragging files / images over a game window.
+- Fixed Ubisoft Connect not working after its recent update.
+- Fixed not being able to interact with minimum requirements prompt in Metro Exodus Enhanced Edition.
+- Fixed Ship of Fools crashing when another player joins online session.
+- Fixed controller input in Mamashroom and The Bookwalker: Thief of Tales.
+- Fixed not working credits in Dark Parables: The Exiled Prince Collector's Edition.
+- Enabled nvapi for the following titles:
+  - Alone in the Dark
+  - Atomic Heart
+  - Baldur's Gate 3
+  - Demonologist
+  - Desordre
+  - Doge Simulator
+  - Icarus
+  - Layers of Fear
+  - Portal Prelude RTX
+  - Rainbow Six Extraction
+  - Ratchet & Clank: Rift Apart
+  - Remnant 2
+  - Severed Steel
+  - Sherlock Holmes The Awakened
+  - Showgunners
+  - Spider-Man: Miles Morales
+  - Strayed Lights
+  - Trepang2
+  - Voidtrain
+  - Warhammer 40,000: Darktide
+- Updated Wine-Mono to [8.0.1](https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-8.0.1).
+- Updated vkd3d-proton to [v2.10](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.10).
+- Updated dxvk to to [v2.3-5-g83dc4678](https://github.com/doitsujin/dxvk/releases/tag/v2.3).
+- Updated dxvk-nvapi to [v0.6.4](https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.6.4).
+- Updated vkd3d (shader compiler) to include recent upstream improvements.
+- Added support for Steamworks SDK 1.58.
+###### 8.0-3:
+- Previously playable only with Proton Experimental:
+  - Propnight
+  - Combat Mission: Battle for Normandy
+  - Bloodrayne Terminal Cut 1/2
+  - Breakout 13
+  - Murasaki Tsurugi
+  - PooShooter: Toilet Invaders
+  - Purgo Box
+  - Olympia Rising
+  - Summoners War: Chronicles
+  - Tom Clancy's Ghost Recon Breakpoint
+  - Minecraft Legends
+  - Company of Heroes: Battle of Crete
+  - STRANGER OF PARADISE FINAL FANTASY ORIGIN
+  - Gunfire: Reborn
+  - Super Bomberman R
+- Newly playable: StreetStep: 21st Century Basketball.
+- Fixed Battle.net not starting.
+- Fixed EA launcher crashing.
+- Fixed Ubisoft Connect intermittently having an invisible window.
+- Fixed scroll bar in Final Fantasy XIV Online launcher.
+- Fixed EOS error message with Returnal and other EOS games.
+- Fixed a few Proton 8.0 regressions:
+  - DJMAX RESPECT V is playable again.
+  - Halo: The Master Chief Collection menus no longer are broken.
+  - BeamNG.drive no longer crashes when a steering wheel is connected.
+  - Cafe Stella no longer crashes with 2 elements on the flowchart.
+  - Marvel’s Spider-Man Remastered no longer ignores controller input.
+  - Indiana Jones and The Emperor no longer crashes on the splash screen.
+  - Grand Theft Auto V no longer freezes on keyboard input.
+  - TRAHA Global no longer crashes at end of second cutscene
+  - Logging in online in Gears 5 works again.
+  - Doom Eternal no longer crashes with ray-tracing enabled on AMDVLK / NVIDIA.
+- Fixed Creativerse hanging while exiting from a local game.
+- Fixed Call of Duty 2 hanging when loading maps.
+- Fixed New World not starting after a recent game update.
+- Fixed game stutter in Lara Croft and the Temple of Osiris.
+- Fixed Last Labyrinth displaying only a black screen on the Steam Deck.
+- Fixed Creativerse not being able to connect to a local game with a VPN connection active.
+- Fixed The Incredible Adventures of Van Helsing not rendering text in Polish correctly.
+- Fixed game looking dark and improved performance with Nosferatu: The Wrath of Malachi.
+- Fixed DXVK HUD not showing the correct git revision used.
+- Improved video playback in Roboquest.
+- Fixed various memory leaks during video playback that were affecting Street Fighter 6.
+- Enabled nvapi for many more games: Chernobylite Enhanced Edition, Dead Space (Remake), Forspoken, Forza Horizon 5, Hi-Fi Rush, Marvel's Avengers, Monster Hunter Rise, Need For Speed Unbound, Nioh 2, Propnight, Redfall, Returnal, Sackboy: A Big Adventure, SCP: 5K, Scum, The Last Of Us Part I, Watch Dogs Legion.
+- Fixed Tales of Berseria suffering from screen tearing with vsync turned on while in fullscreen / borderless.
+- Improved Final Fantasy XIII loading times.
+- Fixed Red Dead Redemption 2 taking long time to exit with Alt+F4.
+- Fixed multiple Unity titles flickering on the Steam Deck when switching display window options.
+- Fixed The Elder Scrolls Online wrongly claiming not enough space.
+- Fixed The Elder Scrolls Online launcher showing blank window.
+- Fixed Madballs in Babo: Invasion claiming the game wasn't purchased.
+- Fixed PlanetSide 2 launcher.
+- Fixed various Wo Long: Fallen Dynasty issues around video playback.
+- Fixed video playback in Nioh: Complete Edition.
+- Fixed Pentiment not being playable on desktop.
+- Fixed Grounded not being playable on desktop.
+- Improved cutscene desync in Immortals Fenyx Rising.
+- Fixed Witcher 3 launcher rendering issues.
+- Fixed Call of Duty: Black Ops III graphical glitches when loading Hex Tower.
+- Fixed video playback speed issues in METAL GEAR SOLID V: THE PHANTOM PAIN.
+- Fixed Deus Ex: Human Revolution Director's Cut hanging on exit.
+- Fixed connection error at the end of Chapter 2 in Life is Strange Remastered.
+- Fixed rendering issues in Uru: Complete Chronicles on Steam Deck.
+- Fixed Richman: Classic not starting in OpenGL mode.
+- Updated dxvk to v2.2-34-g4d254b13.
+- Updated dxvk-nvapi to v0.6.3-4-g2483eac.
+- Updated vkd3d-proton to v2.9-21-gf52e6482.
+###### 8.0-2:
+- Fixed Baldur's Gate 3 getting stuck on a black screen in Vulkan mode.
+- Fixed Divinity: Original Sin: Enhanced Edition and Divinity Original Sin II: Definitive Edition crashing on launch.
+- Fixed Path of Exile crashing.
+- Fixed memory leak in Trackmania and Ubisoft Connect overlay.
+- Improved Elden Ring compatibility compared to Proton 8.0-1. It can still be finicky.
+- Fixed Red Dead Redemption 2 and other games not starting after switching from Proton Experimental to stable.
+- Added a temporary workaround for EA Launcher crashing. Steam Deck's on-screen keyboard may not pop up automatically while using it.
+###### 8.0-1:
+- Now playable:
+  - Forspoken
+  - Samurai Maiden
+  - Dead Space (2023)
+  - Creativerse
+  - Nioh 2 - The Complete Edition
+  - One Piece: Pirate Warriors 4
+  - Atelier Meruru
+  - Atelier Lydie & Suelle \~The Alchemists and the Mysterious Paintings\~
+  - Atelier Sophie: The Alchemist of the Mysterious Book DX
+  - Blue Reflection
+  - Atelier Rorona \~The Alchemist of Arland\~ DX
+  - Disney Dreamlight Valley
+  - ROMANCE OF THE THREE KINGDOMS XIV
+  - ToGather:Island
+  - WARRIORS OROCHI 3 Ultimate Definitive Edition
+  - Exceed - Gun Bullet Children
+  - Gungrave G.O.R.E.
+  - Chex Quest HD
+* Fixed 2K launcher failure caused by launcher update.
+* Fixed Arabic fonts in FIFA 21 and 22.
+* Improved CJK font support in many games including NOBUNAGA'S AMBITION: Souzou with Power Up Kit, Stardom 3 and Sword and Fairy 3.
+* Improved sleep/resume functionality on Steam Deck for Tiny Tina's Wonderland.
+* Improved multi-touch support.
+* Fixed native scrollbar being always visible in Final Fantasy XIV Online launcher.
+* Fixed A Plague Tale: Innocence and A Plague Tale: Requiem showing on-screen keyboard when starting the game on the Steam Deck.
+* Fixed rendering issues during cutscenes in Tom Clancy's Splinter Cell.
+* Fixed Japanese keyboard input in Final Fantasy XIV Online.
+* Fixed Football manager 2023 crashing when trying to return from a player profile.
+* Fixed experimental regression: Fall in Labyrinth started crashing on some setups.
+* Improved CJK characters rendering in many games including NOBUNAGA'S AMBITION: Souzou with Power Up Kit.
+* Fixed Life is Strange Remastered crashing at the end of chapter 2.
+* Fixed Alt+Tab not working on Gnome 43.
+* Improved force feedback compatibility for BeamNG and Forza Horizon 5.
+* Fixed regression with Mortal Kombat X performance.
+* Fixed OpenGL launch option for Youropa.
+* Fixed raytracing in Crysis Remastered.
+* Improved multiplayer support in Company of Heroes III.
+* Improved fullscreen support for The Last Blade 2.
+* Fixed regression: Minecraft Dungeons was hanging when disconnecting from multiplayer game.
+* Fixed Story Mode not working in Dead or Alive 6.
+* Fixed intermittent hangs with Prototype.
+* Enabled nvapi for many games.
+* Updated wine to 8.0.
+* Updated dxvk to v2.1-4-gcaf31033.
+* Updated vkd3d-proton to v2.8-84-g08909d98.
+* Updated dxvk-nvapi to v0.6.2.
+* Updated wine-mono to 7.4.1.
+## Available in Proton 7.0:
+###### 7.0-6:
+  - Now playable:
+    - Gotham Knights
+    - UNCHARTED: Legacy of Thieves Collection
+    - Heroes of the Dark
+    - Super Arcade Racing
+    - Crazy Machines 3
+    - King under the Mountain
+    - NinNinDays2
+    - 雀姬 (Mahjong ladies)
+  - Fix Ubisoft Connect launcher failure caused by launcher update.
+  - Fix Septerra Core hanging on redistributables installation.
+  - Fix Persona 5 Royal crashing when creating game save data.
+  - Fix Vampire Survivors intermittent error message.
+  - Fix Super House of Dead Ninjas, Enemy Mind, and Out There Somewhere frame hitching every few seconds.
+  - Fix Zeepkist freezing when using controller.
+  - Fix Overcooked! All You Can Eat being unable to add a second controller-using player.
+  - Fix Quake III: Arena and Quake III: Team Arena displaying weird texture over the menu.
+  - Fix the new EA launcher displaying a blank window.
+  - Fix Marvel Snap not being able connect to online services.
+  - Fix Microsoft Flight Simulator crashing during longer flights.
+  - Fix Microsoft Flight Simulator not displaying live traffic.
+  - Fix Microsoft Flight Simulator not starting after a recent game update.
+  - Fix Microsoft Flight Simulator crashing when starting next to big cities.
+  - Fix Sackboy: A Big Adventure failing to start the first time it's launched.
+  - Fix Spyro Reignited Trilogy playing intro video in a wrong language.
+  - Fix Jurassic World Evolution 2 bad performance with recent Proton versions.
+  - Fix multiple monitor support in Project Cars 2 and Project Cars 3.
+  - Fix Korean not being rendered correctly in Romance of the Three Kingdoms XIII launcher.
+  - Fix multiple languages not rendering correctly in Sins of a Solar Empire: Rebellion.
+  - Fix Lost Lands: Dark Overlord, Lost Lands: Dark Lord, Lost Lands: Redemption, and Haunted Hotel: Silent Waters Collector's Edition crashing when trying to set a wallpaper.
+  - Fix video playback regression with Chronos: Before the Ashes.
+  - Improve video playback with OUTRIDERS and ToGather: Island.
+  - Update wine-mono to [7.4.0](https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-7.4.0).
+  - Update dxvk-nvapi to [v0.6](https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.6).
+###### 7.0-5:
+- The following games are now playable:
+  - Rift
+  - Unravel 2
+  - Airborne Kingdom
+  - Nancy Drew: Legend of the Crystal Skull
+  - Re-Volt
+  - Aspire: Ina's Tale
+  - Battle Realms: Zen Edition
+  - Deathsmiles II
+  - Primal Carnage: Extinction
+  - Pico Park Classic Edition
+  - Six Ages: Ride Like the Wind
+  - Darkstar One
+  - Indiana Jones and the Emperor Tomb
+  - Bulletstorm: Full Clip Edition
+- Fix Batman: Arkham City GOTY launching in the background on Steam Deck when set to fullscreen.
+- Fix Marvel's Spider-Man Remastered displaying dialog about outdated drivers on AMD systems.
+- Fix Final Fantasy IV (3D Remake) having no audio.
+- Fix Return to Monkey Island not reacting to mouse clicks after a recent game update.
+- Fix upsidedown videos in VRChat and many other games.
+- Fix Call of Duty Black Ops II Zombies and Multiplayer hanging on exit.
+- Fix Bail or Jail crashing when opening the Terms of Serivce.
+- Improve GTA V situation with not loading textures.
+- Fix Red Dead Redemption 2 crashing after a recent game update.
+- Fix Final Fantasy XIV Online launcher functionality after game update.
+- Fix cutscene stutter in Disgaea 5.
+- Fix Thrustmaster HOTAS having non-functional dial in Elite Dangerous.
+- Fix Planet Zoo randomly crashing.
+- Fix SCP: Secret Labratory not being playable after a recent game update (again).
+- Fix Tekken 7 crashing at launch.
+- Fix Armello hanging on exit.
+- Fix Sword Art Online: Hollow Realization freezing after the tutorial.
+- Fix Space Engineers intro video not playing correctly.
+- Fix Dragon's Dogma: Dark Arisen videos not playing correctly.
+- Implement network video support for VRChat.
+- Update dxvk to v1.10.3-28-ge3daa699.
+###### 7.0-4:
+- The following games are now playable:
+  - Aquarist - My First Job
+  - Trove
+  - Chuzzle Deluxe
+  - Zuma's Revenge!
+  - Karmaflow The Rock Opera Videogame - Act I & Act II
+  - The Rising of the Shield Hero: Relive The Animation
+  - Disgaea 5
+- Fix Elden Ring getting stuck on a white screen on first launch.
+- Support automatically bringing up on screen keyboard on Steam Deck in the Final Fantasy XIV launcher.
+- Fix Final Fantasy XIV launcher exiting silently when there's not enough space to download the update.
+- Fix Chrono Trigger, Adventure Pals crashing during cutscenes.
+- Fix The Ball displaying error message on the first launch.
+- Fix video playback in: POSTAL: Brain Damaged, Lost Ember.
+- Fix Hardspace: Shipbreaker failing to connect to online services.
+- Fix Azur Lane: Crosswave hanging on a black screen for some users.
+- Fix Dokyusei Bangin' Summer showing only flickering black window on desktop.
+- Fix Bloons TD 6 crashing on touch input.
+- Fix Sid Meier's Civilization IV crashing on world creation.
+- Fix Assassin's Creed Origins hanging during gameplay after recent game update.
+- Fix Call of Duty: Black Ops II - Zombies and Call of Duty: Black Ops II - Multiplayer crashing after connecting online.
+- Fix graphical glitches in Cossacs 3 on desktop.
+- Fix garbled audio in Monster Hunter Rise: Sunbreak.
+- Fix Elite Dangerous and other launchers not working properly when cloned displays are present.
+- Implement Vulkan other process rendering (used by nw.js games).
+- Improve performance of HROT.
+- Improve video playback for many games that previously required targeted hacks.
+- Reduce space used by game prefixes if filesystem supports copy on write.
+- Update dxvk to [v1.10.3](https://github.com/doitsujin/dxvk/releases/tag/v1.10.3).
+- Update vkd3d-proton to [v2.6-1-gc05900da](https://github.com/HansKristian-Work/vkd3d-proton/commits/proton-v2.6-support).
+###### 7.0-3:
+- The following games are now playable:
+  - Age of Chivalry
+  - Beneath a Steel Sky
+  - Chrono Cross: The Radical Dreamer Edition
+  - Cities XXL
+  - Cladun X2
+  - Cursed Armor
+  - Flanarion Tactics
+  - Gary Grigsby's War in the East
+  - Gary Grigsby's War in the West
+  - Iragon: Prologue
+  - MechWarrior Online
+  - Small Radios Big Televisions
+  - Split/Second
+  - Star Wars Episode I Racer
+  - Stranger of Sword City Revisited
+  - Succubus x Saint
+  - V Rising
+  - Warhammer: End Times - Vermintide
+  - We Were Here Forever
+- Add support for Windows.Gaming.Input.
+- Improve FPS in Street Fighter V during online matches.
+- Improve Sekiro: Shadow Die Twice performance in certain areas.
+- Fix Elden Ring crashing during prolonged gameplay.
+- Fix the new Final Fantasy XIV Online launcher.
+- Fix DEATHLOOP crashing after long system suspend.
+- Fix The Turing Test crashing when starting Chapter 4.
+- Fix controller support in Mini Ninja.
+- Fix Resident Evil Revelations 2 not starting on the Steam Deck.
+- Fix video playback in: Disintegration, Dread X Collection: The Hunt, EZ2ON REBOOT : R, El Hijo - A Wild West Tale, Ember Knights, Outward: Definitive Edition, POSTAL4: No Regerts, Power Rangers: Battle for the Grid, Solasta: Crown of the Magister, Street Fighter V, The Room 4: Old Sins. Fix video playback in Ghostwire: Tokyo and other games using VP8 and VP9 codecs.
+- Fix non-steering-wheel controller support in WRC10.
+- Fix S&box not finding any games to join.
+- Fix The Legend of Heroes: Zero no Kiseki Kai failing to start for the first time.
+- Fix Mortal Kombat Komplete crashing when audio devices with long names are present.
+- Fix handling of external links in Castle Morihisa.
+- Improve text rendering in Rockstar Launcher.
+- Improve steering wheel detection.
+- Support xinput controller reordering on the Steam Deck.
+- Update Wine Mono to [7.3.0](https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-7.3.0).
+- Update dxvk-nvapi to [v0.5.4](https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.5.4).
+- Update dxvk to v1.10.1-57-g279b4b7e.
+###### 7.0-2:
+- Now playable:
+  - Atelier Ayesha
+  - Devil May Cry HD Collection
+  - Dragon Quest Builders 2
+  - A Way Out
+  - Fall in Labyrinth
+  - King of Fighters XIII
+  - Montaro
+  - ATRI -My Dear Moments-
+  - Guilty Gear Isuka
+  - INVERSUS Deluxe
+  - Metal Slug 2 and 3 and X
+  - One Shot and One Shot: Fading Memory
+  - Call of Duty Black Ops 3
+  - Saint Seiya: Soldiers' Soul
+  - Medieval Dynasty
+  - Bright Memory: Infinite
+  - Double Dragon Trilogy
+  - Baseball Stars 2
+  - Elden Ring
+- Fix The Last Campfire not starting on the Steam Deck.
+- Fix STAR WARS Jedi Knight - Jedi Academy not displaying anything on the Steam Deck.
+- Fix Unity games crashing on launch with certain peripherals connected (e.g. Logitech's Unifying Receiver).
+- Fix Microsoft Flight Simulator crashing after a recent game update.
+- Fix Quake Champions crashing after a recent game update.
+- Fix multiplayer in UNO.
+- Fix some older games including Deus Ex GOTY, Prey 2006, Quake 4 and Chaser having visible banding especially in shadows compared to older Protons.
+- Fix Swords of Legends Online performance regression.
+- Fix video playback in Atelier Meruru, Cook-out, DJMAX RESPECT V, Gloomhaven, Haven, Rust, Rustler, The Complex, TOHU, Monster Train, Hardspace: Shipbreaker, Car Mechanic Simulator 2021, Nine Sols Demo.
+- Fix DiRT Rally 2 and DiRT 4 not being able to connect to the game server.
+- Fix Cyberpunk 2077 crashing with 4.0 audio setups.
+- Fix random hang on exit in Little Nightmares 2.
+- Fix Civilization VI and Chicken Invaders Universe crashing a few minutes into the game.
+- Fix Assassin's Creed Odyssey displaying unsupported driver warning in the overlay.
+- Fix Persona 4 Golden lacking audio in the cutscenes.
+- Fix low Forza Horizon 5 performance with fsync enabled.
+- Fix Uplay / Ubisoft Connect reliably failing to update with fsync enabled.
+- Fix STAR WARS: Squadrons displaying warning about outdated drivers.
+- Fix Devil May Cry 5 and Capcom Arcade Stadium crashing when scrolling through videos too quickly.
+- Fix GTA V randomly crashing on certain window managers.
+- Fix Teardown randomly crashing.
+- Fix Melty Blood: Type Lumina hanging on the intro video.
+- Fix Arma 3 launcher.
+- Fix VR Chat not handling suspend / resume well.
+- Fix Vampyr and The Beast Inside displaying menus a few pixels wide on Steam Decks.
+- Fix Apex Legends sometimes starting minimized on Steam Decks.
+- Fix Quake Live being unable to connect to multiplayer matches.
+- Fix Killing Floor 2 not connecting to the item server.
+- Fix Xbox login window lagging with updating window's content.
+- Fix Horizon Zero Dawn running in slowmotion.
+- Fix Age of Chivalry crashing when starting a match.
+- Fix Ride 3 having horizontally squished main menu on the Steam Deck.
+- Fix Chrono Trigger intro video stutter.
+- Fix Divinity: Original Sin - Enhanced Edition crash on resolution or vsync change.
+- Update dxvk to [v1.10.1](https://github.com/doitsujin/dxvk/releases/tag/v1.10.1).
+- Update vkd3d-proton to [v2.6](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.6).
+- Update dxvk-nvapi to [v0.5.3](https://github.com/jp7677/dxvk-nvapi/releases/tag/v0.5.3)
+###### 7.0-1:
+* The following games are now playable:
+  - Anno 1404
+  - Call of Juarez
+  - DCS World Steam Edition
+  - Disgaea 4 Complete+
+  - Dungeon Fighter Online
+  - Epic Roller Coasters XR
+  - Eternal Return
+  - Forza Horizon 5
+  - Gravity Sketch VR
+  - Monster Hunter Rise
+  - NecroVisioN
+  - Nights of Azure
+  - Oceanhorn: Monster of the Uncharted Seas
+  - Order of War
+  - Persona 4 Golden
+  - Resident Evil 0
+  - Resident Evil Revelations 2
+  - Rocksmith 2014 Edition
+  - SCP: Secret Laboratory
+  - Wargroove
+  - Wartales
+  - Yakuza 4 Remastered
+- Added support for EasyAntiCheat if the game has enabled a Linux module
+- Added support for local decoding of H264 videos
+- Fix Sea of Thieves' voice chat.
+- Fix Sea of Thieves getting stuck on "locating fresh supplies" when joining multiplayer.
+- Improve Steam Input controller support for games running via Origin.
+- Fix Beacon crashing when getting into daily/weekly challenge.
+- Improve audio support in Skyrim and Fallout 4.
+- Fix flickering in Mount & Blade II: Bannerlord launcher.
+- Fix Age of Empires IV and Marvel's Avengers displaying graphics drivers warnings.
+- Fix audio in Mass Effect 1 from Mass Effect Legendary Edition.
+- Improve Runescape stability.
+- Fix quick save in Castlevania Advance Collection.
+- Improve Paradox Launcher support.
+- Fix Pathfinder: Wrath of the Righteous hang on exit.
+- Fix Far Cry regression - the game is playable again.
+- Fix Doom Eternal's multiplayer.
+- Various performance improvements around input, windowing, and memory allocation that were
+previously in Experimental.
+- Update Wine to [7.0](https://www.winehq.org/announce/7.0).
+- Update DXVK to [1.9.4](https://github.com/doitsujin/dxvk/releases/tag/v1.9.4).
+- Update vkd3d-proton to
+[2.5-146-g33f17cc7](https://github.com/HansKristian-Work/vkd3d-proton/commits/33f17cc7).
+- Update wine-mono to
+[7.1.2](https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-7.1.2).
+## Available in Proton 6.3:
+###### 6.3-8:
+- The following games are now playable:
+  - Age of Empires 4
+  - Assassin's Creed
+  - Breath of Death VI
+  - Call of Duty: Black Ops II singleplayer (202970)
+  - DEATHLOOP
+  - FIA European Truck Racing Championship
+  - Fly'N
+  - Game Dev Tycoon
+  - Ghostbusters: The Video Game Remastered
+  - GreedFall
+  - Mafia II (Classic)
+  - Magicka
+  - Marvel's Guardians of the Galaxy (AMD GPUs only)
+  - Mass Effect Legendary Edition (ME1 does not have working audio, see #4823)
+  - Monster Boy and the Cursed Kingdom
+  - Monster Energy Supercross - The Official Video Game
+  - Monster Energy Supercross - The Official Video Game 2
+  - Nickelodeon All-Star Brawl
+  - Penny Arcade's On the Rain-Slicked Precipice of Darkness 3
+  - RiMS Racing
+  - The Riftbreaker
+  - Sol Survivor
+  - TT Isle of Man Ride on the Edge
+  - TT Isle of Man Ride on the Edge 2
+- Added support for [an initial set of BattlEye games](https://store.steampowered.com/news/group/4145017/view/3104663180636096966).
+- Improve compatibility with games using Valve's CEG DRM.
+- Support DLSS in DX11 and DX12 games (guarded by [`PROTON_ENABLE_NVAPI=1`](https://github.com/ValveSoftware/Proton/tree/proton_6.3-rc#runtime-config-options) and [`dxgi.nvapiHack = False`](https://github.com/doitsujin/dxvk/blob/581f09696e7c6918d00240cb5abdd23c7a9c0332/dxvk.conf#L51)).
+- Support latest Steamworks SDK.
+- Fix crashes in Project Wingman, Satisfactory and other Unreal Engine 4 games using the Vulkan renderer.
+- Fix a sporadic crash when starting Baldur's Gate 3.
+- Fix networked multiplayer in RaceRoom Racing Experience.
+- Fix cutscene desync in Assassin's Creed: Odyssey.
+- Fix audio stuttering in Gahkthun Steam Edition.
+- Fix Atomic Shop and random crashes on start in Fallout 76.
+- Fix Paradox Launcher (used by Europa Universalis IV) failing to display anything.
+- Fix video freezing and causing game to hang in Deep Rock Galactic.
+- Fix Industries of Titan not listing any resolutions and monitors.
+- Fix Bloons TD6 not being able to access account settings, see [`docs/ICMP_ECHO.md`](https://github.com/ValveSoftware/Proton/blob/proton_6.3/docs/ICMP_ECHO.md).
+- Fix Project CARS 3 ignoring inputs after Alt+Tab.
+- Fix stuck Alt key after Alt+Tabbing out and back for Warhammer: Chaosbane.
+- Support Thai characters in Mirror and other Unity games.
+- Support Korean and Arabic characters in Cyberpunk 2077 launcher.
+- Fix connection issues in Satisfactory on systems with multiple network interfaces.
+- Fix Biomutant videos not playing.
+- Update dxvk to v1.9.2-13-g714ca482.
+- Update vkd3d-proton to v2.5-50-g0251b404.
+- Update wine-mono to 6.4.1.
+###### 6.3-7:
+- The following games are now playable:
+  - Life is Strange: True Colors
+  - Quake Champions (broken after a game update)
+  - Divinity Original Sin 2 (broken after a game update)
+  - eFootball PES 2021
+  - EVERSLAUGHT VR
+  - WRC 8, 9 and 10
+- Fix Logitech G920 mapping for F1 2020.
+- Fix Resident Evil Village display settings.
+- Improve Forza Horizon 4 windowing.
+- Update DXVK to v1.9.2.
+- Update vkd3d-proton to include the latest development work.
+###### 6.3-6:
+- The following games are now playable:
+  - Tokyo Xanadu eX+
+  - Sonic Adventure 2
+  - Rez Infinite
+  - Elite Dangerous
+  - Blood of Steel
+  - Homeworld Remastered Collection
+  - Star Wars Knights of the Old Republic
+  - Guardians VR
+  - 3D Aim Trainer
+- Improve non-English experience in Cyberpunk 2077 and Rockstar Games launchers.
+- Improve launcher behavior in Swords of Legends Online.
+- Improve video playback in Deep Rock Galactic, The Medium, Nier: Replicant, and Contra: Rogue Corps.
+- Add optional support for Nvidia's NVAPI GPU support library and DLSS. It is disabled by default and can be enabled with `PROTON_ENABLE_NVAPI=1`.
+- Update wine-mono to [6.3.0](https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-6.3.0).
+- Update DXVK to [v1.9.1](https://github.com/doitsujin/dxvk/releases/tag/v1.9.1).
+- Update vkd3d-proton to [v2.4](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.4).
+- Update FAudio to [20.08](https://github.com/FNA-XNA/FAudio/releases/tag/21.08).
+- Fix Microsoft Flight Simulator hang while loading.
+- Fix Unreal Engine 4 update installation, which impacted Everspace 2 and KARDS.
+- Fix text input and clipboard pasting in Origin overlay and launcher.
+- Fix some music not playing in Planet Coaster.
+- Fix Mafia III: Definitive Edition performance when FPS limiter is enabled.
+- Fix audio playback issues in Fallout: New Vegas, Oblivion, Borderlands 3, and Deep Rock Galactic.
+- Improve cursor capture behavior for fullscreen windows.
+- Improve input handling after focus loss in some games, including Warhammer: Chaosbane and Far Cry Primal.
+- Correct game save locations to improve Steam cloud sync behavior in:
+  - Guilty Gear -Strive-
+  - Death Stranding
+  - Katamari Damacy Reroll
+  - Scarlet Nexus
+###### 6.3-5:
+- Many improvements to video rendering. Games known to be improved include:
+  - Bloodstained
+  - Deep Rock Galactic
+  - Metal Gear Solid V: The Phantom Pain
+  - Resident Evil 2 (2019)
+  - Resident Evil 3 (2020)
+  - Team Sonic Racing
+- Update DXVK to [v1.9](https://github.com/doitsujin/dxvk/releases/tag/v1.9).
+- Improve GPU device selection.
+- Update vkd3d-proton to include the latest development work.
+- The following games are now playable:
+  - Sid Meier's Civilization VI
+  - Crypt Stalker
+  - Dark Devotion
+  - Dorfromantic
+  - Far Cry
+  - Hard Reset
+  - Hogs of War
+  - Might & Magic: Clash of Heroes
+  - Pro Cycling Manager 2020
+  - Sang Froid - Tales of Werewolves
+  - Secret of Mana
+  - Trainz Railroad Simulator 2019
+- Improve controller support in Hades and many Unity titles.
+- Fix CyberPunk 2077, Darksburg, and other launchers hanging when external links are clicked.
+- Fix Conan Exiles and other Funcom launchers crashing.
+- Fix missing audio in Project Cars 3.
+- Better support for container-based builds outside of the build VM.
+###### 6.3-4:
+- Fix recent 2K Games launcher update
+- Fix error on startup for some Direct3D 12 games
+- Fix Divinity Original Sin 2 and Rise of Venice launcher display issues
+- Fix Star Wars Squadrons VR incorrectly launching to desktop
+- Fix Sacred Gold visual artifacts
+###### 6.3-3:
+- Previously in Experimental: Update vkd3d-proton to [v2.3.1](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.3.1).
+- Previously in Experimental: The Origin Overlay is functional, which allows It Takes Two to be played with friends.
+- Previously in Experimental: Mount & Blade II: Bannerlord is playable.
+- Previously in Experimental: Fix Red Dead Redemption 2 "Not Purchased" error.
+- Previously in Experimental: Fix Age of Empires II: Definitive Edition hang on startup.
+- Fixed launchers for Evil Genius 2, Zombie Army 4, Strange Brigade, Sniper Elite 4, Beam.NG, and Eve Online.
+- The Bus and Army General are now playable.
+- Support adjusting brightness/gamma in older games like Deus Ex.
+- Fix Xbox controller detection in Far Cry Primal.
+###### 6.3-2:
+- Fix stuttering mouse cursor issue during longer play sessions.
+###### 6.3-1:
+- Newly playable games include:
+  - Divinity: Original Sin 2
+  - Shenmue I & II
+  - Mass Effect 3 N7 Digital Deluxe Edition (2012)
+  - Tom Clancy's Rainbow Six Lockdown
+  - XCOM: Chimera Squad
+  - Bioshock 2 Remastered
+  - Company of Heroes 2
+  - logiCally
+  - Rise of the Triad
+  - Home Behind 2
+  - Shadow Empire
+  - Arena Wars 2
+  - King Arthur: Knight's Tale
+  - Rise of Venice
+  - ARK Park
+  - Gravity Sketch
+  - Battle Arena VR
+- Updated Wine to version 6.3.
+- Updated DXVK to [v1.8.1](https://github.com/doitsujin/dxvk/releases/tag/v1.8.1).
+- Updated vkd3d-proton to [v2.2](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.2).
+- Updated FAudio to [21.03.05](https://github.com/FNA-XNA/FAudio/releases).
+- Update wine-mono to [6.1.1](https://github.com/madewokherd/wine-mono/releases/tag/wine-mono-6.1.1).
+- Previously in Experimental: Improvements for non-US keyboard layouts.
+- Previously in Experimental: Improved video support. You may see [test pattern](https://duckduckgo.com/?q=color+bars&iax=images&ia=images) videos. This is normal.
+- Previously in Experimental: Support setting thread priorities via RTKit, or Unix priorities if your user has permissions.
+- Previously in Experimental: Controller layout and hotplugging improvements in Slay the Spire and Hades.
+- Previously in Experimental: Improved PlayStation 5 controller support.
+- Previously in Experimental: Improved Virtual Reality startup time and compatibility.
+- Improved Uplay sign-in.
+- Improved G29 steering support in Assetto Corsa Competizione.
+- Fixed Microsoft Flight Simulator in VR mode.
+- Fixed cutscenes in Bioshock 2 Remastered.
+- Overhauled build system to greatly reduce build times.
+## Available in Proton 5.13:
+###### 5.13-6:
+- Previously in Experimental: Fixed Cyberpunk 2077 world sound issues
+- Previously in Experimental: Improved controller support and hotplugging in Yakuza Like a Dragon, Subnautica, DOOM (2016), and Virginia
+- Nioh 2 is now playable
+- Fixed black screen on focus loss in DOOM Eternal on AMD
+- Restored VR support in No Man's Sky
+- Voice chat in Deep Rock Galactic is now functional
+- Better support for PlayStation 5 controllers
+- Sound in Dark Sector is working now
+- Fixed Need for Speed (2015) hang on AMD
+- More fixes for game input being active while the Steam overlay is up
+###### 5.13-5:
+- Previously in Experimental: Support new OpenXR virtual reality API. Microsoft Flight Simulator's VR mode is now usable on AMD hardware
+- Previously in Experimental: Update vkd3d-proton to v2.1.
+- Previously in Experimental: Fixed world sounds in Cyberpunk 2077.
+- Previously in Experimental: Online play is now functional in Red Dead Online and Read Dead Redemption 2.
+- Fix hangs or crashes in Gears Tactics, Fallout 76, Kingdoms Reborn, Need For Speed Hot Pursuit, and Conan Exiles.
+- Screenshot function is now usable in Fallout 76 and Path of Exile.
+- Most games will now stop accepting input while the Steam game overlay is up.
+- Fix missing text in Lumberjack's Destiny.
+- Fix display resolution issue in DLC Quest and other XNA games.
+###### 5.13-4:
+- Cyberpunk 2077 is now playable (**requires an AMD GPU and Mesa git**).
+###### 5.13-3:
+- Restore controller hotplugging.
+- Yakuza: Like A Dragon, Soulcalibur 6, Lords of the Fallen, and Hammerting are now playable.
+- Fix sound in Warframe and Ghostrunner.
+- Fix flickering graphics in Serious Sam 4.
+- Fix networking failures in Call of Duty: World War II.
+- Fix Age of Empires II HD crash in multiplayer lobbies.
+- Fix Paradox games launchers.
+- Update FAudio to [20.12](https://github.com/FNA-XNA/FAudio/releases/tag/20.12).
+- Update DXVK to [v1.7.3](https://github.com/doitsujin/dxvk/releases/tag/v1.7.3).
+###### 5.13-2:
+- Updated vkd3d-proton to [version 2.0](https://github.com/HansKristian-Work/vkd3d-proton/releases/tag/v2.0), which improves Direct3D 12 support.
+- Fixed Risk of Rain 2 multiplayer lobbies.
+- Fixed Killer Instinct crash when battle ends.
+- Fixed Assetto Corsa Competizione and Summer Funland in VR mode.
+- Fixed games not launching in Uplay Connect, and Origin crashing when updating.
+- Fixed mouse cursor in Mount & Blade II: Bannerlord.
+- Fixed SpellForce crash on launch on some systems.
+- Fixed very long load times in Warhammer 40k: Inquisitor - Martyr.
+- Atelier Ryza: Ever Darkness & the Secret Hideout is playable again.
+- Fixed Healer's Quest and Coloring Game 2 on AMD.
+- Scaled resolution now functional for Middle Earth: Shadow of War.
+- Restore behavior of horizontal scrolling input from previous Proton versions.
+- Proton log directory can now be configured with PROTON_LOG_DIR. 
+###### 5.13-1:
+- Newly playable games include:
+  - Red Dead Redemption 2
+  - Horizon Zero Dawn
+  - DEATH STRANDING
+  - Metal Gear Solid 5: Ground Zeroes
+  - Final Fantasy XV
+  - Sea of Thieves
+  - Star Wars: Battlefront II (2017)
+  - Call of Duty: WWII
+  - Call of Duty: Infinite Warfare
+  - Call of Duty: Modern Warfare Remastered
+  - Asssassin's Creed: Rogue
+  - Assassin's Creed IV Black Flag
+  - South Park: The Fractured But Whole
+  - DiRT Rally 2
+  - Age of Empires II: Definitive Edition
+  - Age of Empires III
+  - Dragon Quest Builders 2
+  - Ashes of the Singularity: Escalation
+  - Tron 2.0
+  - AO Tennis 2
+  - Fight'N Rage
+  - Woolfe - The Red Hood Diaries
+- Improved Steam client integration, which fixes many Call of Duty titles as well as Spelunky 2, Torchlight III, Path of Exile, and RPG Maker MZ.
+- Beginnings of real support for all types of video playback. Games that use older video libraries should start working with this build. We are working on improving support for newer video libraries.
+- Improved support for systems with multiple monitors.
+- Improvements to audio playback in Halo 3, Beyond: Two Souls and Tomb Raider 2.
+- Improvements to rFactor 2 multiplayer and Call of Duty: Advanced Warfare multiplayer.
+- Fixed text rendering in SD GUNDAM G GENERATION CROSS RAYS.
+- Updated Wine to version 5.13. 256 changes in Proton 5.0 were either upstreamed or are no longer needed.
+- Updated DXVK to [v1.7.2](https://github.com/doitsujin/dxvk/releases/tag/v1.7.2).
+- Updated FAudio to [20.10](https://github.com/FNA-XNA/FAudio/releases/tag/20.10).
+- Updated to latest [vkd3d-proton](https://github.com/HansKristian-Work/vkd3d-proton).
+- Built against [the next generation of the Steam Linux Runtime](https://steamcommunity.com/app/221410/discussions/0/1638675549018366706/).
+- Notes for users who build Proton:
+  - This branch has new submodules. Please use `git submodule update --init --recursive` when updating.
+  - The build system now depends on being able to build Rust code.
+  - If you use the Vagrant VM, you will need to destroy and rebuild it.
+## Available in Proton 5.0:
+###### 5.0-10:
+- Added support for the latest Steamworks SDK.
+- Added support for the latest OpenVR SDKs.
+- Log directory is now configurable with `PROTON_LOG_DIR`.
+###### 5.0-9:
+- Fix running games that require the EA Origin client.
+- Fix crash in Final Fantasy XII: The Zodiac Age.
+###### 5.0-8:
+- Dramatically improve loading times for Streets of Rage 4.
+- Fix crashes in Detroit: Become Human, Planet Zoo, Jurassic World: Evolution, Unity of Command II, and Splinter Cell Blacklist.
+- Performance improvements for DOOM Eternal, Detroit: Become Human, and We Happy Few.
+- Support latest Steam SDKs, which fixes games such as Scrap Mechanic, and Mod and Play.
+- Fix some Rockstar Launcher errors on some systems.
+- Update DXVK to v1.7.
+- Update FAudio to 20.06.
+- Pull in latest vkd3d work.
+- On KDE, games being fullscreen should no longer prevent alt-tabbing out of the game.
+- Fix crash on launch in STEINS;GATE 0.
+- Fix missing network ping times in some multiplayer games like Path of Exile and Wolcen.
+- Fix external links in Lords Mobile.
+- Fix crash on launch in TOXIKK.
+- Improve gstreamer performance.
+- Fix WRC 7 crash when using a steering wheel controller. Note that some force-feedback effects may require a kernel >= 5.7.
+###### 5.0-7:
+- Street Fighter 5 and Streets of Rage 4 are now playable.
+- Update DXVK to v1.6.1.
+- Fixes for sound in TrackMania Nations Forever, TrackMania Ultimate Forever, and Zusi 3 Aerosoft.
+- Fix crash in Plebby Quest: The Crusades.
+- Fix connecting to Gearbox SHiFT in Borderlands 3.
+- Grand Theft Auto 4 is now playable.
+- Updates to vkd3d to improve Direct3D 12 compatibility and performance.
+- Improve developer debugging experience.
+###### 5.0-6:
+- Fix DOOM Eternal DRM failures. This game requires the very latest video drivers.
+- Performance and graphical improvements for Resident Evil 2 in Direct3D 12 mode.
+- Fix Proton 5.0 regressions in Rock of Ages, Dead Space, and Elder Scrolls Online.
+- Fix Fallout 3, Panzer Corps hanging on launch.
+- Fix external web browser links in some games, including Football Manager 2020 and Age of Empires II: HD Edition.
+- Improve Rockstar Launcher appearance.
+- Ignore Wacom tablets that present as joysticks.
+- Fix DmC Devil May Cry crashing with rumble controllers.
+- Fix VR error when users have a custom XDG_CONFIG_HOME setting.
+###### 5.0-5:
+- Fix crash in some games introduced in Proton 5.0-4.
+- Fix networking error in Granblue Fantasy: Versus.
+- Support for latest OpenVR SDKs.
+- Add support for new Vulkan extensions used by some recent titles.
+###### 5.0-4:
+- EA's Origin launcher is now functional and Jedi Fallen Order is playable.
+- Fix crash on launch in Grand Theft Auto V Online.
+- Fix Denuvo DRM failures in Just Cause 3 and Batman Arkham Knight.
+- Update DXVK to v1.5.5.
+- Improve performance when emulating display resolution changes.
+- Improve performance in Monster Hunter World.
+- Fix mouse cursor issue on focus loss in Ryse: Son of Rome.
+- Improve game launch times.
+###### 5.0-3:
+- Support for Direct3D 12 mode in Metro Exodus.
+- Fix crash on launch in The Walking Dead: Saints and Sinners and eFootball PES 2020.
+- Fix Automobilista unable to load some assets.
+- Fix high polling rate mouse regression.
+###### 5.0-2:
+- Fix frequent crash introduced in Proton 5.0-1 related to video and audio playback.
+- Fix Planet Coaster crash on launch.
+- Fix Subnautica graphical issue.
+###### 5.0-1:
+- Update Wine to version [5.0](https://source.winehq.org/git/wine.git/blob_plain/wine-5.0:/ANNOUNCE). Since the last major release of Proton, Wine has seen over 3500 changes, which are now integrated into Proton. 207 patches from Proton 4.11 were either upstreamed or are no longer needed.
+- Direct3D 9 games will now use DXVK for rendering by default. Users without Vulkan support can return to the OpenGL-based wined3d renderer with [the `PROTON_USE_WINED3D` configuration option](https://github.com/ValveSoftware/proton/#runtime-config-options).
+- Improved Steam client integration. This makes more games that use Denuvo playable, including Just Cause 3, Batman: Arkham Knight, Abzu, and more.
+- New Proton environments will report a newer OS version, which some newer games require. Existing environments will not be changed automatically.
+- Wine 5.0 includes the beginnings of real multi-monitor support. Expect major improvements in this area soon.
+- Improved surround sound support for older games.
+- Update DXVK to [v1.5.4](https://github.com/doitsujin/dxvk/releases/tag/v1.5.4).
+- Update FAudio to [20.02](https://github.com/FNA-XNA/FAudio/releases/tag/20.02).
+- Note for users who build Proton: this branch has new submodules, please be sure to `git submodule update --init`.
+## Available in Proton 4.11:
+###### 4.11-13:
+- Fix missing low color depth modes on certain hardware.
+###### 4.11-12:
+- Update DXVK to [v1.5.1](https://github.com/doitsujin/dxvk/releases/tag/v1.5.1).
+- Fix Xbox controller buttons in Elex.
+- Improve mouse cursor behavior in IL-2 Sturmovik.
+- Support newer OpenVR SDKs. Audioshield and Dance Collider are now playable.
+- Update steamworks SDK support.
+###### 4.11-11:
+- Fix stuttering mouse cursor issue during longer play sessions.
+- [Update DXVK to v1.5](https://github.com/doitsujin/dxvk/releases/tag/v1.5), which now includes D9VK.
+- GTA5's latest update is now playable.
+- Restore support for mapped mouse cursor buttons.
+###### 4.11-10:
+- Halo: The Master Chief Collection is now playable! Users on older distributions (with gnutls earlier than 3.5.4) will require the Steam Beta client for now. Some game modes are disabled due to missing EasyAntiCheat support.
+- Major improvements to mouse handling. In our testing, this improved Fallout 4, Furi, and Metal Gear Solid V mouse behavior.
+- Added new integer scaling mode, to give sharp pixels when upscaling. This can be enabled with this environment variable: `WINE_FULLSCREEN_INTEGER_SCALING=1`.
+- Fix a couple of controller mapping issues. This is known to improve Telltale games with Xbox controllers and Cuphead and ICEY when using PlayStation 4 controllers over Bluetooth.
+- Improve gamepad force feedback handling, especially for steering wheel controllers.
+- Fix Metal Gear Solid V hang on launch.
+- Fix Xbox controller performance regression.
+- Trine 4 framerate should no longer be locked to 30 FPS.
+- Fix frequent crash in IL-2 Sturmovik.
+- D9VK updated to 0.40-rc-p
+- FAudio updated to 19.12.
+- Miscellaneous DXVK bugfixes.
+###### 4.11-9:
+- Fix performance regression in 4.11-8 that affected 32-bit games using DXVK and D9VK.
+- Fix reporting too little GPU memory for certain GPUs.
+- Restore steering wheel controller force feedback.
+- Fix crash launching Crazy Machines 3 with certain GPUs.
+###### 4.11-8:
+- Proton now includes vkd3d, which provides Direct3D 12 support.
+- Improvements for the Rockstar Launcher and Grand Theft Auto 5.
+- Better controller support in Farming Simulator 19 and Resident Evil 2.
+- Fix mouse input in Arma 3.
+- DmC: Devil May Cry is now playable.
+- DXVK is updated to v1.4.4.
+- D9VK is updated to 0.30.
+- FAudio is updated to 19.11.
+- Wine-mono is updated to 4.9.4.
+- Proton's distribution has been improved to use less disk space and decrease the download size for future updates.
+- Wine and other libraries are now shipped with debug symbols removed. For developers who wish to have debug symbols, select the "debug" branch for Proton in the Steam client.
+- Build system upgrades: new 'redist' makefile target allows for easier redistribution of Proton builds between users; the build is now much faster; the build VM has been upgraded to Debian 10.
+###### 4.11-7:
+- Major improvements to controller hotplugging. For games which support it, controllers should now work even if plugged in after the game has started.
+- Improve controller support for games that use the Rewired Unity library, like ICEY.
+- Upgrade wine-mono to 4.9.3, which improves font rendering and some minor game compatibility problems for games such as Age of Wonders: Planetfall.
+- Fix crash launching Kingdom Come: Deliverance.
+- Upgrade DXVK to v1.4.2.
+- Upgrade D9VK to 0.22.
+- Fix possible crash with some VR games.
+###### 4.11-6:
+- The Surge 2 is now playable (currently doesn't work on radv).
+- Beginnings of support for Rockstar's new launcher. There is more work to do here, but Grand Theft Auto 5 should be playable again.
+- Update DXVK to v1.4.
+###### 4.11-5:
+- Fix a crash caused by certain input devices that was introduced in Proton 4.11-4.
+- Fix games running in virtual desktops and semi-transparent windows, both problems introduced in Proton 4.11-4.
+- Performance optimization when using a controller on amdgpu driver.
+- Improvement to fsync implementation when WINEFSYNC_SPINCOUNT is set.
+###### 4.11-4:
+- Improve behavior of PlayStation 4 controllers and controllers connected by Bluetooth.
+- More improvements to mouse capture and window focus loss behavior.
+- Farming Simulator 19 is now playable.
+- Fix some graphics issues in A Hat in Time and Ultimate Marvel vs Capcom 3.
+- Update DXVK to v1.3.4
+- Update D9VK to 0.21-rc-p.
+- Update FAudio to 19.09.
+###### 4.11-3:
+- Games will now attempt to access gamepads directly, instead of Proton emulating gamepads as if they were Xbox controllers. This means PlayStation 4 gamepads as well as fighting gamepads and other controllers will behave much more like they do on Windows. If you would like your gamepad to be emulated as if it were an Xbox controller, please use the Steam client controller mapping feature. If the controller cannot be accessed directly, due to a permissions issue, it will continue to be presented like an Xbox controller.
+- fsync hang and crash fixes.
+- Add support for fsync configurable spin count, might help performance but disabled by default. Try setting `WINEFSYNC_SPINCOUNT=100`
+- Add missing Chinese, Japanese, and Korean language font.
+- Fix in-game web browser in some games including Bloons TD 6.
+- Fix new crashes related to text input, especially in Unreal Engine 4 games including Mordhau and Deep Rock Galactic.
+- Update D9VK to 0.20.
+- Improve support for very old VR titles.
+- Support for latest Steamworks and OpenVR SDK versions.
+###### 4.11-2:
+- Update DXVK to [v1.3.2](https://github.com/doitsujin/dxvk/releases/tag/v1.3.2).
+- Update FAudio to 19.08.
+- Update wine-mono to 4.9.2. This is known to fix DARK and DLC quest.
+- For high framerate displays, also report a 60 FPS mode, for older games that require it.
+- Earth Defense Force 5 and Earth Defense Force 4.1 will no longer freeze when prompted to input text.
+###### 4.11-1:
+- Rebased Proton patches on top of Wine 4.11. This brings more than 3300 improvements from Wine into Proton. 154 patches from Proton 4.2 were upstreamed or are no longer needed.
+- Proton now ships with D9VK v0.13f. D9VK is an experimental Vulkan-based Direct3D 9 renderer. It must be enabled by the user with the PROTON_USE_D9VK user setting.
+- Proton now includes experimental support for futex-based in-process synchronization primitives, which can reduce CPU usage compared to esync. For now, this requires special kernel support. See [this forum thread](https://steamcommunity.com/app/221410/discussions/0/3158631000006906163/) for testing instructions.
+- The display's current refresh rate is now reported to games.
+- Update DXVK to v1.3.
+- More window management and mouse cursor focus fixes.
+- Fix for joystick input lag and rumble support in certain games, especially Unity titles.
+- Support for the latest OpenVR SDKs.
+- Update FAudio to 19.07.
+- Fix for networking in GameMaker games.
+- Many Wine modules are now built as Windows PE files instead of Linux libraries. As work in this area progresses, this will eventually help some DRM and anti-cheat systems. If you build Proton locally, you will likely need to re-create the Vagrant VM to build PE files.
+## Available in Proton 4.2:
+###### 4.2-9:
+- Fixes for multiplayer functionality in Mordhau, SOULCALIBUR VI, and others with problems from 4.2-8.
+###### 4.2-8:
+- Fixes for games which embed web browsers using the Steam client. For example, Football Manager 2019.
+- Fix an issue with Bloodstained: Ritual of the Night and other titles crashing with an error dialog on exit.
+- Upgrade wine-mono to 4.9.0, which includes winforms support. This may help some game launchers.
+- Various window management and alt-tab fixes.
+- Fix for controllers losing force feedback when removed and re-added.
+###### 4.2-7:
+- Fix for performance and sound regression that affected some games, like Wolfenstein: The New Order.
+###### 4.2-6:
+- More fixes for the new Steam networking API. A Hat In Time's online multiplayer should be functional now.
+- DXVK 1.2.1 has been rebuilt with a modern compiler. This should increase performance especially for 32-bit games. (Note, if you build Proton yourself in Vagrant, you will want to `make clean` and `vagrant provision` to take advantage of the new compiler; or simply destroy and re-create the VM.)
+- Update FAudio to 19.06.
+- Fix for more games on non-English locales, like GRID.
+- Fix controller rumble in some games, including Team Sonic Racing.
+- Improve font rendering in SpellForce 3.
+###### 4.2-5:
+- Update DXVK to [1.2.1](https://github.com/doitsujin/dxvk/releases/tag/v1.2.1).
+- Support for new Steam networking APIs. Should fix some newer titles, including A Hat in Time.
+- Many controller layout fixes. Should fix controller layout in many Unity-based titles, including Subnautica, and some Ubisoft titles.
+###### 4.2-4:
+* Fix crash on launch for RAGE 2. (requires Mesa development builds on AMD)
+* Update DXVK to v1.1.1.
+* Improve Vulkan support for the new No Man's Sky Vulkan build.
+* Better icons in some window managers.
+* Fix occasional stuck Wine process when upgrading Proton version.
+* Fix controller detection for Yakuza Kiwami and Telltale games.
+* Fix terrain generation in Space Engineers.
+* Fix for Flower failing to launch.
+###### 4.2-3:
+- Proton now includes wine-mono. Enables many XNA games, Unreal Engine 3 games, game launchers, and more.
+- The launcher and updater for Warframe is now functional.
+- Fix text input in Age of Empires II HD.
+- NARUTO SHIPPUDEN: Ultimate Ninja STORM 4 is now playable.
+- Evochron Mercenary is now playable.
+- Continue maintaining Uplay functionality.
+- Update DXVK to [1.0.3](https://github.com/doitsujin/dxvk/releases/tag/v1.0.3).
+- Update FAudio to 19.04-13-ge8c0855.
+###### 4.2-2:
+- Corrected command line parameters for some games, including Wadjet Eye games like Blackwell Epiphany.
+- Fixed some games failing or crashing in certain locales like Turkish.
+- Updated FAudio to 19.03-25-g8105923.
+- Fixed a crash when alt-tabbing out of Deus Ex.
+- Restored previous .NET installer functionality.
+###### 4.2-1:
+- Rebased Proton patches on top of Wine 4.2. There are more than 2,400 improvements to Wine between those versions. 166 patches from Proton 3.16 have been upstreamed or are no longer needed.
+- Update DXVK to 1.0.1.
+- Update FAudio to 19.03-13-gd07f69f.
+- Mouse cursor behavior improvements for games including Resident Evil 2 and Devil May Cry 5.
+- Fixes for networking in NBA 2K19 and NBA 2K18.
+- Fixed controller duplication in RiME and other games that use SDL2.
+- Improvements to CJK locales and font support.
+- Wine's Vulkan now supports version 1.1.104 and advertises support for version 1.1 to applications.
+- Proton's fullscreen hack now works for GDI-based games.
+- Better support for games that use IVRInput for controller input in VR.
+- Further improvements and new features in the "easy path" build system. Run "make help" in the Proton directory for documentation.
+## Available in Proton 3.16:
+###### 3.16-9:
+- Update DXVK to 1.0.2.
+- Fixed some games failing or crashing in certain locales like Turkish.
+- Fix minor xaudio2 and winhttp bugs.
+###### 3.16-8:
+- Fix for Unity games with the mouse cursor drifting to the bottom-right.
+- Update DXVK to 1.0.
+- Fix for networking in some games, including Sword Art Online: Fatal Bullet.
+- Improved steamworks API support for more older games, and some newer games like Battlerite.
+- Fixes for some DX9 games on certain hardware, including Final Fantasy XI.
+###### 3.16-7:
+- Fix for fullscreen behavior in Into The Breach.
+- Fix for crashes in some d3d9 games on Mesa.
+- Fix for crash when launching certain games, including Path of Exile, the Bloons series, and the Naruto Shippuden series.
+- Fix for games with special characters in paths, including LEGO Harry Potter.
+- Improved controller behavior in some games, especially Unity-based games like Subnautica and INSIDE.
+- Update DXVK to v0.96.
+- Update FAudio to 19.02.
+- Restore previous functionality of the Uplay client.
+- New runtime option for old games that can't handle modern GL extension strings. Set PROTON_OLD_GL_STRING to limit the extension string length.
+- New runtime option to disable d3d10 support, PROTON_NO_D3D10.
+- Better support for games that use very old steamworks SDKs, including Lost Planet.
+- Fixed various problems with the build system, and added a new top-level Makefile to make simple builds much easier.
+###### 3.16-6:
+- Support for gnutls >= 3.0, which should fix many networking issues with games. Note the Steam runtime doesn't ship this yet, so your distribution will need to provide it. For users on distros that don't provide this, Steam Play will still use the Steam runtime library as before. When the Steam runtime is updated, this will be available for all users. In our testing, we saw improvements in Eve Online, DOOM (2016) multiplayer, and HELLDIVERS.
+- Other networking fixes, too. In particular, Hitman 2 and Metal Gear Solid 5 should now be working online.
+- DXVK is upgraded to 0.94. In addition to the DXVK release notes, Dishonored 2 and Middle-earth: Shadow of War appear to be working with this release.
+- Configurable support for forcing the LARGE_ADDRESS_AWARE mode. This can help some games which run out of memory when run in Steam Play, for example Bayonetta.
+- Further improvements to FAudio.
+###### 3.16-5:
+- Completely new implementation of XAudio2, using the FAudio project. This should provide much higher quality audio for games that use XAudio2. Notably, this now supports volume mixing and audio effect processing features that were missing from the old implementation.
+- Better support for embedded Chromium-based web browsers. Games and launchers that contain an embedded web browser may now work better.
+- Update DXVK to 0.93. Also include a fix for some Unity VR games when run with DXVK, like SUPERHOT VR and Job Simulator.
+- Compatibility improvements for changing paths between Linux and Windows using the Steam API. Among other things, this should fix Steam Controller icon images in certain games.
+- Minor fixes for PulseAudio users with certain hardware.
+- For developers, optional support for Vagrant, which should ease the process of creating Proton build VMs.
+###### 3.16-4:
+- Proton now ships with corefonts support. This should fix many games with missing text, or that crash due to missing font support.
+- Significant Steamworks compatibility improvements. This should fix SOULCALIBUR VI's network failure when launched through Steam Play.
+- For Direct3D games (both DXVK and wined3d), Nvidia cards are now reported as if they are actually AMD cards. This prevents games from trying to load the Windows-only nvapi library and crashing or giving very bad performance.
+- Mouse focus and clipping improvements.
+- Upgrade OpenVR SDK support.
+- Fix for a keyboard input issue in S.T.A.L.K.E.R. games.
+###### 3.16-3:
+- Fixed debug DXVK, again; same issue as originally fixed by 3.7-2 surfaced again with our new build system
+- Enabled more optimizations and instruction sets for Wine
+- Minor alt-tab fixes for Unreal Engine 1 games
+###### 3.16-2:
+- DXVK is again built as a Windows DLL, due to incompatibilities with the Steam runtime. This should fix widespread crashes with Direct3D 11 titles.
+- DXVK updated to 0.90.
+- Fix for alt-tab crashing on Unreal Engine 1 games, including Deus Ex.
+- PROTON_USE_WINED3D11 is now called PROTON_USE_WINED3D to reflect that this variable affects more than Direct3D 11. The old name still works as an alias.
+###### 3.16-1:
+- Rebased Proton patches onto Wine 3.16.
+- Updated Vulkan support in Wine to 1.1.86, plus support for transform feedback.
+- DXVK has been updated to [0.81](https://github.com/doitsujin/dxvk/releases/tag/v0.81) plus support for transform feedback which should fix missing models in many D3D11 games. *Transform feedback requires using Mesa git or NVIDIA's 396.54.09 Vulkan Beta driver*. 
+- DXVK's d3d10 mode is now enabled by default.
+- DXVK is now built as a native Linux library, which may give a small performance boost, and should make debugging easier for DXVK and driver developers.
+- Missing textures for models in some VR games has been resolved.
+- Ask the window manager to bypass the compositor in fullscreen mode. This may improve performance in some situations.
+- All new makefile-based build system.
+## Available in Proton 3.7:
+###### 3.7-8:
+- Minor compatibility fixes in preparation for future Proton versions.
+###### 3.7-7:
+- Improvements to alt-tab and fullscreen behavior in many games.
+- Fix mouse behavior in some games and mice with high sample rates.
+- Update DXVK to v0.80.
+###### 3.7-6:
+- Fix failure to start VR games.
+- Improvements to fullscreen games running at non-native resolutions.
+- Compatibility fix for games that use Steam integration.
+- Return to previous D3D10 behavior in DXVK to allow games to fallback to D3D9.
+###### 3.7-5:
+- Performance improvements for timing APIs in CPU-limited scenarios
+- Automatically capture mouse in fullscreen windows is enabled by default.
+- More display ratios have smaller resolutions available.
+- Fix a crash on old versions of SDL.
+- Fix for mouse cursor drifting in Deus Ex.
+- Debug script dump directory can be configured with `PROTON_DEBUG_DIR`.
+- Further improvements to fullscreen focus and python3 compatibility.
+###### 3.7-4:
+- Support python3 as well as python2. This removes the requirement for python2 to be installed.
+- DXVK updated to v0.70, view that changelog here: https://github.com/doitsujin/dxvk/releases DXVK's DX10 support is not yet enabled.
+- Fullscreen games should more consistently gain keyboard focus on Ubuntu with gnome-shell. This can also help with games that auto-minimize on launch.
+- Some useful default logging can be enabled with `PROTON_LOG=1 %command%` in the Steam game launch options. Logs will be dumped to $HOME/steam-$APPID.log. WINEDEBUG can still be set in user_settings.py for more extensive debugging.
+- Debug scripts are no longer dumped to /tmp/ by default. They must now be enabled with `PROTON_DUMP_DEBUG_COMMANDS=1 %command%` in the Steam game launch options. They have also been moved to /tmp/proton_$USER/.
+- Controllers will hopefully no longer cause long delays on startup on some systems (winehq bug 45084).
+###### 3.7-3:
+ - Fixed missing 32-bit libraries
+###### 3.7-2:
+ - Fixed debug DXVK
+###### 3.7-1:
+ - Initial release

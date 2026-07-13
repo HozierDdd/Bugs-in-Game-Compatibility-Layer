@@ -1,0 +1,162 @@
+[
+  {
+    "record_id": "protondb:232155",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 183699,
+    "app_id": "751820",
+    "title": "Black Future '88",
+    "created_at": "2024-07-01T02:33:39Z",
+    "text": "[metadata]\napp.steam.appId: 751820\napp.title: Black Future '88\ntimestamp: 1719801219\n\n[systemInfo]\ncpu: Intel Core i5-8300H @ 2.30GHz\ngpu: NVIDIA GeForce GTX 1050\ngpuDriver: NVIDIA 535.183.01\nkernel: 5.15.0-113-generic\nos: Linux Mint 21.3\nram: 8 GB\nsteamRuntimeVersion: steam-runtime_0.20240610.91380\nxWindowManager: Mutter (Muffin)\n\n[responses]\nanswerToWhatGame: 751820\naudioFaults: no\nconcludingNotes: Con mi Hardware tuve que hacer algunos ajustes en las opciones graficas ya que las que venían por defecto me daban problemas de tirones en algunas partes.\nfollowUp.inputFaults.controllerNotDetected: True\ngraphicalFaults: no\ninputFaults: yes\ninstalls: yes\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.verdict: Funciona exelente fuera de la caja\nonlineMultiplayerAttempted: no\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 232155,
+      "timestamp": 1719801219,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_20",
+    "calibration_group_index": 20,
+    "calibration_group_position": 1
+  },
+  {
+    "record_id": "protondb:282726",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 234270,
+    "app_id": "2225070",
+    "title": "Trackmania",
+    "created_at": "2025-04-15T04:26:26Z",
+    "text": "[metadata]\napp.steam.appId: 2225070\napp.title: Trackmania\ntimestamp: 1744691186\n\n[systemInfo]\ncpu: AMD Ryzen 7 7800X3D 8-Core\ngpu: NVIDIA GeForce RTX 4070\ngpuDriver: NVIDIA 565.77\nkernel: 6.12.10-zen1\nos: NixOS 24.11 (Vicuna)\nram: 32 GB\nsteamRuntimeVersion: steam-runtime_1.0.20250307.120442\nxWindowManager: awesome\n\n[responses]\nanswerToWhatGame: 2225070\naudioFaults: no\ncustomizationsUsed.protontricks: True\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlaunchOptions: WINEDLLOVERRIDES=\"dinput8=n,b\" mangohud %command%\nlauncher: steam\nnotes.customizationsUsed: https://openplanet.dev/docs/help/linux\nnotes.verdict: Works perfectly out of the box. Use protontricks to install OpenPlanet\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: experimental\nverdict: yes\nverdictOob: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 282726,
+      "timestamp": 1744691186,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_20",
+    "calibration_group_index": 20,
+    "calibration_group_position": 2
+  },
+  {
+    "record_id": "protondb:50030",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 1574,
+    "app_id": "960090",
+    "title": "Bloons TD 6",
+    "created_at": "2021-01-13T21:54:08Z",
+    "text": "[metadata]\napp.steam.appId: 960090\napp.title: Bloons TD 6\ntimestamp: 1610574848\n\n[systemInfo]\ncpu: AMD Ryzen 3 1200 Quad-Core\ngpu: AMD Radeon HD 8800\ngpuDriver: 4.6 Mesa 20.0.3\nkernel: 5.5.13-arch2-1\nos: Arch Linux\nram: 16 GB\n\n[responses]\nanswerToWhatGame: 960090\naudioFaults: no\nduration: lessThanAnHour\nextra: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nisImpactedByAntiCheat: no\nisMultiplayerImportant: yes\nlaunchFlagsUsed.useWineD3d11: True\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.launchFlagsUsed: PROTON_USE_WINED3D=1 %command%\nnotes.protonVersion: 5.9-GE-6-ST\nonlineMultiplayerAppraisal: excellent\nonlineMultiplayerAttempted: yes\nonlineMultiplayerPlayed: yes\nopens: yes\nperformanceFaults: no\nprotonVersion: 5.9-GE-6-ST\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntype: tinker\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 50030,
+      "timestamp": 1610574848,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_20",
+    "calibration_group_index": 20,
+    "calibration_group_position": 3
+  },
+  {
+    "record_id": "protondb:294437",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 245981,
+    "app_id": "2084970",
+    "title": "Etheria: Restart",
+    "created_at": "2025-06-12T13:54:20Z",
+    "text": "[metadata]\napp.steam.appId: 2084970\napp.title: Etheria: Restart\ntimestamp: 1749736460\n\n[systemInfo]\ncpu: AMD Ryzen 5 2600 Six-Core\ngpu: AMD Radeon RX 570 (radeonsi, polaris10, LLVM 18.1.8, DRM 3.59, 6.12.8-arch1-1)\ngpuDriver: 4.6 Mesa 24.3.3-arch1.1\nkernel: 6.12.8-arch1-1\nos: EndeavourOS Linux\nram: 24 GB\nsteamRuntimeVersion: steam-runtime_0.20241024.105847\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 2084970\naudioFaults: no\nconcludingNotes: Launcher can freeze from time to time, closing and re-opening sometimes fixes it\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.verdict: [AI art] game runs alright\nonlineMultiplayerAppraisal: excellent\nonlineMultiplayerAttempted: yes\nonlineMultiplayerPlayed: yes\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: no\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 294437,
+      "timestamp": 1749736460,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_20",
+    "calibration_group_index": 20,
+    "calibration_group_position": 4
+  },
+  {
+    "record_id": "protondb:227253",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 178797,
+    "app_id": "1213210",
+    "title": "Command & Conquer Remastered Collection",
+    "created_at": "2024-06-02T15:18:07Z",
+    "text": "[metadata]\napp.steam.appId: 1213210\napp.title: Command & Conquer Remastered Collection\ntimestamp: 1717341487\n\n[systemInfo]\ncpu: Intel Core i7-6850K @ 3.60GHz\ngpu: NVIDIA GeForce GTX 1070\ngpuDriver: NVIDIA 550.78\nkernel: 6.8.10-300.fc40.x86_64\nos: Fedora Linux 40 (Workstation Edition)\nram: 16 GB\nsteamRuntimeVersion: steam-runtime_0.20240415.84615\nxWindowManager: GNOME Shell\n\n[responses]\nanswerToWhatGame: 1213210\naudioFaults: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.verdict: Worked fine on Proton 9\nonlineMultiplayerAttempted: no\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 227253,
+      "timestamp": 1717341487,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_20",
+    "calibration_group_index": 20,
+    "calibration_group_position": 5
+  }
+]

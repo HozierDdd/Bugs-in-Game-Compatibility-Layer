@@ -1,0 +1,490 @@
+[
+  {
+    "issue_report_title": "Project Borealis: Prologue (2215490)",
+    "issue_number": 8236,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8236",
+    "compatibility_report_id": 2650146782,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Project Borealis: Prologue\r\n- Steam AppID of the game: 2215490\r\n\r\n## System Information\r\n- GPU: AMD Ryzen™ 7 PRO 5850U with Radeon™ Graphics × 16\r\n- Video driver version: amdgpu kernel 6.11.6-arch1\r\n- Kernel version: 6.11.6-arch1-1\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/Samsagax/9c7afc192f1db8cd946ac842b040ccdd\r\n- Proton version: 9.0-3\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[steam-2215490.log](https://github.com/user-attachments/files/17707299/steam-2215490.log)\r\n\r\n## Symptoms \r\nGame needs Visual Studio C++ Runtime to launch\r\n\r\n## Reproduction\r\n1. Install game\r\n2. Click \"Launch\" and wait for the prefix to be created\r\n3. Warning telling \"Microsoft Visual C++ Runtime is needed\" and the game closes\r\n",
+    "created_at": "2024-11-11T19:05:25Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8236#issuecomment-2468981229",
+        "discussion_body": "Game starts if using GE-Proton9-13 as compatibility tool, but freezes if I try to start a new game (had to sigkill it).",
+        "created_at": "2024-11-11T20:37:05Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8236#issuecomment-2480830240",
+        "discussion_body": "Works for me, latest proton experimental bleeding edge, Rx 7900 XT, Ryzen 7800x3D, 32 GB ram, Arch linux, kernel 6.11, KDE plasma 6.2.3.\r\n\r\n\r\nproton log: \r\n[steam-2215490.zip](https://github.com/user-attachments/files/17788109/steam-2215490.zip)\r\n\r\n\r\n",
+        "created_at": "2024-11-16T22:21:04Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Zenith: The Last City (1403370)",
+    "issue_number": 5531,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5531",
+    "compatibility_report_id": 1118809238,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Zenith: The Last City\r\n- Steam AppID of the game: 1403370\r\n\r\n## System Information\r\n- GPU: AMD 5700XT\r\n- Driver/LLVM version: mesa 21.3.5-1\r\n- Kernel version: 5.17.0-rc1\r\n- [Link to full system information report](https://gist.github.com/duckbytes/0c2e538660d563c43320fcb6123b88dc)\r\n- Proton version: Experimental\r\n\r\nLog file:\r\n\r\n[steam-1403370.zip](https://github.com/ValveSoftware/Proton/files/7967308/steam-1403370.zip)\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms\r\n\r\nVoice communication does not work. I cannot hear what people are saying. I don't know if other people can hear me talking.\r\n\r\nWhen looking through settings it says \"Vivox disabled\". Click on the spanner icon on the far right, and the cog icon next to Voice Volume. Then look to the panel on the far right. Clicking Refresh VC doesn't help.\r\n\r\nIt does give me the option to set pulseaudio as my input and output so it seems to be detected.\r\n\r\nI can hear all other sounds in the game.\r\n\r\n## Reproduction\r\n\r\nStart SteamVR. Start Zenith. Try to talk to other users. Check the options for Vivox status.",
+    "created_at": "2022-01-31T00:42:29Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5531#issuecomment-1034310001",
+        "discussion_body": "I have discussed with a player who got the game & voice chat to work with Linux, the issue is that the RTC of the computer is most likely synced on UTC (kinda default behavior on Linux) instead of your local TZ. This seems to make the Vivox codec to fail on it's initialization phase (don't ask why, I don't know).\r\n\r\nThe person I spoke to said that resyncing HW clock to the local TZ (manually or with `timedatectl set-local-rtc 1 --adjust-system-clock` ) allowed him to use voice chat without issue.\r\n\r\nI am waiting my Linux compatible VR Headset so I can't test/reproduce at the moment (Quest 2/Nvidia is kinda not working fine with Linux/ALVR at the moment ...).",
+        "created_at": "2022-02-09T23:30:53Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5531#issuecomment-1034472097",
+        "discussion_body": "No luck for me unfortunately. I can run the command and `sudo hwclock` confirms the time is the same as my local time. When I log into the game I do get a message that says \"connected to global chat\" but when I look into the settings it still says Vivox disabled.",
+        "created_at": "2022-02-10T04:06:49Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5531#issuecomment-1036853636",
+        "discussion_body": "got my Index today, same issue on my side, I'm trying to get more info from the discord user who got it to work.\r\n\r\nI also need to dig a bit more in that bluetooth thing to switch off the lighthouse, and let's say it, SteamVR is not working that well on Linux ...",
+        "created_at": "2022-02-12T00:37:44Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5531#issuecomment-1081430859",
+        "discussion_body": "> \r\n\r\nAny luck getting it to work?",
+        "created_at": "2022-03-29T05:50:35Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5531#issuecomment-1094142763",
+        "discussion_body": "I didn't have time to get more investigation. That being said, on the official bug board, there's a couple of discussion about Vivox codex not working properly due to that timesync issue. I'm gonna dig in tomorrow or the day after so I'll post my updates here.",
+        "created_at": "2022-04-09T23:49:32Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5531#issuecomment-1116358196",
+        "discussion_body": "I'm pretty sure that it's related to https://github.com/ValveSoftware/Proton/issues/3812 but it needs either more patching on Proton side to fix the way Vivox works, or it needs a workaround on Zenith's team side.",
+        "created_at": "2022-05-03T17:27:53Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Ghostwire Tokyo (1475810)",
+    "issue_number": 5720,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5720",
+    "compatibility_report_id": 1180560932,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Ghostwire Tokyo\r\n- Steam AppID of the game: 1475810\r\n\r\n## System Information\r\n- RTX 3070\r\n- Driver/LLVM version: nvidia 510.54\r\n- Kernel version: 5.4.0-105\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/asaokej/8651fed192124745555f67ad7690df36\r\n- Proton version: Proton experimental\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)--> \r\n\r\nProton log: \r\nhttps://gist.github.com/asaokej/0c9723f623441fab314e6001e847dad4 \r\n\r\n## Symptoms <!-- What's the problem? -->\r\nBlackscreens  and freezes in certain cutscenes. First cutscene in the start you can skip before freezing/black screen but then after ca 20 minutes there comes a cutscene that you cant skip. Tried installing mfplat but it still does not work \r\n\r\n## Reproduction\r\n\r\nEvery time you try to progress story\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2022-03-25T09:42:00Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5720#issuecomment-1078964742",
+        "discussion_body": "I have the exact same issue you can skip the first cutscene right after clicking play and selecting difficulty but at the cutscene where akito enters mari's room it fades to black and then just stays black not doing anything.\r\n\r\nI have tried it with Proton Experimental aswell as Proton GE both resulting in the same issue.",
+        "created_at": "2022-03-25T12:05:04Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5720#issuecomment-1079576943",
+        "discussion_body": "I'm encountering this issue as well. I can skip the first cutscene to get around the black screen there, but skipping the cutscene of entering Mari's room doesn't help.\r\n\r\nInterestingly, the program isn't completely frozen. If you use something like mangohud you can see that the game is still rendering frames and the CPU/GPU have substantial usage. I'm not sure what the game thinks it's doing, but whatever it is it never seems to finish it.\r\n\r\nEDIT: I've attached the output from `PROTON_LOG=1`. I can see that the game continually repeats the following line when the game is stuck at the black screen, but I have no idea if it's of any use.\r\n> ```0278:warn:d3d12_device_SetResidencyPriority: iface 000000002d3f0030, object_count 2, objects 000000003b9ff738, priorities 000000003b9ff730 stub!```\r\n\r\n[steam-1475810.log](https://github.com/ValveSoftware/Proton/files/8354577/steam-1475810.log)\r\n",
+        "created_at": "2022-03-26T02:52:38Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5720#issuecomment-1082454434",
+        "discussion_body": "As per a related discussion on the Linux Gaming Dev Discord, it seems this issue is caused by  Ghostwire's prerendered cutscenes being encoded as VP9:\r\n```\r\nwinegstreamer error: decodebin6: ../src-gst_base/gst/playback/gstdecodebin2.c(4719): gst_decode_bin_expose (): /GstBin:bin6/GstDecodeBin:decodebin6:\r\nno suitable plugins found:\r\nMissing decoder: VP9 (video/x-vp9, width=(int)3840, height=(int)2160, framerate=(fraction)30/1)\r\n```\r\n\r\nAs per [this](https://www.reddit.com/r/SteamDeck/comments/tnddlv/ghostwire_tokyo_black_screens/) Reddit thread, it seems that using an older version of Proton GE fixes the issue. I have been using [Proton GE 7.2 GE 3 test 2](https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/7.2-GE-3-test-2) and it's been working well for displaying cutscenes that otherwise cause black screens. I'm not sure why only this older version of GE has VP9 support when the newer ones don't, but presumably having VP9 decode support through GStreamer in Proton is the fix for this issue.\r\n\r\nAlso of note is that this game stutters quite a bit when traversing the open world. This seems more related to asset streaming than shader compilation stuttering.",
+        "created_at": "2022-03-29T23:07:04Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5720#issuecomment-1083332653",
+        "discussion_body": "Maybe because proton now use steamdeck soldier runtime to build?\r\nSeems like soldier do not have libvpx installed and ~~gstreamer won't build with vp9 support if libvpx is not exist.~~\r\n\r\n./gst-plugins-good/meson_options.txt\r\n\r\n    option('vpx', type : 'feature', value : 'auto', description : 'VP8 and VP9 video codec plugin')\r\n\r\n./gst-plugins-good/meson_options.txt\r\n\r\n    vpx_features = [`\r\n        [ 'vpx/vp8cx.h', 'vpx_codec_vp8_cx_algo', '-DHAVE_VP8_ENCODER', 'VP8 encoder' ],\r\n        [ 'vpx/vp8dx.h', 'vpx_codec_vp8_dx_algo', '-DHAVE_VP8_DECODER', 'VP8 decoder' ],\r\n        [ 'vpx/vp8cx.h', 'vpx_codec_vp9_cx_algo', '-DHAVE_VP9_ENCODER', 'VP9 encoder' ],\r\n        [ 'vpx/vp8dx.h', 'vpx_codec_vp9_dx_algo', '-DHAVE_VP9_DECODER', 'VP9 decoder' ],\r\n    ]\r\n\r\nThe only header file in soldier SDK image that is vp9 related is\r\n\r\n    /usr/include/va/va_enc_vp9.h\r\n    /usr/include/va/va_dec_vp9.h\r\n\r\nEDIT(2022-03-30 19:00:00+00:00):The soldier runtime is updated in client beta to included libvpx.so\r\n\r\n    SteamLinuxRuntime_soldier/soldier_platform_0.20220329.0/files/lib/i386-linux-gnu/libvpx.so.5.0.0\r\n    SteamLinuxRuntime_soldier/soldier_platform_0.20220329.0/files/lib/steamrt/expectations/i386-linux-gnu/libvpx5.symbols\r\n    SteamLinuxRuntime_soldier/soldier_platform_0.20220329.0/files/lib/steamrt/expectations/x86_64-linux-gnu/libvpx5.symbols\r\n    SteamLinuxRuntime_soldier/soldier_platform_0.20220329.0/files/lib/x86_64-linux-gnu/libvpx.so.5.0.0\r\n    SteamLinuxRuntime_soldier/soldier_platform_0.20220329.0/files/share/doc/libvpx5\r\n\r\nsoldier SDK is not yet updated.\r\n\r\nEDIT2:meson auto feature is disabled in Makefile.in\r\n\r\n    GST_GOOD_MESON_ARGS := \\\r\n    -Dauto_features=disabled \\",
+        "created_at": "2022-03-30T16:06:06Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5720#issuecomment-1853146992",
+        "discussion_body": "I was playing the game for a few hours and came across a mandatory loading screen for progressing the game (the first underground area of the game) where the loading screen stalled and became infinite.\r\nThe log says that:\r\n`(null) wait timed out in thread 025c, blocked by 0148`\r\n[(Proton Log)](https://github.com/ValveSoftware/Proton/files/13654965/steam-1475810.zip)\r\n<details><summary>Screenshot:</summary>\r\n\r\n![Screenshot_20231212_134234](https://github.com/ValveSoftware/Proton/assets/28468662/55d7a8bd-aa61-49c2-b169-7ce8ee6ae217)\r\n</details>\r\n\r\nRe-launching the game and loading an autosave to try again worked, so it appears that the issue might be associated with the length of time the game was running? I'm not sure.\r\n\r\nThe game also exhibits intermittent audio crackling and mutes, and they get significantly worse in cutscenes.",
+        "created_at": "2023-12-13T01:57:54Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5720#issuecomment-1871391115",
+        "discussion_body": "only on raytracing mode, game has a lot of memory leak.\r\n(proton experimental breeding edge + mesa-git)\r\n[steam-1475810.log](https://github.com/ValveSoftware/Proton/files/13788577/steam-1475810.log)\r\n",
+        "created_at": "2023-12-28T18:10:44Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5720#issuecomment-1871840106",
+        "discussion_body": "```\r\nvkd3d_view_map_create_view: Intense view map pressure! Got 1024 views in hash map 000000003ceccfc8. This may lead to out-of-memory errors in the extreme case.\r\n```\r\nonly get when enabled raytracing mode.\r\n\r\n\r\nUPDATE:\r\nIt was a mesa bug. \r\nand fixed in https://gitlab.freedesktop.org/mesa/mesa/-/commit/34cc76517286b88c8191a3e10dda0a3293c09127\r\n(thanks pixelcluster !)",
+        "created_at": "2023-12-29T08:35:13Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5720#issuecomment-2561486631",
+        "discussion_body": "Hello, does anyone also experience extremely high CPU usage when loading textures with raytracing on? It only happens when settings `Ray-Traced Reflection Quality` and/or `Ray-Traced Shadow Quality` is ON. (Low-High).\r\n\r\nI'm not sure if it's a texture fault or shaders are compiling but I said textures because the CPU (R5 2600 6c12t) hovers around 40% (around 50 fps) when I don't move around but the second I change location I see textures loading, CPU spikes to 100% and framerate drops to 15 fps. If you try to run ahead ignoring low framerate game will freeze for a few seconds.\\\r\nIt can also freeze when character move around small, already loader area, CPU usage is normal but game still freezes for a few seconds.  \r\n\r\nSystem Information:\r\n```\r\nCPU: AMD Ryzen 5 2600 (12) @ 3.40 GHz\r\nGPU: AMD Radeon RX 6700 XT [Discrete]\r\nMemory: 31.27 GiB\r\nMesa: 24.2.8\r\nKernel: 6.11\r\nProton: Experimental\r\n```\r\n\r\nI also did some additional testing running game on the steamdeck and there game won't even launch (Message that says starting engine time-outed) with ray tracing which could be a problem since settings were synced with my PC and the game could not start. \r\n\r\nTo exclude issue with hardware or game itself I also tried Windows 10 and there game run without issues with the same settings. \r\n\r\nIn proton log I see a lot of:\r\n```log\r\n7314.062:0130:01e0:warn:vkd3d-proton:vkd3d_get_image_allocation_info: Padding allocation requirements. Requested alignment 4096 < 65536 (dim 3, 256 x 256 x 1, 9 levels, 1 samples, fmt #3d, flags #0).\r\n7314.531:0130:0134:warn:vkd3d-proton:vkd3d_get_image_allocation_info: Padding allocation requirements. Requested alignment 4096 < 65536 (dim 3, 256 x 256 x 1, 9 levels, 1 samples, fmt #3d, flags #0).\r\n```\r\n\r\nBut I'm not sure if it's related since I also saw similar warning with rt disabled.\r\n\r\nFull log: [steam-1475810.log](https://github.com/user-attachments/files/18260802/steam-1475810.log)\r\n\r\n",
+        "created_at": "2024-12-24T23:19:24Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5720#issuecomment-2584671535",
+        "discussion_body": "Still present in the latest proton experimental version, ray tracing disabled I think. Can't progress past entering Mari's room, it fades into a black screen, I have not tried using older versions of proton-ge",
+        "created_at": "2025-01-10T22:56:27Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5720#issuecomment-2599224431",
+        "discussion_body": "I was able to work around the cutscene issue by installing https://gstreamer.freedesktop.org/documentation/installing/on-linux.html?gi-language=c",
+        "created_at": "2025-01-17T21:11:35Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5720#issuecomment-2605329653",
+        "discussion_body": "Assuming the cutscene talk is about mari's hospital room, I got there, and its video, without issue. This was on 9.0-4 (which is the default for this game) and also proton experimental",
+        "created_at": "2025-01-21T17:22:34Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "New World: Aeternum (1063730)",
+    "issue_number": 5772,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5772#issuecomment-1865318677",
+    "compatibility_report_id": 1865318677,
+    "issue_state": "open",
+    "compatibility_report": "New World eventually hard crashes my machine and have to hard reboot.\r\n\r\n# Compatibility Report\r\n- Name of the game with compatibility issues: New World\r\n- Steam AppID of the game: 1063730\r\n\r\n## System Information\r\n![Screenshot from 2023-12-20 19-10-31](https://github.com/ValveSoftware/Proton/assets/5949142/b0261ac1-639d-47f3-ae73-0848aefe152b)\r\n- [Gist](https://gist.github.com/mailhotz/11ae387d0e6ff4c82691828b4490962b)\r\n- Proton Version: Experimental but have tried many different versions\r\n\r\n# I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[steam-1063730.zip](https://github.com/ValveSoftware/Proton/files/13733763/steam-1063730.zip)\r\n\r\n# Symptoms:\r\nGame loads in fine, occasionally crashes after character select or sporadically during gameplay. It may be of note that my journal gets flooded with the following log line, on average it's posting the overrun log with different values about every 2-3ms\r\n```\r\nlocalhost.localdomain pipewire-pulse[2847]: mod.protocol-pulse: 0x55a26846aaa0: [New World] overrun recover read:230400 avail:17408 max:15360 skip:13568\r\n```\r\nExample of frequency:\r\n```\r\nDec 20 19:00:34 localhost.localdomain pipewire-pulse[2847]: mod.protocol-pulse: 0x55a26846aaa0: [New World] overrun recover read:41568768 avail:28160 max:15360 skip:24320\r\nDec 20 19:00:35 localhost.localdomain pipewire-pulse[2847]: mod.protocol-pulse: 0x55a26846aaa0: [New World] overrun recover read:41846528 avail:16640 max:15360 skip:12800\r\nDec 20 19:00:35 localhost.localdomain pipewire-pulse[2847]: mod.protocol-pulse: 0x55a26a998b50: [New World] overrun recover read:40660480 avail:16896 max:15360 skip:13056\r\nDec 20 19:00:39 localhost.localdomain pipewire-pulse[2847]: mod.protocol-pulse: 0x55a26a998b50: [New World] overrun recover read:42370816 avail:16640 max:15360 skip:12800\r\nDec 20 19:00:42 localhost.localdomain pipewire-pulse[2847]: mod.protocol-pulse: 0x55a26a998b50: [New World] overrun recover read:43474176 avail:17152 max:15360 skip:13312\r\n```\r\n\r\nDo not seem to have this log appear in any game besides New World.\r\n\r\n[Game crash in journal after freezing machine](https://gist.github.com/mailhotz/c883e25f2ef618c3976fccd6f2b5bba0)\r\n\r\n# Reproduction:\r\n- Launch game from steam with `journalctl -f`\r\n- Once selecting character and load into world\r\n- Begin to see the above pipewire-pulse spew until game is closed or crashes OS",
+    "created_at": "2023-12-21T00:38:19Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5772#issuecomment-1915705262",
+        "discussion_body": "I have a similar issue to what @mailhotz is reporting. On my end it doesn't crash the entire OS but the game itself will crash after 2 hours of continuous play. Checking journalctl reveals it spews that message several times per second.\r\n\r\nSystem specs: https://gist.github.com/Unaccounted4/2e1ee0dd64ccc5c6801740e3cbe4ab89\r\n\r\nSample of 2 seconds in journalctl:\r\n```\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:148922368 avail:16384 max:15360 skip:12544\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb3c090: [New World] overrun recover read:149659136 avail:25088 max:15360 skip:21248\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb4b890: [New World] overrun recover read:161242624 avail:41472 max:15360 skip:37632\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb3c090: [New World] overrun recover read:149684224 avail:16384 max:15360 skip:12544\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:148938752 avail:32768 max:15360 skip:28928\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb4b890: [New World] overrun recover read:161337856 avail:19968 max:15360 skip:16128\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb3c090: [New World] overrun recover read:149754368 avail:19968 max:15360 skip:16128\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:149017600 avail:27648 max:15360 skip:23808\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb4b890: [New World] overrun recover read:161380864 avail:17920 max:15360 skip:14080\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb3c090: [New World] overrun recover read:149797376 avail:17920 max:15360 skip:14080\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:149060608 avail:33792 max:15360 skip:29952\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb3c090: [New World] overrun recover read:149853696 avail:27136 max:15360 skip:23296\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:149117440 avail:34304 max:15360 skip:30464\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb4b890: [New World] overrun recover read:161479424 avail:17664 max:15360 skip:13824\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb3c090: [New World] overrun recover read:149896192 avail:25600 max:15360 skip:21760\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:149151744 avail:40960 max:15360 skip:37120\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb4b890: [New World] overrun recover read:161512448 avail:17408 max:15360 skip:13568\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb3c090: [New World] overrun recover read:149929472 avail:25088 max:15360 skip:21248\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:149192704 avail:32768 max:15360 skip:28928\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb4b890: [New World] overrun recover read:161568256 avail:18944 max:15360 skip:15104\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353bf77ab0: [New World] overrun recover read:246136576 avail:24832 max:15360 skip:20992\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb4b890: [New World] overrun recover read:161587200 avail:16384 max:15360 skip:12544\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:149240832 avail:33792 max:15360 skip:29952\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb3c090: [New World] overrun recover read:149977600 avail:42496 max:15360 skip:38656\r\njan 29 22:35:00 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:149274624 avail:16384 max:15360 skip:12544\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:149298688 avail:16896 max:15360 skip:13056\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb4b890: [New World] overrun recover read:161641984 avail:18944 max:15360 skip:15104\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb3c090: [New World] overrun recover read:150027776 avail:49664 max:15360 skip:45824\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:149323264 avail:25088 max:15360 skip:21248\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:149348352 avail:16384 max:15360 skip:12544\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353bf77ab0: [New World] overrun recover read:246257408 avail:18688 max:15360 skip:14848\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb4b890: [New World] overrun recover read:161691648 avail:26624 max:15360 skip:22784\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb3c090: [New World] overrun recover read:150108160 avail:26624 max:15360 skip:22784\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb4b890: [New World] overrun recover read:161718272 avail:16384 max:15360 skip:12544\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb3c090: [New World] overrun recover read:150134784 avail:16384 max:15360 skip:12544\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:149380096 avail:41984 max:15360 skip:38144\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353cb3c090: [New World] overrun recover read:150158848 avail:16896 max:15360 skip:13056\r\njan 29 22:35:01 Desktop pipewire-pulse[4597]: mod.protocol-pulse: 0x56353a5daa10: [New World] overrun recover read:149422080 avail:24576 max:15360 skip:20736\r\n```\r\n\r\n",
+        "created_at": "2024-01-29T22:44:17Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5772#issuecomment-2083324560",
+        "discussion_body": "Repeatedly crashing in game after 15-40 minutes of gameplay. Happens in a variety of locations.\r\n\r\nStartup settings: \r\n`ENABLE_VKBASALT=1 RADV_PERFTEST=gpl YMMV_VULKAN_ICD=RADV  WINE_CPU_TOPOLOGY=8:0,1,2,3,4,5,6,7 %command% > ~/NWout.log 2> ~/NWerr.log`\r\n\r\nHere is the ourput of NWerr.log:\r\n```ERROR: ld.so: object '/home/ash/.local/share/Steam/ubuntu12_64/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS64): ignored.\r\nERROR: ld.so: object '/home/ash/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.\r\nERROR: ld.so: object '/home/ash/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.\r\nERROR: ld.so: object '/home/ash/.local/share/Steam/ubuntu12_32/gameoverlayrenderer.so' from LD_PRELOAD cannot be preloaded (wrong ELF class: ELFCLASS32): ignored.\r\nx86_64-linux-gnu-capsule-capture-libs: warning: Dependencies of libnvidia-pkcs11.so.550.78 not found, ignoring: Missing dependencies: Could not find \"libcrypto.so.1.1\" in LD_LIBRARY_PATH \"/usr/lib/x86_64-linux-gnu/libfakeroot:/lib/i386-linux-gnu:/usr/local/lib:/lib/x86_64-linux-gnu:/lib:/home/ash/.local/share/Steam/steamapps/common/New World\", ld.so.cache, DT_RUNPATH or fallback /lib:/usr/lib\r\nesync: up and running.\r\nwine: RLIMIT_NICE is <= 20, unable to use setpriority safely\r\nSetting breakpad minidump AppID = 1063730\r\nSteam_SetMinidumpSteamID:  Caching Steam ID:  76561198055466734 [API loaded no]\r\n[356:360:20240429,123858.830:WARNING registration_protocol_win.cc:103] SendToCrashHandlerServer(): CreateFile(\"000000000376CCD0\") failed.: File not found. (2)\r\nFossilize INFO: Overriding serialization path: \"/home/ash/.local/share/Steam/steamapps/shadercache/1063730/fozpipelinesv6/steamapprun_pipeline_cache\".\r\nSetting breakpad minidump AppID = 1063730\r\nSteamInternal_SetMinidumpSteamID:  Caching Steam ID:  76561198055466734 [API loaded no]\r\nFossilize INFO: Overriding serialization path: \"/home/ash/.local/share/Steam/steamapps/shadercache/1063730/fozpipelinesv6/steamapprun_pipeline_cache\".\r\nFossilize INFO: Overriding serialization path: \"/home/ash/.local/share/Steam/steamapps/shadercache/1063730/fozpipelinesv6/steamapprun_pipeline_cache\".\r\n*** stack smashing detected ***: terminated\r\npid 5923 != 5922, skipping destruction (fork without exec?)\r\n```\r\n\r\n\r\nThe error log shows up to \"Fossilize INFO\" while starting and then the crash is always \"stack smashing detected\". I've tried this on Proton 7, 8, 9 beta, and experimental through Steam's compatibility tool.\r\n\r\nDoes anyone have any idea on next steps? I keep crashing in combat and dying.",
+        "created_at": "2024-04-29T17:57:13Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5772#issuecomment-2090860360",
+        "discussion_body": "The game seems to have a problem with multi-threading and proton, I have been able to achieve stable performance (albeit not great performance) with the following change to my launch options: `WINE_CPU_TOPOLOGY=4:0,2,4,6`\r\n\r\nEDIT: @blae-s why thumbs down?",
+        "created_at": "2024-05-02T15:49:52Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5772#issuecomment-2247757031",
+        "discussion_body": "Someone solution for the crashes? I have a rtx 4070 and a i5 13500, i am using proton 9-10 and Manjaro with wayland",
+        "created_at": "2024-07-24T12:14:02Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5772#issuecomment-2425215997",
+        "discussion_body": "The \"Unsupported CPU detected\" issue was caused by gamemode. Without using gamemode everything works as expected and without any performance issues.",
+        "created_at": "2024-10-20T20:49:28Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5772#issuecomment-2459570399",
+        "discussion_body": "Steam Overlay doesn't seem to be working on my PC, which breaks Steam Input and the in-game cash store. Honestly that last one may be a positive, but I'm sure AGS disagrees.\r\n\r\nI've tried with and without gamescope, it makes no difference. Adding or removing the -e flag in gamescope also doesn't make a difference.\r\n\r\nThe issue seems to be the EAC pop-up, as I can see the little \"Shift+Tab to open\" toast notification on the EAC pop-up. Then nothing in game proper.",
+        "created_at": "2024-11-06T12:03:24Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Elder Scrolls Online, Zenimax Free Space Error / Directory Not Writable",
+    "issue_number": 4682,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/4682",
+    "compatibility_report_id": 836891116,
+    "issue_state": "closed",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Elder Scrolls Online\r\n- Steam AppID of the game: 306130\r\n\r\n## System Information\r\n- GPU: GTX 1650\r\n- Driver/LLVM version: nvidia 460.56\r\n- Kernel version: 5.11.7-zen1-1\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/jmgant/a1ebe8e180b4c61661994c9575d5646f\r\n[steam-346110.log](https://github.com/ValveSoftware/Proton/files/6176252/steam-346110.log)\r\n\r\n- Proton version: All\r\n[steam-346110.log](https://github.com/ValveSoftware/Proton/files/6176226/steam-346110.log)\r\n\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and drag\r\nand drop the generated `$HOME/steam-$APPID.log` into this issue report -->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nWhen I launch the game with Proton Experimental, the Zenimax installer says I only have 3GB available while I have over 1TB and won't install. When I launch with older Proton versions, the free space is reported correctly, however the Zenimax installer says the path to the game is not writable. I assure you it is, or has been made so.\r\n\r\nI had this game on this system running at first. I removed it from an old, small drive, and it is only upon the reinstall that this has happened.\r\n\r\n\r\n\r\n[steam-346110.log](https://github.com/ValveSoftware/Proton/files/6176234/steam-346110.log)\r\n\r\n## Reproduction\r\n\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->",
+    "created_at": "2021-03-20T19:19:06Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/4682#issuecomment-803453192",
+        "discussion_body": "Hello @jmgant, we're using one issue report per unofficially supported game title, so I've gone ahead and transferred this issue report to https://github.com/ValveSoftware/Proton/issues/556#issuecomment-803453152.",
+        "created_at": "2021-03-20T19:42:27Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "DCL The Game (964570)",
+    "issue_number": 5903,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5903",
+    "compatibility_report_id": 1269781590,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: DCL the game\r\n- Steam AppID of the game:  964570\r\n\r\n## System Information\r\n- GPU: RTX 2080ti\r\n- Driver/LLVM version: nvidia 510\r\n- Kernel version: 5.15\r\n- Link to full system information report as [Gist](https://gist.github.com/):\r\n- Proton version:7.0-2 & experimental & Proton-GE-7.20\r\n\r\n## I confirm:\r\n- [ x ] that I haven't found an existing compatibility report for this game.\r\n- [ x ] that I have checked whether there are updates for my system available.\r\n\r\n[steam-964570.log](https://github.com/ValveSoftware/Proton/files/8893426/steam-964570.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nPrompted to install UE4 pre-requisites (VC++ 2017) each time the game is launched (even if they installed the prior time and the installer now only offers the option to uninstall).\r\n\r\nGame launches to black screen and does not load.\r\n\r\n## Reproduction\r\n\r\nStart game.",
+    "created_at": "2022-06-13T18:09:53Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5903#issuecomment-1154229462",
+        "discussion_body": "Edit - game launches with Proton 6.3-8, so this is a regression.",
+        "created_at": "2022-06-13T18:13:21Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "DORAEMON STORY OF SEASONS: Friends of the Great Kingdom (1492730)",
+    "issue_number": 8964,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8964",
+    "compatibility_report_id": 3306358743,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\n- DORAEMON STORY OF SEASONS: Friends of Great Kingdom \n- Steam AppID of the game: 1492730\n\n## System Information\n- Steam Deck LCD\n- Stable SteamOS 3.7.13\n- Proton version: 9.04, Experimental\n\n## I confirm:\n- [x] that I haven't found an existing compatibility report for this game.\n- [x] that I have checked whether there are updates for my system available.\n\n[steam-1492730.zip](https://github.com/user-attachments/files/21698313/steam-1492730.zip)\n\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\n(Proton logs compress well if needed.)-->\n\n## Symptoms <!-- What's the problem? -->\nGame crashes, first it freezes the image but the audio still working, after some seconds the games closes without any error message.\n\n## Reproduction\nI don't  know exactly how reproduce, but it happens more frequently on the city area, it happened two times when i was entering the city area, an another 3 times after exiting the restaurant and going in direction of the doctor building.\nWith Proton Experimental the games crashed as soon as loading the savegame is finished.\n\n<!--\n1. You can find the Steam AppID in the URL of the shop page of the game.\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\n2. You can find your driver and Linux version, as well as your graphics\n   processor's name in the system information report of Steam.\n3. You can retrieve a full system information report by clicking\n   `Help` > `System Information` in the Steam client on your machine.\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\n   this issue.\n5. Also, please copy the contents of `Help` > `Steam Runtime Diagnostics` to\n   the gist.\n6. Please search for open issues and pull requests by the name of the game and\n   find out whether they are relevant and should be referenced above.\n-->\n",
+    "created_at": "2025-08-09T13:25:42Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3348791804",
+        "discussion_body": "@AlbertoEberhardt I'm guessing that by city area you mean castletown plaza?\n\n<img width=\"1280\" height=\"800\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/0e8a4a39-bbc4-4a2a-9f56-d44b97865834\" />\n\nHave you kept playing the game recently? If so, have these crashes continued? Have you noticed if there are other factors involved? Like, for example, the season or time of day.",
+        "created_at": "2025-09-29T19:47:46Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3353024286",
+        "discussion_body": "Yes is the Castle Town Plaza.\n\nI recently (less than a week ago) switched the compatibility layer to Proton 10 Beta, made some testing and the the game didn't seem to crash, so i decided to keep playing normally, then after 2 or 3 in game days, the game crashed after i exited the Restaurant and walked a little toward the Castle entrance (where usually are two guards standing). \n\nSo to summarize: the crashes still happening, but aren't as easily to reproduce as they where on previous versions of Proton.\n\nBut while writing this, i discovered that if you put the Steam Deck to spleep with the game open the game will crash if you go to Castle Town Plaza after waking up the Steam Deck. Maybe this was the reason i had the crash that i said earlier (cannot remember if i have put the Steam Deck to spleep, maybe?).\nAnd if you put the Steam Deck to sleep with the game open while you is in the Castle Town Plaza, after you wake the Steam Deck, the game and Steam will crash.\n",
+        "created_at": "2025-09-30T16:48:08Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3356458304",
+        "discussion_body": "Today i found another way to crash the game: go to Castle Town Plaza and take a nap, then the screen will fade in and out to symbolize the time passing, and after you wake up and move the character a little the game will crash. If you take the nap from 3:00 PM to 6:00 PM (which is the time when the climate/light change) the game will crash before you are able to move the character.",
+        "created_at": "2025-10-01T13:51:18Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3357321225",
+        "discussion_body": "@AlbertoEberhardt thank you for all the information, sadly I haven't had luck getting the game to crash on my end? Does the nap approach reliably crash the game for you? I've been playing on and off since yesterday trying to spend a lot of time entering and leaving the plaza and its buildings, and today the napping, but no luck so far.\n\nJust to try and narrow things down, do you have decky or something that hooks into game mode installed? Do you play handheld or docked? Any configuration that you've changed in the Quick Access Menu?",
+        "created_at": "2025-10-01T17:08:41Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3357707056",
+        "discussion_body": "The nap crash i was able to replicate, but after restating the Steam Deck i cannot replicate it.\nBut i think now i have one crash that still happening even after multiples system reboots: Go to Castle Town Plaza and put the Deck to spleep wait a little (4 or 5 minutes) then wake up the Deck, to me this makes the game crash (sometimes you will be able to walk a little but eventually it will crash), but if i put to spleep and wake up the Deck without waiting some minutes the game doesn't seems to crash, it only crash if you wait some minutes.\n\nYes! I have decky installed and the following plugins: AutoSuspend, Pause Games, SteamGridDB, PlayTime, CSS Loader and Game Sync (i don't have it configured to upload any file for this game, because it already have steam cloud support).\n\nI play only in handheld mode.\n\nThe only setting that is changed in the quick access menu is the TDP Limit wich is set to 10 watts (globally not specific game configuration). ",
+        "created_at": "2025-10-01T18:54:33Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3357798353",
+        "discussion_body": "Here is the log of the crash with the method commented on the previous message (but this time it didn't crash first time so i put the Deck to spleep a second time, then waited more 5 minutes). \n\n[steam-1492730.zip](https://github.com/user-attachments/files/22647182/steam-1492730.zip)",
+        "created_at": "2025-10-01T19:17:00Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3358379590",
+        "discussion_body": "@AlbertoEberhardt still no luck, even with 10w tdp and suspending the system, 5 minutes, 1 hour, no luck. I haven't used decky so I don't know if it's too much trouble, but could you try uninstalling autosuspend and pause games? There's a chance there might be some conflict with them installed, leading to the crash.",
+        "created_at": "2025-10-01T22:30:39Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3358445389",
+        "discussion_body": "Even after uninstalling the two plugins i was able to make the game crash. Will try to delete decky to see what happens.",
+        "created_at": "2025-10-01T23:00:32Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3358495780",
+        "discussion_body": "I am still able to make the game crash without decky installed.\n",
+        "created_at": "2025-10-01T23:24:41Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3362642802",
+        "discussion_body": "@AlbertoEberhardt Things are getting complicated. What I have is an oled, so I was hoping this was a rare lcd specific issue, but I asked someone to try and repro, and they couldn't on either steamos 3.7.15 or 3.8.0 (main).\n\nWhile resetting the steam deck would be ideal to make sure there isn't some leftover configuration causing issues, I understand this is annoying.\nFor now, something we can try is that if you repro the issue again, go to the steam menu > settings > system > create report (it's at the bottom) save to desktop. Then you can go to desktop mode, and you'll find a text file with the information in your desktop, upload that here please.",
+        "created_at": "2025-10-02T19:26:42Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3363179400",
+        "discussion_body": "I have tried several thinks: wifi off, bluetooh off, no sd card inserted, switched the language to English and did a Steam OS repair, an in all tests i was able to make the game crash with the sleep + waiting 5 minutes method, and it only happens in that specific location i tried in other locations and it didn't crash, must be something very very specific, i will send the report that you asked and then i will do a clean install of Steam OS since the repair already deleted my installed games and the per game settings, there still just a couple of thinks to backup.",
+        "created_at": "2025-10-02T21:30:13Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3363608487",
+        "discussion_body": "\n[systemreport-20251002220717.txt](https://github.com/user-attachments/files/22671023/systemreport-20251002220717.txt)",
+        "created_at": "2025-10-02T23:29:45Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3363618429",
+        "discussion_body": "Even after reinstalling Steam OS i am able to reproduce the crash.\nSystem report with the crash on the clean installation ->\n\n[systemreport-20251002225213.txt](https://github.com/user-attachments/files/22671049/systemreport-20251002225213.txt)",
+        "created_at": "2025-10-02T23:35:23Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3366113363",
+        "discussion_body": "@AlbertoEberhardt this log is meant to be after getting the device back to stock, right? I see that decky is still being loaded, although strangely it seems to only load after the gpu resets, not before (though after that gpu reset, I see more kernel issues about hanged tasks). ",
+        "created_at": "2025-10-03T15:09:43Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3366337304",
+        "discussion_body": "Yes! The one with the message (and that is about 2mb in size) is the one after i reinstalled Steam Os with the option to Wipe and Install Steam OS. \nVery strange indeed that Decky still being loaded, i am willing to do one more reinstall before i give up, but i would need a little help, before reinstall the system i want to format and clear/delete all disk partitions that Steam Os creates when is installed, but i don't how to do that on Steam OS , on Windows we can use the Disk Manager, but i didn't find anything similar on Steam OS.",
+        "created_at": "2025-10-03T16:17:56Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3367248891",
+        "discussion_body": "@AlbertoEberhardt If you go to settings > system> factory reset (at the very bottom) it should wipe the deck back to how you originally received it. **This will wipe any changes you made to the home folder in desktop mode as well, so you need to back up anything you don't want to lose**.",
+        "created_at": "2025-10-03T21:22:18Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3367378871",
+        "discussion_body": "Just did it, an unfortunately i am still able to make the game crash. \n\nHere is the log -> \n\n[systemreport-20251003215550.txt](https://github.com/user-attachments/files/22688694/systemreport-20251003215550.txt)",
+        "created_at": "2025-10-03T22:17:03Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3367563872",
+        "discussion_body": "@AlbertoEberhardt Yeah, now decky isn't on your system anymore, so that can be written off the suspect list. I imagine the response to this will be no, but just to make sure, have you changed any of the following options in the quick access menu performance tab? : Disable Frame Limit, Allow Tearing, Half Rate Shading, Scaling Mode, Scaling Filter (the last two select the leftmost option by default).\n\nIf you haven't modified any of these, can you share your save file to make sure it doesn't somehow depend on progressing through the game for the issue to occur, hopefully the file saves are sharable.\n\nTo find it for this game you'll have to go to desktop mode, look for the `steam` folder in your home folder, and then go to `./steamapps/compatdata/1492730/pfx/drive_c/users/steamuser/AppData/LocalLow/BANDAI NAMCO Entertainment Inc_/DORAEMON STORY OF SEASONS FotGK/` and zip the folder  called `Saved`, while you are here, and if the last time you played had the game crashing, grab `Player.log` as well.",
+        "created_at": "2025-10-03T23:48:25Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3367585388",
+        "discussion_body": "I haven't changed any settings on the quick access menu all are defaults.\n\nI can share the save files, but i did think the same about needing to progress more, so i tested with a new save file and the issue can be reproduced there as well.\n\n[Saved.zip](https://github.com/user-attachments/files/22690009/Saved.zip)\n\n[Player.log](https://github.com/user-attachments/files/22690049/Player.log)\n",
+        "created_at": "2025-10-04T00:07:11Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3367594194",
+        "discussion_body": "Just to remember how i make the game crash:\n1- Go to Castle Town Plaza (i usually stop by the bulletin board)\n2- Put the Deck to Spleep (i press the power button)\n3- Wait 5 minutes.\n4- Wake up the Deck.\n5- Now the game freezes and after some seconds it force close, sometimes it doesn't freeze right after you wake up the Deck, but if you try to walk around the Plaza a little bit it probably will freeze and crash.\n",
+        "created_at": "2025-10-04T00:15:09Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3367730067",
+        "discussion_body": "@AlbertoEberhardt You have the dlc, right? while it shows the save slots with their name and day you were at, it doesn't let me load them complaining about downloadable files, I added the dlc but the nag didn't go away. So I started a new game and went to the plaza, but still no repro.\n\nFor reference, this is the graphics settings I'm using\n\n<img width=\"1280\" height=\"800\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/cb425d54-45da-49d0-abcb-f421e85849ec\" />\n\nRegarding your method for reproduction, you had also mentioned that you were able to crash it by napping to 18:00 while in the plaza, does this not make it crash reliably? But just to confirm, I tried to repro by suspending at the plaza for several minute to several hours at a time with no luck (though recently only 3 tries after 5-6 minutes).\n\nThe reason the game crashes appears to be that the gpu kernel driver crashes, but the why is the issue here.\nThere's a tool that should hopefully help get more information out of the gpu crash, but it requires going into desktop mode (or a SSH connection, if you know how to use that)  and using the terminal to install and set things up.",
+        "created_at": "2025-10-04T01:24:19Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3367895151",
+        "discussion_body": "The 2 two first saves requires all the dlcs, the 3 one shouldn't need any dlc because i disabled them to test, but also is just right in the beginning of the game (and also is the one that i still using to do all this tests).\n\nI am using the same graphic settings as you are.\n\nThe nap method isn't 100% reliable. The suspend/resume is the only method that work 100% of the times, and 99% in the first attempt.\n\nIf you post a guide of how to setup the tool i can try it! I not familiar with SSH, i just remember that Dolphin created a folder with this name after i used it to copy some files from my Windows Pc via sftp.\n",
+        "created_at": "2025-10-04T04:46:36Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3368390547",
+        "discussion_body": "@AlbertoEberhardt SSH is a way to connect and run commands from another device remotely, in this case I'd say it's just going to increase friction, so let's just run the commands from deck directly. Hopefully you have a keyboard you can connect to it.\n\nAlso, bear in mind that there's a possibility the game may not crash with these extra debugging options attached and there would not be an extra log to get as a result 😢.\n\n1. Go to desktop mode\n2. Open the terminal (it's called konsole)\n3. Write the following command: `passwd`. With this, you'll be able to set up a password, which will be needed to run things as root. This won't affect game mode. Note that you won't be able to see any characters that you write, not even as asterisk, this is normal.\n4. `sudo steamos-devmode enable` is the next command, this will ask for the password you just set. It'll ask you to confirm you want to enable it, for which you type `y` followed by enter to submit it.\n5. `sudo pacman -S umr` which is the program that will help us dump information.\n6. `sudo chmod +s $(which umr)` so that the video drivers can access it.\n7. `sudo chmod 777 /sys/kernel/debug; sudo chmod -R 777 /sys/kernel/debug/dri` this will give UMR access to kernel interfaces it needs to do its work. Note that if you reboot your deck, this particular step has to be done again if you want to capture a gpu crash dump.\n8. Follow the proton zip file I attached at the end, and unzip it in `/home/deck/.steam/steam/compatibilitytools.d/`, it should end up as  `/home/deck/.steam/steam/compatibilitytools.d/Proton - Experimental (no runtime)`. Note that files and folders that start with a dot are hidden by default, you'd have to configure dolphin to allow you to see them or use the `ctrl + h` that toggles hidden files on/off.\n9. Now you can go back to game mode, go to the game's properties and make this the game's launch parameter `RADV_DEBUG=hang %command%`\n10. Go to `Compatibility` in the game's properties, and set the proton version to `Proton - Experimental (no runtime)`\n\nAfter all that, you can finally run the game and attempt to crash it again. It's very likely the game will run slower, and there's a chance it won't crash either, so brace yourself. After you wake up the deck so that it would normally make the game crash, you have to go to desktop mode and check your home folder, where you should find a folder called radv_dumps, zip it and upload it.\n\n[Proton - Experimental (no runtime).zip](https://github.com/user-attachments/files/22702559/Proton.-.Experimental.no.runtime.zip)\n\nI completely understand if this is too much of a hassle, and you don't want to go through with it.  There's a possibility you might be able to avoid this crash by disabling dxvk for this title, so that you can at least hopefully not have to deal with it on your end. To do so you have to change the game's launch parameter which is found on steam on the game's properties, and make it `PROTON_USE_WINED3D=1 %command%`\n\nIf you decide to go through with all that, at least know that as long as you aren't using `RADV_DEBUG=hang` it shouldn't make a difference to your games, so at least you don't have to worry about the cleanup.",
+        "created_at": "2025-10-04T16:21:26Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3368401623",
+        "discussion_body": "Thanks for the explained guide! Everything seems easy enough to handle. Will do it tonight when i have more time.\n",
+        "created_at": "2025-10-04T16:39:51Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3368427668",
+        "discussion_body": "Tested very quickly with dxvk disabled and the game  doesn't launch, i installed the directx from the Steam Common Redistributables and still not launching.\nHere is the error screen\n\n![Error Screen](https://github.com/user-attachments/assets/0cdc4e4f-456a-48f0-bf5a-f5635e105340)",
+        "created_at": "2025-10-04T17:21:42Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3368430261",
+        "discussion_body": "@AlbertoEberhardt \n\n[debug.sh](https://github.com/user-attachments/files/22703196/debug.sh)\nif you drag this to konsole it should simplify steps 3 through 8, you'll still have to set the password and confirm the things that ask for your confirmation, but you won't have to write the commands manually. If it gives you permisson denid when you try to run it, go to the file properties on dolphin and mark it as executable. This is a text file so you can use kate to open and read it. \n\nSorry about the wined3d suggestion, I should have checked if it would work with this title first.",
+        "created_at": "2025-10-04T17:25:39Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3368569373",
+        "discussion_body": "Thanks for the script it made things go way faster! The game did freeze, then when usually it will close itself the screen did blink and Steam restarted (just Steam not Steam OS), don't know if this is expected, but anyway  here's the log files.\n\n[radv_dumps_7415_2025.10.04_19.04.13.zip](https://github.com/user-attachments/files/22704447/radv_dumps_7415_2025.10.04_19.04.13.zip)",
+        "created_at": "2025-10-04T22:10:54Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3372559818",
+        "discussion_body": "@AlbertoEberhardt Asked a driver dev, and they explain it's going to be tough to fix a gpu hang without a local repro, but for now it seems like you can get a bit more information by also adding the following to the game's launch parameter: `ACO_DEBUG=force-waitcnt`.\n\n`ACO_DEBUG=force-waitcnt RADV_DEBUG=hang %command%`\n\nIf you rebooted deck, remember you have to rerun step 7.",
+        "created_at": "2025-10-06T16:13:39Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3372721054",
+        "discussion_body": "Here the is the log:\n\n[radv_dumps_11095_2025.10.06_13.32.25.zip](https://github.com/user-attachments/files/22726818/radv_dumps_11095_2025.10.06_13.32.25.zip)",
+        "created_at": "2025-10-06T16:36:13Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3377936833",
+        "discussion_body": "@AlbertoEberhardt I've opened a ticket with mesa https://gitlab.freedesktop.org/mesa/mesa/-/issues/14062 check it over in case I missed anything important.\n\nIf you have the chance and time, it could help to check with a more recent steamos just to see if the issue still happens with a newer kernel and mesa version.\n\n- steam menu > settings > system > toggle developer mode (close to the top)\n- Go back to settings and you'll find the developer menu at the bottom of the list\n- Go around the middle of the developer menu and toggle \"Show Advanced Update Channels\"\n- Go back to Settings > System, Change OS Update Channel to `main`\n- Update, reboot, and try to reproduce the issue again",
+        "created_at": "2025-10-07T17:44:30Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3378812023",
+        "discussion_body": "Your report cover everything that is worth noting.\n\nUpdated to the main channel and was able to reproduce the crash.\nWill link the log, in case is needed.\n\n[radv_dumps_11365_2025.10.07_18.33.15.zip](https://github.com/user-attachments/files/22754553/radv_dumps_11365_2025.10.07_18.33.15.zip)",
+        "created_at": "2025-10-07T21:42:36Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8964#issuecomment-3740238188",
+        "discussion_body": "@AlbertoEberhardt While I can't guarantee you won't see the issue anymore (as it couldn't be repro'd on my side) I think it's worth trying to use steamos main at this point due to changes done in the past few months.\n\n- To unlock the option you need to go to settings>system and toggle developer mode on\n- This will add an entry to the bottom of the setting list (under \"store\")\n- Go to settings > developer and toggle \"show advanced update channels\" which will be roughly in the middle of that page\n- Go back to settings > system and in OS update channel you will be able to select \"main\"",
+        "created_at": "2026-01-12T19:51:14Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Darkest Dungeon II (1940340)",
+    "issue_number": 6756,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/6756",
+    "compatibility_report_id": 1701019949,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Darkest Dungeon II\r\n- Steam AppID of the game: 1940340\r\n\r\n## System Information\r\n- GPU: RX 6700 XT\r\n- Driver/LLVM version: Mesa 23.0.3-3, LLVM 15.0.7\r\n- Kernel version: 6.2.14\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/zrooda/27f237db61453e1bca779c2d43aee27c\r\n- Proton version: default, 8.0-2, Experimental\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nGame launched with only a black screen at first until I switched to Experimental. Afterwards game works even with default Proton but has serious performance issues. The second area drops well below ~15 fps on my hardware, likely unplayable on the Steam Deck - I will post an update once I get to try it there.\r\n\r\n## Reproduction\r\n\r\nRun game, maybe switch to Experimental if it only displays a black screen. Observe unexpectedly poor performance, especially visible while riding the stagecoach.\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n[steam-1940340.log](https://github.com/ValveSoftware/Proton/files/11425576/steam-1940340.log)\r\n",
+    "created_at": "2023-05-08T22:12:37Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6756#issuecomment-1540826224",
+        "discussion_body": "Hello @ryuukk, it should be noted that Proton is a compatibility layer intended to be launched from Steam. While this issue tracker is mildly flexible when it comes to discussing the behavior of third party builds, your specific question is about a missing library with a third party build of Proton being run with a third party launcher. This kind of dependency would be provided by the Steam Linux Runtime - Sniper container environment with the mainline build of Proton 8.0.\r\n\r\nThis is the wrong issue tracker to get help with your specific library dependency issue.",
+        "created_at": "2023-05-09T20:09:19Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Space Engineers (244850) crashes arbitrarily in faudio and SDL2",
+    "issue_number": 5523,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5523",
+    "compatibility_report_id": 1117794442,
+    "issue_state": "closed",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Space Engineers\r\n- Steam AppID of the game: 244850\r\n\r\n## System Information\r\n- GPU: AMD RX 5700 XT\r\n- Driver/LLVM version: Mesa 21.3.4\r\n- Kernel version: 5.16.1\r\n- Link to full system information report as [Gist](https://gist.github.com/priand1/6c0059d4a5c3955e01dcd7b57f0af128):\r\n- Proton version: 6.3\r\n\r\n## I confirm:\r\n- [X ] that I haven't found an existing compatibility report for this game.\r\n- [X ] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)--> Proton-crash-log: [Gist](https://gist.github.com/priand1/a901217ca29c8167a2726056f5b566dd)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nSpace Engineers crashes arbitrarily. This can happen after 5 minutes of playing or after 5 hours.\r\n\r\nProton leaves crash reports in /tmp/proton_crashreports/ every time the game crashes.\r\nAccording to these reports there seems to be a problem with faudio and/or SDL2\r\n\r\nThis happens with proton 6.3 as with proton experimental as well.\r\n\r\n## Reproduction\r\n\r\nPlay SE.\r\n\r\n#1792 ",
+    "created_at": "2022-01-28T19:50:29Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5523#issuecomment-1024586998",
+        "discussion_body": "Hello @priand1, we're using one issue report per unofficially supported game title, so I've gone ahead and transferred this issue report to https://github.com/ValveSoftware/Proton/issues/1792#issuecomment-1024586675.",
+        "created_at": "2022-01-28T19:53:11Z",
+        "is_for_the_report": null
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Drop Duchy (2525310)",
+    "issue_number": 8711,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8711",
+    "compatibility_report_id": 3071674714,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\n- Name of the game with compatibility issues: [Drop Duchy](https://store.steampowered.com/app/2525310/Drop_Duchy/)\n- Steam AppID of the game: 2525310\n\n## System Information\n- GPU: Nvidia GTX 1080Ti\n- Video driver version: NVIDIA 570.144\n- Kernel version: 6.14.6\n- [Link to full system information report as Gist](https://gist.github.com/eloj/4409b6d7c59b558b244eff39118cb660).\n- Proton version: 9.0, hotfix, experimental..\n\n## I confirm:\n- [X] that I haven't found an existing compatibility report for this game.\n- [X] that I have checked whether there are updates for my system available.\n\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\n(Proton logs compress well if needed.)-->\n\n## Symptoms <!-- What's the problem? -->\n\nThe game \"launches\", but there's no window created nor any sound. The only option is to kill the process(es) using the Stop button. This seems a lot like #8682 though this game seems to use UE5.\n\n## Reproduction\n\nWith my configuration, the reproduction is just to install the game and try to start it.\n\n## Workaround\n\nAfter trying all sorts of workarounds, including PROTON_DISABLE_NVAPI, PROTON_USE_WINED3D, WINE_DO_NOT_CREATE_DXGI_DEVICE_MANAGER -- without success -- I found a [post by the developer](https://steamcommunity.com/app/2525310/discussions/0/744882977527323256/) from where I learned that you can use the options '-force -dx11' to force it from DX12 to DX11, and this worked.\n\n## Logs\n\nIn the default (non-working) case, the PROTON_LOG ends thus:\n\n```\n...\n21630.103:0130:0134:info:dxvk-nvapi:NvAPI_QueryInterface (0xad298d3f): Unknown function ID\n21630.103:0130:0134:info:dxvk-nvapi:NvAPI_Initialize\n21630.103:0130:0134:info:dxvk-nvapi:DXVK-NVAPI proton-9.0-4e NVAPI gcc 10.3.0 x86_64 plain (DropDuchy-Win64-Shipping.exe)\ninfo:  NVIDIA GeForce GTX 1080 Ti:\ninfo:    Driver : NVIDIA 570.144.0\ninfo:    Memory Heap[0]: \ninfo:      Size: 11264 MiB\ninfo:      Flags: 0x1\ninfo:      Memory Type[7]: Property Flags = 0x1\ninfo:    Memory Heap[1]: \ninfo:      Size: 48169 MiB\ninfo:      Flags: 0x0\ninfo:      Memory Type[0]: Property Flags = 0x0\ninfo:      Memory Type[1]: Property Flags = 0x0\ninfo:      Memory Type[2]: Property Flags = 0x0\ninfo:      Memory Type[3]: Property Flags = 0x0\ninfo:      Memory Type[4]: Property Flags = 0x0\ninfo:      Memory Type[5]: Property Flags = 0x0\ninfo:      Memory Type[6]: Property Flags = 0x0\ninfo:      Memory Type[8]: Property Flags = 0x6\ninfo:      Memory Type[9]: Property Flags = 0xe\ninfo:    Memory Heap[2]: \ninfo:      Size: 246 MiB\ninfo:      Flags: 0x1\ninfo:      Memory Type[10]: Property Flags = 0x7\n21630.104:0130:0134:info:dxvk-nvapi:Successfully acquired Vulkan vkGetInstanceProcAddr @ 0x6ffff9add660\n21630.105:0130:0134:info:dxvk-nvapi:NvAPI Device: NVIDIA GeForce GTX 1080 Ti (570.144.0)\n21630.106:0130:0134:info:dxvk-nvapi:NvAPI Output: \\\\.\\DISPLAY1\n21630.108:0130:0134:info:dxvk-nvapi:<-NvAPI_Initialize: OK\n21630.108:0130:0134:info:dxvk-nvapi:NvAPI_QueryInterface (0x33c7358c): Unknown function ID\n21630.108:0130:0134:info:dxvk-nvapi:NvAPI_QueryInterface (0x593e8644): Unknown function ID\n21630.108:0130:0134:info:dxvk-nvapi:<-NvAPI_D3D12_IsNvShaderExtnOpCodeSupported (20/NV_EXTN_OP_UINT64_ATOMIC): OK\n21630.108:0130:0134:info:dxvk-nvapi:<-NvAPI_SYS_GetDriverAndBranchVersion: OK\n21630.110:0130:020c:warn:threadname:NtSetInformationThread Thread renamed to L\"RHIInterruptThread\"\n21630.110:0130:020c:trace:seh:dispatch_exception code=406d1388 flags=0 addr=00006FFFFFC1CF07 ip=6fffffc1cf07\n21630.110:0130:020c:trace:seh:dispatch_exception  info[0]=0000000000001000\n21630.110:0130:020c:trace:seh:dispatch_exception  info[1]=000000003004fe80\n21630.110:0130:020c:trace:seh:dispatch_exception  info[2]=000000000000020c\n21630.110:0130:020c:warn:threadname:dispatch_exception Thread renamed to \"RHIInterruptThread\"\n21630.110:0130:020c:trace:seh:call_vectored_handlers calling handler at 00006FFFF949B1D0 code=406d1388 flags=0\n21630.110:0130:020c:trace:seh:call_vectored_handlers handler at 00006FFFF949B1D0 returned ffffffff\n21630.111:0130:0210:warn:threadname:NtSetInformationThread Thread renamed to L\"RHISubmissionThread\"\n21630.111:0130:0210:trace:seh:dispatch_exception code=406d1388 flags=0 addr=00006FFFFFC1CF07 ip=6fffffc1cf07\n21630.111:0130:0210:trace:seh:dispatch_exception  info[0]=0000000000001000\n21630.111:0130:0210:trace:seh:dispatch_exception  info[1]=0000000030bcfe80\n21630.111:0130:0210:trace:seh:dispatch_exception  info[2]=0000000000000210\n21630.111:0130:0210:warn:threadname:dispatch_exception Thread renamed to \"RHISubmissionThread\"\n21630.111:0130:0210:trace:seh:call_vectored_handlers calling handler at 00006FFFF949B1D0 code=406d1388 flags=0\n21630.111:0130:0210:trace:seh:call_vectored_handlers handler at 00006FFFF949B1D0 returned ffffffff\n21630.123:0130:0134:warn:vkd3d-proton:d3d12_command_list_QueryInterface: {09e0bf36-54ac-484f-8847-4baeeab6053f} not implemented, returning E_NOINTERFACE.\n21630.123:0130:0134:warn:vkd3d-proton:d3d12_command_list_QueryInterface: {09e0bf36-54ac-484f-8847-4baeeab6053f} not implemented, returning E_NOINTERFACE.\n21630.124:0130:0134:warn:vkd3d-proton:d3d12_command_list_QueryInterface: {09e0bf36-54ac-484f-8847-4baeeab6053f} not implemented, returning E_NOINTERFACE.\n21630.124:0130:0134:warn:vkd3d-proton:d3d12_command_list_QueryInterface: {09e0bf36-54ac-484f-8847-4baeeab6053f} not implemented, returning E_NOINTERFACE.\n21630.126:0130:0134:warn:vkd3d-proton:d3d12_command_list_QueryInterface: {09e0bf36-54ac-484f-8847-4baeeab6053f} not implemented, returning E_NOINTERFACE.\n```",
+    "created_at": "2025-05-18T11:32:47Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8711#issuecomment-2888938921",
+        "discussion_body": "Attached are logs for both the non-working default case, and the working case when `%command% -force -dx11` is used as the launch options.\n\n[drop-duchy-protonlogs.tar.gz](https://github.com/user-attachments/files/20272617/drop-duchy-protonlogs.tar.gz)",
+        "created_at": "2025-05-18T11:38:48Z",
+        "is_for_the_report": null
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8711#issuecomment-2898365141",
+        "discussion_body": "> Attached are logs for both the non-working default case, and the working case when `%command% -force -dx11` is used as the launch options.\n> \nIn my case, the -force -dx11 option doesn't help. Probably due to the difference in versions of the game engine.\n\n",
+        "created_at": "2025-05-21T15:23:56Z",
+        "is_for_the_report": null
+      }
+    ]
+  }
+]

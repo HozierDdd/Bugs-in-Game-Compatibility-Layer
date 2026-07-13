@@ -1,0 +1,676 @@
+[
+  {
+    "issue_report_title": "Trails in the Sky 1st Chapter (3375780)",
+    "issue_number": 9233,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/9233",
+    "compatibility_report_id": 3646323210,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\n- Name of the game with compatibility issues: Trails in the Sky 1st Chapter\n- Steam AppID of the game: 3375780\n\n## System Information\n- Steam Deck LCD\n- Video driver version: Driver: AMD AMD Custom GPU 0405 (radeonsi, vangogh, LLVM 18.1.8, DRM 3.59, 6.11.11-valve24-2-neptune-611-gfd0dd251480d)\nDriver Version: 4.6 (Compatibility Profile) Mesa 24.3.4 (git-8d0948917e)\n- Kernel version: 6.11.11-valve24-2-neptune-611-gfd0dd251480d\n- Link to full system information [report as [Gist](https://gist.github.com/):](https://gist.github.com/zjDrummond/50af9959678b008ff084430b5f7df802)\n- Proton version: 10.0-3\n\n## I confirm:\n- [check] that I haven't found an existing compatibility report for this game.\n- [check] that I have checked whether there are updates for my system available.\n\n(Proton logs compress well if needed.)--> \n\n[steam-3375780.zip](https://github.com/user-attachments/files/23650422/steam-3375780.zip)\n\n## Symptoms\nThe game has clicking/popping audio with Proton 10.0-3. Doesn't happen with Proton 9.0-4.\n\n\n## Reproduction\nSeems to happen intermittently. I have a save file that can reproduce it reliably, but I'm not sure what in the save is actually doing it.  \n\n",
+    "created_at": "2025-11-20T09:26:56Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/9233#issuecomment-3558111772",
+        "discussion_body": "Hello @zjDrummond, can you share the save file and any reproduction steps to take following loading that save?",
+        "created_at": "2025-11-20T13:38:20Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/9233#issuecomment-3560866716",
+        "discussion_body": "I'm happy to. However, I just loaded into the game again in order to write instructions to recreate the issue with the specific save, and now the audio dropouts aren't happening as consistently. I spent about 30 minutes playing the game from the save that was presenting the issue consistently yesterday. I only heard two single audio glitches this play session. Each dropout was super short, probably a few milliseconds in length. They were also spaced out with probably 10 minutes of playing between the two events. I did start this play session from a cold boot. Maybe that had something to do with it. \n\nI'll attach the save file. After you copy this save data into your game's directory you will find the save that was showing the issue in the fourth save slot from the bottom in the list of saves. This save has 58:18:01 hours of play time. \n\nPlease let me know if I can be of any help.\n\n[Trails in the Sky 1st Chapter.tar.gz](https://github.com/user-attachments/files/23666023/Trails.in.the.Sky.1st.Chapter.tar.gz)",
+        "created_at": "2025-11-21T01:04:22Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "The Medium",
+    "issue_number": 5044,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5044",
+    "compatibility_report_id": 959393350,
+    "issue_state": "closed",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues:\r\n- The Medium\r\n- Steam AppID of the game:\r\n- 1293160\r\n\r\n## System Information\r\n- GPU: AMD Radeon RX 6800 XT (SIENNA_CICHLID, DRM 3.41.0, 5.13.4-1 default, LLVM 12.0.1)\r\n- Driver/LLVM version: Mesa 21.1.5\r\n- Kernel version: 5.13.4-1 default\r\n- Link to full system information report as [Gist](https://gist.github.com/):\r\n- https://gist.github.com/byIlsa/be55520e91bf2fb5b8573e14eaae9b38\r\n- Proton version:\r\n- Experimental\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n[steam-1293160.zip](https://github.com/ValveSoftware/Proton/files/6926399/steam-1293160.zip)\r\n\r\n## Symptoms \r\n\r\nGame crashes on random moments. First the screen freezes and the sound is gone. Then the sound comes back for a second or two and then the game crashes and I'm returned to the library of steam. Ive tried both Play The Medium and Play The Medium DX12 with the same result.\r\n\r\n\r\n## Reproduction\r\nLaunch game and play.\r\n",
+    "created_at": "2021-08-03T18:49:15Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5044#issuecomment-892096559",
+        "discussion_body": "Hello @byIlsa, we're using one issue report per unofficially supported game title, so I've gone ahead and transferred this issue report to https://github.com/ValveSoftware/Proton/issues/4574#issuecomment-892096192.",
+        "created_at": "2021-08-03T19:13:02Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "PAYDAY 2 (218620)",
+    "issue_number": 6640,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/6640",
+    "compatibility_report_id": 1637759063,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Payday 2\r\n-\r\n- Steam AppID of the game: 218620\r\n\r\n## System Information\r\n- GPU: RTX 3070\r\n- Driver/LLVM version: 525.89.02\r\n- Kernel version: 6.2.7-1-cachyos\r\n- Proton version: experimental or latest proton ge.\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\nhttps://pastebin.com/raw/fTqXrLzu\r\n[steam-218620.log](https://github.com/ValveSoftware/Proton/files/11052622/steam-218620.log)\r\n\r\n",
+    "created_at": "2023-03-23T15:23:44Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6640#issuecomment-1481420585",
+        "discussion_body": "Payday 2 also gets stuck in a tiny screen sometimes when alt tabbing out and in. ",
+        "created_at": "2023-03-23T15:39:27Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6640#issuecomment-1482258574",
+        "discussion_body": "Can confirm I have the same issue, game works fine on 7.06 but anything higher (aka experimental or GE) will fail to launch.\r\nIssue happens both with and without SuperBLT installed.\r\n\r\n## System Information\r\n- GPU: NVIDIA GeForce RTX 2060\r\n- Driver/LLVM version: 4.6.0 NVIDIA 530.41.03\r\n- Kernel version: 6.2.8-arch1-1\r\n- Link to full system information report as [Gist](https://gist.github.com/Noobz4Life/039a68dec026b726225c165c1605f165): https://gist.github.com/Noobz4Life/039a68dec026b726225c165c1605f165\r\n- Proton version: Experimental or GE-Proton7-51\r\n\r\nAttached below is logs from using Proton GE or Proton Experimental, along with the Payday 2 crash report (found in Appdata/Local/PAYDAY 2/crash.txt)\r\n\r\ncrash.txt is the same on both GE and Experimental\r\n\r\n[steam-218620-ge.log](https://github.com/ValveSoftware/Proton/files/11058578/steam-218620-ge.log)\r\n[steam-218620-experimental.log](https://github.com/ValveSoftware/Proton/files/11058579/steam-218620-experimental.log)\r\n[crash.txt](https://github.com/ValveSoftware/Proton/files/11058585/crash.txt)\r\n",
+        "created_at": "2023-03-24T05:07:47Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6640#issuecomment-1482946424",
+        "discussion_body": "Same issue here on proton ge 7-51 \r\n\r\n## System Information\r\n- GPU: RTX 2070 Max Q\r\n- Driver/LLVM version: nvidia 525.89.02\r\n- Kernel version: 6.1.18-200.fc37.x86_64\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/nocnoc94/a9665ff9dcbace9017e10620211f1e21\r\n- Proton version: GE-Proton7-51\r\n\r\n\r\n## Proton log\r\n[steam-218620.log](https://github.com/ValveSoftware/Proton/files/11063540/steam-218620.log)\r\n",
+        "created_at": "2023-03-24T15:00:42Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6640#issuecomment-1482956942",
+        "discussion_body": "> Can confirm I have the same issue, game works fine on 7.06 but anything higher (aka experimental or GE) will fail to launch. Issue happens both with and without SuperBLT installed.\r\n\r\nThe game does in fact run on 7.06 for me too actually.\r\n\r\n## New proton log for working game on proton 7.06\r\n\r\n[steam-218620.log](https://github.com/ValveSoftware/Proton/files/11063656/steam-218620.log)\r\n",
+        "created_at": "2023-03-24T15:06:44Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6640#issuecomment-1512017136",
+        "discussion_body": "From my experience compatibility ends on GE 7-50 and 7.06. Anything newer doesn't spawn the game window.",
+        "created_at": "2023-04-17T20:11:11Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6640#issuecomment-1531245464",
+        "discussion_body": "Proton 8.0-1 and GE 8-1 are working again.",
+        "created_at": "2023-05-02T10:35:42Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6640#issuecomment-1712886934",
+        "discussion_body": "Tried with Proton 8-GE 8, 7, and Experimental, they all hang on the initial loading screen immediately after launch.\r\nWas also unable to get my Nvidia card working at all, it wouldn't even generate a Proton log if I had `DXVK_FILTER_DEVICE_NAME='NVIDIA GeForce RTX 3080'` in my param.\r\n\r\n[steam-218620.log](https://github.com/ValveSoftware/Proton/files/12569526/steam-218620.log)\r\n[steam-218620-GE.log](https://github.com/ValveSoftware/Proton/files/12569725/steam-218620-GE.log)\r\n",
+        "created_at": "2023-09-10T17:22:02Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Hi-Fi Rush (1817230)",
+    "issue_number": 6493,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/6493",
+    "compatibility_report_id": 1561460017,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Hi-Fi Rush\r\n- Steam AppID of the game: 1817230\r\n\r\n## System Information\r\n- GPU: AMD 5700XT\r\n- Driver/LLVM version: Mesa 22.3.3\r\n- Kernel version: 6.1.8\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/alosarjos/aae849ae851caa304c52305ebe5df1a1\r\n- Proton version: Proton Experimental\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nSound mutes from time to time for a second or two, then it comes back.\r\n\r\n\r\n## Reproduction\r\n\r\nJust playing the game, I haven't found any specific time between the mutes or a way to reproduce it manually. I'm suing Pipewire 0.3.64.\r\n\r\nI was looking the journal logs to see if there was something, all I found it this:\r\n\r\n```log\r\nene 29 21:24:06 artorias kernel: umip_printk: 3 callbacks suppressed\r\nene 29 21:24:06 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:14ac47523 sp:b9edd0: SGDT instruction cannot be used by applications.\r\nene 29 21:24:06 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:14ac47523 sp:b9edd0: For now, expensive software emulation returns the result.\r\nene 29 21:24:06 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:150e8121f sp:b9e930: SGDT instruction cannot be used by applications.\r\nene 29 21:24:06 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:150e8121f sp:b9e930: For now, expensive software emulation returns the result.\r\nene 29 21:24:06 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:150e8121f sp:b9e930: SGDT instruction cannot be used by applications.\r\nene 29 21:27:11 artorias kernel: umip_printk: 7 callbacks suppressed\r\nene 29 21:27:11 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:1524d4b95 sp:b9f058: SGDT instruction cannot be used by applications.\r\nene 29 21:27:11 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:1524d4b95 sp:b9f058: For now, expensive software emulation returns the result.\r\nene 29 21:27:11 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:1524d4b95 sp:b9f058: SGDT instruction cannot be used by applications.\r\nene 29 21:27:11 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:1524d4b95 sp:b9f058: For now, expensive software emulation returns the result.\r\nene 29 21:27:11 artorias kernel: umip: Hi-Fi-RUSH.exe[110765] ip:148623d7e sp:66ccf698: SGDT instruction cannot be used by applications.\r\nene 29 21:33:15 artorias kernel: umip_printk: 13 callbacks suppressed\r\nene 29 21:33:15 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:1562a8272 sp:b9e2c8: SGDT instruction cannot be used by applications.\r\nene 29 21:33:15 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:1562a8272 sp:b9e2c8: For now, expensive software emulation returns the result.\r\nene 29 21:33:52 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:1524d4b95 sp:b9f058: SGDT instruction cannot be used by applications.\r\nene 29 21:33:52 artorias kernel: umip: Hi-Fi-RUSH.exe[110565] ip:1524d4b95 sp:b9f058: For now, expensive software emulation returns the result.\r\n```\r\n\r\nThis messages repeat a lot. Since it's the only game I've seen this happening I'm guessing it's something related to Proton and not Pipewire or my sistem",
+    "created_at": "2023-01-29T21:16:31Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6493#issuecomment-1407773247",
+        "discussion_body": "Hello @alosarjos, umip/SGDT log messages should be taken literally as a minor performance loss. They're not related to audio.\r\n\r\nPlease add [`PROTON_LOG=1 %command%`](https://github.com/ValveSoftware/Proton#runtime-config-options) to the game's launch options and attach the generated $HOME/steam-$APPID.log to this issue report as a file. (Proton logs compress well if needed.)",
+        "created_at": "2023-01-29T21:22:38Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6493#issuecomment-1408273934",
+        "discussion_body": "Elite Dangerous shows a similar behavior where sound channels seem to randomly drop out for seconds, e.g. music stops playing for a few seconds, or ships sounds (like thruster boost) are delayed by a few seconds or don't play at all. It looks like this is mostly related to the system being low on IO cache and the game is loading data from the file system (e.g. when loading assets after a jump or approaching a planet), and instead of blocking/stuttering gameplay, the game will just skip or delay audio.\r\n\r\nI wonder if this is a similar thing in this game, and wine needs improvement to prioritize some IO. As an example, some Unreal Engine games are really slow at loading assets (e.g. Borderlands 3) and such games stutter a lot until loading is done, so there may be some bottleneck in wine. OTOH, I've never tried the games on Windows, so I cannot compare.\r\n\r\nI partially fixed this by giving games more IO cache by running them inside a systemd slice with `MemoryMin` (protects against the game swapping), `MemoryLow` (protects against cache starvation), and `MemoryHigh` (protects against system resource starvation while the game is running).",
+        "created_at": "2023-01-30T09:38:29Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6493#issuecomment-1409057624",
+        "discussion_body": "Ended up finishing the game without reproducing it again :S",
+        "created_at": "2023-01-30T17:49:06Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6493#issuecomment-1413469648",
+        "discussion_body": "@kzdixon this is probably a RDNA3 exclusive issue, try RADV_DEBUG=nodcc,nohiz and open a Mesa bug report about it.",
+        "created_at": "2023-02-02T10:06:51Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6493#issuecomment-1416661181",
+        "discussion_body": "@mbriar will do; Those debug values do seem to get rid of the issue (at least from a cursory glance at the main menu models).\r\nMesa issue: https://gitlab.freedesktop.org/mesa/mesa/-/issues/8230",
+        "created_at": "2023-02-04T04:52:44Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6493#issuecomment-1430145009",
+        "discussion_body": "@kzdixon Can you try again with Mesa main from Git, please? I merged a fix for DCC on RDNA3, thanks!",
+        "created_at": "2023-02-14T17:51:31Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6493#issuecomment-1454948529",
+        "discussion_body": "Late responding to this issue, but in the mesa issue linked prior the bandaid fix to disable it for rdna3 worked fine.",
+        "created_at": "2023-03-05T01:19:20Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6493#issuecomment-1474853624",
+        "discussion_body": "The game runs great for me in max settings.  Just a quick question.. Does anyone else have a lot of flicker with animations regardless of a few different proton versions used?  Currently I'm running GE 7-51.. Everything else is fantastic but the flicker with animations, particularly cut scenes can get to my eyes :)",
+        "created_at": "2023-03-18T13:35:33Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6493#issuecomment-1474864004",
+        "discussion_body": "Hello @77boaz, please test the game's behavior with a mainline release of Proton. Also, please copy your system information from Steam (`Steam` -> `Help` -> `System Information`) and put it in a [gist](https://gist.github.com/), then include a link to the gist in this issue report.",
+        "created_at": "2023-03-18T14:18:47Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6493#issuecomment-1474985827",
+        "discussion_body": "Thanks for the support!  I checked the mainline release 7.0-6 as well as Experimental.  The gameplay seems to run fine but the cut-scenes as mentioned above have a flash / choppy and/or ghosting to them.  Here is a gist link to my system info...\r\n\r\nhttps://gist.github.com/77boaz/a659d7a7357fbc1c731d740296487bce#file-gistfile1-txt",
+        "created_at": "2023-03-18T20:35:04Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6493#issuecomment-1528971195",
+        "discussion_body": "I'm still getting sound dropouts and the same errors with Proton 8: `umip: Hi-Fi-RUSH.exe SGDT instruction cannot be used by applications`. Will add a Proton log later.",
+        "created_at": "2023-04-30T08:38:55Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6493#issuecomment-1529093211",
+        "discussion_body": "> Thanks for the support! I checked the mainline release 7.0-6 as well as Experimental. The gameplay seems to run fine but the cut-scenes as mentioned above have a flash / choppy and/or ghosting to them. Here is a gist link to my system info...\r\n> \r\n> https://gist.github.com/77boaz/a659d7a7357fbc1c731d740296487bce#file-gistfile1-txt\r\n\r\nI figured out how to get rid of my problem if anyone else sees this and wonders why or experiences the same.  With my particular LG monitor, There's a specific option for Gaming Response Time.  This was set to fastest.  When knocking this down to anything lower than fastest, (even fast) gets rid of the white blur hurt the eyes look.  Hope this helps",
+        "created_at": "2023-04-30T17:46:01Z",
+        "is_for_the_report": "false"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Riders Republic (2290180)",
+    "issue_number": 7036,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/7036",
+    "compatibility_report_id": 1861176756,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Riders Republic\r\n- Steam AppID of the game: 2290180\r\n\r\n## System Information\r\n- GPU: RX 6950 XT\r\n- Video driver version: Mesa 23.1.6\r\n- Kernel version: 6.4.11\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/Celsiusss/3bd85870d59bcfef3ccb8a8e134651ed\r\n- Proton version: Proton Experimental\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n[steam-2290180.log](https://github.com/ValveSoftware/Proton/files/12407822/steam-2290180.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame crashes on startup\r\n![image](https://github.com/ValveSoftware/Proton/assets/3050747/3398fddd-e69a-4a44-96d5-2a63607361d3)\r\n\r\n\r\n## Reproduction\r\n\r\nStart the game, wait for Ubisoft launcher, see Riders Republic splash screen, then a window saying the game crashed pops up.\r\n\r\n<!--\r\n\r\n\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Also, please copy the contents of `Help` > `Steam Runtime Information` to\r\n   the gist.\r\n6. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2023-08-22T10:35:26Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7036#issuecomment-1710683782",
+        "discussion_body": "@Celsiusss Thank you for the report. This should now have been worked around in the latest Proton Experimental.",
+        "created_at": "2023-09-07T19:45:41Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7036#issuecomment-1716445148",
+        "discussion_body": "> @Celsiusss Thank you for the report. This should now have been worked around in the latest Proton Experimental.\r\n\r\nGreat work! Tested it and it works :)",
+        "created_at": "2023-09-12T21:09:38Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7036#issuecomment-1741783129",
+        "discussion_body": "> @Celsiusss Thank you for the report. This should now have been worked around in the latest Proton Experimental.\r\n\r\nIt is true that the game now starts and you can start playing. But after five minutes the game inevitably ends up crashing.",
+        "created_at": "2023-09-30T14:53:20Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7036#issuecomment-1741784394",
+        "discussion_body": "Can you add a proton log from a launch where it crashes? 🙂 \r\nAdd `PROTON_LOG=1 %command%` to the game's launch options and attach the log which  appears in your users home folder.",
+        "created_at": "2023-09-30T15:00:12Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/7036#issuecomment-1742000424",
+        "discussion_body": "> Can you add a proton log from a launch where it crashes? 🙂 Add `PROTON_LOG=1 %command%` to the game's launch options and attach the log which appears in your users home folder.\r\n\r\nYes, of course. Thank you very much. However, I have the game purchased from the Epic store and I run it with \"Heroic\" using Proton Experimental. I hope this is not an inconvenience. Apologies.\r\n\r\n[steam-heroic-RidersRepublic.log](https://github.com/ValveSoftware/Proton/files/12776676/steam-heroic-RidersRepublic.log)",
+        "created_at": "2023-10-01T08:14:09Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Door Kickers 2 (1239080)",
+    "issue_number": 5894,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5894",
+    "compatibility_report_id": 1268160718,
+    "issue_state": "closed",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Door Kickers 2\r\n- Steam AppID of the game: 1239080\r\n\r\n## System Information\r\n- GPU: RX 6700 XT\r\n- Driver/LLVM version: Mesa 22.0.5-1 and LLVM 1:14.0.4-4\r\n- Kernel version: 5.17.0-3-amd64\r\n- Link to full system information report as [Gist](https://gist.github.com/physixcat/e61d375f0a3ebaebc70ff0368f745f9f):\r\n- Proton version: Proton Experimental (so newer than 7.0-2), have also tried older ones\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n## Proton Log:\r\n[steam-1239080.log](https://github.com/ValveSoftware/Proton/files/8883214/steam-1239080.log)\r\n\r\n## Symptoms\r\nSince the SWAT update (v0.31), playing missions causes the game to slowly use more and more RAM (even when the game is paused to the menu or in the results screen). In ~20 minutes, it can go up to 2.6 GB of RAM of usage, and I've seen it run away up to 8 GB before I killed it. Previous to this update, it never seemed to ever go over 1 GB of RAM throughout long play sessions.\r\n\r\n## Reproduction\r\n1. Use any version of Proton, I'm using Experimental here (newer than 7.0-2, doesn't seem to matter though tried several, even the unofficial latest GE Proton release 7-20)\r\n2. Start a program analogous to Task Manager (like bpytop or htop) that can track RAM usage of specific processes \r\n3. Start the game, run a mission (any will do, but for the purpose of standardizing let's go with Gate Crasher, the first non-tutorial ranger mission)\r\n4. Complete the mission, then stay in the results (stars) screen for a couple minutes. The RAM usage continues to increase. For reference, a normal value here previous to SWAT update seemed to be ~850megs. \r\n",
+    "created_at": "2022-06-11T04:35:14Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5894#issuecomment-1179230484",
+        "discussion_body": "I can confirm this is happening with Proton 7.0-2.\r\nLaunched through Steam\r\nIt was about 1mb every 2-5 seconds.\r\n\r\nLog File:\r\nhttps://pastebin.com/Lq4CTkyh\r\n",
+        "created_at": "2022-07-08T17:47:57Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5894#issuecomment-1563360133",
+        "discussion_body": "This issue has been resolved in the latest version of the game.",
+        "created_at": "2023-05-25T18:48:47Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Call of Duty®: Black Ops Cold War (1985810)",
+    "issue_number": 6852,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/6852",
+    "compatibility_report_id": 1759746692,
+    "issue_state": "open",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Call of Duty®: Black Ops Cold War\r\n- Steam AppID of the game: 1985810\r\n\r\n## System Information\r\n- GPU: <!-- e.g. RX 580 or GTX 970 --> Steam Deck\r\n- Driver/LLVM version: <!-- e.g. Mesa 18.2/7.0.0 or nvidia 396.54 --> Mesa 22.2.0.157821.radeonsi_3.4.0_2-2\r\n- Kernel version: <!-- e.g. 4.17 --> 5.13.0-valve36-1-neptune\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/Parapass/b3b58bdd1b1be226e9d5dd840e9f0c2d\r\n- Proton version: Proton 7.0-6\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n[steam-1985810.log](https://github.com/ValveSoftware/Proton/files/11764589/steam-1985810.log)\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nThe game launches in Steam and is listed as playing but does not start at all.\r\n\r\nUsing journalctl I saw that the game was trying to find d3d12core.dll in /home/deck/.steam/steam/steamapps/compatdata/1985810/pfx/drive_c/windows/system32/ and /home/deck/.steam/steam/steamapps/compatdata/1985810/pfx/drive_c/windows/syswow64/ but could not find it as the file did not exist. Would this be a Wine problem or a Proton problem? On my Windows 10 install I can find both d3d12.dll and d3d12core.dll\r\n\r\n## Reproduction\r\nAlways happens\r\n",
+    "created_at": "2023-06-16T01:09:54Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-1593917526",
+        "discussion_body": "Hello @Parapass, `wine: Call from 000000007B04D723 to unimplemented function winegstreamer.dll.winegstreamer_create_video_decoder, aborting` looks like the line of interest from your log.\r\n\r\nhttps://gitlab.winehq.org/wine/wine/-/commit/70e93833679342c485b9720af61c92efcdcbd191 might help.",
+        "created_at": "2023-06-16T01:19:05Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-1594005376",
+        "discussion_body": "Hello. I had the wrong Proton version selected, my bad. I changed it to Proton Experimental and the gstreamer error has gone away. However, the game still refuses to launch.\r\nThe log for Experimental:\r\n[steam-1985810.log](https://github.com/ValveSoftware/Proton/files/11765512/steam-1985810.log)\r\n\r\nThe game tries to open dxdiag (presumably either for error reporting or for automatically setting graphics settings), but fails while doing so. \r\nHere is the core dump:\r\nhttps://gist.github.com/Parapass/bd7593ecb1030bc4e921afdea14cf546",
+        "created_at": "2023-06-16T02:30:26Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-1595593990",
+        "discussion_body": "Hi, I'm having this issue too; on AMD as well, except this time on desktop with an RX 6900 XT.\r\n\r\nI wasn't able to corroborate the journalctl d3d12 stuff, however I have an interesting addition where occasionally, a blank (wayland default) icon will show in the taskbar, it goes away very fast, too fast for me to look at the window title. It happened only once under amdvlk but a few times under radv. I'll attach logs for both radv and amdvlk. \r\n\r\n[steam-1985810_radv.log](https://github.com/ValveSoftware/Proton/files/11777749/steam-1985810_radv.log)\r\n[steam-1985810_amdvlk.log](https://github.com/ValveSoftware/Proton/files/11777750/steam-1985810_amdvlk.log)\r\n\r\nAlong with that, in journalctl I get\r\n`umip: BlackOpsColdWar[24832] ip:14ce27576 sp:11a230: SIDT instruction cannot be used by applications.`\r\n`umip: BlackOpsColdWar[24832] ip:14ce27576 sp:11a230: For now, expensive software emulation returns the result.`\r\nhowever i'm not certain that's really relevant to this game.",
+        "created_at": "2023-06-17T03:09:10Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-1595731692",
+        "discussion_body": "Hello @headassbtw, there's a bunch of `failed to create ...` lines in your Proton log which hints that the Proton Experimental install or the game's wineprefix might be damaged or incomplete.",
+        "created_at": "2023-06-17T12:28:33Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-1595830149",
+        "discussion_body": "I installed Arch Linux on my desktop to try out Cold War on it. Still crashes the same. Here is the log:\r\n[steam-1985810.log](https://github.com/ValveSoftware/Proton/files/11779780/steam-1985810.log)\r\n",
+        "created_at": "2023-06-17T18:51:52Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-1790587965",
+        "discussion_body": "Ive been trying to get it to run, i think this needs a patch to wine/proton hope someone smart enough sees this thread",
+        "created_at": "2023-11-02T11:51:47Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2053646093",
+        "discussion_body": "I know this is from a while ago but I'm using the Battle.Net version and I'm getting these errors:\r\n```\r\n5002.838:012c:0154:err:sync:RtlpWaitForCriticalSection section 00006FFFFFFB0380 \"../src-wine/dlls/ntdll/loader.c: loader_section\" wait timed out in thread 0154, blocked by 0130, retrying (60 sec)\r\n5002.941:012c:0190:err:sync:RtlpWaitForCriticalSection section 00006FFFFFFB0380 \"../src-wine/dlls/ntdll/loader.c: loader_section\" wait timed out in thread 0190, blocked by 0130, retrying (60 sec)\r\n5005.888:0064:007c:err:wineusb:usb_main_loop Error handling events: System call interrupted (perhaps due to signal)\r\n5025.636:0064:007c:err:wineusb:usb_main_loop Error handling events: System call interrupted (perhaps due to signal)\r\n5045.560:0064:007c:err:wineusb:usb_main_loop Error handling events: System call interrupted (perhaps due to signal)\r\n```\r\nI was using Proton Experimental then Proton 9.0 (Beta) and after that I tried ProtonGE but still got this error. The game loads with the T9 Console and the loader but that's really it\r\n",
+        "created_at": "2024-04-13T13:25:14Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2053661790",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2053646093 \r\n\r\nIt's quite odd that this game has issues under proton, the anticheat isn't a kernel level so that's not a problem, seems like a wine problem?\r\n\r\nI wonder if anyone has any information about why this game doesn't work still, if it is anticheat related or just something to do with wine \r\n\r\nId like to play some cold war zombies again sometime lol \r\n\r\n",
+        "created_at": "2024-04-13T14:26:42Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2053754041",
+        "discussion_body": "> > Replying to https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2053646093 \n\nI have asked modders about the game and some say there isn't an anti-cheat and it uses an engine simlar to BO4 (Which works great on linux according to few people)\nSo I presume it could be the games problem or a wine/proton problem",
+        "created_at": "2024-04-13T20:27:39Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2306344902",
+        "discussion_body": "\r\nHi,\r\n\r\nHere's the Proton BO3 workaround:\r\nif os.environ.get(\"SteamGameId\", 0) == \"311210\":\r\nor here for Experimental:\r\n\"311210\",   # CoD: Black Ops 3\r\n\r\nWhatever version you use, add \"1985810\" and it'll get further. (Screenshot)\r\n\r\nHowever, graphics is still an issue, at least with Lavapipe and AMD (Mesa-9999 and Proprietary 22.40.6.1580631-r1 on Gentoo Unstable, nothing newer because of an \"old\" RX470).\r\nI won't test it with my nVidia Titan V's, because they're in my workstation and history has shown that I can't trust the Steam client on important computers.\r\nMaybe I'll put one of them inside the gaming machine, but I'm not sure if VKD3D simply just needs to support that game.\r\nFrom what I can tell is that this workaround is necessary for both games because of the Treyarch Anti-Cheat. I won't go into details, because Activision is known to be very vicious.\r\n\r\nP.S.:\r\n@ValveSoftware:\r\nThis time I didn't had to decompile the disassembly by hand, like with your CEG. Thank you very much for not helping with Modern Warfare 3 (the older one), I'm still resentful because I had to fix your issues all by myself.\r\nPlease be the Valve from 20-25 years ago again.\r\n\r\n\r\n![Screenshot_20240823_072934](https://github.com/user-attachments/assets/1c6c3736-35cc-483c-923b-18c29901801e)\r\n",
+        "created_at": "2024-08-23T05:54:50Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2306618670",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2306344902\r\n\r\nWhat did you do exactly to get it running? You posted some 'if' code, but where do you put that?",
+        "created_at": "2024-08-23T08:52:21Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2307053069",
+        "discussion_body": "> > Replying to [#6852 (comment)](https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2306344902)\r\n> \r\n> What did you do exactly to get it running? You posted some 'if' code, but where do you put that?\r\n\r\nExactly there.\r\n\r\n`\"311210\",   # CoD: Black Ops 3`\r\n\r\nturns into \r\n\r\n```\r\n\"311210\",   # CoD: Black Ops 3\r\n\"1985810\",   # CoD: Black Ops Cold War\r\n```\r\n\r\nAnd \r\n\r\n```\r\n        if os.environ.get(\"SteamGameId\", 0) == \"311210\":\r\n            argv = [g_proton.wine_bin, \"c:\\\\Program Files (x86)\\\\Steam\\\\steam.exe\"]\r\n```\r\nturns into (e.g., very long version)\r\n\r\n```\r\n        if os.environ.get(\"SteamGameId\", 0) == \"311210\":\r\n            argv = [g_proton.wine_bin, \"c:\\\\Program Files (x86)\\\\Steam\\\\steam.exe\"]\r\n        elif os.environ.get(\"SteamGameId\", 0) == \"1985810\":\r\n            argv = [g_proton.wine_bin, \"c:\\\\Program Files (x86)\\\\Steam\\\\steam.exe\"]\r\n```\r\n\r\nOr (shorter)\r\n\r\n`if os.environ.get(\"SteamGameId\", 0) == \"311210\":`\r\n\r\nturns into\r\n\r\n`if os.environ.get(\"SteamGameId\", 0) in (\"311210\", \"1985810\"):`\r\n\r\n\r\nAs I said, the same workaround/treatment is needed, so just add the Cold War game id as well, like in these examples.\r\n\r\n",
+        "created_at": "2024-08-23T13:03:44Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2308088893",
+        "discussion_body": "That specific workaround was committed two and a half years ago and this bug report is from a year ago. Hindsight is 20/20 when a very similar game needs the exact same workaround.\r\nI got lost into the details as usual and kept digging until I finally followed my thought of checking what exactly Proton does with BO3.\r\n\r\nNow it's randomly either stuck or crashes. The crashes, at least, are because of heap corruption. I have a hunch that it has something to do with openxr, because it gets past that point in Proton 7, only to show many D3D12 errors.\r\n\r\n`359575.535101:0114:0118:err:heap:validate_used_block heap 0000000000140000, block 00000000640D0038: free block overwritten`\r\n\r\nI guess, since nobody else volunteers, I have to bisect between Proton 7 and 8. Damnit, all I wanted to do, was to play some Prop Hunt. :-D\r\n",
+        "created_at": "2024-08-24T04:44:02Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2308615066",
+        "discussion_body": "The change in behavior happened during the d3d12core refactoring. I really hope that the actual underlying cause of those hangs and crashes is somewhere else, because graphics is not my métier.\r\nexperimental-bleeding-edge-7.0-38314-20230320-pa52104c-w2a9873-d3d5bec-vf0697a (full screen)\r\nexperimental-bleeding-edge-7.0-38355-20230321-pa52104c-w2a9873-d3d5bec-v071ead (no full screen)\r\n\r\nEdit, forgot to post this:\r\nWhen atiadlxx.dll is set to builtin, like with BlackOps3.exe, it can crash like this:\r\nwine: Call from 00006FFFFFC1CF07 to unimplemented function atiadlxx.dll.ADL2_Adapter_AdapterInfo_Get, aborting\r\n",
+        "created_at": "2024-08-25T01:48:48Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2312846708",
+        "discussion_body": "> The change in behavior happened during the d3d12core refactoring. I really hope that the actual underlying cause of those hangs and crashes is somewhere else, because graphics is not my métier. experimental-bleeding-edge-7.0-38314-20230320-pa52104c-w2a9873-d3d5bec-vf0697a (full screen) experimental-bleeding-edge-7.0-38355-20230321-pa52104c-w2a9873-d3d5bec-v071ead (no full screen)\r\n> \r\n> Edit, forgot to post this: When atiadlxx.dll is set to builtin, like with BlackOps3.exe, it can crash like this: wine: Call from 00006FFFFFC1CF07 to unimplemented function atiadlxx.dll.ADL2_Adapter_AdapterInfo_Get, aborting\r\n\r\nIf you think graphics might be an issue, then I suggest filing a report on vkd3d-proton's issue tracker ",
+        "created_at": "2024-08-27T15:15:14Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2313153185",
+        "discussion_body": "> If you think graphics might be an issue, then I suggest filing a report on vkd3d-proton's issue tracker\r\n\r\nTLDR: Feel free to do that yourself, I don't really have much time for that.\r\n\r\nIt could very well be that it's only broken for my \"ancient\" card.\r\n\r\nIt somewhat looks like a timing issue, I've already seen the fullscreen on an unmodified bleeding edge, besides that workaround. However, on 99% of the runs, I won't even see \"Failed to wait for VR registry key ready.\"\r\nMostly I see it being stuck because of a critical section (\"loader_section\"), crashes because of trashed heap, and even a crash with a stack trace that includes ntdll.dll/kernel32.dll/kernelcore.dll/d3d12.dll/BlackOpsColdWar.exe.\r\n\r\nI think that I should remember Scrubs, if I hear hoofbeats, I should think of horses instead of zebras, but I want to be triple sure that it's not because of a specific TAC codepath. Like CEG, it doesn't show all its tricks on a single run, it's rather randomized.\r\n\r\nHere's a screenshot and the logs of a extremely good run, however it still complains with a dialog window.\r\n\r\nI'm getting too much pressure to focus on my real work. Unfortunately that doesn't include finishing the Lynx/SSC implementation of that iPhone/SEP emulator. I can't split myself and a day just has 24 hours.\r\n\r\nI would simply suggest that everybody just tries that BO3 workaround, which should be included/applied in any case for CW as well (hello, @ValveSoftware), because that's the (first) issue, everybody is seeing here.\r\nThe SIDT access violation exception is a fake/trick/distraction, because it has the kernel space KUSER_SHARED_DATA address as a destination, it's not supposed to work in user-space, even on a real Windows.\r\nThe rest could be either other bugs or just (one of) my ancient machines crapping themselves yet again.\r\n\r\nOne file is slightly renamed, because GitHub won't take text files as an attachment if they don't have a .txt extension. Compressed it because GitHub complained again, and doesn't include a full trace, because then GitHub would complain even more because of the sheer filesize.\r\n\r\n![Screenshot_20240827_170205](https://github.com/user-attachments/assets/4281c40d-5b84-4d9b-b20a-aa4e3f027b42)\r\n[steam-1985810.log.bak50_experi_bleedingedge_fullscreen_dialog.txt.gz](https://github.com/user-attachments/files/16766563/steam-1985810.log.bak50_experi_bleedingedge_fullscreen_dialog.txt.gz)\r\n",
+        "created_at": "2024-08-27T17:36:19Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2372407293",
+        "discussion_body": "@ValveSoftware, any progress on making it work so far?",
+        "created_at": "2024-09-24T21:20:39Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2395490224",
+        "discussion_body": "\r\nGood news, everybody! No, not like Prof. Farnsworth, but actually good news!\r\n\r\nI've retested it with the new Experimental - Bleeding Edge version, as I saw a few interesting changes a few days (or weeks, dunno anymore) ago. I've just got time for that, as the SEP emulation is still missing PKA, but overall somewhat/very workable.\r\n\r\nOh, back to the topic... I reapplied that CoD Black Ops 3 workaround and here's a new screenshot!\r\n\r\nSo please for the love of (whoever you're praying or not praying to), also apply it to the gameid/appid 1985810 !!\r\n![Screenshot_20241006_195641](https://github.com/user-attachments/assets/a2ae93c9-a0d5-4cc4-aa24-af8658d63e61)\r\n\r\n\r\n",
+        "created_at": "2024-10-06T16:03:15Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2395776769",
+        "discussion_body": "I just tested this on my machine, with `[redacted, it'll ban you]`, it works as well!\r\nIt crashes not long after starting though; it runs long enough to compile shaders but not long enough to read the EULA.\r\n\r\n[This log](https://github.com/user-attachments/files/17272022/steam-311210.log) (I removed two megabytes of vkd3d error duplicates) might help if anyone else wants to look into it.\r\nI have a half-hunch it's an anticheat measure, those usually periodically check, but I don't see why it would crash instead of booting me out.\r\n\r\nHere's another screenshot for the :eyes: reactors:\r\n![Screenshot_20241006_190828](https://github.com/user-attachments/assets/9d25396c-ef33-45b0-917e-4e3b55bee78c)",
+        "created_at": "2024-10-07T02:40:05Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2396237747",
+        "discussion_body": "> Good news, everybody! No, not like Prof. Farnsworth, but actually good news!\r\n> \r\n> I've retested it with the new Experimental - Bleeding Edge version, as I saw a few interesting changes a few days (or weeks, dunno anymore) ago. I've just got time for that, as the SEP emulation is still missing PKA, but overall somewhat/very workable.\r\n> \r\n> Oh, back to the topic... I reapplied that CoD Black Ops 3 workaround and here's a new screenshot!\r\n> \r\n> So please for the love of (whoever you're praying or not praying to), also apply it to the gameid/appid 1985810 !!\r\n\r\nThere have been some fixes for the game specifically. We've been trying it out with the hack applied and on a few machines we used for testing this has caused Activision account bans, even when playing in an offline mode only. We are trying to sort this out but in the meantime it doesn't make sense to enable this to needlessly put users in the harm's way.\r\n\r\n",
+        "created_at": "2024-10-07T08:19:35Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2396281583",
+        "discussion_body": "> There have been some fixes for the game specifically. We've been trying it out with the hack applied and on a few machines we used for testing this has caused Activision account bans, even when playing in an offline mode only. We are trying to sort this out but in the meantime it doesn't make sense to enable this to needlessly put users in the harm's way.\r\n\r\nThank you, and thanks for the heads-up. I thought, that this issue was just being ignored. I think I mentioned how vicious Activision can be.\r\nMaybe I should look at Ricochet instead, if the rumors are true that Infinity Ward said that they won't ban anybody if they manage to get it to run properly on Linux. (I would like to hear that directly from them, I couldn't find a source for that)\r\nMaybe Treyarch is as vicious as Activision. Why can't they be more like Infinity Ward, if the rumors are true? In the long-term, they're only hurting themselves and their shareholders with such nonsense.\r\n",
+        "created_at": "2024-10-07T08:38:36Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2396304947",
+        "discussion_body": "I wonder if they will unban those, who used this workaround before as bans made by mistake... At least anyone who got banned could probably appeal, or at last, Valve can try reach to Activision/Treyarch with this problem.",
+        "created_at": "2024-10-07T08:48:27Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2397107406",
+        "discussion_body": "I've been banned.\r\nEdit (7 hours later): Appeal was denied.",
+        "created_at": "2024-10-07T14:33:50Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2397332506",
+        "discussion_body": "> I've been banned.\r\n\r\nSame thing, already trying to appeal ban both on Activision side and trying to get someone from Valve to talk with me.\r\nUPD:I wasn't able to appeal a ban. :(",
+        "created_at": "2024-10-07T16:04:32Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2402916690",
+        "discussion_body": "Unfortunately, I have to suggest to close this issue as \"not planned\" or a more matching reason.\r\n\r\nTL/DR: TAC supports Proton/Wine, Activision doesn't anymore. Running the game under a non-Windows platform will get you permanently BANNED. This includes any Call of Duty, including the Ricochet ones, that alleged guarantee is a lie!\r\nTL/DR 2:\r\nI've just got banned as well, and it didn't got lifted. Their answer suggests, that they disallow running their games on anything but a pure baremetal (non-VM, only consumer hardware, no server boards) Windows >= 10 with Secure Boot being active.\r\nThis new policy appears to also include the ones already supported by Proton, including the pure offline games of the whole Call of Duty series.\r\nWhat do they want next, a stool sample or a verification can?\r\n\r\nAlso, the ban email came as HTML+Text, telling that the whole account is banned, while the appeal answer came as HTML-only email, saying that I should avoid \"these types of violations to keep your account in good standing\" (running Linux, I guess). Erm, what account? It is gone.\r\n\r\nThe answer to the appeal is further suggesting, that due to recent policy changes, their anti-cheat engines are specifically used to detect if someone runs their games on non-Windows machines.\r\nI guess it just took longer for me, because my crappy machine lead to the game crashing so often. Either that or the game's gross misuse of the steam_api64.dll file and various NT API's (like calling NtGetContextThread with context being NULL), running the game makes even the Steam client itself (running outside Proton's sandbox) crash.\r\nThey probably needed to wait to confirm that I'm actually running Linux. Recently, I even made it into the accessibility settings to enable the subtitles and to disable motion blur. They surely don't like those. :-D\r\nTheir anti-Linux policy appears to also apply on Ricochet, despite whatever different thing Infinity Ward/Sledgehammer Games allegedly said. It's a shame, making it compatible didn't looked that difficult at the first glance. (First step, stubbing/implementing ci.dll)\r\n\r\nI recently, because of the ban reports, looked into the Microsoft Gaming aquisition of Activision Blizzard. According to some news reports, there were some gamers suing against it, because they expected/predicted the same thing as some Redditors and the judge's rejection/ruling were basically, \"They surely wouldn't hurt their own bottom-line\". Apparently, they don't care about money. (Don't have a Reddit account, never had. They even banned the whole subnet including my server's IP from read-only access a long time ago)\r\nI would rather want a diarrhea infusion than to productively using Windows outside a VM. Microsoft and their anti-trust issues are unfortunately like me being fat, both will not change that quickly.\r\n\r\nP.S.: No, I'm not cheating in online games, neither did I modified any game files. The game wouldn't even start, if it detects anything unexpected, like when ASLR is disabled under Windows (rejected immediately), using the steam_api64.dll from CoD BO III (also rejected immediately), or Secure Boot unsupported or supported but not being active (dunno if it rejects that, but it detects that).\r\nThat specific ASLR check is explicitely disabled when it detects being run under Wine/Proton/Linux, because ASLR is basically unimplemented under Wine/Proton. Their software/game, including their anti-cheat solution, supports Linux perfectly fine, their publisher just doesn't.\r\nAnd no, using \"impulse 101\" in a CS 1.6 offline bot round over fifteen/twenty years ago, or using a self-written Python script to use a car as a flying carpet in GTA:SA doesn't count.\r\n\r\nI wonder if they extend that policy to World of Warcraft. Back then, they even had a native Linux client for internal use.\r\n\r\n\r\n@jumofogit: Valve doesn't like to talk about any anti-cheat engines. I've made that experience seven years ago. After that, when Proton was suddenly and unexpectedly announced, they (and Codeweavers?) were saying that they won't support any anti-cheat software, that isn't already supported. \r\nSo if I wouldn't have found the Steam CEG debug register on thread creation issue in time back then, Proton probably wouldn't support CEG until this day.\r\n\r\nI don't like, that doesn't matter where I go, everywhere I'll get turned into Don Quixote, just Windmills appearing everywhere. I don't want fight or even ask to. I'm too old and lazy for that crap. :-D\r\nI just want to do my work and not get sucked into things like that. Before people reported that they got banned, I didn't even knew that Microsoft bought Activision.\r\n",
+        "created_at": "2024-10-09T17:39:07Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2402984374",
+        "discussion_body": "> I guess it just took longer for me, because my crappy machine lead to the game crashing so often\r\n\r\nNope, my fairly powerful (5900x, 6900XT) system (which handles the game great on windows) crashed about a minute or two in as well\r\n\r\n> This new policy appears to also include the ones already supported by Proton\r\n\r\nSo, the deck verified ones too? That's absurd (even if it did happen to GTA) and would absolutely not go unnoticed.\r\n\r\n> [I can't find a quote to directly refute]\r\n\r\nI highly doubt Microsoft is at fault here, as they've allowed their games to be steam deck verified in the past; enabling EAC for MCC, not banning for Halo Infinite's custom anticheat, and enabling EAC when (probably before actually, no downtime) Infinite switched to it. Hell, if I have any hope for this, it'd be them intervening. \r\n\r\nActivision has always been an awful company, or at the very least temperamental. I do not believe giving up on this is the right way to go. Personally I was going to wait and see valve's take on this when/if the game starts without tinkering, or (being cynical/selfish here) waiting for more people to get banned for simply launching the game though steam, to draw attention to this issue.\r\n\r\nAt the very least, if none of this ever goes anywhere, \"I simply launched the game and never entered a match, and am now banned from the offline campaign\" should be a slam dunk of a refund.",
+        "created_at": "2024-10-09T18:18:11Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2403042437",
+        "discussion_body": "> Nope, my fairly powerful (5900x, 6900XT) system (which handles the game great on windows) crashed about a minute or two in as well\r\n\r\nI mean not only that, but crashing in over 90% of the time, between the launcher and the intro video. Sometimes also causing the Steam client itself to crash. Don't know if that is exploitable.\r\n\r\n> So, the deck verified ones too? That's absurd (even if it did happen to GTA) and would absolutely not go unnoticed.\r\n\r\nGrand Theft Auto? Luckily that's afaik not owned by Activision or Microsoft. It appears that history, as always, repeats itself, and that the merger brought the worst from both, Activision and Microsoft. Nowadays, companies tend to even ignore the noticed things, as people tend to have a very short memory. Even the time during the launcher or while it's stuck counts towards game-time, so I'm way past the refund period. And I don't want a refund, I want to play Prop Hunt, someone showed me some [redacted]101 videos and it looks like a lot of fun, it reminded me very much of my pentesting work.\r\n\r\n> I highly doubt Microsoft is at fault here, as they've allowed their games to be steam deck verified in the past; ...\r\n> Activision has always been an awful company, or at the very least temperamental. I do not believe giving up on this is the right way to go. ...\r\n\r\nI had to learn the hard way, that giving up can be ok, and sometimes the only winning move is not to play.\r\n\r\n> (being cynical/selfish here) waiting for more people to get banned for simply launching the game though steam, to draw attention to this issue.\r\n\r\nNot gonna happen, because that game won't run without one of those two (maybe three) workarounds, all leading to the same result in different ways. With the history I now know, I have to assume, that only people who are affected way later will get their account reinstated, and the ones who got it banned early will get ignored.\r\n\r\n> At the very least, if none of this ever goes anywhere, \"I simply launched the game and never entered a match, and am now banned from the offline campaign\" should be a slam dunk of a refund.\r\n\r\nOr as in, I downloaded it, it didn't ran. I made it run successfully, created the account in-game, haven't been able to enter a single match, and the whole account is now banned. It sucks, and I hope that the affected accounts weren't too valuable, financially or otherwise.\r\n\r\nEdit:\r\n> > [I can't find a quote to directly refute]\r\n> \r\n\r\nNo, I won't publish any communication with them (except that tiny quote), by doing so I could count the seconds until I get a SLAPP suit.\r\nLooking at software or even taking it apart to improve compatibility is perfectly legal in many if not most jurisdictions, but that wouldn't stop them.\r\n\r\nI guess that I won't touch TAC, Ricochet or any Call of Duty and Activision stuff, until I get a written guarantee (email would be plenty) that they won't sue or ban me (yet again) for trying to fix their crap. Maybe I should charge them a hardship fee. :-D\r\nThere are tens of thousands of others, if not hundreds of thousands, who are perfectly able to do it instead of me. The problem is that 99.9% of them are already working on 100% capacity, the goal is to find the 0.1% who are only working on 99% capacity.\r\n",
+        "created_at": "2024-10-09T18:41:26Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2409090103",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2396281583\r\n\r\nFor a matter of fact in regards to Infinity Ward's statement, it was actually Beenox who said it: https://pcgamesn.com/call-of-duty-modern-warfare-2/steam-deck-workaround\r\n\r\nBut I think the only way for us to resolve this further is if Valve can speak with Activision and ask if it such statements are true.",
+        "created_at": "2024-10-13T19:08:05Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2438858054",
+        "discussion_body": "Since I saw another report on Reddit about someone getting banned from this game on Steam Deck, should we update Proton to block this title (like we do with Destiny 2)?",
+        "created_at": "2024-10-25T21:08:21Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2439342843",
+        "discussion_body": "> Since I saw another report on Reddit about someone getting banned from this game on Steam Deck, should we update Proton to block this title (like we do with Destiny 2)?\r\n\r\nI know nothing about Destiny 2, but I think that would probably be a good idea, maybe checks on different places, all commented to explain why they're there and what will not only eventually happen if those blocks/precautions are being removed.\r\nI recently read about e.g. Ricochet (afaik not TAC, but anyway) malfunctions (e.g. with graphic card drivers) and even design flaws (bans on demand/as a service), which caused people who never cheated to be banned even three years ago, back when it was released (and never fixed), while Activision knew perfectly well about it and still decided to silently sit on that knowledge, doing nothing but to smear people.\r\nAs much as I would like to finally being able to play Prop Hunt, I don't want to see any more people being banned because Activision is Activision. And I thought that E.A. or Ubisoft would be way worse. There's an old German saying, roughly translated, put them all in a sack and punch it, you'll never hit the wrong ones.\r\nIt's not only about being banned, they e.g. told me that they want to sue me for damages if I merely launch any current or future Call of Duty title, even including the first one from 21 years ago, that's why I wrote that I'll wait for them to explicitly tell me that they will refrain from doing so. I mean c'mon, what damages, that I gave them money?!\r\n\r\nEdit: Just read about Destiny 2/Bungie, that's abhorrent.",
+        "created_at": "2024-10-26T04:57:04Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2439973981",
+        "discussion_body": "Looks like fixes for this game have trickled down into experimental and GE, according to reports on ProtonDB. Someone's clock is ticking; let's hope it's Activision's.",
+        "created_at": "2024-10-27T11:22:39Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2440098670",
+        "discussion_body": "> Looks like fixes for this game have trickled down into experimental and GE, according to reports on ProtonDB. Someone's clock is ticking; let's hope it's Activision's.\r\n\r\nYou sure they don't cause bans anymore?",
+        "created_at": "2024-10-27T16:58:15Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2440099663",
+        "discussion_body": "Yeah I would like confirmation that Activision won't ban us for playing lol ",
+        "created_at": "2024-10-27T17:00:58Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2440163827",
+        "discussion_body": "> You sure they don't cause bans anymore?\r\n\r\nSorry, I meant fixes to get the game running, not fixes to Activision",
+        "created_at": "2024-10-27T20:26:37Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2603413385",
+        "discussion_body": "Hello @alextecplayz, undermining a game's anti-cheat mechanism can't be used by Proton devs to improve the gaming experience. I'm forced to assume you posted that information in bad faith and your last comment has been removed.",
+        "created_at": "2025-01-21T00:41:36Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2603413837",
+        "discussion_body": "Apologies, didn't mean that.",
+        "created_at": "2025-01-21T00:42:12Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2606389652",
+        "discussion_body": "> Replying to https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-2396237747\n\nJust asking, but anything new about fixing the account bans?",
+        "created_at": "2025-01-22T06:18:55Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3212279562",
+        "discussion_body": "I don't know how relevant this is to the topic, but attempting to launch it on Windows 11, which is installed on ReFS... Also leads to a permanent ban without reasons, the appeal is rejected, the bug report is ignored, and access to Activision support is ultimately also closed... In total, we have 4 accounts banned on Steam, from friends and my own.",
+        "created_at": "2025-08-21T22:41:50Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3212327035",
+        "discussion_body": "Hello @funkerwolf, you've come across the issue tracker for the Proton project. Proton is a compatibility layer for running Windows based games on Linux. Since you're playing on Windows, Proton isn't involved at all for you.",
+        "created_at": "2025-08-21T23:10:00Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3212387348",
+        "discussion_body": "> Hello [@funkerwolf](https://github.com/funkerwolf), you've come across the issue tracker for the Proton project. Proton is a compatibility layer for running Windows based games on Linux. Since you're playing on Windows, Proton isn't involved at all for you.\n\nIt's clear, I just ask everyone who sees this to take note that the game is locked on NTFS due to the investigation.",
+        "created_at": "2025-08-21T23:31:45Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3412299469",
+        "discussion_body": "I made a [pull request](https://github.com/ValveSoftware/Proton/pull/9107) to have this game blocked from launching under Proton so we can avoid having more Linux users banned for just launching this game. I believe this is also something done for Destiny 2, but I cannot find the code specific to that game.",
+        "created_at": "2025-10-16T18:34:16Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3688636684",
+        "discussion_body": "The app runs on my PC with Proton Experimental and I played for a few minutes against bots.  When I'm in the options menus and customizing my classes, the game on two occasions stopped recognizing my keyboard button presses.  However, the mouse and mouse buttons still work after that point.",
+        "created_at": "2025-12-24T04:27:50Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3689872336",
+        "discussion_body": "Does the entry in the exp change log suggest that Activision is no longer banning non-Windows+NTFS users or that it's just _playable_ (until the next ban wave)?\n\nThe commit that fixed CW was [pushed a week ago, out of the blue](https://github.com/ValveSoftware/Proton/commit/63dba5821daef24db8943188dbeafaa8fb6dadcd). But, it isn't specified if Activision lifted their restrictions and communicated with CodeWeavers or Valve or that a dev simply attempted to run the game and play in a short session, not long enough to trigger a ban.",
+        "created_at": "2025-12-24T14:13:53Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3689951746",
+        "discussion_body": "@daggintosh In my research, the ban was happening quite quickly and we ran into it as well while trying to fix the game initially which is why we had not published the change to the proton script.  I played recently on multiple days for >30min per session and played full multiplayer matches, and I did not get banned.  However, it was a mistake to put that in the changelog and I'll remove it now :) ",
+        "created_at": "2025-12-24T14:35:08Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3689964566",
+        "discussion_body": "> Does the entry in the exp change log suggest that Activision is no longer banning non-Windows+NTFS users or that it's just _playable_ (until the next ban wave)?\n> \n> The commit that fixed CW was [pushed a week ago, out of the blue](https://github.com/ValveSoftware/Proton/commit/63dba5821daef24db8943188dbeafaa8fb6dadcd). But, it isn't specified if Activision lifted their restrictions and communicated with CodeWeavers or Valve or that a dev simply attempted to run the game and play in a short session, not long enough to trigger a ban.\n\nOld bans haven't been lifted, and for launching on refs, we've been completely ignored in tickets and to this day by Activision support.",
+        "created_at": "2025-12-24T14:37:51Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3689989059",
+        "discussion_body": "> [@daggintosh](https://github.com/daggintosh) In my research, the ban was happening quite quickly and we ran into it as well while trying to fix the game initially which is why we had not published the change to the proton script. I played recently on multiple days for >30min per session and played full multiplayer matches, and I did not get banned. However, it was a mistake to put that in the changelog and I'll remove it now :)\n\nI will try to corroborate your experiment, i have 2 hours to kill today, will let you know if get banned",
+        "created_at": "2025-12-24T14:43:24Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3690016761",
+        "discussion_body": "@alasky17 Thank you for the clarification, to be safe though I'll check back in a few weeks since some reports show that _some_ bans were quite delayed.\n\n@funkerwolf I've seen some blame the ReFS bans on Ricochet but as _this_ game doesn't use Ricochet, I'm inclined to believe that this is an engine-level bug that originated either with CW or MW19. Maybe there's some sort of integrity check that uses some call specific to NTFS that isn't present in Linux filesystems (and supported in Wine) or MS's ReFS?\n\nI'm also curious if a ban would still occur if the BTRFS Windows driver was used, but that would probably be a waste of $20-$60. It's a shame that Activision is being so vague.",
+        "created_at": "2025-12-24T14:52:34Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3690025075",
+        "discussion_body": "I'm still under threat of a SLAPP suit by Microsoft's legal team, so I gave up any hope that they would change their mind on their own.\nI still wonder what/who they're so afraid of, from Linux users, from ReFS users, from HyperV users, from Win11 beta users, all those things and even more caused false-positive bans.\nBut with their non-response I'm not so sure if it's actually that false-positive, but instead they simply didn't communicated that they don't want any gamers outside of the 99% ones.\nMaybe I should sue them first to force them to make it public, but it's not like I haven't enough problems already.\n",
+        "created_at": "2025-12-24T14:55:30Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3690031988",
+        "discussion_body": "Hello @chris-pcguy, please use a different medium to discuss legal matters.",
+        "created_at": "2025-12-24T14:58:32Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/6852#issuecomment-3690056768",
+        "discussion_body": "> Hello [@chris-pcguy](https://github.com/chris-pcguy), please use a different medium to discuss legal matters.\n\nk, just wanted to give it as a heads-up, since they explicitly mentioned the threat with the notion of \"trying to make a game of the Call of Duty series run on a system which can't be classified as having a default Windows installation\" (short/trimmed version).\nSo even if it currently only affects me, which I strongly doubt, I thought like an additional warning might be warranted, since it appears like they got more active in that regard in the last months.\n",
+        "created_at": "2025-12-24T15:09:29Z",
+        "is_for_the_report": "false"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Marvel's Spider-Man 2 (2651280)",
+    "issue_number": 8428,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8428#issuecomment-2710558644",
+    "compatibility_report_id": 2710558644,
+    "issue_state": "open",
+    "compatibility_report": "Marvel's Spider-Man 2 (2651280)\n\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/8512.\n@DistantThunder posted on 2025-03-10T12:57:46:\n\n# Compatibility Report\n\n- Name of the game with compatibility issues: Marvel’s SpiderMan 2 with Raytracing\n- Steam AppID of the game: 2651280\n\n## System Information\n\n- GPU: AMD Radeon RX 7900 XTX\n- Video driver version: Mesa 24.3.4-arch1.1 (amdgpu)\n- Kernel version: 6.13.2-zen1-1-zen\n- Proton version: Experimental / 9.0.4\n\n\n## I confirm:\n\n- [x] that I haven't found an existing compatibility report for this game.\n- [x] that I have checked whether there are updates for my system available.\n- [x] I have verified the game & Proton's files. \n\n## Symptoms\n\nMarvel’s SpiderMan 2 previously supported Raytracing, but after an update around two weeks ago, enabling Raytracing no longer works. The game displays a Wine error: `\"status & \"&\"vkCreateRayTracingPipelinesKHR\"\"`. Other games using Raytracing are unaffected.\n\n_The game *can* work with Raytracing disabled but it removes significant visual fidelity._\n\n* Game version: v1.307.0.0\n\n\n## Reproduction\n\n1. Ensure the latest updates for your system (kernel, drivers) have been applied.\n2. Launch Marvel’s SpiderMan 2 with Proton Experimental version or 9.0.4 via Steam.\n3. Enable Raytracing in-game settings or just start the game with Raytracing previously enabled.\n4. Observe if the error message appears.\n\n![Image](https://github.com/user-attachments/assets/f3aa6070-c04f-4e61-9483-bc895f42f46e)\n\n### Additional Context\n\n- **Logs:** I have enabled `PROTON_LOG=1` for debugging but the log file is now 400 MB and the game still hasn't started.\n- The issue started occurring after an update to the game most probably, approximately 1 week ago or less.\n\nPlease let me know if there is additional information needed. Thank you for your assistance in resolving this issue.",
+    "created_at": "2025-03-10T13:13:09Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8428#issuecomment-2711076658",
+        "discussion_body": "Hello, with the new patch and Raytracing issue, it's impossible to obtain a Proton Log file reasonably. The game has been starting for 2 hours and log file is 14GB with black screen.",
+        "created_at": "2025-03-10T15:58:40Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8428#issuecomment-2711155354",
+        "discussion_body": "I added `WINEDEBUG=trace-unwind` and was able to get something.\nRaytracing breakage PROTON_LOG\n\n* [steam-2651280.log](https://github.com/user-attachments/files/19166670/steam-2651280.log)",
+        "created_at": "2025-03-10T16:25:48Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8428#issuecomment-2718498817",
+        "discussion_body": "Didn't want to bother VKD3D but I guess this time around randomly not creating an issue there was the wrong move: https://github.com/HansKristian-Work/vkd3d-proton/pull/2395\n",
+        "created_at": "2025-03-12T16:44:43Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8428#issuecomment-3018610139",
+        "discussion_body": "@Hadrianneue have you found a workaround to cpu under utilization?",
+        "created_at": "2025-06-30T10:22:59Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8428#issuecomment-3019579081",
+        "discussion_body": "> [@Hadrianneue](https://github.com/Hadrianneue) have you found a workaround to cpu under utilization?\n\nsadly no, game is just unplayable because of it",
+        "created_at": "2025-06-30T15:17:28Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8428#issuecomment-3019822178",
+        "discussion_body": "> sadly no, game is just unplayable because of it\n\nIndeed",
+        "created_at": "2025-06-30T16:16:44Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8428#issuecomment-3369017714",
+        "discussion_body": "Game launcher bugs. Games won't start l, ROG Ally Z1 extreme\n\nIssue transferred from https://github.com/ValveSoftware/SteamOS/issues/2155.\n@ribenawrath posted on 2025-10-05T07:49:42:\n\nUsing steam os.\n\nThe entire system feels very fragile like it's going to fall apart. I'm having multiple issues., I've added 5 tickets this week.\n.. I \nOften,  I'll be playing a game that'll krep crashing on play through (Spiderman 2 ). \n\nI've had games that won't launch at all (titan fall 2.) and I've got a refund.\n\nSome games sometimes run if I hit the play button. I'll keep pressing the play button, it'll keep crashing and sending me back to the game page (quantum break), but run if I start another game it'll start. \n(NB Tried it this morning and that trick no longer works. I'm 3 hours into this game and can't play it.)\n\nSometimes games run perfectly without issue (uncharted thieves collection). \n\nThe entire game launcher on AMD device needs more stability \n\nThanks ",
+        "created_at": "2025-10-05T12:15:30Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8428#issuecomment-3369018720",
+        "discussion_body": "Hello @ribenawrath, please add [`PROTON_LOG=1 %command%`](https://github.com/ValveSoftware/Proton#runtime-config-options) to the game's launch options and attach the generated $HOME/steam-$APPID.log to this issue report as a file. (Proton logs compress well if needed.) Also, please copy the contents of Steam Runtime Diagnostics from Steam (`Steam` -> `Help` -> `Steam Runtime Diagnostics`) and put it in a [gist](https://gist.github.com/), then include a link to the gist in this issue report.",
+        "created_at": "2025-10-05T12:17:11Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8428#issuecomment-3568628539",
+        "discussion_body": "It's been a while,\n\n> Nvidia DLSS Frame Generation option isn't listed even though using Proton Experimental\n\nHas anyone gotten DLSS Frame Generation to show up in the menu?",
+        "created_at": "2025-11-24T01:14:03Z",
+        "is_for_the_report": "false"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8428#issuecomment-3630602249",
+        "discussion_body": "Adding to this, DLSS FG and RR are unavailable in SM2 for me despite working in all other games. I'm on Bazzite and tried swapping DLLs, using different compatibility tools and nothing worked.",
+        "created_at": "2025-12-09T06:39:44Z",
+        "is_for_the_report": "false"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Dark and Darker (2016590)",
+    "issue_number": 8208,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/8208",
+    "compatibility_report_id": 2629809696,
+    "issue_state": "closed",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Dark and Darker\r\n- Steam AppID of the game: 2016590\r\n\r\n## System Information\r\n- GPU: RX 6800 XT\r\n- Video driver version: Mesa 1:24.2.6-1\r\n- Kernel version: Linux 6.11.5-arch1-1\r\n- Link to full system information report as Gist: [System Information Report](https://gist.github.com/nulleve/b0b3a341f73f2a46f42f667e6c88d5d6)\r\n- Proton version: From ProtonGE, ProtonGE 9-7 is the last working version; via Steam Proton 8.0-5 is the last working version.\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\n- Dark and Darker launches and is met with the popup \"Tavern is not working! Please restart your game.\"\r\n  - This is after the Loading and Connecting, when you are in the Character Selection Screen.\r\n\r\n## Reproduction\r\n\r\nLaunching Dark and Darker on any Proton Version higher than the working versions listed above.\r\n\r\nProton Experimental Log:\r\n[steam-2016590.log](https://github.com/user-attachments/files/17603831/steam-2016590.log)\r\n\r\nProton 8.0-5 Log: (Working Version)\r\n[steam-2016590-Proton-8.0-5.log](https://github.com/user-attachments/files/17603836/steam-2016590-Proton-8.0-5.log)\r\n\r\nProtonGE 9-7 Log: (Working Version)\r\n[steam-2016590-ProtonGE-9-7.log](https://github.com/user-attachments/files/17603862/steam-2016590-ProtonGE-9-7.log)\r\n\r\n> I do not know what the equivalent ProtonGE to Proton release is, so it's here just in-case.\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Also, please copy the contents of `Help` > `Steam Runtime Diagnostics` to\r\n   the gist.\r\n6. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "created_at": "2024-11-01T20:22:35Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8208#issuecomment-2452710830",
+        "discussion_body": "Tweaking around with a custom build for anyone that still wants a few updates, regressing Proton's Wine on later versions to [824ccfa](https://github.com/ValveSoftware/wine/tree/824ccfa43f05bf7eeb39bccaec91b464bc2614e7) fixes this issue, and allows you to play Dark and Darker.\r\n\r\nHopefully this also helps anyone debugging, the issue appears in [3e1c699](https://github.com/ValveSoftware/wine/tree/3e1c699fdcca554f01d3b7d4db7c25f41c18691d), possibly earlier however as this timline is based off of ProtonGE's wine upstream for 9-7 to 9-8.",
+        "created_at": "2024-11-01T23:21:00Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/8208#issuecomment-2477735567",
+        "discussion_body": "Fixes were merged from wine upstream, so you can use Proton Experimental or the like to run dark and darker now.",
+        "created_at": "2024-11-15T00:58:39Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  },
+  {
+    "issue_report_title": "Proton won't launch any games using NVIDIA 390 drivers",
+    "issue_number": 5597,
+    "compatibility_report_html_url": "https://github.com/ValveSoftware/Proton/issues/5597",
+    "compatibility_report_id": 1146178908,
+    "issue_state": "closed",
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Everything I've tried; so far A Raven Monologue, Terraforming Mars, and Ticket to Ride\r\n- Steam AppID of the game: 744810, 800270, 108200\r\n\r\n## System Information\r\n- GPU: NVIDIA GeForce GT 650M\r\n- Driver/LLVM version: nvidia-driver-390 390.144-0ubuntu0.20.04.1\r\n- Kernel version: 5.13.0-30-generic\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/mark-raymond/971ec8b3079b46d9ab3b764aa0fb4b82\r\n- Proton version: I have mostly tested using 7.0-1, but also tried experimental (7.0-20220218b) and 6.3-8\r\n\r\n## I confirm:\r\n- ~[ ] that I haven't found an existing compatibility report for this game.~ N/A, this is not game specific\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n```\r\n======================\r\nProton: 1644626092 proton-7.0-1\r\nSteamGameId: 744810\r\nCommand: ['/home/mark/.local/share/Steam/steamapps/common/A Raven Monologue/A Raven Monologue.exe']\r\nOptions: {'forcelgadd'}\r\ndepot: 0.20220131.43\r\npressure-vessel: 0.20220131.0\r\nscripts: v0.20211029.0-0-g2d89be4\r\nsoldier: 0.20220131.0 soldier 0.20220131.0\r\nKernel: Linux 5.13.0-30-generic #33~20.04.1-Ubuntu SMP Mon Feb 7 14:25:10 UTC 2022 x86_64\r\n======================\r\n```\r\nOther games result in an identical log, with only the game ID and command changing.\r\n\r\n## Symptoms\r\n\r\nWhen I run any game:\r\n- I press play\r\n- This dialogue appears:\r\n  ![image](https://user-images.githubusercontent.com/2951053/155016421-8e2e5864-88e9-4982-8ff9-50b16ad3a9a1.png)\r\n- After a few seconds, it disappears. The play button is now a stop button.\r\n- A few seconds later, the stop button returns to being a play button.\r\n\r\n## Reproduction\r\n\r\nAttempt to run any game using Proton. Obviously this works for most people, so I feel a bit silly filing this bug report, but every other resource I've found with these symptoms has been due to people using NTFS, and I'm not using NTFS, I'm was using BTRFS, and I tried ext4 as well.",
+    "created_at": "2022-02-21T19:59:40Z",
+    "following_discussion": [
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5597#issuecomment-1047198668",
+        "discussion_body": "Hello @mark-raymond, the NVIDIA 390 series video driver is older that the [support cutoff](https://github.com/ValveSoftware/Proton/wiki/Requirements#directx-11-games) for Proton. Your system is trying to use the Intel Ivybridge chipset for Vulkan, but mesa/ANV is not able to render when the X session is being run on the NVIDIA proprietary driver. Additionally, the video driver for Intel's Ivybridge generation provides experimental, incomplete support for Vulkan.\r\n\r\nYour Kepler generation NVIDIA chipset exists in a fairly awkward historical position, where NVIDIA dropped support for the laptop variants of that generation after the 418 series proprietary driver. That said, some people have had success using up to the 470 series NVIDIA driver on Kepler laptops, which is the last proprietary driver series to support the desktop variant of the generation.\r\n\r\nPlease update your video driver.",
+        "created_at": "2022-02-21T20:12:07Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5597#issuecomment-1047250501",
+        "discussion_body": "Thank you! I have updated to NVIDIA 470 drivers, and (a) my OS is still working and (b) games are launching, so things are looking good :slightly_smiling_face:",
+        "created_at": "2022-02-21T21:49:01Z",
+        "is_for_the_report": "true"
+      },
+      {
+        "discussion_html_url": "https://github.com/ValveSoftware/Proton/issues/5597#issuecomment-1047253262",
+        "discussion_body": "Oh, and in case someone else stumbles upon this issue, I'll record what I found along the way:\r\n\r\n- Ubuntu 20.04 doesn't have drivers in its repositories between 390 and 470. All the packages in between are \"transitional packages\" that just point forwards, and would actually install the 470 driver.\r\n- So, as 418 is the last driver officially supporting my graphics card, I initially tried installing 418 from the NVIDIA website (after uninstalling the 390 drivers from the repositories, and disabling nouveau driver), but this didn't work, because it couldn't compile the kernel module. This was due to an incompatibility with kernel 5.11+, which [NVIDIA fixed in the 460 driver](https://www.nvidia.co.uk/Download/driverResults.aspx/171403/en-uk).\r\n- I then tried installing the 470 driver from the repository, and everything just worked.\r\n- If that hadn't, I would have probably tried downgrading my kernel (20.04 originally came with 5.4, and that's still supported) and tried the 418 driver direct from NVIDIA again. But thankfully that wasn't necessary :slightly_smiling_face:",
+        "created_at": "2022-02-21T21:55:52Z",
+        "is_for_the_report": "true"
+      }
+    ]
+  }
+]

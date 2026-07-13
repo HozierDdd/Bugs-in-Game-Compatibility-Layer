@@ -1,0 +1,162 @@
+[
+  {
+    "record_id": "protondb:111209",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 62753,
+    "app_id": "42700",
+    "title": "Call of Duty: Black Ops",
+    "created_at": "2022-04-01T09:25:38Z",
+    "text": "[metadata]\napp.steam.appId: 42700\napp.title: Call of Duty: Black Ops\ntimestamp: 1648805138\n\n[systemInfo]\ncpu: Intel Core i7-6700K @ 4.00GHz\ngpu: NVIDIA GeForce GTX 1080 Ti\ngpuDriver: NVIDIA 510.54\nkernel: 5.16.11-76051611-generic\nos: Pop!_OS 21.10\nram: 32 GB\n\n[responses]\nanswerToWhatGame: 42700\naudioFaults: no\nconcludingNotes: Its a good game, the minor issues don't detract from the message\nfollowUp.graphicalFaults.minorArtifacts: True\nfollowUp.inputFaults.inaccuracy: True\nfollowUp.performanceFaults: slightSlowdown\ngraphicalFaults: yes\ninputFaults: yes\ninstalls: yes\nlaunchOptions: DXVK_ASYNC=1 %command%\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.graphicalFaults: Hilarious artefact where the wire of the zipline in the first mission isn't rendered, not a playability issue\nnotes.inputFaults: As others have noted, when the game engine goes to grab the camera for a cutscene it may drop some mouse input\nnotes.performanceFaults: Frame dips, not entirely sure whether it's the game engine or not\nnotes.verdict: Pretty good, should run on a potato machine - but technical issues even from the original launch are amplified with emulation. Still enjoy\nonlineMultiplayerAttempted: no\nopens: yes\nperformanceFaults: yes\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: no\nvariant: experimental\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 111209,
+      "timestamp": 1648805138,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_11",
+    "calibration_group_index": 11,
+    "calibration_group_position": 1
+  },
+  {
+    "record_id": "protondb:106053",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 57597,
+    "app_id": "1172470",
+    "title": "Apex Legends",
+    "created_at": "2022-03-03T06:43:37Z",
+    "text": "[metadata]\napp.steam.appId: 1172470\napp.title: Apex Legends\ntimestamp: 1646289817\n\n[systemInfo]\ncpu: AMD Ryzen 7 3800XT 8-Core\ngpu: NVIDIA GeForce RTX 2070\ngpuDriver: NVIDIA 510.54\nkernel: 5.15.23-76051523-generic\nos: Pop!_OS 21.10\nram: 32 GB\n\n[responses]\nanswerToWhatGame: 1172470\naudioFaults: no\nfollowUp.performanceFaults: slightSlowdown\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.performanceFaults: Some stuttering/slowdown as the shader cache compiled.\nnotes.verdict: Other than the shader cache compiling, this played great.\nonlineMultiplayerAppraisal: excellent\nonlineMultiplayerAttempted: yes\nonlineMultiplayerPlayed: yes\nopens: yes\nperformanceFaults: yes\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 106053,
+      "timestamp": 1646289817,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_11",
+    "calibration_group_index": 11,
+    "calibration_group_position": 2
+  },
+  {
+    "record_id": "protondb:78442",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 29986,
+    "app_id": "6910",
+    "title": "Deus Ex: Game of the Year Edition",
+    "created_at": "2021-09-30T11:06:10Z",
+    "text": "[metadata]\napp.steam.appId: 6910\napp.title: Deus Ex: Game of the Year Edition\ntimestamp: 1632999970\n\n[systemInfo]\ncpu: AMD Ryzen 5 3600 6-Core\ngpu: AMD AMD Radeon RX 5700 (NAVI10, DRM 3.35.0, 5.4.0-88-generic, LLVM 12.0.0)\ngpuDriver: 4.6 Mesa 21.0.3\nkernel: 5.4.0-88-generic\nos: Linux Mint 20.2\nram: 16 GB\n\n[responses]\nanswerToWhatGame: 6910\naudioFaults: no\nduration: lessThanFifteenMinutes\nextra: no\nfollowUp.graphicalFaults.heavyArtifacts: True\nfollowUp.graphicalFaults.other: True\ngraphicalFaults: yes\ninputFaults: no\ninstalls: yes\nisImpactedByAntiCheat: no\nisMultiplayerImportant: no\nlocalMultiplayerAttempted: no\nnotes.graphicalFaults: Color depth looks like very low on DirectX and OpenGL render (unplayable), however on Software render game looks fine\nnotes.verdict: issue with color depth\nonlineMultiplayerAttempted: no\nopens: yes\nperformanceFaults: no\nprotonVersion: Default\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntype: steamPlay\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 78442,
+      "timestamp": 1632999970,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_11",
+    "calibration_group_index": 11,
+    "calibration_group_position": 3
+  },
+  {
+    "record_id": "protondb:66028",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 17572,
+    "app_id": "55230",
+    "title": "Saints Row: The Third",
+    "created_at": "2021-07-04T04:41:51Z",
+    "text": "[metadata]\napp.steam.appId: 55230\napp.title: Saints Row: The Third\ntimestamp: 1625373711\n\n[systemInfo]\ncpu: AMD Ryzen 5 2400G with Radeon Vega Graphics\ngpu: AMD Radeon RX 570 (POLARIS10, DRM 3.40.0, 5.12.14-artix1-1, LLVM 12.0.0)\ngpuDriver: 4.6 Mesa 21.1.3\nkernel: 5.12.14-artix1-1\nos: Artix Linux\nram: 8 GB\n\n[responses]\nanswerToWhatGame: 55230\ninstalls: yes\nnotes.extra: An absolute waste of bandwidth and time. Neither Windows nor Linux version works.\nnotes.verdict: A disaster.\nopens: no\nprotonVersion: Default\ntype: steamPlay\nverdict: no",
+    "metadata": {
+      "raw_index": 66028,
+      "timestamp": 1625373711,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_11",
+    "calibration_group_index": 11,
+    "calibration_group_position": 4
+  },
+  {
+    "record_id": "protondb:205897",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 157441,
+    "app_id": "1167630",
+    "title": "Teardown",
+    "created_at": "2024-01-09T17:14:28Z",
+    "text": "[metadata]\napp.steam.appId: 1167630\napp.title: Teardown\ntimestamp: 1704820468\n\n[systemInfo]\ncpu: AMD Ryzen 7 5800X 8-Core\ngpu: NVIDIA GeForce RTX 2080 Ti\ngpuDriver: NVIDIA 545.29.06\nkernel: 6.6.9-1-default\nos: openSUSE Tumbleweed\nram: 32 GB\nsteamRuntimeVersion: steam-runtime_0.20231024.64411\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 1167630\naudioFaults: no\nconcludingNotes: Didn't work on with proton 8.0-4. Forced proton experimental and it works great\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: experimental\nverdict: yes\nverdictOob: no\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 205897,
+      "timestamp": 1704820468,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_11",
+    "calibration_group_index": 11,
+    "calibration_group_position": 5
+  }
+]

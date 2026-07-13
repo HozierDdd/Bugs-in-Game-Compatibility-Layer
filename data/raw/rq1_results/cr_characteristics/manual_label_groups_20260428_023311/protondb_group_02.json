@@ -1,0 +1,162 @@
+[
+  {
+    "record_id": "protondb:232551",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 184095,
+    "app_id": "1226530",
+    "title": "Trap Legend",
+    "created_at": "2024-07-02T20:03:01Z",
+    "text": "[metadata]\napp.steam.appId: 1226530\napp.title: Trap Legend\ntimestamp: 1719950581\n\n[systemInfo]\ncpu: AMD Custom APU 0405\ngpu: AMD Custom GPU 0405 (vangogh, LLVM 14.0.6, DRM 3.45, 5.13.0-valve36-1-neptune)\ngpuDriver: 4.6 (Compatibility Profile) Mesa 22.2.0 (git-17e5312102)\nkernel: 5.13.0-valve36-1-neptune\nos: SteamOS Holo\nram: 15 GB\nsteamRuntimeVersion: steam-runtime_0.20230509.49499\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 1226530\naudioFaults: no\nbatteryPerformance: no\nconcludingNotes: Ran smoothly out of the box. Even the patch ran just fine.\ndidChangeControlLayout: no\nfollowUp.windowingFaults.other: True\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.windowingFaults: Full Screen seems to be just a bit larger than the screen itself. Easy to fix though, just go back to Windowed mode.\nopens: yes\nperformanceFaults: no\nreadability: no\nsaveGameFaults: no\nsecondaryLauncher: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: yes",
+    "metadata": {
+      "raw_index": 232551,
+      "timestamp": 1719950581,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_02",
+    "calibration_group_index": 2,
+    "calibration_group_position": 1
+  },
+  {
+    "record_id": "protondb:146634",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 98178,
+    "app_id": "1676130",
+    "title": "Deadlink",
+    "created_at": "2022-10-24T12:14:00Z",
+    "text": "[metadata]\napp.steam.appId: 1676130\napp.title: Deadlink\ntimestamp: 1666613640\n\n[systemInfo]\ncpu: AMD Custom APU 0405\ngpu: AMD Custom GPU 0405 (vangogh, LLVM 13.0.0, DRM 3.45, 5.13.0-valve10.1-1-neptune-02144-g7fffaf925dfb)\ngpuDriver: 4.6 Mesa 22.0.0-devel (git-676ccacebc)\nkernel: 5.13.0-valve10.1-1-neptune-02144-g7fffaf925dfb\nos: SteamOS Holo\nram: 15 GB\n\n[responses]\nanswerToWhatGame: 1676130\naudioFaults: no\nbatteryPerformance: yes\nconcludingNotes: slow perforance but it is early access had to turn it to low for 60fps but locked it to 40 for better battery\ndidChangeControlLayout: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.batteryPerformance: lock to 40 turn down settings 12watt\nnotes.verdict: Works out of box great for early access and has deck button prompts\nopens: yes\nperformanceFaults: no\nreadability: no\nsaveGameFaults: no\nsecondaryLauncher: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 146634,
+      "timestamp": 1666613640,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_02",
+    "calibration_group_index": 2,
+    "calibration_group_position": 2
+  },
+  {
+    "record_id": "protondb:160100",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 111644,
+    "app_id": "2124440",
+    "title": "SIC-1",
+    "created_at": "2023-01-21T20:04:24Z",
+    "text": "[metadata]\napp.steam.appId: 2124440\napp.title: SIC-1\ntimestamp: 1674331464\n\n[systemInfo]\ncpu: Intel Core i7-10875H @ 2.30GHz\ngpu: NVIDIA GeForce RTX 2060\ngpuDriver: NVIDIA 460.67\nkernel: 5.10.28-1-lts\nos: Arch Linux\nram: 16 GB\n\n[responses]\nanswerToWhatGame: 2124440\ncustomProtonVersion: GE-Proton7-37\ninstalls: yes\nlauncher: steam\nnotes.concludingNotes: Tried a couple different versions of Proton with the same result.\nOn the other hand, it's a free game and can be played in online at https://jaredkrinke.itch.io/sic-1\nnotes.verdict: Starts but just displays blank window.\nopens: no\nvariant: ge\nverdict: no",
+    "metadata": {
+      "raw_index": 160100,
+      "timestamp": 1674331464,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_02",
+    "calibration_group_index": 2,
+    "calibration_group_position": 3
+  },
+  {
+    "record_id": "protondb:224074",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 175618,
+    "app_id": "327030",
+    "title": "Worms W.M.D",
+    "created_at": "2024-05-12T21:20:51Z",
+    "text": "[metadata]\napp.steam.appId: 327030\napp.title: Worms W.M.D\ntimestamp: 1715548851\n\n[systemInfo]\ncpu: 11th Gen Intel Core i5-11400H @ 2.70GHz\ngpu: NVIDIA GeForce RTX 3060 Laptop GPU\ngpuDriver: NVIDIA 550.67\nkernel: 6.8.2-arch2-1\nos: EndeavourOS Linux\nram: 16 GB\nsteamRuntimeVersion: steam-runtime_0.20240304.79797\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 327030\naudioFaults: no\nconcludingNotes: It took me ages to figure out, but all it took was to try older protons\nfollowUp.performanceFaults: slightSlowdown\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.performanceFaults: It takes like 2 minutes to load into menu but then its fine\nnotes.verdict: Its playable on older Proton 6.3.8\nonlineMultiplayerAppraisal: excellent\nonlineMultiplayerAttempted: yes\nonlineMultiplayerPlayed: yes\nopens: yes\nperformanceFaults: yes\nprotonVersion: 6.3-8\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: older\nverdict: yes\nverdictOob: no\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 224074,
+      "timestamp": 1715548851,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_02",
+    "calibration_group_index": 2,
+    "calibration_group_position": 4
+  },
+  {
+    "record_id": "protondb:239533",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 191077,
+    "app_id": "1150690",
+    "title": "OMORI",
+    "created_at": "2024-08-13T23:58:15Z",
+    "text": "[metadata]\napp.steam.appId: 1150690\napp.title: OMORI\ntimestamp: 1723593495\n\n[systemInfo]\ncpu: Intel Core i5-10400 @ 2.90GHz\ngpu: NVIDIA GeForce RTX 3060 Ti\ngpuDriver: NVIDIA 555.58.02\nkernel: 6.10.3-200.fc40.x86_64\nos: Fedora Linux 40 (Workstation Edition)\nram: 16 GB\nsteamRuntimeVersion: steam-runtime_0.20240610.91380\nxWindowManager: i3\n\n[responses]\nanswerToWhatGame: 1150690\naudioFaults: no\nconcludingNotes: Finished the whole story on Linux\nfollowUp.performanceFaults: slightSlowdown\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.performanceFaults: Slight freezes now and then. Infrequent and short (0.5-2s), not that bad\nnotes.verdict: Good enough \nopens: yes\nperformanceFaults: yes\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 239533,
+      "timestamp": 1723593495,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_02",
+    "calibration_group_index": 2,
+    "calibration_group_position": 5
+  }
+]

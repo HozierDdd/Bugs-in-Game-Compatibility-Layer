@@ -1,0 +1,107 @@
+[
+  {
+    "issue_number": 6779,
+    "issue_title": "Turbo Sliders Unlimited (1478340)",
+    "id": 1712718954,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Turbo Sliders Unlimited\r\n- Steam AppID of the game: 1478340\r\n\r\n## System Information\r\n- I am the dev, Steam Deck users have reported this issue with old and new system versions\r\n- Some Linux users who have tried the game with Proton have reported the same issue, but no detailed system information available\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms \r\n\r\nWhen joining an online game as client, the game crashes right after connection has been established and sending Join message to server, before receiving Join Ok message. \r\n\r\nPlayers can play the game with Steam Deck locally just fine, but whenever they try to connect an online game, the game crashes for an unknown reason. Using debugger and watching logs I can see that the client manages to make a connection and send a Join message which is received by Server, but client will crash soon after and not receive the Join ok message the server tries to send back to it. A similar crash happens if Steam Deck player tries to host a game and other players join it.\r\n\r\nThe game is made with Unity and it is using FacePunch.Steamworks library. It is using Steam sockets for network communication and it is working just fine on PC and dedicated Linux server, but the crash happens with 100% repro rate on SteamDeck.\r\n\r\nI got a log file from one user but it doesn't help me understand what is wrong.\r\n\r\n## Reproduction\r\n\r\n1. Start Turbo Sliders Unlimited\r\n2. Go to Play -> Join and select any of the available servers\r\n3. After the connection is established, the game crashes\r\n[proton-crash-steam-1478340.log](https://github.com/ValveSoftware/Proton/files/11491837/proton-crash-steam-1478340.log)\r\n",
+    "symptom_summary": "用户在将《帝国时代4》的语言设置为西班牙语后，游戏无法启动，出现黑屏，游戏鼠标可见，但随后关闭。 \n\nTags: Game Crash, Black Screen, Language Issue",
+    "tags": [
+      "Network / Sync Issue",
+      "In-game Crash"
+    ]
+  },
+  {
+    "issue_number": 7056,
+    "issue_title": "You Can Kana (1031900)",
+    "id": 1871940043,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: You Can Kana\r\n- Steam AppID of the game: 1031900\r\n\r\n## System Information\r\n- Name: Steam Deck\r\n- Driver: AMD AMD Custom GPU 0405 (vangogh, LLVM 14.0.6, DRM 3.45, 5.13.0-valve36-1-neptune)\r\nDriver Version: 4.6 (Compatibility Profile) Mesa 22.2.0 (git-17e5312102)\r\nOpenGL Version: 4.6\r\n- Kernel version: Linux 5.13.0-valve36-1-neptune SMP PREEMPT Mon, 19 Dec 2022 23:39:41 +0000 x86_64\r\n- Link to full system information: [System Info](https://gist.github.com/ar664/42fe2ab315a62ad2ba667910d2aac5b4#file-system-info) [Runtime Info](https://gist.github.com/ar664/42fe2ab315a62ad2ba667910d2aac5b4#file-runtime-info)\r\n- Proton version: 1689631677 proton-8.0-3c\r\n\r\n## I confirm:\r\n- [ ✅] that I haven't found an existing compatibility report for this game.\r\n- [ ✅] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nCrashes/Fails to start after pressing \"Quit To Desktop\" in game. \r\n\r\n## Reproduction\r\n1. Start the game.\r\n2. Go into options menu.\r\n3. Press \"Quit To Desktop\"\r\n4. Try to start the game again.\r\n\r\n## Crash Log\r\n[steam-1031900.log](https://github.com/ValveSoftware/Proton/files/12466409/steam-1031900.log)\r\n",
+    "symptom_summary": "用户在尝试从游戏中选择“退出到桌面”后，游戏崩溃并无法重新启动。 \n\nTags: Crash, Fails to Start, Exit Issue",
+    "tags": [
+      "Exit Crash"
+    ]
+  },
+  {
+    "issue_number": 5313,
+    "issue_title": "Alternativa (33990)",
+    "id": 1052677450,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues:Alternativa\r\n- Steam AppID of the game:33990\r\n\r\n## System Information\r\n- GPU: [AMD/ATI] Vega 10 XL/XT [Radeon RX Vega 56/64] (rev c3)\r\n- Driver/LLVM version: Mesa 21.2.5\r\n- Kernel version: 5.15.1\r\n- Proton version:6.3-7\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame complains about missing windows media foundation, then exits.\r\n\r\n## Reproduction\r\n1. start game\r\n2. observe error pop-up\r\n\r\n[steam-33990.log](https://github.com/ValveSoftware/Proton/files/7532123/steam-33990.log)\r\n",
+    "symptom_summary": "用户在启动游戏《Alternativa》时遇到问题，游戏提示缺少Windows媒体基础组件，然后退出。 \n\nTag suggestions: Missing Features, Game Crash, Exit Error",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 5454,
+    "issue_title": "Two Worlds: Epic Edition (1930)",
+    "id": 1090124809,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Two Worlds: Epic Edition\r\n- Steam AppID of the game: 1930\r\n\r\n## System Information\r\n- GPU: NVIDIA Corporation NVIDIA GeForce 940MX/PCIe/SSE2\r\n- Driver/LLVM version: 4.6.0 NVIDIA 470.86\r\n- Kernel version: 5.13.0-22-generic\r\n- Link to full system information report as [Gist](https://gist.github.com/EddieMattos/f8acfc1753433fbcb0bac081ba43c18d):[LINK](https://gist.github.com/EddieMattos/f8acfc1753433fbcb0bac081ba43c18d):\r\n- Proton version: 5.0-10\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nThe game is loading only under Proton 5.0-10 without sound and there are graphic glitches that may be related to the shader.\r\nThe native version doesn't run.\r\nCouldn't generate the log for some reason.\r\nThe solution sugested in [ProtonDB](https://www.protondb.com/app/1930) doesn't run in my machine.\r\n## Reproduction\r\nRun the game.\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "symptom_summary": "用户在使用Proton 5.0-10运行《Two Worlds: Epic Edition》时遇到的问题包括游戏加载时没有声音，并且出现与着色器相关的图形故障。原生版本无法运行。\n\nTags: No Sound, Graphic Glitches, Shader Issues",
+    "tags": [
+      "Audio Issue",
+      "Graphic  / Rendering Issue"
+    ]
+  },
+  {
+    "issue_number": 5304,
+    "issue_title": "Geometry Dash (322170)",
+    "id": 1820103255,
+    "compatibility_report": "[322170] Geometry Dash\r\n\r\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/7270.\r\n@TheBearodactyl posted on 2023-11-21T02:03:24:\r\n\r\n# Compatibility Report\r\n- Name of the game with compatibility issues: Geometry Dash\r\n- Steam AppID of the game: 322170\r\n\r\n## System Information\r\n- GPU: Intel HD Graphics\r\n- Video driver version: Mesa 23.2.1\r\n- Kernel version: xanmod-6.6\r\n- Link to full system information report as [Gist](https://gist.github.com/TheBearodactyl/529d61342961de5fd8dd717876b1be84):\r\n- Proton version: Proton 8.0\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[steam-322170.log](https://github.com/ValveSoftware/Proton/files/13420958/steam-322170.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nThe game crashes every time I open it, and whenever it doesn't crash on the loading bar, it happens in the middle of editing a level.\r\n\r\n## Reproduction\r\nplay the game.",
+    "symptom_summary": "用户在启动《Geometry Dash》时遇到崩溃问题，游戏在加载条上可能会崩溃，或者在编辑关卡时中途崩溃。\n\nTags: Crash, Loading Issues, Level Editing Crash",
+    "tags": [
+      "Loading/Saving Crash"
+    ]
+  },
+  {
+    "issue_number": 7104,
+    "issue_title": "NASCAR Heat 5 (1265860)",
+    "id": 1899026076,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: NASCAR Heat 5\r\n- Steam AppID of the game: 1265860\r\n\r\n## System Information\r\n- GPU: AMD Radeon 5700 XT\r\n- Video driver version: mesa 23.1.6-4\r\n- Kernel version: 6.1.51-1-lts\r\n- Link to full system information report as https://gist.github.com/Alexithymia2014/eb7a838dc9672765320fa7a87e2ec862\r\n- Proton version: Proton Experimental, Proton 8.0\r\n\r\n## I confirm:\r\n- [ x] that I haven't found an existing compatibility report for this game.\r\n- [ x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms \r\nThe game will start and play fine in Single Player but in Multiplayer, you can't connect to a lobby. I just get a generic unable to connect error. I have also seen failed to create socket error.\r\n\r\n## Reproduction\r\n1. Launch game.\r\n2. Click Race Now for Multiplayer\r\n3. Find an lobby.\r\n4. Press enter to join.\r\n5. Note error message\r\n\r\nI made a bcrypt trace with my proton log here: https://gist.github.com/Alexithymia2014/e9fb0d61d9721ebe701ca0244d0263ed\r\n",
+    "symptom_summary": "用户在《NASCAR Heat 5》的多人游戏模式中无法连接到大厅，出现了通用的无法连接错误和创建套接字失败的错误。 \n\nTags: Connection Issues, Multiplayer Problems, Socket Error",
+    "tags": [
+      "Network / Sync Issue"
+    ]
+  },
+  {
+    "issue_number": 6568,
+    "issue_title": "Company of Heroes 3 (1677280)",
+    "id": 1599652366,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Company of Heroes 3\r\n- Steam AppID of the game: 1677280\r\n\r\n## System Information\r\n- GPU: Steam Deck\r\n- Driver/LLVM version:  4.6 Mesa 22.2.0\r\n- Kernel version: 5.13.0-valve36-1-neptune\r\n- Link to full system information report as [Gist](https://gist.github.com/):\r\n- Proton version: 7.0-6\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n[steam-1677280.log](https://github.com/ValveSoftware/Proton/files/10830862/steam-1677280.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\ni got a desync error whenever i join a multiplayer match \r\n\r\n![20230225112339_1](https://user-images.githubusercontent.com/15874482/221351991-90b76b15-03e4-4cdd-abf8-7351b747e5c3.jpg)\r\n\r\n## Reproduction\r\n* just play multiplayer in any mod and you will get disconnected right after (it may be instant or after several minutes)\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "symptom_summary": "用户在运行游戏《Eastward》时遇到问题，游戏窗口在打开后两秒内关闭，且在正常模式下无法运行，只有通过OpenGL版本才能正常启动并运行。开发者可能忽视了Linux版本的兼容性。\n\nTags: Game Crashes, Black Screen, Compatibility Issues, OpenGL Required",
+    "tags": [
+      "Network / Sync Issue"
+    ]
+  },
+  {
+    "issue_number": 4745,
+    "issue_title": "Eternal Radiance (923570)",
+    "id": 854102956,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Eternal Radiance\r\n- Steam AppID of the game: 923570\r\n\r\n## System Information\r\n- GPU: GTX 960m\r\n- Driver/LLVM version: 465.19\r\n- Kernel version:5.11.11-144-tkg-pds\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/CygnusTerminal/f3f62dfc349c6ffbd850992745ec9cc3\r\n- Proton version: 6.3/5.13\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[steam-923570.log](https://github.com/ValveSoftware/Proton/files/6282814/steam-923570.log)\r\n[steam-923570 (proton 6.3).log](https://github.com/ValveSoftware/Proton/files/6282832/steam-923570.proton.6.3.log)\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nGame would not work with patched fsync2/winesync kernel. Proton 5.0 works fine. 6.3 and 5.13 launch but the game would just black screen (Steam shows it as running). It would not crash nor stop responding.\r\n\r\n## Reproduction\r\n1. Launch Steam\r\n2. Select either Proton 5.13 or 6.3 as your compat tool\r\n3. Launch the game\r\n4. Black screen\r\n\r\n",
+    "symptom_summary": "用户在玩《Marvel's Midnight Suns》时遇到以下问题：游戏在结束一天时崩溃，导致设备冻结并需要强制重启；加载保存文件和手动保存时也会崩溃；保存文件路径不稳定，影响同步。 \n\nTag suggestions: \n- Crashes\n- Freezes\n- Save Issues\n- Stability Problems",
+    "tags": [
+      "Black Screen"
+    ]
+  },
+  {
+    "issue_number": 5536,
+    "issue_title": "HITMAN World of Assassination (1659040)",
+    "id": 1189619654,
+    "compatibility_report": "Hitman 3 Freezing/Crashing\r\n\r\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/6013.\r\n@ecameracci posted on 2022-07-19T22:36:18:\r\n\r\n# Compatibility Report\r\n- Name of the game with compatibility issues: Hitman 3\r\n- Steam AppID of the game: 1659040\r\n\r\n## System Information\r\n- GPU: RX 6400\r\n- Driver/LLVM version: 4.6 (Compatibility Profile) Mesa 22.1.2\r\n- Kernel version: 5.13.0-valve21-2-neptune-02209-g2a5bdc1102a0\r\n- Link to full system information report as [Gist](https://gist.github.com/): [System Information](https://gist.github.com/ecameracci/b54ce0b4cd4c6e367ef4ea8b7e66d799)\r\n- Proton version: proton-7.0-3 (also tried with experimental, but logs are captured with 7.0-3)\r\n\r\n## I confirm:\r\n- [ * ] that I haven't found an existing compatibility report for this game.\r\n- [ * ] that I have checked whether there are updates for my system available.\r\n[steam-1659040.zip](https://github.com/ValveSoftware/Proton/files/9145031/steam-1659040.zip)\r\n\r\n## Symptoms \r\nWhen launching Hitman 3, I get the launcher screen. After selecting \"Play\" I see the \"ioi\" splash screen and then the game freezes. Attempting to launch the game again sometimes causes a crash or the freezing again. I have managed to get into game once after changing from exclusive fullscreen to fullscreen and from disabling vsync, but the freeze just happens later. The game is frozen,  but alt+tab (or exiting the game from the steam deck overlay menu) still works.\r\n\r\n## Reproduction\r\n* Launch the game\r\n* Select \"Play\" on the splash screen.\r\n* Observe game is frozen\r\n\r\n## Notes\r\nThis is with a PC with HoloISO installed on it. This is the relevant output from neofetch:\r\n```\r\nOS: SteamOS Holo x86_64\r\nHost: OptiPlex 3060\r\nKernel: 5.13.0-valve21-2-neptune-02209-g2a5bdc1102a0\r\nPackages: 875 (pacman), 6 (flatpak)\r\nShell: bash 5.1.16\r\nResolution: 2560x1440\r\nDE: Plasma 5.23.5\r\nCPU: Intel i5-8400 (6) @ 4.000GHz\r\nGPU: AMD ATI 03:00.0 Device 743f\r\nGPU: Intel CoffeeLake-S GT2 [UHD Graphics 630]\r\nMemory: 1816MiB / 7774MiB\r\n```\r\nThis happens when launching in both the gamescope session and the desktop mode. The game is installed on the same ext4 formatted drive as the OS. Verified that the game runs under Windows to rule out a potential hardware issue.",
+    "symptom_summary": "用户在启动《杀手3》时遇到游戏冻结和崩溃的问题。选择“播放”后，游戏在“ioi”启动画面后冻结，尝试重新启动游戏时有时会导致崩溃，虽然在某些情况下可以进入游戏，但随后仍会发生冻结。\n\nTags: Freezing, Crashing, Launch Issues, Gameplay Problems",
+    "tags": [
+      "Freeze",
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 5845,
+    "issue_title": "V Rising (1604030)",
+    "id": 1238733921,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: V Rising\r\n- Steam AppID of the game: 1604030\r\n\r\n## System Information\r\n- GPU: RX 6700 XT\r\n- Driver/LLVM version: Mesa 22.0.3\r\n- Kernel version: 5.17.1-zen1-1-zen\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/kdwinter/7b6fbfe8a3a78ffe8ceb93214d2cfa23\r\n- Proton version: Experimental\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n\r\nCrashes on startup. With `PROTON_USE_WINED3D=1` the game *sometimes* reaches the main menu, but then again crashes after the intro video (which isn't visible; only artifacts ), or upon attempting to join a server. With DXVK, it consistently crashes before reaching any menus.\r\n\r\nDifferent Proton versions do not appear to change this behavior, except for 6.3: with Proton 6.3 the game consistently starts, but then stops on a \"Steamworks initialization failed\" screen.\r\n\r\n## Reproduction\r\n\r\nLaunch the game from Steam.\r\n\r\n[steam-1604030-2.log](https://github.com/ValveSoftware/Proton/files/8709118/steam-1604030-2.log)\r\n\r\n[steam-1604030.log](https://github.com/ValveSoftware/Proton/files/8709114/steam-1604030.log)",
+    "symptom_summary": "用户在启动《V Rising》时遇到崩溃问题，使用 `PROTON_USE_WINED3D=1` 时游戏有时能进入主菜单，但在播放引导视频时出现伪影并崩溃，尝试加入服务器时也会崩溃。使用DXVK时，游戏在任何菜单之前就会稳定崩溃。\n\nTags: Crashes, Artifacts, Menu Issues, Initialization Failure",
+    "tags": [
+      "Launch Failure",
+      "Cutscene Issue",
+      "Network / Sync Issue"
+    ]
+  }
+]

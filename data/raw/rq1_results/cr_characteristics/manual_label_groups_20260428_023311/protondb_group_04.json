@@ -1,0 +1,162 @@
+[
+  {
+    "record_id": "protondb:82902",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 34446,
+    "app_id": "1151640",
+    "title": "Horizon Zero Dawn",
+    "created_at": "2021-10-28T19:22:23Z",
+    "text": "[metadata]\napp.steam.appId: 1151640\napp.title: Horizon Zero Dawn\ntimestamp: 1635448943\n\n[systemInfo]\ncpu: Intel Core i7-4770K @ 3.50GHz\ngpu: NVIDIA NVIDIA GeForce RTX 2080\ngpuDriver: NVIDIA 470.63.01\nkernel: 5.11.0-34-generic\nos: Ubuntu 20.04.3 LTS\nram: 32 GB\n\n[responses]\nanswerToWhatGame: 1151640\naudioFaults: no\nduration: severalHours\nextra: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nnotes.verdict: runs ootb with proton experimental\nopens: yes\nperformanceFaults: no\nprotonVersion: Default\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntype: steamPlay\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 82902,
+      "timestamp": 1635448943,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_04",
+    "calibration_group_index": 4,
+    "calibration_group_position": 1
+  },
+  {
+    "record_id": "protondb:244909",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 196453,
+    "app_id": "632470",
+    "title": "Disco Elysium - The Final Cut",
+    "created_at": "2024-09-13T04:06:52Z",
+    "text": "[metadata]\napp.steam.appId: 632470\napp.title: Disco Elysium - The Final Cut\ntimestamp: 1726200412\n\n[systemInfo]\ncpu: AMD Ryzen 7 5800X 8-Core\ngpu: NVIDIA GeForce RTX 3080\ngpuDriver: NVIDIA 555.58.02\nkernel: 6.9.3-76060903-generic\nos: Pop!_OS 22.04 LTS\nram: 32 GB\nsteamRuntimeVersion: steam-runtime_0.20240610.91380\nxWindowManager: GNOME Shell\n\n[responses]\nanswerToWhatGame: 632470\naudioFaults: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.verdict: This game runs perfect, I have not had any issues.  \nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: no\nvariant: experimental\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 244909,
+      "timestamp": 1726200412,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_04",
+    "calibration_group_index": 4,
+    "calibration_group_position": 2
+  },
+  {
+    "record_id": "protondb:261645",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 213189,
+    "app_id": "3035570",
+    "title": "Assassin's Creed Mirage",
+    "created_at": "2024-12-17T02:30:55Z",
+    "text": "[metadata]\napp.steam.appId: 3035570\napp.title: Assassin's Creed Mirage\ntimestamp: 1734402655\n\n[systemInfo]\ncpu: Intel Core i7-10700K @ 3.80GHz\ngpu: AMD Radeon RX 7800 XT (radeonsi, navi32, LLVM 19.1.4, DRM 3.59, 6.11.10-amd64)\ngpuDriver: 4.6 Mesa 24.2.8-1\nkernel: 6.11.10-amd64\nos: Debian GNU/Linux trixie/sid\nram: 32 GB\nsteamRuntimeVersion: steam-runtime_0.20241024.105847\nxWindowManager: GNOME Shell\n\n[responses]\nanswerToWhatGame: 3035570\naudioFaults: no\nconcludingNotes: RADV_PERFTEST=gpl,nggc,sam\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlaunchOptions: MANGOHUD=1 gamemoderun %command%\nlauncher: steam\nnotes.verdict: runs OOTB - when you can't click stuff in menu - just hit ALT+Enter\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: official\nverdict: yes\nverdictOob: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 261645,
+      "timestamp": 1734402655,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_04",
+    "calibration_group_index": 4,
+    "calibration_group_position": 3
+  },
+  {
+    "record_id": "protondb:50288",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 1832,
+    "app_id": "264710",
+    "title": "Subnautica",
+    "created_at": "2021-01-16T22:32:49Z",
+    "text": "[metadata]\napp.steam.appId: 264710\napp.title: Subnautica\ntimestamp: 1610836369\n\n[systemInfo]\ncpu: AMD Ryzen 7 1700 Eight-Core\ngpu: NVIDIA GeForce GTX 1060 6GB\ngpuDriver: NVIDIA 450.80.02\nkernel: 4.19.161\nos: Debian GNU/Linux 10 (buster)\nram: 16 GB\n\n[responses]\nanswerToWhatGame: 264710\naudioFaults: no\nduration: moreThanTenHours\nextra: yes\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nnotes.extra: The game has many bugs but they're not caused by Proton. They occur in the original platform (windows) as well. But there are workarounds.\nnotes.verdict: The game worked out of the box, not issues. Played for more than 60 hours till the end.\nopens: yes\nperformanceFaults: no\nprotonVersion: Default\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntype: steamPlay\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 50288,
+      "timestamp": 1610836369,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_04",
+    "calibration_group_index": 4,
+    "calibration_group_position": 4
+  },
+  {
+    "record_id": "protondb:142185",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 93729,
+    "app_id": "271590",
+    "title": "Grand Theft Auto V",
+    "created_at": "2022-09-25T11:27:02Z",
+    "text": "[metadata]\napp.steam.appId: 271590\napp.title: Grand Theft Auto V\ntimestamp: 1664105222\n\n[systemInfo]\ncpu: Intel Core i5-9400F @ 2.90GHz\ngpu: NVIDIA GeForce GTX 1660\ngpuDriver: NVIDIA 515.65.01\nkernel: 5.15.0-48-generic\nos: Ubuntu 22.04.1 LTS\nram: 16 GB\n\n[responses]\nanswerToWhatGame: 271590\naudioFaults: no\nconcludingNotes: The game have got some problems, but it works\ncustomizationsUsed.configChange: False\nfollowUp.graphicalFaults.missingTextures: True\nfollowUp.performanceFaults: slightSlowdown\nfollowUp.stabilityFaults: occasionally\ngraphicalFaults: yes\ninputFaults: no\ninstalls: yes\nlauncher: steam\nlocalMultiplayerAttempted: no\nnotes.graphicalFaults: When I did play 5 hours without restart\nnotes.performanceFaults: I had to change performance mode to maximum \nnotes.significantBugs: Graphic settings are crazy\nnotes.verdict: I did end the game for 100%\nonlineMultiplayerAppraisal: good\nonlineMultiplayerAttempted: yes\nonlineMultiplayerPlayed: yes\nopens: yes\nperformanceFaults: yes\nsaveGameFaults: no\nsignificantBugs: yes\nstabilityFaults: yes\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 142185,
+      "timestamp": 1664105222,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_04",
+    "calibration_group_index": 4,
+    "calibration_group_position": 5
+  }
+]

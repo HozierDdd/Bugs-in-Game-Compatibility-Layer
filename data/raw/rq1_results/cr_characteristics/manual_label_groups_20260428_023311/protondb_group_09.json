@@ -1,0 +1,162 @@
+[
+  {
+    "record_id": "protondb:187451",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 138995,
+    "app_id": "414700",
+    "title": "Outlast 2",
+    "created_at": "2023-08-26T12:26:04Z",
+    "text": "[metadata]\napp.steam.appId: 414700\napp.title: Outlast 2\ntimestamp: 1693052764\n\n[systemInfo]\ncpu: AMD Ryzen 3 3100 4-Core\ngpu: AMD Radeon RX 580\ngpuDriver: 4.6 Mesa 21.3.5\nkernel: 5.15.117\nos: Slackware 15.0\nram: 16 GB\nsteamRuntimeVersion: steam-runtime_0.20230606.51628\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 414700\naudioFaults: no\nconcludingNotes: В Slackware 15.0 используется Mesa 21.3.5. Это достаточно устаревшая версия по меркам флагманских Linux-дистрибутивов. И единственным решением для запуска остается Proton 6.3.8.\n\nЧто касается производительности самой игры, то каких-либо нареканий не отмечалось. На счётчике FPS отображаются стабильные 60 кадров. \ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nopens: yes\nperformanceFaults: no\nprotonVersion: 6.3-8\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: older\nverdict: yes\nverdictOob: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 187451,
+      "timestamp": 1693052764,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_09",
+    "calibration_group_index": 9,
+    "calibration_group_position": 1
+  },
+  {
+    "record_id": "protondb:251038",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 202582,
+    "app_id": "2943650",
+    "title": "FragPunk",
+    "created_at": "2024-10-17T23:13:16Z",
+    "text": "[metadata]\napp.steam.appId: 2943650\napp.title: FragPunk\ntimestamp: 1729206796\n\n[systemInfo]\ncpu: AMD Ryzen 5 7600 6-Core\ngpu: AMD Radeon RX 7900 GRE (radeonsi, navi31, LLVM 18.1.8, DRM 3.59, 6.11.3-zen1-1-zen)\ngpuDriver: 4.6 Mesa 24.2.4-arch1.1\nkernel: 6.11.3-zen1-1-zen\nos: Arch Linux\nram: 31 GB\nsteamRuntimeVersion: steam-runtime_0.20240806.97925\nxWindowManager: D\n\n[responses]\nanswerToWhatGame: 2943650\naudioFaults: no\nconcludingNotes: Game doesn't run with proton experimental and instantly crashes. Had to enable proton 9.0.3. Game takes around ~1 minute to launch, but after this it runs perfectly. For hyprland had to set launch options.\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlaunchOptions: gamemoderun gamescope -W 1920 -H 1080 -r 144 --force-grab-cursor -- %command%\nlauncher: steam\nlocalMultiplayerAttempted: no\nonlineMultiplayerAppraisal: excellent\nonlineMultiplayerAttempted: yes\nonlineMultiplayerPlayed: yes\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 251038,
+      "timestamp": 1729206796,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_09",
+    "calibration_group_index": 9,
+    "calibration_group_position": 2
+  },
+  {
+    "record_id": "protondb:307049",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 258593,
+    "app_id": "752590",
+    "title": "A Plague Tale: Innocence",
+    "created_at": "2025-08-18T14:16:26Z",
+    "text": "[metadata]\napp.steam.appId: 752590\napp.title: A Plague Tale: Innocence\ntimestamp: 1755526586\n\n[systemInfo]\ncpu: AMD Ryzen 7 7700 8-Core\ngpu: AMD RAPHAEL_MENDOCINO (raphael_mendocino, LLVM 15.0.7, DRM 3.57, 6.8.0-65-generic)\ngpuDriver: 4.6 Mesa 23.2.1-1ubuntu3.1~22.04.3\nkernel: 6.8.0-65-generic\nos: Ubuntu 22.04.5 LTS\nram: 56 GB\nsteamRuntimeVersion: steam-runtime_1.0.20250519.130917\nxWindowManager: GNOME Shell\n\n[responses]\nanswerToWhatGame: 752590\naudioFaults: no\ncustomizationsUsed.protonfixes: True\ncustomizationsUsed.protontricks: False\nfollowUp.windowingFaults.activatingFullscreen: True\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.customizationsUsed: Proton 8.0-5\nnotes.verdict: Run well with Proton 8.0-5\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: official\nverdict: yes\nverdictOob: no\nwindowingFaults: yes",
+    "metadata": {
+      "raw_index": 307049,
+      "timestamp": 1755526586,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_09",
+    "calibration_group_index": 9,
+    "calibration_group_position": 3
+  },
+  {
+    "record_id": "protondb:82249",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 33793,
+    "app_id": "304430",
+    "title": "INSIDE",
+    "created_at": "2021-10-23T20:29:57Z",
+    "text": "[metadata]\napp.steam.appId: 304430\napp.title: INSIDE\ntimestamp: 1635020997\n\n[systemInfo]\ncpu: Intel Core i5-7400 @ 3.00GHz\ngpu: AMD Radeon RX 480 (POLARIS10, DRM 3.42.0, 5.14.11-zen1-1-zen, LLVM 12.0.1)\ngpuDriver: 4.6 Mesa 21.2.3\nkernel: 5.14.11-zen1-1-zen\nos: Garuda Linux\nram: 16 GB\n\n[responses]\nanswerToWhatGame: 304430\naudioFaults: no\nduration: severalHours\nextra: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nnotes.verdict: works flawlessly\nopens: yes\nperformanceFaults: no\nprotonVersion: Default\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntype: steamPlay\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 82249,
+      "timestamp": 1635020997,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_09",
+    "calibration_group_index": 9,
+    "calibration_group_position": 4
+  },
+  {
+    "record_id": "protondb:53584",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 5128,
+    "app_id": "453340",
+    "title": "Hustle Cat",
+    "created_at": "2021-02-18T22:46:06Z",
+    "text": "[metadata]\napp.steam.appId: 453340\napp.title: Hustle Cat\ntimestamp: 1613688366\n\n[systemInfo]\ncpu: AMD Ryzen 7 3800X 8-Core\ngpu: NVIDIA GeForce GTX 1660 SUPER\ngpuDriver: NVIDIA 455.83\nkernel: 5.10.5-arch1-1\nos: GamerOS 22　(ea01899)\nram: 16 GB\n\n[responses]\nanswerToWhatGame: 453340\naudioFaults: no\nduration: lessThanAnHour\nextra: yes\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.extra: IF you start with 4..1 you can change game to full screen. Once in full screen you can run it with 5.13-6 as well.\nnotes.verdict: Works fine with Proton 4.11. Later version stuck at the entry screen.\nopens: yes\nperformanceFaults: no\nprotonVersion: 4.11-13\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntype: tinker\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 53584,
+      "timestamp": 1613688366,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_09",
+    "calibration_group_index": 9,
+    "calibration_group_position": 5
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "record_id": "protondb:273255",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 224799,
+    "app_id": "553850",
+    "title": "HELLDIVERS 2",
+    "created_at": "2025-02-19T20:03:37Z",
+    "text": "[metadata]\napp.steam.appId: 553850\napp.title: HELLDIVERS 2\ntimestamp: 1739995417\n\n[systemInfo]\ncpu: AMD Ryzen Threadripper 1920X 12-Core\ngpu: NVIDIA GeForce RTX 2070\ngpuDriver: NVIDIA 570.86.16\nkernel: 6.12.9-200.fc41.x86_64\nos: Freedesktop SDK 24.08 (Flatpak runtime)\nram: 32 GB\nsteamRuntimeVersion: steam-runtime_0.20241127.109674\nxWindowManager: GNOME Shell\n\n[responses]\nanswerToWhatGame: 553850\naudioFaults: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.variant: Proton 9.0.4\nnotes.verdict: The new update fixed stuck at language selection bug for me\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: notListed\nverdict: yes\nverdictOob: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 273255,
+      "timestamp": 1739995417,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_17",
+    "calibration_group_index": 17,
+    "calibration_group_position": 1
+  },
+  {
+    "record_id": "protondb:301631",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 253175,
+    "app_id": "3640000",
+    "title": "No, I'm not a Human Demo",
+    "created_at": "2025-07-19T06:33:49Z",
+    "text": "[metadata]\napp.steam.appId: 3640000\napp.title: No, I'm not a Human Demo\ntimestamp: 1752906829\n\n[systemInfo]\ncpu: AMD Custom APU 0405\ngpu: AMD Custom GPU 0405 (vangogh, LLVM 14.0.6, DRM 3.45, 5.13.0-valve36-1-neptune)\ngpuDriver: 4.6 (Compatibility Profile) Mesa 22.2.0 (git-17e5312102)\nkernel: 5.13.0-valve36-1-neptune\nos: SteamOS Holo\nram: 15 GB\nsteamRuntimeVersion: steam-runtime_0.20230509.49499\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 3640000\naudioFaults: no\nbatteryPerformance: no\ndidChangeControlLayout: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.verdict: A good horror project, demo works and controls perfectly. hope full release retains that\nopens: yes\nperformanceFaults: no\nprotonVersion: 9.0-3\nreadability: no\nsaveGameFaults: no\nsecondaryLauncher: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntriedOob: yes\nvariant: older\nverdict: yes\nverdictOob: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 301631,
+      "timestamp": 1752906829,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_17",
+    "calibration_group_index": 17,
+    "calibration_group_position": 2
+  },
+  {
+    "record_id": "protondb:255196",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 206740,
+    "app_id": "572740",
+    "title": "Nancy Drew®: The Secret of Shadow Ranch",
+    "created_at": "2024-11-11T03:19:43Z",
+    "text": "[metadata]\napp.steam.appId: 572740\napp.title: Nancy Drew®: The Secret of Shadow Ranch\ntimestamp: 1731295183\n\n[systemInfo]\ncpu: AMD Custom APU 0405\ngpu: AMD Custom GPU 0405 (vangogh, LLVM 14.0.6, DRM 3.45, 5.13.0-valve36-1-neptune)\ngpuDriver: 4.6 (Compatibility Profile) Mesa 22.2.0 (git-17e5312102)\nkernel: 5.13.0-valve36-1-neptune\nos: SteamOS Holo\nram: 15 GB\nsteamRuntimeVersion: steam-runtime_0.20230509.49499\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 572740\naudioFaults: no\nbatteryPerformance: no\ndidChangeControlLayout: no\nfollowUp.inputFaults.lag: True\ngraphicalFaults: no\ninputFaults: yes\ninstalls: yes\nlauncher: steam\nnotes.tinkerOverride: Using Proton 5.0-10 in compatibility settings fixed the mouse lag/flicker seen by other\nopens: yes\nperformanceFaults: no\nreadability: no\nsaveGameFaults: no\nsecondaryLauncher: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: yes\ntriedOob: yes\nvariant: official\nverdict: yes\nverdictOob: no\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 255196,
+      "timestamp": 1731295183,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_17",
+    "calibration_group_index": 17,
+    "calibration_group_position": 3
+  },
+  {
+    "record_id": "protondb:266441",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 217985,
+    "app_id": "1245620",
+    "title": "ELDEN RING",
+    "created_at": "2025-01-11T23:30:57Z",
+    "text": "[metadata]\napp.steam.appId: 1245620\napp.title: ELDEN RING\ntimestamp: 1736638257\n\n[systemInfo]\ncpu: AMD Ryzen 5 7600X 6-Core\ngpu: Mesa llvmpipe (LLVM 17.0.6, 256 bits)\ngpuDriver: 4.5 Mesa 24.1.1-arch1.1\nkernel: 6.9.5-arch1-1\nos: Arch Linux\nram: 15 GB\nsteamRuntimeVersion: steam-runtime_0.20240507.87025\nxWindowManager: KWin\n\n[responses]\nanswerToWhatGame: 1245620\naudioFaults: no\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nlauncher: steam\nnotes.verdict: Runs perfectly out of the box with standard Proton\nopens: yes\nperformanceFaults: no\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntinkerOverride: no\nvariant: official\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 266441,
+      "timestamp": 1736638257,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_17",
+    "calibration_group_index": 17,
+    "calibration_group_position": 4
+  },
+  {
+    "record_id": "protondb:96302",
+    "platform": "protondb",
+    "scope": "protondb_full",
+    "source_index": 47846,
+    "app_id": "779340",
+    "title": "Total War: THREE KINGDOMS",
+    "created_at": "2022-01-11T17:47:22Z",
+    "text": "[metadata]\napp.steam.appId: 779340\napp.title: Total War: THREE KINGDOMS\ntimestamp: 1641923242\n\n[systemInfo]\ncpu: AMD Ryzen 7 1800X Eight-Core\ngpu: NVIDIA TITAN Xp COLLECTORS EDITION\ngpuDriver: NVIDIA 470.86\nkernel: 5.4.0-91-generic\nos: Linux Mint 20.2\nram: 16 GB\n\n[responses]\nanswerToWhatGame: 779340\naudioFaults: no\nduration: severalHours\nextra: no\nfollowUp.performanceFaults: slightSlowdown\ngraphicalFaults: no\ninputFaults: no\ninstalls: yes\nisImpactedByAntiCheat: no\nisMultiplayerImportant: no\nlocalMultiplayerAttempted: no\nnotes.performanceFaults: I've marked \"slight\" performance problems as there is a noticeable difference between running it in Windows and through Proton on my Linux Mint system. Nothing too major, still 60FPS, etc, but just not as good as on Windows for sure.\nnotes.verdict: Proton recommended to play this game as the Feral native version is unfortunately not as up to date and doesn't seem to run as well.\nonlineMultiplayerAttempted: no\nopens: yes\nperformanceFaults: yes\nprotonVersion: Default\nsaveGameFaults: no\nsignificantBugs: no\nstabilityFaults: no\nstartsPlay: yes\ntype: steamPlay\nverdict: yes\nwindowingFaults: no",
+    "metadata": {
+      "raw_index": 96302,
+      "timestamp": 1641923242,
+      "source_path": "/Users/anonymous/PycharmProjects/ProtonDB-ProtonIssue-Analyzer/data/protondb/reports_piiremoved.json"
+    },
+    "human_labels": {
+      "observed_behavior": null,
+      "expected_behavior": null,
+      "proton_version": null,
+      "steps_to_reproduce": null,
+      "test_cases_or_examples": null,
+      "component": null,
+      "program_output": null,
+      "user_environment": null,
+      "screenshot": null,
+      "product": null
+    },
+    "human_notes": "",
+    "calibration_run_id": "20260428_023311",
+    "calibration_group_id": "protondb_group_17",
+    "calibration_group_index": 17,
+    "calibration_group_position": 5
+  }
+]

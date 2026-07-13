@@ -1,0 +1,105 @@
+[
+  {
+    "issue_number": 5258,
+    "issue_title": "Age of Empires IV: Anniversary Edition (1466860)",
+    "id": 961198908,
+    "compatibility_report": "Age of empires 4 does not work in Spanish\r\n\r\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/5282.\r\n@rodrigoGA posted on 2021-11-04T16:10:39:\r\n\r\n# Compatibility Report\r\n- Name of the game with compatibility issues: Age of empires 4\r\n- Steam AppID of the game: 1466860\r\n\r\n## System Information\r\n- GPU:  RTX 3070ti\r\n- Driver/LLVM version:  nvidia-driver-470\r\n- OS: Ubuntu 20.04\r\n- Proton version: Proton experimental\r\n\r\n## I confirm:\r\n- [ x] that I haven't found an existing compatibility report for this game.\r\n- [ x] that I have checked whether there are updates for my system available.\r\n\r\nProton log: [steam-1466860.log](https://github.com/ValveSoftware/Proton/files/7476365/steam-1466860.log)\r\n\r\n# Symptoms\r\nThe game does not open after I put it in Spanish\r\n\r\n## Reproduction\r\n\r\n1. Install ubuntu on english.\r\n2. Install steam and age of empires 4\r\n3. Open age of empires 4 and work\r\n4. change the language of the game to Spanish Latinamerica and the game doesn't work anymore,\r\n\r\nit shows a black screen, the game mouse is visible, and it closes. I try:\r\n* reinsall the game\r\n* change the os language to spanish",
+    "symptom_summary": "用户在将《帝国时代4》语言更改为西班牙语后，游戏无法启动，出现黑屏，鼠标可见，但随后游戏关闭。 \n\nTags: Game Crash, Black Screen, Language Issue",
+    "tags": [
+      "Black Screen",
+      "Triggered Crash"
+    ]
+  },
+  {
+    "issue_number": 8717,
+    "issue_title": "S.T.A.L.K.E.R.: Call of Prypiat - Enhanced Edition (2427430)",
+    "id": 3076672229,
+    "compatibility_report": "# Compatibility Report\n- Name of the game with compatibility issues: S.T.A.L.K.E.R.: Call of Prypiat - Enhanced Edition\n- Steam AppID of the game: 2427430\n\n## System Information\n- GPU: AMD Radeon RX 6600 XT\n- Video driver version: Mesa 25.0.5-1\n- Kernel version: 6.12.27\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/roxithegremlin/c31daf0af5a2aa654df1ca298073e2b1\n- Proton version: Tested on both 9.0-4 and 10.0-1\n\n## I confirm:\n- [ x ] that I haven't found an existing compatibility report for this game.\n- [ x ] that I have checked whether there are updates for my system available.\n\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\n(Proton logs compress well if needed.)-->\n\n## Symptoms <!-- What's the problem? -->\nThe game starts on a black screen, then shows an error report dialogue\n\n## Reproduction\nStart the game, wait until the error pops up\n\n[steam-2427430.log](https://github.com/user-attachments/files/20344467/steam-2427430.log)",
+    "symptom_summary": "用户在启动《S.T.A.L.K.E.R.: Call of Prypiat - Enhanced Edition》时遇到黑屏，随后出现错误报告对话框。 \n\nTag suggestions: Black Screen, Error Dialog, Startup Crash",
+    "tags": [
+      "Black Screen"
+    ]
+  },
+  {
+    "issue_number": 7324,
+    "issue_title": "Sword of the Stars II: Enhanced Edition (42990)",
+    "id": 2033839458,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Sword of the Stars II: Enhanced Edition\r\n- Steam AppID of the game: 42990\r\n\r\n## System Information\r\n- GPU: Nvidia RTX 3080\r\n- Video driver version: Nvidia 545.29.06\r\n- Kernel version: Linux 6.6.4-200.fc39.x86_64\r\n- Link to full system information report: https://gist.github.com/Asteliks/22ffb3d4313ed996eaf2b8807a43ee35\r\n- Proton version: Proton Experimental (as of 2023/12/08)\r\n- Proton logs: [steam-42990.zip](https://github.com/ValveSoftware/Proton/files/13624097/steam-42990.zip)\r\n- Sword of the Stars II logs: [log-20231209124802.txt](https://github.com/ValveSoftware/Proton/files/13624125/log-20231209124802.txt)\r\n\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nThe game opens the luncher but if you start the game it's an instant crash to desktop\r\n\r\n## Reproduction\r\n1. Run SOTS2 on steam\r\n2. Edit the game setting however you want or don't\r\n3. Start the game\r\n4. Note a crash to desktop ",
+    "symptom_summary": "用户在启动《星际之剑 II：增强版》时，游戏启动器可以正常打开，但一旦开始游戏便会立即崩溃到桌面。\n\n**Tag Suggestions:** Crash, Desktop Exit, Launcher Issue",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 9078,
+    "issue_title": "Final Fantasy Tactics - The Ivalice Chronicles (1004640)",
+    "id": 3471538711,
+    "compatibility_report": "# Compatibility Report\n- Name of the game with compatibility issues: Final Fantasy Tactics - The Ivalice Chronicles\n- Steam AppID of the game: 1004640\n\n## System Information\n- GPU: AMD Radeon RT 7900 XTX\n- Video driver version: Mesa 25.2.3\n- Kernel version: 6.16.8\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/astatide/46ca2a5edb07df43f94b76705f8763d4\n- Proton version: Proton Experimental\n\n## I confirm:\n- [X] that I haven't found an existing compatibility report for this game.\n- [X] that I have checked whether there are updates for my system available.\n\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\n(Proton logs compress well if needed.)-->\n\n## Symptoms <!-- What's the problem? -->\n\nGame starts; a splash screen shows for a moment, before closing and a pop up with the word \"Success.\" displays; you can press \"OK\" and the game ends.\n\n\n## Reproduction\n\nTry to start the game under normal conditions and it fails with the above\n",
+    "symptom_summary": "用户在启动《最终幻想战术：伊瓦利斯编年史》时，游戏仅显示一个闪屏，随后关闭并弹出“成功”的提示，点击“确定”后游戏结束。 \n\nTags: Game Crash, Startup Issue, Popup Message",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 4991,
+    "issue_title": "Ragnarock (1345820)",
+    "id": 950596362,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Ragnarock (VR)\r\n- Steam AppID of the game: 1345820\r\n\r\n## System Information\r\n- GPU: GTX 1080\r\n- Driver/LLVM version: NVIDIA 470.57.02\r\n- Kernel version: 5.13.4-zen1-1-zen\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/kubax/2b08a2a7c8f6ab18f0d388f5724ed0f8\r\n- Proton version: 6.3-5 / Experimental\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n[steam-1345820.log](https://github.com/ValveSoftware/Proton/files/6862079/steam-1345820.log)\r\n\r\n## Symptoms:\r\nGame starts without problems, menu and everything is working as expected (as far as i can tell).\r\n\r\nProblem starts while playing a song. At first everything is fine, but in the middle of the song notes start to disapear bevore thay hit the drums. Ship is getting thrown back and forth sometimes with massive speed. Sometimes the ship is stuck and no notes are showing up.\r\n\r\nMultiplayer works fine, but given the problems above is not realy competetivly playable. When notes do not show anymore, i can tell that there should be notes, because the other player does see them (on windows and on another headset)\r\n\r\n\r\n## Reproduction\r\n\r\n- start game\r\n- get into solo or pvp mode\r\n- select a song (doesn't matter wich one)\r\n- play the song. notes start to disapear somwhere in the middle of the song. most of the times the notes are back in the last 3rd of the song.\r\n",
+    "symptom_summary": "用户在玩《Ragnarock (VR)》时遇到的问题包括在歌曲进行中音符消失，飞船出现剧烈的前后移动，有时飞船会卡住且没有音符显示。尽管多人模式正常，但由于上述问题，游戏体验受到严重影响。\n\nTag suggestions: \n- Visual Glitches\n- Gameplay Issues\n- Multiplayer Problems",
+    "tags": [
+      "Graphic Glitches"
+    ]
+  },
+  {
+    "issue_number": 5942,
+    "issue_title": "Twenty One (938520)",
+    "id": 1286625994,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Twenty One\r\n- Steam AppID of the game: 938520\r\n\r\n## System Information\r\n- GPU: RX 5700XT 8GB\r\n- Driver/LLVM version: Mesa 22.1.2\r\n- Kernel version: 5.18.7 (Zen Kernel)\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/sonic2kk/2963fa1274604ea51a2817392b93c596\r\n- Proton version: 7.0-3\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nLaunching the game shows what seems to be a .NET related error:\r\n![image](https://user-images.githubusercontent.com/7917345/176064655-caaf8f09-a2b5-4f06-acfa-da0715300537.png)\r\n\r\n## Reproduction\r\nLaunching the game with Proton is all that seems to be needed to reproduce the issue.\r\n\r\nProton Log: [steam-938520.log](https://github.com/ValveSoftware/Proton/files/8996717/steam-938520.log)\r\n\r\n",
+    "symptom_summary": "用户在启动游戏时遇到与.NET相关的错误，导致无法正常运行。 \n\nTags: .NET error, Launch failure, Compatibility issue",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 4528,
+    "issue_title": "Ori and the Will of the Wisps (1057090)",
+    "id": 1184352207,
+    "compatibility_report": "Ori and the Will of the Wisps\r\n\r\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/5990.\r\n@Slemoon posted on 2022-07-14T04:13:02:\r\n\r\n# Compatibility Report\r\n- Ori and the Will of the Wisps\r\n- Steam AppID of the game: 1057090\r\n\r\n## System Information\r\n- GPU: NVIDIA GTX960M\r\n- Driver/LLVM version: Driver Version: 515.57       CUDA Version: 11.7         LLVM : 14.0.6\r\n- Kernel version: 5.18.10-zen1-1-zen ( Arch-Linux , Linux-Zen Kernel )\r\n- Link to full system information report as [Gist](https://gist.github.com/):\r\nOS: Arch Linux x86_64 \r\nHost: 80RN Lenovo Rescuer-14ISK \r\nDE: Plasma 5.25.3\r\nCPU: Intel i5-6300HQ (4) @ 3.200GHz \r\nGPU: NVIDIA GeForce GTX 960M \r\nGPU: Intel HD Graphics 530 \r\nMemory: 4690MiB / 11880MiB \r\n\r\n- Proton version:7.0-3\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n- [x] I have this game\r\n\r\nOri and the will of the wisps game is stuck when opening animation and  interlude animation are played,and the game is probably kept at 28-42fps (the resolution needs to be reduced to 800p)",
+    "symptom_summary": "用户在玩《Ori and the Will of the Wisps》时，游戏在开场动画和插曲动画播放时卡住，并且游戏帧率保持在28-42fps，分辨率需要降低到800p。 \n\nTags: Animation Freeze, Low Frame Rate, Resolution Issues",
+    "tags": [
+      "Cutscene Issue",
+      "Low FPS",
+      "Freeze"
+    ]
+  },
+  {
+    "issue_number": 4823,
+    "issue_title": "Mass Effect™ Legendary Edition (1328670) ",
+    "id": 1092971519,
+    "compatibility_report": "Mass Effect Legendary Edition - ME1&ME2 - launcher starts, me1&m2 quit with \"wine: Unhandled page fault\\\r\n\r\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/5755.\r\n@spirritus posted on 2022-04-08T15:05:04:\r\n\r\n# Compatibility Report\r\n- Mass Effect Legendary Edition - ME1&ME2\r\n- Steam AppID of the game: 1328670\r\n\r\n## System Information\r\n- GPU: GTX 980\r\n- Driver/LLVM version: nvidia 510.54\r\n- Kernel version: 5.16.0-0.bpo.3-amd64\r\n- Link to full system information report as [Gist](https://gist.github.com/):\r\n- Proton version: 7.0 and experimental\r\n\r\n## I confirm:\r\n- [ x] that I haven't found an existing compatibility report for this game.\r\n- [ x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nME1 and ME2 do not start,  launcher works\r\nthis worked in february 2022\r\n\r\n## Reproduction\r\nstart launcher\r\nstart me1 or me2\r\nobserve return to launcher\r\n\r\nsteam reports:\r\nwine: Unhandled page fault on write access to 000000000000005C at address 0000000140251135 (thread 0888), starting debugger...\r\n\r\n[steam-1328670.log](https://github.com/ValveSoftware/Proton/files/8453087/steam-1328670.log)",
+    "symptom_summary": "用户在启动《质量效应传奇版》的ME1和ME2时遇到问题，启动器正常工作，但游戏无法启动，返回到启动器，并显示“wine: Unhandled page fault”错误。 \n\nTag suggestions: Game Crash, Launcher Issues, Unhandled Exception",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 8270,
+    "issue_title": "Bellwright (1812450)",
+    "id": 2698341068,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Bellwright\r\n- Steam AppID of the game: 1812450\r\n\r\n## System Information\r\n- GPU: AMD 7900 XTX\r\n- Video driver version:  Mesa 24.0.9-0ubuntu0.2\r\n- Kernel version: <6.8.0-49-generic\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/Thaddeusz/4341c6358a6eb79889735625bc2305e6\r\n- Proton version: experimental\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- [X] that I have checked whether there are updates for my system available.\r\n\r\n\r\n## Symptoms \r\n\r\n```\r\nUnhandled Exception:                       \r\nSystem.NullReferenceException: Object reference not set to an instance of an object\r\n  at CrashReporterWindows.Program+<>c.<Main>b__0_0 (CrashReporterCommon.CrashReport+StackFrameReport t) [0x00006] in <d94e0640bed04438be7f54f15f423dae>:0 \r\n  at System.Linq.Enumerable+WhereListIterator`1[TSource].GetCount (System.Boolean onlyIfCheap) [0x00018] in <a38d71b964e545c18a1583170be4fc6f>:0 \r\n  at System.Linq.Enumerable.Count[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00029] in <a38d71b964e545c18a1583170be4fc6f>:0 \r\n  at CrashReporterWindows.Program.Main (System.String[] args) [0x000ce] in <d94e0640bed04438be7f54f15f423dae>:0 \r\n[ERROR] FATAL UNHANDLED EXCEPTION: System.NullReferenceException: Object reference not set to an instance of an object\r\n  at CrashReporterWindows.Program+<>c.<Main>b__0_0 (CrashReporterCommon.CrashReport+StackFrameReport t) [0x00006] in <d94e0640bed04438be7f54f15f423dae>:0 \r\n  at System.Linq.Enumerable+WhereListIterator`1[TSource].GetCount (System.Boolean onlyIfCheap) [0x00018] in <a38d71b964e545c18a1583170be4fc6f>:0 \r\n  at System.Linq.Enumerable.Count[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00029] in <a38d71b964e545c18a1583170be4fc6f>:0 \r\npid 322012 != 322011, skipping destruction (fork without exec?)\r\n```\r\n\r\n## Reproduction\r\n\r\nsteam steam://run/1812450\r\n",
+    "symptom_summary": "用户在运行游戏《Bellwright》时遇到未处理的异常，导致程序崩溃，错误信息显示为“对象引用未设置为对象的实例”。 \n\n**Tag Suggestions:** Crash, Unhandled Exception, Null Reference",
+    "tags": [
+      "Others"
+    ]
+  },
+  {
+    "issue_number": 4676,
+    "issue_title": "Sniper ELite V2 Doesn't launcher!",
+    "id": 834191079,
+    "compatibility_report": "# Compatibility Report\r\nSniceper Elite V2 Doens't launch\r\n- Steam AppID of the game: 63380\r\n\r\n## System Information\r\n- GPU: GTX 1050\r\n- Driver/LLVM version: NVIDIA-DIRVER 460(propietary)\r\n- Kernel version: 5.4.0-67-generic\r\n- Link to full system information report as [Gist](https://gist.github.com/)\r\n-  (https://gist.github.com/AndyMxM/a1fc7e26ed0f73dbbae9597b1c817731#file-steam-63380-log)\r\n- \r\n- Proton version: 5.13-6\r\n\r\n## I confirm:\r\n- [x ] that I haven't found an existing compatibility report for this game.\r\n- [ x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and drag\r\nand drop the generated `$HOME/steam-$APPID.log` into this issue report -->\r\n(https://gist.github.com/AndyMxM/a1fc7e26ed0f73dbbae9597b1c817731#file-steam-63380-log)\r\n\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nI am trying to launch the game Sniper Elite V2, but it trying to load but doesn't work, and even it doesn't show me any error message!\r\n\r\n## Reproduction\r\n\r\n\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "symptom_summary": "用户尝试启动游戏《Sniper Elite V2》，但游戏加载时没有任何反应，也没有显示错误信息。\n\nTags: Game Doesn't Launch, No Error Message, Loading Issue",
+    "tags": [
+      "Launch Failure"
+    ]
+  }
+]

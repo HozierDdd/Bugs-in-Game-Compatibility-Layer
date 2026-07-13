@@ -1,0 +1,105 @@
+[
+  {
+    "issue_number": 6234,
+    "issue_title": "The Eternal Cylinder (865680)",
+    "id": 1410183214,
+    "compatibility_report": "# Compatibility Report\r\n- The Eternal Cylinder\r\n- 865680\r\n\r\n## System Information\r\nOutput of `inxi -SMG`\r\n```\r\nSystem:\r\n  Host: asus-desk-1 Kernel: 5.15.71-1-MANJARO arch: x86_64 bits: 64\r\n    Desktop: Qtile v: 0.22.1 Distro: Manjaro Linux\r\nMachine:\r\n  Type: Desktop Mobo: ASUSTeK model: TUF GAMING X570-PLUS (WI-FI) v: Rev X.0x\r\n    serial: <superuser required> UEFI-[Legacy]: American Megatrends v: 0807\r\n    date: 07/08/2019\r\nGraphics:\r\n  Device-1: NVIDIA TU104 [GeForce RTX 2080 SUPER] driver: nvidia v: 515.76\r\n  Display: x11 server: X.Org v: 21.1.4 driver: X: loaded: nvidia\r\n    gpu: nvidia resolution: 1: 2560x1440~144Hz 2: 2560x1440~144Hz\r\n  OpenGL: renderer: NVIDIA GeForce RTX 2080 SUPER/PCIe/SSE2 v: 4.6.0 NVIDIA\r\n    515.76\r\n```\r\nMy steam sysinfo can be found [here](https://gist.github.com/ExpandingMan/d1823b3ced1e060bfdf6bc2d726362e6).\r\n\r\nTried proton experimental latest and GE-37.\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n![image](https://user-images.githubusercontent.com/11379353/195991475-b1a9ca3c-2403-48a3-8ffb-92e3de722ac0.png)\r\n\r\nIt seems strange that it gets this error since this is a common dependency.  I was able to solve the problem by using a prefix with `vcredist2019` installed via bottles.  Game seems to run fine with DX12.  Perhaps it requires a later version of `vcredist` than proton will provision?  (I have no idea how protons provisioning works.)\r\n\r\n\r\n## Reproduction\r\nJust install and run as normal.",
+    "symptom_summary": "用户在运行《永恒圆柱》时遇到问题，显示错误信息，可能与缺失的依赖项有关。通过使用安装了`vcredist2019`的前缀解决了问题，并且游戏在DX12下运行正常。\n\n**Tag Suggestions:** Missing Dependencies, Visual Glitches, Launch Issues",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 6065,
+    "issue_title": "Regression: NieR Replicant on Proton Experimental",
+    "id": 1330616320,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: NieR Replicant ver.1.22474487139...\r\n- Steam AppID of the game: 1113560\r\n\r\n## System Information\r\n- GPU: RX570\r\n- Driver/LLVM version:  Mesa 21.3.9 / LLVM 12.0.1\r\n- Kernel version: 5.18.13\r\n- Link to full system information report as [Gist](https://gist.github.com/): [Here](https://gist.github.com/K4rakara/ef1a0afa2bbdca4541caa9bf5a7d385f)\r\n- Proton version: Experimental\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[Proton.log](https://github.com/ValveSoftware/Proton/files/9274257/Proton.log)\r\n\r\n## Symptoms\r\n\r\nGame immediately crashes after the window is created on latest experimental proton, but works on latest stable proton (7.0-3)\r\n",
+    "symptom_summary": "用户在运行GUG Demo时遇到的问题包括显示白屏，虽然可以听到菜单音乐，但点击L2/L3会导致崩溃。使用Alt+F4也会触发崩溃，尽管添加了d3dcompiler_47.dll后不再崩溃，但仍然只显示白屏，偶尔会显示一些图形。\n\n**Tag Suggestions:** White Screen, Crashes, Visual Glitches, Audio Present",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 6717,
+    "issue_title": "Farlight 84 (1928420)",
+    "id": 3411131089,
+    "compatibility_report": "Farlight 84 crashes at Lilith splash screen after latest game update (AppID 1928420)\n\nIssue transferred from https://github.com/ValveSoftware/Proton/issues/9103.\n@linuxgamerlife posted on 2025-10-16T13:42:29:\n\n[steam-1928420.log](https://github.com/user-attachments/files/22950611/steam-1928420.log)\n\n# Compatibility Report\n- Name of the game with compatibility issues: Farlight 84\n- Steam AppID of the game: 1928420\n\n## System Information\n- GPU: AMD Radeon RX 9060 XT (RADV GFX1200)\n- Video driver version: Mesa 25.1.9 (RADV)\n- Kernel version: 6.16.11-200.fc42.x86_64\n- Link to full system information report as Gist: https://gist.github.com/linuxgamerlife/a82d769b893d55fa03f55d20fe30cb95\n- Proton version: Proton 10 Beta, Proton Experimental, GE-Proton10-17, GE-Proton10-20\n\n## I confirm:\n✅ that I haven't found an existing compatibility report for this game.\n✅ that I have checked whether there are updates for my system available.\n\n## Symptoms\nAfter the most recent Farlight 84 update, the game no longer launches under Proton.\nIt displays the Lilith Games splash screen, then immediately closes to the desktop.\n\nThe Proton log shows an EXCEPTION_ACCESS_VIOLATION inside llhpbase.dll (launcher/protection module).\nThere are no Vulkan or DXVK errors; GPU initialization completes successfully.\nCrashReportClient runs immediately after the game exits.\n\nThis occurs across all tested Proton versions, including ones where the game previously worked (GE-Proton10-17, Proton Experimental).\n\n## Reproduction\n1. Launch Farlight 84 on Linux using any current Proton version.\n2. Wait for the Lilith Games splash screen.\n3. The game closes before reaching the login screen.",
+    "symptom_summary": "用户在最新更新后，Farlight 84 在 Lilith 游戏启动画面后崩溃，无法正常启动，直接返回桌面。崩溃日志显示存在 EXCEPTION_ACCESS_VIOLATION 错误。\n\n**Tags:** Crash, Access Violation, Launch Failure",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 5616,
+    "issue_title": "Flashback (245730)",
+    "id": 1149951165,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues:Flashback\r\n- Steam AppID of the game:245730\r\n\r\nNote! This is the Ubisoft published remake, not the other version by Microids\r\n\r\n## System Information\r\n- GPU: AMD Vega 56/64\r\n- Driver/LLVM version: Mesa 21.3.5\r\n- Kernel version: 5.16.11\r\n- Proton version:7.0\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nWhen starting game, after logos appear game exits.\r\n\r\n## Reproduction\r\n1. press play\r\n2. watch Ubisoft connect start, watch logos until you are back in desktop\r\n3. observe that game process has exited\r\n\r\n[steam-245730.log.gz](https://github.com/ValveSoftware/Proton/files/8137770/steam-245730.log.gz)\r\n",
+    "symptom_summary": "用户在启动游戏时，看到游戏标志后，游戏会直接退出到桌面。  \n\nTags: Game Crash, Exit to Desktop, Launch Issue",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 5736,
+    "issue_title": "Coromon (1218210)",
+    "id": 1188415080,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Coromon\r\n- Steam AppID of the game: 1218210\r\n\r\n## System Information\r\n- GPU: Nvidia RTX 2080ti\r\n- Driver/LLVM version: nvidia 470.86\r\n- Kernel version: 5.16.11-76051611-generic\r\n- Link to full system information report as [Gist](https://gist.github.com/Preylien/d2fefc4b2ea47b90fdd4b0b848a8b488):\r\n- Proton version: Experimental, 7.0-1, 4.11-13 \r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nApp crashes on startup with popup when using Proton Experimental or 7.0-1:\r\n\r\nA JavaScript error occurred in the main process\r\n```\r\nUncaught Exception:\r\nError: EINVAL: invalid argument, uv_pipe_open\r\n  at new Socket (net.js:330:26)\r\n  at createWritableStdioStream (internal/bootstrap/switches/is_main_thread.js:72:18)\r\n  at process.getStdout [as stdout] (internal/bootstrap/switches/is_main_thread.js:122:12)\r\n  at console.get(internal/console/constructor.js:204:42)\r\n  at console.value(internal/console/constructor.js:322:50)\r\n  at console.log(internal/console/constructor.js:358:61)\r\n  at App.<anonymous>(Z:\\home\\username\\storage\\games\\steam\\steamapps\\common\\Coromon\\FreedomLauncher\\resources\\app.asar\\dist\\index.js:1:8254)\r\n  at App.emit(events.js:315:20)\r\n\r\n```\r\n\r\nRunning the game on Proton 4.11-13 a window, Freedom Games Launcher, will appear and have a black screen\r\n\r\n## Reproduction\r\n\r\nOpen game using Proton experimental, or 7.0-1, game will crash with a popup.\r\n\r\nRunning the game on Proton 4.11-13 a window, Freedom Games Launcher, will appear and have a black screen",
+    "symptom_summary": "用户在尝试启动《Pickup Basketball VR》时遇到问题，游戏无法正常启动，并且需要多个缺失的DLL文件才能运行。尽管有解决方案，但用户仍然无法通过常规的Proton版本启动游戏。\n\n**Tag Suggestions:** Missing DLLs, Launch Issues, Compatibility Regression",
+    "tags": [
+      "Launch Failure",
+      "Black Screen"
+    ]
+  },
+  {
+    "issue_number": 8067,
+    "issue_title": ".Net Launchers fail to start if global .NET is installed on linux host",
+    "id": 2505770857,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Tested with Baldurs Gate 3\r\n- Steam AppID of the game: 1086940\r\n\r\n## System Information\r\n- GPU: Radeon 780M\r\n- Video driver version: w/e is in linux 6.8.0-41\r\n- Kernel version: 6.8.0-41\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://privatebin.net/?d7ef6b15785b207d=#G91y8BmZBzPnLcdsdGUdZDghqMP7Yw13CoCwgjyqbAR7\r\n- Proton version: Experimental (9.0.202 i think it is?)\r\n- Steam System Info : \r\n[log.txt](https://github.com/user-attachments/files/16873645/log.txt)\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nLog : [steam-1086940.log](https://github.com/user-attachments/files/16873565/steam-1086940.log)\r\nscreenshot : https://imgur.com/DntIXWq\r\n\r\nI am a .net developer, and have DOTNET_ROOT set because it installed it in my /home directory by default, which is stupid.\r\nHowever, when a game uses a .net binary, like Baldurs gate does with its launcher, and `DOTNET_ROOT` is set in the host, the DOTNET_ROOT is set in proton, which makes the game's binary crash because it might be looking for something not available in the host (in this case the .net6 desktop runtime). \r\n\r\nA workaround is to change the launch settings of all games that use a .net binary, but this makes no sense to me as that would be a lot of games that are possibly broken because of 1 environment variable that only makes sense to linux, not wine/proton. personally, i think a protontrick to ignore the environment variable might also do the trick, because completely ignoring it is also questionable\r\n\r\n## Reproduction\r\nset the `DOTNET_ROOT` environment variable and start Baldurs gate 3. even things like `--skip-launcher` will fail, as it will still run the launcher exe which is unable to load.\r\n\r\n",
+    "symptom_summary": "用户在尝试启动《博德之门3》时遇到崩溃问题，原因是设置了 `DOTNET_ROOT` 环境变量，导致游戏的 .net 启动器无法加载所需的运行时。即使使用 `--skip-launcher` 参数，游戏仍然无法正常运行。\n\n**Tag Suggestions:** \n- Crashes\n- Environment Variable Issue\n- .NET Compatibility",
+    "tags": [
+      "Launcher / Verification Issue"
+    ]
+  },
+  {
+    "issue_number": 5161,
+    "issue_title": "Eastward (977880)",
+    "id": 998421388,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Eastward\r\n- Steam AppID of the game: 977880\r\n\r\n## System Information\r\n- GPU: AMD 5700XT\r\n- Driver/LLVM version: Mesa 21.2.1/LLVM 12.0.1\r\n- Kernel version: 5.14.2-1\r\n- Link to full system information report as [Gist](https://gist.github.com/FurbyonSteroid/9020dba3ee51214926f32ea1529d49e2)\r\n- Proton version: Proton Experimental (though it doesn't matter)\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n<!-- Please add `PROTON_LOG=1 %command%` to the game's launch options and\r\nattach the generated $HOME/steam-$APPID.log to this issue report as a file.\r\n(Proton logs compress well if needed.)-->\r\n\r\n## Symptoms <!-- What's the problem? -->\r\n1. The game requires you to force a steam play compatibility tool (apparently there is a linux build? But that doesn't work because it can't find Eastward.exe). This is probably an oversight of the developer.\r\n\r\n2. Game does not work in the normal mode. Window opens and closes after 2 seconds (It does start with Proton-6.16-GE-1, however the entire screen is and stays black.)\r\n**In order for it to work you have to run it through the OpenGL version.** With that everything seems to work just fine. So playable but not with the default setting (which it probably/maybe should be able to.. unfortunately I don't know the difference between the versions because the system requirements only mention opengl)\r\n\r\n## Reproduction\r\nStart the game.\r\n\r\n[steam-977880-non-opengl.log](https://github.com/ValveSoftware/Proton/files/7179587/steam-977880-non-opengl.log)\r\n<!--\r\n1. You can find the Steam AppID in the URL of the shop page of the game.\r\n   e.g. for `The Witcher 3: Wild Hunt` the AppID is `292030`.\r\n2. You can find your driver and Linux version, as well as your graphics\r\n   processor's name in the system information report of Steam.\r\n3. You can retrieve a full system information report by clicking\r\n   `Help` > `System Information` in the Steam client on your machine.\r\n4. Please copy it to your clipboard by pressing `Ctrl+A` and then `Ctrl+C`.\r\n   Then paste it in a [Gist](https://gist.github.com/) and post the link in\r\n   this issue.\r\n5. Please search for open issues and pull requests by the name of the game and\r\n   find out whether they are relevant and should be referenced above.\r\n-->\r\n",
+    "symptom_summary": "用户在《战地1》中遇到的问题是鼠标光标在游戏窗口中被锁定在中心位置，导致无法正常导航菜单，必须使用键盘进行操作。在游戏中鼠标可以正常使用，但在暂停菜单或死亡屏幕时又被锁定在中心，影响了用户体验。\n\nTag suggestions: Mouse Lock, Menu Navigation Issue, Gameplay Disruption",
+    "tags": [
+      "Black Screen",
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 6066,
+    "issue_title": "\"No display found\" on Proton Experimental only",
+    "id": 1330699567,
+    "compatibility_report": "# Compatibility Report\r\n- Planet Zoo (703080)\r\n- Serious Sam 3 (41070)\r\n\r\n## System Information\r\n- GPU:  AMD Radeon(TM) Vega 3 Graphics\r\n- Driver/LLVM version: 4.6 (Compatibility Profile) Mesa 21.2.6 (LLVM 12.0.0) \r\n- Kernel version: 5.4.0\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/Rattel/3e700d7851b5b11c68ca5b9d6e9c972f\r\n- Proton version: Proton Experimental\r\n\r\n## I confirm:\r\n- [x]  that I haven't found an existing compatibility report for this game.\r\n\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[steam-703080.log](https://github.com/ValveSoftware/Proton/files/9274743/steam-703080.log)\r\n\r\n## Symptoms <!-- What's the problem? -->\r\nAfter a system update (not sure if the video drivers were updated) the mentioned games started throwing \"No display found\" and \"Display drivers are outdated\" errors. Switching to Proton 7.0-3 runs the games as before.\r\n\r\n\r\n## Reproduction\r\nRun the games under Proton Experimental with these video drivers\r\n",
+    "symptom_summary": "用户在更新系统后，运行《Planet Zoo》和《Serious Sam 3》时遇到“未找到显示器”和“显示驱动程序过时”的错误信息，切换到Proton 7.0-3后游戏恢复正常。 \n\nTags: Display Errors, Driver Issues, Game Launch Failure",
+    "tags": [
+      "Launch Failure"
+    ]
+  },
+  {
+    "issue_number": 4789,
+    "issue_title": "[Regression] [Proton Experimental] Mouse cursor visible in Cyberpunk 2077",
+    "id": 872443068,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Cyberpunk 2077\r\n- Steam AppID of the game: 1091500\r\n\r\n## System Information\r\n- GPU: RTX 3090\r\n- Driver/LLVM version: Nvidia 460.73.01\r\n- Kernel version: 5.10.0-6-amd64 (Debian Bullseye)\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/piquan/315b5a32b2a4e2b3f482b64383659f03\r\n- Proton version: experimental-6.3-20210429\r\n\r\n## I confirm:\r\n- [X] that I haven't found an existing compatibility report for this game.\r\n- Elaboration: Not for this issue!  I know that CP2077 with Nvidia is considered \"iffy\", but this seems unrelated to the known issues.\r\n- [X] that I have checked whether there are updates for my system available.\r\nProton log attached\r\n[steam-1091500.log](https://github.com/ValveSoftware/Proton/files/6405294/steam-1091500.log)\r\n\r\n## Symptoms\r\n\r\nMouse cursor visible in the middle of the screen.  Cursor is arrow-shaped, and apparently rendered post-scaling: even though my resolution in the game is set to 2880x1620 (display is 3840x2160), the cursor is quite tiny, yet with sharp definition.\r\n\r\nThe cursor stays in the center of the screen, with its hotspot right where an interaction cursor or weapon crosshair appears, while the game's UI cursor (a `[-]` look) moves normally.\r\n\r\n## Reproduction\r\n\r\nHappens every time I launch the game with the current version of Proton Experimental (experimental-6.3-20210429).  Tried several combos of rebooting, turning off or forcing on WM compositing (I'm using KDE's default WM, KWin), etc, but the problem was persistent.  I switched to the default Proton (5.13-6) and the problem stopped.",
+    "symptom_summary": "用户在尝试启动游戏《True Love '95》时遇到多个问题：选择不同的启动选项时，出现缺少可执行文件的错误、黑屏或根本没有任何反应。\n\n**Tag Suggestions:** Missing Executable, Black Screen, No Response",
+    "tags": [
+      "UI Issues"
+    ]
+  },
+  {
+    "issue_number": 4843,
+    "issue_title": "Shin Megami Tensei III Nocturne HD Remaster (1413480)",
+    "id": 897924819,
+    "compatibility_report": "# Compatibility Report\r\n- Name of the game with compatibility issues: Shin Megami Tensei III Nocturne HD Remaster\r\n- Steam AppID of the game: 1413480\r\n\r\n## System Information\r\n- GPU: RX 5700XT\r\n- Driver/LLVM version: Mesa 21.1.0\r\n- Kernel version: 5.12.5-zen1-1-zen\r\n- Link to full system information report as [Gist](https://gist.github.com/): https://gist.github.com/junglerobba/a6bd50285901ea36986ea62a63e6f57f\r\n- Proton version: Proton Experimental (experimental-6.3-20210517)\r\n\r\n## I confirm:\r\n- [x] that I haven't found an existing compatibility report for this game.\r\n- [x] that I have checked whether there are updates for my system available.\r\n\r\n[steam-1413480.log](https://github.com/ValveSoftware/Proton/files/6521952/steam-1413480.log)\r\n\r\n## Symptoms\r\n\r\nGame runs fine (Videos are just the test image, but they are skippable just fine), except that entering save rooms often causes the game to remain on a black screen, after which the process has to be killed. This unfortunately makes this game almost unplayable.\r\n\r\nOne thing to note is, the game seems to be locked to 30 FPS on Windows, but enabling Vsync on Proton makes it run at 60. The issue happens regardless of framerate though.\r\n\r\nAlso cloud saves do not seem to be working, though I'm not sure if this is a configuration issue with the game or actually caused by running the game via Proton.\r\nEDIT: Cloud saves are uploaded when running the game on Windows, so that's indeed a Proton issue.\r\n\r\n## Reproduction\r\n\r\nPlay the game up until the first save room (room with the cylinder, about 10-15 minutes in), keep reentering the room until the game remains on a black screen (generally happened to me on the 2nd try)\r\n\r\n",
+    "symptom_summary": "用户在玩《真女神转生III HD重制版》时遇到的问题包括进入保存房间后游戏常常停留在黑屏状态，导致需要强制关闭进程，几乎无法游玩。此外，云存档功能似乎无法正常工作。\n\nTags: Black Screen, Game Freezes, Cloud Save Issues",
+    "tags": [
+      "Black Screen",
+      "Network / Sync Issue"
+    ]
+  }
+]

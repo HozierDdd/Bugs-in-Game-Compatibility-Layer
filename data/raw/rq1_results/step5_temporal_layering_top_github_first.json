@@ -1,0 +1,191 @@
+{
+  "generated_at": "2026-04-19T02:01:57Z",
+  "time_window": {
+    "start": "2021-01-01T00:00:00+00:00",
+    "end": "2025-12-31T23:59:59+00:00"
+  },
+  "description": "lead_time_days 最小的前 20 个游戏（GitHub 领先最多）",
+  "n": 20,
+  "games": [
+    {
+      "game_appid": "433580",
+      "game_title_protondb": "Timelapse",
+      "lead_time_days": -1772.1147222222223,
+      "first_report_time_protondb": "2023-09-14T00:52:41Z",
+      "first_issue_time_github": "2018-11-06T22:07:29Z",
+      "first_issue_number": 1928,
+      "first_issue_title": "Timelapse (433580)"
+    },
+    {
+      "game_appid": "313870",
+      "game_title_protondb": "A Vampyre Story",
+      "lead_time_days": -1662.413587962963,
+      "first_report_time_protondb": "2023-04-20T10:58:07Z",
+      "first_issue_time_github": "2018-10-01T01:02:33Z",
+      "first_issue_number": 1657,
+      "first_issue_title": "A Vampyre Story (313870)"
+    },
+    {
+      "game_appid": "313810",
+      "game_title_protondb": "Legend of Kay Anniversary",
+      "lead_time_days": -1603.5583333333334,
+      "first_report_time_protondb": "2023-01-19T23:16:52Z",
+      "first_issue_time_github": "2018-08-30T09:52:52Z",
+      "first_issue_number": 962,
+      "first_issue_title": "Legend of Kay Anniversary (313810)"
+    },
+    {
+      "game_appid": "760920",
+      "game_title_protondb": "ElectricVLab",
+      "lead_time_days": -1414.0185185185185,
+      "first_report_time_protondb": "2025-02-12T00:22:40Z",
+      "first_issue_time_github": "2021-03-30T23:56:00Z",
+      "first_issue_number": 4712,
+      "first_issue_title": "ElectricVLab (760920)"
+    },
+    {
+      "game_appid": "358190",
+      "game_title_protondb": "Blake Stone: Aliens of Gold",
+      "lead_time_days": -1380.585162037037,
+      "first_report_time_protondb": "2023-10-08T13:01:30Z",
+      "first_issue_time_github": "2019-12-27T22:58:52Z",
+      "first_issue_number": 3367,
+      "first_issue_title": "Blake Stone: Aliens of Gold (358190)"
+    },
+    {
+      "game_appid": "1674890",
+      "game_title_protondb": "👑 Idle Calibur 👑（选王之剑）",
+      "lead_time_days": -1378.9552662037038,
+      "first_report_time_protondb": "2025-10-25T20:23:59Z",
+      "first_issue_time_github": "2022-01-15T21:28:24Z",
+      "first_issue_number": 5497,
+      "first_issue_title": "Idle Calibur (1674890)"
+    },
+    {
+      "game_appid": "210870",
+      "game_title_protondb": "Cloudberry Kingdom",
+      "lead_time_days": -1362.364710648148,
+      "first_report_time_protondb": "2022-06-03T00:20:27Z",
+      "first_issue_time_github": "2018-09-09T15:35:16Z",
+      "first_issue_number": 1360,
+      "first_issue_title": "Cloudberry Kingdom (210870)"
+    },
+    {
+      "game_appid": "205590",
+      "game_title_protondb": "Legends of Pegasus",
+      "lead_time_days": -1358.2924537037038,
+      "first_report_time_protondb": "2024-11-11T17:44:37Z",
+      "first_issue_time_github": "2021-02-22T10:43:29Z",
+      "first_issue_number": 4642,
+      "first_issue_title": "Legends of pegasus (205590)"
+    },
+    {
+      "game_appid": "25700",
+      "game_title_protondb": "Madballs in Babo:Invasion",
+      "lead_time_days": -1356.8292129629629,
+      "first_report_time_protondb": "2022-05-14T05:11:23Z",
+      "first_issue_time_github": "2018-08-26T09:17:19Z",
+      "first_issue_number": 640,
+      "first_issue_title": "Madballs in Babo:Invasion (25700)"
+    },
+    {
+      "game_appid": "3932890",
+      "game_title_protondb": "Escape from Tarkov",
+      "lead_time_days": -1355.8027314814815,
+      "first_report_time_protondb": "2025-09-18T13:07:39Z",
+      "first_issue_time_github": "2022-01-01T17:51:43Z",
+      "first_issue_number": 5468,
+      "first_issue_title": "Escape from Tarkov (3932890)"
+    },
+    {
+      "game_appid": "28050",
+      "game_title_protondb": "Deus Ex: Human Revolution",
+      "lead_time_days": -1341.1058564814814,
+      "first_report_time_protondb": "2022-04-24T08:14:37Z",
+      "first_issue_time_github": "2018-08-22T05:42:11Z",
+      "first_issue_number": 47,
+      "first_issue_title": "Deus Ex: Human Revolution (28050)"
+    },
+    {
+      "game_appid": "423490",
+      "game_title_protondb": "Air Missions: HIND",
+      "lead_time_days": -1288.5740162037036,
+      "first_report_time_protondb": "2023-12-01T16:14:27Z",
+      "first_issue_time_github": "2020-05-22T02:27:52Z",
+      "first_issue_number": 3897,
+      "first_issue_title": "Air Missions: HIND (423490)"
+    },
+    {
+      "game_appid": "35000",
+      "game_title_protondb": "Mini Ninjas",
+      "lead_time_days": -1266.5430787037037,
+      "first_report_time_protondb": "2022-02-14T20:46:37Z",
+      "first_issue_time_github": "2018-08-28T07:44:35Z",
+      "first_issue_number": 809,
+      "first_issue_title": "Mini Ninjas (35000)"
+    },
+    {
+      "game_appid": "39550",
+      "game_title_protondb": "SpellForce 2 - Anniversary Edition",
+      "lead_time_days": -1264.4257291666668,
+      "first_report_time_protondb": "2022-02-21T21:46:38Z",
+      "first_issue_time_github": "2018-09-06T11:33:35Z",
+      "first_issue_number": 1277,
+      "first_issue_title": "SpellForce 2 - Anniversary Edition (39550)"
+    },
+    {
+      "game_appid": "262790",
+      "game_title_protondb": "Our Darker Purpose",
+      "lead_time_days": -1257.4447106481482,
+      "first_report_time_protondb": "2022-01-31T19:29:35Z",
+      "first_issue_time_github": "2018-08-23T08:49:12Z",
+      "first_issue_number": 240,
+      "first_issue_title": "Our Darker Purpose (262790) Doesn't start"
+    },
+    {
+      "game_appid": "857450",
+      "game_title_protondb": "ISLAND",
+      "lead_time_days": -1240.7166666666667,
+      "first_report_time_protondb": "2022-01-16T15:20:46Z",
+      "first_issue_time_github": "2018-08-24T22:08:46Z",
+      "first_issue_number": 452,
+      "first_issue_title": "ISLAND (857450)"
+    },
+    {
+      "game_appid": "590830",
+      "game_title_protondb": "s&box",
+      "lead_time_days": -1226.5165162037038,
+      "first_report_time_protondb": "2024-11-11T10:19:29Z",
+      "first_issue_time_github": "2021-07-03T21:55:42Z",
+      "first_issue_number": 4940,
+      "first_issue_title": "S&box (590830)"
+    },
+    {
+      "game_appid": "267530",
+      "game_title_protondb": "The LEGO Movie - Videogame",
+      "lead_time_days": -1199.8423611111111,
+      "first_report_time_protondb": "2021-12-22T07:31:38Z",
+      "first_issue_time_github": "2018-09-09T11:18:38Z",
+      "first_issue_number": 1348,
+      "first_issue_title": "[Whitelist] The LEGO® Movie - Videogame (267530)"
+    },
+    {
+      "game_appid": "12160",
+      "game_title_protondb": "Midnight Club 2",
+      "lead_time_days": -1197.4702777777777,
+      "first_report_time_protondb": "2022-01-03T03:17:20Z",
+      "first_issue_time_github": "2018-09-23T16:00:08Z",
+      "first_issue_number": 1564,
+      "first_issue_title": "Midnight Club II (12160)"
+    },
+    {
+      "game_appid": "228400",
+      "game_title_protondb": "Ace Combat Assault Horizon - Enhanced Edition",
+      "lead_time_days": -1192.3076041666666,
+      "first_report_time_protondb": "2022-04-05T13:32:18Z",
+      "first_issue_time_github": "2018-12-30T06:09:21Z",
+      "first_issue_number": 2160,
+      "first_issue_title": "Ace Combat Assault Horizon - Enhanced Edition (228400)"
+    }
+  ]
+}

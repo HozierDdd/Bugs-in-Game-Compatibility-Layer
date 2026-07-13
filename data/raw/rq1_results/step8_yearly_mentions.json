@@ -1,0 +1,287 @@
+{
+  "step": "step8_yearly_mentions",
+  "generated_at": "2026-04-19T03:49:36Z",
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "n_matched_games": 2328,
+  "note": "年份基于各 CR 帖子自身的时间戳：ProtonDB 端使用 Unix timestamp，GitHub 端使用 issue 正文或评论的 created_at。",
+  "part_a_protondb_mentions_github_by_year": {
+    "2021": {
+      "total_cr": 22786,
+      "mention_proton_issue_url": {
+        "count": 121,
+        "pct": 0.53,
+        "pattern": "github.com/ValveSoftware/Proton/issues/<number>（大小写不敏感）"
+      },
+      "mention_any_github": {
+        "count": 358,
+        "pct": 1.57,
+        "pattern": "github.com（大小写不敏感，任意链接）"
+      }
+    },
+    "2022": {
+      "total_cr": 31308,
+      "mention_proton_issue_url": {
+        "count": 10,
+        "pct": 0.03,
+        "pattern": "github.com/ValveSoftware/Proton/issues/<number>（大小写不敏感）"
+      },
+      "mention_any_github": {
+        "count": 69,
+        "pct": 0.22,
+        "pattern": "github.com（大小写不敏感，任意链接）"
+      }
+    },
+    "2023": {
+      "total_cr": 25050,
+      "mention_proton_issue_url": {
+        "count": 1,
+        "pct": 0.0,
+        "pattern": "github.com/ValveSoftware/Proton/issues/<number>（大小写不敏感）"
+      },
+      "mention_any_github": {
+        "count": 5,
+        "pct": 0.02,
+        "pattern": "github.com（大小写不敏感，任意链接）"
+      }
+    },
+    "2024": {
+      "total_cr": 32924,
+      "mention_proton_issue_url": {
+        "count": 2,
+        "pct": 0.01,
+        "pattern": "github.com/ValveSoftware/Proton/issues/<number>（大小写不敏感）"
+      },
+      "mention_any_github": {
+        "count": 10,
+        "pct": 0.03,
+        "pattern": "github.com（大小写不敏感，任意链接）"
+      }
+    },
+    "2025": {
+      "total_cr": 37307,
+      "mention_proton_issue_url": {
+        "count": 1,
+        "pct": 0.0,
+        "pattern": "github.com/ValveSoftware/Proton/issues/<number>（大小写不敏感）"
+      },
+      "mention_any_github": {
+        "count": 13,
+        "pct": 0.03,
+        "pattern": "github.com（大小写不敏感，任意链接）"
+      }
+    }
+  },
+  "part_b_github_cr_mentions_protondb_by_year": {
+    "2021": {
+      "all_issues_in_window": {
+        "total_cr": 665,
+        "mention_protondb_url": {
+          "count": 16,
+          "pct": 2.41,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 26,
+          "pct": 3.91,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      },
+      "resolved_appid_games": {
+        "total_cr": 528,
+        "mention_protondb_url": {
+          "count": 14,
+          "pct": 2.65,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 24,
+          "pct": 4.55,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      },
+      "matched_games_only": {
+        "total_cr": 497,
+        "mention_protondb_url": {
+          "count": 13,
+          "pct": 2.62,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 22,
+          "pct": 4.43,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      }
+    },
+    "2022": {
+      "all_issues_in_window": {
+        "total_cr": 810,
+        "mention_protondb_url": {
+          "count": 21,
+          "pct": 2.59,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 51,
+          "pct": 6.3,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      },
+      "resolved_appid_games": {
+        "total_cr": 644,
+        "mention_protondb_url": {
+          "count": 19,
+          "pct": 2.95,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 44,
+          "pct": 6.83,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      },
+      "matched_games_only": {
+        "total_cr": 610,
+        "mention_protondb_url": {
+          "count": 17,
+          "pct": 2.79,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 41,
+          "pct": 6.72,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      }
+    },
+    "2023": {
+      "all_issues_in_window": {
+        "total_cr": 818,
+        "mention_protondb_url": {
+          "count": 14,
+          "pct": 1.71,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 41,
+          "pct": 5.01,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      },
+      "resolved_appid_games": {
+        "total_cr": 636,
+        "mention_protondb_url": {
+          "count": 10,
+          "pct": 1.57,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 33,
+          "pct": 5.19,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      },
+      "matched_games_only": {
+        "total_cr": 582,
+        "mention_protondb_url": {
+          "count": 9,
+          "pct": 1.55,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 32,
+          "pct": 5.5,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      }
+    },
+    "2024": {
+      "all_issues_in_window": {
+        "total_cr": 805,
+        "mention_protondb_url": {
+          "count": 13,
+          "pct": 1.61,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 29,
+          "pct": 3.6,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      },
+      "resolved_appid_games": {
+        "total_cr": 627,
+        "mention_protondb_url": {
+          "count": 11,
+          "pct": 1.75,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 23,
+          "pct": 3.67,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      },
+      "matched_games_only": {
+        "total_cr": 559,
+        "mention_protondb_url": {
+          "count": 11,
+          "pct": 1.97,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 23,
+          "pct": 4.11,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      }
+    },
+    "2025": {
+      "all_issues_in_window": {
+        "total_cr": 933,
+        "mention_protondb_url": {
+          "count": 19,
+          "pct": 2.04,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 35,
+          "pct": 3.75,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      },
+      "resolved_appid_games": {
+        "total_cr": 703,
+        "mention_protondb_url": {
+          "count": 13,
+          "pct": 1.85,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 28,
+          "pct": 3.98,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      },
+      "matched_games_only": {
+        "total_cr": 641,
+        "mention_protondb_url": {
+          "count": 13,
+          "pct": 2.03,
+          "pattern": "protondb.com（大小写不敏感）"
+        },
+        "mention_protondb_any": {
+          "count": 28,
+          "pct": 4.37,
+          "pattern": "protondb（大小写不敏感，含名称和 URL）"
+        }
+      }
+    }
+  }
+}
