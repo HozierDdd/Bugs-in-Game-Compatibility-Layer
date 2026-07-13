@@ -1,0 +1,6530 @@
+[
+  {
+    "index": 0,
+    "app_id": "506510",
+    "title": "Shadows of Adam",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 1,
+    "app_id": "370910",
+    "title": "Kathy Rain",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 2,
+    "app_id": "2399830",
+    "title": "ARK: Survival Ascended",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 3,
+    "app_id": "1373220",
+    "title": "Live the Life",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 4,
+    "app_id": "582660",
+    "title": "Black Desert",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 5,
+    "app_id": "1808500",
+    "title": "ARC Raiders",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 6,
+    "app_id": "2507950",
+    "title": "Delta Force",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 7,
+    "app_id": "2795000",
+    "title": "The WereCleaner",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 8,
+    "app_id": "1313860",
+    "title": "EA SPORTS FIFA 21",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 9,
+    "app_id": "1157390",
+    "title": "King Arthur: Knight's Tale",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 10,
+    "app_id": "1172380",
+    "title": "STAR WARS Jedi: Fallen Order",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 11,
+    "app_id": "409710",
+    "title": "BioShock Remastered",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 12,
+    "app_id": "760160",
+    "title": "Vampire: The Masquerade - Bloodhunt",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 13,
+    "app_id": "481510",
+    "title": "Night in the Woods",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 14,
+    "app_id": "546050",
+    "title": "Puyo PuyoTetris",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 15,
+    "app_id": "2767030",
+    "title": "Marvel Rivals",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 16,
+    "app_id": "501300",
+    "title": "What Remains of Edith Finch",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 17,
+    "app_id": "384690",
+    "title": "Umihara Kawase",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 18,
+    "app_id": "1150690",
+    "title": "OMORI",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 19,
+    "app_id": "532190",
+    "title": "Super Blood Hockey",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 20,
+    "app_id": "2800840",
+    "title": "Gunbot Diplomacy",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 21,
+    "app_id": "2440510",
+    "title": "Forza Motorsport",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 22,
+    "app_id": "520720",
+    "title": "Dear Esther: Landmark Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 23,
+    "app_id": "555000",
+    "title": "GOAT OF DUTY",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 24,
+    "app_id": "203350",
+    "title": "King's Bounty: Warriors of the North",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 25,
+    "app_id": "1113000",
+    "title": "Persona 4 Golden",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 26,
+    "app_id": "1156060",
+    "title": "Railroads & Catacombs",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 27,
+    "app_id": "526870",
+    "title": "Satisfactory",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 28,
+    "app_id": "391540",
+    "title": "Undertale",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 29,
+    "app_id": "838310",
+    "title": "Bloodstained: Curse of the Moon",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 30,
+    "app_id": 937310,
+    "title": "Infinitode 2 - Infinite Tower Defense",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 31,
+    "app_id": "1363080",
+    "title": "Manor Lords",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 32,
+    "app_id": "9050",
+    "title": "DOOM 3",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 33,
+    "app_id": 1508280,
+    "title": "2076 - Midway Multiverse",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 34,
+    "app_id": "287980",
+    "title": "Mini Metro",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 35,
+    "app_id": "798460",
+    "title": "Ni no Kuni Wrath of the White Witch Remastered",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 36,
+    "app_id": "787480",
+    "title": "Phoenix Wright: Ace Attorney Trilogy",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 37,
+    "app_id": "870780",
+    "title": "Control Ultimate Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 38,
+    "app_id": "2239140",
+    "title": "Grapples Galore",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 39,
+    "app_id": "853450",
+    "title": "Nevergrind Online",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 40,
+    "app_id": "2246340",
+    "title": "Monster Hunter Wilds",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 41,
+    "app_id": 415780,
+    "title": "Bacon Rebellion",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 42,
+    "app_id": "386360",
+    "title": "SMITE®",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 43,
+    "app_id": "2993780",
+    "title": "FANTASY LIFE i: Die Zeitdiebin",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 44,
+    "app_id": "1671410",
+    "title": "Somerville",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 45,
+    "app_id": 491540,
+    "title": "The Bus",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 46,
+    "app_id": "227300",
+    "title": "Euro Truck Simulator 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 47,
+    "app_id": "382890",
+    "title": "FINAL FANTASY V",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 48,
+    "app_id": "2134320",
+    "title": "ENA: Dream BBQ",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 49,
+    "app_id": "306130",
+    "title": "The Elder Scrolls Online",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 50,
+    "app_id": "1811500",
+    "title": "LOOPERS",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 51,
+    "app_id": "388410",
+    "title": "Darksiders II Deathinitive Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 52,
+    "app_id": "3061810",
+    "title": "Like a Dragon: Pirate Yakuza in Hawaii",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 53,
+    "app_id": "3016800",
+    "title": "Mecha BREAK Playtest",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 54,
+    "app_id": "1260020",
+    "title": "PowerSlave (DOS Classic Edition)",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 55,
+    "app_id": "1160220",
+    "title": "Paradise Killer",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 56,
+    "app_id": 38400,
+    "title": "Fallout: A Post Nuclear Role Playing Game",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 57,
+    "app_id": "2354000",
+    "title": "Slackers - Carts of Glory",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 58,
+    "app_id": "65540",
+    "title": "Gothic",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 59,
+    "app_id": "32470",
+    "title": "STAR WARS Empire at War - Gold Pack",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 60,
+    "app_id": "291550",
+    "title": "Brawlhalla",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 61,
+    "app_id": "238960",
+    "title": "Path of Exile",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 62,
+    "app_id": "1295630",
+    "title": "Helskate",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 63,
+    "app_id": "359040",
+    "title": "The Music Machine",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 64,
+    "app_id": "1751730",
+    "title": "FIRE AND ASHES",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 65,
+    "app_id": "252950",
+    "title": "Rocket League",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 66,
+    "app_id": "3557620",
+    "title": "Blue Archive",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 67,
+    "app_id": "29720",
+    "title": "Guild Wars",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 68,
+    "app_id": "1716740",
+    "title": "Starfield",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 69,
+    "app_id": "1086940",
+    "title": "Baldur's Gate 3",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 70,
+    "app_id": "1145360",
+    "title": "Hades",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 71,
+    "app_id": "620",
+    "title": "Portal 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 72,
+    "app_id": "1846380",
+    "title": "Need for Speed Unbound",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 73,
+    "app_id": "1605220",
+    "title": "Dune: Spice Wars",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 74,
+    "app_id": "1240630",
+    "title": "Hex of Steel",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 75,
+    "app_id": "2183900",
+    "title": "Warhammer 40,000: Space Marine 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 76,
+    "app_id": "1721470",
+    "title": "Poppy Playtime",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 77,
+    "app_id": 700600,
+    "title": "Evil Genius 2: World Domination",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 78,
+    "app_id": "265300",
+    "title": "Lords Of The Fallen 2014",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 79,
+    "app_id": "962130",
+    "title": "Grounded",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 80,
+    "app_id": "22350",
+    "title": "BRINK",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 81,
+    "app_id": "255710",
+    "title": "Cities: Skylines",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 82,
+    "app_id": "1446780",
+    "title": "MONSTER HUNTER RISE",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 83,
+    "app_id": "553850",
+    "title": "HELLDIVERS 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 84,
+    "app_id": "933110",
+    "title": "Age of Empires III: Definitive Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 85,
+    "app_id": "341800",
+    "title": "Keep Talking and Nobody Explodes",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 86,
+    "app_id": "729040",
+    "title": "Borderlands Game of the Year Enhanced",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 87,
+    "app_id": "208650",
+    "title": "Batman: Arkham Knight",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 88,
+    "app_id": "548430",
+    "title": "Deep Rock Galactic",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 89,
+    "app_id": "1903340",
+    "title": "Clair Obscur: Expedition 33",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 90,
+    "app_id": "379720",
+    "title": "DOOM",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 91,
+    "app_id": "105600",
+    "title": "Terraria",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 92,
+    "app_id": "1062090",
+    "title": "Timberborn",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 93,
+    "app_id": "495420",
+    "title": "State of Decay 2: Juggernaut Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 94,
+    "app_id": "1681060",
+    "title": "Exogate Initiative",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 95,
+    "app_id": "1245620",
+    "title": "ELDEN RING",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 96,
+    "app_id": "1693980",
+    "title": "Dead Space",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 97,
+    "app_id": "1462040",
+    "title": "FINAL FANTASY VII REMAKE INTERGRADE",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 98,
+    "app_id": "582660",
+    "title": "Black Desert",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 99,
+    "app_id": "430960",
+    "title": "Lucy -The Eternity She Wished For-",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 100,
+    "app_id": "2385060",
+    "title": "Sea of Stars Demo",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 101,
+    "app_id": "1623070",
+    "title": "Master of Magic",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 102,
+    "app_id": "253250",
+    "title": "Stonehearth",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 103,
+    "app_id": "1097200",
+    "title": "Twelve Minutes",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 104,
+    "app_id": "1245620",
+    "title": "ELDEN RING",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 105,
+    "app_id": "1156380",
+    "title": "One Dreamer",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 106,
+    "app_id": "2229850",
+    "title": "Command & Conquer: Red Alert™ 2 and Yuri’s Revenge™",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 107,
+    "app_id": "393380",
+    "title": "Squad",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 108,
+    "app_id": "505460",
+    "title": "Foxhole",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 109,
+    "app_id": "1144200",
+    "title": "Ready or Not",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 110,
+    "app_id": "1074770",
+    "title": "The Rescue of Mermaids",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 111,
+    "app_id": "1286830",
+    "title": "STAR WARS: The Old Republic",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 112,
+    "app_id": "581320",
+    "title": "Insurgency: Sandstorm",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 113,
+    "app_id": "1328670",
+    "title": "Mass Effect Legendary Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 114,
+    "app_id": "20510",
+    "title": "S.T.A.L.K.E.R.: Clear Sky",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 115,
+    "app_id": "1105670",
+    "title": "The Last Spell",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 116,
+    "app_id": 1073910,
+    "title": "Before We Leave",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 117,
+    "app_id": 711540,
+    "title": "Lonely Mountains: Downhill",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 118,
+    "app_id": "1961950",
+    "title": "CHAOS;HEAD NOAH",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 119,
+    "app_id": "620",
+    "title": "Portal 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 120,
+    "app_id": "1506830",
+    "title": "FIFA 22",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 121,
+    "app_id": "1484720",
+    "title": "Dead Estate",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 122,
+    "app_id": "553850",
+    "title": "HELLDIVERS 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 123,
+    "app_id": "530870",
+    "title": "Empyrion - Galactic Survival Dedicated Server",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 124,
+    "app_id": "239120",
+    "title": "FINAL FANTASY III",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 125,
+    "app_id": "444090",
+    "title": "Paladins",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 126,
+    "app_id": "352620",
+    "title": "Porcunipine",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 127,
+    "app_id": "2373990",
+    "title": "Solo Leveling:ARISE",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 128,
+    "app_id": "1651780",
+    "title": "Sophie's Safecracking Simulator",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 129,
+    "app_id": "284160",
+    "title": "BeamNG.drive",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 130,
+    "app_id": "95900",
+    "title": "Air Conflicts - Secret Wars",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 131,
+    "app_id": "365670",
+    "title": "Blender",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 132,
+    "app_id": "2694490",
+    "title": "Path of Exile 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 133,
+    "app_id": "1641990",
+    "title": "Warhammer Combat Cards",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 134,
+    "app_id": "57300",
+    "title": "Amnesia: The Dark Descent",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 135,
+    "app_id": "211160",
+    "title": "Viking: Battle for Asgard",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 136,
+    "app_id": "1023690",
+    "title": "Nurse Love Syndrome",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 137,
+    "app_id": "1716740",
+    "title": "Starfield",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 138,
+    "app_id": "1151340",
+    "title": "Fallout 76: The Pitt",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 139,
+    "app_id": "435150",
+    "title": "Divinity: Original Sin 2 - Definitive Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 140,
+    "app_id": "730",
+    "title": "Counter-Strike: Global Offensive",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 141,
+    "app_id": "212480",
+    "title": "Sonic & All-Stars Racing Transformed Collection",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 142,
+    "app_id": "8500",
+    "title": "EVE Online",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 143,
+    "app_id": "2088840",
+    "title": "Picayune Dreams",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 144,
+    "app_id": "378360",
+    "title": "Ymir",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 145,
+    "app_id": "2646460",
+    "title": "Soulmask",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 146,
+    "app_id": "641320",
+    "title": "Cooking Simulator",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 147,
+    "app_id": "1144200",
+    "title": "Ready or Not",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 148,
+    "app_id": "1498570",
+    "title": "THE KING OF FIGHTERS XV",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 149,
+    "app_id": "1551360",
+    "title": "Forza Horizon 5",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 150,
+    "app_id": "581320",
+    "title": "Insurgency: Sandstorm",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 151,
+    "app_id": "2181930",
+    "title": "DR LIVESEY ROM AND DEATH EDITION",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 152,
+    "app_id": "32330",
+    "title": "LEGO Indiana Jones: The Original Adventures",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 153,
+    "app_id": "1113000",
+    "title": "Persona 4 Golden",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 154,
+    "app_id": "976730",
+    "title": "Halo: The Master Chief Collection",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 155,
+    "app_id": "1959390",
+    "title": "Fear the Spotlight",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 156,
+    "app_id": "3164330",
+    "title": "Infinity Nikki",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 157,
+    "app_id": "3448280",
+    "title": "Gothic 1 Remake - Demo (Nyras Prologue)",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 158,
+    "app_id": "973760",
+    "title": "Thronebreaker: The Witcher Tales",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 159,
+    "app_id": "2125770",
+    "title": "Beeny",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 160,
+    "app_id": "205530",
+    "title": "Gratuitous Tank Battles",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 161,
+    "app_id": "393380",
+    "title": "Squad",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 162,
+    "app_id": "57300",
+    "title": "Amnesia: The Dark Descent",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 163,
+    "app_id": "71340",
+    "title": "Sonic Generations Collection",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 164,
+    "app_id": "563560",
+    "title": "Alien Swarm: Reactive Drop",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 165,
+    "app_id": "107410",
+    "title": "Arma 3",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 166,
+    "app_id": "848030",
+    "title": "Roundguard",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 167,
+    "app_id": "396900",
+    "title": "GRIP: Combat Racing",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 168,
+    "app_id": "1003590",
+    "title": "Tetris® Effect: Connected",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 169,
+    "app_id": "1240440",
+    "title": "Halo Infinite",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 170,
+    "app_id": "204100",
+    "title": "Max Payne 3",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 171,
+    "app_id": "990630",
+    "title": "The Last Campfire",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 172,
+    "app_id": "949230",
+    "title": "Cities: Skylines II",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 173,
+    "app_id": "611500",
+    "title": "Quake Champions",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 174,
+    "app_id": "1085660",
+    "title": "Destiny 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 175,
+    "app_id": "261550",
+    "title": "Mount & Blade II: Bannerlord",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 176,
+    "app_id": 275850,
+    "title": "No Man's Sky",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 177,
+    "app_id": "1184560",
+    "title": "Phantom Breaker: Omnia",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 178,
+    "app_id": "548430",
+    "title": "Deep Rock Galactic",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 179,
+    "app_id": "366910",
+    "title": "The Long Journey Home",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 180,
+    "app_id": "635260",
+    "title": "CarX Drift Racing Online",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 181,
+    "app_id": "40300",
+    "title": "Risen",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 182,
+    "app_id": "292030",
+    "title": "The Witcher 3: Wild Hunt",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 183,
+    "app_id": "490110",
+    "title": "The Precinct",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 184,
+    "app_id": "504230",
+    "title": "Celeste",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 185,
+    "app_id": "236390",
+    "title": "War Thunder",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 186,
+    "app_id": "1325200",
+    "title": "Nioh 2 – The Complete Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 187,
+    "app_id": "2743030",
+    "title": "LISA: The First",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 188,
+    "app_id": 284160,
+    "title": "BeamNG.drive",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 189,
+    "app_id": "2620",
+    "title": "Call of Duty",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 190,
+    "app_id": "1238060",
+    "title": "Dead Space 3",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 191,
+    "app_id": "1644490",
+    "title": "Occult",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 192,
+    "app_id": "11450",
+    "title": "Overlord",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 193,
+    "app_id": "730",
+    "title": "Counter-Strike: Global Offensive",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 194,
+    "app_id": "304240",
+    "title": "Resident Evil",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 195,
+    "app_id": "2104010",
+    "title": "Elowen's Light",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 196,
+    "app_id": "2701660",
+    "title": "DRAGON QUEST III HD-2D Remake",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 197,
+    "app_id": "1496250",
+    "title": "Mary Skelter 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 198,
+    "app_id": "546560",
+    "title": "Half-Life: Alyx",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 199,
+    "app_id": "105600",
+    "title": "Terraria",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 200,
+    "app_id": "219990",
+    "title": "Grim Dawn",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 201,
+    "app_id": "311210",
+    "title": "Call of Duty: Black Ops III",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 202,
+    "app_id": "2870920",
+    "title": "Restaurats",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 203,
+    "app_id": "2326350",
+    "title": "Grey Area",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 204,
+    "app_id": "2271200",
+    "title": "Assault On Proxima",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 205,
+    "app_id": "1904640",
+    "title": "Dungeons & Dragons - Al-Qadim: The Genie's Curse",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 206,
+    "app_id": "2479810",
+    "title": "Gray Zone Warfare",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 207,
+    "app_id": "22380",
+    "title": "Fallout: New Vegas",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 208,
+    "app_id": "582160",
+    "title": "Assassin's Creed Origins",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 209,
+    "app_id": "1817190",
+    "title": "Marvel’s Spider-Man: Miles Morales",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 210,
+    "app_id": "381210",
+    "title": "Dead by Daylight",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 211,
+    "app_id": "2707900",
+    "title": "NIGHT-RUNNERS PROLOGUE",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 212,
+    "app_id": "482400",
+    "title": "System Shock",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 213,
+    "app_id": "1716740",
+    "title": "Starfield",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 214,
+    "app_id": "548430",
+    "title": "Deep Rock Galactic",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 215,
+    "app_id": 1343400,
+    "title": "RuneScape ®",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 216,
+    "app_id": "444090",
+    "title": "Paladins",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 217,
+    "app_id": "894020",
+    "title": "Death's Door",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 218,
+    "app_id": "393380",
+    "title": "Squad",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 219,
+    "app_id": "2064650",
+    "title": "Tower of Fantasy",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 220,
+    "app_id": "12130",
+    "title": "Manhunt",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 221,
+    "app_id": "666220",
+    "title": "CS2D",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 222,
+    "app_id": "1002300",
+    "title": "Fear & Hunger",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 223,
+    "app_id": "976730",
+    "title": "Halo: The Master Chief Collection",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 224,
+    "app_id": "534380",
+    "title": "Dying Light 2 Stay Human",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 225,
+    "app_id": "532790",
+    "title": "Vampire: The Masquerade - Bloodlines 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 226,
+    "app_id": "6010",
+    "title": "Indiana Jones® and the Fate of Atlantis™",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 227,
+    "app_id": "945360",
+    "title": "Among Us",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 228,
+    "app_id": "1808500",
+    "title": "ARC Raiders",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 229,
+    "app_id": "782340",
+    "title": "Lake of Voices",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 230,
+    "app_id": "221640",
+    "title": "Super Hexagon",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 231,
+    "app_id": "238460",
+    "title": "BattleBlock Theater",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 232,
+    "app_id": "44690",
+    "title": "GT Legends",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 233,
+    "app_id": "1238080",
+    "title": "Burnout Paradise Remastered",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 234,
+    "app_id": "4173840",
+    "title": "MATH FPS : Solve Or Die",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 235,
+    "app_id": "1174180",
+    "title": "Red Dead Redemption 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 236,
+    "app_id": "397350",
+    "title": "Lords of the Realm II",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 237,
+    "app_id": "1282270",
+    "title": "Strinova",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 238,
+    "app_id": "1531430",
+    "title": "Paragon: The Overprime",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 239,
+    "app_id": "870780",
+    "title": "Control Ultimate Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 240,
+    "app_id": "548430",
+    "title": "Deep Rock Galactic",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 241,
+    "app_id": "730",
+    "title": "Counter-Strike: Global Offensive",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 242,
+    "app_id": "2772750",
+    "title": "Age of History 3",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 243,
+    "app_id": "2239550",
+    "title": "Watch Dogs®: Legion",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 244,
+    "app_id": "956680",
+    "title": "M.A.S.S. Builder",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 245,
+    "app_id": "648800",
+    "title": "Raft",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 246,
+    "app_id": "2545710",
+    "title": "Tony Hawk's™ Pro Skater™ 3 + 4",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 247,
+    "app_id": "2008100",
+    "title": "Rule the Waves 3",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 248,
+    "app_id": "548430",
+    "title": "Deep Rock Galactic",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 249,
+    "app_id": "2215430",
+    "title": "Ghost of Tsushima DIRECTOR'S CUT",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 250,
+    "app_id": "952060",
+    "title": "Resident Evil 3",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 251,
+    "app_id": "1904530",
+    "title": "Forgotten Realms: The Archives - Collection Three",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 252,
+    "app_id": "822940",
+    "title": "Tori",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 253,
+    "app_id": "337320",
+    "title": "Paint the Town Red",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 254,
+    "app_id": "2504480",
+    "title": "Indigo Park",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 255,
+    "app_id": "10090",
+    "title": "Call of Duty: World at War",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 256,
+    "app_id": "1778960",
+    "title": "Mystery of Fortune 2 Refine",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 257,
+    "app_id": "511540",
+    "title": "MoonQuest",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 258,
+    "app_id": 664260,
+    "title": "Company of Heroes: Europe in Ruins",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 259,
+    "app_id": "1794680",
+    "title": "Vampire Survivors",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 260,
+    "app_id": "289070",
+    "title": "Sid Meier’s Civilization VI",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 261,
+    "app_id": "429790",
+    "title": "AdventureQuest 3D",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 262,
+    "app_id": "1196090",
+    "title": "Scars Above",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 263,
+    "app_id": "863550",
+    "title": "HITMAN 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 264,
+    "app_id": "91900",
+    "title": "Post Apocalyptic Mayhem",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 265,
+    "app_id": "1446780",
+    "title": "MONSTER HUNTER RISE",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 266,
+    "app_id": "1418760",
+    "title": "Claire's Quest: GOLD",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 267,
+    "app_id": "200940",
+    "title": "Sonic CD",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 268,
+    "app_id": "630",
+    "title": "Alien Swarm",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 269,
+    "app_id": "1238860",
+    "title": "Battlefield 4",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 270,
+    "app_id": "1284210",
+    "title": "Guild Wars 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 271,
+    "app_id": "379720",
+    "title": "DOOM",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 272,
+    "app_id": "1282730",
+    "title": "Loop Hero",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 273,
+    "app_id": "371970",
+    "title": "Barony",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 274,
+    "app_id": "291550",
+    "title": "Brawlhalla",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 275,
+    "app_id": "745920",
+    "title": "Temtem",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 276,
+    "app_id": 455910,
+    "title": "STAR WARS™: Rogue Squadron 3D",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 277,
+    "app_id": "2406770",
+    "title": "Bodycam",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 278,
+    "app_id": "60",
+    "title": "Ricochet",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 279,
+    "app_id": "1030300",
+    "title": "Hollow Knight: Silksong",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 280,
+    "app_id": "4133660",
+    "title": "Get In Get Out",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 281,
+    "app_id": "2054970",
+    "title": "Dragon's Dogma 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 282,
+    "app_id": 1618540,
+    "title": "Ghost Hunters Corp",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 283,
+    "app_id": "1107790",
+    "title": "The Complex",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 284,
+    "app_id": 440,
+    "title": "Team Fortress 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 285,
+    "app_id": "287840",
+    "title": "TY the Tasmanian Tiger 4",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 286,
+    "app_id": "2568880",
+    "title": "The Hardest Game Ever",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 287,
+    "app_id": 1172380,
+    "title": "STAR WARS Jedi: Fallen Order™",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 288,
+    "app_id": "2155180",
+    "title": "Pioneers of Pagonia",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 289,
+    "app_id": "1787960",
+    "title": "Milling machine 3D",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 290,
+    "app_id": 915810,
+    "title": "Midnight Ghost Hunt",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 291,
+    "app_id": "1906750",
+    "title": "Roly Poly",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 292,
+    "app_id": "553850",
+    "title": "HELLDIVERS 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 293,
+    "app_id": "209000",
+    "title": "Batman: Arkham Origins",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 294,
+    "app_id": "221640",
+    "title": "Super Hexagon",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 295,
+    "app_id": "227300",
+    "title": "Euro Truck Simulator 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 296,
+    "app_id": "883710",
+    "title": "Resident Evil 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 297,
+    "app_id": "242860",
+    "title": "Verdun",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 298,
+    "app_id": "17480",
+    "title": "Command & Conquer: Red Alert 3",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 299,
+    "app_id": "211420",
+    "title": "DARK SOULS™: Prepare To Die Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 300,
+    "app_id": "594650",
+    "title": "Hunt: Showdown",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 301,
+    "app_id": "914750",
+    "title": "Bee Simulator",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 302,
+    "app_id": "934700",
+    "title": "Dead Island 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 303,
+    "app_id": "870780",
+    "title": "Control Ultimate Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 304,
+    "app_id": "2932930",
+    "title": "100 Korea Cats",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 305,
+    "app_id": "1097150",
+    "title": "Fall Guys",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 306,
+    "app_id": 312060,
+    "title": "FINAL FANTASY XIV Online Free Trial",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 307,
+    "app_id": "680380",
+    "title": "Night Call",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 308,
+    "app_id": "782330",
+    "title": "DOOM Eternal",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 309,
+    "app_id": "2116120",
+    "title": "Incursion Red River",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 310,
+    "app_id": "1456650",
+    "title": "Pascal's Wager: Definitive Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 311,
+    "app_id": "2437170",
+    "title": "SMITE 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 312,
+    "app_id": "234140",
+    "title": "Mad Max",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 313,
+    "app_id": "427410",
+    "title": "Abiotic Factor",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 314,
+    "app_id": 813780,
+    "title": "Age of Empires II: Definitive Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 315,
+    "app_id": "1742020",
+    "title": "Idol Showdown",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 316,
+    "app_id": "1091500",
+    "title": "Cyberpunk 2077",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 317,
+    "app_id": "234140",
+    "title": "Mad Max",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 318,
+    "app_id": "2702260",
+    "title": "Map Map - A Game About Maps",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 319,
+    "app_id": "1091500",
+    "title": "Cyberpunk 2077",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 320,
+    "app_id": "1622800",
+    "title": "Super Dungeon Maker",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 321,
+    "app_id": "851850",
+    "title": "DRAGON BALL Z: KAKAROT",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 322,
+    "app_id": "2620",
+    "title": "Call of Duty",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 323,
+    "app_id": "1475810",
+    "title": "Ghostwire: Tokyo",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 324,
+    "app_id": "22380",
+    "title": "Fallout: New Vegas",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 325,
+    "app_id": "2076040",
+    "title": "The Finals Playtest",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 326,
+    "app_id": "548430",
+    "title": "Deep Rock Galactic",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 327,
+    "app_id": "553850",
+    "title": "HELLDIVERS 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 328,
+    "app_id": "683320",
+    "title": "GRIS",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 329,
+    "app_id": "1238860",
+    "title": "Battlefield 4",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 330,
+    "app_id": "1931240",
+    "title": "MOTHERGUNSHIP: FORGE",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 331,
+    "app_id": "803330",
+    "title": "Destroy All Humans!",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 332,
+    "app_id": "1907000",
+    "title": "Gloomgrave",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 333,
+    "app_id": "2344520",
+    "title": "Diablo IV",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 334,
+    "app_id": "2204130",
+    "title": "Sid Meier's Alpha Centauri™ Planetary Pack",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 335,
+    "app_id": "335300",
+    "title": "DARK SOULS II: Scholar of the First Sin",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 336,
+    "app_id": "391220",
+    "title": "Rise of the Tomb Raider",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 337,
+    "app_id": "399810",
+    "title": "Call of Cthulhu",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 338,
+    "app_id": "238460",
+    "title": "BattleBlock Theater",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 339,
+    "app_id": "784950",
+    "title": "Conflict of Nations: World War 3",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 340,
+    "app_id": "2223840",
+    "title": "The Casting of Frank Stone",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 341,
+    "app_id": "2139460",
+    "title": "Once Human",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 342,
+    "app_id": "225540",
+    "title": "Just Cause 3",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 343,
+    "app_id": "2073250",
+    "title": "Rift of the NecroDancer",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 344,
+    "app_id": "2893350",
+    "title": "Liftlands",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 345,
+    "app_id": "3590",
+    "title": "Plants vs. Zombies GOTY Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 346,
+    "app_id": "700030",
+    "title": "Life is Feudal: MMO",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 347,
+    "app_id": "730820",
+    "title": "The Curse of Monkey Island",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 348,
+    "app_id": "1091500",
+    "title": "Cyberpunk 2077",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 349,
+    "app_id": "1716740",
+    "title": "Starfield",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 350,
+    "app_id": "1638720",
+    "title": "Battlefield™ 2042 Open Beta",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 351,
+    "app_id": "1408260",
+    "title": "Hentai vs Evil: Back 4 Waifus",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 352,
+    "app_id": "758870",
+    "title": "Kynseed",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 353,
+    "app_id": "2694490",
+    "title": "Path of Exile 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 354,
+    "app_id": 32430,
+    "title": "STAR WARS™ - The Force Unleashed™ Ultimate Sith Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 355,
+    "app_id": "489830",
+    "title": "The Elder Scrolls V: Skyrim Special Edition",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 356,
+    "app_id": "381210",
+    "title": "Dead by Daylight",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 357,
+    "app_id": "108600",
+    "title": "Project Zomboid",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 358,
+    "app_id": "1358700",
+    "title": "STRANGER OF PARADISE FINAL FANTASY ORIGIN",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 359,
+    "app_id": "21130",
+    "title": "LEGO® Harry Potter: Years 1-4",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 360,
+    "app_id": "241600",
+    "title": "Rogue Legacy",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 361,
+    "app_id": "73010",
+    "title": "Cities in Motion",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 362,
+    "app_id": "1378990",
+    "title": "Crash Bandicoot™ 4: It’s About Time",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 363,
+    "app_id": "238090",
+    "title": "Sniper Elite 3",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 364,
+    "app_id": "1465460",
+    "title": "Infection Free Zone",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 365,
+    "app_id": "322170",
+    "title": "Geometry Dash",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 366,
+    "app_id": "1162280",
+    "title": "Eternal Hope",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 367,
+    "app_id": "632360",
+    "title": "Risk of Rain 2",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 368,
+    "app_id": "1466060",
+    "title": "Tainted Grail: The Fall of Avalon",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 369,
+    "app_id": "65930",
+    "title": "The Bureau: XCOM Declassified",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 370,
+    "app_id": "1364780",
+    "title": "Street Fighter 6",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 371,
+    "app_id": "449610",
+    "title": "Monster Boy und das Verfluchte Königreich",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 372,
+    "app_id": "1693980",
+    "title": "Dead Space",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 373,
+    "app_id": "409160",
+    "title": "Dr. Langeskov, The Tiger, and The Terribly Cursed Emerald: A Whirlwind Heist",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 374,
+    "app_id": "1350200",
+    "title": "IMMORTALITY",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 375,
+    "app_id": "1273560",
+    "title": "DeathSprint 66",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 376,
+    "app_id": "1190460",
+    "title": "DEATH STRANDING",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 377,
+    "app_id": 1635980,
+    "title": "Kubinashi Recollection",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 378,
+    "app_id": "851730",
+    "title": "Sandmade",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 379,
+    "app_id": "282800",
+    "title": "100% Orange Juice",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 380,
+    "app_id": "1361210",
+    "title": "Warhammer 40,000: Darktide",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 381,
+    "app_id": "6850",
+    "title": "Hitman 2: Silent Assassin",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 382,
+    "app_id": "526870",
+    "title": "Satisfactory",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 383,
+    "app_id": "856210",
+    "title": "bit Dungeon III",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  }
+]

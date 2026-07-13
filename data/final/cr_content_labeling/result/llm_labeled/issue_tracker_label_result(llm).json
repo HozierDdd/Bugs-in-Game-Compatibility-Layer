@@ -1,0 +1,5650 @@
+[
+  {
+    "index": 0,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9197",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 1,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8406",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 2,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7341",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 3,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5951",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 4,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7941",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 5,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9016",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 6,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8468",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 7,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6771",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 8,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5165",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 9,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6814",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 10,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8795",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 11,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6649",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 12,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4823",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 13,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8829",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 14,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7604",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 15,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5925",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 16,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6998",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 17,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7971",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 18,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7632",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 19,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5056",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 20,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8759",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 21,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7266",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 22,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4799",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 23,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5030#issuecomment-2568502188",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 24,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7408",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 25,
+    "url": "https://github.com/ValveSoftware/Proton/issues/1780#issuecomment-2318533087",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 26,
+    "url": "https://github.com/ValveSoftware/Proton/issues/512#issuecomment-2702090149",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 27,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7088",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 28,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6132",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 29,
+    "url": "https://github.com/ValveSoftware/Proton/issues/558#issuecomment-2966509794",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 30,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6208#issuecomment-2016492494",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 31,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8813",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 32,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4450#issuecomment-1894700121",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 33,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5595",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 34,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9116",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 35,
+    "url": "https://github.com/ValveSoftware/Proton/issues/308#issuecomment-2481007216",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 36,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7283",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 37,
+    "url": "https://github.com/ValveSoftware/Proton/issues/225#issuecomment-873477342",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 38,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7894",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 39,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4777",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 40,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7394",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 41,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8775",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 42,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7121",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 43,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6090",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 44,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8481",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 45,
+    "url": "https://github.com/ValveSoftware/Proton/issues/3982#issuecomment-1145868714",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 46,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6897",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 47,
+    "url": "https://github.com/ValveSoftware/Proton/issues/105#issuecomment-886658413",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 48,
+    "url": "https://github.com/ValveSoftware/Proton/issues/1602#issuecomment-2015587964",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 49,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5772#issuecomment-1793571595",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 50,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6502#issuecomment-2002400200",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 51,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7661",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 52,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9328",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 53,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5305",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 54,
+    "url": "https://github.com/ValveSoftware/Proton/issues/37#issuecomment-1206355313",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 55,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9214",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 56,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7816",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 57,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4850",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 58,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8599",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 59,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8566",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 60,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6653#issuecomment-3599439847",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 61,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4134#issuecomment-1732121116",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 62,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9321",
+    "analysis": {
+      "observed_behavior": false,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": false,
+      "media": false,
+      "product_game_title": false
+    }
+  },
+  {
+    "index": 63,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8185#issuecomment-3201729811",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 64,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4102#issuecomment-771676738",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 65,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6464",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 66,
+    "url": "https://github.com/ValveSoftware/Proton/issues/2420#issuecomment-1119834764",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 67,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4702#issuecomment-2054029921",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 68,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5047#issuecomment-1426030341",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 69,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7317#issuecomment-3334961688",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 70,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6432",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 71,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7064#issuecomment-2689115002",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 72,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6399",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 73,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6580",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 74,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7961",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 75,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5850",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 76,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7224#issuecomment-3565823500",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 77,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6547#issuecomment-3617048403",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 78,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8783",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 79,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7708",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 80,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5223",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 81,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4001#issuecomment-2736716264",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 82,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8435",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 83,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7208",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 84,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5000",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 85,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7307",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 86,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7042",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 87,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8335",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 88,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4450#issuecomment-1937009882",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 89,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6817#issuecomment-1931151402",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 90,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4068#issuecomment-1572791971",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 91,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6296",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 92,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4945",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 93,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7290",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 94,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6527",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 95,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6737",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 96,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8220",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 97,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8403",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 98,
+    "url": "https://github.com/ValveSoftware/Proton/issues/1031#issuecomment-1546642053",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 99,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4578",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 100,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9072",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 101,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6096",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 102,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7829",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 103,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8384",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 104,
+    "url": "https://github.com/ValveSoftware/Proton/issues/2704#issuecomment-2476678276",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 105,
+    "url": "https://github.com/ValveSoftware/Proton/issues/2245#issuecomment-772516453",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 106,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6573#issuecomment-2423006947",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 107,
+    "url": "https://github.com/ValveSoftware/Proton/issues/3898#issuecomment-3259847794",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 108,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8873",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 109,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7313",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 110,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7828",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 111,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9248",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 112,
+    "url": "https://github.com/ValveSoftware/Proton/issues/2251#issuecomment-1614607721",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 113,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6992",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 114,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9012",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 115,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4611",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 116,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7201",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 117,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5431",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 118,
+    "url": "https://github.com/ValveSoftware/Proton/issues/412#issuecomment-2012326598",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 119,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8896",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 120,
+    "url": "https://github.com/ValveSoftware/Proton/issues/3719#issuecomment-2859879124",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 121,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8239",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 122,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5602",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 123,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6738",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 124,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6866",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 125,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7727",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 126,
+    "url": "https://github.com/ValveSoftware/Proton/issues/770#issuecomment-873577376",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 127,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5397",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 128,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8892",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 129,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5371",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 130,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8923",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 131,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5495#issuecomment-1356144832",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 132,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6626",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 133,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5495#issuecomment-1773908396",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 134,
+    "url": "https://github.com/ValveSoftware/Proton/issues/1801#issuecomment-1099649533",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 135,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5162",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 136,
+    "url": "https://github.com/ValveSoftware/Proton/issues/164#issuecomment-1420247870",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 137,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4#issuecomment-1139573372",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 138,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8937",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 139,
+    "url": "https://github.com/ValveSoftware/Proton/issues/185#issuecomment-1616215445",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 140,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5007",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 141,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7880",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 142,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8221",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 143,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5003",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 144,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5515",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 145,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6426",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 146,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5655",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 147,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4450#issuecomment-884999508",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 148,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6353",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 149,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9003",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 150,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5115",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 151,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6232#issuecomment-1325839810",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 152,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5529",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 153,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4781",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 154,
+    "url": "https://github.com/ValveSoftware/Proton/issues/607#issuecomment-1544941682",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 155,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7844",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 156,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4667#issuecomment-2439558587",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 157,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6538",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 158,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5748",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 159,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4868#issuecomment-1666059218",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 160,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6441",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 161,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9125",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 162,
+    "url": "https://github.com/ValveSoftware/Proton/issues/37#issuecomment-998787414",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 163,
+    "url": "https://github.com/ValveSoftware/Proton/issues/37#issuecomment-965086392",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": false,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 164,
+    "url": "https://github.com/ValveSoftware/Proton/issues/150#issuecomment-2855734707",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 165,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8214",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 166,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6490",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 167,
+    "url": "https://github.com/ValveSoftware/Proton/issues/47#issuecomment-1066101614",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 168,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4823#issuecomment-2118902154",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 169,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8981",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 170,
+    "url": "https://github.com/ValveSoftware/Proton/issues/2901#issuecomment-2940515684",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 171,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9031",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 172,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8430",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 173,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9065",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 174,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6328",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 175,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8806",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 176,
+    "url": "https://github.com/ValveSoftware/Proton/issues/1422#issuecomment-955168268",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 177,
+    "url": "https://github.com/ValveSoftware/Proton/issues/1420#issuecomment-1079775128",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 178,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5295#issuecomment-968095517",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 179,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6648",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 180,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5033",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 181,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7190",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 182,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4591",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 183,
+    "url": "https://github.com/ValveSoftware/Proton/issues/3073#issuecomment-2305482998",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 184,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4535",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 185,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9053",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 186,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5519",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 187,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6826#issuecomment-2388529939",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 188,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8663",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 189,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9001",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 190,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6221",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 191,
+    "url": "https://github.com/ValveSoftware/Proton/issues/1677#issuecomment-2614141476",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 192,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2346169612",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 193,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4450#issuecomment-2645964684",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 194,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7702",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 195,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5893",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 196,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5679",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 197,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4547",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 198,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8456",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 199,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5753",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 200,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5366",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 201,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5280",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 202,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6717#issuecomment-1653016372",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 203,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8387",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 204,
+    "url": "https://github.com/ValveSoftware/Proton/issues/3189#issuecomment-1528775420",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 205,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5726",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 206,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4134#issuecomment-2781418040",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 207,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8311",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 208,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7973",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 209,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8300#issuecomment-2659367434",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 210,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8767",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 211,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6790",
+    "analysis": {
+      "observed_behavior": false,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 212,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6194",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 213,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5945",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 214,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6908",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 215,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7950",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 216,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4594",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 217,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4450#issuecomment-1032484344",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 218,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8637",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 219,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6959",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 220,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5405",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 221,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8429",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 222,
+    "url": "https://github.com/ValveSoftware/Proton/issues/1410#issuecomment-1801860968",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 223,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7064",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 224,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6670",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 225,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8585#issuecomment-2800133578",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": false
+    }
+  },
+  {
+    "index": 226,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8760#issuecomment-3643414781",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 227,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8627",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 228,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8495",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 229,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4825",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 230,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7124",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 231,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5542#issuecomment-1867872319",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 232,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8222",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 233,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7623",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 234,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6352",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 235,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8874",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 236,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7918",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 237,
+    "url": "https://github.com/ValveSoftware/Proton/issues/3291#issuecomment-2223365875",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 238,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5237",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 239,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7613",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 240,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8037",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 241,
+    "url": "https://github.com/ValveSoftware/Proton/issues/3521#issuecomment-1186181813",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 242,
+    "url": "https://github.com/ValveSoftware/Proton/issues/37#issuecomment-1204354077",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 243,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5005",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 244,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9079",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 245,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5210",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 246,
+    "url": "https://github.com/ValveSoftware/Proton/issues/79#issuecomment-1789074887",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 247,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5425",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 248,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7102",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 249,
+    "url": "https://github.com/ValveSoftware/Proton/issues/3521#issuecomment-1261118269",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 250,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8314",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 251,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7595",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 252,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7567",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 253,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6812",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 254,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6836",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 255,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6508",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 256,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5203",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 257,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5304#issuecomment-2848613351",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 258,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5360",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 259,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8927",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 260,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4450#issuecomment-1046324491",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 261,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5963",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 262,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6197",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 263,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6961",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": false
+    }
+  },
+  {
+    "index": 264,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4966#issuecomment-1536957717",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 265,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5621",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 266,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7920",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 267,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4982",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 268,
+    "url": "https://github.com/ValveSoftware/Proton/issues/1511#issuecomment-927832291",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 269,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7273",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 270,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6042",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 271,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6817#issuecomment-3404033160",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 272,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6517",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 273,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4134#issuecomment-1537221123",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 274,
+    "url": "https://github.com/ValveSoftware/Proton/issues/413#issuecomment-1891075967",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 275,
+    "url": "https://github.com/ValveSoftware/Proton/issues/37#issuecomment-1692377208",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 276,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6502#issuecomment-2024237358",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 277,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5765",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 278,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4907#issuecomment-1642507049",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 279,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6458",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 280,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6065",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 281,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5415",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 282,
+    "url": "https://github.com/ValveSoftware/Proton/issues/167#issuecomment-2478774434",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 283,
+    "url": "https://github.com/ValveSoftware/Proton/issues/1792#issuecomment-3694067560",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 284,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4665",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 285,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4802",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 286,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8272",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 287,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6800",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 288,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8783#issuecomment-3146644046",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 289,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7936",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 290,
+    "url": "https://github.com/ValveSoftware/Proton/issues/1106#issuecomment-2561940852",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 291,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7279",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 292,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8782",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 293,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6584",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 294,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5534",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 295,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8555",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 296,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8038",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 297,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7855",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 298,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6208#issuecomment-2067616752",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 299,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5229#issuecomment-1312557485",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 300,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6361",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 301,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7654",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 302,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7499",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 303,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7198",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 304,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4930",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 305,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6086",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 306,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5272",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 307,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6247",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 308,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8471",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 309,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8984",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 310,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5495#issuecomment-1546046487",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 311,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5596",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 312,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9148",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 313,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8900",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 314,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8110",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 315,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5573",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 316,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6219",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 317,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6105",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 318,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5043",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 319,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6380",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 320,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8557",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 321,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5843",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 322,
+    "url": "https://github.com/ValveSoftware/Proton/issues/438#issuecomment-3427207785",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 323,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8231",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 324,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8104",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 325,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5872",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 326,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5860",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 327,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5613#issuecomment-2566466523",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 328,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6739",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 329,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8649",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 330,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5980",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 331,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8295",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 332,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8620",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 333,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6796",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 334,
+    "url": "https://github.com/ValveSoftware/Proton/issues/1453#issuecomment-3604622675",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 335,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5143",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 336,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8102",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": false,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 337,
+    "url": "https://github.com/ValveSoftware/Proton/issues/9117",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 338,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7649",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 339,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8278",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 340,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8297",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": false,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 341,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5481",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 342,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5928",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 343,
+    "url": "https://github.com/ValveSoftware/Proton/issues/8690#issuecomment-3239188461",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 344,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6751",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 345,
+    "url": "https://github.com/ValveSoftware/Proton/issues/4942",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": false,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 346,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6331",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 347,
+    "url": "https://github.com/ValveSoftware/Proton/issues/5789",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 348,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7259",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": true,
+      "proton_version": true,
+      "steps_to_reproduce": false,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": false,
+      "media": false,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 349,
+    "url": "https://github.com/ValveSoftware/Proton/issues/7992",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 350,
+    "url": "https://github.com/ValveSoftware/Proton/issues/6236",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 351,
+    "url": "https://github.com/ValveSoftware/Proton/issues/251#issuecomment-873410725",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": false,
+      "program_output": true,
+      "user_environment": true,
+      "media": true,
+      "product_game_title": true
+    }
+  },
+  {
+    "index": 352,
+    "url": "https://github.com/ValveSoftware/Proton/issues/47#issuecomment-1066100728",
+    "analysis": {
+      "observed_behavior": true,
+      "expected_behavior": false,
+      "proton_version": true,
+      "steps_to_reproduce": true,
+      "test_cases_or_example": true,
+      "component": true,
+      "program_output": false,
+      "user_environment": true,
+      "media": false,
+      "product_game_title": true
+    }
+  }
+]
